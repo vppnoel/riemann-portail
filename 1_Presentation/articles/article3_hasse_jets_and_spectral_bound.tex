@@ -1,0 +1,413 @@
+\documentclass[11pt]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[expansion=false]{microtype}
+\setlength{\emergencystretch}{2em}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{\mathbb F}
+\newcommand{\HD}[1]{D^{[#1]}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\dd}{\,\mathrm d}
+\renewcommand{\Re}{\operatorname{Re}}
+
+\title[Hasse jets and an elliptic spectral bound]{Hasse jets, finite-field point counts, and an elliptic spectral bound:\\
+a reproducible Stepanov argument}
+\author{Vincent P.\,P. No\"el}
+\address{Strasbourg, France}
+%\email{} % to be completed by the author
+\date{October 2026. Expository preprint, not peer reviewed.}
+\subjclass[2020]{Primary 11G20; Secondary 11G05, 11Y16, 14G15}
+\keywords{Stepanov's method, Hasse derivatives, finite fields, elliptic curves, point counts, Riemann--Roch, exact certificates}
+
+\begin{document}
+
+\begin{abstract}
+We present a classical auxiliary-polynomial argument for cubic curves over finite fields of odd characteristic, together with exact reproducible certificates. Hasse derivatives give a jet-rank bound over every $\F_q$, $q=p^n$, including orders at least $p$. A polynomial space with distinct leading degrees, followed by multiplicity counting and quadratic twisting, yields the uniform bound $|\#C(\F_q)-(q+1)|\le10\sqrt q$, with asymptotic constant $2\sqrt6$. For a fixed smooth cubic over $\F_p$, rationality of its zeta function is established separately by Riemann--Roch. The bound on all extensions then forces both inverse roots to have modulus $\sqrt p$, recovering Hasse's sharp constant $2$ and the elliptic Riemann hypothesis. Five exact polynomial certificates and twelve direct extension-field counts accompany the proof. A singular cubic shows why the elliptic rationality hypothesis is essential. This is an expository reconstruction of Stepanov's method and classical elliptic-curve results; no new theorem or transfer to the Riemann zeta function is claimed.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction and scope}\label{sec:intro}
+
+A point-counting estimate with a non-optimal constant can still determine the exact size of the inverse roots of a zeta function. The necessary ingredients are a bound uniform over \emph{all} extensions of the base field, a rational expression for the zeta function, and a known product of its inverse roots. In genus one, the product is $p$ and a root of modulus larger than $\sqrt p$ would dominate its partner exponentially.
+
+This note makes that chain explicit for $y^2=f(x)$ with $f$ cubic and the characteristic odd. Its counting part uses the classical method of Stepanov~\cite{Ste69,Bom74}. Its rationality input is the standard Riemann--Roch computation for elliptic curves~\cite[I, \S4; IV, \S9]{Mil20}. Neither Hasse's bound nor a purity theorem is imported into the argument. These results and methods are classical; their presentation here is not a claim of historical novelty.
+
+There are two points worth keeping separate in an implementation. First, the auxiliary space is a space of \emph{polynomials}, not of polynomial functions modulo $x^q-x$: a nonzero kernel vector must give a genuinely nonzero polynomial. Second, the relation between ordinary and Hasse derivatives uses $k!$ only when $k<p$. We instead compute Hasse derivatives directly, so the proof works for $M<q$ even when $M\ge p$. The extension-field certificates test precisely this distinction.
+
+The argument supplies a concrete example of a structural rank bound, as opposed to a numerical positivity test. It does not construct an analogous space or operator for the zeta function of the integers. Section~\ref{sec:jets} proves the rank bound, Section~\ref{sec:count} the uniform point count, Sections~\ref{sec:rationality}--\ref{sec:spectral} the elliptic spectral consequence, and Section~\ref{sec:certificates} records the exact computations and their reproduction.
+
+\section{Hasse jets and the auxiliary polynomial space}\label{sec:jets}
+
+Throughout the counting argument, $q=p^n\ge5$ is an odd prime power, $f\in\F_q[x]$ has degree exactly three, and
+\[
+e=\frac{q-1}{2},\qquad g=f^e,\qquad
+S=\{u\in\F_q:f(u)\ne0,\ g(u)=1\}.
+\]
+No squarefreeness assumption is needed until Section~\ref{sec:rationality}.
+
+\begin{definition}
+For a polynomial $A$, the Hasse derivative $\HD{k}A$ is defined by
+\[
+A(x+h)=\sum_{k\ge0}\HD{k}A(x)h^k.
+\]
+The jet of order $M-1$ at $u$ is $(\HD{0}A(u),\ldots,\HD{M-1}A(u))$.
+\end{definition}
+Directly from the definition,
+\[
+\HD{k}x^a=\binom ak x^{a-k}\quad(k\le a),\qquad
+\HD{k}(AB)=\sum_{\ell=0}^k\HD{k-\ell}A\,\HD{\ell}B;
+\]
+the first expression is zero for $k>a$. All binomial coefficients are reduced in characteristic $p$. The product rule has no extra factor $\binom k\ell$. The first $M$ jet coordinates at $u$ vanish exactly when $(x-u)^M$ divides $A$, by expanding $A(u+h)$.
+
+\begin{lemma}\label{lem:Pk}
+For every $k\ge0$ there is a polynomial $P_k$ such that
+\[
+f^k\HD{k}g=gP_k,\qquad \deg P_k\le2k.
+\]
+One may take
+\[
+P_k=\sum_{\ell=0}^{\min(e,k)}
+ \binom e\ell f^{k-\ell}
+ [h^k]\bigl(f(x+h)-f(x)\bigr)^\ell.
+\]
+The degree of the zero polynomial is understood as $-\infty$.
+\end{lemma}
+\begin{proof}
+Expand $f(x+h)^e$ binomially. Its coefficient of $h^k$ uses only terms $\ell\le k$, since $f(x+h)-f(x)$ is divisible by $h$. Multiplication by $f^k$ gives the displayed identity after factoring out $f^e$. The expression for $P_k$ is polynomial because $k-\ell\ge0$.
+
+Write $f(x+h)-f(x)=c_1(x)h+c_2(x)h^2+c_3h^3$, where $\deg c_i\le3-i$. A term contributing to $[h^k](f(x+h)-f(x))^\ell$ has degree at most $3\ell-k$ in $x$. After multiplication by $f^{k-\ell}$, its degree is at most $3(k-\ell)+3\ell-k=2k$. This proof never divides by $k!$.
+\end{proof}
+
+Let
+\[
+J\ge1,\qquad 1\le K\le\frac{q-3}{2},\qquad 1\le M<q,
+\]
+and work in $\F_q[x]$, without quotienting by $x^q-x$. Set
+\[
+W=\Span_{\F_q}\{x^{jq+a},\,x^{jq+a}g:
+                  0\le j<J,\ 0\le a<K\}.
+\]
+
+\begin{theorem}[Auxiliary-polynomial rank bound]\label{thm:rank}
+The space $W$ has dimension $2JK$. The jet map
+\[
+\mathcal J_M:W\longrightarrow\F_q^{M|S|},\qquad
+A\longmapsto(\HD{k}A(u))_{\substack{u\in S\\0\le k<M}}
+\]
+satisfies
+\begin{equation}\label{eq:rank}
+\rank\mathcal J_M
+ \le\sum_{k=0}^{M-1}\min\{|S|,K+J-1+2k\}
+ \le R:=M(K+J-1)+M(M-1).
+\end{equation}
+If $2JK>R$, there is a nonzero $A\in W$ vanishing to order at least $M$ at every point of $S$, and
+\begin{equation}\label{eq:SU}
+|S|\le U:=\left\lfloor\frac DM\right\rfloor,\qquad
+D=(J-1)q+K-1+\frac{3(q-1)}2.
+\end{equation}
+\end{theorem}
+\begin{proof}
+\emph{Dimension.} The leading degrees in the two families are $jq+a$ and
+\[
+jq+a+\frac{3(q-1)}2=(j+1)q+\frac{q-3}{2}+a.
+\]
+Their residues modulo $q$ lie in disjoint intervals
+\[
+[0,K-1],\qquad
+\left[\frac{q-3}{2},\frac{q-3}{2}+K-1\right]\subset[0,q-1].
+\]
+All $2JK$ leading degrees are distinct, so the polynomials are independent. Their maximum degree is $D$.
+
+\emph{Frobenius and the rank of each block.} Since
+\[
+(x+h)^{jq}=(x^q+h^q)^j,
+\]
+we have $\HD{i}x^{jq}=0$ for $0<i<q$. Fix $k<M$ and multiply the jet row at $u\in S$ by the nonzero scalar $f(u)^k$. Using $u^{jq}=u^j$, the first family's rows are evaluations of
+\[
+x^jf^k\HD{k}x^a.
+\]
+For the second family, Hasse's product rule, Lemma~\ref{lem:Pk} and $g(u)=1$ give evaluations of
+\[
+x^j\sum_{\ell=0}^k f^{k-\ell}\HD{k-\ell}x^a\,P_\ell.
+\]
+Each nonzero term in either expression has degree at most $j+a+2k\le K+J-2+2k$. Thus the block of order $k$ factors through evaluation of polynomials of that degree and has rank at most $\min(|S|,K+J-1+2k)$. Stacking the blocks proves~\eqref{eq:rank}. This sum is an upper bound; it does not assert that the blocks are independent.
+
+\emph{Existence and multiplicities.} If $\dim W>R$, the kernel of $\mathcal J_M$ has dimension at least $2JK-R>0$. Independence of the chosen polynomials ensures that a nonzero vector in this kernel gives a nonzero polynomial $A$. Its zero jets imply
+\[
+\prod_{u\in S}(x-u)^M\mid A.
+\]
+The factors are coprime for distinct $u$. Therefore $M|S|\le\deg A\le D$, proving~\eqref{eq:SU}.
+\end{proof}
+
+The bound $R$ and the parameters guaranteeing existence do not depend on a prior count of $S$. An exact witness computed using $S$ is an additional certificate for a particular instance.
+
+\section{Point counts, twisting, and a uniform constant}\label{sec:count}
+
+An explicit family of parameters will suffice. For $r\ge1$ with $6r^2-2r+5\le q$, choose
+\[
+J=r+1,\qquad M=2r,\qquad K=3r^2-r+1.
+\]
+The condition on $r$ ensures $K\le(q-3)/2$ and $M<q$. Direct calculation gives $2JK-R=2$ and
+\begin{equation}\label{eq:Ufamily}
+U=\left\lfloor
+ \frac q2+\frac{3(q-1)}{4r}+\frac{3r-1}{2}
+ \right\rfloor.
+\end{equation}
+
+Let $z$ be the number of distinct roots of $f$ in $\F_q$, so $0\le z\le3$. The projective model of $y^2=f(x)$ has one point at infinity and
+\[
+N_q=2|S|+z+1.
+\]
+For a non-residue $\nu\in\F_q^\times$, the twisted cubic $\nu f$ has the same roots and
+\[
+|S_{\nu f}|=q-z-|S|.
+\]
+It has the same bound $U$, since the degree remains three. Applying the bound to both cubics gives
+\begin{equation}\label{eq:twist}
+2q-z-2U+1\le N_q\le2U+z+1,\qquad
+|N_q-(q+1)|\le2U-q+z.
+\end{equation}
+These are counts of the projective model, even for a singular cubic. We apply the elliptic zeta function only to smooth cubics below.
+
+\begin{proposition}\label{prop:uniform}
+For every odd prime power $q$, including $q=3$, and every cubic $f$,
+\[
+|N_q-(q+1)|\le10\sqrt q.
+\]
+The displayed family also gives the asymptotic bound
+\[
+|N_q-(q+1)|\le2\sqrt6\sqrt q+O(1),
+\]
+with an absolute implicit constant.
+\end{proposition}
+\begin{proof}
+For $3\le q<29$, the quadratic character, extended by $\chi_q(0)=0$, gives
+\[
+N_q-(q+1)=\sum_{u\in\F_q}\chi_q(f(u)),
+\]
+whose absolute value is at most $q<10\sqrt q$. This treats the small fields without requiring any admissible auxiliary parameters.
+
+For $q\ge29$ put $r=\lfloor\sqrt{(q-5)/6}\rfloor\ge2$. This is admissible. If $v=\sqrt{(q-5)/6}\ge2$, then $r\ge v/2$ and $r\le\sqrt{q/6}$. Equations~\eqref{eq:Ufamily}--\eqref{eq:twist}, with $z\le3$, yield
+\[
+|N_q-(q+1)|\le\frac{3(q-1)}{2r}+3r+2.
+\]
+Since $q/(q-5)\le29/24$,
+\[
+|N_q-(q+1)|
+\le\left(\frac32\sqrt{29}+\sqrt{\frac32}+
+                 \frac2{\sqrt{29}}\right)\sqrt q
+<10\sqrt q.
+\]
+The parenthetical constant is less than $9.674$.
+
+Finally $r=\sqrt{q/6}+O(1)$ in~\eqref{eq:Ufamily}, so $U=q/2+\sqrt6\sqrt q+O(1)$. Equation~\eqref{eq:twist} proves the asymptotic statement. Both constants are independent of $p$, the extension degree, and the coefficients of $f$.
+\end{proof}
+
+The constant $10$ is convenient rather than optimal. The following argument needs uniformity, not an improvement of this intermediate constant.
+
+\section{Rationality obtained independently by Riemann--Roch}\label{sec:rationality}
+
+Fix an odd prime $p$ and a squarefree cubic $f\in\F_p[x]$. Its smooth projective model $E$, with the point $O$ at infinity, is an elliptic curve. Write $N_n=\#E(\F_{p^n})$ and $t=p+1-N_1$.
+
+We use Riemann--Roch in genus one: a divisor $D$ of positive degree $d$ has $\dim L(D)=d$~\cite[I, Thm.~4.13, pp.~35--36]{Mil20}. This input has no hypothesis on point-counting errors or zeta-root moduli. For completeness, the rationality computation and its descent to $\F_p$ are included.
+
+\begin{proposition}[Classical elliptic rationality]\label{prop:rationality}
+One has
+\[
+Z(E,T)=\frac{1-tT+pT^2}{(1-T)(1-pT)}
+      =\exp\left(\sum_{n\ge1}\frac{N_n}{n}T^n\right).
+\]
+If $(1-\alpha T)(1-\beta T)=1-tT+pT^2$, then
+\begin{equation}\label{eq:spectrum}
+\alpha+\beta=t,\qquad\alpha\beta=p,\qquad
+N_n=p^n+1-\alpha^n-\beta^n.
+\end{equation}
+Also $Z(E,1/(pT))=Z(E,T)$. None of these statements assumes Hasse's bound.
+\end{proposition}
+\begin{proof}
+Let $\operatorname{Pic}(E)$ denote divisors defined over $\F_p$ modulo divisors of nonzero functions in $\F_p(E)$. The map $P\mapsto[(P)-(O)]$ is a bijection $E(\F_p)\to\operatorname{Pic}^0(E)$. Indeed, for a divisor $D$ of degree zero, Riemann--Roch applied to $D+(O)$ provides a nonzero $\F_p$-rational section. It makes $D+(O)$ equivalent to an effective rational divisor of degree one, hence to $(P)$ for some $P\in E(\F_p)$. Uniqueness follows from $\dim L((P))=1$: a function with divisor $(Q)-(P)$ is constant, forcing $P=Q$. Translation by $d(O)$ identifies degree-zero classes with degree-$d$ classes.
+
+There are therefore $N_1$ classes of each degree $d$. A class represented by $D$ of degree $d\ge1$ has $(p^d-1)/(p-1)$ effective divisors, obtained from the nonzero elements of $L(D)$ modulo $\F_p^\times$. If $a_d$ counts all effective divisors of degree $d$, then
+\[
+a_0=1,\qquad a_d=N_1\frac{p^d-1}{p-1}\quad(d\ge1).
+\]
+The Euler product on closed points is their generating function, so
+\[
+\begin{aligned}
+Z(E,T)
+ &=\sum_{d\ge0}a_dT^d\\
+ &=1+\frac{N_1}{p-1}
+       \left(\frac{pT}{1-pT}-\frac{T}{1-T}\right)
+ =\frac{1-tT+pT^2}{(1-T)(1-pT)}.
+\end{aligned}
+\]
+This is the standard proof of~\cite[IV, Prop.~9.9 and Thm.~9.10,
+pp.~155--156]{Mil20}; it does not use the earlier Hasse theorem in that book.
+
+If $b_d$ counts the closed points of degree $d$, then $N_n=\sum_{d\mid n}d b_d$. Taking the formal logarithm of $\prod_P(1-T^{\deg P})^{-1}$ gives $\sum_{n\ge1}N_nT^n/n$. Comparing it with the logarithm of the rational factorisation proves~\eqref{eq:spectrum}. No analytic convergence or purity is needed.
+
+Finally, both the numerator and denominator transform by the same factor $1/(pT^2)$ under $T\mapsto1/(pT)$, proving the functional equation.
+\end{proof}
+
+At this stage $\alpha\beta=p$ gives the reciprocal pairing $\alpha\leftrightarrow p/\alpha$. It does not yet determine $|\alpha|$ or $|\beta|$.
+
+\section{Uniform counting determines the elliptic spectrum}\label{sec:spectral}
+
+\begin{theorem}[Classical elliptic spectral bound]\label{thm:spectral}
+For the smooth cubic $E$ of Section~\ref{sec:rationality},
+\[
+|\alpha|=|\beta|=\sqrt p,\qquad
+|N_n-(p^n+1)|\le2p^{n/2}\quad(n\ge1).
+\]
+The zeros of $\zeta_E(s):=Z(E,p^{-s})$ have real part $1/2$.
+\end{theorem}
+\begin{proof}
+Squarefreeness persists under extension of the ground field. Proposition~\ref{prop:uniform}, applied to each $\F_{p^n}$, and~\eqref{eq:spectrum} give
+\[
+|\alpha^n+\beta^n|\le10p^{n/2}\quad\text{for every }n\ge1.
+\]
+Suppose, after interchanging the roots if necessary, that $A=|\alpha|>\sqrt p$. Then $|\beta|=p/A<\sqrt p$. The reverse triangle inequality implies
+\[
+10\ge p^{-n/2}|\alpha^n+\beta^n|
+ \ge\left(\frac A{\sqrt p}\right)^n
+       \left(1-\left(\frac p{A^2}\right)^n\right).
+\]
+The last expression tends to infinity, a contradiction. Thus neither modulus exceeds $\sqrt p$, and their product forces equality. The triangle inequality now gives the sharp constant $2$, including Hasse's bound at $n=1$.
+
+In the variable $s$,
+\[
+\zeta_E(s)=
+ \frac{(1-\alpha p^{-s})(1-\beta p^{-s})}
+      {(1-p^{-s})(1-p^{1-s})}.
+\]
+A zero satisfies $p^s=\alpha$ or $\beta$, hence $p^{\Re s}=\sqrt p$. The denominator has poles only on the lines $\Re s=0,1$, so it does not cancel these zeros. Zeros and poles are periodic in the imaginary direction, with period $2\pi/\log p$.
+\end{proof}
+
+The passage from constant $10$ to constant $2$ is a consequence of rationality and the uniform estimate on the entire tower. Twelve finite checks alone would not supply this uniform estimate. The proof does.
+
+\section{Exact certificates and direct counts}\label{sec:certificates}
+
+The accompanying corpus release V6.35 contains five exact auxiliary-polynomial certificates and twelve direct point counts, all for $f=x^3+x+1$ except the final certificate, which uses the twist $2f$ over $\F_{125}$. The characteristic-$5$ and characteristic-$3$ examples include $M>p$.
+
+\begin{table}[ht]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rcrrrrrrr}
+\toprule
+$q$ & $(J,K,M)$ & $|S|$ & $\dim W$ & $M|S|$ & $R$ &
+ $\rank\mathcal J_M$ & $\deg A$ & $\min\ord_u A$\\
+\midrule
+27 & $(3,11,4)$ & 13 & 66 & 52 & 64 & 51 & 93 & 4\\
+25 & $(7,9,6)$ & 13 & 126 & 78 & 120 & 78 & 136 & 6\\
+49 & $(3,11,4)$ & 27 & 66 & 108 & 64 & 56 & 173 & 4\\
+125 & $(5,45,8)$ & 52 & 450 & 416 & 448 & 400 & 701 & 8\\
+$125^\ast$ & $(5,45,8)$ & 70 & 450 & 560 & 448 & 400 & 701 & 8\\
+\bottomrule
+\end{tabular}
+\caption{Exact polynomial certificates. The starred row uses $2f$. Orders are taken at $u\in S$. $R$ is the bound independent of $S$; the sharper bound in~\eqref{eq:rank} is also checked.}
+\label{tab:certificates}
+\end{table}
+
+Each stored certificate includes the irreducible field modulus, the coefficients of $f$, the points of $S$, a kernel vector, and the coefficients of the resulting nonzero polynomial $A$. Its multiplicities are checked by successive synthetic divisions by $x-u$, independently of the jet matrix used to construct it.
+
+The $\F_{27}$ instance tests the Hasse calculation beyond the characteristic: $M=4>3$. Its $52$ formal conditions are already fewer than the $66$ dimensions, so existence in this particular example does not by itself demonstrate the advantage of the structural rank bound. The $\F_{125}$ twisted instance does: it has $560$ conditions on $450$ independent coefficients, yet $R=448<450$ guarantees existence. The computed rank is $400$ and the kernel has dimension $50$. Its witness has degree $701\le730$ and multiplicity at least $8$ at each of the $70$ points.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{rrrrrr}
+\toprule
+$p$ & $n$ & $q=p^n$ & $N_n$ (direct) & $N_n$ (recurrence) &
+ $N_n-(q+1)$\\
+\midrule
+3 & 1 & 3 & 4 & 4 & 0\\
+3 & 2 & 9 & 16 & 16 & 6\\
+3 & 3 & 27 & 28 & 28 & 0\\
+3 & 4 & 81 & 64 & 64 & $-18$\\
+5 & 1 & 5 & 9 & 9 & 3\\
+5 & 2 & 25 & 27 & 27 & 1\\
+5 & 3 & 125 & 108 & 108 & $-18$\\
+7 & 1 & 7 & 5 & 5 & $-3$\\
+7 & 2 & 49 & 55 & 55 & 5\\
+7 & 3 & 343 & 380 & 380 & 36\\
+11 & 1 & 11 & 14 & 14 & 2\\
+11 & 2 & 121 & 140 & 140 & 18\\
+\bottomrule
+\end{tabular}
+\caption{Twelve direct counts for $y^2=x^3+x+1$. Direct field enumeration is completed before comparison with the recurrence.}
+\label{tab:counts}
+\end{table}
+
+The comparison recurrence is $T_0=2$, $T_1=t$ and $T_n=tT_{n-1}-pT_{n-2}$, giving $N_n=p^n+1-T_n$ from Proposition~\ref{prop:rationality}. The initial $t$ is obtained from the direct count over $\F_p$. This recurrence does not generate any of the direct counts in Table~\ref{tab:counts}.
+
+\subsection*{Reproduction and implementation limits}
+In the accompanying archive \texttt{programme-riemann}, work from \path{3_Preuves_et_calculs}. With the dependencies in the corpus requirements file installed, run
+\begin{verbatim}
+python src/v635_tour_et_spectre.py
+python tests/run_all_tests.py
+\end{verbatim}
+The core implementation is \path{src/finite_field_jets.py}. The output files are \path{data/v635_certificats.json}, \path{data/v635_tour.json} and \path{data/v635_tour.csv}; the declared cases are in \path{data/v635_controles_avant_execution.json}. The proof is also recorded in \path{preuves/LEMME_TOUR_ET_SPECTRE_V635.md}.
+
+Field elements are base-$p$ coefficient vectors in $\F_p[u]/(m(u))$, with a checked monic irreducible modulus. Their integer labels are encodings, not residues modulo the integer $p^n$. Polynomial coefficients are stored in increasing degree order. Matrix columns are ordered by $j$, then $a$, with the plain and mixed columns alternating. The computations use exact field arithmetic; no floating-point eigenvalue threshold enters a certificate. Runtime measurements and normalised ratios are ancillary, and need not reproduce byte for byte.
+
+The present table-based field implementation is deliberately restricted to $q\le1024$. Its polynomial witnesses and direct counts are finite checks, not the proof of an assertion for all $q$. The ten dedicated V6.35 tests include Hasse orders beyond the characteristic, field construction, exact jet and multiplicity checks, twisting, and the separation between direct enumeration and the spectral recurrence.
+
+\section{Why the smoothness hypothesis matters}\label{sec:limits}
+
+A singular cubic supplies a useful counterexample to a careless spectral conclusion. Let $a$ be a non-square in $\F_p$ and take $f=x^2(x+a)$. For the singular projective model,
+\[
+N_n-(p^n+1)
+ =\sum_{x\ne0}\chi_{p^n}(x+a)
+ =-\chi_{p^n}(a)=-(-1)^n.
+\]
+Thus
+\[
+Z_{\mathrm{sing}}(T)=
+ \frac{1+T}{(1-T)(1-pT)}.
+\]
+This count has even bounded error, but its zero $T=-1$ has modulus $1$. The numerator has degree one and does not have the elliptic product $\alpha\beta=p$. One must distinguish the singular model from its normalisation. The counting lemma is valid for both smooth and singular cubics; Theorem~\ref{thm:spectral} is elliptic and requires squarefreeness.
+
+The argument does not cover characteristic $2$, and the displayed parameter family is not claimed to optimise all auxiliary spaces. Extending or optimising an implementation does not change the historical status of the underlying method.
+
+For the zeta function over the integers, the missing step remains structural: an independent space, an operator producing a rank deficit, and a global control of zeros that can replace polynomial degree. These three objects have not been supplied by this note. Its conclusion is the classical elliptic Riemann hypothesis over finite fields.
+
+\subsection*{Acknowledgements and disclosure}
+This expository reconstruction, the extension-field implementation, and the manuscript were prepared with assistance from OpenAI's ChatGPT in the author's research corpus. Two internal constructive and critical readings were used; neither is an independent human referee report. The computations and mathematical sources are identified above. Final verification and responsibility for any submission rest with the author.
+
+\begin{thebibliography}{99}
+\bibitem{Ste69}
+S. A. Stepanov, \emph{On the number of points of a hyperelliptic curve over a finite prime field},
+Izv. Akad. Nauk SSSR Ser. Mat. 33 (1969), no.~5, 1103--1114.
+\url{https://mathnet.ru/eng/im2197}.
+
+\bibitem{Bom74}
+E. Bombieri, \emph{Counting points on curves over finite fields (d'apr\`es S. A. Stepanov)},
+S\'eminaire Bourbaki, exp.~430 (June 1973), in \emph{S\'eminaire Bourbaki 1972/73},
+Lecture Notes in Mathematics 383, Springer, 1974, 234--241.
+\url{https://www.numdam.org/item/SB_1972-1973__15__234_0/}.
+
+\bibitem{Mil20}
+J. S. Milne, \emph{Elliptic Curves}, second edition, World Scientific, 2021.
+See Chapter I, Theorem~4.13 and formula~(8), pp.~35--36, and Chapter IV,
+Proposition~9.9, Theorem~9.10 and Remark~9.11(a), pp.~155--156.
+Author's text: \url{https://www.jmilne.org/math/Books/EC2.pdf};
+mathematics site: \url{https://www.jmilne.org/math/}.
+\end{thebibliography}
+
+\end{document}
+

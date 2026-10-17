@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Dossier de Vincent P. P. NOËL - rédaction assistée" />
+  <title>Amplification arithmétique - V6.55</title>
+  <style>
+    html {
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: NavyBlue;
+    }
+    a:visited {
+      color: NavyBlue;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  
+  <style>
+  :root { color-scheme: light; }
+  html { background:#edf2f5; color:#172d3d; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.7; }
+  body { max-width:1020px; margin:28px auto; padding:32px 44px 60px; background:#fff; border-radius:16px; }
+  h1,h2,h3 { color:#124f68; line-height:1.3; scroll-margin-top:24px; }
+  h1 { font-size:1.7rem; margin-top:2.6rem; }
+  h2 { font-size:1.3rem; margin-top:2rem; }
+  h3 { font-size:1.12rem; }
+  header .title { margin-top:1.1rem; font-size:2rem; }
+  header .subtitle { color:#526c7b; font-size:1.15rem; }
+  a { color:#075c83; text-underline-offset:.15em; overflow-wrap:anywhere; }
+  p,li { overflow-wrap:break-word; }
+  .resource-nav { display:flex; flex-wrap:wrap; gap:8px 18px; padding:14px 18px; background:#eaf3f7; border-radius:10px; }
+  .research-status { margin:18px 0 24px; padding:16px 18px; border-left:5px solid #9a5d16; background:#fff6e8; }
+  .research-status p { margin:.3em 0; }
+  #TOC { border:1px solid #d4e0e7; padding:18px 24px; background:#f5f8fa; border-radius:10px; margin:24px 0; }
+  #TOC ul { padding-left:1.25em; }
+  table { border-collapse:collapse; width:100%; margin:1.5rem 0; font-size:.95rem; }
+  th,td { padding:.7rem .8rem; border-bottom:1px solid #d3dfe6; text-align:left; vertical-align:top; }
+  th { background:#eaf3f7; }
+  pre { overflow-x:auto; padding:1rem; border:1px solid #d5e0e8; border-radius:8px; background:#f4f7fa; line-height:1.5; }
+  code { font-size:.92em; white-space:pre-wrap; }
+  blockquote { margin-left:0; padding:.4rem 1.2rem; border-left:4px solid #b4cbd5; background:#f4f8fa; }
+  math { font-family:"Cambria Math","STIX Two Math","Latin Modern Math",serif; }
+  math[display="block"] { display:block; max-width:100%; overflow-x:auto; overflow-y:hidden; margin:1.35rem 0; padding:.4rem .1rem; font-size:1.1em; }
+  math[display="inline"] { font-size:1.02em; }
+  img { max-width:100%; height:auto; }
+  .note-footer { border-top:1px solid #d3dfe6; margin-top:3rem; padding-top:1rem; color:#536b79; font-size:.93rem; }
+  @media (max-width:720px) {
+    body { margin:0; padding:18px 16px 40px; border-radius:0; }
+    header .title { font-size:1.7rem; }
+    h1 { font-size:1.45rem; }
+    table { display:block; max-width:100%; overflow-x:auto; }
+    th,td { min-width:10rem; padding:.6rem; }
+    math[display="block"] { font-size:1.02em; }
+  }
+  @media print {
+    html { background:white; }
+    body { max-width:none; margin:0; padding:0; }
+    .resource-nav { display:none; }
+    h1,h2,h3 { break-after:avoid; }
+    table,pre,math[display="block"] { break-inside:avoid; }
+  }
+  </style>
+</head>
+<body>
+<nav class="topnav" style="display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline" aria-label="Pages et ressources du programme"><a data-primary="portail" href="../00_PORTAIL.html">Portail</a><a data-primary="indicateur" href="../1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateurs</a><a data-primary="navigateur" href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur</a><a data-primary="carte" href="../00_Carte_des_idees.html">Graphe des idées</a><a data-tool-link="bellman" href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html#bellman">Bellman</a><details class="nav-documents" style="position:relative;border:0;margin:0;padding:0"><summary style="cursor:pointer;font:inherit;padding:0;color:inherit">Documents</summary><ul style="position:absolute;z-index:90;right:0;top:100%;min-width:225px;max-width:85vw;margin:8px 0 0;padding:10px 15px;list-style:none;border:1px solid var(--rule,#b9c7d3);border-radius:4px;background:var(--sheet,#fff);color:var(--ink,#14243a);box-shadow:0 4px 12px #0002"><li style="padding:6px 0"><a data-resource="atlas" href="../1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html#documents">Atlas des décisions (62) : documents</a></li><li style="padding:6px 0"><a data-resource="matrice" href="../1_Presentation/44_MATRICE_DES_THEORIES.html">Matrice visuelle des théories (44)</a></li><li style="padding:6px 0"><a data-resource="references-pdf" href="../1_Presentation/42_REGISTRE_DES_SOURCES.pdf">Registre des sources : PDF existant</a></li><li style="padding:6px 0"><a data-resource="references" href="../1_Presentation/42_REGISTRE_DES_SOURCES.html">Références globales</a></li><li style="padding:6px 0"><a data-resource="figures" href="../00_Liste_des_figures.html">Figures et images</a></li><li style="padding:6px 0"><a data-resource="articles" href="../00_PORTAIL.html#articles">Articles PDF / LaTeX</a></li><li style="padding:6px 0"><a data-resource="dossiers" href="../00_PORTAIL.html#documents">Catalogue : tous les fichiers et fiches</a></li></ul></details></nav>
+<nav class="resource-nav" aria-label="Documents et ressources">
+<a href="../00_PORTAIL.html">Portail global V6.55</a>
+<a href="ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf">PDF</a>
+<a href="ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.tex">Source LaTeX</a>
+<a href="ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md">Source Markdown</a>
+<a href="../3_Preuves_et_calculs/amplification_20261014/README.md">Programmes et résultats</a>
+<a href="CORRELATIONS_IDENTITE_ET_ENERGIE.html">Base V6.54 : corrélations et énergie</a>
+</nav>
+
+<header id="title-block-header">
+<h1 class="title">Amplification arithmétique - V6.55</h1>
+<p class="subtitle">Restitution exacte, petits conducteurs contrôlés et
+dette restante</p>
+<p class="author">Dossier de Vincent P. P. NOËL - rédaction assistée</p>
+<p class="date">14 octobre 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#ce-que-lessai-a-effectivement-produit"
+id="toc-ce-que-lessai-a-effectivement-produit">Ce que l’essai a
+effectivement produit</a></li>
+<li><a href="#la-source-exacte-et-ses-bornes-élémentaires"
+id="toc-la-source-exacte-et-ses-bornes-élémentaires">1. La source exacte
+et ses bornes élémentaires</a></li>
+<li><a href="#construire-les-copies-et-les-restituer"
+id="toc-construire-les-copies-et-les-restituer">2. Construire les copies
+et les restituer</a></li>
+<li><a href="#regrouper-la-dette-selon-son-conducteur"
+id="toc-regrouper-la-dette-selon-son-conducteur">3. Regrouper la dette
+selon son conducteur</a></li>
+<li><a href="#un-domaine-croissant-contrôlé-sans-rh"
+id="toc-un-domaine-croissant-contrôlé-sans-rh">4. Un domaine croissant
+contrôlé sans RH</a></li>
+<li><a href="#pourquoi-le-grand-crible-usuel-ne-termine-pas"
+id="toc-pourquoi-le-grand-crible-usuel-ne-termine-pas">5. Pourquoi le
+grand crible usuel ne termine pas</a></li>
+<li><a href="#lestimation-restante-et-ce-quelle-donnerait"
+id="toc-lestimation-restante-et-ce-quelle-donnerait">6. L’estimation
+restante et ce qu’elle donnerait</a></li>
+<li><a href="#calculs-exécutés-limites-et-prochaine-attaque"
+id="toc-calculs-exécutés-limites-et-prochaine-attaque">7. Calculs
+exécutés, limites et prochaine attaque</a></li>
+<li><a href="#références-reproduction-et-statut"
+id="toc-références-reproduction-et-statut">Références, reproduction et
+statut</a></li>
+</ul>
+</nav>
+<h1 id="ce-que-lessai-a-effectivement-produit">Ce que l’essai a
+effectivement produit</h1>
+<p><strong>Type de document :</strong> note de recherche avec preuves
+auxiliaires, confrontation constructive et critique, programmes et
+diagnostics reproductibles. Version V6.55, qui prolonge le dossier V6.54
+; cette tentative n’établit aucune nouvelle borne sur l’énergie totale
+et ne démontre pas RH. Aucune priorité historique n’est revendiquée.</p>
+<p>L’amplification est essayée ici sur les entiers avec le poids exact
+du dossier. On construit une famille de traductions arithmétiques, puis
+on demande si son énergie moyenne contrôle la somme initiale. Trois
+éléments sont démontrés :</p>
+<ol type="1">
+<li>Les paramètres carrés permettent une <strong>restitution
+exacte</strong>, par différence entre deux échelles, sans erreur de
+copie.</li>
+<li>La dette des corrélations se regroupe selon un indice unique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+le conducteur d’un caractère quadratique.</li>
+<li>Toute la partie
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>≤</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">q\le H</annotation></semantics></math>
+est majorée à l’échelle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><msup><mi>X</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">HX^2</annotation></semantics></math>,
+à des logarithmes près, pour toutes les échelles. Le reste porte sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">q&gt;H</annotation></semantics></math>.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Opération</th>
+<th style="text-align: left;">Résultat</th>
+<th style="text-align: left;">Portée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Retrouver la cible dans la famille</td>
+<td style="text-align: left;">Identité exacte et restitution stable</td>
+<td style="text-align: left;">Démontré</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Contrôler la diagonale et les petits
+conducteurs</td>
+<td style="text-align: left;">Bornes explicites, sans RH</td>
+<td style="text-align: left;">Démontré</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Contrôler la dette à grand conducteur</td>
+<td style="text-align: left;">Borne supérieure signée uniforme</td>
+<td style="text-align: left;">Ouvert</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">En déduire un demi-plan sans zéros</td>
+<td
+style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℜ</mi><mi>s</mi><mo>&gt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\Re s&gt;3/4</annotation></semantics></math>
+si la borne restante est prouvée</td>
+<td style="text-align: left;">Implication conditionnelle</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Atteindre la ligne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></td>
+<td style="text-align: left;">Contrôle plus fort de l’énergie
+initiale</td>
+<td style="text-align: left;">Ouvert</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verdict.</strong> Le mécanisme de copie fonctionne. Le grand
+crible ordinaire ne fournit pas l’annulation nécessaire. Une partie
+croissante de la dette est maintenant contrôlée analytiquement ; cela ne
+constitue pas un gain d’exposant sur la somme complète. Le verrou
+restant est localisé, pas franchi.</p>
+<p>Le résultat conditionnel recherché dans cet essai est volontairement
+plus faible que RH. Prouver sa dernière estimation constituerait un
+changement quantitatif global dans cette construction. Ajouter des
+copies ou augmenter un plafond de calcul ne le remplace pas.</p>
+<h1 id="la-source-exacte-et-ses-bornes-élémentaires">1. La source exacte
+et ses bornes élémentaires</h1>
+<p>Écrivons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\Lambda(p^k)=\log p</annotation></semantics></math>,
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Lambda(n)=0</annotation></semantics></math>
+sinon. Posons
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></munder><mi>Λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>x</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>c</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>γ</mi><mi>E</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\psi(x)=\sum_{n\le x}\Lambda(n),\qquad
+E(x)=\psi(x)-x,\qquad c=1+\gamma_E.
+</annotation></semantics></math> Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x\ge1</annotation></semantics></math>,
+avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mo stretchy="false" form="prefix">⌊</mo><mi>x</mi><mo stretchy="false" form="postfix">⌋</mo></mrow><annotation encoding="application/x-tex">N=\lfloor x\rfloor</annotation></semantics></math>,
+définissons
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>c</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mi>!</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>x</mi><msub><mi>h</mi><mi>N</mi></msub><mo>+</mo><mi>c</mi><mi>N</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>h</mi><mi>N</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mfrac><mn>1</mn><mi>j</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A(x)=E(x)+c,\qquad
+B(x)=\log(N!)-x h_N+cN,\qquad
+h_N=\sum_{j=1}^N\frac1j.
+</annotation></semantics></math> Nous prolongeons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+par zéro sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x&lt;1</annotation></semantics></math>.
+Cette convention s’appliquera à toutes les fonctions et dilatations
+ci-dessous.</p>
+<p><strong>Identité de diviseurs et inversion.</strong> Pour tout
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x\ge1</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>k</mi><mo>≤</mo><mi>x</mi></mrow></munder><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>k</mi><mo>≤</mo><mi>x</mi></mrow></munder><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sum_{k\le x}A(x/k)=B(x),\qquad
+A(x)=\sum_{k\le x}\mu(k)B(x/k).
+</annotation></semantics></math> En effet,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>d</mi><mo>∣</mo><mi>n</mi></mrow></msub><mi>Λ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\sum_{d\mid n}\Lambda(d)=\log n</annotation></semantics></math>
+entraîne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>k</mi><mo>≤</mo><mi>x</mi></mrow></msub><mi>ψ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mi>!</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{k\le x}\psi(x/k)=\log(N!)</annotation></semantics></math>.
+Les deux autres termes donnent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>x</mi><msub><mi>h</mi><mi>N</mi></msub><mo>+</mo><mi>c</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">-xh_N+cN</annotation></semantics></math>.
+Pour inverser, regrouper les sommes finies par
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mi>k</mi><mo>ℓ</mo></mrow><annotation encoding="application/x-tex">j=k\ell</annotation></semantics></math>
+et utiliser
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>k</mi><mo>∣</mo><mi>j</mi></mrow></msub><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mn>𝟏</mn><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\sum_{k\mid j}\mu(k)=\mathbf1_{j=1}</annotation></semantics></math>.
+Aucune limite n’intervient.</p>
+<p><strong>Borne explicite de la source.</strong> Si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>N</mi><mo>+</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">x=N+\theta</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0\le\theta&lt;1</annotation></semantics></math>,
+les restes de Stirling et du développement harmonique donnent
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow></mrow></mtd><mtd columnalign="left" style="text-align: left"><mrow><mo stretchy="true" form="prefix">(</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>log</mo><mi>N</mi><mo>+</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>π</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><msub><mi>γ</mi><mi>E</mi></msub><mi>θ</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>−</mo><mfrac><mi>θ</mi><mrow><mn>2</mn><mi>N</mi></mrow></mfrac><mo>+</mo><msub><mi>r</mi><mi>N</mi></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mo>+</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>e</mi><mi>N</mi></msub><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mn>0</mn><mo>&lt;</mo><msub><mi>r</mi><mi>N</mi></msub><mo>&lt;</mo><mfrac><mn>1</mn><mrow><mn>12</mn><mi>N</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mn>0</mn><mo>&lt;</mo><msub><mi>e</mi><mi>N</mi></msub><mo>&lt;</mo><mfrac><mn>1</mn><mrow><mn>12</mn><msup><mi>N</mi><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+B(x)={}&amp;(\tfrac12-\theta)\log N
+ +\tfrac12\log(2\pi)-\tfrac12-\gamma_E\theta\\
+ &amp;-\frac{\theta}{2N}+r_N+(N+\theta)e_N,\\
+&amp;0&lt;r_N&lt;\frac1{12N},\qquad 0&lt;e_N&lt;\frac1{12N^2}.
+\end{aligned}
+</annotation></semantics></math> Le reste après
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>−</mo><mi>θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>log</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">(1/2-\theta)\log N</annotation></semantics></math>
+est compris entre
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>3</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">-3/2</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">3/4</annotation></semantics></math>.
+Il en résulte la borne commode
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>log</mo><mi>x</mi><mo>+</mo><mn>2</mn><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>≥</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+|B(x)|\le\tfrac12\log x+2\qquad(x\ge1).
+</annotation></semantics></math></p>
+<p><strong>Deux coûts utiles.</strong> La comparaison avec les fonctions
+décroissantes de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\tfrac12\log(x/t)+2</annotation></semantics></math>
+et son carré, sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>t</mi><mo>≤</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">0&lt;t\le x</annotation></semantics></math>,
+donne
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mi>x</mi><mo>,</mo><mspace width="2.0em"></mspace><munder><mo>∑</mo><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></munder><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mo>≤</mo><mfrac><mn>13</mn><mn>2</mn></mfrac><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sum_{n\le x}|B(x/n)|\le\frac52 x,
+\qquad
+\sum_{n\le x}|B(x/n)|^2\le\frac{13}{2}x.
+</annotation></semantics></math> Par exemple, la seconde somme est au
+plus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>x</mi></msubsup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>t</mi><mo>=</mo><mn>13</mn><mi>x</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\int_0^x(\frac12\log(x/t)+2)^2dt=13x/2</annotation></semantics></math>.
+La diagonale de l’énergie
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>A</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mo>∫</mo><mn>1</mn><mi>X</mi></msubsup><mi>A</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">J_A(X)=\int_1^XA(x)^2dx</annotation></semantics></math>
+vérifie donc
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mfrac><mn>13</mn><mn>4</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+D(X)\le\frac{13}{4}(X^2-1).
+</annotation></semantics></math> Cela améliore la constante auxiliaire
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">13/2</annotation></semantics></math>
+précédemment annoncée ; cela n’améliore pas la borne de l’énergie
+totale. Les bornitudes quadratiques de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>J</mi><mi>A</mi></msub><annotation encoding="application/x-tex">J_A</annotation></semantics></math>
+et de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><msubsup><mo>∫</mo><mn>1</mn><mi>X</mi></msubsup><mi>E</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">J=\int_1^XE(x)^2dx</annotation></semantics></math>
+sont équivalentes par
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mn>2</mn><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(a+b)^2\le2a^2+2b^2</annotation></semantics></math>.</p>
+<h1 id="construire-les-copies-et-les-restituer">2. Construire les copies
+et les restituer</h1>
+<p>Le symbole de Jacobi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(u/n)</annotation></semantics></math>
+prend les valeurs
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1,0,1</annotation></semantics></math>
+pour un dénominateur impair positif ;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mi>/</mi><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(u/1)=1</annotation></semantics></math>.
+Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+sans carré, c’est un caractère quadratique, nul si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+ont un facteur premier commun.</p>
+<p>Définissons la composante impaire et la famille
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> impair</mtext></mrow></mrow></mtd></mtr></mtable></munder><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>F</mi><mi>u</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> impair</mtext></mrow></mrow></mtd></mtr></mtable></munder><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A_o(x)=\sum_{\substack{n\le x\\n\text{ impair}}}\mu(n)B(x/n),\qquad
+F_u(x)=\sum_{\substack{n\le x\\n\text{ impair}}}
+\mu(n)\left(\frac un\right)B(x/n).
+</annotation></semantics></math> Les termes non sans carré sont
+automatiquement nuls. En séparant les indices pairs dans l’inversion de
+Möbius,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>A</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>A</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{A(x)=A_o(x)-A_o(x/2).}
+</annotation></semantics></math></p>
+<p><strong>Lemme de restitution.</strong> Pour tout premier impair
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><msub><mi>A</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{A_o(x)=F_{p^2}(x)-F_{p^2}(x/p).}
+</annotation></semantics></math> En effet,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mn>2</mn></msup><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mn>𝟏</mn><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">(p^2/n)=\mathbf1_{(n,p)=1}</annotation></semantics></math>
+pour les indices retenus. La somme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><annotation encoding="application/x-tex">F_{p^2}</annotation></semantics></math>
+est donc
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>o</mi></msub><annotation encoding="application/x-tex">A_o</annotation></semantics></math>
+privée des multiples de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Ces multiples sont
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>p</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">n=pm</annotation></semantics></math>,
+avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo>,</mo><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(m,p)=1</annotation></semantics></math>
+; leur contribution est
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">-F_{p^2}(x/p)</annotation></semantics></math>,
+par
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>p</mi><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(pm)=-\mu(m)</annotation></semantics></math>.
+C’est une identité finie, pas une approximation.</p>
+<p><strong>Opérateur réutilisable.</strong> Posons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>p</mi></msub><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>p</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">L_pf(x)=f(x/p)</annotation></semantics></math>.
+Pour
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒩</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>sup</mo><mrow><mn>1</mn><mo>≤</mo><mi>Y</mi><mo>≤</mo><mi>T</mi></mrow></munder><mfrac><mn>1</mn><mi>Y</mi></mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mo>∫</mo><mn>1</mn><mi>Y</mi></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\mathcal N_T(f)=\sup_{1\le Y\le T}
+\frac1Y\left(\int_1^Y|f(x)|^2dx\right)^{1/2},
+</annotation></semantics></math> le changement de variable donne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝒩</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>L</mi><mi>p</mi></msub><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msup><mi>p</mi><mrow><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>𝒩</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal N_T(L_pf)\le p^{-1/2}\mathcal N_T(f)</annotation></semantics></math>.
+La restitution s’écrit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>o</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>−</mo><msub><mi>L</mi><mi>p</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub></mrow><annotation encoding="application/x-tex">A_o=(I-L_p)F_{p^2}</annotation></semantics></math>
+et son inverse
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>−</mo><msub><mi>L</mi><mi>p</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><msub><mi>A</mi><mi>o</mi></msub><mo>=</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>≥</mo><mn>0</mn></mrow></munder><msubsup><mi>L</mi><mi>p</mi><mi>j</mi></msubsup><msub><mi>A</mi><mi>o</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F_{p^2}=(I-L_p)^{-1}A_o=\sum_{j\ge0}L_p^jA_o.
+</annotation></semantics></math> La somme est finie en chaque point ;
+sur la norme énergétique, la série des coûts est majorée par
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>j</mi></msub><msup><mi>p</mi><mrow><mo>−</mo><mi>j</mi><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\sum_jp^{-j/2}</annotation></semantics></math>.
+Ainsi
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>𝒩</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>o</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>p</mi><mrow><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow></mfrac><mo>≤</mo><msub><mi>𝒩</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mfrac><mrow><msub><mi>𝒩</mi><mi>T</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>o</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>p</mi><mrow><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{\mathcal N_T(A_o)}{1+p^{-1/2}}
+\le\mathcal N_T(F_{p^2})
+\le\frac{\mathcal N_T(A_o)}{1-p^{-1/2}}.
+</annotation></semantics></math> La stabilité est uniforme en
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.
+Elle ne prouve pas que ces normes restent bornées lorsque
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+croît : elle compare les copies à leur source.</p>
+<p>Plus généralement, si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>r</mi><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">u=rs^2</annotation></semantics></math>
+avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+sans carré, posons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>r</mi></msub><mo>=</mo><msub><mi>F</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">A_r=F_r</annotation></semantics></math>.
+Les dilatations commutent et la même preuve donne
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>r</mi><msup><mi>s</mi><mn>2</mn></msup></mrow></msub><mo>=</mo><munder><mo>∏</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>p</mi><mo>∣</mo><mi>s</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>p</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> premier impair</mtext></mrow></mrow></mtd></mtr></mtable></munder><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>r</mi><mi>p</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>L</mi><mi>p</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><msub><mi>A</mi><mi>r</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+F_{rs^2}=\prod_{\substack{p\mid s\\p\text{ premier impair}}}
+\left(I-\left(\frac rp\right)L_p\right)^{-1}A_r.
+</annotation></semantics></math> Cette grammaire d’opérateurs décrit
+exactement toutes les lignes, y compris les copies issues de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r=1</annotation></semantics></math>.
+Les facteurs 2 de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+ne changent rien, les dénominateurs étant impairs. Cette écriture ne
+rend pas les copies indépendantes.</p>
+<h1 id="regrouper-la-dette-selon-son-conducteur">3. Regrouper la dette
+selon son conducteur</h1>
+<p>Pour un entier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H\ge1</annotation></semantics></math>,
+introduisons l’énergie moyenne
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow><mi>H</mi></munderover><msubsup><mo>∫</mo><mn>1</mn><mi>X</mi></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>F</mi><mi>u</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>=</mo><msub><mi>D</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msub><mi>R</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+Q_H(X)=\sum_{u=1}^H\int_1^X|F_u(x)|^2dx=D_H(X)+R_H(X).
+</annotation></semantics></math> La diagonale est positive et satisfait
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mo>≤</mo><mi>X</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> impair</mtext></mrow></mrow></mtd></mtr></mtable></munder><mi>μ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>#</mi><mo stretchy="false" form="prefix">{</mo><mi>u</mi><mo>≤</mo><mi>H</mi><mo>:</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><msubsup><mo>∫</mo><mi>n</mi><mi>X</mi></msubsup><mi>B</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>≤</mo><mfrac><mn>13</mn><mn>4</mn></mfrac><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+D_H(X)=\sum_{\substack{n\le X\\n\text{ impair}}}\mu(n)^2
+\#\{u\le H:(u,n)=1\}\int_n^XB(x/n)^2dx
+\le\frac{13}{4}H(X^2-1).
+</annotation></semantics></math></p>
+<p>Pour deux indices sans carré, écrire
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>g</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">n=ga</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>g</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">m=gb</annotation></semantics></math>.
+Alors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">a,b,g</annotation></semantics></math>
+sont impairs, sans carré et deux à deux premiers entre eux. Avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">q=ab</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>m</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mn>𝟏</mn><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>q</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mu(n)\mu(m)=\mu(q),\qquad
+\left(\frac un\right)\left(\frac um\right)
+=\mathbf1_{(u,g)=1}\left(\frac uq\right).
+</annotation></semantics></math> Le facteur commun disparaît du signe de
+Möbius et devient une condition de coprimalité. Le signe restant
+appartient au seul indice
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.</p>
+<p>Posons
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>K</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><msubsup><mo>∫</mo><mrow><mi>g</mi><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>X</mi></msubsup><mi>B</mi><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>x</mi><mrow><mi>g</mi><mi>a</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>x</mi><mrow><mi>g</mi><mi>b</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>;</mo><mi>q</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><munder><mo>∑</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>u</mi><mo>≤</mo><mi>H</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></munder><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>q</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+K_X(g;a,b)&amp;=\int_{g\max(a,b)}^X
+B\!\left(\frac{x}{ga}\right)B\!\left(\frac{x}{gb}\right)dx,\\
+S(H;q,g)&amp;=\sum_{\substack{u\le H\\(u,g)=1}}\left(\frac uq\right).
+\end{aligned}
+</annotation></semantics></math> Le noyau vaut zéro si sa borne
+inférieure dépasse
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.
+Le regroupement exact de toute la dette est
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><msub><mi>R</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>q</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> impair, sans carré</mtext></mrow></mrow></mtd></mtr></mtable></munder><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><munder><mo>∑</mo><mrow><mi>a</mi><mo>∣</mo><mi>q</mi></mrow></munder><munder><mo>∑</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>g</mi><mo>≤</mo><mi>X</mi><mi>/</mi><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>q</mi><mi>/</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>g</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> impair, sans carré</mtext></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo>,</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></munder><msub><mi>K</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>q</mi><mi>/</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>;</mo><mi>q</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{
+R_H(X)=\sum_{\substack{q&gt;1\\q\text{ impair, sans carré}}}\mu(q)
+\sum_{a\mid q}
+\sum_{\substack{g\le X/\max(a,q/a)\\
+g\text{ impair, sans carré}\\(g,q)=1}}
+K_X(g;a,q/a)S(H;q,g).}
+</annotation></semantics></math> Tous les couples ordonnés sont comptés
+: la somme sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∣</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">a\mid q</annotation></semantics></math>
+inclut les deux orientations. Le cas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q=1</annotation></semantics></math>
+redonne exactement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>H</mi></msub><annotation encoding="application/x-tex">D_H</annotation></semantics></math>,
+sans facteur 2 supplémentaire. Les conducteurs
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q&gt;1</annotation></semantics></math>
+sont au plus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>X</mi><mn>2</mn></msup><annotation encoding="application/x-tex">X^2</annotation></semantics></math>.</p>
+<p>Cette écriture conserve les coupures, les poids et les signes. Ce
+n’est pas une assertion de positivité terme par terme :
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>X</mi></msub><annotation encoding="application/x-tex">K_X</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(q)</annotation></semantics></math>
+peuvent avoir des signes différents.</p>
+<h1 id="un-domaine-croissant-contrôlé-sans-rh">4. Un domaine croissant
+contrôlé sans RH</h1>
+<p><strong>Lemme des petits conducteurs.</strong> Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">X\ge1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">Q\ge2</annotation></semantics></math>
+et tout entier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H\ge1</annotation></semantics></math>,
+la partie
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>q</mi><mo>≤</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">1&lt;q\le Q</annotation></semantics></math>
+de la somme précédente vérifie
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mtable><mtr><mtd columnalign="right" style="text-align: right"><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>R</mi><mrow><mn>1</mn><mo>&lt;</mo><mi>q</mi><mo>≤</mo><mi>Q</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>,</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mrow></mrow></mtd><mtd columnalign="left" style="text-align: left"><msup><mi>X</mi><mn>2</mn></msup><mi>Q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"></mtd><mtd columnalign="left" style="text-align: left"><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>13</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>4</mn></mfrac><mo>log</mo><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mtd></mtr></mtable></menclose><annotation encoding="application/x-tex">
+\boxed{\begin{aligned}
+|R_{1&lt;q\le Q}(X,H)|\le{}&amp;X^2Q(1+\log X)(1+\log Q)^2\\
+&amp;\times\left(\frac{13}{2}+\frac54\log Q\right).
+\end{aligned}}
+</annotation></semantics></math></p>
+<p><strong>Preuve, étape 1 : Fourier et coprimalité.</strong> Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q&gt;1</annotation></semantics></math>
+impair sans carré,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>χ</mi><mi>q</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mi>/</mi><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\chi_q(v)=(v/q)</annotation></semantics></math>
+est primitif et non principal. Sa somme de Gauss a module
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>q</mi></msqrt><annotation encoding="application/x-tex">\sqrt q</annotation></semantics></math>.
+La transformation de Fourier finie, la somme géométrique et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>sin</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>π</mi><mi>j</mi><mi>/</mi><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>2</mn><mi>j</mi><mi>/</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">\sin(\pi j/q)\ge2j/q</annotation></semantics></math>
+pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1\le j\le(q-1)/2</annotation></semantics></math>
+donnent
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><munder><mo>∑</mo><mrow><mi>v</mi><mo>≤</mo><mi>Y</mi></mrow></munder><msub><mi>χ</mi><mi>q</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><msqrt><mi>q</mi></msqrt><mspace width="0.167em"></mspace><msub><mi>h</mi><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow></msub><mo>≤</mo><msqrt><mi>q</mi></msqrt><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\left|\sum_{v\le Y}\chi_q(v)\right|
+\le\sqrt q\,h_{(q-1)/2}\le\sqrt q(1+\log q).
+</annotation></semantics></math> La borne est uniforme en
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+: les périodes complètes ont une somme nulle. L’inclusion-exclusion
+donne exactement
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>;</mo><mi>q</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>d</mi><mo>∣</mo><mi>g</mi></mrow></munder><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>d</mi><mi>q</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><munder><mo>∑</mo><mrow><mi>v</mi><mo>≤</mo><mi>H</mi><mi>/</mi><mi>d</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>v</mi><mi>q</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">|</mo><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>;</mo><mi>q</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mi>τ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><msqrt><mi>q</mi></msqrt><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+S(H;q,g)=\sum_{d\mid g}\mu(d)\left(\frac dq\right)
+\sum_{v\le H/d}\left(\frac vq\right),
+\quad |S(H;q,g)|\le\tau(g)\sqrt q(1+\log q),
+</annotation></semantics></math> où
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\tau(g)</annotation></semantics></math>
+est le nombre des diviseurs de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>.</p>
+<p><strong>Étape 2 : payer tous les multiplicateurs communs.</strong> Si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\le b</annotation></semantics></math>,
+le changement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>g</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">x=gu</annotation></semantics></math>
+puis la comparaison
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>g</mi><mo>≤</mo><mi>Y</mi></mrow></msub><mi>g</mi><mi>τ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><msup><mi>Y</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>Y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{g\le Y}g\tau(g)\le Y^2(1+\log Y)</annotation></semantics></math>
+entraînent
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>g</mi><mo>≤</mo><mi>X</mi><mi>/</mi><mi>b</mi></mrow></munder><mi>τ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>K</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo>;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><msup><mi>X</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><msubsup><mo>∫</mo><mi>b</mi><mi>∞</mi></msubsup><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mi>/</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mi>/</mi><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>u</mi><mn>2</mn></msup></mfrac><mi>d</mi><mi>u</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sum_{g\le X/b}\tau(g)|K_X(g;a,b)|
+\le X^2(1+\log X)\int_b^\infty
+\frac{|B(u/a)B(u/b)|}{u^2}du.
+</annotation></semantics></math> La borne de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>,
+avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>b</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">u=bv</annotation></semantics></math>,
+donne
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mi>b</mi><mi>∞</mi></msubsup><mfrac><mrow><mo stretchy="true" form="prefix">|</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mi>/</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mi>/</mi><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>u</mi><mn>2</mn></msup></mfrac><mi>d</mi><mi>u</mi><mo>≤</mo><mfrac><mn>1</mn><mi>b</mi></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>13</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>4</mn></mfrac><mo>log</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\int_b^\infty\frac{|B(u/a)B(u/b)|}{u^2}du
+\le\frac1b\left(\frac{13}{2}+\frac54\log\frac ba\right).
+</annotation></semantics></math></p>
+<p><strong>Étape 3 : sommer les conducteurs.</strong> Puisque
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi><mo>=</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">ab=q</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>q</mi></msqrt><mi>/</mi><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sqrt q/\max(a,b)\le1</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>b</mi><mi>/</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mo>log</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\log(b/a)\le\log q</annotation></semantics></math>.
+Utiliser enfin
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mrow><mi>q</mi><mo>≤</mo><mi>Q</mi></mrow></msub><mi>τ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>Q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>Q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{q\le Q}\tau(q)\le Q(1+\log Q)</annotation></semantics></math>.
+Supprimer les restrictions de coprimalité, de parité et de carré dans
+ces majorations positives ne fait qu’augmenter le membre de droite. Cela
+prouve le lemme.</p>
+<p><strong>Conséquence.</strong> Choisir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">Q=H</annotation></semantics></math>
+contrôle la tête à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><msup><mi>X</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">HX^2</annotation></semantics></math>,
+avec des logarithmes. À
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>X</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">H=X\ge2</annotation></semantics></math>,
+elle est
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>X</mi><mn>3</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>4</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">O(X^3(1+\log X)^4)</annotation></semantics></math>.
+Le reste est situé dans
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mi>X</mi><mo>&lt;</mo><mi>q</mi><mo>≤</mo><msup><mi>X</mi><mn>2</mn></msup><mo>,</mo><mspace width="2.0em"></mspace><mi>g</mi><mo>&lt;</mo><msqrt><mi>X</mi></msqrt><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{X&lt;q\le X^2,\qquad g&lt;\sqrt X.}
+</annotation></semantics></math> La borne de la tête est absolue. Elle
+ne constitue pas une loi de signe globale.</p>
+<h1 id="pourquoi-le-grand-crible-usuel-ne-termine-pas">5. Pourquoi le
+grand crible usuel ne termine pas</h1>
+<p>Le grand crible quadratique primitif contrôle les lignes impaires
+sans carré. Sur un bloc
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≍</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">n\asymp D</annotation></semantics></math>,
+il donne un coût
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>∑</mo><mi>n</mi></msub><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(H+D)\sum_n|a_n|^2</annotation></semantics></math>,
+à un facteur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>ε</mi></msup><annotation encoding="application/x-tex">(HD)^\varepsilon</annotation></semantics></math>
+près [1,2]. Les paramètres carrés nécessaires aux copies n’appartiennent
+pas à cette famille.</p>
+<p>Pour réintroduire toutes les lignes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>r</mi><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">u=rs^2</annotation></semantics></math>,
+on applique ce résultat aux coefficients
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><msub><mn>𝟏</mn><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_n\mathbf1_{(n,s)=1}</annotation></semantics></math>
+puis on somme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≤</mo><msqrt><mi>H</mi></msqrt></mrow><annotation encoding="application/x-tex">s\le\sqrt H</annotation></semantics></math>.
+Les lignes paires se traitent en tordant les coefficients par
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2/n)</annotation></semantics></math>.
+On obtient
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>u</mi><mo>≤</mo><mi>H</mi></mrow></munder><msup><mrow><mo stretchy="true" form="prefix">|</mo><munder><mo>∑</mo><mrow><mi>n</mi><mo>≍</mo><mi>D</mi></mrow></munder><msub><mi>a</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><msub><mo>≪</mo><mi>ε</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mi>D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>ε</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><mo>+</mo><mi>D</mi><msqrt><mi>H</mi></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><munder><mo>∑</mo><mi>n</mi></munder><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sum_{u\le H}\left|\sum_{n\asymp D}a_n\left(\frac un\right)\right|^2
+\ll_\varepsilon(HD)^\varepsilon
+\left(H+D\sqrt H\right)\sum_n|a_n|^2.
+</annotation></semantics></math> Le terme supplémentaire vient de la
+somme des coûts
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>,
+pour chaque
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>.
+Avec le poids exact et les bornes du §1, l’intégration laisse un terme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mn>3</mn></msup><msqrt><mi>H</mi></msqrt></mrow><annotation encoding="application/x-tex">X^3\sqrt H</annotation></semantics></math>,
+à des facteurs
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mi>ε</mi></msup><msup><mi>H</mi><mi>ε</mi></msup></mrow><annotation encoding="application/x-tex">X^\varepsilon H^\varepsilon</annotation></semantics></math>
+près. Après division par le nombre des copies, ce terme rend une borne
+de taille
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>X</mi><mn>3</mn></msup><annotation encoding="application/x-tex">X^3</annotation></semantics></math>
+: aucun gain fixe d’exposant n’en résulte.</p>
+<p><strong>Le terme ne peut pas disparaître pour des coefficients
+arbitraires.</strong> Prenons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">H=D</annotation></semantics></math>
+et des coefficients
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>
+sur les premiers
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>/</mi><mn>2</mn><mo>&lt;</mo><mi>n</mi><mo>≤</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">D/2&lt;n\le D</annotation></semantics></math>,
+zéro ailleurs. Ces coefficients sont précisément
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(n)</annotation></semantics></math>
+sur ce support. Si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>&gt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">D&gt;4</annotation></semantics></math>,
+chaque carré
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">u=s^2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≤</mo><msqrt><mi>D</mi></msqrt></mrow><annotation encoding="application/x-tex">s\le\sqrt D</annotation></semantics></math>,
+est premier à tous ces indices ; sa ligne vaut donc moins le nombre
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>D</mi></msub><annotation encoding="application/x-tex">L_D</annotation></semantics></math>
+de premiers du support. Ces seules lignes imposent
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>u</mi><mo>≤</mo><mi>D</mi></mrow></munder><msup><mrow><mo stretchy="true" form="prefix">|</mo><munder><mo>∑</mo><mi>n</mi></munder><msub><mi>a</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>u</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mo>≥</mo><mo stretchy="false" form="prefix">⌊</mo><msqrt><mi>D</mi></msqrt><mo stretchy="false" form="postfix">⌋</mo><msubsup><mi>L</mi><mi>D</mi><mn>2</mn></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>L</mi><mi>D</mi></msub><mo>≍</mo><mfrac><mi>D</mi><mrow><mo>log</mo><mi>D</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\sum_{u\le D}\left|\sum_n a_n\left(\frac un\right)\right|^2
+\ge\lfloor\sqrt D\rfloor L_D^2,
+\qquad L_D\asymp\frac D{\log D}.
+</annotation></semantics></math> Cela exclut une borne universelle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>≪</mo><mi>ε</mi></msub><msup><mi>D</mi><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mi>ε</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\ll_\varepsilon D^{2+2\varepsilon}</annotation></semantics></math>
+pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&lt;</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\varepsilon&lt;1/4</annotation></semantics></math>.
+Le masque limité aux premiers diffère du poids exact
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+: <strong>ce contre-modèle ne réfute pas l’estimation spéciale
+recherchée</strong>. Il prouve qu’elle doit utiliser les relations entre
+premiers et composés, au-delà du seul fait que les coefficients portent
+un signe de Möbius.</p>
+<p><strong>Confrontation des deux analyses.</strong> La construction
+fournit des copies exactes et un classement par conducteur. La critique
+montre que traiter ces copies par un théorème pour lignes primitives
+oublie leur coût. Les deux analyses valident le contrôle des petits
+conducteurs ; aucune ne majore encore le reste.</p>
+<h1 id="lestimation-restante-et-ce-quelle-donnerait">6. L’estimation
+restante et ce qu’elle donnerait</h1>
+<p>Pour un entier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+grand, poser
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">H=X</annotation></semantics></math>
+et
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒫</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> premier impair</mtext></mrow><mo>:</mo><msqrt><mi>X</mi></msqrt><mi>/</mi><mn>2</mn><mo>&lt;</mo><mi>p</mi><mo>≤</mo><msqrt><mi>X</mi></msqrt><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mspace width="2.0em"></mspace><mi>M</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>𝒫</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≍</mo><msqrt><mi>X</mi></msqrt><mi>/</mi><mo>log</mo><mi>X</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathcal P=\{p\text{ premier impair}:\sqrt X/2&lt;p\le\sqrt X\},
+\qquad M=|\mathcal P|\asymp\sqrt X/\log X.
+</annotation></semantics></math> Le comptage asymptotique des premiers
+est inconditionnel. Les petites valeurs où
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒫</mi><annotation encoding="application/x-tex">\mathcal P</annotation></semantics></math>
+est vide se traitent séparément sur un intervalle compact.</p>
+<p>Avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mo>∫</mo><mn>1</mn><mi>X</mi></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>A</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">J_o(X)=\int_1^X|A_o(x)|^2dx</annotation></semantics></math>,
+la restitution exacte et le coût
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>F</mi><msup><mi>p</mi><mn>2</mn></msup></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mn>5</mn><mi>t</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">|F_{p^2}(t)|\le5t/2</annotation></semantics></math>
+donnent
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>M</mi><msub><mi>J</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>≤</mo><mn>2</mn><msub><mi>Q</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mfrac><mn>25</mn><mn>6</mn></mfrac><msup><mi>X</mi><mn>3</mn></msup><munder><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>𝒫</mi></mrow></munder><mfrac><mn>1</mn><msup><mi>p</mi><mn>2</mn></msup></mfrac><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>J</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo>≤</mo><mfrac><mrow><mn>2</mn><msub><mi>Q</mi><mi>H</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mi>M</mi></mfrac><mo>+</mo><mfrac><mn>50</mn><mn>3</mn></mfrac><msup><mi>X</mi><mn>2</mn></msup><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+M J_o(X)
+&amp;\le 2Q_H(X)+\frac{25}{6}X^3\sum_{p\in\mathcal P}\frac1{p^2},\\
+J_o(X)&amp;\le\frac{2Q_H(X)}M+\frac{50}{3}X^2.
+\end{aligned}
+</annotation></semantics></math> La seconde contribution paie la plus
+petite échelle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>/</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">x/p</annotation></semantics></math>.
+Elle est déjà sous contrôle ; aucune borne de niveau RH n’a été utilisée
+pour la payer.</p>
+<p><strong>Proposition conditionnelle.</strong> Si l’on démontrait, avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">C,k</annotation></semantics></math>
+fixes et indépendants de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>,
+la majoration signée
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><msub><mi>R</mi><mrow><mi>q</mi><mo>&gt;</mo><mi>X</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>;</mo><mi>H</mi><mo>=</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mi>C</mi><msup><mi>X</mi><mn>3</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msup><mo>,</mo></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{R_{q&gt;X}(X;H=X)\le C X^3(1+\log X)^k,}
+</annotation></semantics></math> alors le lemme des petits conducteurs
+et la diagonale donneraient
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>X</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≪</mo><msup><mi>X</mi><mn>3</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>J</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≪</mo><msup><mi>X</mi><mrow><mn>5</mn><mi>/</mi><mn>2</mn></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mn>1</mn></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+Q_X(X)\ll X^3(1+\log X)^{\max(k,4)},\quad
+J_o(X)\ll X^{5/2}(1+\log X)^{\max(k,4)+1}.
+</annotation></semantics></math> Puis
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mi>o</mi></msub><mo>−</mo><msub><mi>A</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mo>⋅</mo><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=A_o-A_o(\cdot/2)</annotation></semantics></math>
+entraîne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>A</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>2</mn><msub><mi>J</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mn>4</mn><msub><mi>J</mi><mi>o</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">J_A(X)\le2J_o(X)+4J_o(X/2)</annotation></semantics></math>.
+La même borne vaut pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>.
+Le passage des entiers aux réels utilise la croissance de l’intégrale
+positive et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≤</mo><mo stretchy="false" form="prefix">⌈</mo><mi>X</mi><mo stretchy="false" form="postfix">⌉</mo></mrow><annotation encoding="application/x-tex">X\le\lceil X\rceil</annotation></semantics></math>.
+La couverture est donc globale, si l’hypothèse est prouvée.</p>
+<p>Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>&gt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\sigma&gt;3/4</annotation></semantics></math>,
+Cauchy-Schwarz sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mi>U</mi><mo>,</mo><mn>2</mn><mi>U</mi><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[U,2U]</annotation></semantics></math>
+donne alors
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mi>U</mi><mrow><mn>2</mn><mi>U</mi></mrow></msubsup><mrow><mo stretchy="true" form="prefix">|</mo><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>x</mi><mrow><mo>−</mo><mi>σ</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>d</mi><mi>x</mi><mo>≪</mo><msup><mi>U</mi><mrow><mn>3</mn><mi>/</mi><mn>4</mn><mo>−</mo><mi>σ</mi></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo>log</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mo>max</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mn>2</mn></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\int_U^{2U}|E(x)|x^{-\sigma-1}dx
+\ll U^{3/4-\sigma}(1+\log U)^{(\max(k,4)+1)/2}.
+</annotation></semantics></math> La somme dyadique converge. La
+transformée de Mellin est holomorphe pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℜ</mi><mi>s</mi><mo>&gt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\Re s&gt;3/4</annotation></semantics></math>,
+et l’identité
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mfrac><mrow><mi>ζ</mi><mi>′</mi></mrow><mi>ζ</mi></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mi>s</mi><mrow><mi>s</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>s</mi><msubsup><mo>∫</mo><mn>1</mn><mi>∞</mi></msubsup><mi>E</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>x</mi><mrow><mo>−</mo><mi>s</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">
+-\frac{\zeta&#39;}{\zeta}(s)=\frac{s}{s-1}
++s\int_1^\infty E(x)x^{-s-1}dx
+</annotation></semantics></math> y exclut les pôles provenant de zéros.
+<strong>La conclusion conditionnelle est l’absence de zéros pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℜ</mi><mi>s</mi><mo>&gt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\Re s&gt;3/4</annotation></semantics></math>,
+pas RH.</strong></p>
+<p>Le critère classique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>O</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">J(X)=O(X^2)</annotation></semantics></math>
+vise encore la ligne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>
+et, par Weil, la positivité sur tous les tests admissibles [3,5]. Le
+demi-plan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℜ</mi><mi>s</mi><mo>&gt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\Re s&gt;3/4</annotation></semantics></math>
+ne suffirait pas à cette positivité globale. Aucun gain de cet ordre, ni
+même le gain conditionnel précédent, n’est démontré dans cet essai.</p>
+<h1 id="calculs-exécutés-limites-et-prochaine-attaque">7. Calculs
+exécutés, limites et prochaine attaque</h1>
+<p>Le programme <code>calcul_famille.py</code> utilise les coefficients
+entiers exacts de Möbius et Jacobi. Chaque
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>u</mi></msub><annotation encoding="application/x-tex">F_u</annotation></semantics></math>
+est affine sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>j</mi><mo>,</mo><mi>j</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[j,j+1)</annotation></semantics></math>
+; son énergie est intégrée par une primitive polynomiale, sans
+quadrature. Les coefficients réels sont calculés en double
+précision.</p>
+<table>
+<thead>
+<tr class="header">
+<th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">X=H</annotation></semantics></math></th>
+<th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>H</mi></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">Q_H/(HX^2)</annotation></semantics></math></th>
+<th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>H</mi></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">D_H/(HX^2)</annotation></semantics></math></th>
+<th
+style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>H</mi></msub><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>H</mi><msup><mi>X</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R_H/(HX^2)</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0,05975949</td>
+<td style="text-align: right;">0,05982849</td>
+<td style="text-align: right;">-0,00006900</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">0,05801004</td>
+<td style="text-align: right;">0,05861269</td>
+<td style="text-align: right;">-0,00060265</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">0,05640214</td>
+<td style="text-align: right;">0,05766501</td>
+<td style="text-align: right;">-0,00126287</td>
+</tr>
+</tbody>
+</table>
+<p>Ces nombres vérifient un calcul fini ; leurs signes n’établissent
+aucune loi infinie. Le programme indépendant
+<code>verifier_identites.py</code> recalcule la source en arithmétique
+décimale à 70 chiffres et vérifie :</p>
+<ul>
+<li>inversion de diviseurs, séparation paire et restitution des copies
+sur sept valeurs réelles et quatre premiers ; résidu maximal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>04</mn><mspace width="0.167em"></mspace><msup><mn>10</mn><mrow><mo>−</mo><mn>66</mn></mrow></msup></mrow><annotation encoding="application/x-tex">3,04\,10^{-66}</annotation></semantics></math>
+;</li>
+<li>regroupement ponctuel par conducteur : résidu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mspace width="0.167em"></mspace><msup><mn>10</mn><mrow><mo>−</mo><mn>68</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2\,10^{-68}</annotation></semantics></math>
+;</li>
+<li>intégration indépendante à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mn>31</mn></mrow><annotation encoding="application/x-tex">X=31</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math>,
+à partir des valeurs et dérivées directes plutôt que des sauts ;
+différence avec le moteur flottant à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">X=100</annotation></semantics></math>
+inférieure à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>1</mn><mspace width="0.167em"></mspace><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup></mrow><annotation encoding="application/x-tex">1,1\,10^{-10}</annotation></semantics></math>
+pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mi>H</mi></msub><annotation encoding="application/x-tex">Q_H</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>H</mi></msub><annotation encoding="application/x-tex">D_H</annotation></semantics></math>
+;</li>
+<li>contre-modèle aux coefficients arbitraires : lignes carrées comptées
+exactement pour cinq tailles, jusqu’à un million.</li>
+</ul>
+<p>Les diagnostics décimaux ne sont pas des certificats par intervalles.
+À
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mn>31</mn></mrow><annotation encoding="application/x-tex">X=31</annotation></semantics></math>,
+le regroupement intégré donne respectivement environ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>36</mn><mo>,</mo><mn>2662</mn></mrow><annotation encoding="application/x-tex">-36,2662</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>8</mn><mo>,</mo><mn>5194</mn></mrow><annotation encoding="application/x-tex">-8,5194</annotation></semantics></math>
+pour les dettes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>≤</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">q\le X</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">q&gt;X</annotation></semantics></math>.
+Cela ne justifie aucune extrapolation sur la seconde.</p>
+<p><strong>Prochaine attaque retenue.</strong> Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">q&gt;X</annotation></semantics></math>,
+conserver
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(q)</annotation></semantics></math>
+dans la somme et appliquer la transformation de Fourier avant de prendre
+les valeurs absolues. La transformation quadratique usuelle laisse le
+facteur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(q)</annotation></semantics></math>
+intact. Il faut une identité supplémentaire qui le convertisse en une
+structure estimable, ou une estimation bilinéaire spéciale de cette
+dette. La grandeur de sortie exigée est maintenant écrite au §6 ; aucune
+de ces deux voies n’est présumée réussir.</p>
+<p><strong>Garde concernant le préprint sextique [4].</strong> Son
+estimation moyenne comporte une norme de dérivées du poids lisse. Or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>m</mi><mo>−</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>log</mo><mi>m</mi><mo>+</mo><msub><mi>γ</mi><mi>E</mi></msub></mrow><annotation encoding="application/x-tex">B(m)-B(m^-)=\log m+\gamma_E</annotation></semantics></math>
+: substituer directement
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mi>/</mi><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">B(X/n)</annotation></semantics></math>
+n’offre pas une constante uniforme. De plus, dans
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>ℚ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msqrt><mrow><mo>−</mo><mn>3</mn></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">K=\mathbb Q(\sqrt{-3})</annotation></semantics></math>,
+pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>,</mo><mn>3</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(n,3)=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">N((n))=n^2</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>K</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>μ</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><msub><mi>χ</mi><mrow><mo>−</mo><mn>3</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu_K((n))=\mu(n)^2\chi_{-3}(n)</annotation></semantics></math>,
+pas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(n)</annotation></semantics></math>.
+Un transfert spectral par
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ζ</mi><mi>K</mi></msub><mo>=</mo><mi>ζ</mi><mi>L</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>χ</mi><mrow><mo>−</mo><mn>3</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\zeta_K=\zeta L(\chi_{-3})</annotation></semantics></math>
+serait possible si le théorème profond était validé ; sa preuve complète
+n’est pas auditée ici. Il n’est utilisé dans aucun lemme de cette
+note.</p>
+<h1 id="références-reproduction-et-statut">Références, reproduction et
+statut</h1>
+<p><strong>[1] D. R. Heath-Brown</strong>, <em>A mean value estimate for
+real character sums</em>, Acta Arithmetica 72 (1995), 235-275. Notice
+primaire : <a
+href="https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/72/3/108575/a-mean-value-estimate-for-real-character-sums"
+class="uri">https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/72/3/108575/a-mean-value-estimate-for-real-character-sums</a>.</p>
+<p><strong>[2] L. Goldmakher et B. Louvel</strong>, <em>A quadratic
+large sieve inequality over number fields</em>, arXiv:1112.1642v2
+(2012), introduction, équation (1.1). <a
+href="https://arxiv.org/pdf/1112.1642"
+class="uri">https://arxiv.org/pdf/1112.1642</a>. Le théorème est
+appliqué uniquement à sa famille primitive ; le coût de réintroduction
+des carrés est démontré séparément au §5.</p>
+<p><strong>[3] R. P. Brent, D. J. Platt et T. S. Trudgian</strong>,
+<em>The mean square of the error term in the prime number theorem</em>,
+Journal of Number Theory 238 (2022), 740-762. <a
+href="https://maths-people.anu.edu.au/~brent/pd/rpb274-final.pdf"
+class="uri">https://maths-people.anu.edu.au/~brent/pd/rpb274-final.pdf</a>.
+Le critère énergétique classique demeure une cible, pas une borne
+disponible indépendamment de RH. Aucun comportement de plateau de
+l’énergie normalisée n’est exigé.</p>
+<p><strong>[4] OpenAI</strong>, préprint <em>The Quasi-Riemann
+Hypothesis</em>, 5 octobre 2026, source <code>build/paper2.tex</code>,
+proposition moyenne et extraction par puissances. <a
+href="https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026"
+class="uri">https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026</a>.
+Source exploratoire, sans recours à ses énoncés profonds. Le dépôt
+distingue plusieurs états de vérification : <a
+href="https://github.com/openai/math"
+class="uri">https://github.com/openai/math</a>.</p>
+<p><strong>[5] M. Suzuki</strong>, <em>Aspects of the screw function
+corresponding to the Riemann zeta function</em>, arXiv:2206.03682v4
+(2023), théorème 1.3 et §3 sur la positivité de Weil. <a
+href="https://arxiv.org/pdf/2206.03682"
+class="uri">https://arxiv.org/pdf/2206.03682</a>.</p>
+<p><strong>Provenance locale du raisonnement.</strong> Le dossier V6.54
+contient l’identité des poids premiers, le développement de l’énergie
+ancrée et le critère classique. La présente passe démontre les identités
+de restitution et le lemme des petits conducteurs dans son propre cadre.
+La construction a été confrontée à une analyse critique indépendante ;
+les deux ont validé ces preuves auxiliaires. Cette confrontation n’est
+pas une validation externe de l’ensemble du programme.</p>
+<p>Pour reproduire les diagnostics depuis le dossier :</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> verifier_identites.py <span class="at">--output</span> results <span class="at">--precision</span> 70</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> calcul_famille.py <span class="at">--ceilings</span> 100 300 1000</span></code></pre></div>
+<p>Le premier programme utilise seulement la bibliothèque standard
+Python ; le second requiert NumPy. Les JSON conservent les résultats et
+leurs limites. Le plafond de calcul de la famille est volontairement
+borné : les preuves des §§1-6 ne reposent pas sur ce plafond.</p>
+<p><strong>Synthèse de statut.</strong> Démontré : source exacte,
+restitution, stabilité, regroupement, diagonale et tête de conducteurs.
+Conditionnel : le transfert d’une borne de la queue vers le demi-plan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℜ</mi><mi>s</mi><mo>&gt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\Re s&gt;3/4</annotation></semantics></math>.
+Ouvert : cette borne de la queue, la croissance quadratique totale et la
+positivité globale de Weil. L’amplification ordinaire ne suffit pas ;
+l’amplification exploitant la signature arithmétique de la queue reste à
+construire.</p>
+
+<footer class="note-footer">
+<p>Les programmes et résultats de l’essai se trouvent dans
+<a href="../3_Preuves_et_calculs/amplification_20261014/README.md">le dossier d’amplification</a>.
+Les calculs finis ne constituent pas une preuve de la borne à l’infini.</p>
+<p>Cette page utilise MathML natif et un style intégré ; sa lecture mathématique ne dépend d’aucun CDN.</p>
+</footer>
+</body>
+</html>

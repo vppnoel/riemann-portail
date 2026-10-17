@@ -1,0 +1,28 @@
+Subject: Request for a short reading — a double-pole mean square and simple zeros of ζ (two short notes)
+
+Dear Professor,
+
+I am writing to send you two short notes in analytic number theory that have not been submitted anywhere. I am not a professional mathematician. No progress towards the Riemann Hypothesis is claimed; both notes say so in their abstracts.
+
+The first note (10 pages) studies Q(X) = ∫₁^X |C(x)|² x⁻² dx, where C is the summatory function of c = Λ∗Λ − Λ·log + 2γΛ. The Dirichlet series of c has a double pole at each zero of ζ, with coefficient m(m+1). It contains three statements:
+- (A) the growth exponent of Q is 2(Θ − ½); the method is standard;
+- (B) under RH, Q(X) ∼ (S/3)(log X)³, with S = Σ m²(m+1)²/|ρ|²; this is the double-pole analogue of Cramér's theorem;
+- (B′) under RH, S ≥ 4κ, with equality if and only if all zeros are simple (κ = 2 + γ − log 4π).
+
+The second note (6 pages) is numerical. It tests Weil positivity in finite windows computed from the prime side alone, with the Davenport–Heilbronn function as a control.
+
+If you have time, three questions would help me greatly:
+1. Do the proofs of (A) and (B) look complete to you?
+2. Is (B), or a Cramér-type theorem for poles of order k, already in the literature? Which reference should be cited?
+3. Do you think the notes deserve an arXiv posting, possibly after corrections?
+
+The computations and the drafting were done with the help of an AI tool. Every statement has been checked, but none has yet been read by a specialist, which is exactly what I am asking you for. Code and data are available on request.
+
+Thank you for any attention you can give to this message, however brief.
+
+Yours sincerely,
+
+Vincent P. P. NOËL
+Strasbourg, France
+
+Attachments: article1_mean_square_double_poles.pdf; article2_prime_side_weil_forms.pdf

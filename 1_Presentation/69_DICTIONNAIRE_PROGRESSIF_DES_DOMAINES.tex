@@ -1,0 +1,5648 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  9pt,
+  a4paper,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{DejaVu Sans}
+  \setmonofont[]{DejaVu Sans Mono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=19mm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{french}
+\ifPDFTeX
+\else
+\babelfont{rm}[]{DejaVu Sans}
+\fi
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\usepackage{etoolbox}
+\usepackage{microtype}
+\usepackage{float}
+\floatplacement{figure}{H}
+\sloppy
+\setlength{\emergencystretch}{5em}
+\AtBeginEnvironment{longtable}{\small}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Dictionnaire progressif des domaines},
+  pdfauthor={Vincent P. P. NOËL - dossier de recherche, rédaction assistée},
+  pdflang={fr-FR},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Dictionnaire progressif des domaines}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{La langue des passages - V6.44 - Document 69}
+\author{Vincent P. P. NOËL - dossier de recherche, rédaction assistée}
+\date{12 octobre 2026}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{comment-apprendre-cette-langue}{%
+\section{Comment apprendre cette
+langue}\label{comment-apprendre-cette-langue}}
+
+Une fiche commence par une image simple, puis donne un symbole, son
+domaine et la condition qui rend le geste autorisé. Le nom imagé aide à
+comprendre ; la définition et la garde portent le calcul. Les mots
+usuels restent canoniques.
+
+La langue des passages relie le \textbf{moule} P, la \textbf{valise} U,
+la \textbf{portée} Fourier ou Mellin, le \textbf{puzzle} de changement
+de base et la \textbf{balance} de Schur. Son arithmétique distingue
+addition, produit ordinaire et convolution. Sa logique écrit ce qui est
+conservé, ce qui se perd et le budget du passage. Les preuves L1--L8 et
+les domaines exacts sont dans le document 68.
+
+Une phrase possède quatre étiquettes : support S, ordre de jets r aux
+±1/2, ordre q en 0, et unité d'amplitude A\^{}u. Le geste P gagne r ; la
+dérivée gagne q ; la convolution additionne les ordres. Le produit
+ordinaire peut perdre les moments. Les jets de test aux ±1/2, les jets
+de test en 0 et les jets des zéros critiques sont trois entrées
+différentes de la langue.
+
+Le noyau ci-dessous explique les objets de l'expérience actuelle et les
+principaux objets du corpus. Tous les 95 noms du registre canonique sont
+repris avec leur ancrage et leur garde. L'index technique séparé donne
+toutes les déclarations Python analysées : une fonction de programme
+n'est pas automatiquement un opérateur mathématique. Cette édition ne
+prétend pas avoir désambiguïsé chaque symbole de toutes les archives
+historiques.
+
+Une fiche marquée définition n'est pas une preuve nouvelle ; un statut
+du registre est hérité, sans validation additionnelle. Les calculs V644
+sont exploratoires, sauf l'algèbre rationnelle et le contrat analytique
+entier de queue explicités.
+
+Cette édition contient \textbf{219 fiches du noyau}, \textbf{95
+métaphores nommées} et un index de \textbf{986 fonctions}, \textbf{15
+classes}, dans \textbf{155 fichiers avec déclarations}, avec 0 erreur de
+parseur.
+
+\hypertarget{niveau-1---les-petits-mots-et-les-unituxe9s}{%
+\section{Niveau 1 - Les petits mots et les
+unités}\label{niveau-1---les-petits-mots-et-les-unituxe9s}}
+
+\hypertarget{nombre}{%
+\subsection{Nombre}\label{nombre}}
+
+\textbf{Comme un premier jeu.} Une place sur une règle.
+
+\textbf{Symbole.} x∈ℝ
+
+\textbf{Sens et domaine.} Un réel sert de coordonnée ; les nombres
+complexes ajoutent une seconde coordonnée.
+
+\textbf{Garde.} Une lettre peut changer de rôle ; son domaine doit être
+annoncé.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{nombre-complexe}{%
+\subsection{Nombre complexe}\label{nombre-complexe}}
+
+\textbf{Comme un premier jeu.} Une flèche qui va aussi vers le côté.
+
+\textbf{Symbole.} z=a+ib, i²=-1
+
+\textbf{Sens et domaine.} ℂ est un plan avec addition et multiplication
+; Re z=a et Im z=b.
+
+\textbf{Garde.} Complexe ne signifie ni positif ni négatif ; seul un
+réel peut recevoir cet ordre.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{conjugaison}{%
+\subsection{Conjugaison}\label{conjugaison}}
+
+\textbf{Comme un premier jeu.} La flèche se regarde dans un miroir.
+
+\textbf{Symbole.} z̄=a-ib
+
+\textbf{Sens et domaine.} Involution de ℂ ; dans un produit scalaire
+elle rend la norme réelle.
+
+\textbf{Garde.} Oublier la conjugaison peut transformer une forme
+hermitienne en autre chose.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{module}{%
+\subsection{Module}\label{module}}
+
+\textbf{Comme un premier jeu.} La longueur de la flèche.
+
+\textbf{Symbole.} \textbar z\textbar²=z̄z
+
+\textbf{Sens et domaine.} Quantité réelle non négative ; homogène au
+carré de l'amplitude.
+
+\textbf{Garde.} La longueur oublie la phase, donc deux flèches
+différentes peuvent avoir le même module.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fonction}{%
+\subsection{Fonction}\label{fonction}}
+
+\textbf{Comme un premier jeu.} Une machine prend un jouet et rend un
+résultat.
+
+\textbf{Symbole.} f:X→Y
+
+\textbf{Sens et domaine.} À chaque entrée du domaine X correspond une
+sortie de Y.
+
+\textbf{Garde.} Composer g et f exige que la sortie de f entre dans le
+domaine de g.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{somme}{%
+\subsection{Somme}\label{somme}}
+
+\textbf{Comme un premier jeu.} On rassemble des petites piles.
+
+\textbf{Symbole.} Σ\_k a\_k
+
+\textbf{Sens et domaine.} Somme finie ou limite de sommes partielles
+pour une série.
+
+\textbf{Garde.} Une série infinie exige une règle de convergence ;
+réordonner peut changer une série conditionnelle.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{intuxe9grale}{%
+\subsection{Intégrale}\label{intuxe9grale}}
+
+\textbf{Comme un premier jeu.} On rassemble toutes les fines bandes d'un
+dessin.
+
+\textbf{Symbole.} ∫ f(x) dx
+
+\textbf{Sens et domaine.} Intégrale de Lebesgue lorsque f est intégrable
+; remplace une somme discrète.
+
+\textbf{Garde.} Une intégrale impropre ne peut pas être manipulée sans
+vérifier sa convergence.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9rivuxe9e}{%
+\subsection{Dérivée}\label{duxe9rivuxe9e}}
+
+\textbf{Comme un premier jeu.} On regarde comment la pente change.
+
+\textbf{Symbole.} Df=f′
+
+\textbf{Sens et domaine.} D est une dérivation, classique ou faible
+selon le domaine.
+
+\textbf{Garde.} Df et f n'ont pas automatiquement les mêmes unités ; dx
+doit être typé.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{courbure}{%
+\subsection{Courbure}\label{courbure}}
+
+\textbf{Comme un premier jeu.} On regarde si le chemin se courbe.
+
+\textbf{Symbole.} D²f=f″
+
+\textbf{Sens et domaine.} Deux dérivations ; définie classiquement pour
+C² ou faiblement dans H².
+
+\textbf{Garde.} Un coin peut ajouter une distribution quand on prolonge
+une fonction par zéro.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9rivuxe9e-partielle}{%
+\subsection{Dérivée partielle}\label{duxe9rivuxe9e-partielle}}
+
+\textbf{Comme un premier jeu.} On tourne un bouton en gardant les autres
+immobiles.
+
+\textbf{Symbole.} ∂\_t F
+
+\textbf{Sens et domaine.} Dérivation selon une variable déclarée.
+
+\textbf{Garde.} Une dérivée en temps physique est une puissance si la
+grandeur est une énergie ; un paramètre arithmétique n'est pas un temps
+physique.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{support}{%
+\subsection{Support}\label{support}}
+
+\textbf{Comme un premier jeu.} L'endroit où le dessin n'est pas effacé.
+
+\textbf{Symbole.} supp f⊂{[}-S,S{]}
+
+\textbf{Sens et domaine.} Fermeture des points où la fonction est non
+nulle, au sens essentiel pour L².
+
+\textbf{Garde.} Déplacer le dessin change son adresse, pas son diamètre.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{limite}{%
+\subsection{Limite}\label{limite}}
+
+\textbf{Comme un premier jeu.} Les dessins se rapprochent de plus en
+plus.
+
+\textbf{Symbole.} f\_n→f
+
+\textbf{Sens et domaine.} Le sens dépend de la norme ou de la topologie
+annoncée.
+
+\textbf{Garde.} Convergence ponctuelle, L² et H¹ ne sont pas
+interchangeables.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{norme}{%
+\subsection{Norme}\label{norme}}
+
+\textbf{Comme un premier jeu.} Une règle qui mesure un dessin.
+
+\textbf{Symbole.} \textbar\textbar f\textbar\textbar{}
+
+\textbf{Sens et domaine.} Positive, homogène, triangulaire ; la métrique
+choisie fixe ce que signifie proche.
+
+\textbf{Garde.} Changer la règle conserve parfois le signe, pas les
+tailles ni les marges.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{produit-scalaire}{%
+\subsection{Produit scalaire}\label{produit-scalaire}}
+
+\textbf{Comme un premier jeu.} On mesure combien deux dessins se
+ressemblent.
+
+\textbf{Symbole.} ⟨f,g⟩=∫f̄g
+
+\textbf{Sens et domaine.} Forme sesquilinéaire hermitienne ; ici
+convention antilinéaire en première variable.
+
+\textbf{Garde.} Une métrique externe doit être définie sans présupposer
+le signe de Q\_W.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{composition}{%
+\subsection{Composition}\label{composition}}
+
+\textbf{Comme un premier jeu.} Deux machines attachées l'une à l'autre.
+
+\textbf{Symbole.} g∘f
+
+\textbf{Sens et domaine.} Appliquer f puis g ; domaines et codomaines
+compatibles.
+
+\textbf{Garde.} Le nom d'une machine ne suffit pas pour autoriser un
+passage.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{unituxe9s-fictives}{%
+\subsection{Unités fictives}\label{unituxe9s-fictives}}
+
+\textbf{Comme un premier jeu.} Chaque quantité porte une étiquette sur
+sa boîte.
+
+\textbf{Symbole.} {[}f{]}=A, {[}Q{]}=E=A²
+
+\textbf{Sens et domaine.} x=log u est sans dimension ; A et E sont des
+unités formelles de tenue des calculs.
+
+\textbf{Garde.} Une unité cohérente ne prouve pas un signe et ne donne
+pas une énergie physique.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{puissance-par-duxe9rivation}{%
+\subsection{Puissance par
+dérivation}\label{puissance-par-duxe9rivation}}
+
+\textbf{Comme un premier jeu.} On mesure combien la pile change à chaque
+tic.
+
+\textbf{Symbole.} dE/dt
+
+\textbf{Sens et domaine.} Si t est un temps, unité E/T ; si t est un
+indice arithmétique, unité formelle différente.
+
+\textbf{Garde.} E≥0 n'impose pas dE/dt≥0 ; par exemple
+E(t)=e\^{}(-t)\textgreater0 et E′\textless0.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{uxe9nergie-arithmuxe9tique-formelle}{%
+\subsection{Énergie arithmétique
+formelle}\label{uxe9nergie-arithmuxe9tique-formelle}}
+
+\textbf{Comme un premier jeu.} La balance porte l'étiquette énergie.
+
+\textbf{Symbole.} E\_ar=Q\_W(f)
+
+\textbf{Sens et domaine.} Unité fictive A² pour une forme quadratique ;
+changement d'amplitude c multiplie par \textbar c\textbar².
+
+\textbf{Garde.} Le nom énergie ne donne pas Q\_W≥0 : c'est précisément
+le signe recherché.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{positivituxe9}{%
+\subsection{Positivité}\label{positivituxe9}}
+
+\textbf{Comme un premier jeu.} La balance ne descend pas sous sa marque.
+
+\textbf{Symbole.} x≥0 ; Q(f)≥0
+
+\textbf{Sens et domaine.} Ordre sur les réels ; positivité d'une forme
+pour toutes les entrées du domaine.
+
+\textbf{Garde.} Produit de nombres positifs positif ; une somme signée
+ou une dérivée n'hérite pas de cette règle.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{ruxe8gle-du-produit}{%
+\subsection{Règle du produit}\label{ruxe8gle-du-produit}}
+
+\textbf{Comme un premier jeu.} Deux dessins bougent, il faut compter
+deux effets.
+
+\textbf{Symbole.} D(fg)=f′g+fg′
+
+\textbf{Sens et domaine.} Identité de Leibniz sous régularité
+suffisante.
+
+\textbf{Garde.} Les cutoffs et les phases apportent donc des termes
+supplémentaires.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{cauchyschwarz}{%
+\subsection{Cauchy--Schwarz}\label{cauchyschwarz}}
+
+\textbf{Comme un premier jeu.} L'attache de deux dessins ne dépasse pas
+leurs tailles.
+
+\textbf{Symbole.}
+\textbar⟨f,g⟩\textbar≤\textbar\textbar f\textbar\textbar\textbar\textbar g\textbar\textbar{}
+
+\textbf{Sens et domaine.} Inégalité Hilbert, utilisée pour majorer
+corrélations et primes.
+
+\textbf{Garde.} La majoration de taille ne décide pas du signe de
+l'attache.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{identituxe9}{%
+\subsection{Identité}\label{identituxe9}}
+
+\textbf{Comme un premier jeu.} Le jouet revient pareil.
+
+\textbf{Symbole.} If=f
+
+\textbf{Sens et domaine.} Opérateur neutre dans le domaine choisi.
+
+\textbf{Garde.} Dans I-K, la présence de I ne prouve pas que K≤I.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{partie-entiuxe8re}{%
+\subsection{Partie entière}\label{partie-entiuxe8re}}
+
+\textbf{Comme un premier jeu.} On garde seulement les piles entières.
+
+\textbf{Symbole.} ⌊x⌋
+
+\textbf{Sens et domaine.} Plus grand entier ≤x ; détermine le plafond
+discret des puissances premières.
+
+\textbf{Garde.} Près d'un entier, il faut encadrer x avant de décider.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{partie-ruxe9elle}{%
+\subsection{Partie réelle}\label{partie-ruxe9elle}}
+
+\textbf{Comme un premier jeu.} On garde le pas droit de la flèche.
+
+\textbf{Symbole.} Re z=(z+z̄)/2
+
+\textbf{Sens et domaine.} Projection ℂ→ℝ ; intervient dans Q\_pr et
+polarisation.
+
+\textbf{Garde.} Oublie la composante imaginaire ; ne permet pas de
+reconstruire la phase seule.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{linuxe9arituxe9}{%
+\subsection{Linéarité}\label{linuxe9arituxe9}}
+
+\textbf{Comme un premier jeu.} La machine respecte l'assemblage des
+dessins.
+
+\textbf{Symbole.} A(af+bg)=aAf+bAg
+
+\textbf{Sens et domaine.} Propriété des opérateurs P, translations,
+transforms et corrections fixes.
+
+\textbf{Garde.} Q est quadratique, pas linéaire ; il contient des
+attaches croisées.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{forme-quadratique}{%
+\subsection{Forme quadratique}\label{forme-quadratique}}
+
+\textbf{Comme un premier jeu.} La pile grandit au carré de la taille.
+
+\textbf{Symbole.} Q(cf)=\textbar c\textbar²Q(f)
+
+\textbf{Sens et domaine.} Forme issue d'un couplage hermitien ; domaine
+annoncé.
+
+\textbf{Garde.} Homogénéité quadratique seule n'implique pas Q≥0.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{niveau-2---les-fonctions-et-leurs-miroirs}{%
+\section{Niveau 2 - Les fonctions et leurs
+miroirs}\label{niveau-2---les-fonctions-et-leurs-miroirs}}
+
+\hypertarget{exponentielle}{%
+\subsection{Exponentielle}\label{exponentielle}}
+
+\textbf{Comme un premier jeu.} Une taille qui se multiplie quand on
+ajoute un pas.
+
+\textbf{Symbole.} e\^{}x
+
+\textbf{Sens et domaine.} Fonction réelle positive ; e\^{}(x+y)=e\^{}x
+e\^{}y ; extension entière sur ℂ.
+
+\textbf{Garde.} e\^{}z peut être complexe ; « exponentielle positive »
+concerne x réel.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{logarithme}{%
+\subsection{Logarithme}\label{logarithme}}
+
+\textbf{Comme un premier jeu.} On compte les pas multiplicatifs avec une
+règle additive.
+
+\textbf{Symbole.} x=log u
+
+\textbf{Sens et domaine.} Inverse réel de exp sur u\textgreater0 ;
+log(uv)=log u+log v.
+
+\textbf{Garde.} Le logarithme complexe demande un choix de branche.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{sinus-et-cosinus}{%
+\subsection{Sinus et cosinus}\label{sinus-et-cosinus}}
+
+\textbf{Comme un premier jeu.} Une roue qui tourne.
+
+\textbf{Symbole.} e\^{}(it)=cos t+i sin t
+
+\textbf{Sens et domaine.} Fonctions périodiques réelles ; décrivent les
+phases Fourier.
+
+\textbf{Garde.} Une phase modifie les couplages si elle dépend de x.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{sinus-hyperbolique}{%
+\subsection{Sinus hyperbolique}\label{sinus-hyperbolique}}
+
+\textbf{Comme un premier jeu.} Deux tailles poussent en sens opposé.
+
+\textbf{Symbole.} 2 sinh(x/2)=e\^{}(x/2)-e\^{}(-x/2)
+
+\textbf{Sens et domaine.} Solution élémentaire utilisée pour l'inverse
+causal de D²-1/4.
+
+\textbf{Garde.} Ce noyau inverse exige les deux moments pour refermer le
+support à droite.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fonction-gamma}{%
+\subsection{Fonction Gamma}\label{fonction-gamma}}
+
+\textbf{Comme un premier jeu.} Une machine prolonge la pile des
+factorielles.
+
+\textbf{Symbole.} Γ(s)=∫₀∞ t\^{}(s-1)e\^{}(-t)dt
+
+\textbf{Sens et domaine.} Définie par l'intégrale pour Re s\textgreater0
+puis prolongement méromorphe ; Γ(n+1)=n!.
+
+\textbf{Garde.} Ses pôles et branches des facteurs associés doivent être
+pris en compte.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fonction-zuxeata}{%
+\subsection{Fonction zêta}\label{fonction-zuxeata}}
+
+\textbf{Comme un premier jeu.} Une chorale où chaque entier chante.
+
+\textbf{Symbole.} ζ(s)=Σₙ≥₁ n\^{}(-s)
+
+\textbf{Sens et domaine.} Série absolument convergente pour Re
+s\textgreater1 ; prolongement méromorphe, pôle simple en 1.
+
+\textbf{Garde.} La série brute n'est pas la définition convergente dans
+la bande critique.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{zuxeata-compluxe9tuxe9e}{%
+\subsection{Zêta complétée}\label{zuxeata-compluxe9tuxe9e}}
+
+\textbf{Comme un premier jeu.} On habille la chorale pour voir son
+miroir.
+
+\textbf{Symbole.} ξ(s)=½s(s-1)π\^{}(-s/2)Γ(s/2)ζ(s)
+
+\textbf{Sens et domaine.} Fonction entière ; ξ(s)=ξ(1-s), zéros
+correspondant aux zéros non triviaux de ζ.
+
+\textbf{Garde.} Symétrie ne suffit pas à imposer que tous les zéros
+soient sur l'axe.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{hypothuxe8se-de-riemann}{%
+\subsection{Hypothèse de Riemann}\label{hypothuxe8se-de-riemann}}
+
+\textbf{Comme un premier jeu.} Toutes les notes recherchées devraient
+rester sur une ligne.
+
+\textbf{Symbole.} ζ(ρ)=0 ⇒ Re ρ=1/2, 0\textless Re ρ\textless1
+
+\textbf{Sens et domaine.} Énoncé global sur tous les zéros non triviaux.
+
+\textbf{Garde.} Un nombre fini de notes, matrices ou certificats ne
+couvre pas l'infini.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{zuxe9ro-et-multiplicituxe9}{%
+\subsection{Zéro et multiplicité}\label{zuxe9ro-et-multiplicituxe9}}
+
+\textbf{Comme un premier jeu.} Le dessin touche zéro ; parfois il s'y
+accroche deux fois.
+
+\textbf{Symbole.} F(ρ)=0, F′(ρ)=0
+
+\textbf{Sens et domaine.} Un zéro de multiplicité m annule les m
+premiers jets et pas le suivant.
+
+\textbf{Garde.} Zéro double d'une fonction n'est pas automatiquement
+collision de branches suivies.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{suxe9rie-de-dirichlet}{%
+\subsection{Série de Dirichlet}\label{suxe9rie-de-dirichlet}}
+
+\textbf{Comme un premier jeu.} Chaque entier reçoit un volume de voix.
+
+\textbf{Symbole.} F(s)=Σ a\_n n\^{}(-s)
+
+\textbf{Sens et domaine.} Fonction sur un demi-plan de convergence ;
+coefficients a\_n déclarés.
+
+\textbf{Garde.} Une équation fonctionnelle seule ne donne pas un produit
+d'Euler.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{produit-deuler}{%
+\subsection{Produit d'Euler}\label{produit-deuler}}
+
+\textbf{Comme un premier jeu.} Les briques premières fabriquent les
+entiers.
+
+\textbf{Symbole.} ζ(s)=∏ₚ(1-p\^{}(-s))\^{}(-1)
+
+\textbf{Sens et domaine.} Identité absolument convergente pour Re
+s\textgreater1.
+
+\textbf{Garde.} La multiplicativité locale ne prouve pas RH.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{poids-de-von-mangoldt}{%
+\subsection{Poids de von Mangoldt}\label{poids-de-von-mangoldt}}
+
+\textbf{Comme un premier jeu.} Seules les tours de briques premières
+portent une étiquette.
+
+\textbf{Symbole.} Λ(p\^{}m)=log p, Λ(n)=0 sinon
+
+\textbf{Sens et domaine.} Fonction arithmétique ; -ζ′/ζ=ΣΛ(n)n\^{}(-s)
+pour Re s\textgreater1.
+
+\textbf{Garde.} Λ(n) ici n'est pas la constante de de Bruijn-Newman.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fonction-de-muxf6bius}{%
+\subsection{Fonction de Möbius}\label{fonction-de-muxf6bius}}
+
+\textbf{Comme un premier jeu.} On donne un signe aux sacs de briques
+sans doublon.
+
+\textbf{Symbole.} μ(n)=0 ou (-1)\^{}r
+
+\textbf{Sens et domaine.} Nulle si un carré premier divise n ; sinon
+signe selon le nombre de facteurs premiers.
+
+\textbf{Garde.} Une covariance de μ ne révèle pas chaque zéro.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{caractuxe8re-de-dirichlet}{%
+\subsection{Caractère de Dirichlet}\label{caractuxe8re-de-dirichlet}}
+
+\textbf{Comme un premier jeu.} Une couleur suit la règle de
+multiplication.
+
+\textbf{Symbole.} χ(mn)=χ(m)χ(n)
+
+\textbf{Sens et domaine.} Caractère modulo q, périodique et nul sur les
+non-unités ; L(s,χ)=Σχ(n)n\^{}(-s).
+
+\textbf{Garde.} Ne pas identifier un mélange de fonctions L à un produit
+d'Euler.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{coefficients-de-li}{%
+\subsection{Coefficients de Li}\label{coefficients-de-li}}
+
+\textbf{Comme un premier jeu.} On rassemble les notes dans une suite de
+balances.
+
+\textbf{Symbole.} λ\_n=Σρ{[}1-(1-1/ρ)\^{}n{]}
+
+\textbf{Sens et domaine.} Somme sur les zéros selon la convention
+symétrique ; critère global de Li pour ξ.
+
+\textbf{Garde.} Sommes tronquées et intervalle fini de n ne prouvent pas
+toutes les inégalités.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{flot-de-chaleur}{%
+\subsection{Flot de chaleur}\label{flot-de-chaleur}}
+
+\textbf{Comme un premier jeu.} On floute ou on accentue un dessin.
+
+\textbf{Symbole.} ∂\_t H=-∂\_x²H selon convention
+
+\textbf{Sens et domaine.} Flot de de Bruijn-Newman avec paramètre et
+signe déclarés, lié à un seuil de réalité des zéros.
+
+\textbf{Garde.} Le paramètre n'est pas une température physique et la
+convention doit être fixée.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{entropie-et-conventions}{%
+\subsection{Entropie et conventions}\label{entropie-et-conventions}}
+
+\textbf{Comme un premier jeu.} On compte combien un choix nous surprend.
+
+\textbf{Symbole.} H(p)=-Σp\_i log p\_i
+
+\textbf{Sens et domaine.} Entropie de Shannon non négative pour une loi
+discrète ; entropie différentielle peut être négative.
+
+\textbf{Garde.} Il n'existe pas une positivité universelle de toute
+quantité appelée entropie.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{constante-deuler}{%
+\subsection{Constante d'Euler}\label{constante-deuler}}
+
+\textbf{Comme un premier jeu.} Une petite correction reste après deux
+grands comptes.
+
+\textbf{Symbole.} γ\_E=lim(Σₖ≤n1/k-log n)
+
+\textbf{Sens et domaine.} Constante réelle présente dans C₀.
+
+\textbf{Garde.} Ne pas l'identifier au rabais γ de Bellman.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{uxe9quation-fonctionnelle}{%
+\subsection{Équation fonctionnelle}\label{uxe9quation-fonctionnelle}}
+
+\textbf{Comme un premier jeu.} La chorale se répond dans un miroir.
+
+\textbf{Symbole.} ξ(s)=ξ(1-s)
+
+\textbf{Sens et domaine.} Symétrie analytique exacte de la fonction
+complétée.
+
+\textbf{Garde.} Le miroir permet des paires hors de la ligne ; il ne
+force pas RH seul.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{factorielle}{%
+\subsection{Factorielle}\label{factorielle}}
+
+\textbf{Comme un premier jeu.} On compte tous les rangements de n
+jouets.
+
+\textbf{Symbole.} n!=1·2·\ldots·n
+
+\textbf{Sens et domaine.} Fonction sur les entiers non négatifs, 0!=1 ;
+intervient dans Taylor.
+
+\textbf{Garde.} Une série Taylor tronquée exige une borne de reste.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{prolongement-analytique}{%
+\subsection{Prolongement analytique}\label{prolongement-analytique}}
+
+\textbf{Comme un premier jeu.} Le dessin continue quand ses règles le
+forcent.
+
+\textbf{Symbole.} F prolongée depuis un domaine
+
+\textbf{Sens et domaine.} Unicité sur domaines connexes par identité
+analytique ; méromorphe si pôles.
+
+\textbf{Garde.} Cela ne donne pas automatiquement l'emplacement des
+zéros.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{puissance-premiuxe8re}{%
+\subsection{Puissance première}\label{puissance-premiuxe8re}}
+
+\textbf{Comme un premier jeu.} Une tour faite d'une seule brique
+première.
+
+\textbf{Symbole.} n=p\^{}m
+
+\textbf{Sens et domaine.} Indices portant Λ(n) ; liste exacte finie à
+support fixé.
+
+\textbf{Garde.} Inclure toutes les puissances, pas seulement les
+premiers simples.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{arc-tangente-et-artanh}{%
+\subsection{Arc tangente et artanh}\label{arc-tangente-et-artanh}}
+
+\textbf{Comme un premier jeu.} Deux petites règles inversent des
+courbes.
+
+\textbf{Symbole.} atan z, artanh z
+
+\textbf{Sens et domaine.} Pour les queues archimédiennes réelles ici
+z=e\^{}(-S)∈(0,1), formules usuelles.
+
+\textbf{Garde.} Les branches complexes ne sont pas utilisées dans ces
+quadratures réelles.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{branche-du-logarithme}{%
+\subsection{Branche du logarithme}\label{branche-du-logarithme}}
+
+\textbf{Comme un premier jeu.} On choisit où la rotation commence.
+
+\textbf{Symbole.} Log F sur domaine sans zéro
+
+\textbf{Sens et domaine.} Un logarithme holomorphe exige domaine
+approprié et absence de zéro ; sinon branches locales.
+
+\textbf{Garde.} La phase globale et les passages de branches ne sont pas
+résolus par une formule locale.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{puxe9riodicituxe9}{%
+\subsection{Périodicité}\label{puxe9riodicituxe9}}
+
+\textbf{Comme un premier jeu.} Le dessin recommence après le même pas.
+
+\textbf{Symbole.} f(x+T)=f(x)
+
+\textbf{Sens et domaine.} Relation exacte à période déclarée ; utilisée
+dans des mécanismes de rigidité.
+
+\textbf{Garde.} Le support compact, une fonction entière et un caractère
+modulo q ont des domaines différents.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{ligne-critique}{%
+\subsection{Ligne critique}\label{ligne-critique}}
+
+\textbf{Comme un premier jeu.} La porte finale ressemble à une ligne
+dans un plan.
+
+\textbf{Symbole.} Re s=1/2
+
+\textbf{Sens et domaine.} Ensemble vertical où RH place tous les zéros
+non triviaux.
+
+\textbf{Garde.} La symétrie autour de cette ligne n'impose pas que les
+zéros y restent.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{rh-et-simplicituxe9}{%
+\subsection{RH et simplicité}\label{rh-et-simplicituxe9}}
+
+\textbf{Comme un premier jeu.} La ligne et les doubles notes sont deux
+règles.
+
+\textbf{Symbole.} RH ≠ tous les zéros simples
+
+\textbf{Sens et domaine.} RH porte sur la partie réelle ; conjecture de
+simplicité est plus forte et distincte.
+
+\textbf{Garde.} Résoudre une collision de zéros n'est pas nécessairement
+nécessaire à prouver RH par un critère de forme.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{niveau-3---les-piuxe8ces-ouxf9-vivent-les-fonctions}{%
+\section{Niveau 3 - Les pièces où vivent les
+fonctions}\label{niveau-3---les-piuxe8ces-ouxf9-vivent-les-fonctions}}
+
+\hypertarget{espace-luxb2}{%
+\subsection{Espace L²}\label{espace-luxb2}}
+
+\textbf{Comme un premier jeu.} Les dessins ont une taille totale finie.
+
+\textbf{Symbole.} ∫\textbar f\textbar²\textless∞
+
+\textbf{Sens et domaine.} Fonctions modulo égalité presque partout ;
+Hilbert avec norme quadratique.
+
+\textbf{Garde.} La dérivée et la forme de Weil ne sont pas contrôlées
+par la seule norme L².
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{espace-huxb9}{%
+\subsection{Espace H¹}\label{espace-huxb9}}
+
+\textbf{Comme un premier jeu.} La règle mesure aussi les pentes.
+
+\textbf{Symbole.}
+\textbar\textbar f\textbar\textbar H¹²=\textbar\textbar f\textbar\textbar₂²+\textbar\textbar f′\textbar\textbar₂²
+
+\textbf{Sens et domaine.} Fonctions L² avec dérivée faible L².
+
+\textbf{Garde.} Sa positivité est externe ; un opérateur compact peut
+avoir une forme positive sans marge uniforme.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{espace-hux2080uxb3}{%
+\subsection{Espace H₀³}\label{espace-hux2080uxb3}}
+
+\textbf{Comme un premier jeu.} Le dessin et ses deux premières pentes
+s'attachent au bord.
+
+\textbf{Symbole.} ψ,ψ′,ψ″=0 aux bords
+
+\textbf{Sens et domaine.} Fermeture de Cc∞(-S,S) dans H³ ; traces nulles
+jusqu'à l'ordre 2.
+
+\textbf{Garde.} La définition dépend du domaine ouvert et du
+prolongement par zéro.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{cux153ur-lisse}{%
+\subsection{Cœur lisse}\label{cux153ur-lisse}}
+
+\textbf{Comme un premier jeu.} Des dessins sans coins, rangés loin du
+bord.
+
+\textbf{Symbole.} Cc∞(-S,S)
+
+\textbf{Sens et domaine.} Fonctions infiniment dérivables à support
+compact intérieur.
+
+\textbf{Garde.} Une fonction polynomiale coupée au bord n'est
+généralement pas dans ce cœur.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{translation}{%
+\subsection{Translation}\label{translation}}
+
+\textbf{Comme un premier jeu.} La valise change d'adresse sans changer
+son contenu.
+
+\textbf{Symbole.} U\_a f(x)=f(x-a)
+
+\textbf{Sens et domaine.} Unitaire dans L² et H¹ sur ℝ ; mêmes
+autocorrélations.
+
+\textbf{Garde.} E\_S est transporté dans une fenêtre plus grande, pas
+forcément dans la même E\_S.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{dilatation-beurling}{%
+\subsection{Dilatation Beurling}\label{dilatation-beurling}}
+
+\textbf{Comme un premier jeu.} Le dessin tient dans une boîte plus
+petite.
+
+\textbf{Symbole.} D\_a f(t)=a\^{}(-1/2)f(t/a)1\_(0,a)(t)
+
+\textbf{Sens et domaine.} Isométrie L²(0,1) pour 0\textless a≤1 ; sous J
+elle devient translation.
+
+\textbf{Garde.} Le facteur a\^{}(-1/2) est nécessaire et les domaines ne
+sont pas celui de U sans J.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fraction-beurling}{%
+\subsection{Fraction Beurling}\label{fraction-beurling}}
+
+\textbf{Comme un premier jeu.} On garde le petit reste d'un partage.
+
+\textbf{Symbole.} ρ\_θ(t)=\{θ/t\}, Σc\_jθ\_j=0
+
+\textbf{Sens et domaine.} Combinaisons de parties fractionnaires dans
+L²(0,1), condition admissible de Nyman-Beurling.
+
+\textbf{Garde.} Leur densité est un critère de RH, donc ne peut pas être
+supposée pour prouver RH.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{passage-logarithmique-j}{%
+\subsection{Passage logarithmique J}\label{passage-logarithmique-j}}
+
+\textbf{Comme un premier jeu.} Une règle courbe devient une règle
+droite.
+
+\textbf{Symbole.} Jf(x)=e\^{}(-x/2)f(e\^{}(-x))
+
+\textbf{Sens et domaine.} Unitaire L²(0,1)→L²(0,∞) ; change la mesure
+avec son facteur.
+
+\textbf{Garde.} L² ne devient pas H¹ par simple changement de
+coordonnées.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{passage-multiplicatif}{%
+\subsection{Passage multiplicatif}\label{passage-multiplicatif}}
+
+\textbf{Comme un premier jeu.} Des pas deviennent des multiplications.
+
+\textbf{Symbole.} ℒf(u)=u\^{}(-1/2)f(log u)
+
+\textbf{Sens et domaine.} Unitaire L²(ℝ,dx)→L²(ℝ₊,du).
+
+\textbf{Garde.} Ne pas confondre ℒ avec J, qui utilise x=-log t et une
+demi-droite.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{transformuxe9e-de-fourier}{%
+\subsection{Transformée de Fourier}\label{transformuxe9e-de-fourier}}
+
+\textbf{Comme un premier jeu.} On entend les rythmes cachés dans le
+dessin.
+
+\textbf{Symbole.} f̂(τ)=(2π)\^{}(-1/2)∫f(x)e\^{}(-iτx)dx
+
+\textbf{Sens et domaine.} Unitaire L² par Plancherel ; translations
+deviennent phases, D devient iτ.
+
+\textbf{Garde.} Une convention de normalisation différente change les
+constantes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{transformuxe9e-de-mellin}{%
+\subsection{Transformée de Mellin}\label{transformuxe9e-de-mellin}}
+
+\textbf{Comme un premier jeu.} On entend les rythmes de changements de
+taille.
+
+\textbf{Symbole.} Mf(s)=∫₀∞ f(u)u\^{}(s-1)du
+
+\textbf{Sens et domaine.} Pour ℒf, Mℒf(s)=∫f(x)e\^{}((s-1/2)x)dx ;
+entier si support compact.
+
+\textbf{Garde.} Les moments admissibles sont les valeurs en 0 et 1, pas
+toute la transformée.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{convolution}{%
+\subsection{Convolution}\label{convolution}}
+
+\textbf{Comme un premier jeu.} Un petit pinceau passe sur le dessin.
+
+\textbf{Symbole.} (η*f)(x)=∫η(x-y)f(y)dy
+
+\textbf{Sens et domaine.} Lissage et produit Fourier selon convention ;
+support s'additionne.
+
+\textbf{Garde.} Lisser peut déborder de la fenêtre ; il faut une marge
+ou un cutoff.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{mollificateur}{%
+\subsection{Mollificateur}\label{mollificateur}}
+
+\textbf{Comme un premier jeu.} Un pinceau de largeur δ.
+
+\textbf{Symbole.} η\_δ(x)=δ\^{}(-1)η(x/δ), ∫η=1
+
+\textbf{Sens et domaine.} Approximation de l'identité ; η lisse à
+support compact.
+
+\textbf{Garde.} Un contrôle en H¹ ou dans la métrique R doit être
+prouvé, pas déduit de L² seul.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fonction-de-coupure}{%
+\subsection{Fonction de coupure}\label{fonction-de-coupure}}
+
+\textbf{Comme un premier jeu.} On efface doucement l'extérieur d'une
+boîte.
+
+\textbf{Symbole.} χ f
+
+\textbf{Sens et domaine.} χ∈Cc∞, bornes de dérivées déclarées ;
+multiplicateur local.
+
+\textbf{Garde.} Les dérivées de χ ajoutent des termes au budget.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{deux-moments}{%
+\subsection{Deux moments}\label{deux-moments}}
+
+\textbf{Comme un premier jeu.} Deux balances doivent être à zéro.
+
+\textbf{Symbole.} ℓ±(f)=∫f(x)e\^{}(±x/2)dx
+
+\textbf{Sens et domaine.} Fonctionnelles linéaires continues à support
+fixé.
+
+\textbf{Garde.} Elles ne sont ni l'intégrale seule ni une condition de
+signe.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{espace-admissible-e_s}{%
+\subsection{Espace admissible E\_S}\label{espace-admissible-e_s}}
+
+\textbf{Comme un premier jeu.} Les dessins passent deux portes et
+restent dans la boîte.
+
+\textbf{Symbole.} E\_S=H₀¹(-S,S)∩kerℓ₊∩kerℓ₋
+
+\textbf{Sens et domaine.} Espace fermé de codimension 2 ; domaine H¹ de
+la forme complète.
+
+\textbf{Garde.} Changer la fenêtre ou la norme impose un nouveau
+contrat.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{moule-admissible-p}{%
+\subsection{Moule admissible P}\label{moule-admissible-p}}
+
+\textbf{Comme un premier jeu.} Un moule ferme les deux ouvertures.
+
+\textbf{Symbole.} P=D²-1/4
+
+\textbf{Sens et domaine.} Isomorphisme H₀³(-S,S)→E\_S ; annulations
+exactes par intégration par parties.
+
+\textbf{Garde.} P impose les moments, pas le signe de Q\_W. Ce P n'est
+pas un polynôme zêta.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{inverse-du-moule}{%
+\subsection{Inverse du moule}\label{inverse-du-moule}}
+
+\textbf{Comme un premier jeu.} On retrouve le dessin avant le moule.
+
+\textbf{Symbole.} ψ(x)=∫₋Sˣ 2sinh((x-y)/2)f(y)dy
+
+\textbf{Sens et domaine.} Inverse de P pour f∈E\_S, deux moments ferment
+les traces à droite.
+
+\textbf{Garde.} Sans ces moments, le résultat ne reste pas dans H₀³.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{graine-polynomiale}{%
+\subsection{Graine polynomiale}\label{graine-polynomiale}}
+
+\textbf{Comme un premier jeu.} Une pâte qui colle bien aux bords.
+
+\textbf{Symbole.} ψS,k=(1-x²/S²)\^{}4(x/S)\^{}k 1\_{[}-S,S{]}
+
+\textbf{Sens et domaine.} Graine H₀⁴, C³ sur ℝ ; fS,k=PψS,k∈H₀² ;
+famille indépendante et dense dans E\_S.
+
+\textbf{Garde.} Pas C∞ en général ; la continuité H¹ de Q justifie son
+usage.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{modulation}{%
+\subsection{Modulation}\label{modulation}}
+
+\textbf{Comme un premier jeu.} On ajoute une rotation à chaque place.
+
+\textbf{Symbole.} M\_τ f=e\^{}(iτx)f
+
+\textbf{Sens et domaine.} Unitaire L² ; déplace la fréquence Fourier.
+
+\textbf{Garde.} Brise généralement les deux moments ; P M\_τ ψ reste
+admissible mais change Q.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{phase-constante}{%
+\subsection{Phase constante}\label{phase-constante}}
+
+\textbf{Comme un premier jeu.} Tout le dessin tourne du même angle.
+
+\textbf{Symbole.} f↦e\^{}(iθ)f
+
+\textbf{Sens et domaine.} Moments nuls, autocorrélation, R et Q\_W
+conservés.
+
+\textbf{Garde.} Une phase variable e\^{}(iτx) est une autre opération.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{changement-duxe9chelle}{%
+\subsection{Changement d'échelle}\label{changement-duxe9chelle}}
+
+\textbf{Comme un premier jeu.} On agrandit la boîte et le dessin.
+
+\textbf{Symbole.} f(x)↦f(x/S)
+
+\textbf{Sens et domaine.} Le support et les dérivées changent ; P et les
+points log(p\^{}m) ne se transportent pas inchangés.
+
+\textbf{Garde.} Ce changement n'est pas une invariance de Q\_W.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9rivuxe9e-faible}{%
+\subsection{Dérivée faible}\label{duxe9rivuxe9e-faible}}
+
+\textbf{Comme un premier jeu.} La pente est reconnue par de petits
+dessins tests.
+
+\textbf{Symbole.} ∫fφ′=-∫gφ
+
+\textbf{Sens et domaine.} g est la dérivée distributionnelle de f
+lorsqu'elle appartient à l'espace exigé.
+
+\textbf{Garde.} La pente classique peut manquer aux coins ; les traces
+restent importantes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{trace-au-bord}{%
+\subsection{Trace au bord}\label{trace-au-bord}}
+
+\textbf{Comme un premier jeu.} Le bord garde les attaches du dessin.
+
+\textbf{Symbole.} f(±S), f′(±S),\ldots{}
+
+\textbf{Sens et domaine.} Valeurs limites définies pour les Sobolev
+suffisamment réguliers en dimension un.
+
+\textbf{Garde.} Un prolongement par zéro sans traces nulles peut créer
+des masses de Dirac.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{espace-de-schwartz}{%
+\subsection{Espace de Schwartz}\label{espace-de-schwartz}}
+
+\textbf{Comme un premier jeu.} Le dessin et ses pentes s'effacent très
+vite.
+
+\textbf{Symbole.} sup \textbar x\^{}mD\^{}nf(x)\textbar\textless∞
+
+\textbf{Sens et domaine.} Fonctions lisses à décroissance rapide, cœur
+fréquentiel pour les approximations.
+
+\textbf{Garde.} Décroissance rapide n'est pas support compact.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{changement-de-mesure}{%
+\subsection{Changement de mesure}\label{changement-de-mesure}}
+
+\textbf{Comme un premier jeu.} La règle change l'épaisseur des bandes.
+
+\textbf{Symbole.} dt=e\^{}(-x)dx
+
+\textbf{Sens et domaine.} Le facteur racine dans J et ℒ conserve les
+normes L².
+
+\textbf{Garde.} Oublier la racine du jacobien détruit l'isométrie.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{injection-j_s}{%
+\subsection{Injection j\_S}\label{injection-j_s}}
+
+\textbf{Comme un premier jeu.} On range un dessin dans une boîte plus
+large.
+
+\textbf{Symbole.} j\_S:X\_S→L²
+
+\textbf{Sens et domaine.} Application identité sur les fonctions mais
+changement de norme ; compacte à S fixé.
+
+\textbf{Garde.} Même fonction ne signifie pas même topologie.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{contraction-du-support}{%
+\subsection{Contraction du support}\label{contraction-du-support}}
+
+\textbf{Comme un premier jeu.} On rapproche le dessin du centre avant de
+lisser.
+
+\textbf{Symbole.} D\_λf(x)=λ\^{}(-1/2)f(x/λ)
+
+\textbf{Sens et domaine.} Pour 0\textless λ\textless1, réduit le support
+; bornée et continue à λ=1 dans R.
+
+\textbf{Garde.} Ne préserve pas les moments ; on les corrige après le
+lissage.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{convergence-absolue}{%
+\subsection{Convergence absolue}\label{convergence-absolue}}
+
+\textbf{Comme un premier jeu.} Toutes les briques tiennent même sans
+leurs signes.
+
+\textbf{Symbole.} Σ\textbar a\_n\textbar\textless∞
+
+\textbf{Sens et domaine.} Autorise réarrangement d'une série et facilite
+les échanges.
+
+\textbf{Garde.} Ne pas présumer cette propriété dans la bande critique
+d'une série de Dirichlet.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{intuxe9gration-par-parties}{%
+\subsection{Intégration par parties}\label{intuxe9gration-par-parties}}
+
+\textbf{Comme un premier jeu.} On déplace la pente d'un dessin vers
+l'autre.
+
+\textbf{Symbole.} ∫ψ″e\^{}(±x/2)=¼∫ψe\^{}(±x/2)
+
+\textbf{Sens et domaine.} Identité sous traces ψ=ψ′=0, explique ℓ±Pψ=0.
+
+\textbf{Garde.} Sans conditions de bord, des termes supplémentaires
+restent.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{distribution}{%
+\subsection{Distribution}\label{distribution}}
+
+\textbf{Comme un premier jeu.} Un dessin peut être reconnu par son effet
+sur les tests.
+
+\textbf{Symbole.} δ\_a et Df au sens faible
+
+\textbf{Sens et domaine.} Forme linéaire continue sur Cc∞ ; dérivées
+définies par dualité.
+
+\textbf{Garde.} Une masse de bord change l'équation Pψ=f ; il faut
+annuler les traces.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{diamuxe8tre-du-support}{%
+\subsection{Diamètre du support}\label{diamuxe8tre-du-support}}
+
+\textbf{Comme un premier jeu.} On mesure la largeur de la valise.
+
+\textbf{Symbole.} D=b-a
+
+\textbf{Sens et domaine.} Pour supp f⊂{[}a,b{]}, h\_f(t)=0 si
+\textbar t\textbar\textgreater D.
+
+\textbf{Garde.} Le centre ne change pas le plafond e\^{}D ; une fenêtre
+plus large peut le surestimer.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{jet-au-bord}{%
+\subsection{Jet au bord}\label{jet-au-bord}}
+
+\textbf{Comme un premier jeu.} Les attaches du bord disparaissent
+jusqu'à quatre niveaux.
+
+\textbf{Symbole.} ψ\^{}(j)(±S)=0, j≤3
+
+\textbf{Sens et domaine.} Annulation d'ordre 4 de w\_S ; assure
+prolongement C³ et dérivées faibles L² d'ordre 4.
+
+\textbf{Garde.} La dérivée d'ordre 4 peut sauter ; ne pas annoncer C⁴ ou
+C∞.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{ruxe9flexion}{%
+\subsection{Réflexion}\label{ruxe9flexion}}
+
+\textbf{Comme un premier jeu.} Le dessin passe devant le miroir.
+
+\textbf{Symbole.} Rf(x)=f(-x)
+
+\textbf{Sens et domaine.} Unitaire sur métriques ; Q invariant car
+corrélation symétrique.
+
+\textbf{Garde.} Ce R de réflexion est distinct de la métrique R(f).
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{alguxe8bre-de-convolution}{%
+\subsection{Algèbre de convolution}\label{alguxe8bre-de-convolution}}
+
+\textbf{Comme un premier jeu.} Deux dessins s'assemblent en glissant.
+
+\textbf{Symbole.} A=Cc∞(ℝ), opération *
+
+\textbf{Sens et domaine.} Algèbre commutative associative, sans unité
+parmi les fonctions ; ℒ\_exp(f*g)=ℒ\_exp(f)ℒ\_exp(g).
+
+\textbf{Garde.} Le produit ordinaire est une autre multiplication.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{portuxe9e-exponentielle}{%
+\subsection{Portée exponentielle}\label{portuxe9e-exponentielle}}
+
+\textbf{Comme un premier jeu.} Le dessin devient une partition de notes.
+
+\textbf{Symbole.} ℒ\_exp f(z)=∫e\^{}(zx)f(x)dx
+
+\textbf{Sens et domaine.} Fonction entière pour f compact ; variable z
+distincte de s Mellin, z=s-1/2.
+
+\textbf{Garde.} Les zéros en ±1/2 sont contraintes auxiliaires, pas
+zéros de ζ.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{produit-qui-perd-les-moments}{%
+\subsection{Produit qui perd les
+moments}\label{produit-qui-perd-les-moments}}
+
+\textbf{Comme un premier jeu.} Deux dessins autorisés peuvent fabriquer
+un dessin interdit.
+
+\textbf{Symbole.} ℓ±(f²)\textgreater0 pour f réel non nul
+
+\textbf{Sens et domaine.} Si f∈I₁ réel non nul, f²≥0 et poids
+exponentiels positifs : produit hors I₁.
+
+\textbf{Garde.} La convolution f*f reste admissible et renforce les
+annulations.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{niveau-4---les-formes-opuxe9rations-et-invariants}{%
+\section{Niveau 4 - Les formes, opérations et
+invariants}\label{niveau-4---les-formes-opuxe9rations-et-invariants}}
+
+\hypertarget{adjoint}{%
+\subsection{Adjoint}\label{adjoint}}
+
+\textbf{Comme un premier jeu.} La machine se regarde dans la bonne
+balance.
+
+\textbf{Symbole.} ⟨Af,g⟩=⟨f,A*g⟩
+
+\textbf{Sens et domaine.} Opérateur adjoint relativement aux domaines et
+à la métrique déclarés.
+
+\textbf{Garde.} A* dépend du produit scalaire ; les opérateurs non
+bornés exigent leur domaine.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{corruxe9lation}{%
+\subsection{Corrélation}\label{corruxe9lation}}
+
+\textbf{Comme un premier jeu.} On glisse deux dessins pour voir où ils
+se recouvrent.
+
+\textbf{Symbole.} h\_ij(t)=∫f\_i(y)f̄\_j(y-t)dy
+
+\textbf{Sens et domaine.} Corrélation croisée ; h\_ij(-t)=conj h\_ji(t).
+
+\textbf{Garde.} Une corrélation croisée pair/impair peut être non nulle.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{corruxe9lation-symuxe9trisuxe9e}{%
+\subsection{Corrélation
+symétrisée}\label{corruxe9lation-symuxe9trisuxe9e}}
+
+\textbf{Comme un premier jeu.} Deux glissements opposés partagent la
+balance.
+
+\textbf{Symbole.} H\_ij=(h\_ij+h\_ji)/2 pour tests réels
+
+\textbf{Sens et domaine.} La partie réelle symétrique gouverne les
+matrices réelles de Q\_W.
+
+\textbf{Garde.} Seule cette symétrisation s'annule entre parités
+opposées.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{polarisation}{%
+\subsection{Polarisation}\label{polarisation}}
+
+\textbf{Comme un premier jeu.} On ouvre une balance pour voir les
+attaches entre jouets.
+
+\textbf{Symbole.} q(f,g) reconstruit depuis Q(f)
+
+\textbf{Sens et domaine.} Identité de polarisation d'une forme
+quadratique hermitienne.
+
+\textbf{Garde.} Le couplage est indispensable ; des diagonales positives
+ne suffisent pas.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{forme-compluxe8te-de-weil}{%
+\subsection{Forme complète de Weil}\label{forme-compluxe8te-de-weil}}
+
+\textbf{Comme un premier jeu.} Une balance compte tous ses plateaux.
+
+\textbf{Symbole.}
+Q\_W=E\_arch-C₀\textbar\textbar f\textbar\textbar₂²-Q\_pr
+
+\textbf{Sens et domaine.}
+E\_arch=∫₀∞w(x)\textbar\textbar U\_xf-f\textbar\textbar₂²dx,
+C₀=log(8π)+γ\_E+π/2 ; Q\_pr=2Σ Λ(n)n\^{}(-1/2)Re h\_f(log n).
+
+\textbf{Garde.} Toujours utiliser la partie archimédienne ET les
+premiers ; le signe global reste ouvert.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{noyau-archimuxe9dien}{%
+\subsection{Noyau archimédien}\label{noyau-archimuxe9dien}}
+
+\textbf{Comme un premier jeu.} Les petits déplacements pèsent plus
+lourd.
+
+\textbf{Symbole.} w(x)=e\^{}(-x/2)/(1-e\^{}(-2x))
+
+\textbf{Sens et domaine.} Positif pour x\textgreater0 ;
+\textasciitilde1/(2x) près de 0, décroît à l'infini.
+
+\textbf{Garde.} Sa singularité exige un contrôle de U\_x f-f.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{forme-des-premiers}{%
+\subsection{Forme des premiers}\label{forme-des-premiers}}
+
+\textbf{Comme un premier jeu.} Les tours premières mettent des poids sur
+la balance.
+
+\textbf{Symbole.} Q\_pr=2Σₚ,m log p·p\^{}(-m/2)Re h\_f(m log p)
+
+\textbf{Sens et domaine.} Somme finie à support de diamètre D :
+p\^{}m≤e\^{}D.
+
+\textbf{Garde.} Chaque corrélation peut changer de signe ; cette partie
+n'est pas positive en général.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{muxe9trique-logarithmique-r}{%
+\subsection{Métrique logarithmique
+R}\label{muxe9trique-logarithmique-r}}
+
+\textbf{Comme un premier jeu.} On mesure la taille et les petits
+glissements.
+
+\textbf{Symbole.} R(f)=\textbar\textbar f\textbar\textbar₂²+E\_arch(f)
+
+\textbf{Sens et domaine.} Forme positive fermée de multiplicateur
+1+a(τ), indépendante des premiers et de RH.
+
+\textbf{Garde.} Domaine X\_S plus large que H¹ ; le Riesz change quand
+on change de métrique.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{poids-logarithmique-a}{%
+\subsection{Poids logarithmique a}\label{poids-logarithmique-a}}
+
+\textbf{Comme un premier jeu.} Les rythmes rapides finissent par peser
+lourd.
+
+\textbf{Symbole.} a(τ)=2Σₙ≥₀ τ²/{[}β\_n(β\_n²+τ²){]}, β\_n=2n+1/2
+
+\textbf{Sens et domaine.} Positif, monotone en \textbar τ\textbar, tend
+vers l'infini ; multiplicateur de E\_arch.
+
+\textbf{Garde.} Il contrôle une queue fréquentielle, pas le signe
+arithmétique à lui seul.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{domaine-logarithmique-x_s}{%
+\subsection{Domaine logarithmique
+X\_S}\label{domaine-logarithmique-x_s}}
+
+\textbf{Comme un premier jeu.} Une boîte dont la règle surveille les
+glissements.
+
+\textbf{Symbole.} supp f⊂{[}-S,S{]}, R(f)\textless∞, ℓ±f=0
+
+\textbf{Sens et domaine.} Hilbert avec métrique R ; cœur admissible Cc∞
+dense ; injection compacte dans L².
+
+\textbf{Garde.} La compactité vaut à S fixé ; ses constantes ne sont pas
+uniformes en S.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{riesz-dans-huxb9}{%
+\subsection{Riesz dans H¹}\label{riesz-dans-huxb9}}
+
+\textbf{Comme un premier jeu.} La balance devient une machine sur les
+dessins.
+
+\textbf{Symbole.} Q\_W(f,g)=⟨T\_Sf,g⟩H¹
+
+\textbf{Sens et domaine.} T\_S signé, borné, autoadjoint et compact sur
+E\_S.
+
+\textbf{Garde.} Aucune marge c\textgreater0 dans H¹ sur tout E\_S, même
+si la forme est positive.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{riesz-dans-r}{%
+\subsection{Riesz dans R}\label{riesz-dans-r}}
+
+\textbf{Comme un premier jeu.} Le même dessin est l'identité moins une
+correction.
+
+\textbf{Symbole.} Q\_W(f,g)=⟨(I-K\_S)f,g⟩R
+
+\textbf{Sens et domaine.} K\_S compact autoadjoint sur X\_S ; finitement
+de directions négatives à S fixé.
+
+\textbf{Garde.} Cela ne dit pas que leur nombre est zéro.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{opuxe9rateur-compact}{%
+\subsection{Opérateur compact}\label{opuxe9rateur-compact}}
+
+\textbf{Comme un premier jeu.} Beaucoup de dessins tiennent dans
+quelques petites boîtes.
+
+\textbf{Symbole.} A(ball) relativement compact
+
+\textbf{Sens et domaine.} Les images de suites bornées ont des
+sous-suites convergentes.
+
+\textbf{Garde.} Compact ne signifie pas positif ; ses valeurs propres
+peuvent s'approcher de zéro.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{coercivituxe9}{%
+\subsection{Coercivité}\label{coercivituxe9}}
+
+\textbf{Comme un premier jeu.} La balance garde toujours une marge
+minimale.
+
+\textbf{Symbole.} Q(f)≥c\textbar\textbar f\textbar\textbar²,
+c\textgreater0
+
+\textbf{Sens et domaine.} Minoration uniforme dans une métrique donnée.
+
+\textbf{Garde.} La positivité Q≥0 est plus faible ; la marge H¹ uniforme
+est exclue ici.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{matrice-de-gram}{%
+\subsection{Matrice de Gram}\label{matrice-de-gram}}
+
+\textbf{Comme un premier jeu.} Une table dit comment les dessins se
+chevauchent.
+
+\textbf{Symbole.} B\_ij=⟨f\_i,f\_j⟩H¹
+
+\textbf{Sens et domaine.} B positive définie pour une famille
+indépendante ; ici rationnelle exacte.
+
+\textbf{Garde.} B ne doit pas être identifiée à G\_W, la forme dont le
+signe est recherché.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{compression-de-weil}{%
+\subsection{Compression de Weil}\label{compression-de-weil}}
+
+\textbf{Comme un premier jeu.} On prend une petite fenêtre dans une
+grande balance.
+
+\textbf{Symbole.} (G\_W)\_ij=Q\_W(f\_i,f\_j)
+
+\textbf{Sens et domaine.} Matrice hermitienne finie sur un sous-espace
+admissible.
+
+\textbf{Garde.} Un résultat fini ne vaut que sur ce sous-espace.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{paire-de-matrices}{%
+\subsection{Paire de matrices}\label{paire-de-matrices}}
+
+\textbf{Comme un premier jeu.} Deux balances suivent les mêmes
+coordonnées.
+
+\textbf{Symbole.} G\_Wv=λBv
+
+\textbf{Sens et domaine.} Problème spectral généralisé avec
+B\textgreater0.
+
+\textbf{Garde.} Transformer G\_W exige de transformer B simultanément.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{changement-de-base}{%
+\subsection{Changement de base}\label{changement-de-base}}
+
+\textbf{Comme un premier jeu.} On renomme les pièces du puzzle.
+
+\textbf{Symbole.} G↦C*GC, B↦C*BC
+
+\textbf{Sens et domaine.} C inversible ; inertie de G et spectre
+généralisé du couple conservés.
+
+\textbf{Garde.} Entrées, valeurs propres ordinaires et pivots ne sont
+pas tous conservés.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{cholesky}{%
+\subsection{Cholesky}\label{cholesky}}
+
+\textbf{Comme un premier jeu.} On remet la règle de mesure à plat.
+
+\textbf{Symbole.} B=LL*
+
+\textbf{Sens et domaine.} Factorisation pour B hermitienne positive
+définie ; normalise la paire.
+
+\textbf{Garde.} Une base très mal conditionnée demande une précision
+contrôlée.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{valeur-propre}{%
+\subsection{Valeur propre}\label{valeur-propre}}
+
+\textbf{Comme un premier jeu.} Un dessin ressort dans sa propre
+direction.
+
+\textbf{Symbole.} Av=λv
+
+\textbf{Sens et domaine.} λ indique la dilatation sur une direction ;
+pour hermitien λ réel.
+
+\textbf{Garde.} Une valeur calculée sans intervalle d'erreur reste
+numérique.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{inertie}{%
+\subsection{Inertie}\label{inertie}}
+
+\textbf{Comme un premier jeu.} On compte les directions qui montent,
+descendent ou restent à zéro.
+
+\textbf{Symbole.} (n₊,n₋,n₀)
+
+\textbf{Sens et domaine.} Signature d'une forme hermitienne ; invariante
+sous congruence inversible.
+
+\textbf{Garde.} Le nombre de directions négatives fini n'est pas leur
+absence.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{parituxe9}{%
+\subsection{Parité}\label{parituxe9}}
+
+\textbf{Comme un premier jeu.} Deux dessins : miroir pareil ou miroir
+opposé.
+
+\textbf{Symbole.} f(-x)=±f(x)
+
+\textbf{Sens et domaine.} Q\_W et les métriques respectent la réflexion
+; blocs pair/impair découplés.
+
+\textbf{Garde.} Un changement de base mêlant ces secteurs peut créer des
+entrées croisées.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{compluxe9ment-de-schur}{%
+\subsection{Complément de Schur}\label{compluxe9ment-de-schur}}
+
+\textbf{Comme un premier jeu.} Le nouveau jouet tire sur les attaches
+des anciens.
+
+\textbf{Symbole.} δ=a-c*G\^{}(-1)c
+
+\textbf{Sens et domaine.} Si G\textgreater0, δ est le minimum résiduel ;
+sinon identité algébrique sous inversibilité.
+
+\textbf{Garde.} Si G est singulière positive, il faut c∈Ran G et G†.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{pseudo-inverse}{%
+\subsection{Pseudo-inverse}\label{pseudo-inverse}}
+
+\textbf{Comme un premier jeu.} La machine inverse ce qu'elle sait voir.
+
+\textbf{Symbole.} G†
+
+\textbf{Sens et domaine.} Inverse sur les valeurs propres non nulles,
+zéro sur le noyau.
+
+\textbf{Garde.} Ne répare pas un couplage hors de l'image.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{drapeau-de-sous-espaces}{%
+\subsection{Drapeau de sous-espaces}\label{drapeau-de-sous-espaces}}
+
+\textbf{Comme un premier jeu.} On ouvre des boîtes dans un ordre choisi.
+
+\textbf{Symbole.} V₁⊂V₂⊂\ldots{}
+
+\textbf{Sens et domaine.} Une chaîne fixe sert à définir les dettes
+successives.
+
+\textbf{Garde.} Changer l'ordre change les pivots ; l'invariant de dette
+exige le même drapeau.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{dette-normalisuxe9e}{%
+\subsection{Dette normalisée}\label{dette-normalisuxe9e}}
+
+\textbf{Comme un premier jeu.} La nouvelle charge est mesurée avec la
+même règle.
+
+\textbf{Symbole.} δ\_G/δ\_B
+
+\textbf{Sens et domaine.} Invariant sous changement de base ancien et
+v↦αv+w ancien, pour drapeau fixé et inverses valides.
+
+\textbf{Garde.} Ce quotient n'est pas invariant sous changement
+arbitraire du drapeau.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{image-et-noyau}{%
+\subsection{Image et noyau}\label{image-et-noyau}}
+
+\textbf{Comme un premier jeu.} Ce que la machine peut produire, et ce
+qu'elle efface.
+
+\textbf{Symbole.} Ran G, ker G
+
+\textbf{Sens et domaine.} Sous-espaces ; pour G hermitienne finie, Ran
+G=(ker G)⊥.
+
+\textbf{Garde.} Dans Schur singulier, c hors de Ran G crée une direction
+négative.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9terminant}{%
+\subsection{Déterminant}\label{duxe9terminant}}
+
+\textbf{Comme un premier jeu.} On mesure si un puzzle aplati perd une
+direction.
+
+\textbf{Symbole.} det G
+
+\textbf{Sens et domaine.} Produit des valeurs propres en dimension finie
+; zéro si matrice singulière.
+
+\textbf{Garde.} Un déterminant positif seul ne garantit pas une forme
+positive.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9composition-ldl}{%
+\subsection{Décomposition LDL*}\label{duxe9composition-ldl}}
+
+\textbf{Comme un premier jeu.} On ouvre la balance pivot par pivot.
+
+\textbf{Symbole.} G=LDL*
+
+\textbf{Sens et domaine.} Factorisation avec pivotage adapté ; D porte
+l'inertie.
+
+\textbf{Garde.} Les petits pivots et les permutations doivent être
+contrôlés ; ils dépendent du drapeau.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{plafond-premier-exact}{%
+\subsection{Plafond premier exact}\label{plafond-premier-exact}}
+
+\textbf{Comme un premier jeu.} On ferme la liste de briques sans en
+oublier une.
+
+\textbf{Symbole.} X=⌊e\^{}(2S)⌋
+
+\textbf{Sens et domaine.} Encadrement rationnel Taylor
+inférieur/supérieur avec même partie entière.
+
+\textbf{Garde.} Le plafond exact ne certifie pas les poids
+logarithmiques ni la quadrature archimédienne.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{forme-hermitienne}{%
+\subsection{Forme hermitienne}\label{forme-hermitienne}}
+
+\textbf{Comme un premier jeu.} Le miroir répond dans l'autre sens.
+
+\textbf{Symbole.} q(g,f)=conj q(f,g)
+
+\textbf{Sens et domaine.} Garantit Q(f)=q(f,f) réel ; symétrie de la
+forme complète.
+
+\textbf{Garde.} Réel ne signifie pas positif.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{norme-dopuxe9rateur}{%
+\subsection{Norme d'opérateur}\label{norme-dopuxe9rateur}}
+
+\textbf{Comme un premier jeu.} Le plus grand agrandissement possible.
+
+\textbf{Symbole.}
+\textbar\textbar A\textbar\textbar=sup\_\textbar\textbar f\textbar\textbar=1\textbar\textbar Af\textbar\textbar{}
+
+\textbf{Sens et domaine.} Dépend des normes de départ et d'arrivée ;
+contrôlée par une borne effective.
+
+\textbf{Garde.} Une petite entrée matricielle ne donne pas une petite
+norme globale sans estimation.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{reste-de-taylor-positif}{%
+\subsection{Reste de Taylor positif}\label{reste-de-taylor-positif}}
+
+\textbf{Comme un premier jeu.} On compte les petites piles encore
+oubliées.
+
+\textbf{Symbole.} e\^{}x=Σₖ≤N x\^{}k/k!+reste
+
+\textbf{Sens et domaine.} Pour x≥0, termes positifs et borne géométrique
+si x\textless N+2.
+
+\textbf{Garde.} Le reste rationnel n'est pas une certification de toutes
+les autres fonctions transcendantes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{calcul-complexe-des-formes}{%
+\subsection{Calcul complexe des
+formes}\label{calcul-complexe-des-formes}}
+
+\textbf{Comme un premier jeu.} Chaque flèche tire sur toutes les autres.
+
+\textbf{Symbole.} Q(Σc\_i f\_i)=c*G c
+
+\textbf{Sens et domaine.} Une base réelle avec matrice réelle symétrique
+se complexifie hermitiennement ; critère PSD identique.
+
+\textbf{Garde.} Cela couvre les combinaisons complexes de cette famille,
+pas tout paramètre A d'autres constructions du corpus.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{parties-ruxe9elle-et-imaginaire}{%
+\subsection{Parties réelle et
+imaginaire}\label{parties-ruxe9elle-et-imaginaire}}
+
+\textbf{Comme un premier jeu.} Deux dessins réels portent une flèche
+complexe.
+
+\textbf{Symbole.} f=u+iv, Q(f)=Q(u)+Q(v)
+
+\textbf{Sens et domaine.} Pour une forme à coefficients réels
+symétriques, les termes mixtes s'annulent.
+
+\textbf{Garde.} La propriété dépend de la forme réelle ; les phases
+d'autres paramètres peuvent rester dans ses coefficients.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9faut-de-translation}{%
+\subsection{Défaut de translation}\label{duxe9faut-de-translation}}
+
+\textbf{Comme un premier jeu.} On compare le dessin à son petit
+déplacement.
+
+\textbf{Symbole.}
+\textbar\textbar U\_xf-f\textbar\textbar²=2\textbar\textbar f\textbar\textbar²-2Re
+h\_f(x)
+
+\textbf{Sens et domaine.} Identité exacte L² ; pour H¹,
+défaut≤x²\textbar\textbar f′\textbar\textbar².
+
+\textbf{Garde.} Le défaut est positif, mais Q\_W soustrait aussi une
+masse et les premiers.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{matrice-de-correction}{%
+\subsection{Matrice de correction}\label{matrice-de-correction}}
+
+\textbf{Comme un premier jeu.} Deux retouches règlent deux balances.
+
+\textbf{Symbole.} {[}{[}A,-A/2{]},{[}A,A/2{]}{]}
+
+\textbf{Sens et domaine.} Pour φ paire et A=∫φe\^{}(x/2)\textgreater0,
+moments de φ,φ′ donnent déterminant A².
+
+\textbf{Garde.} L'ordre des lignes ± et les signes doivent rester
+annoncés.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{uxe9nergie-de-duxe9placement}{%
+\subsection{Énergie de déplacement}\label{uxe9nergie-de-duxe9placement}}
+
+\textbf{Comme un premier jeu.} Les petits glissements paient une
+contribution positive.
+
+\textbf{Symbole.} E\_arch=∫w\textbar\textbar U\_xf-f\textbar\textbar²
+
+\textbf{Sens et domaine.} Forme positive, fermée par multiplicateur
+Fourier a(τ).
+
+\textbf{Garde.} E\_arch seule n'est pas Q\_W ; soustractions
+arithmétiques restent présentes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{terme-croisuxe9}{%
+\subsection{Terme croisé}\label{terme-croisuxe9}}
+
+\textbf{Comme un premier jeu.} Une attache relie deux jouets.
+
+\textbf{Symbole.} 2Re(c̄\_i c\_j q(f\_i,f\_j))
+
+\textbf{Sens et domaine.} Partie indispensable d'une forme sur une
+somme.
+
+\textbf{Garde.} Sa phase peut rendre négative une somme à diagonales
+positives.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9coupage-tuxeate-et-queue}{%
+\subsection{Découpage tête et
+queue}\label{duxe9coupage-tuxeate-et-queue}}
+
+\textbf{Comme un premier jeu.} Une boîte petite et tout ce qui reste.
+
+\textbf{Symbole.} X\_S=V⊕\_R V⊥
+
+\textbf{Sens et domaine.} Décomposition orthogonale R ; blocs de Q et
+couplages définis.
+
+\textbf{Garde.} La tête et la queue sont liées par G₀₁ ; elles ne sont
+pas deux tests indépendants.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{transposuxe9e-conjuguuxe9e}{%
+\subsection{Transposée conjuguée}\label{transposuxe9e-conjuguuxe9e}}
+
+\textbf{Comme un premier jeu.} On échange lignes et colonnes avec leur
+miroir.
+
+\textbf{Symbole.} C*=conj Cᵀ
+
+\textbf{Sens et domaine.} Adjoint matriciel pour métrique euclidienne ;
+congruence utilise C*GC.
+
+\textbf{Garde.} Pour métrique B, l'adjoint opérateur est B\^{}(-1)C*B si
+inverses valides.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{codimension}{%
+\subsection{Codimension}\label{codimension}}
+
+\textbf{Comme un premier jeu.} Deux balances retirent deux libertés.
+
+\textbf{Symbole.} codim E\_S=2
+
+\textbf{Sens et domaine.} Deux moments indépendants continus coupent un
+sous-espace fermé.
+
+\textbf{Garde.} Codimension finie n'implique pas dimension finie du
+domaine.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{dualituxe9}{%
+\subsection{Dualité}\label{dualituxe9}}
+
+\textbf{Comme un premier jeu.} Un petit capteur lit un dessin.
+
+\textbf{Symbole.} ℓ(f)
+
+\textbf{Sens et domaine.} Fonctionnelle linéaire continue sur l'espace
+choisi ; normes et adjoints associés.
+
+\textbf{Garde.} Un capteur qui ne lit rien peut laisser des modes
+invisibles.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{suxe9rie-du-noyau}{%
+\subsection{Série du noyau}\label{suxe9rie-du-noyau}}
+
+\textbf{Comme un premier jeu.} Le poids est une pile de petites
+décroissances.
+
+\textbf{Symbole.} w(x)=Σₙ≥₀e\^{}(-β\_nx)
+
+\textbf{Sens et domaine.} Série positive pour x\textgreater0 ; Tonelli
+produit la série de a(τ).
+
+\textbf{Garde.} Le calcul spectral emploie des termes positifs du noyau,
+pas des zéros de ζ.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{polynuxf4me-de-corruxe9lation}{%
+\subsection{Polynôme de
+corrélation}\label{polynuxf4me-de-corruxe9lation}}
+
+\textbf{Comme un premier jeu.} Deux dessins polynomiaux se recouvrent
+exactement.
+
+\textbf{Symbole.} h\_ij(Sz)=polynôme rationnel, 0≤z≤2
+
+\textbf{Sens et domaine.} Intégrale symbolique sur {[}z-1,1{]}, calcul
+par fractions rationnelles.
+
+\textbf{Garde.} Ce polynôme vaut sur l'intervalle indiqué ; hors
+recouvrement la corrélation est zéro.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{identituxe9-de-muxe9trique-du-moule}{%
+\subsection{Identité de métrique du
+moule}\label{identituxe9-de-muxe9trique-du-moule}}
+
+\textbf{Comme un premier jeu.} Le moule donne aussi une règle exacte.
+
+\textbf{Symbole.}
+\textbar\textbar Pψ\textbar\textbar H¹²=\textbar\textbar ψ‴\textbar\textbar²+3/2\textbar\textbar ψ″\textbar\textbar²+9/16\textbar\textbar ψ′\textbar\textbar²+1/16\textbar\textbar ψ\textbar\textbar²
+
+\textbf{Sens et domaine.} Intégration par parties dans H₀³ ; constantes
+d'équivalence indépendantes de S.
+
+\textbf{Garde.} Cette identité concerne la métrique B, pas Q\_W.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{conditionnement}{%
+\subsection{Conditionnement}\label{conditionnement}}
+
+\textbf{Comme un premier jeu.} Une règle presque écrasée rend les
+lectures fragiles.
+
+\textbf{Symbole.} κ(B)=λ\_max(B)/λ\_min(B)
+
+\textbf{Sens et domaine.} Mesure spectrale pour B\textgreater0 euclidien
+; amplifie les erreurs de normalisation.
+
+\textbf{Garde.} Diffère des autres κ du corpus ; sa valeur est propre à
+la base.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{psd-et-marge}{%
+\subsection{PSD et marge}\label{psd-et-marge}}
+
+\textbf{Comme un premier jeu.} La balance tient ou garde une marge.
+
+\textbf{Symbole.} G⪰0 versus G⪰cB
+
+\textbf{Sens et domaine.} Première propriété admet directions nulles ;
+seconde impose c\textgreater0 dans la métrique B.
+
+\textbf{Garde.} La seconde est impossible pour toute E\_S avec B\_H¹ ;
+la première reste ouverte.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{uxe9quivalence-des-normes-du-moule}{%
+\subsection{Équivalence des normes du
+moule}\label{uxe9quivalence-des-normes-du-moule}}
+
+\textbf{Comme un premier jeu.} Le moule fournit deux règles qui ne se
+contredisent pas.
+
+\textbf{Symbole.}
+1/16\textbar\textbar ψ\textbar\textbar H³²≤\textbar\textbar Pψ\textbar\textbar H¹²≤3/2\textbar\textbar ψ\textbar\textbar H³²
+
+\textbf{Sens et domaine.} Constantes exactes et indépendantes de S avec
+norme H³ somme des dérivées.
+
+\textbf{Garde.} Ces constantes ne sont pas des marges positives de Q\_W.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{iduxe9aux-de-jets-admissibles}{%
+\subsection{Idéaux de jets
+admissibles}\label{iduxe9aux-de-jets-admissibles}}
+
+\textbf{Comme un premier jeu.} Plus de balances sont attachées aux deux
+portes.
+
+\textbf{Symbole.} I\_r=\{f∈A : ∫x\^{}j e\^{}(±x/2)f=0, j\textless r\}
+
+\textbf{Sens et domaine.} Idéaux de convolution ; I₀=A ;
+I\_r*I\_s⊂I\_(r+s), somme dans I\_min(r,s).
+
+\textbf{Garde.} Les unités d'amplitude se multiplient ; convolution
+n'implique pas positivité de Q\_W.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{arithmuxe9tique-des-fonctions}{%
+\subsection{Arithmétique des
+fonctions}\label{arithmuxe9tique-des-fonctions}}
+
+\textbf{Comme un premier jeu.} Quatre gestes ont chacun leur règle de
+montage.
+
+\textbf{Symbole.} addition, scalaire, produit, convolution
+
+\textbf{Sens et domaine.} Somme/scalaire conservent I\_r ; convolution
+additionne les ordres garantis ; produit ordinaire peut perdre I₁.
+
+\textbf{Garde.} Ni D\_x ni U\_a ne sont des homomorphismes de
+convolution dans le sens naïf.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{duxe9rivation-pour-convolution}{%
+\subsection{Dérivation pour
+convolution}\label{duxe9rivation-pour-convolution}}
+
+\textbf{Comme un premier jeu.} Le bouton position se partage entre deux
+dessins.
+
+\textbf{Symbole.} x(f*g)=(xf)*g+f*(xg)
+
+\textbf{Sens et domaine.} Multiplication par x est une dérivation de
+l'algèbre de convolution ; D\_x(f*g)=Df*g=f*Dg.
+
+\textbf{Garde.} D\_x est dérivation du produit ordinaire, pas de la
+convolution.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{uxe9chelle-de-jets-par-p}{%
+\subsection{Échelle de jets par P}\label{uxe9chelle-de-jets-par-p}}
+
+\textbf{Comme un premier jeu.} Le moule ferme une balance de plus à
+chaque porte.
+
+\textbf{Symbole.} ℒ\_exp(Pf)=(z²-1/4)ℒ\_exp f
+
+\textbf{Sens et domaine.} P:I\_r→I\_(r+1) sur graines Cc∞ ;
+x:I\_(r+1)→I\_r ; D\_x:I\_r→I\_r.
+
+\textbf{Garde.} Ordre garanti au moins ; certaines annulations
+supplémentaires peuvent apparaître.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{jets-ordinaires-en-zuxe9ro}{%
+\subsection{Jets ordinaires en zéro}\label{jets-ordinaires-en-zuxe9ro}}
+
+\textbf{Comme un premier jeu.} Une nouvelle balance lit les rythmes
+lents.
+
+\textbf{Symbole.} ℒ\_exp\^{}(j)f(0)=∫x\^{}j f(x)dx
+
+\textbf{Sens et domaine.} L'annulation d'ordre q en 0 définit la queue
+Y\_(q-1) ; D\_x gagne un ordre en 0 et P le conserve.
+
+\textbf{Garde.} Ce point du test n'est pas un zéro critique de ζ.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{quotient-de-jets}{%
+\subsection{Quotient de jets}\label{quotient-de-jets}}
+
+\textbf{Comme un premier jeu.} Deux petits carnets gardent les premiers
+traits du dessin.
+
+\textbf{Symbole.} A/I\_r ≃ ℂ{[}ε{]}/(ε\^{}r) ⊕ ℂ{[}ε{]}/(ε\^{}r)
+
+\textbf{Sens et domaine.} Jets normalisés ℒ\_exp\^{}(j)f(±1/2)/j! ;
+produit de coefficients tronqué ; codimension 2r.
+
+\textbf{Garde.} Le quotient oublie tous les autres traits ;
+r\textgreater1 ne couvre pas tous les tests de I₁.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{iduxe9al-de-convolution}{%
+\subsection{Idéal de convolution}\label{iduxe9al-de-convolution}}
+
+\textbf{Comme un premier jeu.} Une porte fermée reste fermée quand on
+colle un autre dessin.
+
+\textbf{Symbole.} I\_r*A⊂I\_r
+
+\textbf{Sens et domaine.} Sous-espace stable sous convolution par toute
+graine ; somme conserve l'ordre minimal garanti.
+
+\textbf{Garde.} Idéal ici se rapporte à convolution, pas au produit
+ordinaire.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{polynuxf4me-tronquuxe9}{%
+\subsection{Polynôme tronqué}\label{polynuxf4me-tronquuxe9}}
+
+\textbf{Comme un premier jeu.} Un carnet efface tous les traits trop
+hauts.
+
+\textbf{Symbole.} ℂ{[}ε{]}/(ε\^{}r)
+
+\textbf{Sens et domaine.} Addition coefficient par coefficient et
+produit Cauchy avec ε\^{}r=0 ; représentation exacte d'un jet d'ordre
+r-1.
+
+\textbf{Garde.} Ce ε formel est distinct de l'erreur ε\_N(T).
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{deux-moules-compatibles}{%
+\subsection{Deux moules compatibles}\label{deux-moules-compatibles}}
+
+\textbf{Comme un premier jeu.} Deux clés ferment les portes et les
+rythmes lents.
+
+\textbf{Symbole.} D\_x\^{}q P\^{}r ψ∈I\_r∩Y\_(q-1)
+
+\textbf{Sens et domaine.} D\_x et P commutent ; ℒ\_exp multiplie par
+(-z)\^{}q(z²-1/4)\^{}r ; support contenu dans celui de la graine.
+
+\textbf{Garde.} La construction peut être dans une queue positive sans
+couvrir la tête où le signe est inconnu.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{niveau-5---les-contrats-de-recherche-et-leurs-limites}{%
+\section{Niveau 5 - Les contrats de recherche et leurs
+limites}\label{niveau-5---les-contrats-de-recherche-et-leurs-limites}}
+
+\hypertarget{queue-de-lopuxe9rateur}{%
+\subsection{Queue de l'opérateur}\label{queue-de-lopuxe9rateur}}
+
+\textbf{Comme un premier jeu.} Les jouets restants ne peuvent plus faire
+basculer seuls la balance.
+
+\textbf{Symbole.}
+\textbar\textbar K\_S\textbar V⊥\textbar\textbar\textless1
+
+\textbf{Sens et domaine.} Une queue coercive explicite est construite
+par moments ordinaires ; le taux pour la queue orthogonale de la base
+brute f\_k reste à établir.
+
+\textbf{Garde.} Ne pas identifier la queue de moments avec le complément
+de span(f\_k).
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{ruxe9duction-par-queue-et-schur}{%
+\subsection{Réduction par queue et
+Schur}\label{ruxe9duction-par-queue-et-schur}}
+
+\textbf{Comme un premier jeu.} On range l'infini et l'on garde ses
+attaches exactes.
+
+\textbf{Symbole.} G\_eff=G₀₀-G₀₁G₁₁\^{}(-1)G₁₀
+
+\textbf{Sens et domaine.} Si le bloc de queue est uniformément positif,
+signe global équivalent au Schur fini.
+
+\textbf{Garde.} Une compression finie positive sans borne de queue ne
+suffit pas.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{densituxe9-dune-famille}{%
+\subsection{Densité d'une famille}\label{densituxe9-dune-famille}}
+
+\textbf{Comme un premier jeu.} Les petits dessins peuvent approcher tous
+les dessins.
+
+\textbf{Symbole.} closure(∪V\_n)=E\_S
+
+\textbf{Sens et domaine.} Ici densité de P{[}w\_S·polynômes{]} dans H¹ ;
+puis dans X\_S par le cœur.
+
+\textbf{Garde.} Dense ne signifie pas que le signe est positif sur cette
+famille.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{quantificateur-global}{%
+\subsection{Quantificateur global}\label{quantificateur-global}}
+
+\textbf{Comme un premier jeu.} Chaque boîte et chaque taille doivent
+être couvertes.
+
+\textbf{Symbole.} ∀S\textgreater0, ∀n≥1
+
+\textbf{Sens et domaine.} Une preuve globale exige tous les supports et
+tous les tests via cœur et continuité.
+
+\textbf{Garde.} Une extension de plafond couvre quelques indices
+supplémentaires seulement.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{bellman-des-contrats}{%
+\subsection{Bellman des contrats}\label{bellman-des-contrats}}
+
+\textbf{Comme un premier jeu.} On choisit un coup qui ouvre plusieurs
+portes.
+
+\textbf{Symbole.} V(s)=max\_a E{[}r(s,a)+γV(s′){]}
+
+\textbf{Sens et domaine.} s porte objets, obligations et preuves ;
+actions ont résultats conditionnels et coûts ; ici horizon fini γ=1.
+
+\textbf{Garde.} Le score de recherche n'est ni une probabilité de RH ni
+la forme de Weil.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{portes-et-et-ou}{%
+\subsection{Portes ET et OU}\label{portes-et-et-ou}}
+
+\textbf{Comme un premier jeu.} Deux clés pour une porte, ou deux portes
+possibles.
+
+\textbf{Symbole.} ET: tous ; OU: un chemin valide
+
+\textbf{Sens et domaine.} Graphe d'obligations avec complémentarités ;
+utile pour les coups doubles.
+
+\textbf{Garde.} Une flèche logique est autorisée seulement si son
+contrat est prouvé.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{jet}{%
+\subsection{Jet}\label{jet}}
+
+\textbf{Comme un premier jeu.} On garde le dessin, la pente et les
+courbures.
+
+\textbf{Symbole.} J\^{}mF(z)=(F,F′,\ldots,F\^{}(m))(z)
+
+\textbf{Sens et domaine.} Données locales jusqu'à un ordre fini.
+
+\textbf{Garde.} Un jet local n'indique pas à lui seul la branche globale
+suivie.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{branche}{%
+\subsection{Branche}\label{branche}}
+
+\textbf{Comme un premier jeu.} Un chemin local à travers une forêt.
+
+\textbf{Symbole.} F(z,t)=0, z=z(t)
+
+\textbf{Sens et domaine.} Si ∂\_zF≠0, fonction implicite locale ; près
+d'un zéro multiple il faut un autre modèle.
+
+\textbf{Garde.} Continuer à travers une collision nécessite conditions
+et choix ; sujet encore ouvert du corpus.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{collision-de-zuxe9ros}{%
+\subsection{Collision de zéros}\label{collision-de-zuxe9ros}}
+
+\textbf{Comme un premier jeu.} Deux chemins se touchent.
+
+\textbf{Symbole.} F=∂\_zF=0
+
+\textbf{Sens et domaine.} Système local de dégénérescence ; jets,
+discriminant ou préparation locale à spécifier.
+
+\textbf{Garde.} Une collision certifiée locale ne contrôle pas tous les
+passages globaux.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{discriminant}{%
+\subsection{Discriminant}\label{discriminant}}
+
+\textbf{Comme un premier jeu.} Une alarme quand deux racines se
+rejoignent.
+
+\textbf{Symbole.} Disc(P)=0
+
+\textbf{Sens et domaine.} Pour un polynôme, détecte racines multiples ;
+extension locale à préciser.
+
+\textbf{Garde.} Ne pas appliquer la formule polynomiale directement à
+une fonction entière quelconque.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{coefficient-complexe-a}{%
+\subsection{Coefficient complexe A}\label{coefficient-complexe-a}}
+
+\textbf{Comme un premier jeu.} Une flèche peut tourner et grandir.
+
+\textbf{Symbole.} A∈ℂ
+
+\textbf{Sens et domaine.} Paramètre de certaines familles du corpus ;
+\textbar A\textbar²≥0, mais les termes croisés gardent la phase.
+
+\textbf{Garde.} Un argument limité à A réel positif ne couvre pas A
+complexe arbitraire.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{trace-et-correspondances-de-weil}{%
+\subsection{Trace et correspondances de
+Weil}\label{trace-et-correspondances-de-weil}}
+
+\textbf{Comme un premier jeu.} Une règle relie les allers et les
+retours.
+
+\textbf{Symbole.} σ(ξξ′)\textgreater0 dans le cadre géométrique
+
+\textbf{Sens et domaine.} Positivité des correspondances dans la preuve
+sur les courbes sur corps finis ; source Wei48.
+
+\textbf{Garde.} Aucun transfert de cette géométrie à ζ des entiers n'est
+démontré.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{frobenius}{%
+\subsection{Frobenius}\label{frobenius}}
+
+\textbf{Comme un premier jeu.} On répète un geste exact dans un monde
+fini.
+
+\textbf{Symbole.} Frob:x↦x\^{}q
+
+\textbf{Sens et domaine.} Morphisme en caractéristique p ; action
+cohomologique avec trace dans le cadre approprié.
+
+\textbf{Garde.} Un opérateur virtuel aux mêmes valeurs propres n'est pas
+automatiquement un morphisme.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{riemannroch}{%
+\subsection{Riemann--Roch}\label{riemannroch}}
+
+\textbf{Comme un premier jeu.} On compte les dessins autorisés et les
+contraintes.
+
+\textbf{Symbole.} ℓ(D)-ℓ(K-D)=deg D+1-g
+
+\textbf{Sens et domaine.} Théorème pour un diviseur sur une courbe lisse
+projective ; géométrie nécessaire.
+
+\textbf{Garde.} Un bilan formel de dimensions ne construit pas une
+courbe pour ζ.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{marge-spectrale}{%
+\subsection{Marge spectrale}\label{marge-spectrale}}
+
+\textbf{Comme un premier jeu.} On cherche le plus petit espace sous la
+balance.
+
+\textbf{Symbole.} inf spec(A)
+
+\textbf{Sens et domaine.} Dépend de l'opérateur et de sa métrique ;
+existence ou borne certifiée à distinguer.
+
+\textbf{Garde.} La marge R éventuelle peut dépendre de S ; la marge H¹
+strictement positive est impossible ici.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{certificat}{%
+\subsection{Certificat}\label{certificat}}
+
+\textbf{Comme un premier jeu.} On garde une règle qui encadre le
+résultat.
+
+\textbf{Symbole.} borne d'erreur + décision
+
+\textbf{Sens et domaine.} Calcul rationnel exact ou intervalle validé et
+toutes conditions contrôlées.
+
+\textbf{Garde.} Deux précisions concordantes ne remplacent pas une borne
+d'erreur.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{calcul-par-intervalles}{%
+\subsection{Calcul par intervalles}\label{calcul-par-intervalles}}
+
+\textbf{Comme un premier jeu.} Le résultat habite une petite boîte
+fermée.
+
+\textbf{Symbole.} x∈{[}a,b{]}
+
+\textbf{Sens et domaine.} Arithmétique à arrondi dirigé et propagation
+rigoureuse des inclusions.
+
+\textbf{Garde.} Une valeur à beaucoup de chiffres n'est pas un
+intervalle validé.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{stabilituxe9-dun-signe}{%
+\subsection{Stabilité d'un signe}\label{stabilituxe9-dun-signe}}
+
+\textbf{Comme un premier jeu.} La balance ne bascule pas malgré une
+petite secousse.
+
+\textbf{Symbole.} \textbar erreur\textbar\textless marge
+
+\textbf{Sens et domaine.} Perturbation contrôlée d'une forme ou d'un
+spectre.
+
+\textbf{Garde.} Le couplage et le conditionnement amplifient l'erreur ;
+il faut les borner.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{invariant-symbolique}{%
+\subsection{Invariant symbolique}\label{invariant-symbolique}}
+
+\textbf{Comme un premier jeu.} Un signe survit à la traduction.
+
+\textbf{Symbole.} I(Tx)=I(x)
+
+\textbf{Sens et domaine.} Une quantité conservée par une transformation
+définie avec ses conditions.
+
+\textbf{Garde.} Un même symbole écrit deux fois n'est pas un invariant.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{invariant-relationnel}{%
+\subsection{Invariant relationnel}\label{invariant-relationnel}}
+
+\textbf{Comme un premier jeu.} Les attaches survivent même si les pièces
+changent.
+
+\textbf{Symbole.} R(x,y)⇒R(Tx,Ty)
+
+\textbf{Sens et domaine.} Moments nuls, incidence de sous-espaces,
+congruence simultanée, ordre d'un drapeau.
+
+\textbf{Garde.} Une relation peut être conservée sans conserver les
+valeurs numériques.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{grammaire-des-passages}{%
+\subsection{Grammaire des passages}\label{grammaire-des-passages}}
+
+\textbf{Comme un premier jeu.} Les mots savent quelles phrases ils
+peuvent former.
+
+\textbf{Symbole.} objet : domaine → codomaine ; garde ; coût
+
+\textbf{Sens et domaine.} Contrat de traduction typé, preuve et perte
+séparées ; validateur programmé.
+
+\textbf{Garde.} La validation vérifie le contrat codé, pas une preuve
+automatique de toutes les mathématiques.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{utilituxe9-de-recherche}{%
+\subsection{Utilité de recherche}\label{utilituxe9-de-recherche}}
+
+\textbf{Comme un premier jeu.} On compte les portes réellement ouvertes.
+
+\textbf{Symbole.} U\_decision≠U\_a
+
+\textbf{Sens et domaine.} Choix éditorial de gains sur obligations ;
+aucune unité physique.
+
+\textbf{Garde.} Ne pas confondre U\_decision avec la translation U\_a.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{les-diffuxe9rents-g}{%
+\subsection{Les différents G}\label{les-diffuxe9rents-g}}
+
+\textbf{Comme un premier jeu.} Quatre boîtes ne portent plus la même
+étiquette.
+
+\textbf{Symbole.} G\_log(s), G\_NB, G\_W, B
+
+\textbf{Sens et domaine.} G\_log désigne un logarithme local selon le
+document ; G\_NB un Gram ; G\_W une compression ; B la métrique externe.
+
+\textbf{Garde.} La désambiguïsation exige le document ; le symbole G
+seul ne donne pas le domaine.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{les-diffuxe9rents-d}{%
+\subsection{Les différents D}\label{les-diffuxe9rents-d}}
+
+\textbf{Comme un premier jeu.} Trois gestes portent des noms complets.
+
+\textbf{Symbole.} D\_x, D\_mult, D\_Frob
+
+\textbf{Sens et domaine.} D\_x dérive ; D\_mult mesure un défaut
+multiplicatif ; un logarithme de Frobenius exige une branche et un
+domaine.
+
+\textbf{Garde.} Ne pas composer ces symboles comme s'ils étaient la même
+machine.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{projection}{%
+\subsection{Projection}\label{projection}}
+
+\textbf{Comme un premier jeu.} On garde la partie qui entre dans une
+boîte.
+
+\textbf{Symbole.} Π\_V f
+
+\textbf{Sens et domaine.} Projection orthogonale dans une métrique
+annoncée ; Π\_V²=Π\_V.
+
+\textbf{Garde.} Ce P/Π n'est pas le moule D²-1/4 ; projection H¹ et
+projection R diffèrent.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{polynuxf4me}{%
+\subsection{Polynôme}\label{polynuxf4me}}
+
+\textbf{Comme un premier jeu.} Un dessin fabriqué par quelques briques
+de puissances.
+
+\textbf{Symbole.} P\_poly(u)=Σc\_k u\^{}k
+
+\textbf{Sens et domaine.} Fonction algébrique de variable déclarée ;
+zêta polynomiale en corps fini selon le contexte.
+
+\textbf{Garde.} Ce P n'est pas l'opérateur différentiel.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{les-diffuxe9rentes-ux3ba}{%
+\subsection{Les différentes κ}\label{les-diffuxe9rentes-ux3ba}}
+
+\textbf{Comme un premier jeu.} Deux petites étiquettes doivent garder
+leur boîte.
+
+\textbf{Symbole.} κ\_Li, κ\_pli
+
+\textbf{Sens et domaine.} Coefficient ou paramètre selon le document ;
+définition locale obligatoire.
+
+\textbf{Garde.} Aucune égalité entre les κ n'est fournie par leur seule
+lettre.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{tonelli-et-uxe9change-positif}{%
+\subsection{Tonelli et échange
+positif}\label{tonelli-et-uxe9change-positif}}
+
+\textbf{Comme un premier jeu.} On compte les mêmes briques dans deux
+ordres.
+
+\textbf{Symbole.} ∫Σ f\_n=Σ∫f\_n si f\_n≥0
+
+\textbf{Sens et domaine.} Autorise l'échange pour fonctions mesurables
+non négatives, même si valeur infinie.
+
+\textbf{Garde.} Pour des termes signés, il faut d'autres hypothèses de
+domination/convergence.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{plancherel}{%
+\subsection{Plancherel}\label{plancherel}}
+
+\textbf{Comme un premier jeu.} La même chanson a la même taille sur deux
+portées.
+
+\textbf{Symbole.}
+\textbar\textbar f\textbar\textbar₂=\textbar\textbar f̂\textbar\textbar₂
+
+\textbf{Sens et domaine.} Isométrie Fourier L² avec normalisation
+unitaire.
+
+\textbf{Garde.} L'égalité L² seule ne donne pas les domaines des formes
+plus fortes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{commutateur}{%
+\subsection{Commutateur}\label{commutateur}}
+
+\textbf{Comme un premier jeu.} Deux gestes changent selon leur ordre.
+
+\textbf{Symbole.} {[}P,M\_τ{]}=M\_τ(2iτD-τ²)
+
+\textbf{Sens et domaine.} P M\_τψ=M\_τ(Pψ+2iτψ′-τ²ψ).
+
+\textbf{Garde.} Il explique pourquoi moduler la graine puis appliquer P
+n'est pas moduler le test seul.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{pont-ruxe9gularisuxe9}{%
+\subsection{Pont régularisé}\label{pont-ruxe9gularisuxe9}}
+
+\textbf{Comme un premier jeu.} On déplace, lisse, range et passe dans le
+moule.
+
+\textbf{Symbole.} T=P{[}χ(η\_δ*Γ\_Sg){]}
+
+\textbf{Sens et domaine.} Γ\_S est le décalage de l'entrée prolongée par
+zéro ; sortie admissible ; coût δ\^{}(-3) en H¹ sous cutoffs fixés.
+
+\textbf{Garde.} Le coût et les limites doivent être uniformisés avant de
+conclure globalement.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{correction-des-moments}{%
+\subsection{Correction des moments}\label{correction-des-moments}}
+
+\textbf{Comme un premier jeu.} Deux petites retouches remettent les
+balances à zéro.
+
+\textbf{Symbole.} f↦f-aφ-bφ′
+
+\textbf{Sens et domaine.} Matrice des moments de φ et φ′ inversible pour
+φ paire non nulle positive ; correction continue.
+
+\textbf{Garde.} Il faut un support intérieur commun et des coefficients
+calculés, pas une correction abstraite gratuite.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{rabais-bellman-ux3b3}{%
+\subsection{Rabais Bellman γ}\label{rabais-bellman-ux3b3}}
+
+\textbf{Comme un premier jeu.} Les coups éloignés peuvent peser moins
+lourd.
+
+\textbf{Symbole.} 0≤γ≤1
+
+\textbf{Sens et domaine.} Paramètre de décision, ici γ=1 à horizon fini
+pour les contrats.
+
+\textbf{Garde.} γ\_decision n'est ni Γ fonction spéciale ni γ\_E
+constante d'Euler.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{principe-variationnel}{%
+\subsection{Principe variationnel}\label{principe-variationnel}}
+
+\textbf{Comme un premier jeu.} On cherche le dessin qui fait descendre
+le plus la balance.
+
+\textbf{Symbole.} λ\_min=inf Q(f)/R(f)
+
+\textbf{Sens et domaine.} Quotient de Rayleigh dans la métrique annoncée
+; restriction finie donne un diagnostic.
+
+\textbf{Garde.} Une infimum sur un petit sous-espace peut manquer une
+direction négative ailleurs.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{erreur-de-famille}{%
+\subsection{Erreur de famille}\label{erreur-de-famille}}
+
+\textbf{Comme un premier jeu.} Les petites dettes disparaissent dans
+toutes les boîtes.
+
+\textbf{Symbole.} G\_n≥-ε\_n B\_n, ε\_n→0
+
+\textbf{Sens et domaine.} Avec famille imbriquée dense et continuité,
+cette borne pour tout n implique Q\_W≥0.
+
+\textbf{Garde.} Une suite de bornes non certifiées ou sans tous les n ne
+remplit pas le contrat.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{duxe9faut-de-transport}{%
+\subsection{Défaut de transport}\label{duxe9faut-de-transport}}
+
+\textbf{Comme un premier jeu.} On mesure ce qu'une traduction abîme.
+
+\textbf{Symbole.} \textbar q(Tf,Tg)-q(f,g)\textbar{}
+
+\textbf{Sens et domaine.} Différence de formes sur domaines compatibles,
+bornée par normes et erreurs de T.
+
+\textbf{Garde.} Une transformation non isométrique exige cette
+comptabilité.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{indice-nuxe9gatif}{%
+\subsection{Indice négatif}\label{indice-nuxe9gatif}}
+
+\textbf{Comme un premier jeu.} Combien de directions font pencher vers
+le bas.
+
+\textbf{Symbole.} ind₋(Q)
+
+\textbf{Sens et domaine.} Dimension maximale d'un sous-espace où
+Q\textless0 ; finie à S fixé via I-compact.
+
+\textbf{Garde.} Fini ne signifie pas zéro et ne couvre pas tous les
+supports.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{projection-fruxe9quentielle}{%
+\subsection{Projection
+fréquentielle}\label{projection-fruxe9quentielle}}
+
+\textbf{Comme un premier jeu.} On écoute seulement les rythmes assez
+lents.
+
+\textbf{Symbole.} Π\_T=ℱ\^{}(-1)1\_{[}-T,T{]}ℱ
+
+\textbf{Sens et domaine.} Projection orthogonale L² ; queue contrôlée
+par 1+a(T) dans R.
+
+\textbf{Garde.} Elle ne conserve pas le support compact ni les moments ;
+c'est un outil d'estimation, pas un test admissible automatique.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{support-et-temps-logarithmique}{%
+\subsection{Support et temps
+logarithmique}\label{support-et-temps-logarithmique}}
+
+\textbf{Comme un premier jeu.} On transforme les tailles en positions.
+
+\textbf{Symbole.} x=log u, D=diam supp f
+
+\textbf{Sens et domaine.} Nombre de premiers en jeu lié à e\^{}D ;
+support centré n'est qu'une convention.
+
+\textbf{Garde.} Ne pas identifier ce x à un temps physique ni réduire le
+diamètre à la position du centre.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{rigidituxe9-de-hamburger}{%
+\subsection{Rigidité de Hamburger}\label{rigidituxe9-de-hamburger}}
+
+\textbf{Comme un premier jeu.} Les règles complètes forcent une chanson
+précise.
+
+\textbf{Symbole.} équation fonctionnelle + série + croissance
+
+\textbf{Sens et domaine.} Dans le cadre Ham21, les hypothèses complètes
+imposent F=cζ ; voir source corrigée document 67.
+
+\textbf{Garde.} L'équation fonctionnelle isolée ne suffit pas.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{contre-exemple-local}{%
+\subsection{Contre-exemple local}\label{contre-exemple-local}}
+
+\textbf{Comme un premier jeu.} Un seul jouet peut montrer qu'une règle
+casse.
+
+\textbf{Symbole.} ∃x : propriété fausse
+
+\textbf{Sens et domaine.} Réfute la proposition avec ses hypothèses
+exactes ; un témoin numérique demande une certification.
+
+\textbf{Garde.} Fermer un candidat ne ferme pas RH ni toutes les autres
+routes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{uxe9tat-uxe9pistuxe9mique}{%
+\subsection{État épistémique}\label{uxe9tat-uxe9pistuxe9mique}}
+
+\textbf{Comme un premier jeu.} La carte garde ce qui a été construit.
+
+\textbf{Symbole.} s=(objets, preuves, obligations)
+
+\textbf{Sens et domaine.} État du protocole, résultats et limites,
+horodatage avant les expériences.
+
+\textbf{Garde.} Un résultat appris ensuite ne doit pas être présenté
+comme une prévision préalable.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{coup-double}{%
+\subsection{Coup double}\label{coup-double}}
+
+\textbf{Comme un premier jeu.} Une clé ouvre deux portes liées.
+
+\textbf{Symbole.} action→deux contrats vérifiés
+
+\textbf{Sens et domaine.} Ici P : moments+norme ; parité :
+réduction+contre-épreuve ; R : domaine+queue finie.
+
+\textbf{Garde.} Deux noms nouveaux ne comptent pas comme deux preuves.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{crituxe8re-nymanbeurling}{%
+\subsection{Critère Nyman--Beurling}\label{crituxe8re-nymanbeurling}}
+
+\textbf{Comme un premier jeu.} Approcher un dessin simple suffit dans le
+bon monde.
+
+\textbf{Symbole.} 1∈closure span\{ρ\_θ avec moments\}
+
+\textbf{Sens et domaine.} Équivalence à RH sous l'énoncé et la norme
+exacts de Beurling ; voir document 67.
+
+\textbf{Garde.} La densité de toute entrée L² après régularisation n'est
+pas la densité des entrées NB.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{erreur-dapproximation}{%
+\subsection{Erreur d'approximation}\label{erreur-dapproximation}}
+
+\textbf{Comme un premier jeu.} Les petites boîtes manquent encore une
+partie du dessin.
+
+\textbf{Symbole.} \textbar\textbar(I-Π\_N)j\_S\textbar\textbar{}
+
+\textbf{Sens et domaine.} Norme de l'injection compacte après projection
+finie dans la métrique cible.
+
+\textbf{Garde.} Existence d'une limite zéro ne fournit pas son taux
+certifié.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{budget-arithmuxe9tique-luxb2}{%
+\subsection{Budget arithmétique L²}\label{budget-arithmuxe9tique-luxb2}}
+
+\textbf{Comme un premier jeu.} On compte tout le poids qui peut tirer la
+balance.
+
+\textbf{Symbole.} M\_S=C₀+1+2Σₚᵐ≤e²ˢ log p·p\^{}(-m/2)
+
+\textbf{Sens et domaine.} Borne de
+\textbar(C₀+1)⟨f,g⟩+q\_pr(f,g)\textbar≤M\_S\textbar\textbar f\textbar\textbar\textbar\textbar g\textbar\textbar.
+
+\textbf{Garde.} Budget valable à S fixé, croît avec le support ; ne
+donne pas le signe.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{porte-de-queue-positive}{%
+\subsection{Porte de queue positive}\label{porte-de-queue-positive}}
+
+\textbf{Comme un premier jeu.} Les jouets restants ne tirent plus assez
+fort.
+
+\textbf{Symbole.} \textbar\textbar j\_S\textbar V⊥\textbar\textbar²
+M\_S\textless1
+
+\textbf{Sens et domaine.} La queue de moments Y\_N satisfait la
+condition par la borne ε\_N(T) ; existence et paramètres explicites
+prouvés.
+
+\textbf{Garde.} Queue positive seule ne rend pas la tête positive ; le
+Schur complet demeure nécessaire.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{obligation-globale-de-signe}{%
+\subsection{Obligation globale de
+signe}\label{obligation-globale-de-signe}}
+
+\textbf{Comme un premier jeu.} Toutes les dernières balances doivent
+tenir.
+
+\textbf{Symbole.} ∀S, G\_eff,S⪰0
+
+\textbf{Sens et domaine.} Après queue certifiée, résoudre le Schur fini
+pour chaque S, ou une loi uniforme couvrante.
+
+\textbf{Garde.} Ni l'existence du Schur ni les expériences finies
+n'acquittent cette obligation.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{ruxe9solvante}{%
+\subsection{Résolvante}\label{ruxe9solvante}}
+
+\textbf{Comme un premier jeu.} On cherche comment une machine répond à
+une sollicitation.
+
+\textbf{Symbole.} (A-zI)\^{}(-1)
+
+\textbf{Sens et domaine.} Définie pour z hors du spectre avec domaines
+fixés ; utile au contrôle de queue.
+
+\textbf{Garde.} Une résolvante postulée sans exclusion spectrale est
+circulaire.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{spectre-essentiel}{%
+\subsection{Spectre essentiel}\label{spectre-essentiel}}
+
+\textbf{Comme un premier jeu.} La grande foule des rythmes reste autour
+d'un.
+
+\textbf{Symbole.} spec\_ess(I-K)=\{1\}
+
+\textbf{Sens et domaine.} Pour K compact autoadjoint sur un Hilbert
+infini ; seules exceptions discrètes ailleurs.
+
+\textbf{Garde.} Cela autorise des valeurs négatives isolées ; aucun
+signe global automatique.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{rang-fini}{%
+\subsection{Rang fini}\label{rang-fini}}
+
+\textbf{Comme un premier jeu.} Quelques gestes suffisent pour cette
+machine.
+
+\textbf{Symbole.} A\_N=Σₖ≤N u\_k⟨v\_k,·⟩
+
+\textbf{Sens et domaine.} Image de dimension finie ; approxime en norme
+les compacts sur Hilbert.
+
+\textbf{Garde.} La possibilité d'approximer ne fournit pas les
+coefficients ni leur erreur certifiée.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{suxe9rie-de-neumann}{%
+\subsection{Série de Neumann}\label{suxe9rie-de-neumann}}
+
+\textbf{Comme un premier jeu.} On corrige le dessin par petits retours
+de plus en plus faibles.
+
+\textbf{Symbole.} (I-K)\^{}(-1)=Σₙ≥₀K\^{}n si
+\textbar\textbar K\textbar\textbar\textless1
+
+\textbf{Sens et domaine.} Inverse borné avec contrôle
+1/(1-\textbar\textbar K\textbar\textbar).
+
+\textbf{Garde.} Utilisable pour le bloc de queue seulement après une
+borne stricte.
+
+\textbf{Ancrage.} Document 68 ; V644\_LANGUE\_ET\_DOMAINES.md, L1-L7 ;
+preuve auxiliaire interne ; portée et conditions dans L1-L7.
+
+\hypertarget{muxe9trique-induxe9pendante}{%
+\subsection{Métrique indépendante}\label{muxe9trique-induxe9pendante}}
+
+\textbf{Comme un premier jeu.} La règle doit exister avant la décision
+de la balance.
+
+\textbf{Symbole.} R ou B définies sans Q≥0
+
+\textbf{Sens et domaine.} Norme externe positive démontrée sans
+hypothèse RH ; permet un Riesz signé.
+
+\textbf{Garde.} Définir la norme comme √Q\_W avant d'avoir prouvé Q\_W≥0
+serait circulaire.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{drapeau-par-secteurs}{%
+\subsection{Drapeau par secteurs}\label{drapeau-par-secteurs}}
+
+\textbf{Comme un premier jeu.} On range d'abord selon les deux miroirs.
+
+\textbf{Symbole.} V\_pair⊕V\_impair
+
+\textbf{Sens et domaine.} Schur peut être calculé par bloc de parité ;
+pivot interprété dans son drapeau.
+
+\textbf{Garde.} Comparer à un ordre mélangé nécessite garder la même
+extension ou signaler un nouveau drapeau.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{noyau-de-basse-fruxe9quence}{%
+\subsection{Noyau de basse
+fréquence}\label{noyau-de-basse-fruxe9quence}}
+
+\textbf{Comme un premier jeu.} Les rythmes lents se recouvrent dans la
+boîte.
+
+\textbf{Symbole.} sin(T(x-y))/(π(x-y))
+
+\textbf{Sens et domaine.} Noyau de 1\_{[}-S,S{]}Π\_T1\_{[}-S,S{]},
+compact positif à support fixé.
+
+\textbf{Garde.} Borne de queue effective à construire avec approximation
+contrôlée du noyau et contraintes.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{minimum-de-schur}{%
+\subsection{Minimum de Schur}\label{minimum-de-schur}}
+
+\textbf{Comme un premier jeu.} On règle les anciens jouets pour soulager
+le nouveau.
+
+\textbf{Symbole.} inf\_z Q(z+v)=δ
+
+\textbf{Sens et domaine.} Valable si ancien bloc \textgreater0 ; formule
+minimisation avec z=-G\^{}(-1)c.
+
+\textbf{Garde.} Si le bloc est indéfini, ce minimum vaut -∞ même si la
+formule algébrique existe.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{preuve-de-phase}{%
+\subsection{Preuve de phase}\label{preuve-de-phase}}
+
+\textbf{Comme un premier jeu.} Deux rotations identiques se compensent.
+
+\textbf{Symbole.} h\_(e\^{}(iθ)f)=h\_f
+
+\textbf{Sens et domaine.} Facteurs e\^{}(iθ) et conj e\^{}(iθ)
+s'annulent dans corrélation et normes.
+
+\textbf{Garde.} La compensation n'a pas lieu pour une phase variable aux
+deux positions.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{une-queue-existe}{%
+\subsection{Une queue existe}\label{une-queue-existe}}
+
+\textbf{Comme un premier jeu.} Les pièces oubliées deviennent petites
+après la règle douce.
+
+\textbf{Symbole.} η\_N→0
+
+\textbf{Sens et domaine.} Compactité j\_S et exhaustion R-orthogonale
+dense donnent convergence en norme.
+
+\textbf{Garde.} La vitesse et les indices de réussite doivent encore
+être calculés.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{r-notation-qualifiuxe9e}{%
+\subsection{R notation qualifiée}\label{r-notation-qualifiuxe9e}}
+
+\textbf{Comme un premier jeu.} Deux boîtes séparent une lettre partagée.
+
+\textbf{Symbole.} R\_metric, R\_reflection
+
+\textbf{Sens et domaine.} La métrique logarithmique et l'opérateur
+miroir ont des rôles différents.
+
+\textbf{Garde.} L'identifiant stable empêche une composition ambiguë.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{croissance-logarithmique}{%
+\subsection{Croissance logarithmique}\label{croissance-logarithmique}}
+
+\textbf{Comme un premier jeu.} Les rythmes rapides prennent un poids qui
+grandit doucement.
+
+\textbf{Symbole.} a(τ) comparable à log(2+\textbar τ\textbar)
+
+\textbf{Sens et domaine.} La série positive donne divergence ;
+comparaisons élémentaires donnent ordre logarithmique.
+
+\textbf{Garde.} Les constantes d'une estimation effective doivent être
+écrites, pas remplacées par le mot comparable.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{budget-de-contraction}{%
+\subsection{Budget de contraction}\label{budget-de-contraction}}
+
+\textbf{Comme un premier jeu.} Rétrécir peut rendre les rythmes plus
+rapides, mais leur coût est borné.
+
+\textbf{Symbole.} a(τ/λ)≤λ\^{}(-2)a(τ)
+
+\textbf{Sens et domaine.} Termes positifs de la série de a donnent
+l'inégalité pour 0\textless λ≤1 ; continuité forte à1.
+
+\textbf{Garde.} Ce budget ne préserve pas Q\_W ni les moments.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{transport-dopuxe9rateur}{%
+\subsection{Transport d'opérateur}\label{transport-dopuxe9rateur}}
+
+\textbf{Comme un premier jeu.} La même machine change de pièce avec sa
+règle.
+
+\textbf{Symbole.} A↦UAU\^{}(-1) si U unitaire
+
+\textbf{Sens et domaine.} Spectre et propriétés unitaires conservés pour
+domaines correctement transportés.
+
+\textbf{Garde.} Changer la métrique de Riesz H¹→R n'est pas
+automatiquement cette opération.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{fonction-logarithmique-gs}{%
+\subsection{Fonction logarithmique
+G(s)}\label{fonction-logarithmique-gs}}
+
+\textbf{Comme un premier jeu.} Un carnet mesure la rotation d'une
+fonction.
+
+\textbf{Symbole.} G(s)=Log F(s) selon archive
+
+\textbf{Sens et domaine.} Définition dépendant d'un domaine sans zéros
+et d'une branche ; voir source historique locale.
+
+\textbf{Garde.} Ne pas l'identifier au Gram ni la considérer globalement
+définie à travers tous les zéros.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{surface-virtuelle}{%
+\subsection{Surface virtuelle}\label{surface-virtuelle}}
+
+\textbf{Comme un premier jeu.} Un dessin ressemble à un terrain avant
+d'en être un.
+
+\textbf{Symbole.} axiomes formels du corpus
+
+\textbf{Sens et domaine.} Construction comparative/virtuelle des
+documents46-48, dont domaine et axiomes doivent être repris.
+
+\textbf{Garde.} Aucune variété géométrique de ζ construite par cette
+seule analogie.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{zuxe9ro-critique-double}{%
+\subsection{Zéro critique double}\label{zuxe9ro-critique-double}}
+
+\textbf{Comme un premier jeu.} La note touche la ligne deux fois.
+
+\textbf{Symbole.} F(ρ)=F′(ρ)=0, Re ρ=1/2
+
+\textbf{Sens et domaine.} Question de multiplicité/collision avec jets
+certifiés locaux selon la famille.
+
+\textbf{Garde.} RH n'impose pas la simplicité des zéros ; ne pas
+confondre ces deux buts.
+
+\textbf{Ancrage.} Documents 67-68 et noyau du corpus ; définition locale
+explicitée dans cette fiche ; définition pédagogique ; voir portée
+précise dans ancrage et garde.
+
+\hypertarget{logique-des-domaines}{%
+\subsection{Logique des domaines}\label{logique-des-domaines}}
+
+\textbf{Comme un premier jeu.} La phrase dit quelle boîte le dessin peut
+atteindre.
+
+\textbf{Symbole.} Γ⊢f : A(S,r,u)
+
+\textbf{Sens et domaine.} S support, r ordre garanti de jets, u degré
+d'unité A ; règles sound dans A, preuves L8.
+
+\textbf{Garde.} Pas un système complet décidant toute identité ou la
+vérité de RH.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{queue-de-moments-ordinaires}{%
+\subsection{Queue de moments
+ordinaires}\label{queue-de-moments-ordinaires}}
+
+\textbf{Comme un premier jeu.} Les rythmes lents deviennent minuscules
+après plusieurs balances.
+
+\textbf{Symbole.} Y\_N=\{∫x\^{}j f=0, 0≤j≤N\}
+
+\textbf{Sens et domaine.} Codimension N+1 dans X\_S ; queue positive
+effective via Taylor Fourier et budget L².
+
+\textbf{Garde.} Distincte des idéaux I\_r, qui utilisent les poids
+e\^{}(±x/2).
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{borne-explicite-de-queue}{%
+\subsection{Borne explicite de queue}\label{borne-explicite-de-queue}}
+
+\textbf{Comme un premier jeu.} On encadre les rythmes lents dans une
+petite boîte.
+
+\textbf{Symbole.} ε\_N(T)=2(ST)\^{}(2N+3)/{[}π(2N+3)²((N+1)!)²{]}
+
+\textbf{Sens et domaine.} Pour Y\_N, énergie Fourier dans
+{[}-T,T{]}≤ε\_N\textbar\textbar f\textbar\textbar₂² ; si ε\textless1,
+\textbar\textbar f\textbar\textbar₂²≤R/{[}(1-ε)r(T){]}.
+
+\textbf{Garde.} Borne prouvée, mais choisir des paramètres grossiers
+peut donner une tête astronomique.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{contrat-de-queue-entier}{%
+\subsection{Contrat de queue entier}\label{contrat-de-queue-entier}}
+
+\textbf{Comme un premier jeu.} Une recette ferme la queue avec des
+comptes entiers.
+
+\textbf{Symbole.} Lbar=8+2M, T=2\^{}(8Lbar), q=ceil(6ST)
+
+\textbf{Sens et domaine.} Pour Y\_(q-1), Q\_W≥R/(1+2Lbar) ; M nombre
+exact de puissances premières actives.
+
+\textbf{Garde.} La tête a dimension q ; elle n'a pas été calculée dans
+cette expérience.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{erreur-de-dette-par-neumann}{%
+\subsection{Erreur de dette par
+Neumann}\label{erreur-de-dette-par-neumann}}
+
+\textbf{Comme un premier jeu.} Les corrections restantes ont un ticket
+de taille.
+
+\textbf{Symbole.} reste≤η\^{}(m+1)/(1-η)
+
+\textbf{Sens et domaine.} η=L\_S/{[}(1-ε)r(T){]}\textless1 borne le
+compact comprimé sur la queue ; budget inverse et Schur prouvés.
+
+\textbf{Garde.} Le solveur des actions/projections doit encore être
+certifié.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{repruxe9sentant-riesz-des-moments}{%
+\subsection{Représentant Riesz des
+moments}\label{repruxe9sentant-riesz-des-moments}}
+
+\textbf{Comme un premier jeu.} Un capteur devient un dessin dans la
+bonne règle.
+
+\textbf{Symbole.} ⟨h\_j,f⟩R=∫x\^{}j f(x)dx
+
+\textbf{Sens et domaine.} Les h\_j engendrent F\_N=Y\_N⊥\_R ;
+codimension N+1 ; solveur et résidus à certifier.
+
+\textbf{Garde.} Cette tête diffère du préfixe polynomial brut utilisé
+par les matrices exploratoires.
+
+\textbf{Ancrage.}
+3\_Preuves\_et\_calculs/preuves/V644\_LANGUE\_ET\_DOMAINES.md ; L6-L8 ;
+relation démontrée dans V644, L6-L8.
+
+\hypertarget{annexe---tous-les-noms-du-registre-canonique}{%
+\section{Annexe - Tous les noms du registre
+canonique}\label{annexe---tous-les-noms-du-registre-canonique}}
+
+Les 95 entrées suivantes conservent les dernières lignes nommées du
+registre 20. Les images historiques peuvent rester plus techniques que
+celles du noyau. Leur absence éventuelle de statut explicite est
+signalée.
+
+\hypertarget{miroir-de-muxf6bius}{%
+\subsection{Miroir de Möbius}\label{miroir-de-muxf6bius}}
+
+\textbf{Image héritée.} zéros et cancellation sont deux faces d'un même
+paysage
+
+\textbf{Ancrage exact.} \(1/\zeta(s)=\sum \mu(n)n^{-s}\), sommes de
+Möbius
+
+\textbf{Garde héritée.} assimiler \(\mu\) à des tirages indépendants
+exacts
+
+\textbf{Correspondance autorisée.} traduire localisation spectrale en
+fluctuation arithmétique
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:11
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : MÉCANISME
+RETENU.
+
+\hypertarget{filtre-antipuxf4le}{%
+\subsection{Filtre antipôle}\label{filtre-antipuxf4le}}
+
+\textbf{Image héritée.} filtre notch supprimant un mode cohérent
+
+\textbf{Ancrage exact.} \(W_N(1)=0\)
+
+\textbf{Garde héritée.} présenter l'annulation du pôle comme un
+mécanisme suffisant pour RH
+
+\textbf{Correspondance autorisée.} isoler un mode universel avant
+d'étudier le résidu
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:12
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : BRANCHE
+CLOSE / OUTIL RETENU.
+
+\hypertarget{thermomuxe8tre-dhorizon}{%
+\subsection{Thermomètre d'horizon}\label{thermomuxe8tre-dhorizon}}
+
+\textbf{Image héritée.} thermomètre qui mesure sans produire la
+température
+
+\textbf{Ancrage exact.} énergie \(Q\), exposant relié à
+\(\Theta=\sup\Re\rho\)
+
+\textbf{Garde héritée.} demander à une norme positive de fabriquer la
+positivité de Weil
+
+\textbf{Correspondance autorisée.} utiliser \(Q\) comme diagnostic de
+croissance
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:13
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+DIAGNOSTIC EXACT.
+
+\hypertarget{effaceur-orthogonal}{%
+\subsection{Effaceur orthogonal}\label{effaceur-orthogonal}}
+
+\textbf{Image héritée.} filtre adaptatif retirant une composante
+structurée
+
+\textbf{Ancrage exact.} projection Nyman-Beurling / Gram
+
+\textbf{Garde héritée.} confondre forte corrélation finie et convergence
+asymptotique
+
+\textbf{Correspondance autorisée.} quantifier l'énergie capturée par une
+direction
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:14
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+DIAGNOSTIC.
+
+\hypertarget{positivituxe9-porteuse}{%
+\subsection{Positivité porteuse}\label{positivituxe9-porteuse}}
+
+\textbf{Image héritée.} arche dont le signe porte une contrainte
+
+\textbf{Ancrage exact.} forme hermitienne de Weil, signature, inertie
+
+\textbf{Garde héritée.} appeler « information » toute quantité \(\ge0\)
+par définition
+
+\textbf{Correspondance autorisée.} distinguer une positivité
+arithmétique d'une somme de carrés automatique
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:15
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : CENTRAL.
+
+\hypertarget{census-spectral}{%
+\subsection{Census spectral}\label{census-spectral}}
+
+\textbf{Image héritée.} recenser plutôt que localiser chaque individu
+
+\textbf{Ancrage exact.} rang, trace, inertie, proportions
+
+\textbf{Garde héritée.} transformer une proportion en RH complète
+
+\textbf{Correspondance autorisée.} obtenir des résultats proportionnels
+sans localisation totale
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:16
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : MÉTHODE
+CENTRALE.
+
+\hypertarget{microscope-de-population}{%
+\subsection{Microscope de population}\label{microscope-de-population}}
+
+\textbf{Image héritée.} épidémiologie plutôt qu'autopsie individuelle
+
+\textbf{Ancrage exact.} familles de fonctions \(L\), moyennes
+
+\textbf{Garde héritée.} attribuer automatiquement une propriété moyenne
+à \(\zeta\) seule
+
+\textbf{Correspondance autorisée.} faire émerger des symétries
+collectives
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:17
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : PARADIGME
+EXTERNE.
+
+\hypertarget{thermostat-critique}{%
+\subsection{Thermostat critique}\label{thermostat-critique}}
+
+\textbf{Image héritée.} seuil de transition
+
+\textbf{Ancrage exact.} flot de de Bruijn-Newman, \(\Lambda\)
+
+\textbf{Garde héritée.} interpréter \(\Lambda\) comme température
+physique
+
+\textbf{Correspondance autorisée.} reformuler RH comme criticité exacte
+\(\Lambda=0\)
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:18
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : RÉSERVE
+CONCEPTUELLE.
+
+\hypertarget{scuxe8ne-manquante}{%
+\subsection{Scène manquante}\label{scuxe8ne-manquante}}
+
+\textbf{Image héritée.} chorégraphie visible, théâtre absent
+
+\textbf{Ancrage exact.} géométrie/cohomologie/trace
+
+\textbf{Garde héritée.} postuler une géométrie parce qu'une formule lui
+ressemble
+
+\textbf{Correspondance autorisée.} chercher une structure expliquant
+trace, dualité, positivité
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:19
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : OUVERT.
+
+\hypertarget{jumeau-de-crash-test}{%
+\subsection{Jumeau de crash-test}\label{jumeau-de-crash-test}}
+
+\textbf{Image héritée.} même carrosserie analytique, moteur différent
+
+\textbf{Ancrage exact.} Davenport-Heilbronn et analogues
+
+\textbf{Garde héritée.} traiter DH comme un modèle complet de \(\zeta\)
+
+\textbf{Correspondance autorisée.} rejeter les critères ne voyant que la
+symétrie fonctionnelle
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:20
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+INSTRUMENT ACTIF.
+
+\hypertarget{modes-sombres}{%
+\subsection{Modes sombres}\label{modes-sombres}}
+
+\textbf{Image héritée.} mode réel que le capteur ne voit pas
+
+\textbf{Ancrage exact.} observabilité des opérateurs / complétude
+
+\textbf{Garde héritée.} baptiser « sombre » toute inconnue non comprise
+
+\textbf{Correspondance autorisée.} formuler explicitement les pertes
+d'observabilité
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:21
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : CADRE
+D'OBSERVABILITÉ.
+
+\hypertarget{compression-fertile}{%
+\subsection{Compression fertile}\label{compression-fertile}}
+
+\textbf{Image héritée.} biopsie informative
+
+\textbf{Ancrage exact.} compressions finies d'une forme/opérateur infini
+
+\textbf{Garde héritée.} croire qu'une discrétisation finie prouve à elle
+seule une propriété asymptotique
+
+\textbf{Correspondance autorisée.} transférer rang, signe, inertie vers
+un calcul fini
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:22
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : ACTIF.
+
+\hypertarget{secteur-sombre-arithmuxe9tique-dark-zeta}{%
+\subsection{Secteur sombre arithmétique /
+DARK-ZETA}\label{secteur-sombre-arithmuxe9tique-dark-zeta}}
+
+\textbf{Image héritée.} cartographier l'invisible par ses déformations
+du visible
+
+\textbf{Ancrage exact.} information perdue par norme, moyenne,
+covariance
+
+\textbf{Garde héritée.} introduire une entité ou « énergie noire »
+physique
+
+\textbf{Correspondance autorisée.} trianguler plusieurs empreintes
+indépendantes
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:23
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : CADRE
+TRANSVERSAL.
+
+\hypertarget{tomographie-de-cohuxe9rence-tomo-2}{%
+\subsection{Tomographie de cohérence
+TOMO-2}\label{tomographie-de-cohuxe9rence-tomo-2}}
+
+\textbf{Image héritée.} scanner inter-échelles
+
+\textbf{Ancrage exact.} Gram des translations logarithmiques
+
+\textbf{Garde héritée.} prétendre voir la phase Fourier
+
+\textbf{Correspondance autorisée.} mesurer le spectre de
+puissance/covariance
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:24
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+DIAGNOSTIC SURVIVANT.
+
+\hypertarget{tomographie-de-phase-tomo-3}{%
+\subsection{Tomographie de phase
+TOMO-3}\label{tomographie-de-phase-tomo-3}}
+
+\textbf{Image héritée.} scanner de fermeture de phase
+
+\textbf{Ancrage exact.} tricorrélation / bispectre
+
+\textbf{Garde héritée.} identifier automatiquement bicoherence et
+multiplicativité
+
+\textbf{Correspondance autorisée.} tester des couplages ternaires
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:25
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+RÉTROGRADÉE EN BRUT.
+
+\hypertarget{fermeture-multiplicative}{%
+\subsection{Fermeture multiplicative}\label{fermeture-multiplicative}}
+
+\textbf{Image héritée.} une relation locale qui se referme sur elle-même
+
+\textbf{Ancrage exact.} \(\Delta_F(m,n)=a(mn)-a(m)a(n)\), lois sur
+\(p^k\)
+
+\textbf{Garde héritée.} confondre multiplicativité et RH
+
+\textbf{Correspondance autorisée.} mesurer la cohérence eulérienne
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:26
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+FORMALISÉE.
+
+\hypertarget{flux-dinertie}{%
+\subsection{Flux d'inertie}\label{flux-dinertie}}
+
+\textbf{Image héritée.} suivre les directions de signe sous déformation
+
+\textbf{Ancrage exact.} \((n_+,n_-,n_0)\) d'une famille hermitienne
+
+\textbf{Garde héritée.} interpréter un saut fini comme la criticité
+asymptotique sans limite contrôlée
+
+\textbf{Correspondance autorisée.} remplacer le suivi de chaque zéro par
+un invariant de signature
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:27
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : RÉSERVE.
+
+\hypertarget{guxe9omuxe9trie-par-empreintes}{%
+\subsection{Géométrie par
+empreintes}\label{guxe9omuxe9trie-par-empreintes}}
+
+\textbf{Image héritée.} reconstruire l'animal par ses traces
+
+\textbf{Ancrage exact.} signatures/indices/dualités distinguant
+\(\zeta\) de faux jumeaux
+
+\textbf{Garde héritée.} prendre une liste d'analogies pour une géométrie
+existante
+
+\textbf{Correspondance autorisée.} inférer des axiomes nécessaires avant
+de construire la géométrie
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:28
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : ACTIF
+CONCEPTUEL.
+
+\hypertarget{census-de-muxf6bius}{%
+\subsection{Census de Möbius}\label{census-de-muxf6bius}}
+
+\textbf{Image héritée.} recenser la structure d'une population de blocs
+
+\textbf{Ancrage exact.} covariances/rangs de blocs de \(\mu\)
+
+\textbf{Garde héritée.} déduire les zéros individuels d'une covariance
+d'ordre 2
+
+\textbf{Correspondance autorisée.} étudier où la cancellation apparaît
+statistiquement
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:29
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre :
+SECONDAIRE.
+
+\hypertarget{prime-lock-verrou-premier}{%
+\subsection{PRIME-LOCK / verrou
+premier}\label{prime-lock-verrou-premier}}
+
+\textbf{Image héritée.} serrure locale du produit d'Euler
+
+\textbf{Ancrage exact.} \(-F'/F\), support sur puissances de premiers,
+défaut de tour
+
+\textbf{Garde héritée.} appeler « RH » une propriété satisfaite aussi
+par Steinhaus
+
+\textbf{Correspondance autorisée.} détecter la structure eulérienne
+locale
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:30
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : TESTÉ /
+VALIDÉ COMME DÉTECTEUR LOCAL.
+
+\hypertarget{dual-lock-serrure-uxe0-deux-cluxe9s}{%
+\subsection{DUAL-LOCK / serrure à deux
+clés}\label{dual-lock-serrure-uxe0-deux-cluxe9s}}
+
+\textbf{Image héritée.} une serrure ne s'ouvre que si local et global
+sont compatibles
+
+\textbf{Ancrage exact.} compression de la forme explicite : archimédien
++ conducteur/pôle + local
+
+\textbf{Garde héritée.} juxtaposer deux scores indépendants et appeler
+cela interaction
+
+\textbf{Correspondance autorisée.} tester intrinsèquement la
+compatibilité entre données aux premiers et complétion globale
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:31
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : TESTÉ /
+SURVIT COMME DÉTECTEUR D'INERTIE.
+
+\hypertarget{ruxe9sidu-sombre}{%
+\subsection{Résidu sombre}\label{ruxe9sidu-sombre}}
+
+\textbf{Image héritée.} information visible seulement après avoir retiré
+presque tout le signal dominant
+
+\textbf{Ancrage exact.} petite valeur finale après cancellation des
+contributions local/global
+
+\textbf{Garde héritée.} assimiler le résidu à une substance ou conclure
+qu'un petit nombre est automatiquement profond
+
+\textbf{Correspondance autorisée.} quantifier où signe/inertie sont
+portés par un résidu de cancellation
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:32
+; 1. Tableau canonique. \textbf{Statut :} hérité du registre : NOUVEAU -
+TESTÉ V6.3.
+
+\hypertarget{le-thermomuxe8tre}{%
+\subsection{Le Thermomètre}\label{le-thermomuxe8tre}}
+
+\textbf{Image héritée.} Q(X) prend la « fièvre transverse » : sa vitesse
+de croissance dit de combien le zéro le plus éloigné s'écarte de la
+droite.
+
+\textbf{Ancrage exact.} Théorème A : ½ limsup log(1+Q)/log X = Θ - ½ ;
+RH ⇔ Q = X\^{}o(1). (LEMMES, L6)
+
+\textbf{Garde héritée.} Lire la fièvre ne la fait pas baisser : c'est
+une reformulation de RH.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:98
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{la-loupe-double}{%
+\subsection{La Loupe double}\label{la-loupe-double}}
+
+\textbf{Image héritée.} c est fabriqué pour que chaque zéro devienne un
+pôle double : chaque zéro est grossi d'un facteur log.
+
+\textbf{Ancrage exact.} G = m(m+1)/(s-ρ)² + \ldots{} (Lemme 5) ; Q ∼
+(S/3)log³X sous RH.
+
+\textbf{Garde héritée.} Une loupe grossit aussi les défauts : les
+oscillations du terme suivant (les Battements).
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:99
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-contrepoids}{%
+\subsection{Le Contrepoids}\label{le-contrepoids}}
+
+\textbf{Image héritée.} Le terme 2γΛ équilibre exactement le pôle de ζ
+en s = 1.
+
+\textbf{Ancrage exact.} G est régulière en 1, G(1) = 2γ² + 6γ₁ (Lemme
+4).
+
+\textbf{Garde héritée.} L'équilibre ne tient qu'en un point.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:100
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-tamis-uxe0-deux}{%
+\subsection{Le Tamis à deux}\label{le-tamis-uxe0-deux}}
+
+\textbf{Image héritée.} c ne retient que les entiers qui ont au plus
+deux facteurs premiers distincts.
+
+\textbf{Ancrage exact.} Lemme 3 : c(n) = 0 dès trois facteurs premiers
+distincts.
+
+\textbf{Garde héritée.} Aucun argument n'a encore utilisé cette
+parcimonie.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:101
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{la-note-fondamentale}{%
+\subsection{La Note fondamentale}\label{la-note-fondamentale}}
+
+\textbf{Image héritée.} κ = 2 + γ - log 4π est la note que donnent tous
+les zéros ensemble ; elle revient partout.
+
+\textbf{Ancrage exact.} κ = Σ 1/(ρ(1-ρ)) = 2λ₁ (Li) ; dans Q (Théorème
+B), dans d\_N² (Burnol, BCF).
+
+\textbf{Garde héritée.} C'est une constante, pas un mécanisme ; Σ 1/∣ρ∣²
+= κ seulement sous RH.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:107
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-diapason}{%
+\subsection{Le Diapason}\label{le-diapason}}
+
+\textbf{Image héritée.} Le son de référence quand tout est accordé.
+
+\textbf{Ancrage exact.} Théorème B : sous RH, Q ∼ (4κ/3) log³X (zéros
+simples).
+
+\textbf{Garde héritée.} Le son pur n'apparaît qu'à l'infini : à X ≤
+4·10\^{}6, Q n'est qu'à 44-72 \% du diapason.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:108
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{les-battements}{%
+\subsection{Les Battements}\label{les-battements}}
+
+\textbf{Image héritée.} Deux cordes presque accordées battent ; deux
+zéros voisins font battre le terme en L².
+
+\textbf{Ancrage exact.} Proposition C : coefficient α + Φ(L), Φ = somme
+de termes e\^{}i(γ-γ′)L/(γ-γ′) ; corrélation 0,996.
+
+\textbf{Garde héritée.} Les paires trop proches ne sont pas résolues et
+brouillent le signal.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:109
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-carrousel}{%
+\subsection{Le Carrousel}\label{le-carrousel}}
+
+\textbf{Image héritée.} Chaque zéro sur la droite est une nacelle qui
+tourne sans monter ; un zéro hors de la droite serait une nacelle qui
+s'élève.
+
+\textbf{Ancrage exact.} Les modes e\^{}iγu sont les vecteurs propres de
+la translation ; sous RH, orthogonaux en moyenne (doc. 14).
+
+\textbf{Garde héritée.} La rotation pure est équivalente à RH : on ne
+voit pas le moteur qui l'impose.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:110
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{la-gare-centrale}{%
+\subsection{La Gare centrale}\label{la-gare-centrale}}
+
+\textbf{Image héritée.} Toutes les lignes essayées arrivent à Q.
+
+\textbf{Ancrage exact.} (★) ⇔ Q ≪ log³X ; e² = β²Q + T\_N ; RH ⇔ Q =
+X\^{}o(1).
+
+\textbf{Garde héritée.} Ce n'est pas une destination : c'est le
+carrefour où RH se cache.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:116
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-bouchon-et-la-fuite}{%
+\subsection{Le Bouchon et la Fuite}\label{le-bouchon-et-la-fuite}}
+
+\textbf{Image héritée.} Boucher le pôle en s = 1 ; ce qui fuit encore
+est exactement Q, plus un filet (la queue).
+
+\textbf{Ancrage exact.} β = -S\_N/A\_N ⇒ W\_N(1) = 0 ; e² = β²Q(N) +
+T\_N ; b\_N → -1 - 2γ/log N (doc. 12).
+
+\textbf{Garde héritée.} Boucher n'arrête pas la fuite principale.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:117
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-palier}{%
+\subsection{Le Palier}\label{le-palier}}
+
+\textbf{Image héritée.} La famille à deux directions s'arrête sur un
+palier, un étage au-dessus du sol.
+
+\textbf{Ancrage exact.} \{μ, a\} ≈ 1,3 κ/log N de N = 50 à 10\^{}5 (doc.
+10, 12).
+
+\textbf{Garde héritée.} Sous RH le palier devrait monter vers 4/3 : ce
+n'est pas un sol.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:118
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-dernier-milliuxe8me}{%
+\subsection{Le Dernier millième}\label{le-dernier-milliuxe8me}}
+
+\textbf{Image héritée.} Quatre coups de pinceau font 90 \% du tableau ;
+les derniers détails en demandent toujours plus.
+
+\textbf{Ancrage exact.} 90 \% en 3-4 directions propres ; 99,9 \% en 52,
+81, 121 directions (N = 200, 500, 998) (doc. 14).
+
+\textbf{Garde héritée.} N ≤ 998 : la loi de croissance n'est
+qu'observée.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:119
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{luxe9cho-des-pgcd}{%
+\subsection{L'Écho des pgcd}\label{luxe9cho-des-pgcd}}
+
+\textbf{Image héritée.} Deux dents de scie de périodes a et b se
+répondent avec l'intensité pgcd²/(12ab).
+
+\textbf{Ancrage exact.} Franel-Landau (L8) ; V\_N = (1/12) Σ
+J₂(q)(Σ\_q∣d w\_d/d)².
+
+\textbf{Garde héritée.} L'écho est une moyenne : il gouverne la queue,
+pas les zéros.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:120
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-sosie}{%
+\subsection{Le Sosie}\label{le-sosie}}
+
+\textbf{Image héritée.} Même visage que ζ (même équation fonctionnelle)
+mais sans produit d'Euler, et avec des zéros hors de la droite.
+
+\textbf{Ancrage exact.} Davenport-Heilbronn : zéro 0,8085 + 85,699i ;
+pente de Q 0,56 contre 0,33 (doc. DH).
+
+\textbf{Garde héritée.} -
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:126
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-moduxe8le-ruxe9duit}{%
+\subsection{Le Modèle réduit}\label{le-moduxe8le-ruxe9duit}}
+
+\textbf{Image héritée.} Une maquette où RH est vraie, grâce à une
+géométrie que l'original n'a pas.
+
+\textbf{Ancrage exact.} Courbes sur F\_q (Weil) ; test F\_101 : max ∣a∣
+= 20 ≤ 2√101 (mémo P2.2).
+
+\textbf{Garde héritée.} La maquette a une dimension de plus : Spec ℤ ×
+Spec ℤ = Spec ℤ.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:127
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-duxe9tecteur}{%
+\subsection{Le Détecteur}\label{le-duxe9tecteur}}
+
+\textbf{Image héritée.} K(L) monte doucement pour ζ et s'emballe pour le
+Sosie.
+
+\textbf{Ancrage exact.} K(15) = 0,098 pour ζ ; K(12) = 0,885 pour DH
+(doc. 09).
+
+\textbf{Garde héritée.} Dépistage, pas preuve.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:128
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{la-distance-de-suxe9curituxe9}{%
+\subsection{La Distance de
+sécurité}\label{la-distance-de-suxe9curituxe9}}
+
+\textbf{Image héritée.} Les zéros ne doivent pas se coller : une
+répulsion sous l'espacement moyen.
+
+\textbf{Ancrage exact.} (H3⋆) (doc. H3) ; plus petit écart normalisé des
+300 premiers zéros : 0,29.
+
+\textbf{Garde héritée.} Non démontrée, hors de portée de RH seule.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:134
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-point-critique}{%
+\subsection{Le Point critique}\label{le-point-critique}}
+
+\textbf{Image héritée.} ζ serait exactement au seuil d'une transition,
+au bord de l'eau.
+
+\textbf{Ancrage exact.} de Bruijn-Newman : 0 ≤ Λ ≤ 0,22 ; RH ⇔ Λ = 0
+(Rodgers-Tao ; Polymath15).
+
+\textbf{Garde héritée.} Λ n'est pas une température physique.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:135
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-compteur}{%
+\subsection{Le Compteur}\label{le-compteur}}
+
+\textbf{Image héritée.} Au lieu de localiser chaque zéro (GPS), on
+compte les valeurs propres positives d'une forme de Weil comprimée.
+
+\textbf{Ancrage exact.} 2026 : ≥ 2/3 des zéros simples et sur la droite
+(rang-trace, inertie de Sylvester) (doc. 13).
+
+\textbf{Garde héritée.} Ne donne que des proportions.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:136
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{le-musuxe9e-des-erreurs}{%
+\subsection{Le Musée des erreurs}\label{le-musuxe9e-des-erreurs}}
+
+\textbf{Image héritée.} Des erreurs réelles exposées, avec des leurres,
+pour entraîner l'œil.
+
+\textbf{Ancrage exact.} Banc d'audit : 21 erreurs, 7 leurres, script de
+notation.
+
+\textbf{Garde héritée.} Petit échantillon, un seul projet.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:142
+; Annexe B - Lexique des résultats qui ont porté (fusion de la v6.0,
+Claude). \textbf{Statut :} hérité du registre : statut non explicité
+dans cette ligne historique.
+
+\hypertarget{les-quatre-coins}{%
+\subsection{Les Quatre coins}\label{les-quatre-coins}}
+
+\textbf{Image héritée.} Une table à deux entrées dont les quatre cases
+sont remplies.
+
+\textbf{Ancrage exact.} ζ, L(s, χ₅) / E2 / F6 / DH : verrou local (fuite
+nulle) et signe global (zéros sur la droite) sont indépendants.
+
+\textbf{Garde héritée.} Les témoins sont fabriqués.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:152
+; Mise à jour V6.3d/e - cinq noms proposés. \textbf{Statut :} hérité du
+registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-peigne}{%
+\subsection{Le Peigne}\label{le-peigne}}
+
+\textbf{Image héritée.} Des dents régulières posées sur la droite
+critique.
+
+\textbf{Ancrage exact.} Zéros de 1 + 6\^{}(1/2-s) : pas 2π/log 6 ; leur
+transformée de Fourier est la fuite Λ\_F(6\^{}k).
+
+\textbf{Garde héritée.} Le peigne s'ajoute aux zéros de ζ, il ne les
+déplace pas.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:153
+; Mise à jour V6.3d/e - cinq noms proposés. \textbf{Statut :} hérité du
+registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{lempreinte-en-creux}{%
+\subsection{L'Empreinte en creux}\label{lempreinte-en-creux}}
+
+\textbf{Image héritée.} Les zéros de ζ laissent leur moule dans les
+écarts entre zéros des produits d'Euler.
+
+\textbf{Ancrage exact.} Déficit des différences de zéros près des zéros
+de ζ : 30 \% (ζ), 17 \% (L(s, χ₅)), 5 \% (DH).
+
+\textbf{Garde héritée.} Phénomène connu (Pérez-Marco ; Ford-Zaharescu) ;
+seule la comparaison avec le Sosie est propre au corpus.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:154
+; Mise à jour V6.3d/e - cinq noms proposés. \textbf{Statut :} hérité du
+registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-tour-du-propriuxe9taire}{%
+\subsection{Le Tour du propriétaire}\label{le-tour-du-propriuxe9taire}}
+
+\textbf{Image héritée.} Faire le tour de la parcelle et compter les
+tours de l'aiguille.
+
+\textbf{Ancrage exact.} Principe de l'argument : nombre exact de zéros
+dans un rectangle ; a révélé deux zéros de DH manquants.
+
+\textbf{Garde héritée.} Compte, ne localise pas.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:155
+; Mise à jour V6.3d/e - cinq noms proposés. \textbf{Statut :} hérité du
+registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-pied-uxe0-coulisse}{%
+\subsection{Le Pied à coulisse}\label{le-pied-uxe0-coulisse}}
+
+\textbf{Image héritée.} Les zéros hauts servent de règle pour mesurer
+les zéros bas.
+
+\textbf{Ancrage exact.} Demi-largeur du creux = 1 - β (heuristique) ;
+pour ζ, 0,73 aux basses hauteurs, 0,51 ± 0,04 entre 1200 et 1500, pour
+0,5 attendu (doc 24, 7.4).
+
+\textbf{Garde héritée.} Reformulation de RH, probablement circulaire ;
+ne mesure que des zéros déjà connus sur la droite.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:156
+; Mise à jour V6.3d/e - cinq noms proposés. \textbf{Statut :} hérité du
+registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{la-portuxe9e}{%
+\subsection{La Portée}\label{la-portuxe9e}}
+
+\textbf{Image héritée.} Jusqu'où la lunette porte avant de voir
+l'intrus.
+
+\textbf{Ancrage exact.} Largeur W du support (donc nombre de premiers) à
+partir de laquelle une fenêtre voit un zéro hors droite : entre 1,5 et
+2,0 pour le zéro de DH à 85,7.
+
+\textbf{Garde héritée.} Propriété de l'instrument, pas de l'objet.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:170
+; Mise à jour V6.4 - après le test de l'Atlas (document 26).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-point-deuler}{%
+\subsection{Le Point d'Euler}\label{le-point-deuler}}
+
+\textbf{Image héritée.} Le seul endroit de la route où tout est aligné.
+
+\textbf{Ancrage exact.} θ = 0 dans F\_θ : seul point où 100 \% des zéros
+sont sur la droite et où l'empreinte de ζ est maximale.
+
+\textbf{Garde héritée.} Une seule famille testée.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:180
+; Mise à jour V6.5 - la famille modulo 7 (document 27). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{la-plage-de-survie}{%
+\subsection{La Plage de survie}\label{la-plage-de-survie}}
+
+\textbf{Image héritée.} La bande de terrain sec qui rétrécit quand la
+marée monte.
+
+\textbf{Ancrage exact.} Intervalle de θ où tous les zéros jusqu'à T
+restent sur la droite : {[}-0,0096 ; +0,072{]} pour T = 1000.
+
+\textbf{Garde héritée.} Observée jusqu'à 1000 seulement.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:181
+; Mise à jour V6.5 - la famille modulo 7 (document 27). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{la-rencontre}{%
+\subsection{La Rencontre}\label{la-rencontre}}
+
+\textbf{Image héritée.} Deux danseurs se rejoignent sur la ligne et la
+quittent ensemble.
+
+\textbf{Ancrage exact.} Deux zéros voisins se touchent en θ\_c, puis
+s'écartent de la droite comme √(θ - θ\_c).
+
+\textbf{Garde héritée.} Rien n'est détruit : le nombre de zéros est
+conservé.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:182
+; Mise à jour V6.5 - la famille modulo 7 (document 27). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{la-tour}{%
+\subsection{La Tour}\label{la-tour}}
+
+\textbf{Image héritée.} Les étages d'un immeuble, chacun contrôlé par la
+même règle.
+
+\textbf{Ancrage exact.} Les corps à qⁿ éléments ; à chaque étage n, la
+forme de Castelnuovo Q\_n est positive.
+
+\textbf{Garde héritée.} Pour ζ, on ne sait pas ce que sont les étages.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:192
+; Mise à jour V6.6 - le Modèle réduit (document 28). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{la-positivituxe9-saturuxe9e}{%
+\subsection{La Positivité saturée}\label{la-positivituxe9-saturuxe9e}}
+
+\textbf{Image héritée.} Une poutre chargée exactement à sa limite, qui
+tient.
+
+\textbf{Ancrage exact.} Courbe y² = x⁵ + x³ + 1 sur F₃ (P(u) = 1 + 9u⁴)
+: ρ\_4 = 1 exactement, 118 points sur F₈₁.
+
+\textbf{Garde héritée.} Saturation à un étage, pas à tous.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:193
+; Mise à jour V6.6 - le Modèle réduit (document 28). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-faux-jumeau-entier}{%
+\subsection{Le Faux jumeau entier}\label{le-faux-jumeau-entier}}
+
+\textbf{Image héritée.} Un faux billet avec un vrai filigrane.
+
+\textbf{Ancrage exact.} Équation fonctionnelle, comptages de points
+fermés entiers positifs, RH fausse (220 cas en genre 1 et 2 sur F₃, F₅)
+; démasqué à l'étage 2 à 5.
+
+\textbf{Garde héritée.} Ne vient d'aucune géométrie.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:194
+; Mise à jour V6.6 - le Modèle réduit (document 28). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-rang}{%
+\subsection{Le Rang}\label{le-rang}}
+
+\textbf{Image héritée.} Plus d'inconnues que d'équations : il reste des
+directions libres.
+
+\textbf{Ancrage exact.} Fenêtre L \textgreater{} 2g : forme de Weil
+d'une vraie courbe exactement singulière ; pour ζ, L et F6, chute
+géométrique de λ\_min avec la dimension excédentaire.
+
+\textbf{Garde héritée.} Pour ζ, la chute n'est jamais totale.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:204
+; Mise à jour V6.7 - STABILITY-RADIUS (document 29). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-recensement}{%
+\subsection{Le Recensement}\label{le-recensement}}
+
+\textbf{Image héritée.} Un appel où chaque absent répond « absent ».
+
+\textbf{Ancrage exact.} À la fenêtre 2g, nombre de valeurs propres
+négatives = zéros hors droite / 2.
+
+\textbf{Garde héritée.} Exact dans le modèle seulement.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:205
+; Mise à jour V6.7 - STABILITY-RADIUS (document 29). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{la-rencontre-figuxe9e}{%
+\subsection{La Rencontre figée}\label{la-rencontre-figuxe9e}}
+
+\textbf{Image héritée.} Deux danseurs arrêtés au moment où ils se
+rejoignent.
+
+\textbf{Ancrage exact.} Vraie courbe à deux zéros confondus : marge de
+l'objet nulle, RH démontrée.
+
+\textbf{Garde héritée.} Aucune courbe voisine ne franchit.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:206
+; Mise à jour V6.7 - STABILITY-RADIUS (document 29). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-passage-interdit}{%
+\subsection{Le Passage interdit}\label{le-passage-interdit}}
+
+\textbf{Image héritée.} Une porte au ras du mur, mais murée.
+
+\textbf{Ancrage exact.} Marge nulle sans sortie : aucune perturbation
+qui sort de RH n'est une courbe.
+
+\textbf{Garde héritée.} Formulé dans le modèle seulement.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:207
+; Mise à jour V6.7 - STABILITY-RADIUS (document 29). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{larchipel-deuler}{%
+\subsection{L'Archipel d'Euler}\label{larchipel-deuler}}
+
+\textbf{Image héritée.} Des îles dans une mer qui monte.
+
+\textbf{Ancrage exact.} Dans V\_q, la région RH jusqu'à la hauteur T est
+faite d'îles autour des points d'Euler, de rayon ≈ N\^{}(-0,77) ; à
+l'infini, il ne reste que les points (Saias-Weingartner).
+
+\textbf{Garde héritée.} La mer n'est pas uniforme : chenaux le long de
+certains grands cercles.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:217
+; Mise à jour V6.8 - L'Archipel d'Euler (document 30). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{luxeele-sans-mer}{%
+\subsection{L'Île sans mer}\label{luxeele-sans-mer}}
+
+\textbf{Image héritée.} Une île seule au monde.
+
+\textbf{Ancrage exact.} Espaces de dimension 1 : ζ (Hamburger), L(s,
+(·/3)), L(s, (·/5)) : aucune voisine qui garde l'équation fonctionnelle.
+
+\textbf{Garde héritée.} Parmi les séries de Dirichlet seulement.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:218
+; Mise à jour V6.8 - L'Archipel d'Euler (document 30). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-continent-bas}{%
+\subsection{Le Continent bas}\label{le-continent-bas}}
+
+\textbf{Image héritée.} À marée basse, les îles sont reliées.
+
+\textbf{Ancrage exact.} À \textbar t\textbar{} ≤ 50, les trois points
+d'Euler de V₇ impair sont dans une même région sans paire hors droite.
+
+\textbf{Garde héritée.} Dépend de la carte et de la hauteur.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:219
+; Mise à jour V6.8 - L'Archipel d'Euler (document 30). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-chauxeenon}{%
+\subsection{Le Chaînon}\label{le-chauxeenon}}
+
+\textbf{Image héritée.} Le pas discret est l'exponentielle d'un
+générateur continu.
+
+\textbf{Ancrage exact.} F = q\^{}D ; les zéros de ζ\_C sont le spectre
+de D, répété avec la période 2πi / log q.
+
+\textbf{Garde héritée.} Dans le Modèle réduit, D n'est défini qu'à cette
+période près.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:229
+; Mise à jour V6.9 - Le chaînon (document 32). \textbf{Statut :} hérité
+du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-spectre-des-longueurs}{%
+\subsection{Le Spectre des longueurs}\label{le-spectre-des-longueurs}}
+
+\textbf{Image héritée.} Les zéros chantent les longueurs des orbites.
+
+\textbf{Ancrage exact.} S(u), calculé sur les zéros seuls, a des pics en
+log n de hauteur c(n)/√n ; produit d'Euler ⟺ pics seulement en log
+p\^{}k.
+
+\textbf{Garde héritée.} Fenêtre finie ; fond lisse non retiré.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:230
+; Mise à jour V6.9 - Le chaînon (document 32). \textbf{Statut :} hérité
+du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{laxe-par-zuxe9ro-distinct}{%
+\subsection{L'Axe par zéro distinct}\label{laxe-par-zuxe9ro-distinct}}
+
+\textbf{Image héritée.} Les nombres construisent un axe par note, pas
+par instrument.
+
+\textbf{Ancrage exact.} Le rang du Gram de Krylov est le nombre de zéros
+distincts ; la multiplicité y est une masse.
+
+\textbf{Garde héritée.} Pour ζ, la simplicité des zéros n'est que
+conjecturée.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:231
+; Mise à jour V6.9 - Le chaînon (document 32). \textbf{Statut :} hérité
+du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{la-muxe9trique-manquante}{%
+\subsection{La Métrique manquante}\label{la-muxe9trique-manquante}}
+
+\textbf{Image héritée.} La machine est là ; il manque la règle qui
+mesure.
+
+\textbf{Ancrage exact.} Les 220 faux jumeaux ont l'opérateur, la
+symétrie et le réseau ; seul leur Gram est indéfini.
+
+\textbf{Garde héritée.} Pour ζ, « là » veut dire dans une fenêtre finie.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:232
+; Mise à jour V6.9 - Le chaînon (document 32). \textbf{Statut :} hérité
+du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-guxe9nuxe9rateur-des-premiers}{%
+\subsection{Le Générateur des
+premiers}\label{le-guxe9nuxe9rateur-des-premiers}}
+
+\textbf{Image héritée.} Les nombres premiers jouent la partition ;
+l'opérateur est l'instrument qu'on en déduit.
+
+\textbf{Ancrage exact.} Avec les seuls premiers ≤ e\^{}(Nh+2a), le
+faisceau de Toeplitz des traces donne e\^{}(iγh) pour les zéros de la
+fenêtre (226 zéros de ζ avec les premiers ≤ 439).
+
+\textbf{Garde héritée.} Fenêtre finie ; pas h choisi.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:242
+; Mise à jour V6.10 - Le générateur des premiers (document 33).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-masse-unituxe9}{%
+\subsection{La Masse unité}\label{la-masse-unituxe9}}
+
+\textbf{Image héritée.} Un vrai zéro pèse exactement son poids.
+
+\textbf{Ancrage exact.} Une vraie valeur propre porte la masse ĝ(γ) ;
+masse 1 = zéro simple ; test sans aucun zéro.
+
+\textbf{Garde héritée.} Tolérance de 1 \% ; zéros proches confondus.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:243
+; Mise à jour V6.10 - Le générateur des premiers (document 33).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-repliement}{%
+\subsection{Le Repliement}\label{le-repliement}}
+
+\textbf{Image héritée.} Une roue filmée trop lentement semble tourner à
+l'envers.
+
+\textbf{Ancrage exact.} Au pas h, γ n'est vu qu'à 2π/h près ; au pas log
+2, tous les zéros de ζ sont repliés.
+
+\textbf{Garde héritée.} Le Modèle réduit, avec 2g zéros par période,
+n'en souffre pas.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:244
+; Mise à jour V6.10 - Le générateur des premiers (document 33).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-muxe9trique-en-avance}{%
+\subsection{La Métrique en avance}\label{la-muxe9trique-en-avance}}
+
+\textbf{Image héritée.} La sentinelle entend avant de voir.
+
+\textbf{Ancrage exact.} DH : le quadruplet de 240,4 crée deux directions
+négatives avant d'être résolu par l'opérateur.
+
+\textbf{Garde héritée.} Seuil de bruit (10\^{}-11 de la plus grande
+valeur propre).
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:245
+; Mise à jour V6.10 - Le générateur des premiers (document 33).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-pas-de-base}{%
+\subsection{Le Pas de base}\label{le-pas-de-base}}
+
+\textbf{Image héritée.} La base d'un corps fini est la cadence d'une
+caméra qui filme un même mouvement.
+
+\textbf{Ancrage exact.} F\_q² voit le même D avec une demi-période :
+zéros = courbe ∪ tordue (525 sur 525) ; RH conservée.
+
+\textbf{Garde héritée.} Pour ζ, il n'y a pas de cadence naturelle.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:255
+; Mise à jour V6.11 - La base comme pas de temps (document 35).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-descente}{%
+\subsection{La Descente}\label{la-descente}}
+
+\textbf{Image héritée.} Redescendre d'un étage, c'est deviner un signe
+par pièce.
+
+\textbf{Ancrage exact.} Les objets sur F\_q compatibles avec les
+comptages sur F\_q² sont les choix de signe des facteurs irréductibles
+(525 sur 525 ; 2 dans 440 cas, jusqu'à 12).
+
+\textbf{Garde héritée.} Polynômes de Weil, pas forcément des courbes.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:256
+; Mise à jour V6.11 - La base comme pas de temps (document 35).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-muxe9trique-noyuxe9e}{%
+\subsection{La Métrique noyée}\label{la-muxe9trique-noyuxe9e}}
+
+\textbf{Image héritée.} Une voix seule couverte par une foule.
+
+\textbf{Ancrage exact.} À nombres premiers fixés, DH perd ses directions
+négatives quand le pas grandit (10 → 0 entre h = 0,01 et 0,1) ; à N
+fixé, elle les garde.
+
+\textbf{Garde héritée.} Une seule fonction test ; seuil de bruit fixé.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:257
+; Mise à jour V6.11 - La base comme pas de temps (document 35).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{linnovation}{%
+\subsection{L'Innovation}\label{linnovation}}
+
+\textbf{Image héritée.} Le GPS qui dit, à chaque pas, si la position est
+encore possible.
+
+\textbf{Ancrage exact.} Récurrence de Levinson sur les traces des
+premiers : ζ et L restent dans le disque (\textbar k\_n\textbar{} ≤
+0,79) ; DH sonne à la fenêtre 3,52 (premiers ≤ 36).
+
+\textbf{Garde héritée.} Horizon numérique (double précision).
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:267
+; Mise à jour V6.12 - Les idées rejetées relues (document 36).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-fantuxf4me-pesuxe9}{%
+\subsection{Le Fantôme pesé}\label{le-fantuxf4me-pesuxe9}}
+
+\textbf{Image héritée.} On reconnaît un fantôme à ce qu'il ne pèse rien.
+
+\textbf{Ancrage exact.} Le mode fantôme de V4.3 (Im ≈ 73,8) porte une
+masse de 1,3·10\^{}-9 ; les vrais zéros, 1.
+
+\textbf{Garde héritée.} Critère par fenêtre, pas borne uniforme.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:268
+; Mise à jour V6.12 - Les idées rejetées relues (document 36).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-rayon-spectral}{%
+\subsection{Le Rayon spectral}\label{le-rayon-spectral}}
+
+\textbf{Image héritée.} La plus grande dérive se lit au bord du spectre.
+
+\textbf{Ancrage exact.} Θ - ½ dans une fenêtre = max \textbar Im
+γ\textbar{} du générateur : 0,308517 pour DH, \textless{} 10\^{}-6 pour
+ζ et L.
+
+\textbf{Garde héritée.} Borne inférieure : un quadruplet non résolu ne
+compte pas.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:269
+; Mise à jour V6.12 - Les idées rejetées relues (document 36).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-temps-de-heisenberg}{%
+\subsection{Le Temps de Heisenberg}\label{le-temps-de-heisenberg}}
+
+\textbf{Image héritée.} Une note n'est entendue que lorsque l'oreille
+sépare les notes voisines.
+
+\textbf{Ancrage exact.} Un quadruplet hors droite à la hauteur γ₀ est
+détecté à la fenêtre L\_c ≈ log(q·γ₀/2π) : rapport 0,95-1,08 pour ζ et
+L(s, χ₅), 0,80-0,89 pour DH ; premiers jusqu'à ≈ q·γ₀/2π (conducteur
+analytique).
+
+\textbf{Garde héritée.} Poids \textless{} 10\^{}-5 (lobes secondaires de
+ĝ) ; repliement si h \textgreater{} π/γ₀ ; le facteur de DH n'est pas
+expliqué.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:279
+; Mise à jour V6.14 - La loi de seuil (document 38). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{la-balance-dinertie}{%
+\subsection{La Balance d'inertie}\label{la-balance-dinertie}}
+
+\textbf{Image héritée.} Deux poids opposés sur un plateau qui est le
+fond.
+
+\textbf{Ancrage exact.} G = B + paire cesse d'être positive ⟺ C\^{}-1 +
+U*B\^{}-1U est définie positive (noyau reproduisant du fond aux deux
+points de la paire).
+
+\textbf{Garde héritée.} B doit être définie positive.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:280
+; Mise à jour V6.14 - La loi de seuil (document 38). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-signe-fragile}{%
+\subsection{Le Signe fragile}\label{le-signe-fragile}}
+
+\textbf{Image héritée.} L'aiguille d'une boussole cassée continue de
+pointer avec assurance.
+
+\textbf{Ancrage exact.} Fond positif par construction, innovation de
+-2·10\^{}-3 à la taille 296 (λ\_min/λ\_max = 4·10\^{}-17) ; à 30
+chiffres, une erreur de 0,45 sur la fenêtre.
+
+\textbf{Garde héritée.} -
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:281
+; Mise à jour V6.14 - La loi de seuil (document 38). \textbf{Statut :}
+hérité du registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{le-poids-archimuxe9dien}{%
+\subsection{Le Poids archimédien}\label{le-poids-archimuxe9dien}}
+
+\textbf{Image héritée.} La longueur d'une corde fixe la note qu'elle
+peut entendre.
+
+\textbf{Ancrage exact.} La longueur de détection d'un quadruplet est
+Ω(γ₀) = 2π × densité des zéros : 1,02-1,08 pour ζ, L(s, χ₅) et L(Δ, s) ;
+elle double en degré 2.
+
+\textbf{Garde héritée.} Facteur 0,8-0,9 pour DH et 0,87-0,98 pour ζ·L.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:291
+; Mise à jour V6.15 - Le degré 2 et le recensement (document 39).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-quadruplet-repliuxe9}{%
+\subsection{Le Quadruplet replié}\label{le-quadruplet-repliuxe9}}
+
+\textbf{Image héritée.} Un passager qui revient par l'autre porte.
+
+\textbf{Ancrage exact.} Au pas h, un quadruplet au-delà de π/h entre
+dans la fenêtre en γ - 2π/h ; 4 quadruplets de DH (1 092 à 1 464) sont
+comptés ainsi, avec un poids de 5·10\^{}-8 à 5·10\^{}-7.
+
+\textbf{Garde héritée.} Le poids tombe vite dans les lobes secondaires.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:292
+; Mise à jour V6.15 - Le degré 2 et le recensement (document 39).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-somme-sans-ruxe9pulsion}{%
+\subsection{La Somme sans répulsion}\label{la-somme-sans-ruxe9pulsion}}
+
+\textbf{Image héritée.} Deux chorales qui chantent sans s'écouter.
+
+\textbf{Ancrage exact.} ζ·L(s, χ₅) : allumage à 0,87-0,98 de Ω, contre
+1,02-1,08 pour une seule fonction.
+
+\textbf{Garde héritée.} Un seul produit testé, non pré-enregistré.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:293
+; Mise à jour V6.15 - Le degré 2 et le recensement (document 39).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-rencontre-uxe0-trois}{%
+\subsection{La Rencontre à trois}\label{la-rencontre-uxe0-trois}}
+
+\textbf{Image héritée.} Trois chemins qui se croisent au même carrefour
+: le choc de deux zéros.
+
+\textbf{Ancrage exact.} À la fenêtre de Heisenberg, la marge locale de
+la métrique d'une paire de zéros d'écart normalisé s vaut 1 - sinc²(πs),
+la densité de corrélation de paires de Montgomery ; elle s'annule à la
+rencontre. Mesuré sur 1 070 zéros de ζ : 4 marges sous 0,1 (13 pour le
+GUE, 320 pour Poisson).
+
+\textbf{Garde héritée.} Modèle à deux atomes ; les voisins comptent pour
+la métrique réelle.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:303
+; Mise à jour V6.16 - La Rencontre à trois (document 40). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{le-compteur-de-paires}{%
+\subsection{Le Compteur de paires}\label{le-compteur-de-paires}}
+
+\textbf{Image héritée.} Un compteur qui ne bouge qu'aux chocs.
+
+\textbf{Ancrage exact.} β = 2Σ\textbar u\_γ\textbar² est lisse à 95 \%
+(terme θ′) ; sa part d'écart 2Σ(Z″/Z′)²/\textbar ρ\textbar² est portée à
+35 \% par les 10 \% de zéros les plus serrés ; la paire de Lehmer près
+de 7 005 y pèse environ mille fois la médiane.
+
+\textbf{Garde héritée.} Heuristique pour la finitude (répulsion
+nécessaire).
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:304
+; Mise à jour V6.16 - La Rencontre à trois (document 40). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{la-zone-dombre}{%
+\subsection{La Zone d'ombre}\label{la-zone-dombre}}
+
+\textbf{Image héritée.} Une case blanche sur la carte.
+
+\textbf{Ancrage exact.} Case de la carte des croisements sans croisement
+produit par le corpus, ou croisement sans pendant dans le Modèle réduit
+; le navigateur peut la viser.
+
+\textbf{Garde héritée.} Une case vide n'est pas une question : il faut
+encore la formuler.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:305
+; Mise à jour V6.16 - La Rencontre à trois (document 40). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{le-contour-tournuxe9}{%
+\subsection{Le Contour tourné}\label{le-contour-tournuxe9}}
+
+\textbf{Image héritée.} Regarder une falaise de biais pour en voir le
+relief.
+
+\textbf{Ancrage exact.} Λ(6+it) = 2e\^{}\{-φt\} Re(e\^{}\{6iφ\}
+A(6+it)), A = ∫ F(e\^{}\{x+iφ\}) e\^{}\{(6+it)x\} dx, F(w) = Σ τ(n)
+e\^{}\{-2πnw\} : la rotation du contour de Mellin, repliée par la
+modularité, supprime l'annulation exponentielle ; 2 139 zéros de L(Δ, s)
+jusqu'à 1 500 en double précision (accord 10⁻¹³ avec mpmath, complétude
+de Turing).
+
+\textbf{Garde héritée.} Il faut la modularité pour replier le contour.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:313
+; Mise à jour V6.17 - La Rencontre en degré 2 (document 41).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-loi-de-la-marge}{%
+\subsection{La Loi de la marge}\label{la-loi-de-la-marge}}
+
+\textbf{Image héritée.} Une foule qui laisse à chacun une place en
+proportion de l'espace disponible.
+
+\textbf{Ancrage exact.} La fréquence d'une configuration est
+proportionnelle à la marge de la métrique : à la fenêtre N, marge totale
+= densité de Weyl de U(N), marge d'une paire = corrélation de paires du
+CUE(N) ; paire conjuguée : marge = sin²θ = (π/2) × densité de Sato-Tate
+(démontré) ; zéros de ζ et de Δ (mesuré, déficit à basse hauteur).
+
+\textbf{Garde héritée.} Familles symplectiques (genre ≥ 2) : la densité
+de Haar n'est plus le déterminant de la métrique de taille 2g.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:314
+; Mise à jour V6.17 - La Rencontre en degré 2 (document 41).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{les-familles-uxe9tranguxe8res}{%
+\subsection{Les Familles
+étrangères}\label{les-familles-uxe9tranguxe8res}}
+
+\textbf{Image héritée.} Deux foules qui se traversent sans se voir.
+
+\textbf{Ancrage exact.} Une fonction non primitive superpose des
+familles sans répulsion mutuelle : ζ·L(χ5), 15 \% de marges sous 0,1,
+toutes mixtes, paire mixte à 8,9·10⁻⁴ ; pendant exact : le changement de
+base F\_p → F\_p², P(u²) = P(u)·P(-u), où les collisions existent
+(courbes supersingulières) avec RH vraie.
+
+\textbf{Garde héritée.} Sur Q aucune collision n'est connue ; sur F\_p²
+elles existent.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:315
+; Mise à jour V6.17 - La Rencontre en degré 2 (document 41).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-rencontre-uxe0-n}{%
+\subsection{La Rencontre à n}\label{la-rencontre-uxe0-n}}
+
+\textbf{Image héritée.} La Rencontre à trois, vue en relief : une
+surface au lieu d'une courbe.
+
+\textbf{Ancrage exact.} Pour n atomes à la fenêtre N, det(G/N) =
+det{[}D\_N(θ\_l - θ\_m){]} = (2π/N)\textsuperscript{n} R\_n du CUE(N)
+(démontré) ; les triplets des 1 070 zéros de ζ suivent le noyau sinus R3
+(χ² réduit 1,34, Poisson 17,3) ; pour ζ·L(χ5), loi de superposition de
+deux familles indépendantes (χ² 0,87).
+
+\textbf{Garde héritée.} Mesure à basse hauteur : 0 triplet serré pour
+4,4 attendus (effet de taille finie supposé).
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:323
+; Mise à jour V6.19 - La Rencontre à n et la matrice des théories
+(documents 43 et 44). \textbf{Statut :} hérité du registre : statut non
+explicité dans cette ligne historique.
+
+\hypertarget{le-carillon-de-bohr}{%
+\subsection{Le Carillon de Bohr}\label{le-carillon-de-bohr}}
+
+\textbf{Image héritée.} Un carillon dont chaque cloche est un zéro : le
+signal sonne sans s'amplifier ni s'éteindre.
+
+\textbf{Ancrage exact.} Ψ(u) =
+e\textsuperscript{-u/2}C(e\textsuperscript{u})/u dans l'espace de
+Besicovitch B² ; coefficients de Bohr A\_γ(L) ; sous RH,
+Σ\textbar A\_γ\textbar² = S (Théorème B).
+
+\textbf{Garde héritée.} Proposé, pas encore calculé (axe E du plan).
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:324
+; Mise à jour V6.19 - La Rencontre à n et la matrice des théories
+(documents 43 et 44). \textbf{Statut :} hérité du registre : statut non
+explicité dans cette ligne historique.
+
+\hypertarget{le-palier-pruxe9cisuxe9}{%
+\subsection{Le Palier (précisé)}\label{le-palier-pruxe9cisuxe9}}
+
+\textbf{Image héritée.} Un palier par endroits, avec des marches cassées
+là où le sol se dérobe.
+
+\textbf{Ancrage exact.} Médiane de e\_N² log N/κ = 0,985 × 4/3 de 10⁴ à
+5·10⁶, sans montée visible ; compensation b² ≈ 1,16, r\_Q ≈ 0,72, queue
+≈ 0,15 ; pics jusqu'à 3,27 × 4/3 là où A\_N s'annule ; sous RH, la
+médiane tend vers (S/4κ)·4/3 si la queue s'éteint.
+
+\textbf{Garde héritée.} La limite 4/3 n'est pas atteinte dans les
+calculs ; elle reste conditionnelle.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:332
+; Mise à jour V6.20 - Le Palier recalculé (document 45). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{la-surface-virtuelle}{%
+\subsection{La Surface virtuelle}\label{la-surface-virtuelle}}
+
+\textbf{Image héritée.} Une surface dont on connaît les croisements sans
+en connaître les points.
+
+\textbf{Ancrage exact.} Forme d'intersection sur \{fibres, graphes de
+Frobenius\} : dans le Modèle réduit, celle de C × C (indice de Hodge :
+425 courbes sur 425 ; surplus exact pour les 220 faux jumeaux) ; pour ζ,
+la même par le dictionnaire fibres ↔ pôle, intersections ↔ puissances de
+premiers, genre ↔ terme archimédien ; une seule direction positive
+depuis les premiers ≤ 439 ; DH : 2 puis 10 en trop. Orthogonalement aux
+fibres, c'est l'opposé de la métrique des zéros.
+
+\textbf{Garde héritée.} Le dictionnaire est classique (Weil, Bombieri,
+Connes) ; la surface elle-même n'existe pas.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:338
+; Mise à jour V6.21 - La surface virtuelle (document 46). \textbf{Statut
+:} hérité du registre : statut non explicité dans cette ligne
+historique.
+
+\hypertarget{la-fonction-auxiliaire}{%
+\subsection{La Fonction auxiliaire}\label{la-fonction-auxiliaire}}
+
+\textbf{Image héritée.} Un filet tendu sur tous les points à la fois :
+s'il y en a trop, il se déchire.
+
+\textbf{Ancrage exact.} Stepanov-Bombieri : par Riemann-Roch et le
+Frobenius, une fonction s'annule fortement en tous les points
+rationnels, d'où N\_m ≤ Q + (2g + 1)√Q + 1 ; avec le tordu quadratique,
+elle démasque les 220 faux jumeaux (étage médian 4, Castelnuovo 3) ;
+Clifford seul n'en démasque aucun.
+
+\textbf{Garde héritée.} Pour ζ, la fonction auxiliaire n'existe pas
+encore : il manque le Frobenius.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:344
+; Mise à jour V6.22 - Le Riemann-Roch virtuel (document 47).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{le-frobenius-absolu}{%
+\subsection{Le Frobenius absolu}\label{le-frobenius-absolu}}
+
+\textbf{Image héritée.} Une horloge qui tournerait sur les entiers comme
+x ↦ x\^{}q tourne sur une courbe.
+
+\textbf{Ancrage exact.} Hypothèse de travail de l'axe J3 : une
+application de « Spec Z » dans lui-même dont les points fixes seraient
+les nombres premiers ; Connes-Consani proposent l'action d'échelle.
+
+\textbf{Garde héritée.} Rien de tel n'est construit ; l'image n'est pas
+un objet.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:345
+; Mise à jour V6.22 - Le Riemann-Roch virtuel (document 47).
+\textbf{Statut :} hérité du registre : statut non explicité dans cette
+ligne historique.
+
+\hypertarget{la-duxe9rivuxe9e-nulle}{%
+\subsection{La Dérivée nulle}\label{la-duxe9rivuxe9e-nulle}}
+
+\textbf{Image héritée.} Une aiguille qui pointe exactement au même
+endroit que les autres, mais qui ne bouge pas quand on la touche.
+
+\textbf{Ancrage exact.} Le Frobenius x ↦ x\^{}p, l'identité et une
+permutation prennent les mêmes valeurs ou permutent les points ; seule
+la dérivée nulle de x\^{}p fait chuter le rang des conditions de
+Stepanov (34 au lieu de 104 pour p = 101) : 13 à 52 fonctions
+auxiliaires contre 0.
+
+\textbf{Garde héritée.} Aux tailles calculées, la borne de Stepanov
+reste triviale ; seule la construction est vérifiée.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:351
+; Mise à jour V6.23 - Le Frobenius qui n'est pas un morphisme (document
+48). \textbf{Statut :} hérité du registre : statut non explicité dans
+cette ligne historique.
+
+\hypertarget{le-frobenius-trop-bon}{%
+\subsection{Le Frobenius trop bon}\label{le-frobenius-trop-bon}}
+
+\textbf{Image héritée.} Une horloge si parfaite qu'elle ne perd jamais
+une seconde, et ne peut donc rien marquer.
+
+\textbf{Ancrage exact.} En caractéristique un (Connes-Consani), Fr\_λ
+est un automorphisme pour tout λ \textgreater{} 0 : il dilate les pentes
+au lieu d'annuler les dérivations ; il ne fournit pas l'élément
+invisible aux dérivations de Stepanov. La contrainte doit venir de la
+positivité sur le carré (route de Weil).
+
+\textbf{Garde héritée.} Lu sur résumés et extraits.
+
+\textbf{Provenance.} 1\_Presentation/20\_Registre\_metaphores\_V6.md:357
+; Mise à jour V6.26 - J3b (document 51). \textbf{Statut :} hérité du
+registre : statut non explicité dans cette ligne historique.
+
+\hypertarget{index-technique-et-version-interactive}{%
+\section{Index technique et version
+interactive}\label{index-technique-et-version-interactive}}
+
+Le lecteur interactif \texttt{69\_LANGUE\_DES\_PASSAGES.html} permet
+recherche par nom, symbole, image ou garde, filtres de niveau et
+consultation d'une fiche à la fois. L'atelier applique les règles typées
+et signale les moments perdus.
+
+L'index \texttt{v644\_index\_fonctions.csv} / \texttt{.json}, dans le
+dossier de données, donne fichier, ligne, nom qualifié, signature, type
+et docstring. Sans docstring, le comportement n'est pas inventé. La
+couverture technique est celle de l'AST, non une analyse sémantique
+certifiée de tous les programmes.
+
+Le dictionnaire JSON permet d'ajouter des entrées qualifiées en
+conservant leur provenance. Les symboles G, P, D, U, R, gamma et kappa
+demandent leur contexte : le même caractère écrit ne suffit pas à
+définir le même objet.
+
+Les unités fictives accompagnent les calculs : x logarithmique sans
+dimension, f d'amplitude A, Q et métriques d'unité A², quotient spectral
+sans dimension. Le mot énergie, chaleur ou entropie ne fournit pas une
+preuve de signe.
+
+Les preuves complètes et les expériences figurent dans le document 68 ;
+les critères globaux, branches, collisions et coefficients des anciennes
+familles gardent leurs obligations ouvertes. Cette langue crée des
+phrases vérifiables et des ponts de domaines ; elle ne fournit pas
+encore la loi arithmétique globale.
+
+\end{document}

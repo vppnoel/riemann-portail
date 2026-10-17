@@ -1,0 +1,26 @@
+Objet : Demande de relecture — moyenne quadratique à pôles doubles et zéros simples de ζ (deux notes courtes)
+
+Cher Professeur,
+
+Je me permets de vous adresser deux notes courtes en théorie analytique des nombres, que je n'ai encore soumises à aucune revue. Je ne suis pas mathématicien de profession. Je ne revendique aucun progrès vers l'hypothèse de Riemann : les deux textes le disent dès le résumé.
+
+La première note (10 pages) étudie Q(X) = ∫₁^X |C(x)|² x⁻² dx, où C est la fonction sommatoire de c = Λ∗Λ − Λ·log + 2γΛ. La série de Dirichlet de c a un pôle double en chaque zéro de ζ, de coefficient m(m+1). Elle contient trois énoncés :
+- (A) l'exposant de croissance de Q vaut 2(Θ − ½) ; la méthode est standard ;
+- (B) sous RH, Q(X) ∼ (S/3)(log X)³, avec S = Σ m²(m+1)²/|ρ|² ; c'est l'analogue, pour un pôle double, du théorème de Cramér ;
+- (B′) sous RH, S ≥ 4κ, avec égalité si et seulement si tous les zéros sont simples (κ = 2 + γ − log 4π).
+
+La seconde note (6 pages) est numérique. Elle teste la positivité de Weil dans des fenêtres finies, calculée uniquement du côté des nombres premiers, avec la fonction de Davenport–Heilbronn comme témoin.
+
+Si vous en avez le temps, trois questions me seraient très utiles :
+1. Les preuves de (A) et (B) vous semblent-elles complètes ?
+2. (B), ou un théorème de type Cramér pour des pôles d'ordre k, figure-t-il déjà dans la littérature ? Quelle référence faudrait-il citer ?
+3. Ces notes vous paraissent-elles mériter un dépôt sur arXiv, éventuellement après correction ?
+
+Les calculs et la rédaction ont été faits avec l'aide d'un outil d'IA. Chaque énoncé a été vérifié, mais aucun n'a encore été relu par un spécialiste : c'est précisément ce que je vous demande. Le code et les données sont à votre disposition.
+
+Je vous remercie de l'attention que vous voudrez bien porter à ce message, même brève, et vous prie d'agréer, Cher Professeur, l'expression de mes salutations respectueuses.
+
+Vincent P. P. NOËL
+Strasbourg
+
+Pièces jointes : article1_mean_square_double_poles.pdf ; article2_prime_side_weil_forms.pdf

@@ -1,0 +1,121 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reconstruction V6.51 intégrée — V6.58</title><style>
+/* Mise en page : feuille d'ingénieur sur papier quadrillé ; une échelle de maturité 0–9 sert de règle commune à toutes les sections */
+:root {
+  --paper: #f3f6f8; --sheet: #fbfcfd; --ink: #14243a; --muted: #56677a; --grid: #d8e1e8; --rule: #b9c7d3;
+  --band: #eef3f7; --line: #1d5d8c; --accent: #b8650f; --ok: #2b7a57; --void: #8c96a4;
+  --display: "Literata", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper: #0e151e; --sheet: #131c27; --ink: #e2e9f1; --muted: #98a8ba; --grid: #223142; --rule: #34485e;
+    --band: #182331; --line: #6cb0e0; --accent: #e59a4a; --ok: #5ec496; --void: #6d7888; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper: #0e151e; --sheet: #131c27; --ink: #e2e9f1; --muted: #98a8ba; --grid: #223142; --rule: #34485e;
+  --band: #182331; --line: #6cb0e0; --accent: #e59a4a; --ok: #5ec496; --void: #6d7888; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px; background-position: -1px -1px; color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 48px; display: grid; gap: 22px; }
+.topnav { display: flex; flex-wrap: wrap; gap: 4px 18px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.topnav a { color: var(--muted); text-decoration: none; }
+.topnav a:hover, .topnav a:focus-visible { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.topnav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; padding: 22px; min-width: 0; display: grid; gap: 14px; }
+h1, h2 { font-family: var(--display); font-weight: 650; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(26px, 4.2vw, 38px); line-height: 1.15; } h2 { font-size: 22px; line-height: 1.25; }
+p { margin: 0; max-width: 72ch; }
+a { color: var(--line); text-underline-offset: 2px; } a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lede { color: var(--muted); font-size: 16px; }
+.head { display: grid; gap: 10px; position: relative; padding-left: 18px; }
+.head::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 2px; background: var(--line); }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.foot { color: var(--muted); font-size: 12.5px; }
+/* verdict */
+.verdict { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.v { border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; display: grid; gap: 6px; align-content: start; background: var(--paper); min-width: 0; }
+.v .tag { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+.v.up .tag { color: var(--accent); } .v.same .tag { color: var(--muted); } .v.open .tag { color: var(--void); }
+.v ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+/* petits multiples */
+.multiples { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 14px 22px; }
+.panel { min-width: 0; display: grid; gap: 2px; }
+.panel h3 { margin: 0; font-family: var(--body); font-size: 14.5px; font-weight: 600; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.panel h3 .mono { color: var(--line); }
+.panel .q { color: var(--muted); font-size: 12.5px; line-height: 1.35; }
+.panel svg { width: 100%; height: auto; display: block; overflow: visible; }
+.panel svg text { font-family: var(--mono); font-size: 10px; fill: var(--muted); }
+.panel svg .day { font-size: 9px; }
+.tip { position: absolute; z-index: 5; max-width: 300px; pointer-events: none; background: var(--sheet); color: var(--ink); border: 1px solid var(--rule);
+  border-radius: 4px; padding: 8px 10px; font-size: 13px; line-height: 1.4; box-shadow: 0 4px 14px rgba(0,0,0,0.12); }
+.tip b { font-weight: 600; }
+/* tableau des versions */
+.tablewrap { overflow-x: auto; }
+table.hist { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13.5px; }
+table.hist th { text-align: left; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+table.hist td { padding: 9px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+table.hist td.ver { white-space: nowrap; } table.hist td.ver b { display: block; font-weight: 600; }
+table.hist td.ver span { color: var(--muted); font-size: 12.5px; }
+.chg { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { display: inline-block; font-family: var(--mono); font-size: 11.5px; line-height: 1.35; padding: 2px 7px; border-radius: 3px; border: 1px solid currentColor; overflow-wrap: anywhere; max-width: 100%; }
+.chip.up { color: var(--accent); } .chip.ok { color: var(--ok); } .chip.open { color: var(--void); } .chip.here { color: var(--accent); } .chip.next { color: var(--line); }
+.docs { display: flex; flex-wrap: wrap; gap: 3px 12px; } .docs a, .docs .doc { white-space: nowrap; } .docs .doc { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+table.hist col.c1 { width: 120px; } table.hist col.c2 { width: 36%; } table.hist col.c3 { width: 20%; }
+/* instantané */
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--muted); align-items: center; }
+.sw { position: relative; display: inline-block; width: 16px; height: 16px; vertical-align: -3px; margin-right: 6px; }
+.dims { display: grid; gap: 4px; }
+.axis, .dim { display: grid; grid-template-columns: minmax(170px, 230px) minmax(0, 1fr); gap: 14px; align-items: center; }
+.axis .scale { display: grid; grid-template-columns: repeat(10, 1fr); font-family: var(--mono); font-size: 12px; color: var(--muted); } .axis .scale span { text-align: center; }
+.dim { padding: 10px 0; border-top: 1px solid var(--rule); }
+.dim .name b { display: block; font-weight: 600; } .dim .name small { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.4; }
+.track { position: relative; height: 34px; background: repeating-linear-gradient(90deg, var(--grid) 0 1px, transparent 1px 10%); border-left: 1px solid var(--rule); border-right: 1px solid var(--rule); }
+.lane { position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--rule); }
+.mk { position: absolute; top: 50%; width: 16px; height: 16px; margin-left: -8px; margin-top: -8px; border-radius: 50%; }
+.mk.then { border: 2px solid var(--void); background: var(--sheet); }
+.mk.now { background: var(--line); border: 2px solid var(--sheet); box-shadow: 0 0 0 1px var(--line); }
+.mk.target { border: 2px dashed var(--void); background: transparent; }
+.sw .mk { left: 8px; }
+.mv { position: absolute; top: 50%; height: 3px; margin-top: -1.5px; background: var(--accent); }
+.mv::after, .arr::after { content: ""; position: absolute; right: -2px; top: -4px; border-left: 8px solid var(--accent); border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent; }
+.arr { display: inline-block; width: 26px; height: 3px; background: var(--accent); vertical-align: 4px; margin-right: 6px; position: relative; }
+.note { grid-column: 2; color: var(--muted); font-size: 13px; margin-top: -2px; } .note .mono { color: var(--ink); }
+/* degrés */
+.degrees { overflow-x: auto; }
+.deg-row { display: grid; grid-template-columns: 0.9fr 0.55fr 1.35fr 0.55fr 1.35fr 1.25fr; min-width: 920px; border: 1px solid var(--rule); border-radius: 4px; }
+.deg { padding: 12px 12px 14px; border-right: 1px solid var(--rule); display: grid; gap: 7px; align-content: start; min-width: 0; }
+.deg:last-child { border-right: 0; }
+.deg.gap { background: repeating-linear-gradient(135deg, transparent 0 7px, var(--grid) 7px 8px); } .deg.side { background: var(--paper); }
+.deg .n { font-family: var(--display); font-size: 28px; line-height: 1; } .deg .k { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.deg .ex { font-size: 13.5px; } .deg .chip { justify-self: start; }
+.voices { display: flex; gap: 3px; height: 22px; align-items: flex-end; } .voices i { display: block; width: 6px; border-radius: 1px; background: var(--line); }
+/* croisements */
+table.xmat { border-collapse: collapse; min-width: 760px; width: 100%; font-size: 13px; table-layout: fixed; }
+table.xmat th { font-family: var(--mono); font-size: 11.5px; font-weight: 500; color: var(--muted); text-align: left; padding: 6px; border-bottom: 1px solid var(--rule); }
+table.xmat td { border: 1px solid var(--grid); padding: 6px; vertical-align: top; height: 54px; }
+table.xmat td.diag { background: var(--paper); font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+table.xmat td.void { background: transparent; border-color: transparent; }
+table.xmat td.shade { background: repeating-linear-gradient(135deg, transparent 0 7px, var(--grid) 7px 8px); color: var(--muted); font-size: 12px; }
+.xchips { display: flex; flex-wrap: wrap; gap: 3px; }
+.chip.lit { color: var(--void); border-style: dashed; }
+.sdots { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 5px; }
+.sdot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; vertical-align: middle; }
+a.chip { text-decoration: none; } a.chip:hover { text-decoration: underline; }
+table.xmat td.mr:not(.shade) { background: color-mix(in srgb, var(--paper) 60%, transparent); }
+table.xlist { border-collapse: collapse; width: 100%; min-width: 860px; font-size: 13px; }
+table.xlist th { text-align: left; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+table.xlist td { padding: 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+table.xlist td.lv { font-family: var(--mono); color: var(--line); white-space: nowrap; }
+.zones { display: grid; gap: 4px; } .zones li { color: var(--muted); }
+/* échelle */
+.ladder { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 18px; }
+.rung { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px dashed var(--rule); }
+.rung .lv { font-family: var(--mono); font-size: 18px; font-weight: 500; color: var(--line); text-align: right; } .rung b { font-weight: 600; } .rung span { color: var(--muted); font-size: 13.5px; }
+/* marches */
+.next { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.step { border-top: 2px solid var(--line); padding-top: 10px; display: grid; gap: 6px; align-content: start; min-width: 0; } .step .gain { font-family: var(--mono); font-size: 12.5px; color: var(--accent); }
+@media (max-width: 640px) { .axis, .dim { grid-template-columns: 1fr; gap: 6px; } .axis .lbl { display: none; } .note { grid-column: 1; } .sheet { padding: 16px; } .multiples { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: no-preference) { .mv { animation: grow 900ms ease-out both; transform-origin: left center; } @keyframes grow { from { transform: scaleX(0.15); } to { transform: scaleX(1); } } }
+.sheet>*{min-width:0}.tablewrap{overflow:auto}li,a{overflow-wrap:anywhere}</style></head><body><main class="wrap"><nav class="topnav" style="display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline" aria-label="Pages et ressources du programme"><a data-primary="portail" href="../00_PORTAIL.html">Portail</a><a data-primary="indicateur" href="../1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateurs</a><a data-primary="navigateur" href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur</a><a data-primary="carte" href="../00_Carte_des_idees.html">Graphe des idées</a><a data-tool-link="bellman" href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html#bellman">Bellman</a><details class="nav-documents" style="position:relative;border:0;margin:0;padding:0"><summary style="cursor:pointer;font:inherit;padding:0;color:inherit">Documents</summary><ul style="position:absolute;z-index:90;right:0;top:100%;min-width:225px;max-width:85vw;margin:8px 0 0;padding:10px 15px;list-style:none;border:1px solid var(--rule,#b9c7d3);border-radius:4px;background:var(--sheet,#fff);color:var(--ink,#14243a);box-shadow:0 4px 12px #0002"><li style="padding:6px 0"><a data-resource="atlas" href="../1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html#documents">Atlas des décisions (62) : documents</a></li><li style="padding:6px 0"><a data-resource="matrice" href="../1_Presentation/44_MATRICE_DES_THEORIES.html">Matrice visuelle des théories (44)</a></li><li style="padding:6px 0"><a data-resource="references-pdf" href="../1_Presentation/42_REGISTRE_DES_SOURCES.pdf">Registre des sources : PDF existant</a></li><li style="padding:6px 0"><a data-resource="references" href="../1_Presentation/42_REGISTRE_DES_SOURCES.html">Références globales</a></li><li style="padding:6px 0"><a data-resource="figures" href="../00_Liste_des_figures.html">Figures et images</a></li><li style="padding:6px 0"><a data-resource="articles" href="../00_PORTAIL.html#articles">Articles PDF / LaTeX</a></li><li style="padding:6px 0"><a data-resource="dossiers" href="../00_PORTAIL.html#documents">Catalogue : tous les fichiers et fiches</a></li></ul></details></nav><header class="head"><div class="eyebrow">Programme Riemann · V6.58 · intégration du 15 octobre 2026</div><h1>La reconstruction V6.51 est dans le corpus global</h1><p class="lede">Programme, journal calculé, notice, sources et ZIP du complément sont réunis avec les autres travaux.</p></header><section class="sheet"><h2>Accès direct</h2><p><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py">Programme reconstruit</a> · <a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json">Journal calculé</a> · <a href="../4_Exports/V651_RECONSTRUCTION_DOCUMENTEE_20261015.zip">Complément complet inclus</a></p><p><a href="../00_PORTAIL.html?recherche=reconstruction_v651#documents">Retrouver tous ces fichiers dans le catalogue</a> · <a href="../00_Carte_des_idees.html#node=IDE-051">Fiche du signe global</a></p></section><section class="sheet"><h2>Résultats des contrôles</h2><div class="tablewrap"><table><thead><tr><th>S</th><th>Majorant de la troncature fixe Q_A / masse</th><th>Conclusion</th></tr></thead><tbody><tr><th>4</th><td>11.6880897411000567728212</td><td>Inconclusif</td></tr><tr><th>8</th><td>-6.55709314334493458036997</td><td>Troncature négative</td></tr><tr><th>16</th><td>-9.47093329780482702227048</td><td>Troncature négative</td></tr><tr><th>32</th><td>-9.90425335877261228472638</td><td>Troncature négative</td></tr><tr><th>64</th><td>-9.99177719029615089384699</td><td>Troncature négative</td></tr><tr><th>128</th><td>-10.0123799578441881666048</td><td>Troncature négative</td></tr></tbody></table></div><p>Valeurs indicatives ; les bornes rationnelles exactes sont dans le journal. Ce calcul omet les autres puissances premières actives et ne donne pas le signe de la forme complète de Weil.</p><p>Les trois minorants d’enveloppe du document76 sont également retrouvés. Le calcul rationnel, le recoupement mpmath et la reproduction à l’identique après extraction sont conservés.</p></section><section class="sheet"><h2>Statut et provenance</h2><p>Les deux contrôles ont été reconstruits ; les originaux manquants ne sont pas déclarés retrouvés. La loi globale de signe et RH restent ouvertes. Les revues parallèles ont été interrompues ; aucune double relecture indépendante achevée n’est revendiquée.</p><p>Les mentions « paquet séparé » et « ZIP global inchangé » présentes dans les fichiers conservés décrivent leur création antérieure. Ils sont désormais intégrés dans cette livraison globale. Leurs octets et leur journal initial sont conservés.</p><p><a href="../INTEGRATION_GLOBALE_20261015.json">Inventaire de conservation des archives et de cette intégration</a></p></section><section class="sheet"><h2>Toutes les pièces intégrées</h2><ul><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/LIRE_D_ABORD.html">LIRE_D_ABORD.html</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/README.md">README.md</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/SHA256SUMS.txt">SHA256SUMS.txt</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/VALIDATION.json">VALIDATION.json</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/generer_resume.py">generer_resume.py</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/requirements-optionnels.txt">requirements-optionnels.txt</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/document_76_original.md">document_76_original.md</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/document_76_original.pdf">document_76_original.pdf</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/document_76_original.tex">document_76_original.tex</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/prime_centered_bridge.py">prime_centered_bridge.py</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/symbolic_weil_family.py">symbolic_weil_family.py</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/v651_etat_recherche_original.json">v651_etat_recherche_original.json</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/sources/v651_protocole_global_original.json">v651_protocole_global_original.json</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/style_reference.css">style_reference.css</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json">v651_pistes_globales_resultats_RECONSTRUITS.json</a></li><li><a href="../3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py">v651_verifier_pistes_globales_RECONSTRUIT.py</a></li></ul></section><footer>Vincent P. P. NOËL · V6.58 · documents et identifiants conservés.</footer></main></body></html>
