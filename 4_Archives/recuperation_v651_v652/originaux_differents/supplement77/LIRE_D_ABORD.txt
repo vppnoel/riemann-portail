@@ -1,0 +1,13 @@
+Recherche complémentaire après V6.51.
+
+La note77 expose les mécanismes, leurs hypothèses et leur portée.
+Le ZIP global V6.51 reste le corpus de référence.
+Ce paquet ajoute deux rapports, un prototype et ses résultats.
+Aucune loi universelle du signe ni preuve de RH n’est obtenue.
+
+Rejouer après installation de mpmath1.3.0 :
+python3 prototype_fenchel.py --corpus mini_corpus --cutoff 1000 --output resultat.json
+
+Les nombres sont encadrés dans le modèle mpmath.iv déclaré.
+Le prototype établit uniquement un domaine fini du signal scalaire ;
+il ne certifie aucune nouvelle fenêtre de la forme de Weil.

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce travail, merci de le citer ainsi. / If you use this work, please cite it as below."
+title: "Programme Riemann : corpus de recherche sur l'hypothèse de Riemann (version 6.41)"
+version: "6.52"
+date-released: 2026-10-12
+authors:
+  - family-names: "Noël"
+    given-names: "Vincent P. P."
+license: CC-BY-4.0
+keywords:
+  - Riemann hypothesis
+  - Riemann zeta function
+  - mean square
+  - simple zeros
+  - Weil positivity
+abstract: >-
+  Versioned research corpus (documents, proofs, code, data, tests) on a mean square built from
+  Λ∗Λ − Λ·log + 2γΛ whose growth reflects the position of the zeros of ζ. No proof of the
+  Riemann Hypothesis is claimed. Code is MIT-licensed; texts, figures and data are CC BY 4.0.

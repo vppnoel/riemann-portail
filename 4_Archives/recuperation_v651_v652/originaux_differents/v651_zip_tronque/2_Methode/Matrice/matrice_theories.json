@@ -1,0 +1,1371 @@
+{
+  "titre": "Matrice d'équivalence et de force des théories",
+  "version": "V6.50",
+  "auteur": "Vincent NOËL",
+  "legende": {
+    "⇔": "équivalence démontrée",
+    "⇒": "la ligne implique la colonne",
+    "(⇒)": "implication partielle démontrée (support, proportion)",
+    "∥": "indépendance : aucune implication connue",
+    "≈": "analogue (pendant démontré dans le Modèle réduit)",
+    "✗": "témoin : contre-exemple ou pendant qui interdit l'implication",
+    "↗": "fournit la méthode ou l'objet",
+    "?": "question ouverte posée par le plan"
+  },
+  "forces": [
+    "plus forte que RH",
+    "équivalente",
+    "équivalente (sous Théorème B)",
+    "référence",
+    "conséquence partielle de RH",
+    "conséquence de RH (théorèmes partiels)",
+    "plus faible que RH",
+    "indépendante",
+    "analogue démontré",
+    "témoin",
+    "piste non située"
+  ],
+  "noeuds": [
+    {
+      "id": "RH",
+      "nom": "RH",
+      "enonce": "Tous les zéros non triviaux de ζ ont une partie réelle 1/2.",
+      "force": "référence",
+      "statut": "conjecture",
+      "symbolique": "—",
+      "operateur": "zéros de ξ(s)",
+      "fonctions": "Z(t), N(T) − θ(T)/π (méthode de Turing)",
+      "identification": "vérifiée sans exception jusqu'à la hauteur 3·10¹²",
+      "sources": [
+        "Cla00",
+        "PT21",
+        "Tur53"
+      ],
+      "docs": [
+        "01",
+        "37"
+      ],
+      "apport": "recalcule",
+      "apport_note": "Zéros de ζ recalculés jusqu'à t = 1 500 (1 070 zéros, complétude par la méthode de Turing) ; docs 24, 40.",
+      "formule": "\\zeta(\\rho)=0,\\ 0<\\operatorname{Re}\\rho<1\\ \\Longrightarrow\\ \\operatorname{Re}\\rho=\\tfrac12",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ζ</mi><mo stretchy=\"false\">(</mo><mi>ρ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mo separator=\"true\">,</mo><mtext> </mtext><mn>0</mn><mo>&lt;</mo><mi mathvariant=\"normal\">Re</mi><mo>⁡</mo><mi>ρ</mi><mo>&lt;</mo><mn>1</mn><mtext> </mtext><mo>⟹</mo><mtext> </mtext><mi mathvariant=\"normal\">Re</mi><mo>⁡</mo><mi>ρ</mi><mo>=</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding=\"application/x-tex\">\\zeta(\\rho)=0,\\ 0&lt;\\operatorname{Re}\\rho&lt;1\\ \\Longrightarrow\\ \\operatorname{Re}\\rho=\\tfrac12</annotation></semantics></math></span>"
+    },
+    {
+      "id": "GRH",
+      "nom": "RH généralisée (fonctions L de Dirichlet)",
+      "enonce": "Les zéros non triviaux de toutes les L(χ, s) ont une partie réelle 1/2.",
+      "force": "plus forte que RH",
+      "statut": "conjecture",
+      "symbolique": "Microscope de population",
+      "operateur": "famille des L(χ, s)",
+      "fonctions": "zéros de L(χ5) (corpus)",
+      "identification": "contient RH (χ principal)",
+      "sources": [
+        "Dav00"
+      ],
+      "docs": [
+        "39",
+        "41"
+      ],
+      "apport": "recalcule",
+      "apport_note": "Zéros de L(χ5) recalculés et audités (premiers = zéros à 10⁻⁸) ; V6.3c, docs 39, 41.",
+      "formule": "L(\\rho,\\chi)=0,\\ 0<\\operatorname{Re}\\rho<1\\ \\Longrightarrow\\ \\operatorname{Re}\\rho=\\tfrac12\\quad(\\chi \\bmod q)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo stretchy=\"false\">(</mo><mi>ρ</mi><mo separator=\"true\">,</mo><mi>χ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mo separator=\"true\">,</mo><mtext> </mtext><mn>0</mn><mo>&lt;</mo><mi mathvariant=\"normal\">Re</mi><mo>⁡</mo><mi>ρ</mi><mo>&lt;</mo><mn>1</mn><mtext> </mtext><mo>⟹</mo><mtext> </mtext><mi mathvariant=\"normal\">Re</mi><mo>⁡</mo><mi>ρ</mi><mo>=</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mi>χ</mi><mtext> </mtext><mo lspace=\"0.22em\" rspace=\"0.22em\"><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow></mo><mtext> </mtext><mi>q</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">L(\\rho,\\chi)=0,\\ 0&lt;\\operatorname{Re}\\rho&lt;1\\ \\Longrightarrow\\ \\operatorname{Re}\\rho=\\tfrac12\\quad(\\chi \\bmod q)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "WEIL",
+      "nom": "Positivité de Weil",
+      "enonce": "La forme hermitienne de la formule explicite est positive sur les fonctions-tests admissibles.",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "Positivité porteuse",
+      "operateur": "forme quadratique de la formule explicite",
+      "fonctions": "compressions finies, inertie (n₊, n₋, n₀)",
+      "identification": "DUAL-LOCK, documents 19 à 23 ; compression utilisée par Alpöge–Furman (doc. 13)",
+      "sources": [
+        "Wei52",
+        "Bom00a",
+        "Con03"
+      ],
+      "docs": [
+        "19",
+        "21",
+        "22",
+        "23",
+        "60",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75"
+      ],
+      "apport": "recalcule",
+      "apport_note": "Compressions finies de la forme explicite recalculées (DUAL-LOCK) : côté premiers = côté zéros ; docs 19 à 23. V6.36 : certificat de sous-espace négatif de dimension25 pour une fenêtre DH fixée, traces en intervalles et Gershgorin ; ce contrôle ne prouve pas la positivité générale pour ζ. V6.44 : R externe logarithmique, I−compact, queue de moments effective et réduction Schur finie démontrées ; signe tous supports ouvert. V6.45 : annulation polaire, fluctuation exacte et dette par Gram de sources ; modèle continu négatif pour tout S≥16. Tête praticable et signe tous supports ouverts. V6.46 : certificat coercif sur tous tests pour 0<S≤0,347, premier2 présent. Projection/couches/bord réutilisables ; loi non bornée ouverte. V6.47 : concentration projetée Schatten2, tous tests jusqu’à3/8. Opérateur commun et compression tête/queue/source ; S=1/2 demeure exploratoire. V648 : opérateur commun certifié jusqu’à1/2 ; tête/sources/queue du minorant assemblées. Sources fortes de Q et transport non borné restent ouverts. V649 : coût conjoint multi-premiers exact et paiement D/V certifié ; positivité complète toujours limitée à1/2, diagnostic0,55 non certifié. V650 : deux moments compatibles avec RH ; transport exact T_r et cœur dense en norme R ; quantificateur tous supports ouvert.",
+      "formule": "W(g*g^{\\ast})=\\sum_{\\rho}\\hat h(\\gamma_\\rho)\\ \\ge 0,\\quad h=g*g^{\\ast},\\ \\ g^{\\ast}(x)=\\bar g(-x),\\ \\ \\forall g\\in C_c^\\infty(\\mathbb R)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>W</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mo>∗</mo><msup><mi>g</mi><mo lspace=\"0em\" rspace=\"0em\">∗</mo></msup><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>ρ</mi></munder><mover accent=\"true\"><mi>h</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><msub><mi>γ</mi><mi>ρ</mi></msub><mo stretchy=\"false\">)</mo><mtext> </mtext><mo>≥</mo><mn>0</mn><mo separator=\"true\">,</mo><mspace width=\"1em\"/><mi>h</mi><mo>=</mo><mi>g</mi><mo>∗</mo><msup><mi>g</mi><mo lspace=\"0em\" rspace=\"0em\">∗</mo></msup><mo separator=\"true\">,</mo><mtext>  </mtext><msup><mi>g</mi><mo lspace=\"0em\" rspace=\"0em\">∗</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mover accent=\"true\"><mi>g</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">(</mo><mo>−</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mtext>  </mtext><mi mathvariant=\"normal\">∀</mi><mi>g</mi><mo>∈</mo><msubsup><mi>C</mi><mi>c</mi><mi mathvariant=\"normal\">∞</mi></msubsup><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">R</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">W(g*g^{\\ast})=\\sum_{\\rho}\\hat h(\\gamma_\\rho)\\ \\ge 0,\\quad h=g*g^{\\ast},\\ \\ g^{\\ast}(x)=\\bar g(-x),\\ \\ \\forall g\\in C_c^\\infty(\\mathbb R)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "LI",
+      "nom": "Critère de Li",
+      "enonce": "λₙ ≥ 0 pour tout n ≥ 1.",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "Thermomètre (coefficients)",
+      "operateur": "suite λₙ = Σ_ρ [1 − (1 − 1/ρ)ⁿ]",
+      "fonctions": "λₙ, λ*(L) (Zhu)",
+      "identification": "document 29 (rayon de stabilité)",
+      "sources": [
+        "Li97",
+        "BL99",
+        "Zhu26"
+      ],
+      "docs": [
+        "29"
+      ],
+      "apport": "litterature",
+      "apport_note": "Cité ; pas recalculé dans le programme.",
+      "formule": "\\lambda_n=\\sum_{\\rho}\\Big[1-\\Big(1-\\frac1\\rho\\Big)^{n}\\Big]\\ \\ge 0\\quad(n\\ge1)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>ρ</mi></munder><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">[</mo><mn>1</mn><mo>−</mo><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">(</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mi>ρ</mi></mfrac><msup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">)</mo><mi>n</mi></msup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">]</mo><mtext> </mtext><mo>≥</mo><mn>0</mn><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mi>n</mi><mo>≥</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\lambda_n=\\sum_{\\rho}\\Big[1-\\Big(1-\\frac1\\rho\\Big)^{n}\\Big]\\ \\ge 0\\quad(n\\ge1)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "NB",
+      "nom": "Nyman–Beurling / Báez-Duarte",
+      "enonce": "χ_(0,1] est limite dans L²(0, ∞) de combinaisons Σ bₙ{1/(nx)}.",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "Effaceur orthogonal ; Filtre antipôle",
+      "operateur": "projection orthogonale dans L²(0, ∞) (Gram en pgcd)",
+      "fonctions": "d_N², β_N = −S_N/A_N, queue T_N, somme de carrés V_N",
+      "identification": "constante de Burnol–BCF ; sommes de Maier–Rassias ; documents 09 à 12 (attaques d'OpenAI)",
+      "sources": [
+        "Nym50",
+        "Beu55",
+        "Bae03",
+        "BCF13",
+        "Bur02",
+        "MR18"
+      ],
+      "docs": [
+        "09",
+        "10",
+        "11",
+        "12"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "Gram, β_N et queue reproduits (docs 09–12). Retrouvés ensuite dans la littérature : la constante κ (Burnol [Bur02], BCF [BCF13]) et la covariance pgcd²/(12ab) (Franel [Fra24], Landau [Lan24]).",
+      "formule": "d_N^2=\\inf_{a_k}\\Big\\|\\mathbf 1_{(0,1]}-\\sum_{k\\le N}a_k\\Big\\{\\frac1{kx}\\Big\\}\\Big\\|^2_{L^2(0,\\infty)}\\ \\xrightarrow[N\\to\\infty]{}\\ 0",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>d</mi><mi>N</mi><mn>2</mn></msubsup><mo>=</mo><munder><mrow><mi>inf</mi><mo>⁡</mo></mrow><msub><mi>a</mi><mi>k</mi></msub></munder><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">∥</mo><msub><mn mathvariant=\"bold\">1</mn><mrow><mo stretchy=\"false\">(</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow></msub><mo>−</mo><munder><mo>∑</mo><mrow><mi>k</mi><mo>≤</mo><mi>N</mi></mrow></munder><msub><mi>a</mi><mi>k</mi></msub><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">{</mo><mfrac><mn>1</mn><mrow><mi>k</mi><mi>x</mi></mrow></mfrac><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">}</mo><msubsup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">∥</mo><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy=\"false\">(</mo><mn>0</mn><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></msubsup><mtext> </mtext><munderover><mo stretchy=\"true\" minsize=\"3.0em\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><mi>N</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></mpadded><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow></mrow></mpadded></munderover><mtext> </mtext><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">d_N^2=\\inf_{a_k}\\Big\\|\\mathbf 1_{(0,1]}-\\sum_{k\\le N}a_k\\Big\\{\\frac1{kx}\\Big\\}\\Big\\|^2_{L^2(0,\\infty)}\\ \\xrightarrow[N\\to\\infty]{}\\ 0</annotation></semantics></math></span>"
+    },
+    {
+      "id": "DBN",
+      "nom": "de Bruijn–Newman : Λ = 0",
+      "enonce": "La constante Λ du flot de la chaleur H_t vaut 0.",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "Thermostat critique",
+      "operateur": "flot ∂_t H = −∂²_x H",
+      "fonctions": "trajectoires des zéros de H_t dans le plan (x, t)",
+      "identification": "Λ ≥ 0 (Rodgers–Tao) ; Λ ≤ 0,2 (Polymath)",
+      "sources": [
+        "DeB50",
+        "New76",
+        "RT20",
+        "Pol19"
+      ],
+      "docs": [
+        "26"
+      ],
+      "apport": "litterature",
+      "apport_note": "Cité ; le flot n'est pas encore calculé (axe C du plan).",
+      "origine": "OpenAI",
+      "formule": "H_t(x)=\\int_0^\\infty e^{tu^2}\\Phi(u)\\cos(xu)\\,du,\\qquad \\Lambda=\\inf\\{t:\\ H_t\\ \\text{n'a que des zéros réels}\\}=0",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>H</mi><mi>t</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant=\"normal\">∞</mi></msubsup><msup><mi>e</mi><mrow><mi>t</mi><msup><mi>u</mi><mn>2</mn></msup></mrow></msup><mi mathvariant=\"normal\">Φ</mi><mo stretchy=\"false\">(</mo><mi>u</mi><mo stretchy=\"false\">)</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>x</mi><mi>u</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>u</mi><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi mathvariant=\"normal\">Λ</mi><mo>=</mo><mi>inf</mi><mo>⁡</mo><mo stretchy=\"false\">{</mo><mi>t</mi><mo>:</mo><mtext> </mtext><msub><mi>H</mi><mi>t</mi></msub><mtext> </mtext><mrow><mtext>n’a que des z</mtext><mover accent=\"true\"><mtext>e</mtext><mo>ˊ</mo></mover><mtext>ros r</mtext><mover accent=\"true\"><mtext>e</mtext><mo>ˊ</mo></mover><mtext>els</mtext></mrow><mo stretchy=\"false\">}</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">H_t(x)=\\int_0^\\infty e^{tu^2}\\Phi(u)\\cos(xu)\\,du,\\qquad \\Lambda=\\inf\\{t:\\ H_t\\ \\text{n&#x27;a que des zéros réels}\\}=0</annotation></semantics></math></span>"
+    },
+    {
+      "id": "EPERP",
+      "nom": "Énergie transverse nulle",
+      "enonce": "Σ_ρ 1/|ρ|² = 2 + γ − log 4π (E⊥ = 0).",
+      "force": "équivalente",
+      "statut": "critère équivalent (source non vérifiée)",
+      "symbolique": "Énergie transverse (OpenAI)",
+      "operateur": "involution ρ ↦ 1 − ρ̄ dans ℓ²",
+      "fonctions": "E⊥ = ½ Σ (2Re ρ − 1)²/(|ρ|²|1 − ρ|²)",
+      "identification": "piste OB01, close : obstruction ρ̄ / 1 − ρ",
+      "sources": [
+        "MO21"
+      ],
+      "docs": [
+        "09",
+        "36"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "Proposée par OpenAI comme « énergie transverse » ; c'est une équivalence connue (source donnée par OpenAI, non vérifiée [MO21]).",
+      "origine": "OpenAI",
+      "formule": "\\sum_{\\rho}\\frac1{|\\rho|^2}=2+\\gamma-\\log 4\\pi\\qquad\\Big(E_\\perp=\\tfrac12\\sum_\\rho\\frac{(2\\operatorname{Re}\\rho-1)^2}{|\\rho|^2|1-\\rho|^2}=0\\Big)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mo>∑</mo><mi>ρ</mi></munder><mfrac><mn>1</mn><mrow><mi mathvariant=\"normal\">∣</mi><mi>ρ</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>2</mn><mo>+</mo><mi>γ</mi><mo>−</mo><mi>log</mi><mo>⁡</mo><mn>4</mn><mi>π</mi><mspace width=\"2em\"/><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">(</mo><msub><mi>E</mi><mo>⊥</mo></msub><mo>=</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><munder><mo>∑</mo><mi>ρ</mi></munder><mfrac><mrow><mo stretchy=\"false\">(</mo><mn>2</mn><mi mathvariant=\"normal\">Re</mi><mo>⁡</mo><mi>ρ</mi><mo>−</mo><mn>1</mn><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><mrow><mi mathvariant=\"normal\">∣</mi><mi>ρ</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup><mi mathvariant=\"normal\">∣</mi><mn>1</mn><mo>−</mo><mi>ρ</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>0</mn><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\sum_{\\rho}\\frac1{|\\rho|^2}=2+\\gamma-\\log 4\\pi\\qquad\\Big(E_\\perp=\\tfrac12\\sum_\\rho\\frac{(2\\operatorname{Re}\\rho-1)^2}{|\\rho|^2|1-\\rho|^2}=0\\Big)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "THA",
+      "nom": "Théorème A (énergie Q)",
+      "enonce": "½ limsup log(1 + Q(X))/log X = Θ − ½ ; RH ⇔ Q(X) = X^o(1).",
+      "force": "équivalente",
+      "statut": "démontré dans le corpus (relu en interne)",
+      "symbolique": "Thermomètre d'horizon",
+      "operateur": "énergie Q de C = Σ c(n)",
+      "fonctions": "Q(X), exposant λ⊥",
+      "identification": "document 37 ; relecture externe à venir",
+      "sources": [],
+      "docs": [
+        "37",
+        "36",
+        "58"
+      ],
+      "apport": "nouveau",
+      "apport_note": "Énoncé du corpus (doc. 37) : relu en interne, méthodes standard ; nouveauté à confirmer par une relecture externe. V6.34 : A et B′ donnent ensemble Q/(log X)^3 → 4κ/3 ⇔ RH et simplicité, sans RH supposée au départ ; corollaire de combinaison.",
+      "origine": "OpenAI (nom λ⊥) ; énoncé du corpus",
+      "formule": "Q(X)=\\int_1^X\\frac{|C(x)|^2}{x^2}dx,\\quad \\tfrac12\\limsup_{X\\to\\infty}\\frac{\\log(1+Q(X))}{\\log X}=\\Theta-\\tfrac12",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mn>1</mn><mi>X</mi></msubsup><mfrac><mrow><mi mathvariant=\"normal\">∣</mi><mi>C</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mi>d</mi><mi>x</mi><mo separator=\"true\">,</mo><mspace width=\"1em\"/><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><munder><mrow><mi mathvariant=\"normal\">lim sup</mi><mo>⁡</mo></mrow><mrow><mi>X</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mfrac><mrow><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><mrow><mi>log</mi><mo>⁡</mo><mi>X</mi></mrow></mfrac><mo>=</mo><mi mathvariant=\"normal\">Θ</mi><mo>−</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding=\"application/x-tex\">Q(X)=\\int_1^X\\frac{|C(x)|^2}{x^2}dx,\\quad \\tfrac12\\limsup_{X\\to\\infty}\\frac{\\log(1+Q(X))}{\\log X}=\\Theta-\\tfrac12</annotation></semantics></math></span>"
+    },
+    {
+      "id": "STAR",
+      "nom": "(★) K(L) = O(1) ; Ψ ∈ B²",
+      "enonce": "La densité d'énergie oscillatoire K(L) reste bornée ; Ψ est presque périodique au sens de Besicovitch.",
+      "force": "équivalente (sous Théorème B)",
+      "statut": "critère proposé par OpenAI",
+      "symbolique": "Détecteur ; Carillon de Bohr (nom proposé)",
+      "operateur": "translations unitaires dans l'espace de Besicovitch B²",
+      "fonctions": "K(L), coefficients de Bohr de Ψ",
+      "identification": "⇒ RH par le Théorème A ; ⇐ par le Théorème B (sous RH, K → S)",
+      "sources": [
+        "Bes32"
+      ],
+      "docs": [
+        "09",
+        "37"
+      ],
+      "apport": "nouveau",
+      "apport_note": "Critère formulé avec OpenAI à partir des Théorèmes A et B ; nouveauté à confirmer.",
+      "origine": "OpenAI",
+      "formule": "K(L)=O(1),\\qquad \\Psi\\in B^2\\ \\ \\text{(presque périodique de Besicovitch)}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mo stretchy=\"false\">(</mo><mi>L</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>O</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi mathvariant=\"normal\">Ψ</mi><mo>∈</mo><msup><mi>B</mi><mn>2</mn></msup><mtext>  </mtext><mrow><mtext>(presque p</mtext><mover accent=\"true\"><mtext>e</mtext><mo>ˊ</mo></mover><mtext>riodique de Besicovitch)</mtext></mrow></mrow><annotation encoding=\"application/x-tex\">K(L)=O(1),\\qquad \\Psi\\in B^2\\ \\ \\text{(presque périodique de Besicovitch)}</annotation></semantics></math></span>"
+    },
+    {
+      "id": "HP",
+      "nom": "Hilbert–Pólya",
+      "enonce": "Il existe un opérateur autoadjoint dont le spectre est {γ}.",
+      "force": "plus forte que RH",
+      "statut": "conjecture (programme)",
+      "symbolique": "Scène manquante",
+      "operateur": "opérateur autoadjoint ; métrique positive",
+      "fonctions": "traces, formule de Connes",
+      "identification": "coup « metrique_objet » du navigateur : la métrique positive manque",
+      "sources": [
+        "Con99",
+        "BK99a",
+        "CCM25"
+      ],
+      "docs": [
+        "32",
+        "33",
+        "36"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "La version « dissipative » proposée par OpenAI retombe sur la positivité de Weil [Wei52], [Con03] (docs 09, 36). Le corpus reconstruit l'opérateur seulement dans le Modèle réduit (doc. 32).",
+      "origine": "OpenAI",
+      "formule": "\\exists\\,H=H^{\\ast}:\\ \\operatorname{spec}(H)=\\{\\gamma:\\ \\zeta(\\tfrac12+i\\gamma)=0\\}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi><mtext> </mtext><mi>H</mi><mo>=</mo><msup><mi>H</mi><mo lspace=\"0em\" rspace=\"0em\">∗</mo></msup><mo>:</mo><mtext> </mtext><mi mathvariant=\"normal\">spec</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">{</mo><mi>γ</mi><mo>:</mo><mtext> </mtext><mi>ζ</mi><mo stretchy=\"false\">(</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mi>i</mi><mi>γ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\exists\\,H=H^{\\ast}:\\ \\operatorname{spec}(H)=\\{\\gamma:\\ \\zeta(\\tfrac12+i\\gamma)=0\\}</annotation></semantics></math></span>"
+    },
+    {
+      "id": "MERT",
+      "nom": "Ordre de Mertens",
+      "enonce": "M(x) = Σ_{n ≤ x} μ(n) = O(x^{1/2 + ε}).",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "Miroir de Möbius",
+      "operateur": "sommes de Möbius",
+      "fonctions": "M(x)/√x",
+      "identification": "Titchmarsh, Th. 14.25(C) (cité de mémoire) ; l'article de Littlewood (1912) n'a pas été vérifié",
+      "sources": [
+        "Tit86"
+      ],
+      "docs": [
+        "54"
+      ],
+      "apport": "litterature",
+      "apport_note": "Sourcé en V6.29 par Titchmarsh (cité de mémoire) ; Littlewood 1912 non vérifié.",
+      "formule": "M(x)=\\sum_{n\\le x}\\mu(n)=O\\big(x^{1/2+\\varepsilon}\\big)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></munder><mi>μ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>O</mi><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">(</mo><msup><mi>x</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn><mo>+</mo><mi>ε</mi></mrow></msup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">)</mo></mrow><annotation encoding=\"application/x-tex\">M(x)=\\sum_{n\\le x}\\mu(n)=O\\big(x^{1/2+\\varepsilon}\\big)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "SZ",
+      "nom": "Simplicité des zéros",
+      "enonce": "Tous les zéros de ζ sont simples.",
+      "force": "indépendante",
+      "statut": "conjecture",
+      "symbolique": "La Rencontre à trois (marge ≠ 0)",
+      "operateur": "marge locale de la métrique d'une paire",
+      "fonctions": "proportion de marges petites ; β = 2Σ|u_γ|²",
+      "identification": "≥ 2/3 simples et critiques (Alpöge–Furman, Lamzouri) ; corollaire B′ (doc. 37) ; critère conjoint Q, article 1 révisé V6.34",
+      "sources": [
+        "AF26",
+        "Lam26",
+        "Mon73",
+        "Wan26a",
+        "Wan26b"
+      ],
+      "docs": [
+        "13",
+        "40",
+        "41",
+        "58"
+      ],
+      "apport": "recalcule",
+      "apport_note": "Marges de paires des zéros de ζ, L(χ5) et L(Δ) mesurées ; docs 40, 41.",
+      "formule": "\\zeta(\\rho)=0\\ \\Longrightarrow\\ \\zeta'(\\rho)\\neq0",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ζ</mi><mo stretchy=\"false\">(</mo><mi>ρ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mtext> </mtext><mo>⟹</mo><mtext> </mtext><msup><mi>ζ</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>ρ</mi><mo stretchy=\"false\">)</mo><mo mathvariant=\"normal\">≠</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\zeta(\\rho)=0\\ \\Longrightarrow\\ \\zeta&#x27;(\\rho)\\neq0</annotation></semantics></math></span>"
+    },
+    {
+      "id": "PC",
+      "nom": "Corrélation de paires (Montgomery)",
+      "enonce": "R2(s) = 1 − sinc²(πs) pour les zéros normalisés.",
+      "force": "conséquence partielle de RH",
+      "statut": "théorème partiel (support α < 1)",
+      "symbolique": "Loi de la marge",
+      "operateur": "marge d'une paire = R2 du CUE(N)",
+      "fonctions": "F(α), marges de paires",
+      "identification": "Montgomery sous RH ; version sans RH (Baluyot et al.)",
+      "sources": [
+        "Mon73",
+        "BGST24",
+        "BBLM06"
+      ],
+      "docs": [
+        "40",
+        "41"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "La marge d'une paire à la fenêtre de Heisenberg (doc. 40) s'est révélée être la corrélation de paires de Montgomery [Mon73] ; à fenêtre N, celle du CUE(N) de Dyson [Dys62] (doc. 41). Mesurée sur ζ et L(Δ).",
+      "formule": "R_2(u)=1-\\Big(\\frac{\\sin\\pi u}{\\pi u}\\Big)^{2}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi>u</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">(</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>π</mi><mi>u</mi></mrow><mrow><mi>π</mi><mi>u</mi></mrow></mfrac><msup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">R_2(u)=1-\\Big(\\frac{\\sin\\pi u}{\\pi u}\\Big)^{2}</annotation></semantics></math></span>"
+    },
+    {
+      "id": "NPT",
+      "nom": "Corrélations à n points",
+      "enonce": "Les zéros suivent les corrélations à n points du noyau sinus (GUE).",
+      "force": "conséquence partielle de RH",
+      "statut": "théorème partiel (support restreint) ; mesuré",
+      "symbolique": "La Rencontre à n (V6.19)",
+      "operateur": "marge d'un n-uplet = R_n du CUE(N) (démontré, doc. 43)",
+      "fonctions": "densité à 3 points, figure 3D",
+      "identification": "χ² réduit 1,34 pour R3 sur 1 070 zéros (doc. 43)",
+      "sources": [
+        "RS96",
+        "BBLM06"
+      ],
+      "docs": [
+        "43",
+        "53",
+        "54"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "L'identité « marge d'un n-uplet = corrélation à n points du CUE(N) » (doc. 43) est la structure déterminantale connue (Dyson [Dys62], Weyl [Wey39]) ; les triplets de ζ sont mesurés ici. V6.28 : trou à trois à basse hauteur (ζ 0 triple serré pour 15,6 attendus), doc. 53. V6.29 (doc. 54) : à basse hauteur, les zéros de ζ, L(χ5) et Δ sont plus rigides que le noyau sinus, y compris dans le rapport d'écarts, sans échelle ; la taille finie du CUE (N ≥ 3) ne l'explique pas.",
+      "formule": "R_n(x_1,\\dots,x_n)=\\det\\Big[\\frac{\\sin\\pi(x_i-x_j)}{\\pi(x_i-x_j)}\\Big]_{i,j\\le n}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mi>n</mi></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mi>det</mi><mo>⁡</mo><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">[</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>π</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy=\"false\">)</mo></mrow><mrow><mi>π</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy=\"false\">)</mo></mrow></mfrac><msub><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">]</mo><mrow><mi>i</mi><mo separator=\"true\">,</mo><mi>j</mi><mo>≤</mo><mi>n</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">R_n(x_1,\\dots,x_n)=\\det\\Big[\\frac{\\sin\\pi(x_i-x_j)}{\\pi(x_i-x_j)}\\Big]_{i,j\\le n}</annotation></semantics></math></span>"
+    },
+    {
+      "id": "PROP",
+      "nom": "Proportion sur la droite critique",
+      "enonce": "Une proportion positive des zéros est sur la droite critique.",
+      "force": "conséquence de RH (théorèmes partiels)",
+      "statut": "démontré (proportions)",
+      "symbolique": "Census spectral",
+      "operateur": "mollificateurs ; compressions de Weil",
+      "fonctions": "proportion κ",
+      "identification": "Hardy (infinité), Selberg, Levinson 1/3, Conrey 2/5, > 2/3 en 2026",
+      "sources": [
+        "Har14",
+        "Sel42",
+        "Lev74",
+        "Con89",
+        "AF26",
+        "PC26"
+      ],
+      "docs": [
+        "13",
+        "39"
+      ],
+      "apport": "litterature",
+      "apport_note": "Cité (résumés lus) ; pas recalculé.",
+      "formule": "N_0(T)\\ \\ge\\ \\kappa\\,N(T)\\quad(\\kappa>0;\\ \\text{aujourd'hui } \\kappa>2/3 \\text{ pour les zéros simples et critiques})",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>N</mi><mn>0</mn></msub><mo stretchy=\"false\">(</mo><mi>T</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mo>≥</mo><mtext> </mtext><mi>κ</mi><mtext> </mtext><mi>N</mi><mo stretchy=\"false\">(</mo><mi>T</mi><mo stretchy=\"false\">)</mo><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mi>κ</mi><mo>&gt;</mo><mn>0</mn><mo separator=\"true\">;</mo><mtext> aujourd’hui </mtext><mi>κ</mi><mo>&gt;</mo><mn>2</mn><mi mathvariant=\"normal\">/</mi><mn>3</mn><mrow><mtext> pour les z</mtext><mover accent=\"true\"><mtext>e</mtext><mo>ˊ</mo></mover><mtext>ros simples et critiques</mtext></mrow><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">N_0(T)\\ \\ge\\ \\kappa\\,N(T)\\quad(\\kappa&gt;0;\\ \\text{aujourd&#x27;hui } \\kappa&gt;2/3 \\text{ pour les zéros simples et critiques})</annotation></semantics></math></span>"
+    },
+    {
+      "id": "LH",
+      "nom": "Lindelöf",
+      "enonce": "ζ(1/2 + it) = O(t^ε).",
+      "force": "plus faible que RH",
+      "statut": "conjecture",
+      "symbolique": "—",
+      "operateur": "croissance sur la droite critique",
+      "fonctions": "moments de ζ",
+      "identification": "RH ⇒ Lindelöf ; Lindelöf pour les premiers ⇔ RH (Gonek–Graham–Lee)",
+      "sources": [
+        "Tit86",
+        "GGL20"
+      ],
+      "docs": [],
+      "apport": "litterature",
+      "apport_note": "Cité.",
+      "formule": "\\zeta\\big(\\tfrac12+it\\big)=O\\big(|t|^{\\varepsilon}\\big)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ζ</mi><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">(</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mi>i</mi><mi>t</mi><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">)</mo><mo>=</mo><mi>O</mi><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">(</mo><mi mathvariant=\"normal\">∣</mi><mi>t</mi><msup><mi mathvariant=\"normal\">∣</mi><mi>ε</mi></msup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\zeta\\big(\\tfrac12+it\\big)=O\\big(|t|^{\\varepsilon}\\big)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "DENS",
+      "nom": "Grandes valeurs et densité des zéros",
+      "enonce": "N(σ, T) ≪ T^{2(1−σ)+ε} (hypothèse de densité).",
+      "force": "plus faible que RH",
+      "statut": "conjecture ; avancées démontrées",
+      "symbolique": "—",
+      "operateur": "polynômes de Dirichlet",
+      "fonctions": "N(σ, T)",
+      "identification": "Guth–Maynard (2024–2026)",
+      "sources": [
+        "GM26"
+      ],
+      "docs": [],
+      "apport": "litterature",
+      "apport_note": "Cité.",
+      "formule": "N(\\sigma,T)\\ \\ll\\ T^{2(1-\\sigma)+\\varepsilon}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo stretchy=\"false\">(</mo><mi>σ</mi><mo separator=\"true\">,</mo><mi>T</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mo>≪</mo><mtext> </mtext><msup><mi>T</mi><mrow><mn>2</mn><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>σ</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>ε</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N(\\sigma,T)\\ \\ll\\ T^{2(1-\\sigma)+\\varepsilon}</annotation></semantics></math></span>"
+    },
+    {
+      "id": "CF",
+      "nom": "Modèle réduit (RH des corps de fonctions)",
+      "enonce": "Pour une courbe sur F_q, les valeurs propres de Frobenius ont un module √q.",
+      "force": "analogue démontré",
+      "statut": "théorème",
+      "symbolique": "Modèle réduit",
+      "operateur": "Frobenius ; marge de Castelnuovo 1 − ρ₁²",
+      "fonctions": "marge = sin²θ = (π/2) × densité de Sato–Tate",
+      "identification": "Weil 1948, Deligne 1974 ; document 28",
+      "sources": [
+        "Wei48",
+        "Del74",
+        "Has36",
+        "MT58",
+        "Gro58",
+        "Mil20"
+      ],
+      "docs": [
+        "28",
+        "30",
+        "41",
+        "59",
+        "60"
+      ],
+      "apport": "recalcule",
+      "apport_note": "Modèle réduit : 425 à 561 258 courbes recalculées (Castelnuovo, Sato–Tate) ; docs 28, 41. V6.35 : preuve explicite sur toutes les extensions impaires, borne 10√q uniforme ; rationalité indépendante de Hasse par Riemann–Roch, puis modules √p et borne 2√q en genre un lisse. Cinq certificats exacts. La preuve du corpus ne couvre pas ici les genres supérieurs ni la zêta des entiers. V6.36 : reconstruction expositive autonome dans l’article3, avec preuve et certificats exacts ; aucun théorème historiquement nouveau revendiqué.",
+      "formule": "Z_C(u)=\\frac{\\prod_{i=1}^{2g}(1-\\alpha_iu)}{(1-u)(1-qu)},\\qquad |\\alpha_i|=\\sqrt q",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>Z</mi><mi>C</mi></msub><mo stretchy=\"false\">(</mo><mi>u</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>g</mi></mrow></munderover><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>α</mi><mi>i</mi></msub><mi>u</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>q</mi><mi>u</mi><mo stretchy=\"false\">)</mo></mrow></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi mathvariant=\"normal\">∣</mi><msub><mi>α</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∣</mi><mo>=</mo><msqrt><mi>q</mi></msqrt></mrow><annotation encoding=\"application/x-tex\">Z_C(u)=\\frac{\\prod_{i=1}^{2g}(1-\\alpha_iu)}{(1-u)(1-qu)},\\qquad |\\alpha_i|=\\sqrt q</annotation></semantics></math></span>"
+    },
+    {
+      "id": "DH",
+      "nom": "Davenport–Heilbronn",
+      "enonce": "Équation fonctionnelle sans produit d'Euler ; zéros hors de la droite.",
+      "force": "témoin",
+      "statut": "théorème",
+      "symbolique": "Jumeau de crash-test",
+      "operateur": "fonction de Davenport–Heilbronn",
+      "fonctions": "mêmes instruments que pour ζ",
+      "identification": "tout critère qu'elle satisfait ne peut pas impliquer RH",
+      "sources": [
+        "DH36a",
+        "DH36b"
+      ],
+      "docs": [
+        "22",
+        "23",
+        "24"
+      ],
+      "apport": "recalcule",
+      "apport_note": "Zéros de DH recalculés ; directions négatives attribuées aux quadruplets hors droite ; docs 22 à 24, 39.",
+      "formule": "f(s)=\\tfrac{1-i\\xi}{2}L(s,\\chi)+\\tfrac{1+i\\xi}{2}L(s,\\bar\\chi),\\quad \\xi=\\frac{\\sqrt{10-2\\sqrt5}-2}{\\sqrt5-1},\\ \\chi\\bmod 5",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mrow><mn>1</mn><mo>−</mo><mi>i</mi><mi>ξ</mi></mrow><mn>2</mn></mfrac></mstyle><mi>L</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>χ</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mrow><mn>1</mn><mo>+</mo><mi>i</mi><mi>ξ</mi></mrow><mn>2</mn></mfrac></mstyle><mi>L</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mover accent=\"true\"><mi>χ</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mspace width=\"1em\"/><mi>ξ</mi><mo>=</mo><mfrac><mrow><msqrt><mrow><mn>10</mn><mo>−</mo><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow></msqrt><mo>−</mo><mn>2</mn></mrow><mrow><msqrt><mn>5</mn></msqrt><mo>−</mo><mn>1</mn></mrow></mfrac><mo separator=\"true\">,</mo><mtext> </mtext><mi>χ</mi><mtext> </mtext><mo lspace=\"0.22em\" rspace=\"0.22em\"><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow></mo><mtext> </mtext><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">f(s)=\\tfrac{1-i\\xi}{2}L(s,\\chi)+\\tfrac{1+i\\xi}{2}L(s,\\bar\\chi),\\quad \\xi=\\frac{\\sqrt{10-2\\sqrt5}-2}{\\sqrt5-1},\\ \\chi\\bmod 5</annotation></semantics></math></span>"
+    },
+    {
+      "id": "ARCH",
+      "nom": "Archipel d'Euler",
+      "enonce": "Dans les espaces V_q de combinaisons de L(s, χ), l'absence de zéro dans Re s > 1 force le produit d'Euler.",
+      "force": "plus faible que RH",
+      "statut": "théorème (publié)",
+      "symbolique": "L'Archipel d'Euler",
+      "operateur": "espaces V_q à équation fonctionnelle commune",
+      "fonctions": "rayon des îles autour des points d'Euler",
+      "identification": "cas particulier de Saias–Weingartner (Th. 2) ; degré 2 : Booker–Thorne",
+      "sources": [
+        "SW09",
+        "BT14"
+      ],
+      "docs": [
+        "30",
+        "37",
+        "58",
+        "61",
+        "63",
+        "64",
+        "65",
+        "66"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "Démontré dans la note 30 (V6.8), puis reconnu publié lors de la pré-relecture (doc. 37) : Saias–Weingartner [SW09], Booker–Thorne [BT14]. La carte des îles, elle, est mesurée ici. V6.34 : T* est un déficit relatif et peut retarder la première sortie directe ; Euler nécessaire, sa suffisance reste GRH. V6.37 : expérience V13 appariée sur 72 couples préfixés ; bras A1, 36/36 détections plus tardives à hauteur 150 ; bras D, 25 précoces, 8 tardives et 3 dans la même tranche. Résultat descriptif de comptage numérique, sans certification d’absence antérieure ni causalité. Suite : fixer exactement le premier coefficient complexe, sa phase, l’ancre et le rayon. V6.39 : D non constant sur la fibre A=cos(r)z_i à ancre/rayon fixés dans V13 impair ; preuve et témoins, pas un effet démontré sur les zéros. V6.40 : 12 couples exacts : 8 détections plus précoces et 4 plus tardives à D élevé ; 24 racines recoupées à 80/110 chiffres de travail. Le signe se regroupe par ancre. Aucun ordre causal ou premier zéro certifié. Suite : continuation des branches dans les mêmes familles exactes. V6.41 : A prescrit : ellipse de faisabilité et fibres ; D constant à A=0 ; jets, 20 candidats de plis recoupés, six attribués, 18 blocs et 24 racines. Pont arithmétique global ouvert ; une perte coarse conservée. Paire locale ≠ forme globale de Weil ; distinguer les deux portes de RH. V6.42 : Un pli V13 choisi certifié dans sa boîte ; contour continu de deux zéros pour tout le petit intervalle radial ; quatre boîtes uniformes, deux critiques avant et une paire hors droite après. Inégalité de Weil explicitée ; signe global ouvert. La métrique positive du compagnon ne traverse pas le point double ; norme première seule non uniforme sur L².",
+      "formule": "F_c=\\sum_\\chi c_\\chi e^{-i\\varphi_\\chi}L(s,\\chi)\\in V_q:\\quad F_c\\neq0 \\text{ sur } \\operatorname{Re}s>1\\iff F_c=c\\,L(s,\\chi_0)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><munder><mo>∑</mo><mi>χ</mi></munder><msub><mi>c</mi><mi>χ</mi></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><msub><mi>φ</mi><mi>χ</mi></msub></mrow></msup><mi>L</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>χ</mi><mo stretchy=\"false\">)</mo><mo>∈</mo><msub><mi>V</mi><mi>q</mi></msub><mo>:</mo><mspace width=\"1em\"/><msub><mi>F</mi><mi>c</mi></msub><mo mathvariant=\"normal\">≠</mo><mn>0</mn><mtext> sur </mtext><mi mathvariant=\"normal\">Re</mi><mo>⁡</mo><mi>s</mi><mo>&gt;</mo><mn>1</mn><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mi>c</mi><mtext> </mtext><mi>L</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><msub><mi>χ</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F_c=\\sum_\\chi c_\\chi e^{-i\\varphi_\\chi}L(s,\\chi)\\in V_q:\\quad F_c\\neq0 \\text{ sur } \\operatorname{Re}s&gt;1\\iff F_c=c\\,L(s,\\chi_0)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "LHD",
+      "nom": "Dimension ½ des cordes fractales",
+      "enonce": "RH équivaut à l'inversibilité de l'opérateur spectral des cordes fractales dans la bande critique (Lapidus et al.).",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "Dimension énergétique",
+      "operateur": "opérateur spectral des cordes fractales généralisées",
+      "fonctions": "dimension de l'énergie Q comme corde fractale",
+      "identification": "Lapidus–Maier, Herichi–Lapidus, Lapidus–van Frankenhuijsen",
+      "sources": [
+        "HL12",
+        "LM95",
+        "LvF06"
+      ],
+      "docs": [
+        "08"
+      ],
+      "apport": "redecouvert",
+      "origine": "OpenAI",
+      "apport_note": "Le module « dimension énergétique » (v5.2, doc. 08) a retrouvé le lien D = ½ ↔ RH, déjà présent chez Lapidus et ses coauteurs ; piste OA06 d'OpenAI, close.",
+      "formule": "\\text{RH}\\iff \\mathfrak a_c=\\zeta(\\partial_c)\\ \\text{quasi inversible pour tout } c\\in(0,\\tfrac12)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>RH</mtext><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><msub><mi mathvariant=\"fraktur\">a</mi><mi>c</mi></msub><mo>=</mo><mi>ζ</mi><mo stretchy=\"false\">(</mo><msub><mi mathvariant=\"normal\">∂</mi><mi>c</mi></msub><mo stretchy=\"false\">)</mo><mtext> quasi inversible pour tout </mtext><mi>c</mi><mo>∈</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo separator=\"true\">,</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\text{RH}\\iff \\mathfrak a_c=\\zeta(\\partial_c)\\ \\text{quasi inversible pour tout } c\\in(0,\\tfrac12)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "TAMIS",
+      "nom": "Le Tamis à deux (dissipation par le produit d'Euler)",
+      "enonce": "c(n) s'annule dès trois facteurs premiers distincts : cette parcimonie vient-elle du produit d'Euler, et restreint-elle la somme de carrés V_N ?",
+      "force": "piste non située",
+      "statut": "non explorée",
+      "symbolique": "Le Tamis à deux",
+      "operateur": "somme de carrés V_N = (1/12)Σ J₂(q)(Σ_{q|d} w_d/d)²",
+      "fonctions": "canaux q actifs pour ζ, L(χ5), DH, Steinhaus",
+      "identification": "à faire ; témoin : Steinhaus (produit d'Euler sans équation fonctionnelle)",
+      "sources": [],
+      "docs": [
+        "12"
+      ],
+      "apport": "question",
+      "origine": "OpenAI",
+      "apport_note": "Seule piste d'OpenAI jamais explorée (OA08) ; coup « Le Tamis à deux contre le Sosie » du navigateur, axe H du plan.",
+      "formule": "c=\\Lambda*\\Lambda-\\Lambda\\log+2\\gamma\\Lambda,\\quad c(n)=0 \\text{ si } \\omega(n)\\ge3;\\qquad V_N=\\tfrac1{12}\\sum_q J_2(q)\\Big(\\sum_{q\\mid d}\\frac{w_d}{d}\\Big)^2",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>c</mi><mo>=</mo><mi mathvariant=\"normal\">Λ</mi><mo>∗</mo><mi mathvariant=\"normal\">Λ</mi><mo>−</mo><mi mathvariant=\"normal\">Λ</mi><mi>log</mi><mo>⁡</mo><mo>+</mo><mn>2</mn><mi>γ</mi><mi mathvariant=\"normal\">Λ</mi><mo separator=\"true\">,</mo><mspace width=\"1em\"/><mi>c</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mtext> si </mtext><mi>ω</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>≥</mo><mn>3</mn><mo separator=\"true\">;</mo><mspace width=\"2em\"/><msub><mi>V</mi><mi>N</mi></msub><mo>=</mo><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mfrac><mn>1</mn><mn>12</mn></mfrac></mstyle><munder><mo>∑</mo><mi>q</mi></munder><msub><mi>J</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">(</mo><munder><mo>∑</mo><mrow><mi>q</mi><mo>∣</mo><mi>d</mi></mrow></munder><mfrac><msub><mi>w</mi><mi>d</mi></msub><mi>d</mi></mfrac><msup><mo fence=\"false\" stretchy=\"true\" minsize=\"1.8em\" maxsize=\"1.8em\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">c=\\Lambda*\\Lambda-\\Lambda\\log+2\\gamma\\Lambda,\\quad c(n)=0 \\text{ si } \\omega(n)\\ge3;\\qquad V_N=\\tfrac1{12}\\sum_q J_2(q)\\Big(\\sum_{q\\mid d}\\frac{w_d}{d}\\Big)^2</annotation></semantics></math></span>"
+    },
+    {
+      "id": "SURF",
+      "nom": "Indice de Hodge de la surface virtuelle",
+      "enonce": "La forme d'intersection virtuelle (fibres ↔ pôle, intersections ↔ puissances de premiers, genre ↔ terme archimédien) a une seule direction positive.",
+      "force": "équivalente",
+      "statut": "critère équivalent (dictionnaire de Weil) ; mesuré depuis les premiers",
+      "symbolique": "La Surface virtuelle ; Scène manquante",
+      "operateur": "forme d'intersection sur {fibres, graphes de Frobenius}",
+      "fonctions": "nombre de directions positives ; rang orthogonal aux fibres",
+      "identification": "Castelnuovo sur C × C (Weil) ; positivité de Weil ; programme de Connes",
+      "sources": [
+        "Wei52",
+        "Bom00a",
+        "Con99",
+        "CC14"
+      ],
+      "docs": [
+        "46",
+        "51",
+        "52"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "Dictionnaire classique (Weil, Bombieri, Connes), retrouvé ici en V6.21 ; mesuré depuis les premiers ≤ 439 : une seule direction positive pour ζ, 2 puis 10 en trop pour DH ; Modèle réduit : 425/425 courbes, 220/220 jumeaux. V6.27 : signature robuste sur 180 réglages (doc. 52).",
+      "formule": "D_m^\\perp\\cdot D_n^\\perp=-q^{-|m-n|/2}S_{|m-n|}\\quad\\leadsto\\quad n_+\\big(M_L\\big)=1\\iff G_L\\succeq0",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>D</mi><mi>m</mi><mo>⊥</mo></msubsup><mo>⋅</mo><msubsup><mi>D</mi><mi>n</mi><mo>⊥</mo></msubsup><mo>=</mo><mo>−</mo><msup><mi>q</mi><mrow><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>m</mi><mo>−</mo><mi>n</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msup><msub><mi>S</mi><mrow><mi mathvariant=\"normal\">∣</mi><mi>m</mi><mo>−</mo><mi>n</mi><mi mathvariant=\"normal\">∣</mi></mrow></msub><mspace width=\"1em\"/><mo>⇝</mo><mspace width=\"1em\"/><msub><mi>n</mi><mo>+</mo></msub><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">(</mo><msub><mi>M</mi><mi>L</mi></msub><mo fence=\"false\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">)</mo><mo>=</mo><mn>1</mn><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><msub><mi>G</mi><mi>L</mi></msub><mo>⪰</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">D_m^\\perp\\cdot D_n^\\perp=-q^{-|m-n|/2}S_{|m-n|}\\quad\\leadsto\\quad n_+\\big(M_L\\big)=1\\iff G_L\\succeq0</annotation></semantics></math></span>"
+    },
+    {
+      "id": "STEP",
+      "nom": "Stepanov–Bombieri (fonction auxiliaire)",
+      "enonce": "Sur une courbe, Riemann–Roch et le Frobenius donnent N_m ≤ Q + (2g + 1)√Q + 1 ; avec un revêtement (tordu) et la tour, RH.",
+      "force": "analogue démontré",
+      "statut": "théorème (Stepanov 1969, Bombieri 1973)",
+      "symbolique": "La Fonction auxiliaire",
+      "operateur": "espace de Riemann–Roch et Frobenius x ↦ x^q",
+      "fonctions": "étage où chaque faux jumeau tombe",
+      "identification": "preuve de Bombieri, sans la surface",
+      "sources": [
+        "Ste69",
+        "Bom73",
+        "Mil20"
+      ],
+      "docs": [
+        "47",
+        "48",
+        "58",
+        "59",
+        "60"
+      ],
+      "apport": "redecouvert",
+      "apport_note": "Retrouvé en V6.22 en cherchant une propriété d'existence ou de dimension sans RH : Clifford 0/220 jumeaux, Stepanov + tordu 220/220 (étage médian 4, Castelnuovo 3). V6.23 : la fonction auxiliaire n'existe qu'avec le Frobenius (dérivée nulle) ; identité et permutation échouent (doc. 48). V6.34 : lemme exact de rang des jets pour les cubiques ; paramètres garantissant une erreur O(√p), avec tordu et certificats polynomiaux. Aucune nouveauté revendiquée. V6.35 : preuve explicite sur toutes les extensions impaires, borne 10√q uniforme ; rationalité indépendante de Hasse par Riemann–Roch, puis modules √p et borne 2√q en genre un lisse. Cinq certificats exacts. La preuve du corpus ne couvre pas ici les genres supérieurs ni la zêta des entiers. V6.36 : reconstruction expositive autonome dans l’article3, avec preuve et certificats exacts ; aucun théorème historiquement nouveau revendiqué.",
+      "formule": "N_m\\ \\le\\ Q+(2g+1)\\sqrt Q+1\\quad(Q=q^{m})",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>N</mi><mi>m</mi></msub><mtext> </mtext><mo>≤</mo><mtext> </mtext><mi>Q</mi><mo>+</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>g</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msqrt><mi>Q</mi></msqrt><mo>+</mo><mn>1</mn><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mi>Q</mi><mo>=</mo><msup><mi>q</mi><mi>m</mi></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">N_m\\ \\le\\ Q+(2g+1)\\sqrt Q+1\\quad(Q=q^{m})</annotation></semantics></math></span>"
+    },
+    {
+      "id": "LAND",
+      "nom": "Borne unilatérale des premiers",
+      "enonce": "ψ(x) − x ≤ C x^{1/2} log²x pour tout x (ou la borne de l'autre côté).",
+      "force": "équivalente",
+      "statut": "critère équivalent (Landau ; ζ sans zéro réel dans ]0 ; 1[)",
+      "symbolique": "La Fonction auxiliaire pour les premiers",
+      "operateur": "intégrale de Dirichlet du reste, de signe constant",
+      "fonctions": "ψ(x) − x",
+      "identification": "théorème de Landau ; analogue de Stepanov–Bombieri pour ζ",
+      "sources": [
+        "Tit86"
+      ],
+      "docs": [
+        "47"
+      ],
+      "apport": "litterature",
+      "apport_note": "Le lemme manquant de l'axe J : obtenir cette borne par un argument d'existence (fonction auxiliaire), ce qui demanderait un Frobenius absolu (doc. 47).",
+      "formule": "\\psi(x)-x\\ \\le\\ C\\,x^{1/2}\\log^2x\\quad(x\\ge2)",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ψ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>x</mi><mtext> </mtext><mo>≤</mo><mtext> </mtext><mi>C</mi><mtext> </mtext><msup><mi>x</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msup><msup><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mi>x</mi><mo>≥</mo><mn>2</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\psi(x)-x\\ \\le\\ C\\,x^{1/2}\\log^2x\\quad(x\\ge2)</annotation></semantics></math></span>"
+    },
+    {
+      "id": "LHP",
+      "nom": "Lindelöf pour les premiers",
+      "enonce": "Les sommes tordues Σ_{n ≤ x} Λ(n) n^{−it} ont une borne uniforme de taille x^{1/2+ε} (forme de Gonek–Graham–Lee).",
+      "force": "équivalente",
+      "statut": "critère démontré équivalent",
+      "symbolique": "—",
+      "operateur": "sommes de Dirichlet tordues sur les premiers",
+      "fonctions": "Σ Λ(n) n^{−it}",
+      "identification": "Gonek–Graham–Lee (2020) ; voisin du Théorème A",
+      "sources": [
+        "GGL20"
+      ],
+      "docs": [],
+      "apport": "litterature",
+      "apport_note": "Ajouté en V6.29 (complétion de la matrice) ; énoncé d'après le résumé, non revérifié.",
+      "formule": "\\sum_{n\\le x}\\Lambda(n)\\,n^{-it}\\ \\ll\\ x^{1/2}\\,(x+|t|)^{\\varepsilon}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mo>∑</mo><mrow><mi>n</mi><mo>≤</mo><mi>x</mi></mrow></munder><mi mathvariant=\"normal\">Λ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><msup><mi>n</mi><mrow><mo>−</mo><mi>i</mi><mi>t</mi></mrow></msup><mtext> </mtext><mo>≪</mo><mtext> </mtext><msup><mi>x</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msup><mtext> </mtext><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>t</mi><mi mathvariant=\"normal\">∣</mi><msup><mo stretchy=\"false\">)</mo><mi>ε</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\sum_{n\\le x}\\Lambda(n)\\,n^{-it}\\ \\ll\\ x^{1/2}\\,(x+|t|)^{\\varepsilon}</annotation></semantics></math></span>"
+    },
+    {
+      "id": "RRZ",
+      "nom": "Riemann–Roch pour Spec Z",
+      "enonce": "Théorème de Riemann–Roch pour les diviseurs d'Arakelov du compactifié de Spec Z.",
+      "force": "analogue démontré",
+      "statut": "théorème (van der Geer–Schoof ; Connes–Consani)",
+      "symbolique": "Le Riemann–Roch virtuel",
+      "operateur": "h⁰ par la fonction thêta ; cohomologie sur la base absolue",
+      "fonctions": "h⁰, caractéristique d'Euler",
+      "identification": "Connes–Consani 2022 et 2024 ; van der Geer–Schoof",
+      "sources": [
+        "CC22",
+        "CC24",
+        "VGS00",
+        "Gro01"
+      ],
+      "docs": [
+        "47"
+      ],
+      "apport": "litterature",
+      "apport_note": "Existe pour la « courbe » Spec Z ; seul, comme Clifford dans le Modèle réduit, il ne suffit pas : il manque le Frobenius (doc. 47).",
+      "formule": "h^0(D)-h^0(\\kappa-D)=\\deg D\\quad\\text{(diviseurs d'Arakelov de }\\mathbb Q\\text{, van der Geer–Schoof)}",
+      "formule_mathml": "<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>h</mi><mn>0</mn></msup><mo stretchy=\"false\">(</mo><mi>D</mi><mo stretchy=\"false\">)</mo><mo>−</mo><msup><mi>h</mi><mn>0</mn></msup><mo stretchy=\"false\">(</mo><mi>κ</mi><mo>−</mo><mi>D</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>deg</mi><mo>⁡</mo><mi>D</mi><mspace width=\"1em\"/><mtext>(diviseurs d’Arakelov de </mtext><mi mathvariant=\"double-struck\">Q</mi><mtext>, van der Geer–Schoof)</mtext></mrow><annotation encoding=\"application/x-tex\">h^0(D)-h^0(\\kappa-D)=\\deg D\\quad\\text{(diviseurs d&#x27;Arakelov de }\\mathbb Q\\text{, van der Geer–Schoof)}</annotation></semantics></math></span>"
+    }
+  ],
+  "relations": [
+    {
+      "de": "GRH",
+      "vers": "RH",
+      "type": "⇒",
+      "sources": [
+        "Dav00"
+      ],
+      "note": "Le caractère principal redonne ζ.",
+      "apport": "litterature"
+    },
+    {
+      "de": "WEIL",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "Wei52",
+        "Bom00a"
+      ],
+      "note": "Critère de Weil.",
+      "apport": "litterature"
+    },
+    {
+      "de": "LI",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "Li97",
+        "BL99"
+      ],
+      "note": "Critère de Li.",
+      "apport": "litterature"
+    },
+    {
+      "de": "NB",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "Nym50",
+        "Beu55",
+        "Bae03"
+      ],
+      "note": "Nyman (1950), Beurling (1955) ; renforcement de Báez-Duarte (2003).",
+      "apport": "litterature"
+    },
+    {
+      "de": "DBN",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "DeB50",
+        "New76",
+        "RT20"
+      ],
+      "note": "RH ⇔ Λ ≤ 0 ; Λ ≥ 0 démontré, donc RH ⇔ Λ = 0.",
+      "apport": "litterature"
+    },
+    {
+      "de": "EPERP",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "MO21"
+      ],
+      "note": "Équivalence classique ; source donnée par OpenAI, non vérifiée.",
+      "apport": "redecouvert",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "THA",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [],
+      "note": "Théorème A du corpus (relu en interne).",
+      "apport": "nouveau"
+    },
+    {
+      "de": "STAR",
+      "vers": "THA",
+      "type": "⇒",
+      "sources": [
+        "Bes32"
+      ],
+      "note": "K(L) ≤ C ⇒ Q ≪ (log X)³ ⇒ RH par le Théorème A.",
+      "apport": "nouveau",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "RH",
+      "vers": "STAR",
+      "type": "⇒",
+      "sources": [],
+      "note": "Théorème B (sous RH) : K(L) → S ; relu en interne, relecture externe à venir.",
+      "apport": "nouveau",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "HP",
+      "vers": "RH",
+      "type": "⇒",
+      "sources": [
+        "Con99",
+        "BK99a"
+      ],
+      "note": "Un spectre réel d'opérateur autoadjoint donne RH.",
+      "apport": "litterature"
+    },
+    {
+      "de": "MERT",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "Tit86"
+      ],
+      "note": "Titchmarsh, Th. 14.25(C) (cité de mémoire) ; Littlewood (1912) non vérifié.",
+      "apport": "litterature"
+    },
+    {
+      "de": "RH",
+      "vers": "LH",
+      "type": "⇒",
+      "sources": [
+        "Tit86"
+      ],
+      "note": "RH implique Lindelöf.",
+      "apport": "litterature"
+    },
+    {
+      "de": "LH",
+      "vers": "DENS",
+      "type": "⇒",
+      "sources": [
+        "Tit86"
+      ],
+      "note": "Lindelöf implique l'hypothèse de densité.",
+      "apport": "litterature"
+    },
+    {
+      "de": "RH",
+      "vers": "PC",
+      "type": "(⇒)",
+      "sources": [
+        "Mon73"
+      ],
+      "note": "Sous RH : R2 démontrée pour le support |α| < 1.",
+      "apport": "redecouvert"
+    },
+    {
+      "de": "RH",
+      "vers": "NPT",
+      "type": "(⇒)",
+      "sources": [
+        "RS96"
+      ],
+      "note": "Corrélations à n points pour des fonctions-tests à support restreint (cité de mémoire).",
+      "apport": "redecouvert"
+    },
+    {
+      "de": "NPT",
+      "vers": "PC",
+      "type": "⇒",
+      "sources": [],
+      "note": "Les paires sont le cas n = 2.",
+      "apport": "litterature"
+    },
+    {
+      "de": "RH",
+      "vers": "PROP",
+      "type": "⇒",
+      "sources": [],
+      "note": "RH donne la proportion 1.",
+      "apport": "litterature"
+    },
+    {
+      "de": "RH",
+      "vers": "SZ",
+      "type": "∥",
+      "sources": [],
+      "note": "Aucune implication connue dans un sens ni dans l'autre.",
+      "apport": "litterature"
+    },
+    {
+      "de": "CF",
+      "vers": "SZ",
+      "type": "✗",
+      "sources": [
+        "Del74"
+      ],
+      "note": "Pendant : changement de base F_p → F_p², RH vraie avec des collisions (courbes supersingulières), doc. 41.",
+      "apport": "recalcule"
+    },
+    {
+      "de": "CF",
+      "vers": "RH",
+      "type": "≈",
+      "sources": [
+        "Wei48",
+        "Del74"
+      ],
+      "note": "Modèle réduit : même structure, démontrée.",
+      "apport": "recalcule"
+    },
+    {
+      "de": "DH",
+      "vers": "WEIL",
+      "type": "✗",
+      "sources": [
+        "DH36a"
+      ],
+      "note": "Témoin : la symétrie fonctionnelle seule ne suffit pas.",
+      "apport": "recalcule"
+    },
+    {
+      "de": "PC",
+      "vers": "SZ",
+      "type": "(⇒)",
+      "sources": [
+        "Mon73"
+      ],
+      "note": "Sous RH, la loi R2 force une proportion ≥ 2/3 de zéros simples.",
+      "apport": "litterature"
+    },
+    {
+      "de": "WEIL",
+      "vers": "PROP",
+      "type": "↗",
+      "sources": [
+        "AF26"
+      ],
+      "note": "La compression finie de la forme de Weil fournit la méthode des 2/3 (doc. 13).",
+      "apport": "litterature"
+    },
+    {
+      "de": "DBN",
+      "vers": "SZ",
+      "type": "?",
+      "sources": [
+        "RT20"
+      ],
+      "note": "Les collisions du flot de la chaleur sont-elles la Rencontre (marge nulle) ? Axe C du plan.",
+      "apport": "question"
+    },
+    {
+      "de": "NB",
+      "vers": "THA",
+      "type": "↗",
+      "sources": [],
+      "note": "Q est une énergie de Nyman–Beurling (identité exacte, doc. 09).",
+      "apport": "nouveau",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "RH",
+      "vers": "ARCH",
+      "type": "⇒",
+      "sources": [
+        "SW09"
+      ],
+      "note": "RH (et même l'absence de zéro dans Re s > 1) implique le produit d'Euler dans V_q : Saias–Weingartner, Th. 2.",
+      "apport": "redecouvert"
+    },
+    {
+      "de": "LHD",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "HL12",
+        "LM95"
+      ],
+      "note": "Lapidus–Maier (1995), Herichi–Lapidus (2012).",
+      "apport": "redecouvert",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "NB",
+      "vers": "SZ",
+      "type": "?",
+      "sources": [],
+      "note": "Le Palier (doc. 45) : sous RH, la famille qui annule le pôle a pour limite typique (S/4κ)·(4/3)·κ/log N ; elle vaut 4/3 si et seulement si les zéros sont simples (corollaire B′). Mesuré : 0,985 × 4/3 en médiane jusqu'à 5·10⁶, avec des pics où A_N s'annule.",
+      "apport": "nouveau",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "DH",
+      "vers": "STAR",
+      "type": "✗",
+      "sources": [
+        "DH36a"
+      ],
+      "note": "Témoin : DH a la même équation fonctionnelle, mais Q y croît exponentiellement (rayon 0,308517, doc. 36) ; (★) voit ce que la symétrie seule ne voit pas.",
+      "apport": "recalcule",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "TAMIS",
+      "vers": "NB",
+      "type": "?",
+      "sources": [],
+      "note": "Le Tamis à deux agit sur la somme de carrés V_N de la queue de Nyman–Beurling (doc. 12) ; axe H du plan.",
+      "apport": "question",
+      "origine": "OpenAI"
+    },
+    {
+      "de": "SURF",
+      "vers": "WEIL",
+      "type": "⇔",
+      "sources": [
+        "Wei52",
+        "Bom00a"
+      ],
+      "note": "Orthogonalement aux fibres, la forme d'intersection est l'opposé de la métrique des zéros : indice de Hodge ⇔ positivité de Weil (doc. 46).",
+      "apport": "redecouvert"
+    },
+    {
+      "de": "CF",
+      "vers": "SURF",
+      "type": "≈",
+      "sources": [
+        "Wei48"
+      ],
+      "note": "Dans le Modèle réduit, la surface existe (C × C) : 425 courbes sur 425 à une direction positive ; les faux jumeaux ont un surplus exact (doc. 46).",
+      "apport": "recalcule"
+    },
+    {
+      "de": "DH",
+      "vers": "SURF",
+      "type": "✗",
+      "sources": [
+        "DH36a"
+      ],
+      "note": "Surface virtuelle impossible pour DH : 2 puis 10 directions positives en trop (doc. 46).",
+      "apport": "recalcule"
+    },
+    {
+      "de": "STEP",
+      "vers": "CF",
+      "type": "⇒",
+      "sources": [
+        "Bom73"
+      ],
+      "note": "La preuve de Bombieri : fonction auxiliaire + tordu + tour + Pringsheim ⇒ RH pour les courbes ; vérifié jumeau par jumeau (doc. 47).",
+      "apport": "redecouvert"
+    },
+    {
+      "de": "LAND",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "Tit86"
+      ],
+      "note": "Landau : sans zéro réel de ζ dans ]0 ; 1[, une borne unilatérale en x^{1/2+ε} suffit (cité de mémoire).",
+      "apport": "litterature"
+    },
+    {
+      "de": "STEP",
+      "vers": "LAND",
+      "type": "≈",
+      "sources": [
+        "Bom73",
+        "CC22",
+        "CC14"
+      ],
+      "note": "Le lemme manquant : traduire la fonction auxiliaire pour les premiers ; il faut un Frobenius absolu (axe J3). V6.26 : le Frobenius de caractéristique un (Connes–Consani) n'annule aucune dérivation ; la traduction directe est écartée (doc. 51).",
+      "apport": "question"
+    },
+    {
+      "de": "RRZ",
+      "vers": "LAND",
+      "type": "?",
+      "sources": [
+        "CC22",
+        "CC24"
+      ],
+      "note": "Riemann–Roch pour Spec Z existe ; sans Frobenius, il ne donne pas la fonction auxiliaire (comme Clifford seul, 0/220 jumeaux).",
+      "apport": "question"
+    },
+    {
+      "de": "LHP",
+      "vers": "RH",
+      "type": "⇔",
+      "sources": [
+        "GGL20"
+      ],
+      "note": "Gonek–Graham–Lee : RH équivaut à une borne uniforme des sommes tordues sur les premiers.",
+      "apport": "litterature"
+    },
+    {
+      "de": "LI",
+      "vers": "WEIL",
+      "type": "⇔",
+      "sources": [
+        "BL99"
+      ],
+      "note": "Bombieri–Lagarias : les coefficients de Li sont des valeurs de la forme de Weil sur des fonctions-test particulières (énoncé via source secondaire).",
+      "apport": "litterature"
+    },
+    {
+      "de": "HP",
+      "vers": "CF",
+      "type": "≈",
+      "sources": [
+        "KS99",
+        "Del74"
+      ],
+      "note": "Dans le Modèle réduit, l'opérateur de Hilbert–Pólya existe : le Frobenius agissant sur H¹, normalisé, est unitaire.",
+      "apport": "litterature"
+    },
+    {
+      "de": "CF",
+      "vers": "NPT",
+      "type": "≈",
+      "sources": [
+        "KS99"
+      ],
+      "note": "Katz–Sarnak : pour les familles de courbes, les zéros suivent les lois de valeurs propres des groupes classiques (monodromie).",
+      "apport": "litterature"
+    },
+    {
+      "de": "CF",
+      "vers": "PC",
+      "type": "≈",
+      "sources": [
+        "KS99"
+      ],
+      "note": "Cas particulier n = 2 de la ligne précédente.",
+      "apport": "litterature"
+    },
+    {
+      "de": "WEIL",
+      "vers": "SZ",
+      "type": "↗",
+      "sources": [
+        "AF26"
+      ],
+      "note": "Alpöge–Furman : rang–trace sur une compression de la forme de Weil donne plus des deux tiers de zéros simples ; recalculé sur nos zéros (doc. 49) et relu comme recensement de marges (doc. 54).",
+      "apport": "recalcule"
+    },
+    {
+      "de": "DH",
+      "vers": "PROP",
+      "type": "✗",
+      "sources": [
+        "BH95"
+      ],
+      "note": "Bombieri–Hejhal : sous RH pour chaque fonction L et une hypothèse d'espacement, presque tous les zéros d'une combinaison comme DH sont sur la droite ; DH a pourtant des zéros hors de la droite. Une proportion, même de 100 %, ne donne pas RH.",
+      "apport": "litterature"
+    },
+    {
+      "de": "RRZ",
+      "vers": "CF",
+      "type": "≈",
+      "sources": [
+        "CC22",
+        "CC24"
+      ],
+      "note": "Riemann–Roch pour Spec Z : pendant du Riemann–Roch des courbes.",
+      "apport": "litterature"
+    },
+    {
+      "de": "MERT",
+      "vers": "NB",
+      "type": "↗",
+      "sources": [
+        "Bae03",
+        "BCF13"
+      ],
+      "note": "Les approximants naturels du critère de Báez-Duarte sont construits sur μ(n).",
+      "apport": "litterature"
+    }
+  ],
+  "apports": {
+    "litterature": "connu dans la littérature (cité)",
+    "recalcule": "recalculé ou vérifié dans ce programme",
+    "redecouvert": "retrouvé ici, puis reconnu dans la littérature",
+    "nouveau": "éventuellement nouveau (à confirmer)",
+    "question": "question ouverte posée par le plan",
+    "deduit": "déduit par transitivité"
+  },
+  "redecouvertes": [
+    {
+      "quoi": "« RH (et l'absence de zéro dans Re s > 1) force le produit d'Euler » dans les espaces V_q",
+      "corpus": [
+        "30",
+        "37"
+      ],
+      "sources": [
+        "SW09",
+        "BT14"
+      ],
+      "ou": "Saias–Weingartner, Th. 2 ; degré 2 : Booker–Thorne, Th. 1.1"
+    },
+    {
+      "quoi": "La méthode des Théorèmes A et B : caractérisation de Θ et moyenne quadratique",
+      "corpus": [
+        "37"
+      ],
+      "sources": [
+        "Cra22",
+        "MV07",
+        "BPT22"
+      ],
+      "ou": "Cramér ; Montgomery–Vaughan ch. 13 ; le Théorème B en est l'analogue à pôle double, non trouvé tel quel"
+    },
+    {
+      "quoi": "La constante κ = 2 + γ − log 4π dans Nyman–Beurling",
+      "corpus": [
+        "09",
+        "10"
+      ],
+      "sources": [
+        "Bur02",
+        "BCF13"
+      ],
+      "ou": "borne de Burnol ; asymptotique de Bettin–Conrey–Farmer"
+    },
+    {
+      "quoi": "La covariance des dents de scie pgcd(a,b)²/(12ab) (lemme L8)",
+      "corpus": [
+        "09"
+      ],
+      "sources": [
+        "Fra24",
+        "Lan24"
+      ],
+      "ou": "formule de Franel, démontrée par Landau (1924)"
+    },
+    {
+      "quoi": "Le lien entre la dimension ½ et RH (dimension énergétique de Q)",
+      "corpus": [
+        "08"
+      ],
+      "sources": [
+        "LM95",
+        "HL12",
+        "LvF06"
+      ],
+      "ou": "cordes fractales de Lapidus et coauteurs ; piste OA06 d'OpenAI"
+    },
+    {
+      "quoi": "Le creux des différences de zéros près des log p",
+      "corpus": [
+        "24"
+      ],
+      "sources": [
+        "PM11",
+        "FZ15"
+      ],
+      "ou": "Pérez-Marco ; Ford–Zaharescu. Propre au corpus : la comparaison avec DH"
+    },
+    {
+      "quoi": "La marge d'une paire = la corrélation de paires",
+      "corpus": [
+        "40",
+        "41"
+      ],
+      "sources": [
+        "Mon73",
+        "Dys62"
+      ],
+      "ou": "Montgomery (fenêtre infinie) ; Dyson, CUE(N) (fenêtre finie)"
+    },
+    {
+      "quoi": "La marge totale = la densité de Weyl ; la marge d'une paire conjuguée = Sato–Tate",
+      "corpus": [
+        "41"
+      ],
+      "sources": [
+        "Wey39",
+        "BGHT11"
+      ],
+      "ou": "Weyl ; Barnet-Lamb–Geraghty–Harris–Taylor"
+    },
+    {
+      "quoi": "La marge d'un n-uplet = la corrélation à n points ; les familles étrangères se superposent",
+      "corpus": [
+        "43"
+      ],
+      "sources": [
+        "Dys62",
+        "RS96"
+      ],
+      "ou": "structure déterminantale (Dyson) ; Rudnick–Sarnak (cité de mémoire)"
+    },
+    {
+      "quoi": "Le Contour tourné pour calculer L(Δ, s) en double précision",
+      "corpus": [
+        "41"
+      ],
+      "sources": [
+        "Rub04"
+      ],
+      "ou": "facteur δ^−s^ de Rubinstein, §3.3"
+    },
+    {
+      "quoi": "Le déficit de petits écarts à basse hauteur",
+      "corpus": [
+        "40",
+        "41",
+        "43"
+      ],
+      "sources": [
+        "BBLM06"
+      ],
+      "ou": "taille effective N_eff de Bogomolny–Bohigas–Leboeuf–Monastra"
+    },
+    {
+      "quoi": "L'énergie transverse E⊥ = Σ1/|ρ|² − κ (OpenAI)",
+      "corpus": [
+        "09"
+      ],
+      "sources": [
+        "MO21"
+      ],
+      "ou": "équivalence connue ; source donnée par OpenAI, non vérifiée"
+    },
+    {
+      "quoi": "Le Hilbert–Pólya « dissipatif » (OpenAI)",
+      "corpus": [
+        "09",
+        "36"
+      ],
+      "sources": [
+        "Wei52",
+        "Con03"
+      ],
+      "ou": "se ramène à la positivité de Weil"
+    },
+    {
+      "quoi": "Les poids polynomiaux en log n dans Nyman–Beurling (OpenAI)",
+      "corpus": [
+        "09"
+      ],
+      "sources": [
+        "BCF13",
+        "Bur02"
+      ],
+      "ou": "mollificateurs et polynômes de Dirichlet optimisés"
+    },
+    {
+      "quoi": "La marge du corpus comme forme d'intersection d'une surface (indice de Hodge ↔ positivité de Weil)",
+      "corpus": [
+        "29",
+        "46"
+      ],
+      "sources": [
+        "Wei52",
+        "Bom00a",
+        "Con99"
+      ],
+      "ou": "point de vue de Weil ; exposé de Bombieri ; programme de Connes"
+    },
+    {
+      "quoi": "La propriété d'existence qui démasque les faux jumeaux : la fonction auxiliaire de Stepanov, avec le tordu (preuve de Bombieri)",
+      "corpus": [
+        "47"
+      ],
+      "sources": [
+        "Ste69",
+        "Bom73"
+      ],
+      "ou": "Stepanov (1969) ; Bombieri, Séminaire Bourbaki (1973)"
+    },
+    {
+      "quoi": "Ce qui compte dans le Frobenius pour Stepanov : l'inséparabilité (dérivée nulle), pas l'action sur les points",
+      "corpus": [
+        "48"
+      ],
+      "sources": [
+        "Ste69",
+        "Bom73"
+      ],
+      "ou": "mécanisme de la méthode de Stepanov"
+    },
+    {
+      "quoi": "Le bilan d'énergie des « unités fictives » (document reçu) : K + Q = Σ W_n",
+      "corpus": [
+        "50"
+      ],
+      "sources": [],
+      "ou": "sommation par parties d'Abel ; identité vraie pour toute suite"
+    }
+  ]
+}

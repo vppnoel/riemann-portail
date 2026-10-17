@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">body{max-width:1000px;margin:auto;padding:28px 24px;color:#153044;font:17px/1.65 system-ui,sans-serif;background:#f7f9fb}h1,h2{line-height:1.2}h1{font-size:36px}h2{margin-top:2em}a{color:#17608c}.topnav{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;border-bottom:1px solid #b4c7d5;padding-bottom:12px}img{max-width:100%;height:auto}math[display=block]{overflow-x:auto;padding:16px;font-size:1.1em}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd9e3}th{background:#eaf1f6}pre,code{overflow-wrap:anywhere}nav#TOC{font-size:15px}</style>
+</head>
+<body>
+<nav class="topnav" aria-label="Pages du programme"><a href="../1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.html">Transport positif</a><a href="../1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.html" aria-current="page">Signe global</a><a href="../1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.html">Piste globale</a><a href="../1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.html">État du travail</a><a href="../00_PORTAIL.html">Portail</a><a href="../00_Carte_des_idees.html">Carte des idées</a><a href="../1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateur d&#39;avancement</a><a href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur de recherche</a><a href="../1_Presentation/44_MATRICE_DES_THEORIES.html">Matrice des théories</a><a href="../1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html">Atlas des décisions</a><a href="../1_Presentation/69_LANGUE_DES_PASSAGES.html">Langue et Lego</a><a href="../1_Presentation/74_COMPENSATION_MULTI_PREMIERS.html">Compensation multi-premiers</a><a href="../00_Liste_des_figures.html">Figures</a><a href="../README.md">Mode d&#39;emploi</a></nav><aside data-current="v652" style="margin:16px 0;padding:14px;border:1px solid #97b0c0;background:#eef5f9;color:#172b3c"><strong>État courant V6.52.</strong> Transport positif : sommation compatible, pont stock–Fenchel et première ligne non minimale encadrée sans RH. Diagnostics jusqu’à1000. Loi globale du signe ouverte. <a href="../1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.html">Carte, preuves et dernier ZIP</a>. Les résultats datés conservent leur portée. <a href="../RECUPERATION.html">Récupération partielle des sources historiques</a>.</aside><p><a href="https://chatgpt.com/api/library/files/libfile_e12b21a3a190819196641d18ac05665a/download">ZIP courant du corpus récupéré</a></p>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#mécanismes-possibles-pour-le-signe-universel-de-weil" id="toc-mécanismes-possibles-pour-le-signe-universel-de-weil">Mécanismes
+possibles pour le signe universel de Weil</a>
+<ul>
+<li><a href="#ce-qui-impose-réellement-un-signe" id="toc-ce-qui-impose-réellement-un-signe">1. Ce qui impose réellement
+un signe</a></li>
+<li><a href="#un-pont-primaire-plus-ciblé-le-signal-de-suzuki" id="toc-un-pont-primaire-plus-ciblé-le-signal-de-suzuki">2. Un pont
+primaire plus ciblé : le signal de Suzuki</a></li>
+<li><a href="#reconstruction-une-frontière-convexe-pour-les-premiers" id="toc-reconstruction-une-frontière-convexe-pour-les-premiers">3.
+Reconstruction : une frontière convexe pour les premiers</a></li>
+<li><a href="#programme-inventif-transporter-les-masses-en-gardant-leur-barycentre" id="toc-programme-inventif-transporter-les-masses-en-gardant-leur-barycentre">4.
+Programme inventif : transporter les masses en gardant leur
+barycentre</a></li>
+<li><a href="#autre-mécanisme-un-flot-de-congruence-positif" id="toc-autre-mécanisme-un-flot-de-congruence-positif">5. Autre
+mécanisme : un flot de congruence positif</a></li>
+<li><a href="#confrontation-test-fini-et-limites" id="toc-confrontation-test-fini-et-limites">6. Confrontation, test fini
+et limites</a></li>
+<li><a href="#sources-et-reproduction" id="toc-sources-et-reproduction">Sources et reproduction</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="mécanismes-possibles-pour-le-signe-universel-de-weil">Mécanismes
+possibles pour le signe universel de Weil</h1>
+<p>Complément de recherche après V6.51 - 14 octobre 2026, heure de
+Bruxelles.</p>
+<p><strong>Avis issu de la confrontation.</strong> La piste la plus
+concrète est un transport positif conservant masse et barycentre : il
+imposerait par Jensen un signe scalaire, et un théorème de Suzuki
+transmettrait ce signe à RH, donc à toutes les formes de Weil. La
+construction arithmétique du transport reste inconnue. Une réalisation
+de Gram commune constitue une autre architecture forte.</p>
+<p>Ce texte distingue trois niveaux : théorèmes primaires relus,
+identités auxiliaires reconstruites ici, programmes conditionnels. Aucun
+mécanisme universel de signe pour ζ n’est obtenu dans cette passe.</p>
+<h2 id="ce-qui-impose-réellement-un-signe">1. Ce qui impose réellement
+un signe</h2>
+<p>Une somme de carrés, un Gram d’un même espace hilbertien ou le défaut
+d’une contraction fixent le signe de toutes les combinaisons, avec leurs
+termes croisés. Une identité d’énergie pourrait avoir la forme</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>W</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><mi>A</mi><mi>f</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>ℋ</mi><mn>2</mn></msubsup><mo>−</mo><mo stretchy="false" form="postfix">∥</mo><mi>C</mi><mi>A</mi><mi>f</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mi>ℋ</mi><mn>2</mn></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msup><mi>C</mi><mo>*</mo></msup><mi>C</mi><mo>≼</mo><mi>I</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+Q_W(f)=\|Af\|_{\mathcal H}^2-\|CAf\|_{\mathcal H}^2,\qquad C^*C\preceq I.
+</annotation></semantics></math></p>
+<p>Il faut construire A, C et le Hilbert externe à partir de
+l’arithmétique, indépendamment du signe recherché. Prendre la racine
+positive de Q ou compléter un espace pour la norme Q avant de démontrer
+son signe serait circulaire.</p>
+<p>Une colligation unitaire avec bilan d’énergie exact pourrait fournir
+une telle contraction. L’unitarité d’une phase isolée, l’autoadjonction
+d’un opérateur, la compactité d’un défaut ou la positivité des filtres
+premiers ne suffisent pas.</p>
+<p>Un cocycle arithmétique dans un Hilbert construit indépendamment,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>+</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msub><mi>V</mi><mi>t</mi></msub><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">b(t+u)=b(t)+V_tb(u)</annotation></semantics></math>,
+serait une version relationnelle : si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>b</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup><mo>=</mo><mn>2</mn><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\|b(t)\|^2=2S_\zeta(t)</annotation></semantics></math>,
+alors ses Grams paieraient les couplages. L’objet b n’est pas construit
+ici.</p>
+<h2 id="un-pont-primaire-plus-ciblé-le-signal-de-suzuki">2. Un pont
+primaire plus ciblé : le signal de Suzuki</h2>
+<p>La référence Suzuki2026 figurait déjà dans le registre du corpus,
+avec une vérification limitée au résumé. La lecture du texte et des
+travaux2023/2025 fournit maintenant une cible plus précise. Ce n’est pas
+un théorème nouveau du présent dossier.</p>
+<p>Notons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>ζ</mi></msub><mo>=</mo><mo>−</mo><msub><mi>g</mi><mi>ζ</mi></msub></mrow><annotation encoding="application/x-tex">S_\zeta=-g_\zeta</annotation></semantics></math>,
+différent de la fonction de Chebyshev Ψ. Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t\ge0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>∑</mo><mrow><mi>q</mi><mo>=</mo><msup><mi>p</mi><mi>m</mi></msup></mrow></munder><msub><mi>c</mi><mi>q</mi></msub><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><msub><mi>τ</mi><mi>q</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>c</mi><mi>q</mi></msub><mo>=</mo><mfrac><mrow><mo>log</mo><mi>p</mi></mrow><msqrt><mi>q</mi></msqrt></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>τ</mi><mi>q</mi></msub><mo>=</mo><mo>log</mo><mi>q</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+S_\zeta(t)=A(t)-P(t),\qquad
+P(t)=\sum_{q=p^m}c_q(t-\tau_q)_+,
+\quad c_q=\frac{\log p}{\sqrt q},\quad \tau_q=\log q.
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>4</mn><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mfrac><mrow><msub><mi>C</mi><mn>0</mn></msub><mi>t</mi></mrow><mn>2</mn></mfrac><mo>+</mo><munder><mo>∑</mo><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></munder><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>b</mi><mi>n</mi></msub><mi>t</mi></mrow></msup></mrow><msubsup><mi>b</mi><mi>n</mi><mn>2</mn></msubsup></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>C</mi><mn>0</mn></msub><mo>=</mo><mo>log</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>8</mn><mi>π</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msub><mi>γ</mi><mi>E</mi></msub><mo>+</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><mn>2</mn><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A(t)=4(e^{t/2}+e^{-t/2}-2)-\frac{C_0t}{2}
++\sum_{n\ge0}\frac{1-e^{-b_nt}}{b_n^2},
+\quad C_0=\log(8\pi)+\gamma_E+\frac{\pi}{2},\quad b_n=2n+\frac12.
+</annotation></semantics></math></p>
+<p>Suzuki2023, théorème1.7, prouve RH équivalente à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">S_\zeta(t)\ge0</annotation></semantics></math>
+pour tout t. L’extension2025, théorème1.1, permet pour ζ de demander
+seulement le signe au-delà d’un seuil. Le lien ne vaut pas pour une
+fonction scalaire quelconque : la transformée de Laplace de ce signal
+est reliée à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ξ</mi><mi>′</mi><mi>/</mi><mi>ξ</mi></mrow><annotation encoding="application/x-tex">\xi&#39;/\xi</annotation></semantics></math>,
+et l’absence de zéros réels de la fonction complétée permet l’argument
+de Landau-Widder. Un signe éventuel contraindrait alors tous les zéros
+non triviaux.</p>
+<p>Contre-exemple générique :
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">g(t)=-t^4</annotation></semantics></math>
+est pair et négatif, mais son noyau
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">g(t-u)-g(t)-g(-u)+g(0)</annotation></semantics></math>
+aux points1 et−1 vaut</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mo>−</mo><mn>14</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mo>−</mo><mn>14</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\begin{pmatrix}2&amp;-14\\-14&amp;2\end{pmatrix},
+</annotation></semantics></math></p>
+<p>avec une valeur propre−12. La structure analytique spécifique de ζ
+est donc indispensable au pont scalaire.</p>
+<h2 id="reconstruction-une-frontière-convexe-pour-les-premiers">3.
+Reconstruction : une frontière convexe pour les premiers</h2>
+<p>La formule explicite donne, par différentiation,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mfrac><msub><mi>C</mi><mn>0</mn></msub><mn>2</mn></mfrac><mo>+</mo><mo>atanh</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mo>arctan</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+A&#39;(t)=2(e^{t/2}-e^{-t/2})-\frac{C_0}{2}
++\operatorname{atanh}(e^{-t/2})+\arctan(e^{-t/2}),
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>″</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo>−</mo><mfrac><msup><mi>e</mi><mrow><mo>−</mo><mn>5</mn><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>t</mi></mrow></msup></mrow></mfrac><mo>&gt;</mo><mn>0</mn><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>≥</mo><mo>log</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A&#39;&#39;(t)=e^{t/2}-\frac{e^{-5t/2}}{1-e^{-2t}}&gt;0\quad(t\ge\log2).
+</annotation></semantics></math></p>
+<p>Ordonner les puissances premières et former les deux cumulants
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>j</mi></msub><mo>=</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>≤</mo><mi>j</mi></mrow></msub><msub><mi>c</mi><msub><mi>q</mi><mi>i</mi></msub></msub></mrow><annotation encoding="application/x-tex">C_j=\sum_{i\le j}c_{q_i}</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>j</mi></msub><mo>=</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo>≤</mo><mi>j</mi></mrow></msub><msub><mi>c</mi><msub><mi>q</mi><mi>i</mi></msub></msub><mo>log</mo><msub><mi>q</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">L_j=\sum_{i\le j}c_{q_i}\log q_i</annotation></semantics></math>.
+Le préfixe vide a C=L=0. Comme les poids sont positifs,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munder><mo>sup</mo><mrow><mi>j</mi><mo>≥</mo><mn>0</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>C</mi><mi>j</mi></msub><mi>t</mi><mo>−</mo><msub><mi>L</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+P(t)=\sup_{j\ge0}(C_jt-L_j).
+</annotation></semantics></math></p>
+<p>Pour un seuil
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>≥</mo><mo>log</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">T\ge\log2</annotation></semantics></math>,
+définir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>A</mi><mi>T</mi><mo>*</mo></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mo>sup</mo><mrow><mi>t</mi><mo>≥</mo><mi>T</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mi>t</mi><mo>−</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A_T^*(c)=\sup_{t\ge T}(ct-A(t))</annotation></semantics></math>.
+On obtient exactement</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>0</mn><mspace width="0.222em"></mspace><mo>∀</mo><mi>t</mi><mo>≥</mo><mi>T</mi><mspace width="1.0em"></mspace><mo>⇔</mo><mspace width="1.0em"></mspace><msub><mi>L</mi><mi>j</mi></msub><mo>≥</mo><msubsup><mi>A</mi><mi>T</mi><mo>*</mo></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>C</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.222em"></mspace><mo>∀</mo><mi>j</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+S_\zeta(t)\ge0\ \forall t\ge T
+\quad\Longleftrightarrow\quad
+L_j\ge A_T^*(C_j)\ \forall j.
+</annotation></semantics></math></p>
+<p>La courbe A est strictement convexe et croît exponentiellement : le
+dual est fini. Son optimum est T si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≤</mo><mi>A</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">c\le A&#39;(T)</annotation></semantics></math>,
+sinon l’unique
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>j</mi></msub><annotation encoding="application/x-tex">t_j</annotation></semantics></math>
+où
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">A&#39;(t_j)=c</annotation></semantics></math>.
+La loi de signe devient ainsi une frontière portant sur deux cumulants
+arithmétiques. C’est une reformulation structurée, pas une preuve de la
+loi.</p>
+<p>Pour un optimum intérieur, l’identité de Bregman explicite le gain
+:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>C</mi><mi>j</mi></msub><mi>t</mi><mo>+</mo><msub><mi>L</mi><mi>j</mi></msub><mo>=</mo><munder><munder><mrow><msub><mi>L</mi><mi>j</mi></msub><mo>−</mo><msubsup><mi>A</mi><mi>T</mi><mo>*</mo></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>C</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mo accent="true">⏟</mo></munder><mtext mathvariant="normal">défaut arithmétique</mtext></munder><mo>+</mo><munder><munder><mrow><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>A</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>A</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><msub><mi>t</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mo accent="true">⏟</mo></munder><mrow><mo>≥</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> par convexité</mtext></mrow></mrow></munder><mi>.</mi></mrow><annotation encoding="application/x-tex">
+A(t)-C_jt+L_j
+=\underbrace{L_j-A_T^*(C_j)}_{\text{défaut arithmétique}}
++\underbrace{A(t)-A(t_j)-A&#39;(t_j)(t-t_j)}_{\ge0\text{ par convexité}}.
+</annotation></semantics></math></p>
+<p>Un seul défaut par préfixe couvre donc tous ses t, sans grille
+temporelle. Pour l’optimum au bord, ajouter le terme positif
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><msub><mi>C</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(A&#39;(T)-C_j)(t-T)</annotation></semantics></math>.
+Il reste à imposer le bon signe à tous les défauts arithmétiques, par
+une structure indépendante.</p>
+<h2 id="programme-inventif-transporter-les-masses-en-gardant-leur-barycentre">4.
+Programme inventif : transporter les masses en gardant leur
+barycentre</h2>
+<p>Choisir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>≥</mo><mo>log</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">T\ge\log2</annotation></semantics></math>
+avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">S_\zeta(T)\ge0</annotation></semantics></math>
+déjà encadré, puis poser
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">m=S_\zeta(T)/T</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mi>S</mi><mi>ζ</mi></msub><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo>+</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a=S_\zeta&#39;(T+)</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mi>A</mi><mi>″</mi></mrow><annotation encoding="application/x-tex">\beta=A&#39;&#39;</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><msub><mn>𝟏</mn><mrow><mo stretchy="true" form="prefix">(</mo><mi>T</mi><mo>,</mo><mi>∞</mi><mo stretchy="true" form="postfix">)</mo></mrow></msub><mi>β</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>u</mi><mo>+</mo><mi>m</mi><msub><mi>δ</mi><mn>0</mn></msub><mo>+</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>−</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><msub><mi>δ</mi><mi>T</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>ν</mi><mo>=</mo><munder><mo>∑</mo><mrow><msub><mi>τ</mi><mi>q</mi></msub><mo>&gt;</mo><mi>T</mi></mrow></munder><msub><mi>c</mi><mi>q</mi></msub><msub><mi>δ</mi><msub><mi>τ</mi><mi>q</mi></msub></msub><mo>+</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo>−</mo><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><msub><mi>δ</mi><mi>T</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mu=\mathbf1_{(T,\infty)}\beta(u)\,du+m\delta_0+(a-m)_+\delta_T,
+\qquad
+\nu=\sum_{\tau_q&gt;T}c_q\delta_{\tau_q}+(m-a)_+\delta_T.
+</annotation></semantics></math></p>
+<p>Ces mesures sont positives et localement finies, mais de masse totale
+infinie. Leurs termes de bord ne réclament aucun plancher positif
+uniforme. Une intégration deux fois donne, pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≥</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t\ge T</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>ζ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>∫</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><mspace width="0.167em"></mspace><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mo>∫</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub><mspace width="0.167em"></mspace><mi>ν</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+S_\zeta(t)=\int(t-u)_+\,\mu(du)-\int(t-u)_+\,\nu(du).
+</annotation></semantics></math></p>
+<p>La construction recherchée serait un noyau de probabilités
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>x</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">K_x(du)</annotation></semantics></math>
+tel que</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>∫</mo><msub><mi>K</mi><mi>x</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>ν</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mo>∫</mo><mi>u</mi><msub><mi>K</mi><mi>x</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>x</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mu(du)=\int K_x(du)\,\nu(dx),\qquad \int uK_x(du)=x.
+</annotation></semantics></math></p>
+<p>Autrement dit, chaque masse première est répartie sur le matériau
+archimédien sans changer son centre moyen. Jensen pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>↦</mo><msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">u\mapsto(t-u)_+</annotation></semantics></math>
+donnerait alors le signe pour tous t. Les intégrales concernées sont
+finies à t fixé ; Tonelli permet cet argument malgré la masse totale
+infinie.</p>
+<p><strong>Obligation ouverte :</strong> construire K depuis les nombres
+premiers, avec poids non négatifs, marginale exacte et premier moment
+conservé. Déduire son existence de l’ordre convexe déjà positif serait
+circulaire. Un théorème de transport pour probabilités finies ne
+justifie pas automatiquement le passage à ces mesures infinies. Les
+limites doivent conserver les marginales et les moments sans fuite.</p>
+<p>Un échec d’une règle locale de transport ferme cette règle. Un défaut
+de Fenchel négatif certifié pour le signal exact contredirait son signe
+global.</p>
+<h2 id="autre-mécanisme-un-flot-de-congruence-positif">5. Autre
+mécanisme : un flot de congruence positif</h2>
+<p>Sur un domaine fixe, une identité indépendante</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>∂</mi><mi>s</mi></msub><msub><mi>𝒜</mi><mi>s</mi></msub><mo>=</mo><msubsup><mi>X</mi><mi>s</mi><mo>*</mo></msubsup><msub><mi>𝒜</mi><mi>s</mi></msub><mo>+</mo><msub><mi>𝒜</mi><mi>s</mi></msub><msub><mi>X</mi><mi>s</mi></msub><mo>+</mo><msubsup><mi>Y</mi><mi>s</mi><mo>*</mo></msubsup><msub><mi>Y</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">
+\partial_s\mathcal A_s
+=X_s^*\mathcal A_s+\mathcal A_sX_s+Y_s^*Y_s
+</annotation></semantics></math></p>
+<p>propagerait une positivité initiale par congruence. Il faut les
+domaines communs, une évolution bien définie et une gestion des seuils
+premiers. Choisir X à l’aide de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>𝒜</mi><mi>s</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><annotation encoding="application/x-tex">\mathcal A_s^{-1}</annotation></semantics></math>
+déplacerait la difficulté et serait singulier à l’éventuel passage par
+zéro. Ce flot est un programme moins concret que le transport, pas une
+identité établie pour Weil.</p>
+<h2 id="confrontation-test-fini-et-limites">6. Confrontation, test fini
+et limites</h2>
+<p>L’exploration et l’audit se rejoignent sur la priorité du transport,
+après contrôle de ses bords. Le Gram commun est structurellement plus
+direct pour les couplages ; Suzuki permet au transport scalaire de les
+atteindre autrement.</p>
+<p>Le prototype a encadré <strong>194 préfixes</strong>, vide compris,
+jusqu’au plafond entier 1000, avec une plus petite marge affichée
+d’environ0,02802. Les candidats numériques servent uniquement à proposer
+les positions ; leurs dérivées sont ensuite encadrées et les minima
+évalués par intervalles. Il n’utilise aucun zéro. La portée est un signe
+du signal sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mo>log</mo><mn>2</mn><mo>,</mo><mo>log</mo><mn>1000</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[\log2,\log1000]</annotation></semantics></math>,
+dans le modèle d’arrondi déclaré. Ce n’est pas un certificat de la forme
+de Weil sur les supports correspondants : le pont scalaire exige un
+signe éventuel universel.</p>
+<p>Sous RH, le signal est strictement positif pour chaque t non nul,
+mais son infimum au-delà de tout seuil est zéro, par récurrence
+simultanée des phases et sommabilité de la queue. Une erreur absolue
+fixe ou une marge uniforme positive serait donc une mauvaise cible.</p>
+<p><strong>Priorité de recherche.</strong> Prédéfinir une règle
+d’appariement de cellules archimédiennes et d’atomes premiers ; tester
+ses bilans de masse et de moment, puis chercher une loi d’ajout
+compatible. Le but est une conservation qui force le signe, et non
+l’accumulation d’un nombre fini de préfixes positifs.</p>
+<h2 id="sources-et-reproduction">Sources et reproduction</h2>
+<ul>
+<li>M. Suzuki, <em>Aspects of the screw function corresponding to the
+Riemann zeta function</em>, Journal of the London Mathematical
+Society108 (2023),1448–1487 : théorèmes1.1,1.7 et preuve7.2,
+https://arxiv.org/pdf/2206.03682.</li>
+<li>M. Suzuki, <em>Screw functions of Dirichlet series in the extended
+Selberg class</em>, version2025 : théorème1.1 et preuve de la
+suffisance, https://arxiv.org/pdf/2209.12832.</li>
+<li>M. Suzuki, <em>Weil’s quadratic form via the screw function</em>,
+prépublication2026 v3 : formule1.3 et cadre opératoriel,
+https://arxiv.org/html/2606.09096v3.</li>
+</ul>
+<p>Fenchel, Bregman et transport ci-dessus sont des reconstructions de
+travail. Le prototype, son journal et les deux rapports sont conservés
+dans le paquet. Pour le rejouer : installer mpmath1.3.0 puis</p>
+<pre><code>python3 prototype_fenchel.py --corpus mini_corpus --cutoff 1000 --output resultat.json</code></pre>
+<p>Le modèle numérique n’est pas une vérification formelle du processeur
+ou de l’implémentation des fonctions élémentaires. La positivité
+universelle de Weil et RH restent ouvertes dans ce travail.</p>
+</body>
+</html>

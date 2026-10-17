@@ -1,0 +1,4 @@
+Programme Riemann - V6.54
+
+Identité arithmétique, corrélations ancrées et réduction énergétique ; parcours des outils et obstructions retracés.
+Borne globale et positivité de Weil restent ouvertes. Maturités inchangées.

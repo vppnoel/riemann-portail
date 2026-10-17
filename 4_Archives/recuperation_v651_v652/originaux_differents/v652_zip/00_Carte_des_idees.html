@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Programme Riemann : carte des idées</title>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --paper:#F6F7F9; --sheet:#FFFFFF; --ink:#1B2430; --ink2:#4C5868; --rule:#D5DAE1;
+  --core:#1F6F54; --core-bg:#E6F2EC;
+  --lit:#3B4A9B;  --lit-bg:#E9ECF8;
+  --neg:#A6392E;  --neg-bg:#F8E9E6;
+  --low:#667080;  --low-bg:#ECEEF1;
+  --cond:#B26A00; --cond-bg:#FFF3DE;
+  --act:#1B2430;  --act-bg:#FFFFFF;
+  --mes:#1D6688;  --mes-bg:#E4F0F6;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141920; --sheet:#1C232D; --ink:#E8ECF1; --ink2:#A6B0BD; --rule:#35404D;
+    --core:#6CC9A4; --core-bg:#17332A;
+    --lit:#9AA8F0;  --lit-bg:#222A52;
+    --neg:#F09A8E;  --neg-bg:#3F1F1B;
+    --low:#A3ADBA;  --low-bg:#2A323D;
+    --cond:#F0C36B; --cond-bg:#3F3120;
+    --act:#E8ECF1;  --act-bg:#1C232D;
+    --mes:#7FC3E3;  --mes-bg:#16303C;
+  }
+}
+:root[data-theme="dark"]{
+  --mes:#7FC3E3;  --mes-bg:#16303C;
+  --paper:#141920; --sheet:#1C232D; --ink:#E8ECF1; --ink2:#A6B0BD; --rule:#35404D;
+  --core:#6CC9A4; --core-bg:#17332A;
+  --lit:#9AA8F0;  --lit-bg:#222A52;
+  --neg:#F09A8E;  --neg-bg:#3F1F1B;
+  --low:#A3ADBA;  --low-bg:#2A323D;
+  --cond:#F0C36B; --cond-bg:#3F3120;
+  --act:#E8ECF1;  --act-bg:#1C232D;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+main{max-width:920px;margin:0 auto;padding:2.2rem 1.1rem 3rem}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,4.5vw,2.5rem);line-height:1.15;margin:0 0 .5rem;letter-spacing:-.01em}
+.lede{color:var(--ink2);max-width:62ch;margin:0 0 1.4rem}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;margin:0 0 2rem;padding:0;list-style:none;font-size:.9rem;color:var(--ink2)}
+.legend li{display:flex;align-items:center;gap:.5rem}
+.sw{width:.85rem;height:.85rem;border-radius:2px;border:2px solid currentColor;flex:none}
+.sw.core{color:var(--core);background:var(--core)}
+.sw.lit{color:var(--lit);background:transparent}
+.sw.neg{color:var(--neg);background:repeating-linear-gradient(45deg,var(--neg) 0 2px,transparent 2px 5px)}
+.sw.low{color:var(--low);border-style:dashed}
+.sw.cond{color:var(--cond);background:var(--cond-bg);border-style:solid}
+.sw.mes{color:var(--mes);background:var(--mes-bg)}
+.topnav{display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;margin:0 0 1.4rem;padding:0 0 .7rem;border-bottom:1px solid var(--rule);font-size:.9rem}
+.topnav a{color:var(--ink2);text-decoration:none}.topnav a:hover,.topnav a:focus-visible{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.topnav a[aria-current="page"]{color:var(--ink);font-weight:600}
+.ver{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:.78rem;color:var(--ink2);margin-right:.35rem}
+section{border:1px dashed var(--rule);border-radius:10px;padding:1rem 1rem 1.1rem;background:transparent}
+section + section{margin-top:1.4rem}
+h2{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:0 0 .8rem}
+.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.solo{display:grid;grid-template-columns:minmax(0,26rem);justify-content:center}
+.flow{height:1.9rem;position:relative}
+.flow::before{content:"";position:absolute;left:50%;top:.2rem;bottom:.45rem;width:1.5px;background:var(--ink2)}
+.flow::after{content:"";position:absolute;left:50%;bottom:.3rem;width:.5rem;height:.5rem;border-right:1.5px solid var(--ink2);border-bottom:1.5px solid var(--ink2);transform:translateX(-50%) rotate(45deg);margin-left:.75px}
+.node{font:inherit;color:var(--ink);text-align:left;width:100%;cursor:pointer;border:1px solid var(--rule);border-left-width:5px;border-radius:6px;padding:.7rem .8rem;background:var(--sheet);display:block}
+.node strong{display:block;font-family:var(--serif);font-weight:600;font-size:1.05rem;line-height:1.25}
+.node span{display:block;color:var(--ink2);font-size:.88rem;margin-top:.15rem}
+.node:hover{border-color:var(--ink2)}
+.node:focus-visible{outline:3px solid var(--lit);outline-offset:2px}
+.node[data-s="core"]{border-left-color:var(--core);background:var(--core-bg)}
+.node[data-s="lit"]{border-left-color:var(--lit);background:var(--lit-bg)}
+.node[data-s="neg"]{border-left-color:var(--neg);background:var(--neg-bg)}
+.node[data-s="low"]{border-left-color:var(--low);background:var(--low-bg);border-left-style:dashed}
+.node[data-s="cond"]{border-left-color:var(--cond);background:var(--cond-bg)}
+.node[data-s="act"]{border-left-color:var(--act);background:var(--act-bg)}
+.node[data-s="mes"]{border-left-color:var(--mes);background:var(--mes-bg)}
+.between{margin:0}
+footer{margin-top:2rem;color:var(--ink2);font-size:.88rem;max-width:70ch}
+dialog{border:1px solid var(--rule);border-radius:10px;padding:0;background:var(--sheet);color:var(--ink);width:min(680px,calc(100vw - 1.4rem));max-height:86vh;overflow:hidden}
+dialog[open]{display:flex;flex-direction:column}
+dialog::backdrop{background:rgba(10,14,20,.55)}
+.dhead{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.1rem .8rem;border-bottom:1px solid var(--rule)}
+.dhead h3{font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.2;margin:0}
+.dhead p{margin:.25rem 0 0;font-size:.88rem;font-weight:600}
+.dhead p[data-s="core"]{color:var(--core)} .dhead p[data-s="lit"]{color:var(--lit)}
+.dhead p[data-s="neg"]{color:var(--neg)} .dhead p[data-s="low"]{color:var(--low)} .dhead p[data-s="cond"]{color:var(--cond)} .dhead p[data-s="act"]{color:var(--ink2)} .dhead p[data-s="mes"]{color:var(--mes)}
+.dhead div{flex:1;min-width:0}
+.close{font:inherit;flex:none;border:1px solid var(--rule);background:transparent;color:var(--ink);border-radius:6px;padding:.3rem .7rem;cursor:pointer}
+.close:hover{border-color:var(--ink2)}
+.close:focus-visible{outline:3px solid var(--lit);outline-offset:2px}
+.dbody{padding:.4rem 1.1rem 1.2rem;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.dbody h4{font-family:var(--serif);font-weight:600;font-size:1.02rem;margin:1.1rem 0 .3rem}
+.dbody p{margin:.5rem 0;max-width:68ch}
+.dbody ul{margin:.4rem 0;padding-left:1.2rem;max-width:68ch}
+.dbody li{margin:.25rem 0}
+.dsub{margin:.35rem 0 0;color:var(--ink2);font-size:.96rem;line-height:1.35}
+.f{font-family:var(--serif);font-size:1.08rem;padding:.5rem .8rem;margin:.6rem 0;background:var(--paper);border-radius:6px;overflow-x:auto;white-space:nowrap}
+.m{font-family:var(--serif);font-style:normal;white-space:nowrap}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;font-size:.92rem;margin:.6rem 0}
+th,td{border-bottom:1px solid var(--rule);padding:.3rem .7rem .3rem 0;text-align:left;vertical-align:top}
+th{font-weight:600}
+.src{margin-top:1.1rem;padding-top:.7rem;border-top:1px solid var(--rule);color:var(--ink2);font-size:.86rem;overflow-wrap:anywhere}
+.src a,.dbody a.doclink{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.links{margin-top:.55rem;font-size:.88rem;color:var(--ink2)}
+.links ul{margin:.2rem 0;padding-left:1.1rem}
+@media (max-width:640px){
+  .row{grid-template-columns:1fr}
+  main{padding-top:1.4rem}
+}
+@media (prefers-reduced-motion:no-preference){
+  dialog[open]{animation:pop .14s ease-out}
+  @keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<main><p class="guard" data-current="v649"><a href="1_Presentation/74_COMPENSATION_MULTI_PREMIERS.html">V6.49 : paiement multi-premiers certifié ; positivité complète toujours limitée à1/2.</a> Analyse de cette page conservée.</p>
+  <nav class='topnav' aria-label='Pages du programme'><a href='1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.html'>Transport positif</a><a href='1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.html'>Signe global</a><a href='1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.html'>Piste globale</a><a href='1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.html'>État du travail</a><a href='00_PORTAIL.html'>Portail</a><a href='00_Carte_des_idees.html'>Carte des idées</a><a href='1_Presentation/31_INDICATEUR_D_AVANCEMENT.html'>Indicateur d'avancement</a><a href='1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html'>Navigateur de recherche</a><a href='1_Presentation/44_MATRICE_DES_THEORIES.html'>Matrice des théories</a><a href='1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html'>Atlas des décisions</a><a href='1_Presentation/69_LANGUE_DES_PASSAGES.html'>Langue et Lego</a><a href='1_Presentation/74_COMPENSATION_MULTI_PREMIERS.html'>Compensation multi-premiers</a><a href='00_Liste_des_figures.html'>Figures</a><a href='README.md'>Mode d'emploi</a></nav><aside data-current="v652" style="margin:16px 0;padding:14px;border:1px solid #97b0c0;background:#eef5f9;color:#172b3c"><strong>État courant V6.52.</strong> Transport positif : sommation compatible, pont stock–Fenchel et première ligne non minimale encadrée sans RH. Diagnostics jusqu’à1000. Loi globale du signe ouverte. <a href="1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.html">Carte, preuves et dernier ZIP</a>. Les résultats datés conservent leur portée. <a href="RECUPERATION.html">Récupération partielle des sources historiques</a>.</aside>
+  <h1>Programme Riemann : carte des idées</h1>
+  <p class="lede">Version 6.52. Aucune preuve de l'hypothèse de Riemann n'est revendiquée. Le travail des versions 6.4 à 6.11 (la nécessité, le chaînon, le générateur des premiers) est dans la partie « Nécessité et chaînon ». La couleur donne le statut de chaque élément, les flèches la dépendance logique. Choisissez un nœud pour lire son détail.</p>
+  <ul class="legend">
+    <li><span class="sw core"></span>Démontré, non relu</li>
+    <li><span class="sw lit"></span>Littérature</li>
+    <li><span class="sw neg"></span>Obstacle ou test négatif</li>
+    <li><span class="sw low"></span>Diagnostic rétrogradé</li>
+    <li><span class="sw cond"></span>Conditionnel / hypothèses fortes</li>
+    <li><span class="sw mes"></span>Mesuré, reproduit</li>
+  </ul>
+
+  <section aria-labelledby="s1">
+    <h2 id="s1">Noyau : démontré, non relu</h2>
+    <div class="solo"><button class="node" data-s="core" data-k="lemmes"><strong>Lemmes 1 à 5</strong><span>Pôle double, régularité en 1, support de c</span></button></div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="core" data-k="thA"><strong>Théorème A</strong><span>Équivalent à RH ; pré-relu en V6.13</span></button>
+      <button class="node" data-s="core" data-k="thB"><strong>Théorème B</strong><span>Sous RH, analogue de Cramér ; pré-relu en V6.13</span></button>
+      <button class="node" data-s="cond" data-k="propC"><strong>Proposition C</strong><span>Dépend de H1 à H3</span></button>
+    </div>
+  </section>
+
+  <div class="flow between" aria-hidden="true"></div>
+
+  <section aria-labelledby="s2">
+    <h2 id="s2">Tests de rejet</h2>
+    <div class="row">
+      <button class="node" data-s="neg" data-k="dh"><strong>Davenport–Heilbronn</strong><span>Ne distingue pas ζ</span></button>
+      <button class="node" data-s="neg" data-k="ff"><strong>Corps de fonctions</strong><span>Pas de positivité de Weil</span></button>
+      <button class="node" data-s="neg" data-k="dens"><strong>Densité de zéros</strong><span>Aucun gain</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="solo"><button class="node" data-s="neg" data-k="arret"><strong>Arrêt de l'attaque directe</strong><span>Règle d'arrêt déclenchée</span></button></div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="solo"><button class="node" data-s="act" data-k="relecture"><strong>Relecture externe de A et B</strong><span>Dossier prêt en V6.13 ; à envoyer</span></button></div>
+  </section>
+
+  <section aria-labelledby="s3">
+    <h2 id="s3">Cadres connus de la littérature</h2>
+    <div class="row">
+      <button class="node" data-s="lit" data-k="weil"><strong>Formule explicite de Weil</strong><span>Dualité premiers, zéros</span></button>
+      <button class="node" data-s="lit" data-k="nb"><strong>Nyman–Beurling</strong><span>Même constante κ</span></button>
+      <button class="node" data-s="lit" data-k="li"><strong>Critère de Li</strong><span>Identité κ = 2λ₁</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s35">
+    <h2 id="s35">Héritage V5 : énergie et dimension</h2>
+    <div class="solo"><button class="node" data-s="act" data-k="energyD"><strong>Dimension énergétique / fractal strings</strong><span>D_E = Θ ; RH ⇔ D_E = 1/2</span></button></div>
+  </section>
+
+  <section aria-labelledby="s6">
+    <h2 id="s6">V6 · DARK-ZETA : observabilité et détecteurs</h2>
+    <div class="row">
+      <button class="node" data-s="act" data-k="darkz"><strong>DARK-ZETA</strong><span>Cartographier l'information perdue par les observables</span></button>
+      <button class="node" data-s="act" data-k="tomo2"><strong>TOMO-2</strong><span>Survit comme diagnostic de puissance inter-échelles</span></button>
+      <button class="node" data-s="low" data-k="tomo3"><strong>TOMO-3 brut</strong><span>Bispectre de C_F rétrogradé après crash-tests</span></button>
+    </div>
+    <div class="row">
+      <button class="node" data-s="act" data-k="primelock"><strong>PRIME-LOCK</strong><span>Verrou local premiers / puissances de premiers validé comme détecteur eulérien</span></button>
+      <button class="node" data-s="act" data-k="duallock"><strong>DUAL-LOCK</strong><span>Compression local/global testée ; V6.3a : confirmation par problème généralisé Mv=λGv</span></button>
+      <button class="node" data-s="act" data-k="darkres"><strong>Résidu sombre</strong><span>Cancellation confirmée qualitativement ; quantification révisée dans la métrique de Gram</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s7">
+    <h2 id="s7">V6.4 à V6.11 · Nécessité et chaînon</h2>
+    <div class="row">
+      <button class="node" data-s="neg" data-k="tauc"><strong><span class="ver">V6.4</span>Seuil τ_c</strong><span>Existe, mais n'est pas un invariant</span></button>
+      <button class="node" data-s="mes" data-k="mod7"><strong><span class="ver">V6.5</span>Famille modulo 7</strong><span>RH seulement près du point d'Euler</span></button>
+      <button class="node" data-s="mes" data-k="modred"><strong><span class="ver">V6.6</span>Le Modèle réduit</strong><span>Courbes sur F_q : la signature d'une nécessité démontrée</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="mes" data-k="marges"><strong><span class="ver">V6.7</span>Marges de la forme et de l'objet</strong><span>La nécessité interdit le passage</span></button>
+      <button class="node" data-s="core" data-k="archipel"><strong><span class="ver">V6.8</span>L'Archipel d'Euler</strong><span>RH ⟹ produit d'Euler en degré 1 (déjà connu) ; îles qui rétrécissent</span></button>
+      <button class="node" data-s="mes" data-k="chainon"><strong><span class="ver">V6.9</span>Le chaînon F = q^D</strong><span>Il manque la métrique, pas l'opérateur</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="mes" data-k="generateur"><strong><span class="ver">V6.10</span>Le générateur des premiers</strong><span>L'opérateur de ζ depuis les seuls premiers ; sa métrique</span></button>
+      <button class="node" data-s="mes" data-k="base"><strong><span class="ver">V6.11</span>La base comme pas de temps</strong><span>Le seul pas qui convienne à ζ est le flot</span></button>
+      <button class="node" data-s="mes" data-k="heisenberg"><strong><span class="ver">V6.14</span>Le temps de Heisenberg</strong><span>Un quadruplet s'entend avec les premiers jusqu'au conducteur analytique</span></button>
+      <button class="node" data-s="mes" data-k="degre2rec"><strong><span class="ver">V6.15</span>Le degré 2 et le recensement</strong><span>Δ de Ramanujan depuis les premiers ; 25 quadruplets de DH comptés</span></button>
+      <button class="node" data-s="core" data-k="rencontre3"><strong><span class="ver">V6.16</span>La Rencontre à trois</strong><span>La marge de la métrique est la corrélation de Montgomery</span></button>
+      <button class="node" data-s="mes" data-k="rencontre2"><strong><span class="ver">V6.17</span>La Rencontre en degré 2</strong><span>Zéros de Δ, premiers de Δ, courbes : la loi de la marge</span></button>
+      <button class="node" data-s="act" data-k="sources"><strong><span class="ver">V6.18</span>Le registre des sources</strong><span>132 fiches, couleurs d'intérêt, priorités de lecture</span></button>
+      <button class="node" data-s="act" data-k="prochain"><strong>Prochain coup</strong><span>Plusieurs bouchons (piste OpenAI)</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="act" data-k="indicateur"><strong>Indicateur d'avancement</strong><span>Six dimensions, niveaux 0 à 9, version par version</span></button>
+      <button class="node" data-s="act" data-k="navigateur"><strong>Navigateur de recherche</strong><span>La démonstration comme itinéraire</span></button>
+      <button class="node" data-s="neg" data-k="objet"><strong>L'objet qui porte la métrique</strong><span>Route à construire</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s4">
+    <h2 id="s4">Diagnostics rétrogradés par l'audit</h2>
+    <div class="row">
+      <button class="node" data-s="low" data-k="sources"><strong>Localisation de sources</strong><span>Biais mesuré, mode fantôme ; relue en V6.12 : le fantôme ne pèse rien</span></button>
+      <button class="node" data-s="low" data-k="schr"><strong>Schrödinger, H<sub>eff</sub></strong><span>Reparamétrisation ; relu en V6.12 : l'opérateur existe, le verrou est la métrique</span></button>
+      <button class="node" data-s="low" data-k="kalman"><strong>Kalman, GPS analytique</strong><span>Aucune loi sur Q ; relu en V6.12 : les innovations de Levinson sonnent pour DH ; loi de seuil en V6.14</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s5">
+    <h2 id="s5">Verrous ouverts, aussi difficiles que RH</h2>
+    <div class="row">
+      <button class="node" data-s="neg" data-k="pos"><strong>Positivité de Weil</strong><span>Positivité coercive / métrique positive</span></button>
+      <button class="node" data-s="neg" data-k="compl"><strong>Complétude spectrale</strong><span>Tous les zéros captés</span></button>
+      <button class="node" data-s="neg" data-k="hp"><strong>Hilbert–Pólya</strong><span>Programme non réalisé</span></button>
+    </div>
+  </section>
+
+  <section class="panel"><h2>V6.38 : décisions, portée et suite</h2><p>Le corpus a été repris dans un atlas documentaire. Bellman compare des suites de livrables sous un budget conventionnel ; il ne mesure aucune distance à RH. Les prévisions historiques sont distinguées des bilans et des corrections ultérieures.</p><p><a href="1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html">Ouvrir l’atlas et explorer les priorités</a></p></section><section class="panel"><h2>V6.39 : contraintes exactes V13</h2><p>Pour chacune des six ancres et tout0&lt;r&lt;π/4, deux fonctions conservent exactement A=cos(r)z_i, l’ancre et le rayon, avec D différent. La non-annulation est démontrée par des fractions exactes ; aucun nouveau zéro compté. Les contrastes construits restent inférieurs à0,25 et les ancres conjuguées ne sont pas des réplications indépendantes.</p><p><a href="1_Presentation/63_CONTRAINTES_EXACTES_V13.pdf">Décision et preuve complète</a></p></section><section class="panel"><h2>V6.40 : comparaison exacte V13</h2><p>12 couples exacts : 8 détections plus précoces et 4 plus tardives à D élevé ; 24 racines recoupées à 80/110 chiffres de travail. Le signe se regroupe par ancre. Aucun ordre causal ou premier zéro certifié.</p><p>Suite : suivre les branches simples et comparer leur vitesse ; collisions et pertes de branches à conserver.</p><p><a href="1_Presentation/64_COMPARAISON_EXACTE_V13.pdf">Bilan PDF et lemmes</a> · <a href="1_Presentation/64_COMPARAISON_EXACTE_V13.tex">Source LaTeX</a></p></section><section class="panel"><h2>V6.41 : graphe des passages</h2><p>A prescrit : ellipse de faisabilité et fibres ; D constant à A=0 ; jets, 20 candidats de plis recoupés, six attribués, 18 blocs et 24 racines. Pont arithmétique global ouvert ; une perte coarse conservée.</p><p>Destination logique connue : RH. Deux portes ouvertes : positivité sur tous les tests de Weil, ou borne Q(X)=X^{o(1)} depuis les premiers. Les seules matrices finies positives et la variation universelle de D sont des voies réfutées sous les hypothèses précisées.</p><p><a href="1_Presentation/65_GRAPHE_DES_PASSAGES.html">Graphe interactif, hypothèses et preuves</a> · <a href="1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf">PDF du dossier</a> · <a href="1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.tex">LaTeX</a></p></section><section class="panel"><h2>V6.42 : un pli et sa paire certifiés</h2><p>Un pli V13 choisi certifié dans sa boîte ; contour continu de deux zéros pour tout le petit intervalle radial ; quatre boîtes uniformes, deux critiques avant et une paire hors droite après. Inégalité de Weil explicitée ; signe global ouvert.</p><p><a href="1_Presentation/66_GRAPHE_DES_CERTIFICATS.html">Graphe courant</a> · <a href="1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf">Dossier et preuves</a></p></section><section class="panel"><h2>V6.43 : construire des ponts</h2><p>Transport Beurling–translations, continuité de Weil dans H¹, cœur admissible, régularisation décalée et Schur démontrés. Bellman de contrats et de formes distingués ; estimation arithmétique de toute la famille encore ouverte.</p><p><a href="1_Presentation/67_GRAPHE_DES_PONTS.html">Carte et pilote</a> · <a href="1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf">Démonstrations</a></p></section><section class="panel"><h2>V6.44 : langue et domaines</h2><p>P et métrique exacte, famille dense, no-go de marge H¹, représentation I−compact, queue effective et arithmétique graduée des jets démontrés. 16 compressions arithmétiques positives numériquement ; signe du Schur pour tous supports ouvert.</p><p><a href="1_Presentation/69_LANGUE_DES_PASSAGES.html">Dictionnaire, arithmétique et jeu</a> · <a href="1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf">Démonstrations</a></p></section><section class="panel"><h2>V6.45 : pont arithmétique</h2><p>Annulation polaire et identité de fluctuation de Chebyshev démontrées ; modèle continu négatif pour tout S≥16 ; moments finis insuffisants pour réduire la norme première L² ; queue resserrée et dette de Schur bornée par résidus de sources. Sources/tête certifiées et signe pour tous supports restent ouverts.</p><p><a href="1_Presentation/70_PONT_ARITHMETIQUE.html">Budgets, compensation et contrat</a> · <a href="1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf">Preuves</a></p></section><section class="panel"><h2>V6.46 : Lego et certificat local</h2><p>Certificat complet sur tout X_S pour 0<S≤347/1000, premier2 présent : Q_W≥masse/25 et R/200. Projection commune aux sources/fréquences, couches par parité et coût de bord assemblés. Supports plus grands, sources des têtes et transport non borné restent ouverts.</p><p><a href="1_Presentation/71_LEGO_REUTILISABLE.html">Raccords et résultats</a> · <a href="1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf">Preuves K1–K7</a></p></section><footer>
+    <p>Les blocs « littérature », « diagnostics » et « verrous » situent le noyau sans en dépendre logiquement. Les calculs numériques cités sont des tests de cohérence, pas des tests de RH. Les nœuds « mesuré » sont des expériences reproduites avec témoins, dans des cadres restreints. Vincent P. P. Noël, programme Riemann V6.49 (base graphique V6.18).</p>
+  </footer>
+</main>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dhead">
+    <div><h3 id="dt"></h3><p id="ds"></p><div class="dsub" id="ddesc"></div></div>
+    <button class="close" id="dc" type="button">Fermer</button>
+  </div>
+  <div class="dbody" id="db" tabindex="0"></div>
+</dialog>
+
+<template id="t-lemmes">
+  <p>Cinq identités exactes et inconditionnelles. Notations : <span class="m">q = −ζ′/ζ = Σ Λ(n)n<sup>−s</sup></span>, <span class="m">f = 1/ζ</span>, γ la constante d'Euler, γ₁ la première constante de Stieltjes.</p>
+  <h4>Lemme 1 : série génératrice</h4>
+  <p class="f">c = Λ∗Λ − Λ·log + 2γΛ &nbsp;&nbsp;⟹&nbsp;&nbsp; G(s) = q² + q′ + 2γq = ζ·(f″ + 2γf′)</p>
+  <p>q² correspond à Λ∗Λ et q′ à −Λ·log. La seconde forme vient de f′ = fq, donc f″ = fq² + fq′.</p>
+  <h4>Lemme 2 : factorisation</h4>
+  <p class="f">c = 1∗a, &nbsp; a(n) = μ(n)(log²n − 2γ log n)</p>
+  <p>C'est le pont vers Nyman–Beurling : C(x) s'écrit avec des parties fractionnaires pondérées par a.</p>
+  <h4>Lemme 3 : support</h4>
+  <ul>
+    <li><span class="m">c(p<sup>k</sup>) = −log²p + 2γ log p</span></li>
+    <li><span class="m">c(p<sup>a</sup>q<sup>b</sup>) = 2 log p · log q</span> pour p ≠ q</li>
+    <li>c(n) = 0 si n a au moins trois facteurs premiers distincts</li>
+  </ul>
+  <p>C'est le seul endroit où le produit d'Euler intervient. Aucun argument du programme n'exploite cette parcimonie.</p>
+  <h4>Lemme 4 : régularité en s = 1</h4>
+  <p>Avec ε = s − 1, <span class="m">f = ε − γε² + (γ² + γ₁)ε³ + …</span>, donc f′(1) = 1 et f″(1) = −2γ. La combinaison f″ + 2γf′ s'annule en 1 et compense le pôle de ζ.</p>
+  <p class="f">G(1) = 2γ² + 6γ₁ ≈ 0,2295</p>
+  <p>C'est la raison d'être du terme 2γΛ : sans lui, le pôle en 1 masquerait les zéros.</p>
+  <h4>Lemme 5 : pôles doubles</h4>
+  <p class="f">G(s) = m(m+1)/(s−ρ)² + b<sub>ρ</sub>/(s−ρ) + …</p>
+  <p>Le coefficient m(m+1) est strictement positif pour tout zéro : aucun zéro n'est invisible pour G. Pour la fonction Λ₂ de Selberg, de série q² − q′, le coefficient m(m−1) s'annule aux zéros simples.</p>
+  <h4>Portée</h4>
+  <p>Ce sont des calculs élémentaires. Ils définissent proprement l'objet, ils n'apportent pas d'information nouvelle sur les zéros.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md">LEMMES_RIGOUREUX.md</a> (L1 à L5).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/02_Article_court_EN.docx">Article court</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+</template>
+
+<template id="t-thA">
+  <p>Soit <span class="m">C(x) = Σ<sub>n≤x</sub> c(n)</span>, <span class="m">Q(X) = ∫₁<sup>X</sup> |C(x)|² x<sup>−2</sup> dx</span> et Θ la borne supérieure des parties réelles des zéros.</p>
+  <p class="f">½ · limsup log(1 + Q(X)) / log X = Θ − ½</p>
+  <p>En particulier, RH équivaut à <span class="m">Q(X) = X<sup>o(1)</sup></span>. L'énoncé est inconditionnel.</p>
+  <h4>Idée de la preuve</h4>
+  <ul>
+    <li>Si Q croît lentement, l'intégrale de Mellin donnant G(s)/s converge plus à gauche. Or G a un pôle double en chaque zéro, donc il n'y a pas de zéro dans cette région.</li>
+    <li>Réciproquement, la formule de Perron et un déplacement de contour donnent <span class="m">C(x) ≪ x<sup>Θ+ε</sup></span>, donc une borne sur Q.</li>
+  </ul>
+  <h4>Lecture en temps logarithmique</h4>
+  <p>Avec u = log x, <span class="m">Q(e<sup>L</sup>) = ∫₀<sup>L</sup> |e<sup>−u/2</sup> C(e<sup>u</sup>)|² du</span>. Le théorème dit que le taux de croissance exponentielle du signal normalisé, en moyenne quadratique, vaut Θ − ½. C'est un énoncé d'abscisse de convergence en moyenne quadratique, de type Paley–Wiener.</p>
+  <h4>Limite</h4>
+  <p>C'est une reformulation exacte de RH, pas une étape vers elle. Même la borne plus faible <span class="m">Q(X) ≪ X<sup>1−δ</sup></span> donnerait Θ &lt; 1, ce qui est ouvert.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md">LEMMES_RIGOUREUX.md</a> (L6) · <a class="doclink" href="3_Preuves_et_calculs/preuves/SYNTHESIS_NOTE_EN.md">SYNTHESIS_NOTE_EN.md</a> §3 · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-0, GAP-1).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/02_Article_court_EN.docx">Article court</a> · <a class="doclink" href="1_Presentation/03_Dossier_de_relecture_EN.docx">Dossier de relecture</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+  <h4>Pré-relu en V6.13</h4>
+  <p>Preuve refaite pas à pas, aucune erreur. Trois retouches de rédaction (borne énoncée sur σ ≥ Θ + ε/4, référence exacte de Perron, attribution à Cramér et Montgomery–Vaughan plutôt qu'à Brent–Platt–Trudgian). Méthode standard : analogue au second ordre de la caractérisation de Θ par ψ(x) − x. À présenter comme une proposition, sans revendiquer de nouveauté.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf">Document 37</a> · <a class="doclink" href="1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md">note de relecture (anglais)</a>.</p>
+<</template>
+
+<template id="t-thB">
+  <p>Sous RH, avec <span class="m">S = Σ<sub>ρ</sub> m²(m+1)²/|ρ|²</span> :</p>
+  <p class="f">Q(X) ∼ (S/3)(log X)³</p>
+  <p>Pour des zéros simples, S = 4κ avec <span class="m">κ = 2 + γ − log 4π ≈ 0,0462</span>.</p>
+  <h4>Preuve en six étapes</h4>
+  <ul>
+    <li>Borne a priori sous RH.</li>
+    <li>Mellin–Plancherel sur la droite Re s = ½ + η.</li>
+    <li>Contrôle de la queue des zéros hauts, uniforme en η.</li>
+    <li>Calcul local : chaque pôle double contribue en η<sup>−3</sup>.</li>
+    <li>Limite η → 0.</li>
+    <li>Théorème taubérien de Karamata pour revenir à Q(X).</li>
+  </ul>
+  <h4>Statut</h4>
+  <p>La preuve repose sur des faits classiques et n'a pas été relue par un spécialiste. C'est très probablement l'analogue, pour un pôle double, du théorème de moyenne quadratique de Cramér sur ψ(x) − x. Sa valeur tient à l'exactitude, pas à la nouveauté.</p>
+  <h4>Numérique</h4>
+  <p>Pour X jusqu'à 4·10⁶, Q mesurée vaut 0,44 à 0,72 fois le terme dominant. La convergence est lente parce que les termes en L² et L sont grands.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/THEOREME_TERME_DOMINANT.md">THEOREME_TERME_DOMINANT.md</a> · <a class="doclink" href="4_Archives/docs_techniques/PRIORITY_CHECK.md">PRIORITY_CHECK.md</a>.</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/03_Dossier_de_relecture_EN.docx">Dossier de relecture</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+  <h4>Pré-relu en V6.13</h4>
+  <p>Preuve refaite pas à pas, aucune erreur ; quatre retouches. Les paires de zéros proches ne touchent pas le terme dominant (η → 0 à hauteur fixée). Corollaire nouveau B′, à faire vérifier : sous RH, S ≥ 4κ, avec égalité si et seulement si tous les zéros sont simples. α corrigé : −0,3074 (au lieu de −0,264).</p>
+  <p class="src"><a class="doclink" href="1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf">Document 37</a> · <a class="doclink" href="1_Presentation/relecture/RELECTURE_THEOREME_B_EN.md">note de relecture (anglais)</a>.</p>
+<</template>
+
+<template id="t-propC">
+  <p>Après le terme en L³ (L = log X), on attendrait une constante fois L². Ce n'est pas le cas :</p>
+  <p class="f">coefficient de L² = α + Φ(L), &nbsp; Φ presque périodique</p>
+  <p>Φ est une somme d'oscillations aux fréquences γ − γ′ et γ + γ′, c'est-à-dire des battements entre zéros. α et β sont des moyennes, pas des constantes ponctuelles.</p>
+  <h4>Ce qui est établi</h4>
+  <ul>
+    <li>Le développement local en η<sup>−3</sup>, η<sup>−2</sup>, η<sup>−1</sup> est prouvé et vérifié à quatre chiffres sur un modèle à 300 zéros.</li>
+    <li>Φ varie entre −0,032 et +0,027, avec une corrélation de 0,996 avec l'écart mesuré.</li>
+  </ul>
+  <h4>Ce qui reste conditionnel</h4>
+  <ul>
+    <li>H1 : RH et zéros simples.</li>
+    <li>H2 : convergence de Σ |b<sub>ρ</sub>|²/|ρ|², liée à une condition de moment de type Gonek.</li>
+    <li>H3 : contrôle des paires de zéros très proches. Cette hypothèse va au-delà de RH.</li>
+  </ul>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/ALPHA_BETA_ANALYSE.md">ALPHA_BETA_ANALYSE.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/H3_ANALYSIS.md">H3_ANALYSIS.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-3).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+</template>
+
+<template id="t-dh">
+  <p>La fonction de Davenport–Heilbronn vérifie une équation fonctionnelle mais n'a pas de produit d'Euler, et elle a des zéros hors de la droite critique. Un cadre qui prétend prouver RH doit échouer sur elle.</p>
+  <h4>Résultat</h4>
+  <div class="tw"><table>
+    <tr><th>Fonction</th><th>Pente de log Q / log X</th></tr>
+    <tr><td>ζ</td><td>0,33</td></tr>
+    <tr><td>L(s, χ₅)</td><td>0,34</td></tr>
+    <tr><td>Davenport–Heilbronn</td><td>0,56</td></tr>
+  </table></div>
+  <p>Le zéro hors ligne le plus à droite trouvé jusqu'à t = 200 est 0,8085 + 85,699i, ce qui prédit une pente de 0,62.</p>
+  <h4>Lecture</h4>
+  <p>Q détecte les zéros hors ligne de façon générique. Le test ne départage donc pas le cadre : rien dans Q n'utilise le produit d'Euler de manière irréversible. Il manque une inégalité qui serait vraie pour ζ et fausse pour cette fonction.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/DAVENPORT_HEILBRONN_TEST.md">DAVENPORT_HEILBRONN_TEST.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-4).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/01_SYNTHESE_FR.pdf">Synthèse</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+</template>
+
+<template id="t-ff">
+  <p>Pour les courbes sur un corps fini, RH est un théorème (Weil). La preuve repose sur trois ingrédients : la rationalité de la fonction zêta, la tour d'extensions du corps de base, et une positivité géométrique sur la surface C × C (théorème de l'indice de Hodge).</p>
+  <h4>Ce que le cadre Q en contient</h4>
+  <ul>
+    <li>Pas de finitude : il y a une infinité de zéros.</li>
+    <li>Pas de tour d'extensions.</li>
+    <li>Une positivité de type Parseval, automatique, donc sans contenu.</li>
+  </ul>
+  <p>Q est le carré de la formule explicite. Le critère de Weil porte sur la formule explicite appliquée à un carré. Le contenu de RH est un signe que Q ne voit pas.</p>
+  <h4>Démonstration numérique</h4>
+  <p>Sur les courbes elliptiques de 𝔽₁₀₁, l'analogue de Q croît en M³ quand la borne de Hasse est respectée, et exponentiellement pour un cas fictif qui la viole. Mais ce cas n'apparaît sur aucune des 10 100 courbes lisses : c'est la géométrie qui l'interdit, pas Q.</p>
+  <p>Q est un thermomètre, pas une interdiction.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/MEMO_P2_2_WEIL.md">MEMO_P2_2_WEIL.md</a> · <a class="doclink" href="3_Preuves_et_calculs/scripts/run_function_field_analog.py">run_function_field_analog.py</a>.</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/01_SYNTHESE_FR.pdf">Synthèse</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+</template>
+
+<template id="t-dens">
+  <p>Un cadre utile devrait au moins retrouver un résultat inconditionnel connu sur le nombre N(σ, T) de zéros de partie réelle supérieure à σ.</p>
+  <h4>Trois routes essayées</h4>
+  <ul>
+    <li>Plancherel n'est valable que sur les droites à droite de Θ : l'argument est circulaire.</li>
+    <li>L'énergie d'une fenêtre de fréquences ne se minore pas par un sous-ensemble de zéros, car les fréquences voisines ne sont pas orthogonales.</li>
+    <li>Les sommes partielles de G sont, à une contrainte près, le carré d'un polynôme de Dirichlet sur les premiers.</li>
+  </ul>
+  <h4>Conclusion</h4>
+  <p>Les trois routes ramènent aux grandes valeurs de polynômes de Dirichlet, c'est-à-dire à la technologie classique (Halász–Montgomery, Huxley, Guth–Maynard). Le meilleur exposant connu est 30/13, contre 2 pour l'hypothèse de densité. Le cadre n'offre aucun mécanisme pour l'améliorer.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/MEMO_P2_3_DENSITE.md">MEMO_P2_3_DENSITE.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-5).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/01_SYNTHESE_FR.pdf">Synthèse</a></div>
+</template>
+
+<template id="t-arret">
+  <p>Avant toute reprise d'une attaque directe, le cadre devait passer trois contrôles fixés à l'avance :</p>
+  <ul>
+    <li>Davenport–Heilbronn : identifier un usage irréversible du produit d'Euler.</li>
+    <li>Corps de fonctions : identifier une positivité réellement restrictive.</li>
+    <li>Densité de zéros : retrouver un résultat connu sans réimporter toute la technologie classique.</li>
+  </ul>
+  <h4>Verdict</h4>
+  <p>Les tests 2 et 3 échouent. Le test 1 ne distingue pas le cadre. La règle d'arrêt est déclenchée : les résultats du noyau sont conservés comme matériel de calibration, et l'attaque directe de RH est arrêtée.</p>
+  <p>L'audit de la version 4.3 a appliqué la même règle aux branches ajoutées ensuite (localisation de sources, Schrödinger, générateur arithmétique), conservées comme diagnostics.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/SYNTHESIS_NOTE_EN.md">SYNTHESIS_NOTE_EN.md</a> §8 · <a class="doclink" href="4_Archives/docs_techniques/AUDIT_V4_3.md">AUDIT_V4_3.md</a> · <a class="doclink" href="4_Archives/docs_techniques/USER_CORRECTIONS_2026-10-04.md">USER_CORRECTIONS_2026-10-04.md</a>.</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/01_SYNTHESE_FR.pdf">Synthèse</a> · <a class="doclink" href="1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf">Cheminement intellectuel (PDF)</a></div>
+</template>
+
+<template id="t-relecture">
+  <p>C'est l'axe 1 du plan d'impact, et le seul dont tout le reste dépend. Depuis la V6.13, les Théorèmes A et B et la note sur l'Archipel ont été pré-relus en interne (trois relectures indépendantes, aucune erreur dans A ni B). La relecture par un spécialiste reste à faire.</p>
+  <h4>Ce qu'il faut envoyer</h4>
+  <ul>
+    <li>Le dossier <span class="m">1_Presentation/relecture/</span> : une page d'entrée et trois notes autonomes en anglais.</li>
+    <li>Le message d'accompagnement (document 37, annexe). L'ancien dossier 03 et le message 05 sont remplacés.</li>
+  </ul>
+  <h4>Ce qu'il faut demander</h4>
+  <ul>
+    <li>Théorème A : la majoration est-elle complète, et quelle référence citer ?</li>
+    <li>Théorème B : existe-t-il déjà, pour ψ ou pour des pôles d'ordre k ? Le corollaire B′ est-il juste et connu ?</li>
+    <li>Archipel : l'attribution à Saias–Weingartner est-elle la bonne ? La rigidité au premier ordre est-elle connue en degré 2 ?</li>
+  </ul>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/relecture/00_READ_ME_FIRST_EN.md">Page d'entrée du dossier</a> · <a class="doclink" href="1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf">Document 37</a> · <a class="doclink" href="2_Methode/Plan_d_impact.md">Plan_d_impact.md</a>.</p>
+</template>
+
+<template id="t-weil">
+  <p>Pour une fonction test h paire et sa transformée de Fourier g, la formule relie une somme sur les zéros ρ = ½ + iγ à une somme sur les puissances de nombres premiers :</p>
+  <p class="f">Σ<sub>γ</sub> h(γ) = h(i/2) + h(−i/2) − g(0) log π + (1/2π) ∫ h(r) Re Γ′/Γ(¼ + ir/2) dr − 2 Σ<sub>n</sub> Λ(n) n<sup>−1/2</sup> g(log n)</p>
+  <h4>Ce qu'elle dit</h4>
+  <ul>
+    <li>Les hauteurs γ jouent le rôle de fréquences, les log p celui de positions dans la variable u = log x.</li>
+    <li>Elle est inconditionnelle : RH ne porte que sur la nature des fréquences.</li>
+    <li>Il faut une fonction test analytique dans une bande, car le pôle de ζ produit un terme en e<sup>|t|/2</sup> : la distribution brute n'est pas tempérée.</li>
+  </ul>
+  <h4>Place dans le programme</h4>
+  <p>La formule explicite avec 300 zéros reproduit Q mesurée à environ 5 % près. Cela valide les identités et l'implémentation, pas RH.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide_de_lecture_intuitif.docx</a> §11 · <a class="doclink" href="3_Preuves_et_calculs/src/explicit_formula.py">src/explicit_formula.py</a>.</p>
+</template>
+
+<template id="t-nb">
+  <p>Le critère de Nyman–Beurling, renforcé par Báez-Duarte, traduit RH en un problème d'approximation dans un espace de Hilbert : RH équivaut à d<sub>N</sub> → 0, où d<sub>N</sub> est la distance de la fonction indicatrice de (0,1) à l'espace engendré par les dilatations de la partie fractionnaire.</p>
+  <h4>Lien avec le programme</h4>
+  <p>Bettin, Conrey et Farmer montrent, sous RH et une condition de moment, que <span class="m">d<sub>N</sub>² ∼ κ / log N</span> avec la même constante κ = 2 + γ − log 4π. Les deux objets diagonalisent la même somme Σ 1/|ρ|².</p>
+  <div class="tw"><table>
+    <tr><th>N</th><th>d<sub>N</sub>² · log N</th><th>Rapport à κ</th></tr>
+    <tr><td>10</td><td>0,0547</td><td>1,185</td></tr>
+    <tr><td>50</td><td>0,0464</td><td>1,005</td></tr>
+    <tr><td>100</td><td>0,0469</td><td>1,016</td></tr>
+  </table></div>
+  <h4>Limite</h4>
+  <p>κ n'est pas une découverte du programme : c'est la constante de Burnol et de Bettin–Conrey–Farmer. Aucune constante nouvelle ni équivalence nouvelle n'est revendiquée.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/NB_GRAM.md">NB_GRAM.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/COMPARAISON_BCF.md">COMPARAISON_BCF.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md">BIBLIO_POSITIONNEMENT.md</a>.</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+</template>
+
+<template id="t-li">
+  <p>Le critère de Li (1997, complété par Bombieri et Lagarias) est une équivalence rigoureuse. On pose</p>
+  <p class="f">λ<sub>n</sub> = Σ<sub>ρ</sub> [1 − (1 − 1/ρ)<sup>n</sup>]</p>
+  <p>RH équivaut à λ<sub>n</sub> ≥ 0 pour tout n ≥ 1.</p>
+  <h4>Lien avec le programme</h4>
+  <p>Le premier coefficient vaut <span class="m">λ₁ = Σ 1/ρ = 1 + γ/2 − ½ log 4π ≈ 0,0231</span>. Comme <span class="m">κ = Σ 1/(ρ(1−ρ)) = 2 Σ 1/ρ</span>, on a l'identité exacte κ = 2λ₁.</p>
+  <h4>Limite</h4>
+  <p>Cette identité ne concerne que n = 1, qui est positif sans condition. Le contenu de RH est dans les λ<sub>n</sub> pour n grand, que le programme ne touche pas.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide_de_lecture_intuitif.docx</a>.</p>
+</template>
+
+<template id="t-energyD">
+  <p>On associe à l'énergie une zêta de Mellin positive :</p>
+  <p class="f">Z<sub>E</sub>(s) = ∫₁<sup>∞</sup> |C(x)|² x<sup>−1−2s</sup> dx</p>
+  <p>Elle est la zêta géométrique d'une <em>generalized fractal string</em> positive obtenue en poussant la mesure |C(x)|² dx/x par y=x².</p>
+  <h4>Résultat exact</h4>
+  <p class="f">D<sub>E</sub> = Θ, &nbsp;&nbsp; donc &nbsp;&nbsp; RH ⇔ D<sub>E</sub> = 1/2.</p>
+  <p>C'est une reformulation rigoureuse du Théorème A. Elle ne force pas la dimension à 1/2 : il faut encore une propriété arithmétique supplémentaire.</p>
+  <h4>Retour au Théorème B</h4>
+  <p>Pour s=1/2+η, Z<sub>E</sub>(s)=Q<sub>η</sub>. Sous RH, Z<sub>E</sub>(1/2+η) ~ S/(4η³), donc le bord de dimension 1/2 porte une singularité abélienne cubique.</p>
+  <h4>Dimensions complexes du modèle fini</h4>
+  <p class="f">ω<sub>jk</sub> = (ρ<sub>j</sub> + ρ<sub>k</sub>)/2</p>
+  <p>Sous RH, toutes ces valeurs ont Re ω=1/2. Une paire synthétique 0,63±7i produit un pôle réel à 0,63. Cela relie les battements de la Proposition C aux dimensions complexes de l'énergie.</p>
+  <h4>Tests v5.2</h4>
+  <ul>
+    <li>Z<sub>E</sub>(1/2+η)=Q<sub>η</sub> vérifié à la précision machine.</li>
+    <li>Formule méromorphe du modèle fini validée contre quadrature directe : erreur ≈1,6×10<sup>−10</sup>.</li>
+    <li>43/43 tests passent.</li>
+    <li>Davenport–Heilbronn donne D<sub>eff</sub>≈0,781 à l'échelle calculée : la dimension détecte bien le hors-ligne mais ne l'interdit pas.</li>
+  </ul>
+  <h4>Question active</h4>
+  <p>Trouver une propriété de la mesure d'énergie, issue du produit d'Euler ou d'une positivité non automatique, vraie pour ζ mais fausse pour Davenport–Heilbronn, et assez forte pour imposer D<sub>E</sub>≤1/2.</p>
+  <p class="src"><strong>Sources internes.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/ENERGY_FRACTAL_DIMENSION.md">ENERGY_FRACTAL_DIMENSION.md</a> · <a class="doclink" href="3_Preuves_et_calculs/src/energy_dimension.py">energy_dimension.py</a> · <a class="doclink" href="3_Preuves_et_calculs/scripts/run_energy_dimension.py">run_energy_dimension.py</a>.</p>
+  <div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/08_Dimension_energie_fractale.md">Note dimension/énergie</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+  <div class="links"><strong>Littérature.</strong> <a class="doclink" href="https://arxiv.org/abs/1210.0882">Herichi–Lapidus, spectral operator</a> · <a class="doclink" href="https://link.springer.com/book/10.1007/978-1-4614-2176-4">Lapidus–van Frankenhuijsen, fractal strings</a></div>
+</template>
+
+<template id="t-sources">
+  <p>L'idée : traiter les zéros comme des sources cachées à retrouver à partir du signal des nombres premiers, avec les outils de la localisation de sources (filtre adapté, ondelettes de Morlet, inversion harmonique).</p>
+  <h4>Ce que l'audit a mesuré sur le vrai signal de ζ</h4>
+  <ul>
+    <li>Les fréquences sont retrouvées à 10<sup>−3</sup> près pour les premiers zéros.</li>
+    <li>La partie réelle estimée est biaisée de −0,002 à −0,09 pour des zéros qui sont sur la droite. Le biais est du même ordre que ce qu'on voudrait détecter.</li>
+  </ul>
+  <h4>Sur le témoin Davenport–Heilbronn</h4>
+  <p>Le vrai zéro hors ligne est détecté, sous-estimé de 25 %. Mais le mode désigné comme le plus hors ligne (partie imaginaire ≈ 73,8, partie réelle +0,345) est un fantôme : il n'y a aucun zéro à cet endroit.</p>
+  <h4>Verdict</h4>
+  <p>Outil de visualisation et de calibration. Une résolution finie ne peut pas exclure un zéro hors ligne à grande hauteur. Il manque une borne d'observabilité uniforme, qui n'est pas démontrée.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="4_Archives/docs_techniques/AUDIT_V4_3.md">AUDIT_V4_3.md</a> (F2, F3) · <a class="doclink" href="4_Archives/docs_techniques/SOURCE_LOCALIZATION.md">SOURCE_LOCALIZATION.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-8).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf">Cheminement intellectuel</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+  <h4>Relu en V6.12</h4>
+  <p>Avec la masse unité, le fantôme de DH (Im ≈ 73,8) porte une masse de 1,3·10<sup>−9</sup> et il est rejeté ; le vrai zéro hors droite sort avec une masse 1 et sa partie réelle à 10<sup>−9</sup> près. Reste : une fenêtre finie, pas une borne uniforme.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf">Document 36, §4</a>.</p>
+</template>
+
+<template id="t-schr">
+  <p>L'idée : lire chaque zéro comme un niveau d'énergie <span class="m">E = −γ + i(β − ½)</span>, identifier un générateur effectif H<sub>eff</sub> à partir du signal, et certifier une métrique M &gt; 0 telle que H*M = MH.</p>
+  <h4>Ce que l'audit a établi</h4>
+  <ul>
+    <li>Les tests initiaux étaient circulaires : ils injectaient les zéros puis les retrouvaient.</li>
+    <li>En dimension finie, l'existence de M &gt; 0 équivaut à la réalité du spectre. Le certificat n'apporte rien au-delà de β = ½.</li>
+    <li>« RH équivaut à Im E = 0 » est la phrase « β = ½ » dans une autre variable.</li>
+    <li>Le signal de G est d'ordre 2 : son propagateur contient des blocs de Jordan, qu'aucune métrique positive ne rend auto-adjoints, même sous RH.</li>
+  </ul>
+  <h4>Verdict</h4>
+  <p>Reparamétrisation, pas mécanisme. Le verrou est exactement le problème de Hilbert–Pólya. Aucun investissement supplémentaire n'est justifié sans dérivation analytique de H et de M à partir de l'arithmétique.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="4_Archives/docs_techniques/AUDIT_V4_3.md">AUDIT_V4_3.md</a> (F1, F4, F5) · <a class="doclink" href="4_Archives/docs_techniques/SCHRODINGER_FLUX.md">SCHRODINGER_FLUX.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-SCHR, GAP-SCHR-GEN).</p>
+<div class="links"><strong>Présentation liée.</strong> <a class="doclink" href="2_Methode/Protocole_multi_agents_et_panorama_physique_RH.docx">Protocole multi-agents et panorama physique</a> · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a></div>
+  <h4>Relu en V6.12</h4>
+  <p>L'opérateur se construit désormais depuis les seuls nombres premiers (document 33) : la circularité est levée. Les blocs de Jordan venaient du signal d'ordre 2 ; le signal d'ordre 1 donne des masses simples. Le Théorème A se lit au rayon spectral du générateur (DH : 0,308517). Le verrou M &gt; 0 ⟺ RH reste, mais il est situé : la métrique.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf">Document 36, §5</a>.</p>
+</template>
+
+<template id="t-kalman">
+  <p>L'idée : traiter chaque échelle comme une mesure bruitée et suivre l'information accumulée avec un filtre de Kalman (« GPS analytique »), par rapport à une trajectoire de référence (« Apollo »).</p>
+  <h4>Ce que les calculs montrent</h4>
+  <ul>
+    <li>Information par unité de log X : 0,092, 0,114, 0,102, 0,070 pour X de 5·10³ à 5·10⁴. Aucune loi ne se dégage.</li>
+    <li>Le rapport de Q à la référence passe de 0,34 à 0,64, ce qui reflète les termes d'ordre inférieur et non un phénomène nouveau.</li>
+  </ul>
+  <h4>Verdict</h4>
+  <p>Diagnostic reproductible, sans borne nouvelle. Les branches voisines (sommes de type I et II, Parseval locale uniforme) ont le même statut.</p>
+  <h4>Retour de l'idée en V6.10</h4>
+  <p>L'image du GPS revient sous une autre forme : non plus comme filtre sur les échelles, mais comme navigation de recherche. Le <a class="doclink" href="1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">navigateur</a> prend l'indicateur pour position et les métaphores pour manœuvres.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="4_Archives/notes/LATEST_GPS_ANALYTIC.md">LATEST_GPS_ANALYTIC.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-7) · <a class="doclink" href="1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf">06_CHEMINEMENT_INTELLECTUEL.pdf</a> (étape 9).</p>
+  <h4>Relu en V6.12</h4>
+  <p>Sur les traces des premiers (et non plus sur Q), le filtre de Kalman est la récurrence de Levinson. Ses innovations restent positives pour ζ et L(s, χ₅) ; pour DH, la première innovation négative arrive à la fenêtre 3,52, avec les nombres premiers ≤ 36. Le GPS donne enfin une alarme.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf">Document 36, §3</a>.</p>
+  <h4>Loi de seuil en V6.14</h4>
+  <p>L'alarme sonne au temps de Heisenberg de la hauteur du quadruplet, log(q·γ₀/2π) (0,80 à 0,89 de ce temps pour DH). Correction : au-delà de la taille 270, le signe d'une innovation n'est plus fiable ; les seuils se lisent sur les valeurs propres.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf">Document 38</a>.</p>
+</template>
+
+<template id="t-darkz">
+  <p><strong>DARK-ZETA</strong> n'introduit aucune entité cachée : c'est un cadre d'observabilité. La question est de savoir quelle information discriminante est détruite par le carré, la norme, la moyenne ou la covariance.</p>
+  <p class="f">énergie → covariance/TOMO-2 → phase/TOMO-3 → PRIME-LOCK → DUAL-LOCK</p>
+  <p>Le premier détecteur a été construit avec ζ, L(s,χ₅), Davenport–Heilbronn, phases randomisées et témoins complètement multiplicatifs.</p>
+  <p class="src"><strong>Sources internes.</strong> <a class="doclink" href="1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md">Cadre DARK-ZETA</a> · <a class="doclink" href="1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md">Premier détecteur</a>.</p>
+</template>
+
+<template id="t-tomo2">
+  <p>TOMO-2 utilise la matrice de Gram des translations logarithmiques du signal g(u)=e<sup>−u/2</sup>C(e<sup>u</sup>). Avec translations circulaires, elle dépend exactement du spectre de puissance.</p>
+  <p>Le contrôle à phases randomisées redonne la même matrice à ~10<sup>−15</sup>, comme exigé. Sur la trajectoire χ₅→DH, son entropie suit fortement le défaut multiplicatif (ρ de Spearman ≈ 0,88–0,96 selon l'échelle).</p>
+  <p><strong>Limite :</strong> les témoins Steinhaus ont un défaut multiplicatif nul mais des entropies très différentes. TOMO-2 n'est donc pas un invariant universel de multiplicativité.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md">Résultats</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/DARK_ZETA_DETECTOR.md">Note technique</a>.</p>
+</template>
+
+<template id="t-tomo3">
+  <p>TOMO-3 teste la fermeture de phase par bicoherence entre fréquences k, l et k+l. Le premier protocole ne confirme pas le pont naïf entre multiplicativité et bispectre du signal agrégé C<sub>F</sub>.</p>
+  <p>La corrélation avec le défaut multiplicatif change de signe ou disparaît avec l'échelle. Les valeurs observées restent proches du nul obtenu par 32 surrogats à phases randomisées.</p>
+  <p><strong>Décision V6 :</strong> ne pas escalader automatiquement à TOMO-4/TOMO-5 ; changer de canal et tester des couplages inter-canaux arithmétiques.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md">Premier détecteur</a>.</p>
+</template>
+
+
+<template id="t-primelock">
+  <p><strong>PRIME-LOCK</strong> résout la dérivée logarithmique en trois canaux : nombres premiers, puissances supérieures de premiers et fuite hors puissances de premiers.</p>
+  <p>À N=32768, la fuite vaut ~10<sup>−31</sup> pour ζ et L(s,χ₅), mais ≈0,9106 pour Davenport–Heilbronn. Le défaut local de tour vaut ≈0,7976 pour DH.</p>
+  <p>Une eulérisation qui conserve les valeurs aux premiers mais impose le verrou de degré 1 rend le signal global DH presque décorrélé de l'original (cohérence ≈0,075). Les témoins Steinhaus passent cependant le verrou exactement : PRIME-LOCK détecte la structure eulérienne locale, pas RH.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/18_PRIME_LOCK_premier_verrou_local.md">Résultats PRIME-LOCK</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/PRIME_LOCK_DETECTOR.md">Note technique</a> · <a class="doclink" href="1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md">Les quatre coins (V6.3d)</a>.</p>
+</template>
+
+<template id="t-duallock">
+  <p><strong>DUAL-LOCK</strong> est maintenant exécuté : une compression finie de la forme explicite combine intrinsèquement terme archimédien, conducteur/pôle et dérivée logarithmique locale.</p>
+  <p>Sans utiliser les zéros dans la construction, le scan produit des directions négatives pour Davenport–Heilbronn près de 86, 113, 167 et 176, tandis que le contrôle eulérien apparié L(s,χ₅) reste positif sur les témoins confirmés. Les zéros DH sont comparés seulement post hoc.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/19_DUAL_LOCK_plan_local_global.md">Plan</a> · <a class="doclink" href="1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md">Résultats V6.3</a> · <a class="doclink" href="1_Presentation/22_AUDIT_V6_3A_INSTRUMENT_DUAL_LOCK.md">Audit V6.3a</a> · <a class="doclink" href="1_Presentation/23_AUDIT_V6_3B_FORMULE_EXPLICITE.md">Audit V6.3b/c</a> · <a class="doclink" href="1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md">Classement V6.3d</a> · <a class="doclink" href="1_Presentation/25_Atlas_metaphores_physique_mathematique_V6.pdf">Atlas des métaphores</a> · <a class="doclink" href="1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.md">Seuil τ_c (V6.4)</a> · <a class="doclink" href="1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.md">Point d'Euler (V6.5)</a> · <a class="doclink" href="1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md">Modèle réduit (V6.6)</a> · <a class="doclink" href="1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md">Marge de la forme et de l'objet (V6.7)</a> · <a class="doclink" href="1_Presentation/30_ARCHIPEL_D_EULER.md">Archipel d'Euler (V6.8)</a> · <a class="doclink" href="1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateur d'avancement (V6.8.1)</a> · <a class="doclink" href="1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md">Le chaînon (V6.9)</a> · <a class="doclink" href="1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.md">Le générateur des premiers (V6.10)</a> · <a class="doclink" href="1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur de recherche (V6.10)</a> · <a class="doclink" href="1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.md">La base comme pas de temps (V6.11)</a> · <a class="doclink" href="1_Presentation/36_LES_IDEES_REJETEES_RELUES.md">Les idées rejetées relues (V6.12)</a> · <a class="doclink" href="1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md">Pré-relecture (V6.13)</a> · <a class="doclink" href="1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md">Le temps de Heisenberg (V6.14)</a> · <a class="doclink" href="1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md">Le degré 2 et le recensement (V6.15)</a> · <a class="doclink" href="1_Presentation/40_LA_RENCONTRE_A_TROIS.md">La Rencontre à trois (V6.16)</a> · <a class="doclink" href="1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md">La Rencontre en degré 2 (V6.17)</a> · <a class="doclink" href="1_Presentation/42_REGISTRE_DES_SOURCES.md">Registre des sources (V6.18)</a>.</p>
+</template>
+
+<template id="t-darkres">
+  <p><strong>Résidu sombre</strong> : après audit V6.3a, la cancellation reste visible mais doit être mesurée sur le vecteur propre généralisé normalisé par la matrice de Gram. Un faux second mode négatif à T=176 a été retiré.</p>
+  <p>Exemple DH à T=167 : +4,16895 + 0,43824 − 4,74011 = −0,13292. Le signe final représente ≈1,4 % de l'échelle absolue des contributions, soit une amplification de cancellation ≈70×.</p>
+  <p>Le mécanisme est stable au premier sweep de quadrature. Ce n'est pas une énergie physique ni un critère de RH : c'est un diagnostic d'observabilité et de sensibilité du signe.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/20_Registre_metaphores_V6.md">Registre des métaphores</a> · <a class="doclink" href="1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md">Résultats</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/DARK_RESIDUAL.md">Définition technique</a>.</p>
+</template>
+
+<template id="t-pos">
+  <p>Le critère de Weil dit que RH équivaut à une positivité : pour toute fonction test f, la somme sur les zéros</p>
+  <p class="f">Σ<sub>ρ</sub> f̂(ρ) · conj f̂(1 − ρ̄) ≥ 0</p>
+  <p>Sur la droite critique, 1 − ρ̄ = ρ et chaque terme est un carré. Hors de la droite, le signe n'est plus garanti : tout le contenu de RH est dans ce signe.</p>
+  <h4>Pourquoi M &gt; 0 est le même verrou</h4>
+  <p>La relation H*M = MH n'impose un spectre réel que si M est définie positive. Si M est indéfinie, on obtient seulement la symétrie ρ ↔ 1 − ρ̄, que l'équation fonctionnelle donne déjà. Chercher une métrique positive renomme le critère de Weil sans le simplifier.</p>
+  <h4>Dans le programme</h4>
+  <p>Les positivités présentes (norme, matrice de Gram, compléments de Schur) sont automatiques. Aucune positivité propre à l'arithmétique n'est isolée.</p>
+  <h4>Depuis V6.9</h4>
+  <p>Le chaînon (document 32) situe le verrou : ce qui manque à ζ est la métrique, pas l'opérateur. Le générateur des premiers (document 33) la mesure fenêtre par fenêtre depuis les seuls nombres premiers : positive pour ζ et L, négative pour DH à ses zéros hors droite. Elle reste lue, jamais imposée.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/MEMO_P2_2_WEIL.md">MEMO_P2_2_WEIL.md</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-6) · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a> §11.8.</p>
+</template>
+
+<template id="t-compl">
+  <p>Dans le programme de Connes, le point délicat est de montrer que la réalisation spectrale capte tous les zéros non triviaux, et pas seulement ceux de la droite critique. Le mot « complétude » est un raccourci ; chez Connes, cela prend la forme de la validité d'une formule de traces.</p>
+  <h4>Ce que Connes construit (1999)</h4>
+  <ul>
+    <li>Un espace : les classes d'adèles, sur lequel agit le flot de dilatation, celui de la variable u = log x.</li>
+    <li>Un opérateur : le générateur de ce flot, sur un espace de Hilbert bien choisi.</li>
+    <li>Un théorème : son spectre est formé exactement des parties imaginaires des zéros situés sur la droite critique.</li>
+  </ul>
+  <p>Les zéros y apparaissent comme un spectre d'absorption, des raies manquantes. C'est ce qui explique le signe inversé de la formule explicite.</p>
+  <h4>Où est le problème</h4>
+  <p>Le spectre est réel par construction. Un zéro hors de la droite n'est pas réfuté, il est invisible. Connes démontre que sa formule de traces globale est équivalente à RH : dire que la somme sur les zéros critiques coïncide avec la formule explicite de Weil, c'est dire qu'aucun zéro n'a échappé.</p>
+  <h4>Ce qui est démontré</h4>
+  <p>La formule de traces est prouvée pour un nombre fini de places. Le passage à toutes les places à la fois est le verrou.</p>
+  <h4>Dans le programme</h4>
+  <p>C'est le point 5 de GAP-SCHR-GEN : une observabilité excluant qu'un mode hors ligne soit caché dans un sous-espace non observé.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-SCHR-GEN) · <a class="doclink" href="1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf">Guide de lecture intuitif</a> §11.9.</p>
+</template>
+
+<template id="t-hp">
+  <p>L'idée attribuée à Hilbert et Pólya : s'il existe un opérateur auto-adjoint construit à partir de l'arithmétique et dont le spectre encode exactement tous les zéros non triviaux, alors les γ sont réels et RH est vraie.</p>
+  <h4>Ce qui soutient l'idée</h4>
+  <ul>
+    <li>La formule explicite ressemble à une formule de traces (Selberg, Gutzwiller).</li>
+    <li>Les corrélations des zéros suivent la statistique des matrices aléatoires de type GUE.</li>
+  </ul>
+  <h4>Ce qui manque</h4>
+  <ul>
+    <li>Un opérateur construit à partir de l'arithmétique, sans connaître les zéros. Un opérateur diagonal de spectre donné existe trivialement.</li>
+    <li>Une preuve d'auto-adjonction sur un domaine précis.</li>
+    <li>La correspondance exacte avec tous les zéros.</li>
+  </ul>
+  <h4>Candidats</h4>
+  <p>Berry–Keating (H = xp) ne reproduit que la densité moyenne. Le modèle de Bender, Brody et Müller a été critiqué sur l'auto-adjonction. Les variantes de Sierra introduisent les premiers à la main. Aucun candidat n'est confirmé.</p>
+  <p>Ce n'est pas une formulation équivalente à RH mais un programme non réalisé.</p>
+  <h4>Depuis V6.10</h4>
+  <p>Dans une fenêtre finie, un opérateur construit à partir de l'arithmétique seule existe : le générateur des premiers (document 33) donne les zéros de ζ sans les connaître. Ce qui manque est sa métrique positive pour toutes les fenêtres à la fois, c'est-à-dire la positivité de Weil.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="2_Methode/Protocole_multi_agents_et_panorama_physique_RH.docx">Protocole_multi_agents_et_panorama_physique_RH.docx</a> · <a class="doclink" href="3_Preuves_et_calculs/preuves/KNOWN_GAPS.md">KNOWN_GAPS.md</a> (GAP-SCHR).</p>
+</template>
+
+<template id="t-tauc">
+  <p>Test prioritaire de l'Atlas des métaphores : un seuil τ_c où la compression de Weil change de signe. Il existe, il est unique et reproductible, mais il dépend de la fenêtre, de la dimension et de la largeur, et tend vers 0 quand le support s'élargit. Ce n'est pas un invariant.</p><p>La carte (τ, δ) est une translation exacte de la courbe à une dimension : le seuil suit les zéros hors droite, pas le produit d'Euler. Correctif en V6.7 : la décroissance vient de la forme, pas de l'objet.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.pdf">Document 26</a> · <a class="doclink" href="1_Presentation/25_Atlas_metaphores_physique_mathematique_V6.pdf">Atlas des métaphores</a>.</p>
+</template>
+
+<template id="t-mod7">
+  <p>Une famille modulo 7 à équation fonctionnelle constante, avec un produit d'Euler seulement au point θ = 0. Sur 958 zéros jusqu'à t = 1 000, tous restent sur la droite seulement pour θ dans [−0,0096 ; +0,072], et cette plage se referme avec la hauteur.</p><p>Les sorties de la droite se font par rencontre de paires. Au point d'Euler, aucun zéro à droite de Re s = 1 ; ailleurs, des dizaines.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.pdf">Document 27</a>.</p>
+</template>
+
+<template id="t-modred">
+  <p>Courbes hyperelliptiques sur F₃, F₅, F₇, où RH est un théorème (Weil). 425 courbes puis 525 : comptages recoupés à l'unité ; positivité de Castelnuovo exacte. 220 faux jumeaux (équation fonctionnelle, produit d'Euler, RH fausse) sont démasqués à un étage fini.</p><p>La signature d'une nécessité démontrée tient en quatre traits ; ζ présente les trois premiers. Le quatrième, la positivité imposée par un objet d'un étage au-dessus (la surface C×C), est la case vide.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf">Document 28</a>.</p>
+</template>
+
+<template id="t-marges">
+  <p>Deux marges : celle de la forme (la fenêtre de Weil), exactement nulle au-delà du nombre de zéros ; celle de l'objet, positive et fixée par la paire de zéros la plus serrée. Loi d'inertie : à la fenêtre 2g, les directions négatives comptent la moitié des zéros hors droite.</p><p>Lecture : là où RH est démontrée, la nécessité n'éloigne pas les objets du bord, elle interdit le passage.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf">Document 29</a>.</p>
+</template>
+
+<template id="t-archipel">
+  <p>Dans les espaces V_q de combinaisons de L(s, χ) à même équation fonctionnelle : rigidité au premier ordre (prouvée ici) et, avec Saias–Weingartner, RH (ou seulement l'absence de zéro dans Re s &gt; 1) implique le produit d'Euler.</p><p>Autour de chacun des 27 points d'Euler, une île de rayon r(T) qui rétrécit avec la hauteur (pente −0,77). Hors des points d'Euler, des dizaines de zéros dans Re s &gt; 1 dès |t| ≤ 300.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/30_ARCHIPEL_D_EULER.pdf">Document 30</a>.</p>
+  <h4>Pré-relu en V6.13</h4>
+  <p>Correct sur le fond. Une phrase fausse au §3.1 (V₅ pair, hors de V_q) et un trou comblable au §3.4, corrigés. Le corollaire « pas de zéro dans Re s &gt; 1 ⟺ point d'Euler » est un cas particulier immédiat de Saias–Weingartner (Th. 2) ; en degré 2, Booker–Thorne donnent déjà l'analogue. La rigidité au premier ordre devient une identité exacte, de constante 3.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf">Document 37</a> · <a class="doclink" href="1_Presentation/relecture/RELECTURE_ARCHIPEL_EN.md">note de relecture (anglais)</a>.</p>
+
+  <h4>V6.37 : comparaison appariée dans V13</h4>
+  <p>72 couples fixés avant comptage, à ancre et rayon identiques. À hauteur 150, le bras A1 donne 36/36 détections plus tardives lorsque le premier coefficient augmente. Le bras D donne 25 détections plus précoces, 8 plus tardives et 3 dans la même tranche. Il s’agit d’un résultat descriptif : les contrôles numériques ne certifient pas l’absence de racines antérieures et ne démontrent pas de causalité.</p>
+  <p>Prochaine comparaison : fixer exactement le premier coefficient complexe, sa phase, l’ancre et le rayon. Aucun théorème supplémentaire sur RH ne découle de ces comptages.</p>
+  <p class="src"><a class="doclink" href="1_Presentation/61_ANCRAGE_APPARIE_V13.pdf">Document 61 — ancrage apparié V13</a>.</p>
+</template>
+
+<template id="t-chainon">
+  <p>Dans le Modèle réduit, F = q<sup>D</sup> : le pas discret est l'exponentielle d'un générateur. L'opérateur se reconstruit depuis les seuls comptages (749 objets) ; pour les 220 faux jumeaux aussi. Seule la métrique sépare les vraies courbes des imposteurs.</p><p>Le spectre des longueurs, lu dans les zéros, retrouve le produit d'Euler de ζ et révèle son absence pour DH. Ce qui manque à ζ n'est pas l'opérateur, c'est la métrique positive.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf">Document 32</a>.</p>
+</template>
+
+<template id="t-generateur">
+  <p>Le chaînon porté jusqu'à ζ dans une fenêtre finie : avec les seuls nombres premiers ≤ 439, l'opérateur de translation donne 226 zéros de ζ, chacun de masse 1, sans fausse détection ; avec les premiers ≤ 23 862, 284 zéros à mieux que 1,6·10<sup>−4</sup>.</p><p>La métrique se lit aussi depuis les premiers : positivité observée pour ζ et L(s, χ₅) dans les fenêtres et seuils testés, deux directions négatives par quadruplet hors droite pour DH, attribuées exactement.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf">Document 33</a>.</p>
+</template>
+
+<template id="t-base">
+  <p>Vue sur F_q², une courbe garde le même générateur D (525 courbes) ; la base n'est qu'un pas de temps. Redescendre efface un signe par facteur irréductible. La métrique survit au changement de base.</p><p>Pour ζ, à nombres premiers fixés, un pas grossier noie la métrique de DH (10 → 0 directions négatives) : l'imposteur passe. Le seul pas qui convienne à ζ est le flot.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf">Document 35</a>.</p>
+</template>
+
+<template id="t-heisenberg">
+  <p>Un quadruplet de zéros hors droite à la hauteur γ₀ fait perdre sa positivité à la métrique des premiers quand la fenêtre atteint le <strong>temps de Heisenberg</strong> de sa hauteur :</p>
+  <p class="f">L_c ≈ log(q·γ₀ / 2π)</p>
+  <p>C'est 2π fois la densité des zéros, et le logarithme du conducteur analytique : il faut les nombres premiers jusqu'à environ q·γ₀/2π. Mesuré : rapport 0,95 à 1,08 pour ζ et L(s, χ₅) (hauteurs 20 à 200), 0,80 à 0,89 pour les quadruplets réels de DH. L'écart à la droite, le poids, la position, le pas et la largeur ne jouent qu'en correction.</p>
+  <h4>Correction de la V6.12</h4>
+  <p>Le signe d'une innovation de Levinson n'est pas fiable dès que la métrique est mal conditionnée : quatre seuils par quadruplet étaient du bruit. Les seuils se lisent désormais sur les valeurs propres. La détection principale de DH (3,53, premiers ≤ 36) tient.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf">Document 38</a>.</p>
+</template>
+<template id="t-degre2rec">
+  <p><strong>Le degré 2.</strong> L(Δ, s), la fonction L de la forme de Ramanujan (poids 12), est reconstruite depuis les seuls coefficients τ(n) : ses zéros coïncident à 10⁻⁹ près avec ceux calculés sans les premiers. La loi de seuil y double, comme la densité des zéros : la longueur d'écoute est le poids archimédien Ω(γ₀) de la formule explicite (rapport 1,02 à 1,05).</p>
+  <p><strong>Le recensement.</strong> Avec les premiers ≤ 1 370, la métrique de DH a 50 directions négatives : 25 quadruplets hors droite jusqu'à la hauteur 1 464, dont 4 repliés, tous identifiés par un calcul indépendant des zéros. L(s, χ₅) et ζ n'en ont aucune. Chaque quadruplet s'allume à 0,75–0,95 de son temps de Heisenberg.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf">Document 39</a>.</p>
+</template>
+<template id="t-rencontre3">
+  <p>RH, la simplicité des zéros et la répulsion se rencontrent dans un seul événement : la rencontre de deux zéros. À la fenêtre de Heisenberg, la marge locale de la métrique pour une paire d'écart normalisé s vaut exactement</p>
+  <p class="f">1 − (sin πs / πs)²</p>
+  <p>C'est la densité de corrélation de paires de Montgomery. Elle est nulle à la rencontre et négative pour une paire hors droite (identité élémentaire, démontrée ici).</p>
+  <h4>Mesuré</h4>
+  <p>Sur 1 070 zéros de ζ, il y a 4 marges sous 0,1, contre environ 13 attendues pour le GUE et 320 sans répulsion. Le coefficient β de Q est lisse à 95 % ; sa part d'écart suit 1/s² et compte les paires serrées. La paire de Lehmer près de 7 005 a une marge de 0,006 et pèse environ mille fois la médiane dans cette part.</p>
+  <h4>Croisements</h4>
+  <p>L'indicateur a désormais une dimension « Croiser » et une carte des croisements, avec ses zones d'ombre (degré 2 contre simplicité, répulsion et de Bruijn–Newman ; pendants manquants dans le Modèle réduit).</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf">Document 40</a> · <a class="doclink" href="1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateur, carte des croisements</a>.</p>
+</template>
+<template id="t-rencontre2">
+  <p>En degré 2, la rencontre a lieu deux fois : entre les zéros, et entre les deux racines α_p, β_p de chaque premier. Un instrument nouveau, le Contour tourné, calcule 2 139 zéros de L(Δ, s) jusqu'à 1 500 en double précision (accord 10⁻¹³ avec le calcul en haute précision, liste complète par la méthode de Turing).</p>
+  <h4>Démontré</h4>
+  <p>À la fenêtre N, la marge totale de la métrique est la densité de Weyl des matrices unitaires, et la marge d'une paire leur corrélation de paires. Pour une paire conjuguée, la marge vaut sin²θ : c'est (π/2) fois la densité de Sato–Tate. Aux premiers de Δ, les trois problèmes sont des théorèmes : positivité (Deligne), non-collision (arithmétique), répulsion (Sato–Tate).</p>
+  <h4>Mesuré</h4>
+  <p>Les zéros de Δ se repoussent (8 marges sous 0,1, contre 26 pour le GUE et 641 sans répulsion), avec le même déficit à basse hauteur que ζ. ζ·L(s, χ₅) superpose deux familles étrangères : 15 % de petites marges, toutes mixtes. Dans le Modèle réduit, Sato–Tate sur 561 258 courbes à l'étage 1 ; à l'étage 2, des collisions exactement aux courbes supersingulières, avec RH vraie.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf">Document 41</a> · <a class="doclink" href="1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateur, carte des croisements</a>.</p>
+</template>
+<template id="t-sources">
+  <p>Chaque article cité par le corpus a une fiche : bibliographie, lien vers le résumé, ce qui a été vérifié et quand, un extrait court, l'usage qu'en fait le corpus et un verdict. Sa couleur dit son intérêt : appui, à confronter, contexte ou outil. Il apparaît en pastille dans la carte des croisements. Les citations restent écrites dans le texte ; une clé entre crochets renvoie à la fiche.</p>
+  <p>Les lectures prioritaires deviennent des coups « lecture » du navigateur. Les pistes proposées par OpenAI au cours du travail ont été inventoriées : 27 pistes, 18 explorées, 7 nouveaux coups.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/42_REGISTRE_DES_SOURCES.pdf">Document 42</a> · <a class="doclink" href="1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf">Cheminement intellectuel</a>.</p>
+</template>
+<template id="t-prochain">
+  <p>Choisi par le navigateur (score 2,50) : « Plusieurs bouchons », une piste proposée par OpenAI et jamais lancée. Ajouter à W_N(1) = 0 les contraintes W_N(0) = −2 et W'_N(1) = 1 change-t-il le palier e² log N/κ ? Thèse : le gain s'annule quand N croît. Ensuite : la Loi de la marge en genre 2, l'Archipel en degré 2, et trois lectures prioritaires (Weil 1948, Hamburger 1921, Beurling 1955).</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur de recherche</a>.</p>
+</template>
+
+<template id="t-indicateur">
+  <p>Une échelle de maturité de 0 à 9 et six dimensions : voir, comprendre, situer, étendre au degré 2, démontrer et faire relire, la case vide. Chaque version y a son étape, ce qui a été franchi et un lien vers chaque document produit.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateur d'avancement</a>.</p>
+</template>
+
+<template id="t-navigateur">
+  <p>La démonstration comme itinéraire : la position est l'indicateur, la destination la case vide, les manœuvres sont les métaphores du registre prises comme opérateurs avec leur garde. Chaque coup a sa thèse, son témoin contraire et sa réfutation, écrits avant le calcul.</p><p>La distance au but est le chaînon : finitude non nécessaire, traces et symétrie acquises, métrique manquante.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur de recherche</a> · <a class="doclink" href="1_Presentation/20_Registre_metaphores_V6.md">Registre des métaphores</a>.</p>
+</template>
+
+<template id="t-objet">
+  <p>Dans le Modèle réduit, la positivité de la métrique est imposée d'un coup, pour toutes les fenêtres, par la surface C×C (théorème de l'indice de Hodge). Pour ζ, aucun objet connu ne joue ce rôle : la positivité de Weil pour toutes les fenêtres est RH elle-même.</p><p>C'est la place que l'hypothèse de l'auteur réserve à « quelque chose de plus grand qui rend RH nécessaire ». Le navigateur la signale comme une route à construire, sans la classer.</p>
+  <p class="src"><strong>Sources.</strong> <a class="doclink" href="1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf">Document 32, §7</a> · <a class="doclink" href="1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf">Document 35, §6</a>.</p>
+</template>
+
+<script>
+(function(){
+  var dlg=document.getElementById('dlg'),dt=document.getElementById('dt'),ds=document.getElementById('ds'),ddesc=document.getElementById('ddesc'),db=document.getElementById('db'),last=null;
+  var labels={core:'Démontré, non relu',lit:'Littérature',neg:'Obstacle ou test négatif',low:'Diagnostic rétrogradé',cond:'Conditionnel / hypothèses fortes',act:'Action en attente',mes:'Mesuré, reproduit'};
+  function open(btn){
+    var t=document.getElementById('t-'+btn.getAttribute('data-k'));
+    if(!t)return;
+    last=btn;
+    dt.innerHTML=btn.querySelector('strong').innerHTML;
+    var desc=btn.querySelector('span'); ddesc.textContent=desc?desc.textContent:'';
+    var s=btn.getAttribute('data-s');
+    ds.textContent=labels[s]||'';
+    ds.setAttribute('data-s',s);
+    db.innerHTML='';
+    db.appendChild(t.content.cloneNode(true));
+    if(typeof dlg.showModal==='function'){dlg.showModal();}else{dlg.setAttribute('open','');}
+    db.scrollTop=0;
+  }
+  function close(){
+    if(typeof dlg.close==='function'){dlg.close();}else{dlg.removeAttribute('open');}
+  }
+  var nodes=document.querySelectorAll('.node');
+  for(var i=0;i<nodes.length;i++){nodes[i].addEventListener('click',function(){open(this);});}
+  document.getElementById('dc').addEventListener('click',close);
+  dlg.addEventListener('click',function(e){if(e.target===dlg)close();});
+  dlg.addEventListener('close',function(){if(last)last.focus();});
+})();
+</script>
+</body>
+</html>

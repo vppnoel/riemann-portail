@@ -1,0 +1,383 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>76 · Complément : signe et couverture</title><style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+
+body{max-width:1000px;margin:auto;padding:28px 24px;color:#153044;font:17px/1.65 system-ui,sans-serif;background:#f7f9fb}h1,h2{line-height:1.2}h1{font-size:36px}h2{margin-top:2em}a{color:#17608c}.topnav{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;border-bottom:1px solid #b4c7d5;padding-bottom:12px}img{max-width:100%;height:auto}math[display=block]{overflow-x:auto;padding:16px;font-size:1.1em}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd9e3}th{background:#eaf1f6}pre,code{overflow-wrap:anywhere}nav#TOC{font-size:15px}
+math[display="block"]{overflow-x:auto;max-width:100%;padding:8px 0}table{width:100%}</style><body><main class="wrap"><nav class="topnav" style="display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline" aria-label="Pages et ressources du programme"><a data-primary="portail" href="../00_PORTAIL.html">Portail</a><a data-primary="indicateur" href="../1_Presentation/31_INDICATEUR_D_AVANCEMENT.html">Indicateurs</a><a data-primary="navigateur" href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html">Navigateur</a><a data-primary="carte" href="../00_Carte_des_idees.html">Graphe des idées</a><a data-tool-link="bellman" href="../1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html#bellman">Bellman</a><details class="nav-documents" style="position:relative;border:0;margin:0;padding:0"><summary style="cursor:pointer;font:inherit;padding:0;color:inherit">Documents</summary><ul style="position:absolute;z-index:90;right:0;top:100%;min-width:225px;max-width:85vw;margin:8px 0 0;padding:10px 15px;list-style:none;border:1px solid var(--rule,#b9c7d3);border-radius:4px;background:var(--sheet,#fff);color:var(--ink,#14243a);box-shadow:0 4px 12px #0002"><li style="padding:6px 0"><a data-resource="atlas" href="../1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html#documents">Atlas des décisions (62) : documents</a></li><li style="padding:6px 0"><a data-resource="matrice" href="../1_Presentation/44_MATRICE_DES_THEORIES.html">Matrice visuelle des théories (44)</a></li><li style="padding:6px 0"><a data-resource="references-pdf" href="../1_Presentation/42_REGISTRE_DES_SOURCES.pdf">Registre des sources : PDF existant</a></li><li style="padding:6px 0"><a data-resource="references" href="../1_Presentation/42_REGISTRE_DES_SOURCES.html">Références globales</a></li><li style="padding:6px 0"><a data-resource="figures" href="../00_Liste_des_figures.html">Figures et images</a></li><li style="padding:6px 0"><a data-resource="articles" href="../00_PORTAIL.html#articles">Articles PDF / LaTeX</a></li><li style="padding:6px 0"><a data-resource="dossiers" href="../00_PORTAIL.html#documents">Catalogue : tous les fichiers et fiches</a></li></ul></details></nav><h1>Signe et couverture : le coup double</h1><p>Complément au document 76 · 15 octobre 2026</p><p><a href="76_COMPLEMENT_COUP_DOUBLE.pdf">PDF</a> · <a href="76_COMPLEMENT_COUP_DOUBLE.tex">LaTeX</a> · <a href="76_COMPLEMENT_COUP_DOUBLE.md">Texte source</a> · <a href="../3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py">Programme</a> · <a href="../3_Preuves_et_calculs/coup_double_20261015/resultats.json">Résultats</a> · <a href="../3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md">Confrontation</a></p><h1 id="ce-qui-change-dans-la-direction-de-recherche">1. Ce qui change
+dans la direction de recherche</h1>
+<p><strong>Le transfert de couverture existe déjà dans le corpus. Le
+mécanisme arithmétique qui fournirait le signe global reste
+ouvert.</strong> Le document 67, pont B3, construit un cœur dense en
+norme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mn>1</mn></msup><annotation encoding="application/x-tex">H^1</annotation></semantics></math>
+à support fixé et justifie le transfert d’une positivité établie sur
+toute la famille. Le document 76 donne des grammaires couvrantes :
+paquets traduits et deux filtres. Il serait inexact de remettre ces
+résultats à zéro.</p>
+<p>La proposition « trouver
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><mi>T</mi><mi>f</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Q(f)=\|Tf\|^2</annotation></semantics></math>
+» reçoit ici un opérateur candidat concret. Le résultat de cette passe
+est un contrat de travail vérifiable : établir une identité de Gram sur
+un cœur dense, puis employer une continuité obtenue indépendamment de
+cette identité. L’identité de Gram n’est pas prouvée ici.</p>
+<p>Ce complément conserve les numéros des documents, les identifiants
+des idées et les outils de pilotage. Il prolonge les fiches IDE-044
+(domaines), IDE-047 (Schur), IDE-050 (couverture), IDE-051 (signe) et
+IDE-052 (Weil). Les preuves ci-dessous sont des résultats auxiliaires,
+sans revendication de nouveauté et sans validation extérieure.</p>
+<h1 id="lopérateur-de-la-littérature-et-sa-garde-de-continuité">2.
+L’opérateur de la littérature et sa garde de continuité</h1>
+<p>[SuzH23] construit sans RH les fonctions
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝔖</mi><mi>t</mi></msub><mo>∈</mo><msup><mi>L</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>ℝ</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathfrak S_t\in L^2(\mathbb R)</annotation></semantics></math>
+et l’opérateur
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>f</mi><mo>=</mo><msup><mi>π</mi><mrow><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mover><msub><mi>𝒫</mi><mrow><mi>D</mi><mi>f</mi></mrow></msub><mo accent="true">̂</mo></mover><mo>,</mo><mspace width="2.0em"></mspace><mi>D</mi><mi>f</mi><mo>=</mo><mi>i</mi><mi>f</mi><mi>′</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+T f=\pi^{-1/2}\widehat{\mathcal P_{Df}},\qquad Df=if&#39;.
+</annotation></semantics></math> Les propositions 1.2–1.3 définissent ce
+candidat ; le théorème 1.4 rend l’identité
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>T</mi><mi>f</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mo stretchy="false" form="prefix">⟨</mo><mi>f</mi><mo>,</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">⟩</mo><mi>W</mi></msub></mrow><annotation encoding="application/x-tex">\|Tf\|_2^2=\langle f,f\rangle_W</annotation></semantics></math>
+sur tous les tests lisses compacts équivalente à RH. Le §3.2 établit
+aussi une borne uniforme de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><msub><mi>𝔖</mi><mi>t</mi></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\|\mathfrak S_t\|_2</annotation></semantics></math>
+sur chaque compact de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>.
+Nous utilisons ces résultats publiés comme entrées, sans redémontrer
+leur analyse complexe.</p>
+<p><strong>Convention.</strong> Nous notons
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">q(f,g)</annotation></semantics></math>
+la forme de Weil de cette référence, rendue antilinéaire en première
+variable. Sa valeur diagonale reste celle de la source. Le
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mi>W</mi></msub><annotation encoding="application/x-tex">Q_W</annotation></semantics></math>
+arithmétique du document 76 emploie sa propre convention Fourier et des
+moments polaires nuls. Avant tout calcul comparatif, il faut dériver
+leur concordance exacte à partir de la formule explicite, facteur de
+normalisation compris. Ce raccord n’est pas certifié numériquement dans
+cette passe.</p>
+<p><strong>Lemme A — Continuité indépendante de l’identité.</strong>
+Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">S&gt;0</annotation></semantics></math>,
+poser
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>S</mi></msub><mo>=</mo><munder><mo>sup</mo><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>t</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mi>S</mi></mrow></munder><mo stretchy="false" form="postfix">∥</mo><msub><mi>𝔖</mi><mi>t</mi></msub><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>&lt;</mo><mi>∞</mi><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>C</mi><mi>S</mi></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mi>S</mi><mi>/</mi><mi>π</mi></mrow></msqrt><mspace width="0.167em"></mspace><msub><mi>M</mi><mi>S</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+M_S=\sup_{|t|\le S}\|\mathfrak S_t\|_2&lt;\infty,
+\qquad C_S=\sqrt{2S/\pi}\,M_S.
+</annotation></semantics></math> Alors, pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∈</mo><msubsup><mi>C</mi><mi>c</mi><mi>∞</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mo>−</mo><mi>S</mi><mo>,</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f\in C_c^\infty(-S,S)</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mo stretchy="false" form="postfix">∥</mo><mi>T</mi><mi>f</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><msub><mi>C</mi><mi>S</mi></msub><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><mi>′</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{\|Tf\|_2\le C_S\|f&#39;\|_2.}
+</annotation></semantics></math> <strong>Preuve.</strong> La formule
+intégrale de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>𝒫</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\widehat{\mathcal P}</annotation></semantics></math>
+donne
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>T</mi><mi>f</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mo>≤</mo><msup><mi>π</mi><mrow><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>S</mi></mrow><mi>S</mi></msubsup><mo stretchy="false" form="postfix">∥</mo><msubsup><mi>𝔖</mi><mi>t</mi><mi>♯</mi></msubsup><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><mi>f</mi><mi>′</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mspace width="0.167em"></mspace><mi>d</mi><mi>t</mi><mo>≤</mo><msup><mi>π</mi><mrow><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msub><mi>M</mi><mi>S</mi></msub><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><mi>′</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>1</mn></msub><mo>≤</mo><msub><mi>C</mi><mi>S</mi></msub><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><mi>′</mi><msub><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\|Tf\|_2\le\pi^{-1/2}\int_{-S}^{S}
+ \|\mathfrak S_t^\sharp\|_2|f&#39;(t)|\,dt
+\le\pi^{-1/2}M_S\|f&#39;\|_1
+\le C_S\|f&#39;\|_2.
+</annotation></semantics></math> Sur l’axe réel, la conjugaison
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>♯</mi><annotation encoding="application/x-tex">\sharp</annotation></semantics></math>
+préserve la norme. Minkowski puis Cauchy–Schwarz donnent les deux
+inégalités. L’opérateur s’étend donc par continuité à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>H</mi><mn>0</mn><mn>1</mn></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mo>−</mo><mi>S</mi><mo>,</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_0^1(-S,S)</annotation></semantics></math>.
+Les extensions pour supports emboîtés coïncident sur leur domaine
+commun, par densité et unicité. Aucune constante uniforme en
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+n’est nécessaire. Aucune positivité de Weil n’a été utilisée.</p>
+<p><strong>Portée.</strong> Ce lemme raccorde le candidat publié à la
+topologie de couverture du corpus. La constante est finie ; aucune
+valeur numérique certifiée de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>S</mi></msub><annotation encoding="application/x-tex">M_S</annotation></semantics></math>
+n’est fournie ici.</p>
+<h1 id="le-défaut-qui-porte-lobligation-globale">3. Le défaut qui porte
+l’obligation globale</h1>
+<p>Dans un espace
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>S</mi></msub><annotation encoding="application/x-tex">E_S</annotation></semantics></math>
+où
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+est continu en norme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mn>1</mn></msup><annotation encoding="application/x-tex">H^1</annotation></semantics></math>,
+définir
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔇</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mo stretchy="false" form="prefix">⟨</mo><mi>T</mi><mi>f</mi><mo>,</mo><mi>T</mi><mi>g</mi><msub><mo stretchy="false" form="postfix">⟩</mo><mn>2</mn></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>𝔇</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathfrak D(f,g)=q(f,g)-\langle Tf,Tg\rangle_2,
+\qquad d(f)=\mathfrak D(f,f).
+</annotation></semantics></math> On peut choisir le sous-espace à
+moments polaires nuls du document 67, après raccord des normalisations.
+Pour le critère publié sur tous les tests compacts, choisir le domaine
+de forme correspondant et sa continuité. Il faut déclarer lequel est
+employé ; ces choix ne se substituent pas silencieusement.</p>
+<p><strong>Lemme B — Identité sur un cœur, signe sur le
+domaine.</strong> Soient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>j</mi></msub><annotation encoding="application/x-tex">f_j</annotation></semantics></math>
+tels que l’union de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>n</mi></msub><mo>=</mo><msub><mo>span</mo><mi>ℂ</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V_n=\operatorname{span}_{\mathbb C}(f_1,\ldots,f_n)</annotation></semantics></math>
+soit dense dans
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>S</mi></msub><annotation encoding="application/x-tex">E_S</annotation></semantics></math>.
+Si
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔇</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>i</mi></msub><mo>,</mo><msub><mi>f</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">pour tous </mtext><mspace width="0.333em"></mspace></mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\mathfrak D(f_i,f_j)=0\quad\text{pour tous }i,j,
+</annotation></semantics></math> alors
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><mi>T</mi><mi>f</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q(f,f)=\|Tf\|_2^2\ge0</annotation></semantics></math>
+pour tout
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∈</mo><msub><mi>E</mi><mi>S</mi></msub></mrow><annotation encoding="application/x-tex">f\in E_S</annotation></semantics></math>.</p>
+<p><strong>Preuve.</strong> La sesquilinéarité donne la nullité sur
+chaque
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>n</mi></msub><mo>×</mo><msub><mi>V</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">V_n\times V_n</annotation></semantics></math>.
+Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>→</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_n\to f</annotation></semantics></math>
+dans
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mn>1</mn></msup><annotation encoding="application/x-tex">H^1</annotation></semantics></math>,
+la continuité de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+donne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo>,</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">q(f_n,f_n)\to q(f,f)</annotation></semantics></math>
+et le lemme A donne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><msub><mi>f</mi><mi>n</mi></msub><mo>→</mo><mi>T</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">Tf_n\to Tf</annotation></semantics></math>
+dans
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>2</mn></msup><annotation encoding="application/x-tex">L^2</annotation></semantics></math>.
+Passer à la limite dans l’identité prouve le résultat. Traiter chaque
+support entier
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">S\ge1</annotation></semantics></math>
+couvre tout test compact. Cette implication n’exige aucune minoration
+strictement positive uniforme.</p>
+<p><strong>Variante moins exigeante.</strong> Une factorisation exacte
+est suffisante, mais elle n’est pas nécessaire pour établir le signe.
+Si, pour tous
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mo>−</mo><msub><mi>ε</mi><mrow><mi>S</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false" form="postfix">∥</mo><mi>v</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><msup><mi>H</mi><mn>1</mn></msup><mn>2</mn></msubsup><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>∈</mo><msub><mi>V</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>ε</mi><mrow><mi>S</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>→</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
+q(v,v)\ge-\varepsilon_{S,n}\|v\|_{H^1}^2
+\quad(v\in V_n),\qquad\varepsilon_{S,n}\longrightarrow0,
+</annotation></semantics></math> le signe suit également. En effet, un
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><msub><mi>V</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">v\in V_m</annotation></semantics></math>
+appartient à tous les
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mi>n</mi></msub><annotation encoding="application/x-tex">V_n</annotation></semantics></math>
+ultérieurs ; sa norme reste fixe, puis la densité achève la preuve. Ce
+transfert était déjà présent dans le document 67. Il reste à produire
+l’estimation arithmétique pour tous les rangs.</p>
+<h1 id="pourquoi-il-faut-tester-les-mélanges">4. Pourquoi il faut tester
+les mélanges</h1>
+<p>Avec notre convention antilinéaire en première variable,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Re</mo><mi>𝔇</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>+</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>−</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>4</mn></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">
+\operatorname{Re}\mathfrak D(f,g)
+=\frac{d(f+g)-d(f-g)}4,
+</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>Im</mo><mi>𝔇</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac><mrow><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>+</mo><mi>i</mi><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>d</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo>−</mo><mi>i</mi><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mn>4</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\operatorname{Im}\mathfrak D(f,g)
+=-\frac{d(f+ig)-d(f-ig)}4.
+</annotation></semantics></math> Ces identités suivent en développant
+les quatre formes quadratiques. Elles déterminent exactement les
+couplages et leurs phases.</p>
+<p><strong>Contre-exemple réel.</strong> Pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">T=I</annotation></semantics></math>
+sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℂ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb C^2</annotation></semantics></math>
+et
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+Q=\begin{pmatrix}1&amp;2\\2&amp;1\end{pmatrix},
+</annotation></semantics></math> les deux vecteurs de base ont la bonne
+énergie, mais
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">q(1,-1)=-2</annotation></semantics></math>.
+Une vérification brique par brique échoue.</p>
+<p><strong>Contre-exemple complexe.</strong> Pour
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn><mi>i</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mo>−</mo><mn>2</mn><mi>i</mi></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">
+Q=\begin{pmatrix}1&amp;2i\\-2i&amp;1\end{pmatrix},
+</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><mi>x</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">q(x)=\|x\|^2</annotation></semantics></math>
+pour tout vecteur réel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+tandis que
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>,</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">q(1,i)=-2</annotation></semantics></math>.
+Même tous les tests réels ne valident pas une forme hermitienne
+arbitraire. Une symétrie particulière peut réduire les tests seulement
+après démonstration de cette symétrie.</p>
+<p>Ces deux matrices sont des contre-modèles abstraits de protocoles
+insuffisants ; elles ne sont pas des matrices de Weil. Pour l’opérateur
+exact de Suzuki, un défaut non nul démontré rigoureusement aurait une
+portée sur RH. Une différence flottante sans contrôle des intégrales,
+singularités apparentes et queues ne suffit pas.</p>
+<h1 id="la-brique-dassemblage-schur-sans-perdre-les-noyaux">5. La brique
+d’assemblage : Schur sans perdre les noyaux</h1>
+<p>Soit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≽</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M\succeq0</annotation></semantics></math>
+une matrice hermitienne,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+une colonne et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+un réel. Poser
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>M</mi><mo accent="true">̃</mo></mover><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>M</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msup><mi>b</mi><mo>*</mo></msup></mtd><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\widetilde M=\begin{pmatrix}M&amp;b\\b^*&amp;a\end{pmatrix}.
+</annotation></semantics></math> <strong>Lemme C.</strong> Avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>M</mi><mo>†</mo></msup><annotation encoding="application/x-tex">M^\dagger</annotation></semantics></math>
+la pseudo-inverse de Moore–Penrose,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>M</mi><mo accent="true">̃</mo></mover><mo>≽</mo><mn>0</mn><mo>⇔</mo><mi>b</mi><mo>∈</mo><mo>Ran</mo><mi>M</mi><mspace width="0.222em"></mspace><mtext mathvariant="normal">et</mtext><mspace width="0.222em"></mspace><mi>δ</mi><mo>=</mo><mi>a</mi><mo>−</mo><msup><mi>b</mi><mo>*</mo></msup><msup><mi>M</mi><mo>†</mo></msup><mi>b</mi><mo>≥</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\widetilde M\succeq0
+\iff b\in\operatorname{Ran}M\ \text{et}\
+\delta=a-b^*M^\dagger b\ge0.
+</annotation></semantics></math> <strong>Preuve.</strong> Si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>∈</mo><mo>ker</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">z\in\ker M</annotation></semantics></math>,
+la restriction à
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mi>z</mi><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(tz,1)</annotation></semantics></math>
+impose
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mo>*</mo></msup><mi>b</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z^*b=0</annotation></semantics></math>,
+sinon le terme linéaire prend des valeurs négatives arbitraires. Ainsi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⊥</mo><mo>ker</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">b\perp\ker M</annotation></semantics></math>,
+donc
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>∈</mo><mo>Ran</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">b\in\operatorname{Ran}M</annotation></semantics></math>.
+Sous cette condition, compléter le carré sur l’image donne
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mi>M</mi><mi>x</mi><mo>+</mo><mn>2</mn><mo>Re</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mo>*</mo></msup><mi>b</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>a</mi><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><msup><mi>M</mi><mo>†</mo></msup><mi>b</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>*</mo></msup><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><msup><mi>M</mi><mo>†</mo></msup><mi>b</mi><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>δ</mi><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>y</mi><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">
+x^*Mx+2\operatorname{Re}(x^*by)+a|y|^2
+=(x+M^\dagger by)^*M(x+M^\dagger by)+\delta|y|^2.
+</annotation></semantics></math> La nécessité et la suffisance
+suivent.</p>
+<p>Si
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><msup><mi>V</mi><mo>*</mo></msup><mi>V</mi></mrow><annotation encoding="application/x-tex">M=V^*V</annotation></semantics></math>,
+on garde les anciennes colonnes et on ajoute
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>V</mi><msup><mi>M</mi><mo>†</mo></msup><mi>b</mi><mo>+</mo><msqrt><mi>δ</mi></msqrt><mspace width="0.167em"></mspace><mi>e</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">
+w=VM^\dagger b+\sqrt\delta\,e,
+</annotation></semantics></math> où
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+est un vecteur unitaire orthogonal à toutes les anciennes colonnes. On
+obtient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>V</mi><mo>*</mo></msup><mi>w</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">V^*w=b</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">∥</mo><mi>w</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\|w\|^2=a</annotation></semantics></math>
+: la réalisation Gram est compatible avec l’étape précédente.</p>
+<p><strong>Usage et limite.</strong> Une règle arithmétique qui impose
+l’appartenance à l’image et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta\ge0</annotation></semantics></math>
+à tous les rangs ferait le coup double sur une famille couvrante. Le
+lemme ne fournit pas cette règle. Factoriser des matrices dont on
+connaît déjà le signe ne constitue pas une preuve supplémentaire de ce
+signe. La garde d’image reste indispensable lorsqu’un pivot
+s’annule.</p>
+<h1 id="deux-fausses-couvertures-écartées">6. Deux fausses couvertures
+écartées</h1>
+<p><strong>Mauvaise norme.</strong> Sur
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mi>c</mi><mi>∞</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_c^\infty(-1,1)</annotation></semantics></math>,
+poser
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">r(f)=\|f\|_2^2-|f(0)|^2</annotation></semantics></math>.
+Les fonctions nulles au voisinage de zéro sont denses dans
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>2</mn></msup><annotation encoding="application/x-tex">L^2</annotation></semantics></math>
+et y ont
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r\ge0</annotation></semantics></math>.
+Pourtant, pour une bosse
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\phi(0)=1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>η</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>/</mi><mi>η</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f_\eta(x)=\phi(x/\eta)</annotation></semantics></math>
+donne
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>η</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>η</mi><mo stretchy="false" form="postfix">∥</mo><mi>ϕ</mi><msubsup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><mn>1</mn><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r(f_\eta)=\eta\|\phi\|_2^2-1&lt;0</annotation></semantics></math>
+pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+petit. L’évaluation ponctuelle n’est pas continue en norme
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>2</mn></msup><annotation encoding="application/x-tex">L^2</annotation></semantics></math>
+; elle l’est en
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>H</mi><mn>1</mn></msup><annotation encoding="application/x-tex">H^1</annotation></semantics></math>
+en dimension un.</p>
+<p><strong>Norme qui s’échappe.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mo>−</mo><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">r(f)=-\|f\|^2</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>n</mi></mrow></msup><mo stretchy="false" form="postfix">∥</mo><mi>f</mi><msup><mo stretchy="false" form="postfix">∥</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R_n(f)=e^{2n}\|f\|^2</annotation></semantics></math>
+et
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>n</mi></msub><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\varepsilon_n=e^{-n}</annotation></semantics></math>
+satisfont
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><mo>−</mo><msub><mi>ε</mi><mi>n</mi></msub><msub><mi>R</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">r(f)\ge-\varepsilon_nR_n(f)</annotation></semantics></math>
+pour
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n\ge0</annotation></semantics></math>,
+avec
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>n</mi></msub><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon_n\to0</annotation></semantics></math>.
+Pourtant le signe reste négatif. Ce qui doit tendre vers zéro est le
+produit d’erreur pour chaque test fixé.</p>
+<h1 id="protocole-actif-critères-de-décision-et-portée">7. Protocole
+actif, critères de décision et portée</h1>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Produit exigé</th>
+<th>État de cette passe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Domaines et transfert</td>
+<td>Continuité indépendante de l’identité, cœur et exhaustion</td>
+<td>Lemme A établi à partir de la borne publiée ; transfert rappelé et
+prouvé</td>
+</tr>
+<tr class="even">
+<td>Normalisations</td>
+<td>Égalité exacte entre forme publiée et forme arithmétique du corpus
+sur le domaine choisi</td>
+<td>À dériver avant comparaison numérique</td>
+</tr>
+<tr class="odd">
+<td>Couplages</td>
+<td>Formule de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔇</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>i</mi></msub><mo>,</mo><msub><mi>f</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathfrak D(f_i,f_j)</annotation></semantics></math>
+à partir des vrais coefficients, avec phases complexes</td>
+<td>Obligation ouverte</td>
+</tr>
+<tr class="even">
+<td>Assemblage</td>
+<td>Garde d’image et dette de Schur pour toute la grammaire</td>
+<td>Lemme C prouvé ; règle arithmétique ouverte</td>
+</tr>
+<tr class="odd">
+<td>Calculs</td>
+<td>Contre-modèles, polarisation complexe, pivots singuliers</td>
+<td>Contrôles exacts exécutés par le programme joint</td>
+</tr>
+<tr class="even">
+<td>Conclusion RH</td>
+<td>Quantificateurs sur tous les rangs et supports, gardes
+satisfaites</td>
+<td>Non obtenue</td>
+</tr>
+</tbody>
+</table>
+<p>Le programme joint ne calcule pas l’opérateur de Suzuki sur les
+premiers : il vérifie exactement les identités algébriques et les pièges
+qui décideront de la validité d’un tel calcul. Il ne fournit aucun
+certificat numérique de RH.</p>
+<p><strong>Décision de recherche.</strong> Conserver l’identité de Gram
+comme cible structurée et l’inégalité à erreur évanescente comme
+alternative. Le prochain calcul utile doit exposer le défaut mixte avec
+ses conventions et ses bornes d’erreur. Une simple extension de plafond
+ou une série de normes positives n’apporterait pas ce renseignement.</p>
+<p>Le Bellman documentaire conserve ses coûts et ses scores : aucune
+probabilité de réussite n’est inventée. Ses investigations « couverture
+constructive », « dette duale » et « test de paquets » reçoivent les
+nouvelles pièces et les obligations précises. Les niveaux de progression
+restent inchangés : un raccord fonctionnel ne ferme pas le signe
+global.</p>
+<h1 id="références-et-pièces-reliées">Références et pièces reliées</h1>
+<ul>
+<li>[SuzH23] M. Suzuki, <em>On the Hilbert space derived from the Weil
+distribution</em>, arXiv:2301.00421, version consultée v3 ; propositions
+1.2–1.3, théorème 1.4, §3.2. <a
+href="https://arxiv.org/html/2301.00421v3">Texte</a> ; <a
+href="https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/on-the-hilbert-space-derived-from-the-weil-distribution/FD33EBD117A6B448053450DD8D62ADB6">publication</a>.
+Vérification ciblée le 15 octobre 2026.</li>
+<li>Document 67, <em>Construire des ponts avec Bellman</em>, ponts B2,
+B3, B5 : domaines, cœur et Schur.</li>
+<li>Document 76, <em>Weil : retrouver la piste du signe global</em>,
+§2.3–2.4 : grammaires couvrantes et rôle de l’arithmétique.</li>
+<li>Documents 78–79 : transport cohérent, compensations et obstructions
+aux résumés trop grossiers.</li>
+<li>Programme :
+<code>3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py</code>
+; résultats : <code>resultats.json</code> ; confrontation :
+<code>CONFRONTATION.md</code>.</li>
+</ul>
+</main></body></html>

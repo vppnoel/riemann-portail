@@ -1,0 +1,38 @@
+{
+  "scope": "Contrôles exacts de lemmes et contre-modèles abstraits; ni matrice de Weil ni évaluation de Suzuki.",
+  "checks": [
+    {
+      "test": "diagonales exactes mais mélange négatif",
+      "passed": true,
+      "value": "-2"
+    },
+    {
+      "test": "tous vecteurs réels corrects, phase complexe négative",
+      "passed": true,
+      "value": "-2"
+    },
+    {
+      "test": "polarisation complexe et convention",
+      "passed": true,
+      "value": "2*I"
+    },
+    {
+      "test": "garde image indispensable malgré dette positive",
+      "passed": true,
+      "value": "-3"
+    },
+    {
+      "test": "insertion Gram singulière compatible",
+      "passed": true,
+      "value": "Matrix([[1, 0, 1], [0, 0, 0], [1, 0, 2]])"
+    },
+    {
+      "test": "identité Schur rationnelle",
+      "passed": true,
+      "value": "0"
+    }
+  ],
+  "passed": 6,
+  "RH_proved": false,
+  "Suzuki_identity_proved": false
+}

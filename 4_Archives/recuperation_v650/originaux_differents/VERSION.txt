@@ -1,0 +1,325 @@
+Programme Riemann — V6.50
+
+Transport exact et cœur dense ; certificat local complet jusqu’à S=11/20 dans le modèle arithmétique déclaré. Positivité pour tous les supports ouverte.
+
+V6.50 (2026-10-13) : reconstruction après V6.49, transport exact et obligations vers RH.
+Transport exact et cœur dense ; certificat local complet jusqu’à S=11/20 dans le modèle arithmétique déclaré. Positivité pour tous les supports ouverte.
+
+Programme Riemann — V6.49
+Date:2026-10-13
+Coût multi-premiers exact ; paiement joint D/V certifié avec multiplicité. À S=1 : alpha<0,796 contre somme séparée>1,24. Positivité complète inchangée jusqu’à1/2 ; extension à0,55 exploratoire seulement. Transport des supports et sources fortes de Q ouverts.
+
+Historique conservé :
+Programme Riemann — V6.48
+Date:2026-10-13
+Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.
+
+Historique conservé :
+Programme Riemann — V6.47
+Date: 2026-10-13
+Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.
+
+Historique conservé :
+Programme Riemann — V6.46
+Date: 2026-10-12
+Certificat complet sur tout X_S pour 0<S≤347/1000, premier2 présent : Q_W≥masse/25 et R/200. Projection commune aux sources/fréquences, couches par parité et coût de bord assemblés. Supports plus grands, sources des têtes et transport non borné restent ouverts.
+
+Historique conservé :
+Programme Riemann — V6.45
+Date: 2026-10-12
+Annulation polaire et identité de fluctuation de Chebyshev démontrées ; modèle continu négatif pour tout S≥16 ; moments finis insuffisants pour réduire la norme première L² ; queue resserrée et dette de Schur bornée par résidus de sources. Sources/tête certifiées et signe pour tous supports restent ouverts.
+
+Historique conservé :
+Programme Riemann — V6.44
+Date: 2026-10-12
+P et métrique exacte, famille dense, no-go de marge H¹, représentation I−compact, queue effective et arithmétique graduée des jets démontrés. 16 compressions arithmétiques positives numériquement ; signe du Schur pour tous supports ouvert.
+
+Historique conservé :
+Programme Riemann — V6.43
+Date: 2026-10-12
+Statut: ponts auxiliaires et Bellman de contrats
+Transport Beurling–translations, continuité de Weil dans H¹, cœur admissible, régularisation décalée et Schur démontrés. Bellman de contrats et de formes distingués ; estimation arithmétique de toute la famille encore ouverte.
+
+Historique conservé :
+Programme Riemann — V6.42
+Date: 2026-10-12
+Statut: un pli et sa paire validés par intervalles
+- Un pli V13 choisi certifié dans sa boîte ; contour continu de deux zéros pour tout le petit intervalle radial ; quatre boîtes uniformes, deux critiques avant et une paire hors droite après. Inégalité de Weil explicitée ; signe global ouvert.
+- Niveaux RH conservés ; prochaine phase à A fixé et compensation globale.
+
+Historique conservé :
+Programme Riemann — V6.41
+Date: 2026-10-12
+Statut: graphe, preuves auxiliaires et passages locaux exécutés
+- A prescrit : ellipse de faisabilité et fibres ; D constant à A=0 ; jets, 20 candidats de plis recoupés, six attribués, 18 blocs et 24 racines. Pont arithmétique global ouvert ; une perte coarse conservée.
+- Deux portes globales ouvertes ; niveaux RH conservés.
+
+Historique conservé :
+Programme Riemann — V6.40
+Date: 2026-10-12
+Statut: comparaison exacte V13 exécutée
+- 12 couples exacts : 8 détections plus précoces et 4 plus tardives à D élevé ; 24 racines recoupées à 80/110 chiffres de travail. Le signe se regroupe par ancre. Aucun ordre causal ou premier zéro certifié.
+- Suite : suivre les branches ; niveaux RH conservés.
+
+Historique conservé :
+Programme Riemann — V6.39
+Date:2026-10-12
+Statut:étape1 V13 démontrée
+- Faisabilité à A=cos(r)z_i, ancre/rayon identiques ; D différent.
+- Certificat rationnel indépendant et enclosures80/120 ; aucun zéro compté.
+- Prochaineétape : comparer les couples contrôlés.
+
+Historique conservé :
+Programme Riemann — V6.38
+Date:2026-10-12
+Statut:atlas documentaire et modèle de décision de Bellman
+- Couverture des 61 documents de présentation ; archive antérieure conservée.
+- Modèle fini conditionnel :972 configurations de contrôle,243 profils,4 budgets.
+- Aucun nouveau théorème RH ni expertise externe revendiqués.
+
+Historique conservé :
+Programme Riemann — V6.37
+Date: 2026-10-12
+Statut: expérience V13 appariée et relecture interne
+- 72 couples, 144 directions et 6 témoins ; A1 : 36/36 tardifs ; D : 25 précoces, 8 tardifs, 3 mêmes tranches.
+- Comptages stables à trois pas, 24 racines recoupées à 50 chiffres de travail.
+- Document 61, données et code ; suite : a(1) complexe exactement fixé.
+- Résultats descriptifs ; pas de certificat d’absence ni nouveau théorème RH.
+
+Historique conservé :
+Programme Riemann — V6.36
+Date: 2026-10-12
+Statut: audit d'instrument DUAL-LOCK / Résidu sombre
+Changements majeurs:
+- problème spectral généralisé M v = lambda G v ;
+- réconciliation mono-run des composantes ;
+- conditionnement de la base mesuré ;
+- cross-check indépendant Gauss-Legendre ciblé ;
+- retrait d'un faux mode négatif à T=176 ;
+- facteurs Résidu sombre recalculés dans la métrique de Gram ;
+- priorité suivante: audit des conventions de la formule explicite.
+
+V6.3b (2026-10-05) :
+- audit des conventions de la formule explicite : côté premiers = côté zéros (ζ : 5e-9 ; DH : <= 1,4e-6) ;
+- attribution : chaque direction négative DH = un quadruplet de zéros hors droite ;
+- correction : liste DH complète à 129 zéros (partenaires 1 - sigma ajoutés) ;
+- script run_explicit_formula_audit.py, données explicit_formula_audit/attribution.csv, tests test_explicit_formula_audit.py (2).
+
+V6.3c (2026-10-05) :
+- zéros de L(s, chi_5) (|t| <= 245) et audit du contrôle eulérien (premiers = zéros à 1e-8) ; zéro manquant détecté et corrigé ;
+- référence identifiée pour le doc 21 (arXiv:2607.24830, Suzuki arXiv:2606.09096) ;
+- formulation « certifié » corrigée (doc 22) ; registre des métaphores fusionné ; tests/run_all_tests.py ; 68 tests.
+
+V6.3d (2026-10-07) :
+- quatre coins : témoins F6 (sans produit d'Euler, zéros sur la droite) et E2 (produit d'Euler, zéros hors droite) ; verrou local et signe global indépendants ;
+- signal TOMO reconstruit à partir des zéros seuls (<= 1,1e-8) ; TOMO-2 expliqué, TOMO-3 brut clos ;
+- différences de zéros contre zéros de zeta : déficit 30 % (zeta), 17 % (L), 5 % (DH) ;
+- correction : deux zéros bas de DH manquaient (t = 5,0942 ; 8,9399) ; 130 zéros pour t <= 200,5 par le principe de l'argument ; listes jusqu'à |t| = 600 ;
+- 13 tests ajoutés (81 au total) ; 74 exécutés et réussis dans la session ; 7 tests de test_identities exigent mpmath (non installable dans la session) et n'ont pas été relancés.
+
+V6.3e (2026-10-07) :
+- idée hors cadre testée : demi-largeur du creux = 1 - beta (heuristique) ; profil sommé sur les zéros voisins : 0,53 (L, accord), 0,68-0,71 (zeta, désaccord), 0,63-0,67 (DH, bruité) pour 0,5 attendu ; test non concluant ;
+- doc 24 §7.4 ; scripts/run_dip_width_full.py et run_dip_width.py ; 2 tests ajoutés (83 au total ; 76 exécutés et réussis, 7 exigent mpmath).
+
+V6.3f (2026-10-08) :
+- zéros de zeta jusqu'à t = 1500 (1070 zéros, complétude contrôlée dans 75 bandes) ;
+- demi-largeur du creux par tranches de hauteur : zeta 0,73 -> 0,61 -> 0,60 -> 0,55 -> 0,51 (± 0,04) ; L 0,56 -> 0,49 ; attendu 0,5 ; le désaccord de zeta en V6.3e tenait aux basses hauteurs ;
+- 1 test ajouté (84 au total ; 77 exécutés et réussis, 7 exigent mpmath).
+
+V6.4 (2026-10-08) :
+- Atlas des métaphores reçu (document 25, renuméroté) ; son test prioritaire exécuté (document 26) ;
+- seuil tau_c : existe, unique (concavité), reproductible ; pas un invariant (fenêtre, dimension, largeur) ; tend vers 0 quand le support s'élargit ;
+- carte (tau, delta) = translation exacte de la courbe 1D ; le seuil suit les zéros hors droite, pas le produit d'Euler ;
+- 6 tests ajoutés (90 au total ; 83 exécutés et réussis, 7 exigent mpmath).
+
+V6.4.1 (2026-10-08) :
+- mpmath 1.3.0 installé depuis un fichier fourni ; les 7 tests en attente passent ; 93 tests sur 93 exécutés et réussis (sympy absent : factorint remplacé par divisions successives pour test_identities) ;
+- recoupement par mpmath de l'évaluateur maison et des listes de zéros (zeta, L(chi5), DH) ; aucun résultat modifié.
+
+V6.5 (2026-10-08) :
+- famille modulo 7 à équation fonctionnelle constante, produit d'Euler seulement en theta = 0 (document 27) ;
+- 958 zéros jusqu'à t = 1000 : tous sur la droite seulement pour theta dans [-0,0096 ; +0,072], plage qui se referme avec la hauteur ;
+- sorties de la droite par rencontres de paires (loi en racine, seuil lié à l'écart, danger surtout côté theta < 0) ;
+- empreinte de zeta maximale au point d'Euler (12,4 %) ;
+- 8 tests ajoutés (101 au total, tous exécutés et réussis ; sympy absent, factorint remplacé pour test_identities).
+
+V6.5.1 (2026-10-08) :
+- document 27 §8 : ce qui rend une RH nécessaire dans les cas démontrés (positivité sur un objet plus grand) ;
+- famille modulo 7 : zéros à droite de Re s = 1 : 0 au point d'Euler, 5 pour le sosie, 71 en theta = -0,5, 139 en theta = -1 ;
+- sympy 1.14.0 installé depuis un fichier fourni ; 103 tests sur 103 exécutés et réussis, sans remplacement.
+
+V6.6 (2026-10-08) :
+- le Modèle réduit (document 28) : courbes hyperelliptiques sur F_3, F_5, F_7, où RH est un théorème ;
+- 425 courbes : comptages recoupés à l'unité, positivité de Castelnuovo exacte jusqu'à l'étage 60 ;
+- 220 faux jumeaux entiers (équation fonctionnelle, produit d'Euler à comptages positifs, RH fausse), démasqués à un étage fini ;
+- marge de positivité qui s'annule le long de la tour, saturée exactement pour y^2 = x^5 + x^3 + 1 sur F_3 ;
+- 7 tests ajoutés (110 au total, tous exécutés et réussis).
+
+V6.7 (2026-10-08) :
+- STABILITY-RADIUS (document 29) : marge de la forme contre marge de l'objet ;
+- Modèle réduit (525 courbes, genre <= 12) : forme exactement singulière au-delà de 2g ; loi d'inertie à la fenêtre 2g ; marge de l'objet positive, fixée par la paire la plus serrée, nulle pour les zéros confondus ;
+- zeta, L, DH, F6, E2 : loi de rang commune aux objets à zéros sur la droite (F6 compris) ;
+- L(s, chi_5) -> DH : quatre seuils d'objet fixes ; correctif au document 26 (décroissance du seuil de la forme vraie à 85,7 seulement) ;
+- Gram en forme close ; 8 tests ajoutés (118 au total, tous exécutés et réussis).
+
+V6.8 (2026-10-09) :
+- L'Archipel d'Euler (document 30) : espaces V_q de combinaisons de L(s, chi) à équation fonctionnelle commune ;
+- démontré : rigidité au premier ordre ; avec Saias–Weingartner, RH (ou seulement l'absence de zéro dans Re s > 1) implique le produit d'Euler dans V_q ;
+- mesuré : 27 îles autour des points d'Euler, rayon médian 0,091 (|t| <= 25) -> 0,008 (|t| <= 300), pente -0,77 ; sorties par les paires les plus serrées ;
+- hors des points d'Euler : dizaines de zéros dans Re s > 1 dès |t| <= 300 ;
+- 6 tests ajoutés (124 au total, tous exécutés et réussis).
+
+V6.8.1 (2026-10-09) :
+- indicateur d'avancement (document 31) : échelle 0–9, six dimensions, 14 étapes de v1 à V6.8 avec liens vers les documents ;
+- données et générateur dans 2_Methode/Indicateur ; mise à jour à chaque version ;
+- 1 test ajouté (125 au total, tous exécutés et réussis).
+
+V6.9 (2026-10-09) :
+- Le chaînon (document 32) : F = q^D ; zéros = spectre du générateur D, période 2 pi i / log q ;
+- reconstruction GNS/Krylov depuis les seuls comptages : 524 courbes (unitaire, Gram >= 0), 220 faux jumeaux (opérateur et symétrie reconstruits, Gram indéfini, négatifs = hors cercle / 2), 5 objets à zéros confondus (un axe par zéro distinct ; multiplicité = masse) ;
+- spectre des longueurs lu dans les zéros : zeta (pics aux log p^k, écart 0,045), L(chi_5) (0,006), DH (45,6 % du signal aux longueurs composites), courbes (réseaux n log q) ;
+- lecture : ce qui manque pour zeta est la métrique, pas l'opérateur ; indicateur : étape V6.9 ;
+- 4 tests ajoutés (129 au total, tous exécutés et réussis).
+
+V6.10 (2026-10-10) :
+- Le générateur des premiers (document 33) : opérateur de translation de zeta reconstruit avec les seuls nombres premiers ; 226 zéros (premiers <= 439), 284 (<= 23 862) ; masses 1 ; aucune fausse détection dans la fenêtre principale ;
+- métrique depuis les premiers : positive pour zeta et L(chi_5) ; DH : 2 directions négatives par quadruplet hors droite, attribution exacte sur 5 fenêtres ;
+- navigateur de recherche (document 34, prototype) : position = indicateur, opérateurs = registre, coups classés ;
+- suite 2 (la base comme pas de temps) : calculs faits, rédaction à venir ;
+- indicateur : case vide 3 -> 4 ; 5 tests ajoutés (134 au total, tous exécutés et réussis).
+
+V6.11 (2026-10-10) :
+- La base comme pas de temps (document 35) : D intrinsèque (525 courbes) ; métrique conservée sur F_q² ; la descente efface un signe par facteur irréductible ;
+- zeta, L, DH : à nombres premiers fixés, un pas grossier noie les directions négatives de DH (10 -> 0) ; à N fixé, elles restent ;
+- navigateur : distance au but (chaînon) et pré-enregistrement ; prochain coup : la métrique des premiers, plus haut ;
+- ménage des copies redondantes ; 3 tests ajoutés (137 au total, tous exécutés et réussis).
+
+V6.11.1 (2026-10-10) :
+- portail 00_PORTAIL.html (page d'entrée générée) ; carte des idées mise à jour jusqu'à V6.11 ; barre de navigation commune ;
+- copie de publication en ligne (documents convertis en HTML, liens réécrits) ;
+- 2 tests ajoutés (139 au total, tous exécutés et réussis).
+
+V6.12 (2026-10-10) :
+- les trois idées rejetées en V4.3 relues (document 36) : innovations de Levinson (DH détecté avec les premiers <= 36 ; zeta et L positives), fantôme pesé (masse 1,3e-9), Théorème A au rayon spectral (DH 0,308517) ;
+- priorités refaites par le navigateur (loi de seuil, métrique plus haut, île vue par les premiers, relecture, Lehmer, degré 2 revu à 2,5) ;
+- 2 tests ajoutés (141 au total, tous exécutés et réussis).
+
+V6.13 (2026-10-10) :
+- pré-relecture interne (document 37) : trois relectures indépendantes, en parallèle, des Théorèmes A et B et de la note sur l'Archipel ; aucune erreur dans A ni B ; une phrase fausse corrigée dans la note 30 (§3.1) ;
+- nouveauté située : A et B suivent des méthodes standard ; le corollaire de l'Archipel est un cas particulier de Saias–Weingartner (Booker–Thorne en degré 2) ; corollaire nouveau B′ (sous RH, constante 4κ/3 ⟺ zéros simples), à faire vérifier ;
+- dossier envoyable en anglais : 1_Presentation/relecture/ ; correctifs dans LEMMES_RIGOUREUX (ε/4) et ALPHA_BETA_ANALYSE (α ≈ −0,3074) ;
+- 3 tests ajoutés (144 au total, tous exécutés et réussis).
+
+V6.14 (2026-10-10) :
+- la loi de seuil (document 38) : un quadruplet hors droite s'entend au temps de Heisenberg de sa hauteur, log(q gamma0 / 2 pi), avec les premiers jusqu'au conducteur analytique ; 0,95–1,08 pour zeta et L, 0,80–0,89 pour DH ; prévision écrite avant les tests (3 sur 4 tenues) ;
+- correction de la V6.12 : seuils lus sur les valeurs propres ; quatre seuils par quadruplet étaient du bruit ; la détection principale de DH tient (3,53) ;
+- lemme d'inertie exact ; précision étendue (80 chiffres) ;
+- 3 tests ajoutés, 1 mis à jour (147 au total, tous exécutés et réussis).
+
+V6.15 (2026-10-10) :
+- degré 2 (document 39) : L(Δ, s) de Ramanujan reconstruite depuis les tau(n) exacts ; zéros à 1,2e-9 des zéros calculés sans les premiers ; la loi de seuil y double (L_c/Omega = 1,02–1,05) : la longueur d'écoute est le poids archimédien ;
+- recensement : la métrique des premiers de DH (premiers <= 1 370) a 50 directions négatives, attribuées à 25 quadruplets hors droite jusqu'à 1 464 (dont 4 repliés) ; L et zeta : aucune ; zéros de DH calculés de 600 à 1 700 ;
+- prévisions écrites avant le calcul : 3 tenues, 2 à une exception près, 1 fausse dans sa lettre ;
+- 4 tests ajoutés (151 au total, tous exécutés et réussis).
+
+V6.16 (2026-10-10) :
+- la Rencontre à trois (document 40) : marge locale de la métrique à la fenêtre de Heisenberg = 1 − sinc²(pi s) = corrélation de paires de Montgomery ; 1 070 zéros de zeta : 4 marges < 0,1 (GUE 13, Poisson 320) ; beta lisse à 95 %, part d'écart en 1/s² ; paire de Lehmer : marge 0,006 ;
+- prévisions écrites avant le calcul : 1 tenue, 1 qualitative, 2 fausses (beta entier), 1 à moitié ;
+- indicateur : dimension « Croiser » (rétroactive), carte des croisements et zones d'ombre ; navigateur : règles du croisement, de la veille rétrospective et du pendant ;
+- 3 tests ajoutés (154 au total, tous exécutés et réussis).
+
+V6.17 (2026-10-10) :
+- la Rencontre en degré 2 (document 41) : Contour tourné (rotation du contour de Mellin, double précision) ; 2 139 zéros de L(Delta, s) jusqu'à 1 500 ; répulsion (8 marges < 0,1 ; GUE 26 ; Poisson 641) avec le même déficit que zeta ; zeta·L(chi5) : 15 % de petites marges, toutes mixtes ; premiers de Delta : marge sin^2 theta_p, Sato–Tate ; Modèle réduit : marge = densité de Weyl, Sato–Tate sur 561 258 courbes, collisions de l'étage 2 = supersingulières ;
+- correctif V6.15 : 196 zéros de L(Delta, s) jusqu'à 232,08 (et non 189) ;
+- prévisions écrites avant le calcul : 3 tenues, 1 fausse, 1 tenue sauf une clause ;
+- 4 tests ajoutés (158 au total, tous exécutés et réussis).
+
+V6.18 (2026-10-10) :
+- registre des sources (document 42) : 132 fiches, 64 vérifiées en ligne, couleurs d'intérêt, liens, priorités ; 12 citations à corriger ; clés dans les documents ;
+- carte des croisements : colonne Modèle réduit, liens, pastilles de littérature ; navigateur : coups « lecture », pistes OpenAI ;
+- documents 01, 06, 07 mis à jour et mis en ligne.
+
+V6.18.1 (2026-10-10) :
+- toutes les références citées au registre (139 puis 149 fiches, dont les sources d'OpenAI et des documents Word) et au format uniforme ; section « Références » générée dans chaque document ; corrections dans le texte.
+
+V6.19 (2026-10-10) :
+- plan de recherche (document 43) : la marge d'un n-uplet est sa corrélation à n points du CUE(N) (démontré) ; triplets de zeta conformes au noyau sinus (chi² 1,34 ; Poisson 17,3) ; loi de superposition pour zeta·L(chi5) (chi² 0,87) ; sept axes avec prévisions ;
+- matrice d'équivalence et de force des théories (document 44) : 19 théories, à compléter ; 5 coups ajoutés au navigateur ; 150 fiches ;
+- 3 tests ajoutés (163 au total).
+
+V6.19.1 (2026-10-10) :
+- matrice des théories plus lisible : provenance en couleur (littérature, recalculé ici, éventuellement nouveau), liens vers les articles dans les en-têtes, cases déduites atténuées.
+
+V6.20 (2026-10-10) :
+- palier 4/3 recalculé jusqu'à 5·10⁶ (document 45) : médiane 0,985 × 4/3, compensation de trois facteurs, pics où A_N s'annule ; 14 résultats retrouvés puis reconnus, avec références ;
+- matrice : origine OpenAI, provenance « retrouvé », 22 théories ; plan adapté (axes H et I) ;
+- 3 tests ajoutés (167 au total).
+
+V6.21 (2026-10-10) :
+- axe J, la surface virtuelle (document 46) : indice de Hodge vérifié dans le Modèle réduit (425/425 courbes, 220/220 jumeaux), une seule direction positive pour ζ depuis les premiers, DH 2 puis 10 en trop ; axe J en tête du plan ;
+- 2 tests ajoutés (169 au total).
+
+V6.22 (2026-10-11) :
+- axe J2, le Riemann–Roch virtuel (document 47) : Clifford 0/220 jumeaux, Stepanov + tordu 220/220 ; lemme manquant pour ζ formulé (fonction auxiliaire, Frobenius absolu) ;
+- 2 tests ajoutés (171 au total).
+
+V6.23 (2026-10-11) :
+- axe J5 (document 48) : la fonction de Stepanov n'existe qu'avec le Frobenius ; identité et permutation échouent ; c'est l'inséparabilité qui compte ;
+- 2 tests ajoutés (173 au total).
+
+V6.24 (2026-10-11) :
+- analyse de risques, J3 simplifié, le même calcul que les deux tiers (document 49) ; documents 01, 06, 07 mis à jour ;
+- 2 tests ajoutés (175 au total).
+
+V6.25 (2026-10-11) :
+- audit du document reçu « Unités fictives » (document 50) : reproduit, exact, sans contrainte nouvelle (le bilan est une sommation par parties) ;
+- 1 test ajouté (176 au total).
+
+V6.26 (2026-10-11) :
+- J3b (document 51) : le Frobenius de caractéristique un ne fournit pas la fonction de Stepanov ; J3 écarté sous cette forme ; route de Weil, J6 ouvert.
+
+V6.27 (2026-10-11) :
+- J6 (document 52) : signature de la surface virtuelle robuste sur 180 réglages ; décompte de DH non invariant ;
+- 1 test ajouté (177 au total).
+
+V6.28 (2026-10-11) :
+- axe A (document 53) : modèle de taille effective invalide à basse hauteur ; trou à trois mesuré (ζ 0 pour 15,6) ;
+- 1 test ajouté (178 au total).
+
+V6.29 (2026-10-11) :
+- le trou à trois relu avec Bogomolny et al. dans leur domaine, et le rapport d'écarts de Nishigaki (document 54) : rigidité de forme, pas effet de taille finie ; les deux tiers sont un recensement de marges ; matrice : 11 cases sourcées ;
+- 1 test ajouté (179 au total).
+
+V6.30 (2026-10-11) :
+- articles présentables (document 55, dossier articles/) : article 1 (Théorèmes A, B, corollaire B′) et article 2 (forme de Weil côté premiers, témoin DH), LaTeX et PDF, lettre « Cher Professeur » ; correctif du seuil de DH (doc. 52) ;
+- 1 test ajouté (180 au total).
+
+V6.31 (2026-10-11) :
+- relief 3D de l'archipel (document 56) : un continent jusqu'à T = 144, trois îles dès 145 ; formules des théories en popup dans la matrice (MathML) ; liste des figures ; fichiers de publication (LICENSE MIT, CC BY 4.0, CITATION.cff, requirements.txt, .gitignore), README d'accueil bilingue ;
+- 1 test ajouté (181 au total).
+
+V6.32 (2026-10-11) :
+- accents des fichiers .md : marque UTF-8 (BOM) ajoutée, lecture « utf-8-sig » dans tous les scripts, outil 2_Methode/Outils/md_utf8_bom.py ;
+- 1 test ajouté (182 au total).
+
+V6.33 (2026-10-11) :
+- la force qui abaisse le relief (document 57) : défaut de multiplicativité, prévisions fausses ; après coup, ancrage par le premier coefficient a(1) ;
+- 1 test ajouté (183 au total).
+
+V6.34 (2026-10-12) :
+- document 58 : articles corrigés, critère conjoint RH–simplicité ; corrections de portée des docs 47, 51, 56 ;
+- relief V7 directement compté, six racines recoupées ; échantillon indépendant V11 : ancrage +0,815, prévision sur D fausse ;
+- lemme de rang des jets démontré, certificats exacts, optimisation et borne O(√p) ;
+- neuf tests ajoutés (192 au total), index et PDF régénérés.
+
+V6.35 (2026-10-12) :
+- document 59 : jets de Hasse sur F_p^n, même au-delà des factorielles inversibles ; borne uniforme 10√q ;
+- rationalité par Riemann–Roch vérifiée sans Hasse, puis modules √p, borne de Hasse et droite 1/2 de la zêta elliptique ;
+- cinq certificats exacts, douze comptages directs, relectures constructive et critique ;
+- dix tests ajoutés (202 au total), PDF, sources et indices mis à jour ; transfert à ζ ouvert.
+
+V6.36 (2026-10-12) :
+- document 60 : bilan éditorial et reprise du protocole ; troisième article expositif en LaTeX et PDF ;
+- corrections des articles 1 et 2 : exposant fini, conditions NB, pics sans conclusion asymptotique, tolérances et effectivité limitée au domaine testé ; édition de Milne (2021) corrigée ;
+- coup en norme sur DH : traces en intervalles, quadrature physique avec majorants, compression négative de dimension 25 ; au moins 25 directions, sans compte exact ;
+- six tests ajoutés (208 au total), sources et indices mis à jour.

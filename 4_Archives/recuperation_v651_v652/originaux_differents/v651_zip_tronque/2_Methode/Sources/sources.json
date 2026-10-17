@@ -1,0 +1,5613 @@
+[
+  {
+    "cle": "AF26",
+    "auteurs": "L. Alpöge, R. Furman",
+    "annee": 2026,
+    "titre": "More than two thirds of the zeros of the Riemann zeta function are simple and on the critical line",
+    "publication": "arXiv:2608.13637 (août 2026)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2608.13637",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv (v2, 19 août 2026), résumé.",
+    "extrait": "at least two thirds of the nontrivial zeros of the Riemann zeta function, counted with multiplicity, are simple",
+    "usage_corpus": "Plus des deux tiers des zéros sont simples et sur la droite ; au moins cinq sixièmes sont distincts.",
+    "verdict": "exact",
+    "motifs": [
+      "Alpöge–Furman (2026)",
+      "Alpöge–Furman"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Ais13",
+    "auteurs": "C. Aistleitner",
+    "annee": 2013,
+    "titre": "Metric number theory, lacunary series and systems of dilated functions",
+    "publication": "arXiv:1306.3315 (2013)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/1306.3315",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : source secondaire pour Franel–Landau ; titre identifié le 2026-10-10 sur arXiv (sommes de PGCD, fonctions dilatées).",
+    "extrait": "",
+    "usage_corpus": "Source secondaire : sommes de PGCD et intégrales de Franel.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md"
+    ],
+    "motifs": [
+      "1306.3315"
+    ],
+    "conjectures": [],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "ANS14",
+    "auteurs": "A. Akbary, N. Ng, M. Shahabi",
+    "annee": 2014,
+    "titre": "Limiting distributions of the classical error terms of prime number theory",
+    "publication": "Q. J. Math. (2014), volume et pages non vérifiés ; arXiv:1306.1657",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1306.1657",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_B_EN.md, References (V6.13), non revérifié : cadre général B² presque périodique : si φ(y) = c + Re Σ r_n e^{iλ_n y} + E(y), E → 0 en moyenne quadratique, alors (1/Y)∫φ² → c² + ½Σ|r_n|². Page arXiv revue le 2026-10-10 (pas de journal-ref affiché).",
+    "extrait": "",
+    "usage_corpus": "Cadre B² presque périodique qui pourrait redonner le Théorème B si la formule explicite tronquée est contrôlée en moyenne quadratique.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "Bae02",
+    "auteurs": "L. Báez-Duarte",
+    "annee": 2002,
+    "titre": "A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis, 2",
+    "publication": "arXiv:math/0205003 (2002)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/math/0205003",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-04",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT] (2026-10-04).",
+    "extrait": "",
+    "usage_corpus": "Seconde version du critère renforcé de Báez-Duarte.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "0205003"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Bae03",
+    "auteurs": "L. Báez-Duarte",
+    "annee": 2003,
+    "titre": "A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis",
+    "publication": "Atti Accad. Naz. Lincei Rend. Lincei Mat. Appl. (9) 14 (2003), 5–11 ; arXiv:math/0202141",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/math/0202141",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-04",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT] (2026-10-04) : renforcement aux dilatations entières ρ_k, k ≤ N ; forme Dirichlet de d_N.",
+    "extrait": "",
+    "usage_corpus": "Critère de Nyman–Beurling renforcé aux dilatations entières ; RH ⇔ d_N → 0.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "COMPARAISON_BCF.md",
+      "LEMMES_RIGOUREUX.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Báez-Duarte",
+      "0202141"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "Bae05",
+    "auteurs": "L. Báez-Duarte",
+    "annee": 2005,
+    "titre": "A general strong Nyman–Beurling criterion for the Riemann hypothesis",
+    "publication": "Publ. Inst. Math. (Beograd) (N.S.) 78(92) (2005), 117–125",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] par références croisées ; titre et pages donnés de mémoire, non revérifiés.",
+    "extrait": "",
+    "usage_corpus": "Version générale du critère renforcé de Báez-Duarte.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "COMPARAISON_BCF.md",
+      "LEMMES_RIGOUREUX.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Publ. Inst. Math. 78",
+      "Báez-Duarte",
+      "Publ. Inst. Math.* 78"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "BBLM06",
+    "auteurs": "E. Bogomolny, O. Bohigas, P. Leboeuf, A. G. Monastra",
+    "annee": 2006,
+    "titre": "On the spacing distribution of the Riemann zeros: corrections to the asymptotic result",
+    "publication": "J. Phys. A 39 (2006), 10743–10754 ; arXiv:math/0602270",
+    "lien": "https://arxiv.org/abs/math/0602270",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Résumé arXiv et texte (définition de Λ, terme correctif −sin²(πs)/(3N_eff²)). Revue et pages : non vérifiées.",
+    "extrait": "unitary random matrices of finite dimension N_eff = log(E/2π)/√(12Λ), where Λ = 1.57314 ... is a well defined constant",
+    "usage_corpus": "À basse hauteur, les écarts des zéros de ζ dévient du GUE comme ceux de matrices unitaires de taille N_eff. Doc. 54 : leur correction, prise dans son domaine (N ≥ 3), donne un déficit de triples serrés du bon sens mais trop faible ; à la taille effective de ζ (N_eff ≤ 1,26), elle sort de son domaine.",
+    "verdict": "exact",
+    "motifs": [
+      "Bogomolny, Bohigas, Leboeuf et Monastra (2006)",
+      "Bogomolny et al."
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "BBLS05",
+    "auteurs": "L. Báez-Duarte, M. Balazard, B. Landreau, É. Saias",
+    "annee": 2005,
+    "titre": "Étude de l'autocorrélation multiplicative de la fonction « partie fractionnaire »",
+    "publication": "Ramanujan J. 9 (2005), 215–240",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] titre et résumé ; SOURCES_RH_PROGRAMME.md le marque [À VÉRIFIER EN ENTIER]. Autocorrélation A(λ)=∫{λt}{t}t⁻²dt.",
+    "extrait": "",
+    "usage_corpus": "Autocorrélation multiplicative A(λ) de la partie fractionnaire ; comparaison avec les Gram gcd²/(12ab) ; borne inférieure améliorée ensuite par Burnol.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Báez-Duarte–Balazard",
+      "Autocorrélation multiplicative",
+      "autocorrélation multiplicative"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "BBM17",
+    "auteurs": "C. M. Bender, D. C. Brody, M. P. Müller",
+    "annee": 2017,
+    "titre": "Hamiltonian for the zeros of the Riemann zeta function",
+    "publication": "Phys. Rev. Lett. 118 (2017), 130201",
+    "type": "article",
+    "lien": "https://doi.org/10.1103/PhysRevLett.118.130201",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE ÉDITEUR] : construction non hermitienne / PT ; l'auto-adjointeté rigoureuse reste le point décisif. Co-auteurs Brody et Müller ajoutés de mémoire (le corpus écrit « et al. »).",
+    "extrait": "",
+    "usage_corpus": "Hamiltonien PT-symétrique dont les valeurs propres seraient les zéros ; à lire avec prudence (auto-adjointeté non établie).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Bender et al.",
+      "Bender"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "BCF13",
+    "auteurs": "S. Bettin, J. B. Conrey, D. W. Farmer",
+    "annee": 2013,
+    "titre": "An optimal choice of Dirichlet polynomials for the Nyman–Beurling criterion",
+    "publication": "Proc. Steklov Inst. Math. 280 (2013) ; arXiv:1211.5191",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1211.5191",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/REFERENCES.md (vérification du 2026-10-03), non revérifié : résumé arXiv, et marqué [LU EN ENTIER] dans SOURCES_RH_PROGRAMME.md : sous RH et Σ1/|ζ'(ρ)|² ≪ T^{3/2−δ}, d_N² ∼ (2+γ−log 4π)/log N.",
+    "extrait": "",
+    "usage_corpus": "Constante κ = 2+γ−log 4π de l'approximation de Báez-Duarte ; borne de Burnol ; condition de moment sur 1/|ζ'(ρ)|².",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "20_Registre_metaphores_V6.md",
+      "ALPHA_BETA_ANALYSE.md",
+      "ATTAQUE_JOURNAL.md",
+      "AUDIT_V4_3.md",
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "COMPARAISON_BCF.md",
+      "KNOWN_GAPS.md",
+      "NB_GRAM.md",
+      "PRIORITY_CHECK.md",
+      "Plan_d_impact.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "BCF",
+      "Bettin–Conrey–Farmer",
+      "1211.5191"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "09_Attaques_audit_et_amelioration.docx",
+      "10_Attaque2_resultats_N1000.docx",
+      "11_Estimation_sous_RH.docx"
+    ]
+  },
+  {
+    "cle": "Beu55",
+    "auteurs": "A. Beurling",
+    "annee": 1955,
+    "titre": "A closure problem related to the Riemann zeta-function",
+    "publication": "Proc. Natl. Acad. Sci. USA 41 (1955), 312–314",
+    "type": "article",
+    "lien": "https://www.pnas.org/doi/pdf/10.1073/pnas.41.5.312",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-12",
+    "ce_qui_a_ete_verifie": "Texte primaire PNAS 312–314 relu : espace admissible, semi-groupe, approximation de 1, transformée de Mellin, dualité et théorème 1953 cité. Le pont H¹ régularisé est une reconstruction démontrée du dossier 67.",
+    "extrait": "",
+    "usage_corpus": "Critère de Nyman–Beurling (moitié Beurling, cas Lᵖ).",
+    "verdict": "exact",
+    "correction": "La convergence L² du critère ne contrôle pas directement la forme de Weil sur H¹ ; domaine et régularisation sont nécessaires.",
+    "docs": [
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "15_TOMO_DH_formalisation.md",
+      "20_Registre_metaphores_V6.md",
+      "ARITHMETIC_SCHRODINGER_GENERATOR.md",
+      "ATTAQUE_JOURNAL.md",
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "COMPARAISON_BCF.md",
+      "KNOWN_GAPS.md",
+      "LEMMES_RIGOUREUX.md",
+      "MEMO_P2_2_WEIL.md",
+      "NB_GRAM.md",
+      "PLANTED_ERRORS.md",
+      "PRIORITES.md",
+      "README.md",
+      "REFEREE_A.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "REVIEW_PLAN.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md",
+      "67",
+      "68",
+      "69"
+    ],
+    "motifs": [
+      "Nyman–Beurling",
+      "Beurling 1955",
+      "Nyman-Beurling"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "01_Synthese_FR.docx",
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx",
+      "09_Attaques_audit_et_amelioration.docx",
+      "10_Attaque2_resultats_N1000.docx",
+      "12_Annulation_du_pole.docx",
+      "13_Lecon_2026.docx"
+    ]
+  },
+  {
+    "cle": "BGHT11",
+    "auteurs": "T. Barnet-Lamb, D. Geraghty, M. Harris, R. Taylor",
+    "annee": 2011,
+    "titre": "A family of Calabi–Yau varieties and potential automorphy II",
+    "publication": "Publ. RIMS 47 (2011), 29–98 ; DOI 10.2977/PRIMS/31",
+    "lien": "https://ems.press/journals/prims/articles/4468",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page de l'éditeur (EMS Press), résumé.",
+    "extrait": "This in turns proves the Sato–Tate conjecture for such forms (non-CM, holomorphic, cuspidal, elliptic modular newforms of weight greater than one).",
+    "usage_corpus": "La loi de Sato–Tate pour les angles de Satake de Δ est démontrée.",
+    "verdict": "exact",
+    "motifs": [
+      "Barnet-Lamb, Geraghty, Harris et Taylor (2011",
+      "BLGHT 2011"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC",
+      "D2"
+    ],
+    "dimensions": [
+      "degre2",
+      "croiser"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "BH95",
+    "auteurs": "E. Bombieri, D. A. Hejhal",
+    "annee": 1995,
+    "titre": "On the distribution of zeros of linear combinations of Euler products",
+    "publication": "Duke Math. J. 80 (1995), 821–862",
+    "lien": "https://arxiv.org/abs/0704.3448",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Résultat tel que résumé par S. M. Gonek (arXiv:0704.3448) ; article non lu, référence prise dans Booker–Thorne.",
+    "extrait": "100% of their zeros (in the sense of density) are on the line … the Riemann Hypothesis holds for each of the L-functions and their zeros satisfy a plausible spacing hypothesis (Gonek)",
+    "usage_corpus": "Les combinaisons de fonctions L à équation fonctionnelle commune : cadre naturel de l'Archipel ; la plage de survie devrait se refermer.",
+    "verdict": "imprécis",
+    "correction": "Bombieri–Hejhal montrent (sous RH pour chaque fonction et une hypothèse d'espacement) que 100 % des zéros, en densité, sont sur la droite ; la fermeture de la plage de survie n'en découle pas directement : elle reste une attente du corpus.",
+    "motifs": [
+      "Bombieri–Hejhal",
+      "Bombieri et Hejhal (1995)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "demontrer"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Bir68",
+    "auteurs": "B. J. Birch",
+    "annee": 1968,
+    "titre": "How the number of points of an elliptic curve over a fixed prime field varies",
+    "publication": "J. London Math. Soc. 43 (1968), 57–60",
+    "lien": "https://academic.oup.com/jlms/issue/s1-43/1",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Référence telle que citée par He–McLaughlin (arXiv:1901.00604) ; énoncé tel que résumé par Murty–Prabhu (arXiv:1906.03534).",
+    "extrait": "In 1968, Birch proved that the Sato-Tate conjecture holds for the family of elliptic curves (Murty–Prabhu).",
+    "usage_corpus": "Loi de Sato–Tate « verticale » : sur toutes les courbes y² = x³ + ax + b de F_p, les moments de a/√p tendent vers ceux de Sato–Tate.",
+    "verdict": "exact",
+    "motifs": [
+      "Birch (1968"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC",
+      "MR"
+    ],
+    "dimensions": [
+      "croiser"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "BK99a",
+    "auteurs": "M. V. Berry, J. P. Keating",
+    "annee": 1999,
+    "titre": "H = xp and the Riemann zeros",
+    "publication": "dans Supersymmetry and Trace Formulas: Chaos and Disorder (Kluwer, 1999) ; rapport HP Labs 97-27 (1997)",
+    "type": "article",
+    "lien": "",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE INSTITUTIONNELLE] : proposition semi-classique H = xp.",
+    "extrait": "",
+    "usage_corpus": "Hamiltonien semi-classique H = xp comme candidat de Hilbert–Pólya.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CHANGELOG.md",
+      "REFERENCES.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "H = xp",
+      "H=xp",
+      "Berry–Keating"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "BK99b",
+    "auteurs": "M. V. Berry, J. P. Keating",
+    "annee": 1999,
+    "titre": "The Riemann zeros and eigenvalue asymptotics",
+    "publication": "SIAM Review 41 (1999), 236–266 ; DOI 10.1137/S0036144598347497",
+    "type": "article",
+    "lien": "https://doi.org/10.1137/S0036144598347497",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE ÉDITEUR].",
+    "extrait": "",
+    "usage_corpus": "Analogie zéros / valeurs propres d'un système quantique chaotique.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Eigenvalue Asymptotics",
+      "S0036144598347497"
+    ],
+    "conjectures": [
+      "RH",
+      "PC"
+    ],
+    "dimensions": [
+      "comprendre",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "BL99",
+    "auteurs": "E. Bombieri, J. C. Lagarias",
+    "annee": 1999,
+    "titre": "Complements to Li's criterion for the Riemann hypothesis",
+    "publication": "J. Number Theory 77 (1999), no. 2, 274–287 ; DOI 10.1006/jnth.1999.2392",
+    "type": "article",
+    "lien": "https://doi.org/10.1006/jnth.1999.2392",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Bibliographie vérifiée le 2026-10-10 sur Wikipédia (« Li's criterion ») ; énoncé (la positivité de Li vaut pour tout multi-ensemble de points sur Re s = 1/2) d'après la même source secondaire.",
+    "extrait": "",
+    "usage_corpus": "Compléments au critère de Li (cité dans la bibliographie de l'article court).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "BM13",
+    "auteurs": "M. Balazard, B. Martin",
+    "annee": 2013,
+    "titre": "Sur l'autocorrélation multiplicative de la fonction « partie fractionnaire » et une fonction définie par J. R. Wilton",
+    "publication": "arXiv:1305.4395 (2013)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/1305.4395",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] titre/résumé ; revu le 2026-10-10 sur la page arXiv : points de dérivabilité de l'autocorrélation multiplicative, fonction de Wilton.",
+    "extrait": "",
+    "usage_corpus": "Autocorrélation multiplicative A(λ) de la partie fractionnaire.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "1305.4395",
+      "Balazard–Martin"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Boc32",
+    "auteurs": "S. Bochner",
+    "annee": 1932,
+    "titre": "Vorlesungen über Fouriersche Integrale",
+    "publication": "Akademische Verlagsgesellschaft, Leipzig, 1932",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Existence et date du livre vérifiées le 2026-10-10 (catalogue KIT ; compte rendu Bull. AMS 1933). Le théorème de Bochner (fonction continue de type positif ⇔ transformée de Fourier d'une mesure positive) est énoncé dans ce livre ; non relu dans l'original.",
+    "extrait": "",
+    "usage_corpus": "Théorème de Bochner : passage de Carathéodory–Toeplitz (discret) au continu ; positivité de la distribution des zéros ⇔ groupe unitaire (avec Stone).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md"
+    ],
+    "motifs": [
+      "Bochner"
+    ],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Bom00a",
+    "auteurs": "E. Bombieri",
+    "annee": 2000,
+    "titre": "Remarks on Weil's quadratic functional in the theory of prime numbers, I",
+    "publication": "Rend. Mat. Acc. Lincei (9) 11 (2000), 183–233",
+    "type": "article",
+    "lien": "",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PDF/PASSAGE FORMULE EXPLICITE] : formule explicite de Guinand–Weil avec fonctions tests. Données de revue (volume, pages) ajoutées de mémoire, non revérifiées.",
+    "extrait": "",
+    "usage_corpus": "Formule explicite de Guinand–Weil formulée avec fonctions tests : parallèle rigoureux avec un banc de filtres ; fonctionnelle quadratique de Weil.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md"
+    ],
+    "motifs": [
+      "Weil's quadratic functional",
+      "Bombieri, *Remarks"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Bom73",
+    "auteurs": "E. Bombieri",
+    "annee": 1973,
+    "titre": "Counting points on curves over finite fields (d'après S. A. Stepanov)",
+    "publication": "Séminaire Bourbaki 1972/73, exp. 430, Lecture Notes in Math. 383, Springer, 1974, 234–241",
+    "type": "article",
+    "lien": "https://www.numdam.org/item/SB_1972-1973__15__234_0/",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Notice Numdam consultée le 2026-10-10 : auteur, titre, exp. 430, vol. 1972/73, pp. 234–241, Zbl 0307.14011. Contenu (preuve de RH pour les courbes sur F_q par la méthode de Stepanov et Riemann–Roch) connu par le titre et la littérature, non relu.",
+    "extrait": "",
+    "usage_corpus": "Voie Stepanov–Bombieri : fonction auxiliaire s'annulant à haut ordre sur C × C, Riemann–Roch.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "MEMO_P2_2_WEIL.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Stepanov–Bombieri",
+      "Bombieri–Stepanov"
+    ],
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre",
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "BPT22",
+    "auteurs": "R. P. Brent, D. J. Platt, T. S. Trudgian",
+    "annee": 2022,
+    "titre": "The mean square of the error term in the prime number theorem",
+    "publication": "J. Number Theory 238 (2022), 740–762 ; arXiv:2008.06140",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/2008.06140",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_A_EN.md §8 (V6.13), non revérifié : résumé et introduction : sous RH, limsup I(X)/X² ≤ 0,8603 ; inconditionnellement I(X)/X² ≥ 1/5374 et pas de limite ; éq. (18) §5.4 : ∫₁^X(ψ−x)²x⁻²dx ∼ c₁ log X, c₁ = Σ m_ρ/|ρ|² ≈ 0,046, attribué à Montgomery–Vaughan Thm 13.6.",
+    "extrait": "",
+    "usage_corpus": "Contexte moderne du théorème de Cramér ; le Théorème B en est l'analogue à pôle double (c₁ log X devient (S/3)(log X)³). Correction V6.13 : l'énoncé c·log X est de Cramér / Montgomery–Vaughan, pas de BPT.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "AUDIT_STATUS.md",
+      "CHANGELOG.md",
+      "PRIORITY_CHECK.md",
+      "README.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Brent–Platt–Trudgian"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_A_RESUME_FR.md",
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "BS00",
+    "auteurs": "M. Balazard, É. Saias",
+    "annee": 2000,
+    "titre": "The Nyman–Beurling equivalent form for the Riemann hypothesis",
+    "publication": "Expo. Math. 18 (2000), 131–138",
+    "type": "article",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [À VÉRIFIER EN ENTIER] ; non revérifié ici.",
+    "extrait": "",
+    "usage_corpus": "Exposé du critère de Nyman–Beurling.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Balazard–Saias",
+      "Expositiones Mathematicae 18"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "BS22",
+    "auteurs": "W. D. Banks, S. Sinha",
+    "annee": 2022,
+    "titre": "The Riemann Hypothesis via the generalized von Mangoldt function",
+    "publication": "arXiv:2209.11768 (v1 22 sept. 2022, v2 10 mars 2023)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2209.11768",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_A_EN.md §8 (V6.13), non revérifié : Thm 1.1/1.2 : RH ⇔ asymptotique de Σ_{n≤x} Λ^{*k}(n) n^{−iy} avec erreur O(x^{1/2}(x+|y|)^ε) ; Thm 1.3/1.4 pour Λ_k = μ∗log^k. Publication en revue non trouvée (page arXiv revue le 2026-10-10 : pas de journal-ref).",
+    "extrait": "",
+    "usage_corpus": "Voisin le plus proche du Théorème A : critères de RH par Λ_k et Λ^{*k} ; donne la direction RH ⇒ Q = X^{o(1)} ; pas de moyenne quadratique.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CHANGELOG.md",
+      "PRIORITY_CHECK.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Banks–Sinha",
+      "2209.11768"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_A_RESUME_FR.md",
+      "RELECTURE_THEOREME_B_EN.md"
+    ]
+  },
+  {
+    "cle": "BT14",
+    "auteurs": "A. R. Booker, F. Thorne",
+    "annee": 2014,
+    "titre": "Zeros of L-functions outside the critical strip",
+    "publication": "Algebra Number Theory 8 (2014), no. 9, 2027–2042 ; DOI 10.2140/ant.2014.8.2027 ; arXiv:1306.6362 ; correction ANT 8:9",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1306.6362",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_ARCHIPEL_EN.md §4 (V6.13), non revérifié : résumé, Thm 1.1, Thm 1.2, Remarques 2, 3, 5 vérifiés dans le texte intégral (ar5iv) ; correction MSP vérifiée (Lemme 2.1 affaibli, résultats principaux maintenus). Pages 2027–2042 ajoutées de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Analogue de degré 2 du Corollaire 3.4 de la note 30 : une forme de S₂₄(SL₂(ℤ)) sans zéro dans Re s > 25/2 est propre de Hecke (Thm 1.1) ; Thm 1.2 contient aussi le cas linéaire n = 1.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "30_ARCHIPEL_D_EULER.md",
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "CHANGELOG.md",
+      "README.md"
+    ],
+    "motifs": [
+      "Booker–Thorne"
+    ],
+    "conjectures": [
+      "RH",
+      "D2"
+    ],
+    "dimensions": [
+      "situer",
+      "degre2",
+      "case"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "RELECTURE_ARCHIPEL_EN.md",
+      "RELECTURE_ARCHIPEL_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "Bur02",
+    "auteurs": "J.-F. Burnol",
+    "annee": 2002,
+    "titre": "A lower bound in an approximation problem involving the zeros of the Riemann zeta function",
+    "publication": "Adv. Math. 170 (2002), 56–70 ; arXiv:math/0103058",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/math/0103058",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-04",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT] (2026-10-04). Revu le 2026-10-10 : le résumé améliore la borne inférieure de Báez-Duarte–Balazard–Landreau–Saias ; DOI 10.1006/aima.2001.2066 (Adv. Math.).",
+    "extrait": "",
+    "usage_corpus": "Borne inférieure liminf d_N² log N ≥ Σ m(ρ)²/|ρ|² dans le problème d'approximation de Nyman–Beurling.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "20_Registre_metaphores_V6.md",
+      "ATTAQUE_JOURNAL.md",
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "COMPARAISON_BCF.md",
+      "NB_GRAM.md",
+      "PRIORITY_CHECK.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Burnol",
+      "0103058"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "09_Attaques_audit_et_amelioration.docx",
+      "10_Attaque2_resultats_N1000.docx"
+    ]
+  },
+  {
+    "cle": "Bur99",
+    "auteurs": "J.-F. Burnol",
+    "annee": 1999,
+    "titre": "A note on Nyman's equivalent formulation of the Riemann Hypothesis",
+    "publication": "arXiv:math/9910055 (1999)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/math/9910055",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/REFERENCES.md (vérification du 2026-10-03), non revérifié : page arXiv.",
+    "extrait": "",
+    "usage_corpus": "Reformulation de Nyman–Beurling de RH, cadre du lien Q / Nyman–Beurling.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md"
+    ],
+    "motifs": [
+      "9910055",
+      "Nyman's equivalent"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "BXZ23",
+    "auteurs": "B. C. Berndt, L. Xie, A. Zaharescu",
+    "annee": 2023,
+    "titre": "Proofs of McIntosh's conjecture on Franel integrals and two generalizations",
+    "publication": "Adv. Math. (2023), DOI 10.1016/j.aim.2023.109041 ; arXiv:2211.06504",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/2211.06504",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : source secondaire pour Franel–Landau ; titre et auteurs identifiés le 2026-10-10 sur arXiv (le corpus ne donne que le numéro).",
+    "extrait": "",
+    "usage_corpus": "Source secondaire citant la formule de Franel–Landau (intégrales de Franel).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md"
+    ],
+    "motifs": [
+      "2211.06504"
+    ],
+    "conjectures": [],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Car11",
+    "auteurs": "C. Carathéodory",
+    "annee": 1911,
+    "titre": "Über den Variabilitätsbereich der Fourier'schen Konstanten von positiven harmonischen Funktionen",
+    "publication": "Rend. Circ. Mat. Palermo 32 (1911), 193–217 ; DOI 10.1007/BF03014795",
+    "type": "article",
+    "lien": "https://doi.org/10.1007/BF03014795",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Notice Zenodo consultée le 2026-10-10 : auteur, titre, 1911, DOI 10.1007/BF03014795 ; volume et pages donnés de mémoire. L'énoncé (caractérisation des suites de moments trigonométriques par la positivité des Toeplitz) n'a pas été relu dans l'original.",
+    "extrait": "",
+    "usage_corpus": "Théorème de Carathéodory–Toeplitz : positivité des matrices de Toeplitz de traces ⇔ mesure positive (reconstruction de type GNS, document 32).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md"
+    ],
+    "motifs": [
+      "Carathéodory–Toeplitz"
+    ],
+    "conjectures": [
+      "MR",
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "CCM25",
+    "auteurs": "A. Connes, C. Consani, H. Moscovici",
+    "annee": 2025,
+    "titre": "Zeta spectral triples",
+    "publication": "arXiv:2511.22755 (27 nov. 2025)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2511.22755",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "extrait": "We propose and investigate a strategy toward a proof of the Riemann Hypothesis based on a spectral realization of its non-trivial zeros.",
+    "usage_corpus": "Formes de Weil tronquées : positionnement de DUAL-LOCK.",
+    "verdict": "imprécis",
+    "correction": "Le titre est « Zeta spectral triples » ; le résumé parle d'une réalisation spectrale des zéros, pas explicitement de formes de Weil tronquées.",
+    "motifs": [
+      "Connes–Consani–Moscovici"
+    ],
+    "verifie_le": "2026-10-10",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "CG93",
+    "auteurs": "J. B. Conrey, A. Ghosh",
+    "annee": 1993,
+    "titre": "On the Selberg class of Dirichlet series: small degrees",
+    "publication": "Duke Math. J. 72 (1993), 673–693 ; DOI 10.1215/S0012-7094-93-07225-0 ; arXiv:math/9204217",
+    "lien": "https://arxiv.org/abs/math/9204217",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Page arXiv (titre, DOI) ; le résumé ne formule pas la classification des petits degrés.",
+    "usage_corpus": "Classement des petits degrés de la classe de Selberg (degré < 1).",
+    "verdict": "non vérifiable",
+    "motifs": [
+      "Conrey–Ghosh (1993)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Cla00",
+    "auteurs": "Clay Mathematics Institute",
+    "annee": 2000,
+    "titre": "Riemann Hypothesis (page du problème du millénaire)",
+    "publication": "Page officielle du Clay Mathematics Institute",
+    "type": "site",
+    "lien": "https://www.claymath.org/millennium/Riemann-Hypothesis/",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/REFERENCES.md (vérification du 2026-10-03), non revérifié : page officielle ; statut « non résolu ». Revu le 2026-10-10 : statut « Unsolved » ; la page renvoie à la description officielle d'E. Bombieri, « Problems of the Millennium: the Riemann Hypothesis » (2000), non ouverte.",
+    "extrait": "",
+    "usage_corpus": "Statut officiel de RH : non résolue.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md"
+    ],
+    "motifs": [
+      "claymath",
+      "Clay Mathematics",
+      "Clay"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "CM22",
+    "auteurs": "A. Connes, H. Moscovici",
+    "annee": 2022,
+    "titre": "The UV prolate spectrum matches the zeros of zeta",
+    "publication": "Proc. Natl. Acad. Sci. USA 119 (2022), e2123174119",
+    "type": "article",
+    "lien": "https://doi.org/10.1073/pnas.2123174119",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PMC/ABSTRACT] : le comportement ultraviolet d'un opérateur prolate auto-adjoint reproduit celui des carrés des zéros.",
+    "extrait": "",
+    "usage_corpus": "Opérateur prolate dont le spectre UV reproduit les zéros (piste Hilbert–Pólya).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md"
+    ],
+    "motifs": [
+      "prolate",
+      "Connes–Moscovici"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Con89",
+    "auteurs": "J. B. Conrey",
+    "annee": 1989,
+    "titre": "More than two fifths of the zeros of the Riemann zeta function are on the critical line",
+    "publication": "J. reine angew. Math. 399 (1989), 1–26 ; annonce : Bull. AMS 20 (1989), 79–81",
+    "lien": "https://www.ams.org/bull/1989-20-01/S0273-0979-1989-15704-2/",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Annonce au Bulletin de l'AMS (titre, revue) ; la simplicité de ces zéros est attestée par une source secondaire (X. Wu, arXiv:1206.3737, qui cite Conrey 1989 et Bui–Conrey–Young).",
+    "extrait": "Due to Levinson's method, it is known that more than two-fifths of the zeros are simple (X. Wu).",
+    "usage_corpus": "Plus de 40 % des zéros sont démontrés simples (et sur la droite).",
+    "verdict": "exact",
+    "motifs": [
+      "Conrey 1989",
+      "Conrey (1989)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Con99",
+    "auteurs": "A. Connes",
+    "annee": 1999,
+    "titre": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+    "publication": "Selecta Math. (N.S.) 5 (1999), 29–106 ; arXiv:math/9811068",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/math/9811068",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT] : zéros critiques comme spectre d'absorption ; zéros non critiques éventuels comme résonances.",
+    "extrait": "",
+    "usage_corpus": "Lecture spectrale des zéros comme spectre d'absorption (zéros non critiques = résonances).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CHANGELOG.md",
+      "REFERENCES.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md"
+    ],
+    "motifs": [
+      "9811068",
+      "spectre d'absorption"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case",
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Cra22",
+    "auteurs": "H. Cramér",
+    "annee": 1922,
+    "titre": "Ein Mittelwertsatz in der Primzahltheorie",
+    "publication": "Math. Z. 12 (1922), 147–153",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Bibliographie reprise de Brent–Platt–Trudgian [3] (relectures A et B : [memory/extract], article non lu). Recherche du 2026-10-10 : l'article n'a pas été localisé en ligne (deux recherches) ; l'énoncé (moyenne quadratique de ψ(x)−x sous RH, ∫₁^X(ψ−x)²x⁻²dx ∼ c log X) n'est connu que par BPT et Montgomery–Vaughan.",
+    "extrait": "",
+    "usage_corpus": "Source de la méthode du Théorème B : moyenne quadratique de ψ(x) − x sous RH (SOURCES : « classique — référence exacte à fixer »).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "AUDIT_STATUS.md",
+      "CHANGELOG.md",
+      "PRIORITY_CHECK.md"
+    ],
+    "motifs": [
+      "Cramér (1922",
+      "Mittelwertsatz",
+      "Cramér 1922"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer",
+      "demontrer"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_B_EN.md"
+    ]
+  },
+  {
+    "cle": "CvS25",
+    "auteurs": "A. Connes, W. D. van Suijlekom",
+    "annee": 2025,
+    "titre": "Quadratic forms, real zeros and echoes of the spectral action",
+    "publication": "arXiv:2511.23257 (28 nov. 2025)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2511.23257",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "usage_corpus": "Formes quadratiques tronquées, zéros réels : positionnement de DUAL-LOCK.",
+    "verdict": "exact",
+    "motifs": [
+      "Connes–van Suijlekom"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Dav00",
+    "auteurs": "H. Davenport",
+    "annee": 2000,
+    "titre": "Multiplicative Number Theory",
+    "publication": "3e éd., révisée par H. L. Montgomery, Grad. Texts in Math. 74, Springer, 2000",
+    "type": "livre",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_B_EN.md, References (V6.13), non revérifié : [memory] : ch. 12 (formule explicite).",
+    "extrait": "",
+    "usage_corpus": "Formule explicite (ch. 12).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_B_EN.md"
+    ]
+  },
+  {
+    "cle": "DeB50",
+    "auteurs": "N. G. de Bruijn",
+    "annee": 1950,
+    "titre": "The roots of trigonometric integrals",
+    "publication": "Duke Math. J. 17 (1950), 197–226",
+    "lien": "https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Newman_constant",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence via Wikipédia (constante de de Bruijn–Newman) ; borne Λ ≤ 1/2 lue dans le tableau historique.",
+    "usage_corpus": "Constante de de Bruijn–Newman (définition, borne supérieure).",
+    "verdict": "exact",
+    "motifs": [],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH",
+      "dBN"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Del71",
+    "auteurs": "P. Deligne",
+    "annee": 1971,
+    "titre": "Formes modulaires et représentations ℓ-adiques",
+    "publication": "Séminaire Bourbaki 1968/69, exposé 355, Lecture Notes in Math. 179, Springer (1971), 139–172",
+    "lien": "https://www.numdam.org/item/SB_1968-1969__11__139_0/",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Notice Numdam (bibliographie) ; Wikipédia : Deligne (1971) ramène la conjecture de Ramanujan–Petersson aux conjectures de Weil (isomorphisme d'Eichler–Shimura).",
+    "extrait": "Deligne (1971) used the Eichler–Shimura isomorphism to reduce this conjecture to the Weil conjectures (Wikipédia).",
+    "usage_corpus": "La borne de Ramanujan pour Δ est une conséquence de RH pour les variétés de Kuga–Sato sur les corps finis.",
+    "verdict": "exact",
+    "motifs": [
+      "Kuga–Sato"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "D2",
+      "MR"
+    ],
+    "dimensions": [
+      "degre2"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Del74",
+    "auteurs": "P. Deligne",
+    "annee": 1974,
+    "titre": "La conjecture de Weil. I",
+    "publication": "Publ. Math. IHÉS 43 (1974), 273–307 ; DOI 10.1007/BF02684373",
+    "lien": "https://www.numdam.org/item/PMIHES_1974__43__273_0/",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Notice Numdam (bibliographie) ; article « Ramanujan–Petersson conjecture » de Wikipédia : la borne de τ(n) découle de la preuve des conjectures de Weil (Deligne 1974).",
+    "extrait": "The third statement followed from the proof of the Weil conjectures (Wikipédia, Ramanujan–Petersson conjecture).",
+    "usage_corpus": "La borne de Ramanujan |τ(p)| ≤ 2p^{11/2} est un théorème de Deligne, conséquence de RH pour des variétés sur les corps finis.",
+    "verdict": "exact",
+    "motifs": [
+      "Deligne (1974)",
+      "borne de Deligne",
+      "Ramanujan–Deligne"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "D2",
+      "MR"
+    ],
+    "dimensions": [
+      "degre2",
+      "croiser"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "DH36a",
+    "auteurs": "H. Davenport, H. Heilbronn",
+    "annee": 1936,
+    "titre": "On the zeros of certain Dirichlet series",
+    "publication": "J. London Math. Soc. 11 (1936), no. 3, 181–185",
+    "type": "article",
+    "lien": "https://doi.org/10.1112/jlms/s1-11.3.181",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "SOURCES : [À VERIFIER EN ENTIER]. Le 2026-10-10 : la seconde partie est confirmée (JLMS, oct. 1936, DOI 10.1112/jlms/s1-11.4.307) ; pour la première, pages et DOI donnés de mémoire. Énoncé (zéros dans Re s > 1 pour certaines combinaisons, dont la fonction de Davenport–Heilbronn) connu par Pańkowski–Righetti et Saias–Weingartner, non lu dans l'original.",
+    "extrait": "",
+    "usage_corpus": "Témoin négatif du corpus : fonction de Davenport–Heilbronn (équation fonctionnelle de type Riemann, pas de produit d'Euler, zéros hors de la droite critique).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "08_Dimension_energie_fractale.md",
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "15_TOMO_DH_formalisation.md",
+      "16_DARK_ZETA_secteur_sombre_arithmetique.md",
+      "17_DARK_ZETA_premier_detecteur_resultats.md",
+      "18_PRIME_LOCK_premier_verrou_local.md",
+      "19_DUAL_LOCK_plan_local_global.md",
+      "20_Registre_metaphores_V6.md",
+      "21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md",
+      "22_AUDIT_V6_3A_INSTRUMENT_DUAL_LOCK.md",
+      "23_AUDIT_V6_3B_FORMULE_EXPLICITE.md",
+      "24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+      "26_SEUIL_TAU_C_TEST_DE_L_ATLAS.md",
+      "27_FAMILLE_MODULO_7_POINT_D_EULER.md",
+      "29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md",
+      "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+      "33_LE_GENERATEUR_DES_PREMIERS.md",
+      "ARITHMETIC_SCHRODINGER_GENERATOR.md",
+      "AUDIT_STATUS.md",
+      "AUDIT_V4_3.md",
+      "CHANGELOG.md",
+      "DAVENPORT_HEILBRONN_TEST.md",
+      "DUAL_LOCK_COMPRESSION.md",
+      "ENERGY_FRACTAL_DIMENSION.md",
+      "KNOWN_GAPS.md",
+      "PLANTED_ERRORS.md",
+      "PRIME_LOCK_DETECTOR.md",
+      "PRIORITES.md",
+      "README.md",
+      "REFEREE_SUMMARY.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md",
+      "SYNTHESIS_NOTE_EN.md",
+      "USER_CORRECTIONS_2026-10-04.md"
+    ],
+    "motifs": [
+      "Davenport–Heilbronn"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "croiser",
+      "voir"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "01_Synthese_FR.docx",
+      "02_Article_court_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx",
+      "09_Attaques_audit_et_amelioration.docx",
+      "RELECTURE_ARCHIPEL_EN.md"
+    ]
+  },
+  {
+    "cle": "DH36b",
+    "auteurs": "H. Davenport, H. Heilbronn",
+    "annee": 1936,
+    "titre": "On the zeros of certain Dirichlet series. II",
+    "publication": "J. London Math. Soc. 11 (1936), no. 4, 307–312",
+    "type": "article",
+    "lien": "https://doi.org/10.1112/jlms/s1-11.4.307",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Notice sugaku.net (OpenAlex) consultée le 2026-10-10 : titre, revue, date (1er oct. 1936) et DOI 10.1112/jlms/s1-11.4.307 ; auteurs et pages non affichés par la notice (pages déduites du DOI et de SOURCES_RH_PROGRAMME.md).",
+    "extrait": "",
+    "usage_corpus": "Seconde partie des travaux originaux sur les zéros de séries de Dirichlet sans produit d'Euler.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "08_Dimension_energie_fractale.md",
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "15_TOMO_DH_formalisation.md",
+      "16_DARK_ZETA_secteur_sombre_arithmetique.md",
+      "17_DARK_ZETA_premier_detecteur_resultats.md",
+      "18_PRIME_LOCK_premier_verrou_local.md",
+      "19_DUAL_LOCK_plan_local_global.md",
+      "20_Registre_metaphores_V6.md",
+      "21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md",
+      "22_AUDIT_V6_3A_INSTRUMENT_DUAL_LOCK.md",
+      "23_AUDIT_V6_3B_FORMULE_EXPLICITE.md",
+      "24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+      "26_SEUIL_TAU_C_TEST_DE_L_ATLAS.md",
+      "27_FAMILLE_MODULO_7_POINT_D_EULER.md",
+      "29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md",
+      "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+      "33_LE_GENERATEUR_DES_PREMIERS.md",
+      "ARITHMETIC_SCHRODINGER_GENERATOR.md",
+      "AUDIT_STATUS.md",
+      "AUDIT_V4_3.md",
+      "CHANGELOG.md",
+      "DAVENPORT_HEILBRONN_TEST.md",
+      "DUAL_LOCK_COMPRESSION.md",
+      "ENERGY_FRACTAL_DIMENSION.md",
+      "KNOWN_GAPS.md",
+      "PLANTED_ERRORS.md",
+      "PRIME_LOCK_DETECTOR.md",
+      "PRIORITES.md",
+      "README.md",
+      "REFEREE_SUMMARY.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md",
+      "SYNTHESIS_NOTE_EN.md",
+      "USER_CORRECTIONS_2026-10-04.md"
+    ],
+    "motifs": [
+      "Davenport–Heilbronn",
+      "Society (1936)"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "croiser"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "01_Synthese_FR.docx",
+      "02_Article_court_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx",
+      "09_Attaques_audit_et_amelioration.docx",
+      "RELECTURE_ARCHIPEL_EN.md"
+    ]
+  },
+  {
+    "cle": "DP20",
+    "auteurs": "M. K. Das, S. Pujahari",
+    "annee": 2020,
+    "titre": "Distribution of signs of Karatsuba's and generalized Davenport–Heilbronn Z-functions",
+    "publication": "J. Number Theory 212 (2020), 409–447 ; DOI 10.1016/j.jnt.2019.11.012",
+    "type": "article",
+    "lien": "https://doi.org/10.1016/j.jnt.2019.11.012",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-04",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT].",
+    "extrait": "",
+    "usage_corpus": "Fonctions Z de Davenport–Heilbronn généralisées (signes).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Das–Pujahari"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Dys09",
+    "auteurs": "F. J. Dyson",
+    "annee": 2009,
+    "titre": "Birds and frogs",
+    "publication": "Notices Amer. Math. Soc. 56 (2009), no. 2, 212–223",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Page de M. Watkins (Exeter) consultée le 2026-10-10 : citation « Notices of the AMS, février 2009 » et passage sur les quasi-cristaux ; volume et pages donnés de mémoire (la page indique 212–233, non recoupé).",
+    "extrait": "Let us try to obtain a complete enumeration and classification of one-dimensional quasi-crystals.",
+    "usage_corpus": "Programme de Dyson : classer les quasi-cristaux à une dimension pour atteindre RH (piste notée, non exécutée).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+      "CHANGELOG.md"
+    ],
+    "motifs": [
+      "programme de Dyson"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Dys62",
+    "auteurs": "F. J. Dyson",
+    "annee": 1962,
+    "titre": "Statistical theory of the energy levels of complex systems. I–III",
+    "publication": "J. Math. Phys. 3 (1962), 140–156, 157–165, 166–175",
+    "lien": "https://doi.org/10.1063/1.1703773",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie par notices secondaires ; forme du noyau du CUE de taille N, sin(N(θ−φ)/2)/sin((θ−φ)/2), et son attribution à Dyson, lues dans arXiv:2505.09865 (éq. 1.4).",
+    "extrait": "K_N^CUE(θ, φ) = (1/2π) sin(N(θ − φ)/2) / sin((θ − φ)/2) (arXiv:2505.09865, éq. 1.4)",
+    "usage_corpus": "La corrélation de paires du CUE de taille N est 1 − (sin πs/(N sin(πs/N)))².",
+    "verdict": "exact",
+    "motifs": [
+      "CUE, Dyson",
+      "Dyson (1962)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "croiser"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Ehm24",
+    "auteurs": "W. Ehm",
+    "annee": 2024,
+    "titre": "On certain Gram matrices and their associated series",
+    "publication": "arXiv:2405.06349 (2024)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2405.06349",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/REFERENCES.md (vérification du 2026-10-03), non revérifié : page arXiv.",
+    "extrait": "",
+    "usage_corpus": "Matrices de Gram associées aux séries de type Nyman–Beurling, comparées aux Gram gcd²/(12ab) du corpus.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md"
+    ],
+    "motifs": [
+      "Ehm",
+      "2405.06349"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Fel71",
+    "auteurs": "W. Feller",
+    "annee": 1971,
+    "titre": "An Introduction to Probability Theory and Its Applications, Vol. II",
+    "publication": "2e éd., Wiley, 1971",
+    "type": "livre",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_B_EN.md, References (V6.13), non revérifié : [memory] : XIII.5 (théorème taubérien) ; édition non précisée dans le corpus.",
+    "extrait": "",
+    "usage_corpus": "Théorème taubérien (Karamata) pour le Théorème B.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "RELECTURE_THEOREME_B_EN.md"
+    ]
+  },
+  {
+    "cle": "Fra24",
+    "auteurs": "J. Franel",
+    "annee": 1924,
+    "titre": "Les suites de Farey et le problème des nombres premiers",
+    "publication": "Nachr. Ges. Wiss. Göttingen, Math.-Phys. Kl. (1924), 198–201",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] via des sources secondaires (arXiv:2211.06504, 1306.3315, 2009.14070) : ∫₀¹((ax))((bx))dx = gcd(a,b)²/(12ab), formule de Franel démontrée par Landau. SOURCES_RH_PROGRAMME.md : [À VÉRIFIER SUR SOURCES PRIMAIRES] ; titre de l'article donné de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Formule ∫₀¹((ax))((bx))dx = gcd(a,b)²/(12ab) (covariance des dents de scie, L8).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "20_Registre_metaphores_V6.md",
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "LEMMES_RIGOUREUX.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Franel–Landau",
+      "Franel (1924",
+      "Franel 1924",
+      "Göttinger Nachrichten"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "demontrer"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "FZ15",
+    "auteurs": "K. Ford, A. Zaharescu",
+    "annee": 2015,
+    "titre": "Unnormalized differences between zeros of L-functions",
+    "publication": "Compositio Math. (DOI 10.1112/S0010437X14007659) ; arXiv:1305.2520",
+    "lien": "https://arxiv.org/abs/1305.2520",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé : différences non normalisées entre zéros ; l'explication du creux près des log p n'est pas formulée dans le résumé.",
+    "extrait": "we show how the rank of an elliptic curve over Q is encoded in the sequences of zeros of other L-functions",
+    "usage_corpus": "Le creux des différences de zéros est expliqué et étendu aux fonctions L.",
+    "verdict": "non vérifiable",
+    "motifs": [
+      "Ford et Zaharescu",
+      "Ford–Zaharescu"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Gar36",
+    "auteurs": "F. Garwood",
+    "annee": 1936,
+    "titre": "Fiducial limits for the Poisson distribution",
+    "publication": "Biometrika 28 (1936), 437–442",
+    "lien": "https://doi.org/10.1093/biomet/28.3-4.437",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Fac-similé de l'article (pages 437–441).",
+    "extrait": "the distribution of χ², with n degrees of freedom, has a probability integral",
+    "usage_corpus": "Intervalles de confiance à 95 % pour un comptage poissonnien.",
+    "verdict": "exact",
+    "motifs": [
+      "Garwood"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "GGL20",
+    "auteurs": "S. M. Gonek, S. W. Graham, Y. Lee",
+    "annee": 2020,
+    "titre": "The Lindelöf hypothesis for primes is equivalent to the Riemann hypothesis",
+    "publication": "Proc. Amer. Math. Soc. 148 (2020), 2863–2875",
+    "type": "article",
+    "lien": "https://doi.org/10.1090/proc/14974",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_A_EN.md §8 (V6.13), non revérifié : résumé : RH ⇔ borne uniforme des sommes tordues Σ Λ(n) n^{−it}.",
+    "extrait": "",
+    "usage_corpus": "Équivalence de RH par des sommes sur les premiers ; voisin du Théorème A.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "PRIORITY_CHECK.md"
+    ],
+    "motifs": [
+      "Gonek–Graham"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_B_EN.md"
+    ]
+  },
+  {
+    "cle": "GM26",
+    "auteurs": "L. Guth, J. Maynard",
+    "annee": 2026,
+    "titre": "New large value estimates for Dirichlet polynomials",
+    "publication": "Ann. of Math. 203 (2026), no. 2, 623–675 ; DOI 10.4007/annals.2026.203.2.6 ; arXiv:2405.20552",
+    "type": "article",
+    "lien": "https://annals.math.princeton.edu/2026/203-2/p06",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/REFERENCES.md (vérification du 2026-10-03), non revérifié : page de la revue : conséquence N(σ,T) ≤ T^{30(1−σ)/13+o(1)}, améliorant l'exposant 12/5 de Huxley.",
+    "extrait": "",
+    "usage_corpus": "Densité de zéros N(σ,T) ≤ T^{30(1−σ)/13+o(1)}, référence pour le test « densité de zéros ».",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "CALIBRATION_SPECTRALE.md",
+      "CHANGELOG.md",
+      "MEMO_P2_3_DENSITE.md",
+      "PRIORITES.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Guth–Maynard",
+      "Guth",
+      "30(1−σ)/13"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "Gor24",
+    "auteurs": "O. Gorodetsky",
+    "annee": 2024,
+    "titre": "The variance of integers without small prime factors in short intervals",
+    "publication": "Math. Z. 308 (2024), no. 4, article 59",
+    "type": "article",
+    "lien": "https://link.springer.com/article/10.1007/s00209-024-03601-w",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Page éditeur consultée le 2026-10-10 (le corpus ne donnait que l'URL) : l'introduction (§1.1) rappelle que Saffari et Vaughan, après Selberg, ont étudié sous RH la variance des premiers dans les intervalles courts. L'article porte lui-même sur les entiers sans petit facteur premier.",
+    "extrait": "",
+    "usage_corpus": "Cité comme résumé moderne des bornes en moyenne quadratique de type Saffari–Vaughan pour les premiers dans les intervalles courts sous RH.",
+    "verdict": "imprécis",
+    "correction": "Préciser auteur et titre (O. Gorodetsky, Math. Z. 308 (2024), art. 59) et dire qu'il ne fait que rappeler Saffari–Vaughan en introduction ; pour l'énoncé lui-même, citer Saffari–Vaughan, Ann. Inst. Fourier 27 (1977).",
+    "docs": [
+      "REFERENCES.md"
+    ],
+    "motifs": [
+      "Saffari",
+      "s00209-024-03601"
+    ],
+    "conjectures": [
+      "RH",
+      "PC"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "motifs": [],
+    "docs": [],
+    "cite_aussi": [],
+    "dimensions": [
+      "comprendre"
+    ],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "cle": "Gro58",
+    "auteurs": "A. Grothendieck",
+    "annee": 1958,
+    "titre": "Sur une note de Mattuck–Tate",
+    "publication": "J. reine angew. Math. 200 (1958), 208–215",
+    "lien": "https://arxiv.org/abs/1210.7459",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Référence et rôle lus dans J. S. Milne, The work of John Tate (arXiv:1210.7459) : l'inégalité de Weil déduite du théorème de l'indice de Hodge pour les surfaces.",
+    "usage_corpus": "Positivité sur C × C par l'indice de Hodge.",
+    "verdict": "exact",
+    "interet": "appui"
+  },
+  {
+    "cle": "GS20",
+    "auteurs": "R. Gay, A. Sebbar",
+    "annee": 2020,
+    "titre": "Arithmetic and analysis of the series Σ (1/n) sin(x/n)",
+    "publication": "arXiv:2009.14070 (2020)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2009.14070",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : source secondaire ; titre identifié le 2026-10-10 sur arXiv : lien avec le critère de Nyman–Beurling.",
+    "extrait": "",
+    "usage_corpus": "Source secondaire : intégrales de Franel dans l'étude de l'adhérence de Nyman–Beurling.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md"
+    ],
+    "motifs": [
+      "2009.14070"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Gui48",
+    "auteurs": "A. P. Guinand",
+    "annee": 1948,
+    "titre": "A summation formula in the theory of prime numbers",
+    "publication": "Proc. London Math. Soc. (2) 50 (1948), 107–119",
+    "type": "article",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Deux recherches (2026-10-10) sans notice bibliographique exploitable ; bibliographie donnée de mémoire, non vérifiée. L'attribution de la formule explicite « de Guinand–Weil » à Guinand (1948) et Weil (1952) est standard.",
+    "extrait": "",
+    "usage_corpus": "Formule explicite de Guinand–Weil (avec fonctions tests), vue comme un banc de filtres rigoureux.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "19_DUAL_LOCK_plan_local_global.md",
+      "CHANGELOG.md",
+      "DUAL_LOCK_COMPRESSION.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md"
+    ],
+    "motifs": [
+      "Guinand–Weil",
+      "Guinand"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "situer"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Had96",
+    "auteurs": "J. Hadamard ; Ch.-J. de la Vallée Poussin",
+    "annee": 1896,
+    "titre": "Sur la distribution des zéros de la fonction ζ(s) et ses conséquences arithmétiques ; Recherches analytiques sur la théorie des nombres premiers",
+    "publication": "Bull. SMF 24 (1896), 199–220 ; Ann. Soc. Sci. Bruxelles 20 (1896), 183–256 (non vérifiés)",
+    "lien": "https://people.math.harvard.edu/~elkies/M259.06/free.pdf",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Attribution (théorème des nombres premiers, 1896 ; absence de zéro sur Re s = 1) d'après les notes d'Elkies ; références des articles non vérifiées.",
+    "usage_corpus": "Aucun zéro de ζ (ni d'une fonction L de Dirichlet) sur Re s = 1, rendu nécessaire par le produit d'Euler plus un carré : 3 + 4 cos x + cos 2x = 2(1 + cos x)² ≥ 0.",
+    "verdict": "imprécis",
+    "correction": "Le théorème est d'Hadamard et de la Vallée Poussin (1896) ; l'inégalité 3 + 4 cos x + cos 2x ≥ 0 est la version de Mertens (1898) [Mer98].",
+    "motifs": [
+      "Hadamard, de la Vallée Poussin (1896)",
+      "théorème de de la Vallée Poussin"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Ham21",
+    "auteurs": "H. Hamburger",
+    "annee": 1921,
+    "titre": "Über die Riemannsche Funktionalgleichung der ζ-Funktion",
+    "publication": "Math. Z. 10 (1921), 240–254",
+    "lien": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN266833020_0010/PPN266833020_0010.pdf",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Original Math. Z. 10 (1921), pages 240–254 relu ; énoncé initial, extension avec g et preuve par Mellin/périodicité. Nombre fini de pôles autorisé sous croissance contrôlée.",
+    "extrait": "(s−1)^m F(s) is entire of finite order for some integer m … then F(s) = cζ(s) for some c ∈ ℂ (Perelli, th. 2.1)",
+    "usage_corpus": "Rigidité : série de Dirichlet ordinaire, croissance e^(|s|^γ) hors disque, nombre fini de pôles et équation fonctionnelle exacte de zêta impliquent F=cζ.",
+    "verdict": "exact",
+    "correction": "La fiche antérieure présentait la condition (s−1)^m F entière d’ordre fini de Perelli comme hypothèse exacte de l’original. C’est une version suffisante plus étroite ; l’original permet un nombre fini de pôles.",
+    "motifs": [
+      "Hamburger, 1921",
+      "Hamburger (1921)",
+      "(Hamburger)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-12",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "appui",
+    "docs": [
+      "67"
+    ],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Har14",
+    "auteurs": "G. H. Hardy",
+    "annee": 1914,
+    "titre": "Sur les zéros de la fonction ζ(s) de Riemann",
+    "publication": "C. R. Acad. Sci. Paris 158 (1914), 1012–1014",
+    "lien": "https://proofwiki.org/wiki/Critical_Line_Theorem",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie et énoncé via ProofWiki ; article non lu.",
+    "extrait": "There exist an infinite number of nontrivial zeroes of the Riemann ζ function on the critical line (ProofWiki).",
+    "usage_corpus": "Une infinité de zéros sur la droite critique.",
+    "verdict": "exact",
+    "motifs": [
+      "Hardy (1914)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Has36",
+    "auteurs": "H. Hasse",
+    "annee": 1936,
+    "titre": "Zur Theorie der abstrakten elliptischen Funktionenkörper I, II, III",
+    "publication": "J. reine angew. Math. 175 (1936) ; DOI 10.1515/crll.1936.175.193",
+    "lien": "https://doi.org/10.1515/crll.1936.175.193",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence et historique (démontré en 1933, publié en 1936) via Wikipédia (Hasse's theorem on elliptic curves) ; la formule n'apparaît pas dans l'extraction.",
+    "usage_corpus": "Borne de Hasse |a| ≤ 2√q pour les courbes elliptiques sur F_q.",
+    "verdict": "exact",
+    "motifs": [
+      "borne de Hasse"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH",
+      "MR",
+      "D2"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Hay68",
+    "auteurs": "E. V. Haynsworth",
+    "annee": 1968,
+    "titre": "Determination of the inertia of a partitioned Hermitian matrix",
+    "publication": "Linear Algebra Appl. 1 (1968), 73–81",
+    "lien": "https://en.wikipedia.org/wiki/Haynsworth_inertia_additivity_formula",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Énoncé et référence via Wikipédia ; article non lu.",
+    "extrait": "In(H) = In(H11) + In(H/H11), H/H11 Schur complement, H11 nonsingular (Wikipédia).",
+    "usage_corpus": "Additivité de l'inertie par le complément de Schur.",
+    "verdict": "exact",
+    "motifs": [
+      "(Haynsworth)",
+      "Haynsworth"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "motifs": [
+      "formes propres de Hecke",
+      "relation de Hecke"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "dimensions": [
+      "degre2"
+    ],
+    "conjectures": [
+      "D2"
+    ],
+    "cle": "Hec37",
+    "auteurs": "E. Hecke",
+    "annee": 1937,
+    "titre": "Über Modulfunktionen und die Dirichletschen Reihen mit Eulerscher Produktentwicklung I, II",
+    "publication": "Math. Ann. 114 (1937), 1–28 et 316–351 (non vérifié)",
+    "lien": "",
+    "statut": "non vérifié",
+    "ce_qui_a_ete_verifie": "Cité de mémoire : opérateurs de Hecke et formes propres (produit d'Euler des formes modulaires).",
+    "usage_corpus": "Formes propres de Hecke ; relation τ(p²) = τ(p)² − p^{11}.",
+    "verdict": "non vérifiable",
+    "interet": "contexte"
+  },
+  {
+    "cle": "HL12",
+    "auteurs": "H. Herichi, M. L. Lapidus",
+    "annee": 2012,
+    "titre": "Fractal complex dimensions, Riemann hypothesis and invertibility of the spectral operator",
+    "publication": "Contemp. Math. 600 ; arXiv:1210.0882",
+    "lien": "https://arxiv.org/abs/1210.0882",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "usage_corpus": "Lien entre dimension 1/2, cordes fractales et RH (opérateur spectral).",
+    "verdict": "exact",
+    "motifs": [
+      "Herichi & M. L. Lapidus",
+      "Herichi–Lapidus"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Hux72",
+    "auteurs": "M. N. Huxley",
+    "annee": 1972,
+    "titre": "On the difference between consecutive primes",
+    "publication": "Invent. Math. 15 (1972), 164–170",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "SOURCES : [CLASSIQUE — À FIXER] ; BIBLIO_POSITIONNEMENT (vérifié le 2026-10-03 via Guth–Maynard) : Guth–Maynard améliorent l'exposant 12/5 de Huxley. Bibliographie de l'article donnée de mémoire, non vérifiée en ligne.",
+    "extrait": "",
+    "usage_corpus": "Exposant de densité 12/5 (N(σ,T) ≪ T^{12(1−σ)/5+ε}), amélioré par Guth–Maynard.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "CALIBRATION_SPECTRALE.md",
+      "MEMO_P2_3_DENSITE.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Huxley"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Ing40",
+    "auteurs": "A. E. Ingham",
+    "annee": 1940,
+    "titre": "On the estimation of N(σ,T)",
+    "publication": "Quart. J. Math. Oxford Ser. 11 (1940), 291–292",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/2507.15184",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "SOURCES : [CLASSIQUE — ÉNONCÉ ET SOURCE EXACTS À FIXER]. Énoncé vérifié le 2026-10-10 par une source secondaire : résumé de Chourasiya–Simonič, arXiv:2507.15184. Volume et pages de l'article d'Ingham donnés de mémoire, non vérifiés.",
+    "extrait": "Ingham (1940) proved that N(σ,T) ≪ T^{3(1−σ)/(2−σ)} log⁵ T",
+    "usage_corpus": "Estimations classiques de densité de zéros pour ζ.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CALIBRATION_SPECTRALE.md",
+      "MEMO_P2_3_DENSITE.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Ingham"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Kal60",
+    "auteurs": "R. E. Kalman",
+    "annee": 1960,
+    "titre": "A new approach to linear filtering and prediction problems",
+    "publication": "J. Basic Eng. 82 (1960), 35–45",
+    "lien": "https://www.cs.unc.edu/~welch/kalman/kalmanPaper.html",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie (notices) ; l'équivalence avec la récurrence de Levinson n'a pas été vérifiée.",
+    "usage_corpus": "Pour un signal stationnaire de covariance t_n, le filtre de Kalman est la récurrence de Levinson–Szegő.",
+    "verdict": "non vérifiable",
+    "correction": "Formulation prudente : pour un signal stationnaire, les innovations du prédicteur linéaire optimal se calculent par la récurrence de Levinson–Szegő ; le lien avec le filtre de Kalman (modèle d'état) est à documenter.",
+    "motifs": [
+      "filtre de Kalman"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Kar31",
+    "auteurs": "J. Karamata",
+    "annee": 1931,
+    "titre": "Neuer Beweis und Verallgemeinerung der Tauberschen Sätze, welche die Laplacesche und Stieltjessche Transformation betreffen",
+    "publication": "J. reine angew. Math. 164 (1931), 27–39",
+    "type": "article",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "SOURCES : [CLASSIQUE — VERSION EXACTE ET HYPOTHÈSES À CITER]. Bibliographie donnée de mémoire, non vérifiée en ligne ; les relectures renvoient à Widder, Feller, Korevaar.",
+    "extrait": "",
+    "usage_corpus": "Théorème taubérien de Karamata : de l'asymptotique de Q_η à celle de Q(e^L).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "PRIORITY_CHECK.md",
+      "REFEREE_B.md",
+      "REFEREE_INSTRUCTIONS.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md",
+      "THEOREME_TERME_DOMINANT.md"
+    ],
+    "motifs": [
+      "Karamata"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "07_Guide_de_lecture_intuitif.docx",
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "Ked00",
+    "auteurs": "K. S. Kedlaya",
+    "annee": null,
+    "titre": "Weil cohomology (notes de cours, ch. 5)",
+    "publication": "notes de cours, date non vérifiée",
+    "type": "notes de cours",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [À VÉRIFIER EN ENTIER] ; année inconnue (00 = indéterminée).",
+    "extrait": "",
+    "usage_corpus": "Cohomologie de Weil, preuve de RH sur F_q (ch. 5).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "MEMO_P2_2_WEIL.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Kedlaya"
+    ],
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Kim26",
+    "auteurs": "T. Kim, Y. Hong, M. Kim, S. Choi, J. Jang, M. Kim",
+    "annee": 2026,
+    "titre": "A numerical realization of Suzuki's Weil-quadratic-form operator",
+    "publication": "arXiv:2607.24830 (juillet 2026)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2607.24830",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv (v2), résumé.",
+    "extrait": "In June 2026, M. Suzuki published a purely theoretical construction of a selfadjoint operator whose quadratic form coincides with Weil's explicit-formula quadratic form",
+    "usage_corpus": "Discrétisation numérique de l'opérateur de Suzuki : positionnement de DUAL-LOCK.",
+    "verdict": "exact",
+    "motifs": [
+      "T. Kim et al."
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "voir",
+      "case"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "KK07",
+    "auteurs": "J. Kaczorowski, M. Kulas",
+    "annee": 2007,
+    "titre": "On the non-trivial zeros off the critical line for L-functions from the extended Selberg class",
+    "publication": "Monatsh. Math. 150 (2007), no. 3, 217–232 ; DOI 10.1007/s00605-006-0412-x",
+    "type": "article",
+    "lien": "https://link.springer.com/article/10.1007/s00605-006-0412-x",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Page éditeur (résumé) consultée le 2026-10-10 : une L-fonction de degré 1 de la classe de Selberg étendue qui vérifie RH, ou seulement une estimation de densité non triviale, doit avoir un produit d'Euler ; preuve par la description structurelle de Kaczorowski–Perelli et une universalité jointe « hybride ».",
+    "extrait": "",
+    "usage_corpus": "Cité dans la note 30 (Archipel) comme antécédent possible pour les combinaisons linéaires de L-fonctions de Dirichlet à équation fonctionnelle commune.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "case"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "RELECTURE_ARCHIPEL_EN.md"
+    ]
+  },
+  {
+    "cle": "Kor04",
+    "auteurs": "J. Korevaar",
+    "annee": 2004,
+    "titre": "Tauberian Theory: A Century of Developments",
+    "publication": "Grundlehren math. Wiss. 329, Springer, 2004",
+    "type": "livre",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_B_EN.md, References (V6.13), non revérifié : [memory] : ch. I.",
+    "extrait": "",
+    "usage_corpus": "Théorie taubérienne (Karamata) pour le Théorème B.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+    ],
+    "motifs": [
+      "Korevaar"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "KP11",
+    "auteurs": "J. Kaczorowski, A. Perelli",
+    "annee": 2011,
+    "titre": "On the structure of the Selberg class, VII: 1 < d < 2",
+    "publication": "Ann. of Math. 173 (2011), 1397–1441",
+    "lien": "https://annals.math.princeton.edu/2011/173-3/p04",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page des Annals, résumé.",
+    "extrait": "The degree conjecture has been proved for d < 5/3, and in this paper we extend its validity to d < 2.",
+    "usage_corpus": "Aucune fonction de la classe de Selberg n'a un degré strictement entre 1 et 2.",
+    "verdict": "exact",
+    "motifs": [
+      "Kaczorowski–Perelli (2011)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "D2"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "KP99",
+    "auteurs": "J. Kaczorowski, A. Perelli",
+    "annee": 1999,
+    "titre": "On the structure of the Selberg class, I: 0 ≤ d ≤ 1",
+    "publication": "Acta Math. 182 (1999), 207–241",
+    "lien": "https://doi.org/10.1007/BF02392574",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Classification vérifiée en V6.13 par K. Soundararajan, Degree 1 elements of the Selberg class (arXiv:math/0306300), preuve courte du théorème de Kaczorowski–Perelli.",
+    "usage_corpus": "En degré 1, la classe de Selberg ne contient que ζ et les fonctions L de Dirichlet décalées.",
+    "verdict": "exact",
+    "motifs": [
+      "Kaczorowski–Perelli, Acta Math. 1999",
+      "Kaczorowski–Perelli (1999)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-09",
+    "correction": "",
+    "extrait": "if F satisfies the Selberg axioms and has degree 1, then F(s) = L(s + iA, χ') with χ' primitive (énoncé relevé en V6.13)",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "demontrer"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "KS20",
+    "auteurs": "P. Kurasov, P. Sarnak",
+    "annee": 2020,
+    "titre": "Stable polynomials and crystalline measures",
+    "publication": "J. Math. Phys. 61 (2020), 083501 ; DOI 10.1063/5.0012286 ; arXiv:2004.05678",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/2004.05678",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Page arXiv consultée le 2026-10-10 : auteurs, titre, DOI 10.1063/5.0012286 ; résumé : exemples explicites de mesures cristallines positives et de quasi-cristaux de Fourier construits à partir de polynômes stables. Volume et numéro d'article donnés de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Quasi-cristaux de Fourier à « zéros réels pour une raison connue », proposés comme cinquième témoin (cité de mémoire, piste non exécutée).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+      "CHANGELOG.md"
+    ],
+    "motifs": [
+      "Kurasov–Sarnak"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "croiser",
+      "case"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "KS99",
+    "auteurs": "N. M. Katz, P. Sarnak",
+    "annee": 1999,
+    "titre": "Zeroes of zeta functions and symmetry",
+    "publication": "Bull. Amer. Math. Soc. 36 (1999), 1–26 ; voir aussi le livre Random Matrices, Frobenius Eigenvalues, and Monodromy, AMS Colloq. Publ. 45 (1999)",
+    "lien": "https://www.ams.org/bull/1999-36-01/S0273-0979-99-00766-1/",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page de l'AMS : bibliographie et résumé.",
+    "extrait": "the low-lying zeroes of various families of zeta functions follow laws for the eigenvalue distributions",
+    "usage_corpus": "Pour les familles de courbes sur les corps finis, la statistique des zéros est celle des valeurs propres de matrices des groupes classiques (monodromie).",
+    "verdict": "exact",
+    "motifs": [
+      "Katz–Sarnak"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC",
+      "MR"
+    ],
+    "dimensions": [
+      "situer",
+      "croiser"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Lam26",
+    "auteurs": "Y. Lamzouri",
+    "annee": 2026,
+    "titre": "A new proof that more than 2/3 of the zeros of the Riemann zeta function are simple and on the critical line",
+    "publication": "arXiv:2609.02882 (sept. 2026)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2609.02882",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "extrait": "more than 67.25% of the non-trivial zeros of the Riemann zeta function are simple and on the critical line",
+    "usage_corpus": "Plus de 67,25 % des zéros sont simples et sur la droite.",
+    "verdict": "exact",
+    "motifs": [
+      "Lamzouri"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Lan24",
+    "auteurs": "E. Landau",
+    "annee": 1924,
+    "titre": "Bemerkungen zu der vorstehenden Abhandlung von Herrn Franel",
+    "publication": "Nachr. Ges. Wiss. Göttingen, Math.-Phys. Kl. (1924), 202–206",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] via sources secondaires : Landau démontre la formule de Franel. Titre donné de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Démonstration de la formule de Franel gcd²/(12ab).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "20_Registre_metaphores_V6.md",
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "LEMMES_RIGOUREUX.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Franel–Landau",
+      "Landau (1924",
+      "Landau 1924"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "demontrer"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "Leh56",
+    "auteurs": "D. H. Lehmer",
+    "annee": 1956,
+    "titre": "On the roots of the Riemann zeta-function",
+    "publication": "Acta Math. 95 (1956), 291–298",
+    "lien": "https://en.wikipedia.org/wiki/Lehmer_pair",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie et attribution via l'article « Lehmer pair » de Wikipédia (paire des 6709e et 6710e zéros près de t ≈ 7005) ; article non lu.",
+    "extrait": "It is an unsolved problem whether there exist infinitely many Lehmer pairs (Wikipédia).",
+    "usage_corpus": "La paire de zéros de ζ près de t = 7 005 (paire de Lehmer) ; les paires de Lehmer donnent des bornes inférieures de Λ.",
+    "verdict": "exact",
+    "motifs": [
+      "paire de Lehmer",
+      "paires de Lehmer"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "SZ",
+      "PC",
+      "dBN"
+    ],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Lev47",
+    "auteurs": "N. Levinson",
+    "annee": 1947,
+    "titre": "The Wiener RMS (root mean square) error criterion in filter design and prediction",
+    "publication": "J. Math. Phys. 25 (1947), 261–278 ; amélioré par J. Durbin, Rev. Inst. Int. Stat. 28 (1960), 233–243",
+    "lien": "https://en.wikipedia.org/wiki/Levinson_recursion",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Références et description via Wikipédia (Levinson recursion).",
+    "extrait": "a procedure in linear algebra to recursively calculate the solution to an equation involving a Toeplitz matrix",
+    "usage_corpus": "Récurrence de Levinson sur les traces : innovations et coefficients de réflexion d'une métrique de Toeplitz.",
+    "verdict": "exact",
+    "motifs": [
+      "Récurrence de Levinson",
+      "récurrence de Levinson"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Lev74",
+    "auteurs": "N. Levinson",
+    "annee": 1974,
+    "titre": "More than one third of zeros of Riemann's zeta-function are on σ = 1/2",
+    "publication": "Adv. Math. 13 (1974), 383–436",
+    "lien": "https://www.proofwiki.org/wiki/At_Least_One_Third_of_Zeros_of_Riemann_Zeta_Function_on_Critical_Line/Historical_Note",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Date (avril 1974) et résultat via ProofWiki ; revue et pages non confirmées en ligne.",
+    "usage_corpus": "Plus d'un tiers des zéros sont sur la droite.",
+    "verdict": "exact",
+    "motifs": [
+      "Levinson (1974)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Li97",
+    "auteurs": "X.-J. Li",
+    "annee": 1997,
+    "titre": "The positivity of a sequence of numbers and the Riemann hypothesis",
+    "publication": "J. Number Theory 65 (1997), no. 2, 325–333 ; DOI 10.1006/jnth.1997.2137",
+    "type": "article",
+    "lien": "https://doi.org/10.1006/jnth.1997.2137",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Bibliographie et énoncé vérifiés le 2026-10-10 sur une source secondaire (Wikipédia, « Li's criterion ») : RH ⇔ λ_n ≥ 0 pour tout n ≥ 1, λ_n somme sur les zéros. Article non ouvert (site éditeur interdit aux robots).",
+    "extrait": "",
+    "usage_corpus": "Critère de Li : RH ⇔ positivité de toute la suite λ_n (le guide de lecture souligne qu'un nombre fini de λ_n ne suffit pas).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "LM95",
+    "auteurs": "M. L. Lapidus, H. Maier",
+    "annee": 1995,
+    "titre": "The Riemann hypothesis and inverse spectral problems for fractal strings",
+    "publication": "J. London Math. Soc. (2) 52 (1995), 15–34",
+    "type": "article",
+    "lien": "https://doi.org/10.1112/jlms/52.1.15",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Bibliographie vérifiée le 2026-10-10 sur la bibliographie de Lapidus tenue par M. Watkins (Exeter) : pages 15–34 (le corpus écrit 15–35). Énoncé d'après la même page (secondaire) : la réciproque du théorème de Lapidus–Pomerance échoue en dimension 1/2 et vaut pour toute autre dimension de (0,1) si et seulement si RH.",
+    "extrait": "",
+    "usage_corpus": "Rôle critique de la dimension 1/2 dans le programme de Lapidus (RH ⇔ problème spectral inverse pour les cordes fractales).",
+    "verdict": "imprécis",
+    "correction": "Pages : 15–34 (et non 15–35).",
+    "docs": [
+      "ENERGY_FRACTAL_DIMENSION.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Lapidus & H. Maier",
+      "Lapidus, H. Maier"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cite_aussi": []
+  },
+  {
+    "cle": "LR02",
+    "auteurs": "B. Landreau, F. Richard",
+    "annee": 2002,
+    "titre": "Le critère de Beurling et Nyman pour l'hypothèse de Riemann : aspects numériques",
+    "publication": "Experiment. Math. 11 (2002), 349–360",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] (aspects numériques de Nyman–Beurling). Titre et pages donnés de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Aspects numériques du critère de Nyman–Beurling ; source secondaire pour Nyman 1950 et Beurling 1955.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md"
+    ],
+    "motifs": [
+      "Landreau–Richard"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "voir",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "09_Attaques_audit_et_amelioration.docx",
+      "10_Attaque2_resultats_N1000.docx"
+    ]
+  },
+  {
+    "cle": "LvF06",
+    "auteurs": "M. L. Lapidus, M. van Frankenhuijsen",
+    "annee": 2006,
+    "titre": "Fractal Geometry, Complex Dimensions and Zeta Functions: Geometry and Spectra of Fractal Strings",
+    "publication": "Springer Monographs in Math., Springer, 2006 (2e éd. 2013)",
+    "type": "livre",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "Repris de SOURCES_RH_PROGRAMME.md (ajout v5.2, sans statut) ; année et édition non précisées par le corpus, données ici de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Generalized fractal strings comme mesures ; zêta géométrique = transformée de Mellin ; dimension = abscisse de convergence.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "ENERGY_FRACTAL_DIMENSION.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Fractal Geometry, Complex Dimensions"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "LY52",
+    "auteurs": "T. D. Lee, C. N. Yang",
+    "annee": 1952,
+    "titre": "Statistical theory of equations of state and phase transitions. II. Lattice gas and Ising model",
+    "publication": "Phys. Rev. 87 (1952), 410–419 ; DOI 10.1103/PhysRev.87.410",
+    "lien": "https://link.aps.org/doi/10.1103/PhysRev.87.410",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Page de l'APS (DOI, année, résumé) ; ordre des auteurs et page de fin non affichés.",
+    "extrait": "the roots of the grand partition function always lie on a circle",
+    "usage_corpus": "Interactions ferromagnétiques : les zéros de la fonction de partition sont sur un cercle (Lee–Yang).",
+    "verdict": "exact",
+    "motifs": [
+      "(Lee–Yang)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Man05",
+    "auteurs": "H. von Mangoldt",
+    "annee": 1905,
+    "titre": "Zur Verteilung der Nullstellen der Riemannschen Funktion ξ(t)",
+    "publication": "Math. Ann. 60 (1905), 1–19",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Le 2026-10-10 : Wikipédia (« Riemann–von Mangoldt formula ») confirme que la formule N(T) = (T/2π) log(T/2πe) + O(log T), proposée par Riemann (1859), a été démontrée par von Mangoldt en 1905 ; titre, volume et pages de l'article donnés de mémoire (non affichés par la source).",
+    "extrait": "",
+    "usage_corpus": "Formule de comptage des zéros N(T), que le corpus appelle « loi de Weyl » (zéros de L(Δ, s) et de ζ).",
+    "verdict": "imprécis",
+    "correction": "« Loi de Weyl » est un abus de langage : la loi de Weyl concerne les valeurs propres du laplacien. Pour ζ, écrire « formule de Riemann–von Mangoldt » ; pour L(Δ, s), « formule de comptage des zéros (analogue de Riemann–von Mangoldt, N(T) ∼ (T/π) log T en degré 2) ». L'analogie avec Weyl peut être signalée, pas employée comme nom.",
+    "docs": [
+      "39_LE_DEGRE_2_ET_LE_RECENSEMENT.md",
+      "CHANGELOG.md",
+      "README.md"
+    ],
+    "motifs": [
+      "loi de Weyl"
+    ],
+    "conjectures": [
+      "RH",
+      "D2"
+    ],
+    "dimensions": [
+      "voir",
+      "degre2"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "Meh04",
+    "auteurs": "M. L. Mehta",
+    "annee": 2004,
+    "titre": "Random Matrices",
+    "publication": "3e éd., Pure and Applied Mathematics 142, Elsevier/Academic Press, 2004",
+    "type": "livre",
+    "lien": "https://shop.elsevier.com/books/random-matrices/mehta/978-0-12-088409-4",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Page éditeur consultée le 2026-10-10 : titre, auteur, 3e édition, 2004, volume 142. Ouvrage de référence pour la corrélation de paires des ensembles GUE/CUE (1 − (sin πs/πs)²).",
+    "extrait": "",
+    "usage_corpus": "Référence standard pour les statistiques GUE/CUE ; aucune citation explicite de Mehta trouvée dans les .md et .docx du corpus (la corrélation de paires CUE y est attribuée à Dyson).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Mer98",
+    "auteurs": "F. Mertens",
+    "annee": 1898,
+    "titre": "Über eine Eigenschaft der Riemannschen ζ-Function",
+    "publication": "Sitzungsber. Kais. Akad. Wiss. Wien, Math.-Naturwiss. Cl. 107 (1898), 1429–1434 (non vérifié)",
+    "lien": "https://people.math.harvard.edu/~elkies/M259.06/free.pdf",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Attribution de l'argument 3 + 4 cos θ + cos 2θ ≥ 0 à Mertens, d'après les notes de cours de N. Elkies (Harvard) ; référence de l'article original non vérifiée.",
+    "extrait": "Mertens' elegant version of the original arguments of Hadamard and (independently) de la Vallée Poussin",
+    "usage_corpus": "L'absence de zéro sur Re s = 1 se démontre par le produit d'Euler et l'inégalité 3 + 4 cos x + cos 2x ≥ 0.",
+    "verdict": "exact",
+    "motifs": [
+      "3 + 4cos x + cos 2x"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Mez07",
+    "auteurs": "F. Mezzadri",
+    "annee": 2007,
+    "titre": "How to generate random matrices from the classical compact groups",
+    "publication": "Notices Amer. Math. Soc. 54 (2007), 592–604 (revue non confirmée sur arXiv) ; arXiv:math-ph/0609050",
+    "lien": "https://arxiv.org/abs/math-ph/0609050",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Résumé arXiv ; la référence à la revue n'y figure pas.",
+    "extrait": "We discuss how to generate random unitary matrices from the classical compact groups U(N), O(N) and USp(N)",
+    "usage_corpus": "Tirage de matrices unitaires selon la mesure de Haar (CUE simulé).",
+    "verdict": "exact",
+    "motifs": [
+      "algorithme de Mezzadri"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "MMWT97",
+    "auteurs": "J. Main, V. A. Mandelshtam, G. Wunner, H. S. Taylor",
+    "annee": 1997,
+    "titre": "Harmonic inversion as a general method for periodic orbit quantization",
+    "publication": "arXiv:chao-dyn/9709009 (1997) ; Nonlinearity 11 (1998)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/chao-dyn/9709009",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT] : la fonction zêta sert d'exemple ; plusieurs milliers de zéros extraits par inversion harmonique.",
+    "extrait": "",
+    "usage_corpus": "Inversion harmonique / filter diagonalization appliquée au signal de zêta : extraction de milliers de zéros.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CHANGELOG.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SOURCE_LOCALIZATION.md"
+    ],
+    "motifs": [
+      "9709009",
+      "Harmonic inversion",
+      "Main, Mandelshtam",
+      "harmonic inversion",
+      "Main–Mandelshtam"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "voir",
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "Mon71",
+    "auteurs": "H. L. Montgomery",
+    "annee": 1971,
+    "titre": "Topics in Multiplicative Number Theory",
+    "publication": "Lecture Notes in Math. 227, Springer, 1971",
+    "type": "livre",
+    "lien": "https://doi.org/10.1007/BFb0060851",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "SOURCES : [CLASSIQUE — SOURCE EXACTE À FIXER] pour l'inégalité de Halász–Montgomery ; BIBLIO_POSITIONNEMENT : « cité de mémoire ». Proposé comme manuel de référence (ch. 7–8, grandes valeurs) ; non vérifié en ligne (une recherche, sans résultat probant).",
+    "extrait": "",
+    "usage_corpus": "Inégalité / méthode de Halász–Montgomery pour les grandes valeurs de polynômes de Dirichlet en points séparés.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "CALIBRATION_SPECTRALE.md",
+      "MEMO_P2_3_DENSITE.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Halász–Montgomery"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Mon73",
+    "auteurs": "H. L. Montgomery",
+    "annee": 1973,
+    "titre": "The pair correlation of zeros of the zeta function",
+    "publication": "Analytic Number Theory, Proc. Sympos. Pure Math. 24, AMS (1973), 181–193",
+    "lien": "https://public.websites.umich.edu/~hlm/paircor1.pdf",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Texte de l'article (PDF de l'auteur, pages 181–193) : la conjecture 1 − (sin πu/πu)² ; le corollaire sur les zéros simples est présent, la fraction (2/3) illisible dans l'extraction.",
+    "extrait": "the assertion that 1 − ((sin πu)/πu)² is the pair correlation function of the zeros of the zeta function",
+    "usage_corpus": "La densité de corrélation de paires des zéros de ζ est 1 − sinc²(πs) (démontrée pour des fonctions test à support restreint, sous RH) ; sous RH, au moins 2/3 des zéros sont simples.",
+    "verdict": "exact",
+    "motifs": [
+      "Montgomery (1973",
+      "Montgomery",
+      "corrélation de Montgomery"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "SZ",
+      "PC"
+    ],
+    "dimensions": [
+      "croiser",
+      "situer"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Mon74",
+    "auteurs": "H. L. Montgomery",
+    "annee": 1974,
+    "titre": "Distribution of the zeros of the Riemann zeta function",
+    "publication": "Proc. Int. Congr. Math. (Vancouver, 1974), vol. 1, Canad. Math. Congress, 1975, 379–381",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Source secondaire consultée le 2026-10-10 (S. M. Gonek, note sur les zéros simples, site de Rochester) : sous RH, Montgomery obtient ≥ 2/3 de zéros simples, amélioré « avec Taylor » à environ 0,6725 ; référence [13] = ce texte ICM. Texte ICM non ouvert.",
+    "extrait": "",
+    "usage_corpus": "Constante 0,6725 « de la fenêtre de Montgomery–Taylor », qui borne les proportions obtenues par Alpöge–Furman.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "20_Registre_metaphores_V6.md"
+    ],
+    "motifs": [
+      "Montgomery–Taylor"
+    ],
+    "conjectures": [
+      "SZ",
+      "PC",
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "13_Lecon_2026.docx"
+    ]
+  },
+  {
+    "cle": "Mos02a",
+    "auteurs": "A. Mostafazadeh",
+    "annee": 2002,
+    "titre": "Pseudo-Hermiticity versus PT symmetry: the necessary condition for the reality of the spectrum of a non-Hermitian Hamiltonian",
+    "publication": "J. Math. Phys. 43 (2002), 205–214 ; DOI 10.1063/1.1418246",
+    "type": "article",
+    "lien": "https://doi.org/10.1063/1.1418246",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ ABSTRACT/MÉTADONNÉES].",
+    "extrait": "",
+    "usage_corpus": "Pseudo-hermiticité : condition nécessaire de réalité du spectre d'un hamiltonien non hermitien.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Mostafazadeh",
+      "1.1418246"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Mos02b",
+    "auteurs": "A. Mostafazadeh",
+    "annee": 2002,
+    "titre": "Pseudo-Hermiticity versus PT-symmetry III: equivalence of pseudo-Hermiticity and the presence of antilinear symmetries",
+    "publication": "J. Math. Phys. 43 (2002), 3944–3951 ; DOI 10.1063/1.1489072 ; arXiv:math-ph/0203005",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/math-ph/0203005",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ ABSTRACT/MÉTADONNÉES] : en dimension diagonalisable, spectre réel ⇔ existence d'un produit scalaire positif rendant l'opérateur hermitien.",
+    "extrait": "",
+    "usage_corpus": "Fait fini-dimensionnel du diagnostic V4.3 : spectre réel ⇔ métrique positive rendant l'opérateur hermitien.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "0203005",
+      "1.1489072"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "MRST26",
+    "auteurs": "K. Matomäki, M. Radziwiłł, X. Shao, T. Tao, J. Teräväinen",
+    "annee": 2026,
+    "titre": "Higher uniformity of arithmetic functions in short intervals II. Almost all intervals",
+    "publication": "Invent. Math. 244 (2026), 967–1091",
+    "type": "article",
+    "lien": "https://link.springer.com/article/10.1007/s00222-026-01408-6",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/REFERENCES.md (vérification du 2026-10-03), non revérifié : page de l'éditeur.",
+    "extrait": "",
+    "usage_corpus": "Uniformité des fonctions arithmétiques dans les intervalles courts (contexte récent).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "REFERENCES.md"
+    ],
+    "motifs": [
+      "Matomäki",
+      "Higher uniformity"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "the most attractive geometric proof of Weil's theorem (Milne)",
+    "motifs": [
+      "inégalité de Castelnuovo",
+      "positivité de Castelnuovo"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "cle": "MT58",
+    "auteurs": "A. Mattuck, J. Tate",
+    "annee": 1958,
+    "titre": "On the inequality of Castelnuovo–Severi",
+    "publication": "Abh. Math. Sem. Univ. Hamburg 22 (1958), 295–299 (volume et pages non confirmés en ligne)",
+    "lien": "https://arxiv.org/abs/1210.7459",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Rôle de l'article lu dans J. S. Milne, The work of John Tate (arXiv:1210.7459) : l'inégalité clé de la preuve de Weil se déduit du théorème de Riemann–Roch pour les surfaces.",
+    "usage_corpus": "Positivité d'une forme d'intersection sur C × C (inégalité de Castelnuovo–Severi) : forme géométrique de la preuve de RH pour les courbes.",
+    "verdict": "exact",
+    "interet": "appui"
+  },
+  {
+    "cle": "MV07",
+    "auteurs": "H. L. Montgomery, R. C. Vaughan",
+    "annee": 2007,
+    "titre": "Multiplicative Number Theory I. Classical Theory",
+    "publication": "Cambridge Stud. Adv. Math. 97, Cambridge University Press, 2007",
+    "type": "livre",
+    "lien": "https://personal.science.psu.edu/rcv4/personal/Publications/MNTI/19.0_pp_463_485_Oscillations_of_error_terms.pdf",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_A_EN.md §8 (V6.13), non revérifié : ch. 15 lu par extraction de texte : p. 463, ψ(x) = x + O(x^{α+ε}) ⇒ pas de zéro avec β > α ; Lemme 15.1 (Landau) ; Thm 15.2. Thm 13.6 et Ex. 13.1.1.3 connus seulement par Brent–Platt–Trudgian ; Cor. 5.3 cité de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Ch. 13 et 15 : caractérisation de Θ par ψ(x) − x ; Thm 13.6 (moyenne quadratique sous RH) ; résultats classiques sur polynômes de Dirichlet et méthodes de densité.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Montgomery–Vaughan"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "demontrer"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_A_RESUME_FR.md",
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "New76",
+    "auteurs": "C. M. Newman",
+    "annee": 1976,
+    "titre": "Fourier transforms with only real zeros",
+    "publication": "Proc. Amer. Math. Soc. 61 (1976), 245–251",
+    "lien": "https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Newman_constant",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence via Wikipédia ; conjecture Λ ≥ 0 (démontrée par Rodgers–Tao).",
+    "usage_corpus": "Constante de de Bruijn–Newman ; conjecture Λ ≥ 0.",
+    "verdict": "exact",
+    "motifs": [],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH",
+      "dBN"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Nym50",
+    "auteurs": "B. Nyman",
+    "annee": 1950,
+    "titre": "On the one-dimensional translation group and semi-group in certain function spaces",
+    "publication": "Thèse, Université d'Uppsala, 1950",
+    "type": "thèse",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md (2026-10-03), non revérifié : [VÉRIFIÉ] via Landreau–Richard (Exp. Math. 11) : RH ⇔ approximation de χ_(0,1) par des dilatations de la partie fractionnaire. Titre de la thèse donné de mémoire, non revérifié.",
+    "extrait": "",
+    "usage_corpus": "Critère de Nyman–Beurling (moitié Nyman).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "15_TOMO_DH_formalisation.md",
+      "20_Registre_metaphores_V6.md",
+      "ARITHMETIC_SCHRODINGER_GENERATOR.md",
+      "ATTAQUE_JOURNAL.md",
+      "BIBLIO_POSITIONNEMENT.md",
+      "CHANGELOG.md",
+      "COMPARAISON_BCF.md",
+      "KNOWN_GAPS.md",
+      "LEMMES_RIGOUREUX.md",
+      "MEMO_P2_2_WEIL.md",
+      "NB_GRAM.md",
+      "PLANTED_ERRORS.md",
+      "PRIORITES.md",
+      "README.md",
+      "REFEREE_A.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "REVIEW_PLAN.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Nyman–Beurling",
+      "Nyman 1950",
+      "Nyman-Beurling"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "appui",
+    "cite_aussi": [
+      "01_Synthese_FR.docx",
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx",
+      "09_Attaques_audit_et_amelioration.docx",
+      "10_Attaque2_resultats_N1000.docx",
+      "12_Annulation_du_pole.docx",
+      "13_Lecon_2026.docx"
+    ]
+  },
+  {
+    "cle": "OLBC10",
+    "auteurs": "F. W. J. Olver, D. W. Lozier, R. F. Boisvert, C. W. Clark (éd.)",
+    "annee": 2010,
+    "titre": "NIST Digital Library of Mathematical Functions, ch. 25 (Zeta and related functions)",
+    "publication": "NIST, version en ligne",
+    "type": "site",
+    "lien": "https://dlmf.nist.gov/25",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-04",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [SOURCE DE RÉFÉRENCE EN LIGNE].",
+    "extrait": "",
+    "usage_corpus": "Produit, zéros et propriétés analytiques de ζ.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "16_DARK_ZETA_secteur_sombre_arithmetique.md",
+      "17_DARK_ZETA_premier_detecteur_resultats.md",
+      "18_PRIME_LOCK_premier_verrou_local.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "DLMF",
+      "dlmf.nist"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "PM11",
+    "auteurs": "R. Pérez-Marco",
+    "annee": 2011,
+    "titre": "Statistics on Riemann zeros",
+    "publication": "arXiv:1112.0346",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/1112.0346",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "extrait": "We numerically study the statistical properties of differences of zeros of Riemann zeta function and L-functions",
+    "usage_corpus": "Creux dans les différences de zéros près des log p : observé numériquement.",
+    "verdict": "exact",
+    "motifs": [
+      "Pérez-Marco"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Pol19",
+    "auteurs": "D. H. J. Polymath",
+    "annee": 2019,
+    "titre": "Effective approximation of heat flow evolution of the Riemann ξ function, and a new upper bound for the de Bruijn–Newman constant",
+    "publication": "Res. Math. Sci. 6 (2019), 31 ; arXiv:1904.12438",
+    "lien": "https://arxiv.org/abs/1904.12438",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Résumé arXiv.",
+    "extrait": "we are able to obtain a new upper bound Λ≤0.22 unconditionally",
+    "usage_corpus": "0 ≤ Λ ≤ 0,22 (avec Rodgers–Tao).",
+    "verdict": "exact",
+    "motifs": [
+      "Polymath15"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "dBN"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Pol82",
+    "auteurs": "G. Pólya (lettre à A. M. Odlyzko, 3 janvier 1982), archive A. M. Odlyzko",
+    "annee": 1982,
+    "titre": "Correspondence about the origins of the Hilbert–Pólya conjecture",
+    "publication": "Page web d'A. M. Odlyzko (University of Minnesota)",
+    "type": "site",
+    "lien": "https://www-users.cse.umn.edu/~odlyzko/polya/index.html",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Page consultée le 2026-10-10 : Pólya raconte que vers 1912–1914 à Göttingen, Landau lui demanda une raison physique de RH ; il répondit que RH suivrait si les zéros de Ξ étaient liés à un problème physique à valeurs propres réelles ; jamais publié ; aucune mention publiée avant Montgomery (1973).",
+    "extrait": "",
+    "usage_corpus": "Origine du programme « Hilbert–Pólya » (opérateur auto-adjoint dont le spectre serait les zéros) : remarque orale, non publiée.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+      "AUDIT_STATUS.md",
+      "AUDIT_V4_3.md",
+      "CHANGELOG.md",
+      "KNOWN_GAPS.md",
+      "README.md",
+      "REFERENCES.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Hilbert–Pólya"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": [
+      "01_Synthese_FR.docx",
+      "06_Cheminement_intellectuel.docx",
+      "07_Guide_de_lecture_intuitif.docx"
+    ]
+  },
+  {
+    "cle": "PR22",
+    "auteurs": "Ł. Pańkowski, M. Righetti",
+    "annee": 2022,
+    "titre": "Zeros of L(s)+L(2s)+⋯+L(Ns) in the region of absolute convergence",
+    "publication": "J. Number Theory (2022), article PII S0022314X22001317 ; arXiv:1909.08301",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1909.08301",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Auteurs et titre identifiés le 2026-10-10 sur la page arXiv:1909.08301 (la bibliographie du corpus ne donnait que l'URL ScienceDirect, sans auteurs). Résumé : L(s,χ)+L(2s,χ)+⋯+L(Ns,χ) a une infinité de zéros dans σ>1. Le passage du corpus sur Davenport–Heilbronn (« rappelé dans l'introduction ») n'a pas été revu ; volume et pages JNT non relevés.",
+    "extrait": "",
+    "usage_corpus": "Rappel de l'exemple de Davenport–Heilbronn : équation fonctionnelle de type Riemann, pas de produit d'Euler, zéros hors de la droite et jusque dans la région d'absolue convergence.",
+    "verdict": "imprécis",
+    "correction": "Citer l'article par ses auteurs : Ł. Pańkowski, M. Righetti, « Zeros of L(s)+L(2s)+⋯+L(Ns) in the region of absolute convergence », J. Number Theory (2022), arXiv:1909.08301. Son sujet propre est la somme L(s)+⋯+L(Ns) ; Davenport–Heilbronn n'y est qu'un rappel d'introduction.",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "S0022314X22001317",
+      "L(s)+L(2s)"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "motifs": [
+      "Δ de Ramanujan"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "dimensions": [
+      "degre2"
+    ],
+    "conjectures": [
+      "D2"
+    ],
+    "cle": "Ram16",
+    "auteurs": "S. Ramanujan",
+    "annee": 1916,
+    "titre": "On certain arithmetical functions",
+    "publication": "Trans. Cambridge Philos. Soc. 22 (1916), 159–184",
+    "lien": "https://encyclopediaofmath.org/wiki/Ramanujan_function",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence via l'Encyclopedia of Mathematics (article « Ramanujan function ») ; article non lu.",
+    "usage_corpus": "Fonction τ de Ramanujan et conjecture |τ(p)| ≤ 2p^{11/2} (démontrée par Deligne).",
+    "verdict": "exact",
+    "interet": "contexte"
+  },
+  {
+    "cle": "Ran39",
+    "auteurs": "R. A. Rankin",
+    "annee": 1939,
+    "titre": "Contributions to the theory of Ramanujan's function τ(n) and similar arithmetical functions. I, II",
+    "publication": "Proc. Cambridge Philos. Soc. 35 (1939), 351–356 et 357–372",
+    "type": "article",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Notice sugaku.net (OpenAlex) consultée le 2026-10-10 : titre, auteur, Math. Proc. Cambridge Philos. Soc., 1er juillet 1939 ; volume et pages donnés de mémoire. La méthode de Rankin–Selberg (avec Selberg 1940) est l'objet cité.",
+    "extrait": "",
+    "usage_corpus": "Fonction de Rankin–Selberg de Δ intervenant dans la constante Λ_Δ de la formule de Bogomolny–Keating (document 41).",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "41_LA_RENCONTRE_EN_DEGRE_2.md"
+    ],
+    "motifs": [
+      "Rankin–Selberg",
+      "Rankin"
+    ],
+    "conjectures": [
+      "D2",
+      "PC"
+    ],
+    "dimensions": [
+      "degre2"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Rig15",
+    "auteurs": "M. Righetti",
+    "annee": 2015,
+    "titre": "On the density of zeros of linear combinations of Euler products for σ > 1",
+    "publication": "arXiv:1506.05716 (2015)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/1506.05716",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_ARCHIPEL_EN.md §4 (V6.13), non revérifié : vu seulement comme titre ; non vérifié.",
+    "extrait": "",
+    "usage_corpus": "Version densité du résultat de Righetti.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "RELECTURE_ARCHIPEL_EN.md"
+    ]
+  },
+  {
+    "cle": "Rig16",
+    "auteurs": "M. Righetti",
+    "annee": 2016,
+    "titre": "Zeros of combinations of Euler products for σ > 1",
+    "publication": "Monatsh. Math. 180 (2016), no. 2, 337–356 ; DOI 10.1007/s00605-015-0773-0 ; arXiv:1412.6331",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1412.6331",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_ARCHIPEL_EN.md §4 (V6.13), non revérifié : résumé vérifié (V6.13) : une expression polynomiale non monomiale en produits d'Euler d'une large classe a une infinité de zéros dans σ > 1, ce qui étend Booker–Thorne. Volume, numéro et pages vérifiés le 2026-10-10 sur la page Springer.",
+    "extrait": "",
+    "usage_corpus": "Extension de Booker–Thorne : combinaisons non monomiales de produits d'Euler ⇒ infinité de zéros dans σ > 1.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH",
+      "D2"
+    ],
+    "dimensions": [
+      "situer",
+      "case"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "RELECTURE_ARCHIPEL_EN.md"
+    ]
+  },
+  {
+    "cle": "RT20",
+    "auteurs": "B. Rodgers, T. Tao",
+    "annee": 2020,
+    "titre": "The De Bruijn–Newman constant is non-negative",
+    "publication": "Forum Math. Pi 8 (2020), e6 ; arXiv:1801.05914",
+    "lien": "https://arxiv.org/abs/1801.05914",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Résumé arXiv ; page de Cambridge (Forum of Mathematics, Pi, 2020).",
+    "extrait": "Newman showed that there exists a finite constant Λ (the de Bruijn-Newman constant)",
+    "usage_corpus": "Λ ≥ 0 ; RH équivaut à Λ ≤ 0, donc à Λ = 0.",
+    "verdict": "exact",
+    "motifs": [
+      "Rodgers–Tao"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "dBN"
+    ],
+    "dimensions": [
+      "situer",
+      "croiser"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Rub04",
+    "auteurs": "M. Rubinstein",
+    "annee": 2004,
+    "titre": "Computational methods and experiments in analytic number theory",
+    "publication": "arXiv:math/0412181 (2004) ; chapitre d'ouvrage collectif (LMS Lecture Notes, 2005 : non vérifié)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/math/0412181",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Texte arXiv, §3.3.",
+    "extrait": "One way to control this cancellation is to choose g(s) equal to δ^{-s}",
+    "usage_corpus": "L'idée de tourner le contour pour éviter l'annulation exponentielle est connue des calculs de fonctions L.",
+    "verdict": "imprécis",
+    "correction": "Rubinstein (§3.3) introduit un facteur δ^{−s}, |δ| = 1, dans l'équation fonctionnelle approchée lissée pour maîtriser cette annulation ; c'est l'équivalent de la rotation du contour, qu'il ne formule pas ainsi.",
+    "motifs": [
+      "Rubinstein"
+    ],
+    "verifie_le": "2026-10-10",
+    "conjectures": [
+      "D2"
+    ],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Sch03",
+    "auteurs": "R. Schoof",
+    "annee": 2003,
+    "titre": "The Riemann hypothesis for curves over finite fields (notes)",
+    "publication": "notes, s.d.",
+    "type": "notes de cours",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [À VÉRIFIER EN ENTIER] ; MEMO_P2_2_WEIL : « Schoof, RHcurves ». Ni la date ni le support n'ont été vérifiés.",
+    "extrait": "",
+    "usage_corpus": "Exposé de la preuve de RH pour les courbes sur F_q (ingrédients I–III du mémo Weil).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "MEMO_P2_2_WEIL.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Schoof"
+    ],
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Sch10",
+    "auteurs": "P. J. Schmid",
+    "annee": 2010,
+    "titre": "Dynamic mode decomposition of numerical and experimental data",
+    "publication": "J. Fluid Mech. 656 (2010), 5–28",
+    "type": "article",
+    "lien": "https://doi.org/10.1017/S0022112010001217",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE ÉDITEUR]. DOI ajouté de mémoire.",
+    "extrait": "",
+    "usage_corpus": "DMD : identification d'un opérateur linéaire approchant l'évolution à partir de snapshots.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Schmid",
+      "Dynamic mode decomposition",
+      "Dynamic Mode Decomposition"
+    ],
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Sel42",
+    "auteurs": "A. Selberg",
+    "annee": 1942,
+    "titre": "On the zeros of Riemann's zeta-function",
+    "publication": "Skr. Norske Vid. Akad. Oslo I, no. 10 (1942), 1–59",
+    "lien": "https://en.wikipedia.org/wiki/Selberg%27s_zeta_function_conjecture",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence via Wikipédia ; la proportion positive de zéros sur la droite n'apparaît pas en clair dans l'extraction.",
+    "usage_corpus": "Une proportion positive de zéros sur la droite critique.",
+    "verdict": "exact",
+    "motifs": [
+      "Selberg (1942)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Sel56",
+    "auteurs": "A. Selberg",
+    "annee": 1956,
+    "titre": "Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces with applications to Dirichlet series",
+    "publication": "J. Indian Math. Soc. 20 (1956), 47–87",
+    "lien": "https://informaticsjournals.com/index.php/jims/article/view/16985",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie (page de la revue) ; l'énoncé « RH pour la fonction zêta de Selberg par l'autoadjonction du laplacien » vient de la littérature secondaire (titre de Randol 1978, AMS Trans. 236).",
+    "usage_corpus": "Opérateur autoadjoint (Selberg) : la positivité vient d'un espace de Hilbert.",
+    "verdict": "exact",
+    "motifs": [
+      "auto-adjoint (Selberg)",
+      "espace de Hilbert (Selberg)"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Siu05",
+    "auteurs": "Y.-T. Siu",
+    "annee": 2005,
+    "titre": "Zero-free strip and growth of error (notes de cours Math 213b)",
+    "publication": "Harvard University, Math 213b, printemps 2005",
+    "type": "notes de cours",
+    "lien": "https://legacy-www.math.harvard.edu/archive/213b_spring_05/zero_strip_and_growth_error.pdf",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_A_EN.md §8 (V6.13), non revérifié : page lue : bande sans zéro ⇒ erreur x^θ log² x ; erreur x^α ⇒ zéros dans la bande de demi-largeur α. Titre exact du document non relevé (nom de fichier).",
+    "extrait": "",
+    "usage_corpus": "Les deux directions (bande sans zéro ⇔ taille de l'erreur sur ψ), analogue ponctuel du Théorème A.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "RELECTURE_THEOREME_A_EN.md"
+    ]
+  },
+  {
+    "cle": "Sou05",
+    "auteurs": "K. Soundararajan",
+    "annee": 2005,
+    "titre": "Degree 1 elements of the Selberg class",
+    "publication": "Expo. Math. 23 (2005), 65–70 ; arXiv:math/0306300",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/math/0306300",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_ARCHIPEL_EN.md §4 (V6.13), non revérifié : résumé (« short and simple proof of a beautiful result of Kaczorowski and Perelli ») et introduction : degré 1 ⇒ F(s) = L(s+iA, χ') avec χ' primitif. Revue et pages ajoutées de mémoire (journal-ref absent de la page arXiv revue le 2026-10-10).",
+    "extrait": "",
+    "usage_corpus": "Vérification secondaire de la classification de Kaczorowski–Perelli en degré 1.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "RELECTURE_ARCHIPEL_EN.md"
+    ]
+  },
+  {
+    "cle": "SR11",
+    "auteurs": "G. Sierra, J. Rodríguez-Laguna",
+    "annee": 2011,
+    "titre": "The H = xp model revisited and the Riemann zeros",
+    "publication": "Phys. Rev. Lett. 106 (2011), 200201 ; arXiv:1102.5356",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1102.5356",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ ABSTRACT/PAGE ÉDITEUR].",
+    "extrait": "",
+    "usage_corpus": "Variante régularisée du modèle H = xp.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CHANGELOG.md",
+      "REFERENCES.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Sierra",
+      "1102.5356"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Ste69",
+    "auteurs": "S. A. Stepanov",
+    "annee": 1969,
+    "titre": "On the number of points of a hyperelliptic curve over a finite prime field",
+    "publication": "Izv. Akad. Nauk SSSR Ser. Mat. 33 (1969), no. 5, 1171–1181 ; trad. Math. USSR-Izv. 3 (1969), 1103–1114",
+    "type": "article",
+    "lien": "https://mathnet.ru/eng/im2197",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Notice Math-Net.Ru consultée le 2026-10-10 : bibliographie complète, DOI 10.1070/IM1969v003n05ABEH000834 ; résumé : nouvelle méthode pour les congruences de module premier, estimations comparables à celles de Hasse et Weil pour les courbes hyperelliptiques.",
+    "extrait": "",
+    "usage_corpus": "Méthode élémentaire de Stepanov (fonction auxiliaire), reprise par Bombieri, pour les bornes de Weil.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "MEMO_P2_2_WEIL.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Stepanov"
+    ],
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre",
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ]
+  },
+  {
+    "cle": "Suz26",
+    "auteurs": "M. Suzuki",
+    "annee": 2026,
+    "titre": "Weil's quadratic form via the screw function",
+    "publication": "arXiv:2606.09096 (juin 2026 ; v3 du 23 sept. 2026)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2606.09096",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "extrait": "We establish a unified operator-theoretic framework for understanding the results on the Weil quadratic form",
+    "usage_corpus": "Opérateur autoadjoint dont la forme quadratique est celle de Weil (fonction « screw »).",
+    "verdict": "exact",
+    "motifs": [
+      "Suzuki"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case"
+    ],
+    "interet": "confronter",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "SW09",
+    "auteurs": "É. Saias, A. Weingartner",
+    "annee": 2009,
+    "titre": "Zeros of Dirichlet series with periodic coefficients",
+    "publication": "Acta Arith. 140 (2009), no. 4, 335–344 ; DOI 10.4064/aa140-4-4 ; arXiv:0807.0783",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/0807.0783",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_ARCHIPEL_EN.md §4 (V6.13), non revérifié : résumé vérifié (page IMPAN et arXiv) et Théorème 2 vérifié dans le texte intégral : pour ≥ 2 caractères primitifs et des polynômes de Dirichlet non nuls, F = Σ P_ψ L_ψ a ≫ T zéros distincts dans 1/2 ≤ σ₁ < Re s < σ₂ ≤ 1+η. Pas d'énoncé « si et seulement si ».",
+    "extrait": "",
+    "usage_corpus": "« Dans V_q, pas de zéro dans Re s > 1 ⇒ point d'Euler » (donc « RH ⇒ point d'Euler ») est un cas particulier immédiat du Théorème 2 : la note 30 n'est pas nouvelle sur ce point.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "20_Registre_metaphores_V6.md",
+      "30_ARCHIPEL_D_EULER.md",
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "CHANGELOG.md",
+      "README.md"
+    ],
+    "motifs": [
+      "Saias–Weingartner"
+    ],
+    "conjectures": [
+      "RH",
+      "D2"
+    ],
+    "dimensions": [
+      "situer",
+      "case",
+      "demontrer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "00_READ_ME_FIRST_EN.md",
+      "RELECTURE_ARCHIPEL_EN.md",
+      "RELECTURE_ARCHIPEL_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "Sze39",
+    "auteurs": "G. Szegő",
+    "annee": 1939,
+    "titre": "Orthogonal Polynomials",
+    "publication": "AMS Colloquium Publications 23 (1939)",
+    "type": "livre",
+    "lien": "https://en.wikipedia.org/wiki/Orthogonal_polynomials_on_the_unit_circle",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence via Wikipédia (polynômes orthogonaux sur le cercle : récurrence de Szegő, coefficients de Verblunsky) ; la formule n'apparaît pas dans l'extraction.",
+    "usage_corpus": "Récurrence de Levinson–Szegő (polynômes orthogonaux sur le cercle).",
+    "verdict": "exact",
+    "motifs": [
+      "Levinson–Szegő"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Tit37",
+    "auteurs": "E. C. Titchmarsh",
+    "annee": 1937,
+    "titre": "Introduction to the Theory of Fourier Integrals",
+    "publication": "Oxford, Clarendon Press, 1937",
+    "type": "livre",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "SOURCES : [CLASSIQUE — RÉFÉRENCE FONCTIONNELLE À FIXER] pour la formule de Plancherel de Mellin. Manuel proposé de mémoire, non vérifié.",
+    "extrait": "",
+    "usage_corpus": "Formule de Plancherel pour la transformée de Mellin (Théorème B).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "15_TOMO_DH_formalisation.md",
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "CALIBRATION_SPECTRALE.md",
+      "COMPARAISON_BCF.md",
+      "LEMMES_RIGOUREUX.md",
+      "MEMO_P2_3_DENSITE.md",
+      "PRIORITY_CHECK.md",
+      "REFEREE_B.md",
+      "REFEREE_INSTRUCTIONS.md",
+      "REPORT_FR.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md",
+      "THEOREME_TERME_DOMINANT.md"
+    ],
+    "motifs": [
+      "Plancherel",
+      "Mellin–Plancherel"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "07_Guide_de_lecture_intuitif.docx",
+      "11_Estimation_sous_RH.docx",
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "Tit86",
+    "auteurs": "E. C. Titchmarsh",
+    "annee": 1986,
+    "titre": "The Theory of the Riemann Zeta-Function",
+    "publication": "2e éd., révisée par D. R. Heath-Brown, Oxford, Clarendon Press, 1986",
+    "type": "livre",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_B_EN.md, References (V6.13), non revérifié : [memory] : §9.2, §9.6 (fractions partielles de ζ'/ζ), Lemme 3.12, Thm 9.6(A), §2.13 cités de mémoire ; numéros à revérifier dans l'édition citée.",
+    "extrait": "",
+    "usage_corpus": "Fractions partielles de ζ'/ζ, estimations loin des zéros, formule de Perron, densités classiques ; §2.13 pour le théorème de Hamburger. Th. 14.25(C) : RH équivaut à M(x) = O(x^{1/2+ε}) (cité de mémoire, doc. 54).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md",
+      "THEOREME_TERME_DOMINANT.md"
+    ],
+    "motifs": [
+      "Titchmarsh"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "03_Dossier_de_relecture_EN.docx",
+      "RELECTURE_ARCHIPEL_EN.md",
+      "RELECTURE_THEOREME_A_EN.md",
+      "RELECTURE_THEOREME_A_RESUME_FR.md",
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "cle": "Toe11",
+    "auteurs": "O. Toeplitz",
+    "annee": 1911,
+    "titre": "Über die Fourier'sche Entwickelung positiver Funktionen",
+    "publication": "Rend. Circ. Mat. Palermo 32 (1911), 191–192",
+    "type": "article",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Deux recherches (2026-10-10) sans notice exploitable ; bibliographie donnée de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Moitié Toeplitz du théorème de Carathéodory–Toeplitz.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md"
+    ],
+    "motifs": [
+      "Carathéodory–Toeplitz"
+    ],
+    "conjectures": [
+      "MR",
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "TRLB14",
+    "auteurs": "J. H. Tu, C. W. Rowley, D. M. Luchtenburg, S. L. Brunton, J. N. Kutz",
+    "annee": 2014,
+    "titre": "On dynamic mode decomposition: theory and applications",
+    "publication": "J. Comput. Dyn. 1 (2014), 391–421 ; arXiv:1312.0041",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/1312.0041",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE/ABSTRACT].",
+    "extrait": "",
+    "usage_corpus": "DMD comme décomposition propre d'un opérateur linéaire approché ; liens Koopman.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "REFERENCES.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Tu, C. W. Rowley",
+      "1312.0041",
+      "Tu–Rowley"
+    ],
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Tur53",
+    "auteurs": "A. M. Turing",
+    "annee": 1953,
+    "titre": "Some calculations of the Riemann zeta-function",
+    "publication": "Proc. London Math. Soc. (3) 3 (1953), 99–117",
+    "lien": "https://en.wikipedia.org/wiki/Turing%27s_method",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie et principe (comptage certifié jusqu'à un point de Gram) via Wikipédia ; article non lu. L'usage du corpus (S(t) borné, de moyenne nulle) est la forme simple de l'idée de Turing.",
+    "extrait": "Turing's method is used to verify that for any given Gram point gm there lie m + 1 zeros of ζ(s)",
+    "usage_corpus": "Complétude d'une liste de zéros : N(T) − θ(T)/π reste borné et de moyenne nulle ; une paire manquée le décalerait de −2.",
+    "verdict": "imprécis",
+    "correction": "Le corpus applique une forme simple (contrôle empirique de S(t)) de la méthode de Turing ; la méthode certifiée utilise une borne explicite sur ∫S(t)dt et les points de Gram.",
+    "motifs": [
+      "méthode de Turing",
+      "complétude de Turing"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Vas95",
+    "auteurs": "V. I. Vasyunin",
+    "annee": 1995,
+    "titre": "On a biorthogonal system associated with the Riemann hypothesis",
+    "publication": "Algebra i Analiz 7 (1995), no. 3 ; trad. St. Petersburg Math. J. 7 (1996)",
+    "type": "article",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "SOURCES : [RECHERCHE DE PRIORITÉ À FAIRE] ; BIBLIO_POSITIONNEMENT : lien avec A(λ) [À VÉRIFIER]. Bibliographie donnée de mémoire, non vérifiée.",
+    "extrait": "",
+    "usage_corpus": "Sommes de cotangentes de Vasyunin, possible forme équivalente des Gram / autocorrélations du corpus.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "BIBLIO_POSITIONNEMENT.md",
+      "LEMMES_RIGOUREUX.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SOURCES_RH_PROGRAMME.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Vasyunin"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "cite_aussi": []
+  },
+  {
+    "cle": "VFr08",
+    "auteurs": "M. van Frankenhuijsen",
+    "annee": 2008,
+    "titre": "The Riemann hypothesis for function fields over a finite field",
+    "publication": "arXiv:0806.0044",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/0806.0044",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv, résumé.",
+    "extrait": "spec Z × spec Z = spec Z is one-dimensional",
+    "usage_corpus": "Pour Spec Z, la surface produit manque : Spec Z × Spec Z = Spec Z est de dimension 1.",
+    "verdict": "exact",
+    "motifs": [
+      "van Frankenhuijsen"
+    ],
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "case"
+    ],
+    "interet": "contexte",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Wei41",
+    "auteurs": "A. Weil",
+    "annee": 1941,
+    "titre": "On the Riemann hypothesis in function-fields",
+    "publication": "Proc. Natl. Acad. Sci. USA 27 (1941), 345–347",
+    "type": "article",
+    "lien": "https://doi.org/10.1073/pnas.27.7.345",
+    "statut": "non vérifié",
+    "verifie_le": "",
+    "ce_qui_a_ete_verifie": "SOURCES : [CLASSIQUE — RÉFÉRENCES PRIMAIRES À FIXER] (« Weil 1942–48 ») ; note PNAS donnée de mémoire comme première annonce, non vérifiée en ligne. Les livres de 1948 font l'objet de la fiche Wei48.",
+    "extrait": "",
+    "usage_corpus": "Hypothèse de Riemann pour les courbes sur les corps finis (annonce) ; Modèle réduit.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "MEMO_P2_2_WEIL.md",
+      "SYNTHESIS_NOTE_EN.md"
+    ],
+    "motifs": [
+      "Weil (1942",
+      "Weil 1942"
+    ],
+    "conjectures": [
+      "MR",
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "case"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Wei48",
+    "auteurs": "A. Weil",
+    "annee": 1948,
+    "titre": "Sur les courbes algébriques et les variétés qui s'en déduisent",
+    "publication": "Actualités Sci. Ind. 1041, Hermann, Paris (1948)",
+    "type": "livre",
+    "lien": "https://denisevellachemla.eu/Weil-courbes-varietes.pdf",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Lecture ciblée de la retranscription 2022 : anneau des classes de correspondances, théorème 10 σ(ξξ′)>0 et Frobenius, théorème 13/corollaire 3 ; lecture intégrale et recoupement avec l’édition originale encore ouverts.",
+    "extrait": "C'est le théorème de l'indice de Hodge qui apparaît alors comme source de l'inégalité cruciale. (Chambert-Loir)",
+    "usage_corpus": "Mécanisme de positivité sur les classes de correspondances, puis inégalité de trace pour le Frobenius ; modèle géométrique, aucun transfert établi à zêta des entiers.",
+    "verdict": "imprécis",
+    "correction": "Le mémoire Sur les courbes… établit directement la positivité par correspondances, intersections et Riemann–Roch. La fiche précédente le résumait trop exclusivement par la jacobienne ; ne pas confondre ce mémoire et celui sur les variétés abéliennes.",
+    "motifs": [
+      "Weil (1948)",
+      "Weil 1948",
+      "inégalité de Castelnuovo"
+    ],
+    "verifie_le": "2026-10-12",
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre",
+      "case"
+    ],
+    "interet": "appui",
+    "docs": [
+      "67",
+      "68",
+      "69"
+    ],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Wei52",
+    "auteurs": "A. Weil",
+    "annee": 1952,
+    "titre": "Sur les « formules explicites » de la théorie des nombres premiers",
+    "publication": "Comm. Sém. Math. Univ. Lund, vol. suppl. dédié à M. Riesz (1952), 252–265",
+    "lien": "https://en.wikipedia.org/wiki/Weil%27s_criterion",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence et forme du critère (une distribution est de type positif) via Wikipédia (Weil's criterion).",
+    "extrait": "It takes the form of an equivalent statement, to the effect that a certain generalized function is positive definite.",
+    "usage_corpus": "Critère de Weil : RH équivaut à la positivité de la forme quadratique de la formule explicite.",
+    "verdict": "exact",
+    "motifs": [
+      "positivité de Weil",
+      "forme de Weil"
+    ],
+    "type": "article",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "case",
+      "situer"
+    ],
+    "interet": "appui",
+    "docs": [],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Wey12",
+    "auteurs": "H. Weyl",
+    "annee": 1912,
+    "titre": "Das asymptotische Verteilungsgesetz der Eigenwerte linearer partieller Differentialgleichungen",
+    "publication": "Math. Ann. 71 (1912), 441–479 (non vérifié)",
+    "type": "article",
+    "lien": "",
+    "statut": "non vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Cité de mémoire : inégalité de Weyl sur les valeurs propres d'une somme de matrices hermitiennes, et loi de Weyl.",
+    "extrait": "",
+    "usage_corpus": "Inégalité de Weyl : la plus petite valeur propre bouge au plus de la norme de la perturbation.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "motifs": [
+      "inégalité de Weyl"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [],
+    "dimensions": [
+      "voir"
+    ],
+    "interet": "outil"
+  },
+  {
+    "type": "livre",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "motifs": [
+      "densité de Weyl"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "dimensions": [
+      "croiser"
+    ],
+    "conjectures": [
+      "PC",
+      "MR"
+    ],
+    "cle": "Wey39",
+    "auteurs": "H. Weyl",
+    "annee": 1939,
+    "titre": "The Classical Groups: Their Invariants and Representations",
+    "publication": "Princeton University Press (1939)",
+    "lien": "https://press.princeton.edu/books/paperback/9780691057569/the-classical-groups",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Bibliographie (éditeur, recension de la Mathematical Gazette) ; formule d'intégration de Weyl citée de mémoire.",
+    "usage_corpus": "Densité de Weyl des angles propres d'une matrice unitaire de taille N : Π|e^{iθl} − e^{iθm}|².",
+    "verdict": "exact",
+    "interet": "appui"
+  },
+  {
+    "cle": "Wid41",
+    "auteurs": "D. V. Widder",
+    "annee": 1941,
+    "titre": "The Laplace Transform",
+    "publication": "Princeton Univ. Press, 1941",
+    "type": "livre",
+    "lien": "",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-09",
+    "ce_qui_a_ete_verifie": "repris de relecture/RELECTURE_THEOREME_B_EN.md, References (V6.13), non revérifié : [memory] : ch. V (théorèmes taubériens) ; numéros de théorème à vérifier.",
+    "extrait": "",
+    "usage_corpus": "Théorème taubérien de Karamata utilisé pour passer de Q_η à Q(e^L) (Théorème B).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+    ],
+    "motifs": [
+      "Widder"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer"
+    ],
+    "interet": "outil",
+    "cite_aussi": [
+      "RELECTURE_THEOREME_B_EN.md",
+      "RELECTURE_THEOREME_B_RESUME_FR.md"
+    ]
+  },
+  {
+    "type": "rapport",
+    "verifie_le": "2026-10-10",
+    "correction": "",
+    "extrait": "",
+    "motifs": [
+      "surmise de Wigner"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "dimensions": [
+      "voir"
+    ],
+    "conjectures": [
+      "PC"
+    ],
+    "cle": "Wig57",
+    "auteurs": "E. P. Wigner",
+    "annee": 1957,
+    "titre": "Results and theory of resonance absorption",
+    "publication": "Conference on Neutron Physics by Time-of-Flight, Gatlinburg (1956), Oak Ridge National Laboratory Report ORNL-2309 (1957), p. 67",
+    "lien": "https://en.wikipedia.org/wiki/Wigner_surmise",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Référence via l'article « Wigner surmise » de Wikipédia ; la formule pour β = 2 n'apparaît pas dans l'extraction.",
+    "usage_corpus": "Surmise de Wigner : loi approchée des écarts entre valeurs propres (référence GUE de la V6.16).",
+    "verdict": "exact",
+    "interet": "outil"
+  },
+  {
+    "cle": "WS93",
+    "auteurs": "H. Wu, D. W. L. Sprung",
+    "annee": 1993,
+    "titre": "Riemann zeros and a fractal potential",
+    "publication": "Phys. Rev. E 48 (1993), 2595–2598 ; DOI 10.1103/PhysRevE.48.2595",
+    "type": "article",
+    "lien": "https://doi.org/10.1103/PhysRevE.48.2595",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-03",
+    "ce_qui_a_ete_verifie": "repris de 4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md, non revérifié : [VÉRIFIÉ PAGE ÉDITEUR] : potentiel 1D reconstruit numériquement pour reproduire les zéros.",
+    "extrait": "",
+    "usage_corpus": "Potentiel 1D (fractal) reconstruit numériquement dont le spectre reproduit les zéros ; pas de dérivation arithmétique.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "CHANGELOG.md",
+      "REFERENCES.md",
+      "ROADMAP_HISTORY.md",
+      "SCHRODINGER_FLUX.md",
+      "SOURCES_RH_PROGRAMME.md"
+    ],
+    "motifs": [
+      "Wu, D. W. L. Sprung",
+      "Wu–Sprung"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "voir",
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Zhu26",
+    "auteurs": "X. Zhu",
+    "annee": 2026,
+    "titre": "Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau–Widom decay law",
+    "publication": "arXiv:2608.24827 (v2, sept. 2026)",
+    "type": "prépublication",
+    "lien": "https://arxiv.org/abs/2608.24827",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv : résumé, §1.1 (définition de λ*(L)) et remarque 2.2. V650 : HTML v2 relu ; domaine sans contraintes comparé au noyau polaire du corpus, L=S. Certification à L=0.8 annoncée, non reproduite ici ; coût des majorants ponctuels identifié comme une limite de cette architecture.",
+    "extrait": "Weil's criterion states that the Riemann Hypothesis (RH) is equivalent to the nonnegativity of an explicit quadratic form",
+    "usage_corpus": "La plus petite valeur propre λ_min de la matrice de Weil est le λ*(L) de Zhu.",
+    "verdict": "imprécis",
+    "correction": "λ*(L) est un infimum variationnel sur toutes les fonctions test de support [−L, L] ; la plus petite valeur propre d'une matrice de Weil de taille finie en est un majorant (Zhu, remarque 2.2).",
+    "motifs": [
+      "λ*(L) de Zhu",
+      "Zhu (arXiv"
+    ],
+    "verifie_le": "2026-10-13",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "voir",
+      "case"
+    ],
+    "interet": "confronter",
+    "docs": [
+      "75"
+    ],
+    "cite_aussi": []
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "We give an estimate for sums appearing in the Nyman-Beurling criterion for the Riemann Hypothesis.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "02_Article_court_EN.docx",
+      "12_Annulation_du_pole.docx"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "type": "prépublication",
+    "cle": "MR18",
+    "auteurs": "H. Maier, M. Th. Rassias",
+    "annee": 2018,
+    "titre": "Explicit estimates of sums related to the Nyman–Beurling criterion for the Riemann Hypothesis",
+    "publication": "arXiv:1806.05070 (2018)",
+    "lien": "https://arxiv.org/abs/1806.05070",
+    "ce_qui_a_ete_verifie": "Page arXiv (v1, 12 juin 2018), auteurs et résumé. Déjà vérifiée sur résumé en V5.6 (CHANGELOG). Cité par OpenAI (réponse reçue, auditée en V5.3, doc. 09) ; lien d'origine nettoyé du traceur utm_source=chatgpt.com.",
+    "usage_corpus": "Sommes Möbius/Vasyunin du cadre Nyman–Beurling ; gains de puissance non triviaux, sans la borne nécessaire à T_N (article court [23], doc. 12).",
+    "motifs": [
+      "Maier–Rassias",
+      "1806.05070"
+    ]
+  },
+  {
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "extrait": "Using this duality Weil gave a criterion for RH",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "contexte",
+    "type": "article",
+    "cle": "Con03",
+    "auteurs": "J. B. Conrey",
+    "annee": 2003,
+    "titre": "The Riemann Hypothesis",
+    "publication": "Notices Amer. Math. Soc. 50, n° 3 (mars 2003)",
+    "lien": "https://www.ams.org/notices/200303/fea-conrey-web.pdf",
+    "ce_qui_a_ete_verifie": "PDF de l'AMS : titre, auteur, section « Weil's Explicit Formula and Positivity Criterion ». Numéro de mars 2003 d'après l'adresse ; pagination non lue. Cité par OpenAI (réponse reçue, auditée en V5.3, doc. 09) ; lien d'origine nettoyé du traceur utm_source=chatgpt.com.",
+    "usage_corpus": "Survol ; le critère de positivité de Weil, auquel se ramène la positivité Re⟨Af,f⟩ ≤ 0 du Hilbert–Pólya dissipatif proposé par OpenAI.",
+    "motifs": [
+      "fea-conrey",
+      "Conrey (2003)"
+    ]
+  },
+  {
+    "statut": "non vérifié",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "outil",
+    "type": "site",
+    "cle": "MO21",
+    "auteurs": "MathOverflow (question 400779)",
+    "annee": 2021,
+    "titre": "A question on an equivalence of RH",
+    "publication": "mathoverflow.net, question 400779 (année estimée d'après le numéro, non vérifiée)",
+    "lien": "https://mathoverflow.net/questions/400779",
+    "ce_qui_a_ete_verifie": "Non vérifié : le site est bloqué depuis l'environnement de travail (10 octobre 2026), pas de contournement. Cité par OpenAI (réponse reçue, auditée en V5.3, doc. 09) ; lien d'origine nettoyé du traceur utm_source=chatgpt.com.",
+    "usage_corpus": "Source donnée par OpenAI pour l'équivalence connue Σ 1/|ρ|² = 2 + γ − log 4π ⇔ RH (énergie transverse E⊥, piste OB01, close).",
+    "motifs": [
+      "400779"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "type": "article",
+    "cle": "Gon89",
+    "auteurs": "S. M. Gonek",
+    "annee": 1989,
+    "titre": "On negative moments of the Riemann zeta-function",
+    "publication": "Mathematika 36, n° 1 (1989), 71–88 ; DOI 10.1112/S0025579300013589",
+    "lien": "https://www.cambridge.org/core/journals/mathematika/article/abs/on-negative-moments-of-the-riemann-zetafunction/A50B73CFFFFE52D5BFC98F467117282E",
+    "ce_qui_a_ete_verifie": "Page de Cambridge Core : auteur, volume, numéro, pages, année, DOI.",
+    "usage_corpus": "Moments négatifs de ζ ; référence [10] de l'article court.",
+    "motifs": [
+      "On negative moments of the Riemann"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "We verify numerically, in a rigorous way using interval arithmetic, that the Riemann hypothesis is true up to height",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "type": "article",
+    "cle": "PT21",
+    "auteurs": "D. J. Platt, T. S. Trudgian",
+    "annee": 2021,
+    "titre": "The Riemann hypothesis is true up to 3·10^12^",
+    "publication": "Bull. London Math. Soc. 53 (2021) ; DOI 10.1112/blms.12460 ; arXiv:2004.09765",
+    "lien": "https://arxiv.org/abs/2004.09765",
+    "ce_qui_a_ete_verifie": "Page arXiv : titre, auteurs, résumé, DOI (préfixe du Bull. London Math. Soc.).",
+    "usage_corpus": "Vérification numérique de RH jusqu'à 3·10¹² ; référence [18] de l'article court.",
+    "motifs": [
+      "Platt, T. Trudgian, The Riemann",
+      "2004.09765"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "Assuming the Riemann Hypothesis (RH), Montgomery proved a theorem concerning pair correlation of zeros",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "02_Article_court_EN.docx"
+    ],
+    "conjectures": [
+      "RH",
+      "PC",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer",
+      "croiser"
+    ],
+    "interet": "confronter",
+    "type": "article",
+    "cle": "BGST24",
+    "auteurs": "S. A. C. Baluyot, D. A. Goldston, A. I. Suriajaya, C. L. Turnage-Butterbaugh",
+    "annee": 2024,
+    "titre": "An unconditional Montgomery theorem for pair correlation of zeros of the Riemann zeta-function",
+    "publication": "Acta Arith. 214 (2024), 357–376 ; DOI 10.4064/aa230612-20-3",
+    "lien": "https://impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/online/115529/an-unconditional-montgomery-theorem-for-pair-correlation-of-zeros-of-the-riemann-zeta-function",
+    "ce_qui_a_ete_verifie": "Page d'IMPAN : auteurs, volume, pages, année, DOI, début du résumé.",
+    "usage_corpus": "Théorème de Montgomery sur la corrélation de paires sans RH ; référence [21] de l'article court.",
+    "motifs": [
+      "Baluyot"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "13_Lecon_2026.docx"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "type": "prépublication",
+    "cle": "Wan26a",
+    "auteurs": "B. Wang",
+    "annee": 2026,
+    "titre": "Simple critical zeros and distinct zeros of the Riemann zeta-function in short intervals",
+    "publication": "arXiv:2609.07918 (septembre 2026)",
+    "lien": "https://arxiv.org/abs/2609.07918",
+    "ce_qui_a_ete_verifie": "Page arXiv (v1, 7 septembre 2026) : titre, auteur, résumé.",
+    "usage_corpus": "Proportions de zéros simples et critiques en intervalles courts, après Alpöge–Furman et Lamzouri (doc. 13).",
+    "motifs": [
+      "2609.07918"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "13_Lecon_2026.docx"
+    ],
+    "conjectures": [
+      "RH",
+      "SZ"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter",
+    "type": "prépublication",
+    "cle": "Wan26b",
+    "auteurs": "B. Wang",
+    "annee": 2026,
+    "titre": "Proportions of the non-trivial zeros of the Riemann zeta function",
+    "publication": "arXiv:2609.24167 (septembre 2026)",
+    "lien": "https://arxiv.org/abs/2609.24167",
+    "ce_qui_a_ete_verifie": "Page arXiv (v1, 21 septembre 2026) : titre, auteur, résumé (C₀ ≈ 0,67250 ; C₁ ≈ 0,83625).",
+    "usage_corpus": "Proportions de zéros (doc. 13).",
+    "motifs": [
+      "2609.24167"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [
+      "13_Lecon_2026.docx"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "type": "prépublication",
+    "cle": "PC26",
+    "auteurs": "A. Pearce-Crump",
+    "annee": 2026,
+    "titre": "Optimising Selberg's method for critical zeros",
+    "publication": "arXiv:2609.15329 (septembre 2026)",
+    "lien": "https://arxiv.org/abs/2609.15329",
+    "ce_qui_a_ete_verifie": "Page arXiv (v1, 14 septembre 2026) : titre, auteur, résumé (reprend Zhuravlev 1974).",
+    "usage_corpus": "Méthode de Selberg optimisée pour les zéros critiques (doc. 13).",
+    "motifs": [
+      "2609.15329"
+    ]
+  },
+  {
+    "statut": "non vérifié",
+    "verifie_le": "2026-10-10",
+    "extrait": "",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "docs": [
+      "ALPHA_BETA_ANALYSE.md"
+    ],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "type": "livre",
+    "cle": "Bes32",
+    "auteurs": "A. S. Besicovitch",
+    "annee": 1932,
+    "titre": "Almost Periodic Functions",
+    "publication": "Cambridge University Press (1932)",
+    "lien": "",
+    "ce_qui_a_ete_verifie": "Non vérifié (cité de mémoire). Source d'origine de l'espace B² proposé par OpenAI (piste OA04).",
+    "usage_corpus": "Espace de Besicovitch B² des fonctions presque périodiques en moyenne quadratique ; cible Ψ ∈ B² (ALPHA_BETA_ANALYSE, Prop. C ; coup coefficients_bohr_psi).",
+    "motifs": [
+      "Besicovitch"
+    ]
+  },
+  {
+    "cle": "RS96",
+    "auteurs": "Z. Rudnick, P. Sarnak",
+    "annee": 1996,
+    "titre": "Zeros of principal L-functions and random matrix theory",
+    "publication": "Duke Math. J. 81 (1996), 269–322 (référence citée de mémoire)",
+    "type": "article",
+    "lien": "https://arxiv.org/abs/2002.00595",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-10",
+    "ce_qui_a_ete_verifie": "Existence et titre confirmés par un article de synthèse (arXiv:2002.00595, lien donné faute de page de l'éditeur lue) ; volume, pages et énoncé exact cités de mémoire.",
+    "extrait": "",
+    "usage_corpus": "Corrélations à n points des zéros conformes au noyau sinus (GUE) pour des fonctions-tests à support de Fourier restreint ; cadre de la Rencontre à n (doc. 43).",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "motifs": [
+      "Rudnick–Sarnak"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH",
+      "PC"
+    ],
+    "dimensions": [
+      "situer",
+      "croiser"
+    ],
+    "interet": "confronter"
+  },
+  {
+    "type": "prépublication",
+    "verifie_le": "2026-10-11",
+    "extrait": "We prove a Riemann-Roch theorem of an entirely novel nature for divisors",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cle": "CC22",
+    "auteurs": "A. Connes, C. Consani",
+    "annee": 2022,
+    "titre": "Riemann–Roch for Spec Z (compactifié d'Arakelov)",
+    "publication": "arXiv:2205.01391 (v1 mai 2022, v2 mars 2023)",
+    "lien": "https://arxiv.org/abs/2205.01391",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv (v2, 8 mars 2023) : titre, auteurs, résumé (théorème de Riemann–Roch « de nature entièrement nouvelle » pour les diviseurs du compactifié de Spec Z, dimensions entières, dualité de Serre).",
+    "usage_corpus": "Point de comparaison de l'axe J2 : Riemann–Roch existe pour la « courbe » Spec Z ; il manque la surface et le Frobenius (doc. 47).",
+    "motifs": [
+      "Connes–Consani (2022)",
+      "2205.01391"
+    ]
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-11",
+    "extrait": "confirm[s] the understanding of the ring ℤ as a ring of polynomials in one variable over the absolute base 𝕊",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cle": "CC24",
+    "auteurs": "A. Connes, C. Consani",
+    "annee": 2024,
+    "titre": "Riemann–Roch for the ring Z",
+    "publication": "C. R. Math. Acad. Sci. Paris 362 (2024), 229–235 ; DOI 10.5802/crmath.543",
+    "lien": "https://comptes-rendus.academie-sciences.fr/mathematique/articles/10.5802/crmath.543/",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page des Comptes Rendus : titre, auteurs, volume, pages, DOI, résumé (base absolue 𝕊 ; caractéristique d'Euler entière = degré en base 2 + 1 ; Z comme anneau de polynômes en une variable sur 𝕊).",
+    "usage_corpus": "Riemann–Roch pour Z sur la base absolue (doc. 47).",
+    "motifs": [
+      "Connes–Consani (2024)",
+      "crmath.543"
+    ]
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-11",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cle": "VGS00",
+    "auteurs": "G. van der Geer, R. Schoof",
+    "annee": 2000,
+    "titre": "Effectivity of Arakelov divisors and the theta divisor of a number field",
+    "publication": "arXiv:math/9802121 (1998–1999) ; Selecta Math. (N.S.) 6 (2000), 377–398 (référence de revue citée de mémoire)",
+    "lien": "https://arxiv.org/abs/math/9802121",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Page arXiv (v3, 29 juin 1999) : titre, auteurs, résumé (diviseurs d'Arakelov effectifs, analogue de la dimension des sections, diviseur thêta). Revue et pages non vérifiées.",
+    "usage_corpus": "h⁰ d'un diviseur d'Arakelov par la fonction thêta ; Riemann–Roch par la formule de Poisson (doc. 47).",
+    "motifs": [
+      "van der Geer–Schoof",
+      "9802121"
+    ]
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-11",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH",
+      "MR"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "contexte",
+    "cle": "Gro01",
+    "auteurs": "R. P. Groenewegen",
+    "annee": 2001,
+    "titre": "An arithmetic analogue of Clifford's theorem",
+    "publication": "J. Théor. Nombres Bordeaux 13, n° 1 (2001), 143–156",
+    "lien": "https://www.numdam.org/item/JTNB_2001__13_1_143_0/",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page Numdam : titre, auteur, revue, volume, pages, résumé (analogues arithmétiques de théorèmes sur les courbes, dont Clifford, avec le h⁰ de van der Geer–Schoof). Énoncé précis non lu.",
+    "usage_corpus": "Analogue arithmétique de Clifford ; dans le Modèle réduit, Clifford seul n'attrape aucun faux jumeau (doc. 47).",
+    "motifs": [
+      "Groenewegen"
+    ]
+  },
+  {
+    "type": "prépublication",
+    "verifie_le": "2026-10-11",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cle": "CC09",
+    "auteurs": "A. Connes, C. Consani",
+    "annee": 2009,
+    "titre": "Characteristic 1, entropy and the absolute point",
+    "publication": "arXiv:0911.3537 (2009)",
+    "lien": "https://arxiv.org/abs/0911.3537",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "Page arXiv : titre, auteurs, résumé (semi-anneau « parfait » de caractéristique un ; construction de Witt adaptée à la caractéristique un, liée à l'entropie). Le résumé ne parle ni du Frobenius ni de dérivations.",
+    "usage_corpus": "J3b : la caractéristique un, où l'addition se déforme par l'entropie (doc. 51).",
+    "motifs": [
+      "Characteristic 1, entropy",
+      "0911.3537"
+    ]
+  },
+  {
+    "type": "article",
+    "verifie_le": "2026-10-11",
+    "extrait": "corresponds to the action of the Frobenius automorphisms",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cle": "CC14",
+    "auteurs": "A. Connes, C. Consani",
+    "annee": 2014,
+    "titre": "The Arithmetic Site",
+    "publication": "C. R. Math. Acad. Sci. Paris 352, n° 12 (2014), 971–975 ; arXiv:1405.4527",
+    "lien": "https://arxiv.org/abs/1405.4527",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Page ar5iv (lue en partie) : semi-anneau tropical ℕ̄ sur le topos dual de ℕ× ; Frobenius Fr_λ ∈ Aut(ℝ₊^max), λ ∈ ℝ₊* ; points au-dessus de [0,1]_max = quotient de l'espace des classes d'adèles ; la distribution de comptage a pour fonction zêta de Hasse–Weil la fonction ζ complète ; correspondances de Frobenius réalisées dans le carré du site. Référence de revue d'après Numdam.",
+    "usage_corpus": "J3b : le Frobenius de caractéristique un est un automorphisme pour tout λ ; route de Weil par le carré du site (doc. 51).",
+    "motifs": [
+      "Arithmetic Site",
+      "1405.4527"
+    ]
+  },
+  {
+    "type": "prépublication",
+    "verifie_le": "2026-10-11",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "cite_aussi": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "contexte",
+    "cle": "MT11",
+    "auteurs": "M. Marcolli, R. Thorngren",
+    "annee": 2011,
+    "titre": "Thermodynamic semirings",
+    "publication": "arXiv:1108.2874 (2011)",
+    "lien": "https://arxiv.org/abs/1108.2874",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Page ar5iv : titre, auteurs, résumé ; aucune dérivation définie ; l'analogue de la dérivée est le sous-différentiel (transformée de Legendre).",
+    "usage_corpus": "J3b : en caractéristique un, la « dérivée » est un sous-différentiel ; le Frobenius la dilate, il ne l'annule pas (doc. 51).",
+    "motifs": [
+      "Marcolli–Thorngren",
+      "1108.2874"
+    ]
+  },
+  {
+    "cle": "Nis25",
+    "auteurs": "S. M. Nishigaki",
+    "annee": 2025,
+    "titre": "Distributions of consecutive level spacings of circular unitary ensemble and their ratio: finite-size corrections and Riemann ζ zeros",
+    "publication": "arXiv:2507.10193 (juillet 2025)",
+    "lien": "https://arxiv.org/abs/2507.10193",
+    "type": "prépublication",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-11",
+    "ce_qui_a_ete_verifie": "Page arXiv : titre, auteur, date, résumé (loi jointe de deux écarts consécutifs du CUE(N) ; la correction en N⁻² s'annule dans le rapport d'écarts ; l'écart de ζ au noyau sinus dans ce rapport décroît comme une puissance négative de log(T/2π), (log(T/2π))⁻³ d'après le résumé). Texte : non lu.",
+    "extrait": "explains why the deviation of the gap-ratio distribution of the Riemann zeta zeros",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "motifs": [
+      "Nishigaki (2025)",
+      "Nishigaki"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "correction": "",
+    "verdict": "exact",
+    "usage_corpus": "Le rapport de deux écarts consécutifs est insensible à la correction de taille finie du CUE au premier ordre : c'est l'outil du test du doc. 54."
+  },
+  {
+    "cle": "BK13",
+    "auteurs": "E. Bogomolny, J. P. Keating",
+    "annee": 2013,
+    "titre": "A method for calculating spectral statistics based on random-matrix universality with an application to the three-point correlations of the Riemann zeros",
+    "publication": "J. Phys. A: Math. Theor. 46 (2013), 305203 ; arXiv:1307.6012",
+    "lien": "https://arxiv.org/abs/1307.6012",
+    "type": "article",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-11",
+    "ce_qui_a_ete_verifie": "Page arXiv : titre, auteurs, DOI 10.1088/1751-8113/46/30/305203, résumé (ensemble hermitien généralisé qui garde la structure déterminantale ; formule heuristique de la corrélation à trois points des zéros de ζ, avec les termes oscillants des petits premiers). Texte : non lu.",
+    "extrait": "three-point correlation function of Riemann zeta zeros",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "motifs": [
+      "Bogomolny–Keating (2013)",
+      "Bogomolny et Keating (2013)"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "correction": "",
+    "verdict": "exact",
+    "usage_corpus": "La corrélation à trois points de ζ avec ses corrections arithmétiques : l'outil désigné pour expliquer le trou à trois (doc. 54)."
+  },
+  {
+    "cle": "ABGR13",
+    "auteurs": "Y. Y. Atas, E. Bogomolny, O. Giraud, G. Roux",
+    "annee": 2013,
+    "titre": "Distribution of the ratio of consecutive level spacings in random matrix ensembles",
+    "publication": "Phys. Rev. Lett. 110 (2013), 084101 ; arXiv:1212.5611",
+    "lien": "https://arxiv.org/abs/1212.5611",
+    "type": "article",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-11",
+    "ce_qui_a_ete_verifie": "Page ar5iv, introduction : le rapport d'écarts consécutifs ne demande pas de dépliage, car il ne dépend pas de la densité locale. Référence de revue et valeur ⟨r̃⟩ ≈ 0,5996 pour le GUE : citées de mémoire.",
+    "extrait": "ratios of consecutive level spacings are independent of the local density of states",
+    "conjectures": [
+      "PC"
+    ],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "motifs": [
+      "Atas et al.",
+      "Atas, Bogomolny, Giraud et Roux"
+    ],
+    "docs": [],
+    "cite_aussi": [],
+    "correction": "",
+    "verdict": "exact",
+    "usage_corpus": "Le rapport d'écarts sans dépliage (doc. 54) ; la valeur du noyau sinus est recalculée ici (CUE de taille 60 : 0,5992)."
+  },
+  {
+    "cle": "Mil20",
+    "auteurs": "J. S. Milne",
+    "annee": 2021,
+    "titre": "Elliptic Curves",
+    "publication": "World Scientific, deuxième édition (2021)",
+    "type": "livre",
+    "lien": "https://www.jmilne.org/math/Books/EC2.pdf",
+    "statut": "vérifié en ligne",
+    "ce_qui_a_ete_verifie": "I §4, théorème 4.13 et formule (8), pp. 35–36 ; IV §9, proposition 9.9, théorème 9.10 et remarque 9.11(a), pp. 155–156. La preuve de rationalité utilise Riemann–Roch et les diviseurs, indépendamment de Hasse. V6.36 : notice bibliographique et copyright de l’édition sur le PDF de l’auteur indiquent 2021 ; année 2020 antérieure corrigée.",
+    "extrait": "",
+    "usage_corpus": "Justification indépendante de Z(E,T)=(1-tT+pT²)/((1-T)(1-pT)), du produit αβ=p et de N_n=p^n+1-α^n-β^n avant le passage spectral de V6.35.",
+    "verdict": "exact",
+    "motifs": [
+      "[Mil20]"
+    ],
+    "verifie_le": "2026-10-12",
+    "correction": "",
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "comprendre",
+      "demontrer"
+    ],
+    "interet": "appui",
+    "docs": [
+      "59"
+    ],
+    "cite_aussi": []
+  },
+  {
+    "statut": "vérifié en ligne",
+    "extrait": "",
+    "verdict": "exact",
+    "verifie_le": "2026-10-12",
+    "correction": "",
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "demontrer",
+      "voir"
+    ],
+    "interet": "appui",
+    "docs": [
+      "60",
+      "71",
+      "72",
+      "73",
+      "74"
+    ],
+    "cite_aussi": [],
+    "cle": "NIS10",
+    "auteurs": "F. W. J. Olver, D. W. Lozier, R. F. Boisvert, C. W. Clark (éd.)",
+    "annee": 2010,
+    "titre": "NIST Digital Library of Mathematical Functions, chapitre 5, équation 5.9.16",
+    "publication": "NIST DLMF, édition en ligne",
+    "type": "référence en ligne",
+    "lien": "https://dlmf.nist.gov/5.9#E16",
+    "ce_qui_a_ete_verifie": "Représentation intégrale de ψ(z)+γ pour Re z>0 ; formule physique dérivée par inversion de Fourier. V648 : DLMF3.5(v),18.3,18.9.15 et18.14.1 relus pour Gauss, Legendre et bornes de dérivées ; portée utilisée explicitement dans le document73. V649 : DLMF5.11.2 relu pour la croissance logarithmique de la digamma ; le paiement joint est démontré directement.",
+    "usage_corpus": "Terme archimédien à support compact ou queue explicite pour le certificat DH de V6.36.",
+    "motifs": [
+      "[NIS10]"
+    ]
+  },
+  {
+    "statut": "vérifié en ligne",
+    "extrait": "",
+    "verdict": "exact",
+    "verifie_le": "2026-10-12",
+    "correction": "",
+    "conjectures": [
+      "MR"
+    ],
+    "dimensions": [
+      "demontrer",
+      "voir"
+    ],
+    "interet": "appui",
+    "docs": [
+      "60"
+    ],
+    "cite_aussi": [],
+    "cle": "HM19",
+    "auteurs": "N. J. Higham, T. Mary",
+    "annee": 2019,
+    "titre": "A New Approach to Probabilistic Rounding Error Analysis",
+    "publication": "SIAM Journal on Scientific Computing 41 (2019), A2815–A2835",
+    "type": "article",
+    "lien": "https://epubs.siam.org/doi/10.1137/18M1226312",
+    "ce_qui_a_ete_verifie": "Page éditeur et résumé ; rappel du facteur déterministe γ_n=nu/(1−nu). Aucun résultat probabiliste n’est utilisé par le certificat.",
+    "usage_corpus": "Modèle d’arrondi déterministe des deux produits matriciels du témoin négatif de V6.36.",
+    "motifs": [
+      "[HM19]"
+    ]
+  },
+  {
+    "cle": "Bel53",
+    "auteurs": "R. Bellman",
+    "annee": 1953,
+    "titre": "Some Functional Equations in the Theory of Dynamic Programming",
+    "publication": "PNAS39(10),1077-1082 ; DOI10.1073/pnas.39.10.1077",
+    "type": "article",
+    "lien": "https://pubmed.ncbi.nlm.nih.gov/16589377/",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Notice primaire PubMed : auteur, titre, année, volume, pages et DOI. Accès au texte intégral bloqué ; aucune lecture intégrale revendiquée.",
+    "extrait": "",
+    "usage_corpus": "Positionnement historique de Bellman ; les deux lemmes V6.38 sont démontrés intégralement dans une annexe.",
+    "verdict": "non vérifiable",
+    "verifie_le": "2026-10-12",
+    "correction": "",
+    "conjectures": [],
+    "dimensions": [
+      "comprendre"
+    ],
+    "interet": "outil",
+    "docs": [
+      "62"
+    ],
+    "cite_aussi": [],
+    "motifs": [
+      "[Bel53]",
+      "Some Functional Equations"
+    ]
+  },
+  {
+    "cle": "CC21",
+    "auteurs": "A. Connes, C. Consani",
+    "annee": 2021,
+    "titre": "Weil positivity and Trace formula, the archimedean place",
+    "publication": "PDF auteur daté du 4 juillet 2021 ; arXiv:2006.13771",
+    "type": "article",
+    "lien": "https://alainconnes.org/wp-content/uploads/Selecta.pdf",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-12",
+    "ce_qui_a_ete_verifie": "Introduction (4), involution et Fourier/Mellin dans les appendices A–B, proposition C.1 : signe et annulations polaires du critère. Ensemble des preuves non revérifié. V6.42 : appendice B (149)–(151), convention Mellin et passage additif explicités ; la positivité globale n’est pas obtenue. V6.45 : §3, proposition 3.5 et théorème 3.6 relus : opérateur différentiel de moments et −2I plus compact pour le traitement archimédien ; aucune extension au signe global premier. V6.46 : introduction (4) et théorème1 relus pour situer support et projections ; nos lemmes locaux sont reconstruits directement, sans transfert de positivité globale ni priorité revendiquée. V6.47 : introduction (4) et théorème1 relus ; cadre de concentration et projection. Notre certificat avec premier2 est dérivé directement ; pas de transfert du signe global ni de priorité revendiquée.",
+    "extrait": "",
+    "usage_corpus": "Critère global de Weil et conditions de test ; le résultat archimédien à support restreint ne fournit pas une positivité globale de toute la forme arithmétique.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73"
+    ],
+    "motifs": [
+      "CC21",
+      "2006.13771",
+      "Selecta.pdf"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer",
+      "comprendre"
+    ],
+    "interet": "confronter",
+    "cite_aussi": [
+      "V641_PASSAGE_AU_GLOBAL.md"
+    ]
+  },
+  {
+    "cle": "Dlm26",
+    "auteurs": "NIST",
+    "annee": 2026,
+    "titre": "Digital Library of Mathematical Functions : 25.11 et 24.8",
+    "publication": "Version en ligne consultée le 12 octobre 2026",
+    "type": "documentation",
+    "lien": "https://dlmf.nist.gov/25.11.iii",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Représentations Euler–Maclaurin, Bernoulli périodiques et développement de Fourier ; majorants supplémentaires démontrés dans la note locale.",
+    "usage_corpus": "Base des identités du reste analytique pour les jets validés.",
+    "interet": "appui",
+    "verifie_le": "2026-10-12",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "66"
+    ],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "cite_aussi": []
+  },
+  {
+    "cle": "Mpm13",
+    "auteurs": "mpmath developers",
+    "annee": 2026,
+    "titre": "Contexts : interval arithmetic, documentation 1.3.0",
+    "publication": "Documentation de la version utilisée, consultée le 12 octobre 2026",
+    "type": "documentation",
+    "lien": "https://mpmath.org/doc/current/contexts.html",
+    "statut": "partiellement vérifié",
+    "ce_qui_a_ete_verifie": "Extrait de la documentation primaire : support iv expérimental ; version installée 1.3.0 et primitives effectivement utilisées contrôlées localement.",
+    "usage_corpus": "Backend explicité ; pas de réévaluation indépendante de toutes les primitives.",
+    "interet": "contexte",
+    "verifie_le": "2026-10-12",
+    "extrait": "",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [
+      "66"
+    ],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "cite_aussi": []
+  },
+  {
+    "cle": "NIS26",
+    "auteurs": "NIST, Digital Library of Mathematical Functions",
+    "annee": 2010,
+    "titre": "DLMF, chapitre 25, §25.16(i), Prime Number Theory",
+    "publication": "Référence en ligne consultée le 12 octobre 2026",
+    "type": "référence en ligne",
+    "lien": "https://dlmf.nist.gov/25.16",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-10-12",
+    "ce_qui_a_ete_verifie": "Équations 25.16.1, 25.16.3 et 25.16.4 : définition de Ψ, théorème des nombres premiers, équivalence de RH avec Ψ(x)−x=O(x^(1/2+ε)) pour chaque ε>0.",
+    "usage_corpus": "Définition de Chebyshev et garde contre une hypothèse de compensation déjà équivalente à RH.",
+    "verdict": "exact",
+    "correction": "",
+    "extrait": "",
+    "docs": [
+      "70"
+    ],
+    "cite_aussi": [],
+    "motifs": [
+      "[NIS26]"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "comprendre",
+      "situer"
+    ],
+    "interet": "appui"
+  },
+  {
+    "cle": "Gro26",
+    "auteurs": "Akiva Groskin",
+    "annee": 2026,
+    "titre": "A finite Guinand-Weil dictionary and archimedean tail order for the truncated Weil quadratic form",
+    "publication": "arXiv:2607.02828, version du 2 juillet 2026",
+    "type": "préprint",
+    "lien": "https://arxiv.org/abs/2607.02828",
+    "statut": "partiellement vérifié",
+    "verifie_le": "2026-10-12",
+    "ce_qui_a_ete_verifie": "Métadonnées et résumé primaire uniquement ; preuves et artefacts non audités.",
+    "usage_corpus": "Comparaison à examiner : dictionnaire fini pour une forme tronquée et une bande. Aucune prémisse de C1–C5 ne repose sur ce résumé.",
+    "verdict": "non vérifiable",
+    "correction": "",
+    "extrait": "",
+    "docs": [
+      "70"
+    ],
+    "cite_aussi": [],
+    "motifs": [
+      "[Gro26]"
+    ],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "confronter"
+  },
+  {
+    "statut": "vérifié en ligne",
+    "extrait": "",
+    "verdict": "exact",
+    "verifie_le": "2026-10-13",
+    "correction": "",
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "demontrer",
+      "voir"
+    ],
+    "interet": "appui",
+    "docs": [
+      "73"
+    ],
+    "cite_aussi": [],
+    "cle": "NP26",
+    "auteurs": "NumPy Developers",
+    "annee": 2026,
+    "titre": "NumPy : finfo et format binaire64",
+    "publication": "Documentation officielle NumPy",
+    "type": "référence en ligne",
+    "lien": "https://numpy.org/doc/stable/reference/generated/numpy.finfo.html",
+    "ce_qui_a_ete_verifie": "Précision relative et format float64. Le budget de produits matriciels est dérivé dans le document73, sans prétendre vérifier formellement BLAS ou le matériel.",
+    "usage_corpus": "Identification du modèle arithmétique du certificat commun ; distinct des intervalles et de Bareiss.",
+    "motifs": [
+      "[NP26]"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "chromium": true,
+  "views": [
+    {
+      "page": "portail",
+      "desktop": true,
+      "mobile": true
+    },
+    {
+      "page": "indicateur",
+      "desktop": true,
+      "mobile": true
+    },
+    {
+      "page": "navigateur",
+      "desktop": true,
+      "mobile": true
+    },
+    {
+      "page": "carte",
+      "desktop": true,
+      "mobile": true
+    }
+  ],
+  "python_js_bellman_cases": 26,
+  "interactions": true,
+  "original_details_checked": 276,
+  "legacy_case_routes": 38,
+  "console_errors": [],
+  "snapshot": "daa43e52a6bff437422c1ea152464b17724aa189927f2c5a619c560758e56a1f"
+}

@@ -1,0 +1,25 @@
+{
+  "document_type": "note_de_recherche_et_essai_reproductible",
+  "base_corpus": "V6.54",
+  "date": "2026-10-14",
+  "demontre": [
+    "identite_source_et_inversion_de_Mobius",
+    "restitution_exacte_par_parametres_carres",
+    "stabilite_uniforme_des_dilatations",
+    "regroupement_de_la_dette_par_conducteur_q",
+    "diagonale_D_H_le_13H_sur4_fois_X2_moins1",
+    "borne_absolue_de_toute_la_tete_q_le_H"
+  ],
+  "conditionnel": "Une borne signee R_q_gt_X(X,H=X)<=C X^3(1+log X)^k donnerait J(X)<<X^(5/2) polylog et aucun zero Re(s)>3/4.",
+  "ouvert": [
+    "borne_signee_grands_conducteurs_q_gt_X",
+    "gain_global_exposant_sur_energie_totale",
+    "RH_et_positivite_globale_de_Weil"
+  ],
+  "numerique": "Diagnostics finis; pas de certificat par intervalles ni de borne a l’infini.",
+  "domain_guard": "Dans la resolvante generale, le produit porte uniquement sur les premiers impairs divisant s.",
+  "preprint_sextique": "Aucun enonce profond importe; preuve complete non validee ici.",
+  "version": "V6.55",
+  "type_livraison": "Complement de recherche V6.55; ne remplace pas le ZIP global V6.54.",
+  "correction_editoriale": "Numerotation explicite du travail deja livre; aucun nouveau resultat mathematique ajoute."
+}

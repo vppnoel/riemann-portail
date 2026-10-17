@@ -1,0 +1,5 @@
+Programme Riemann — V6.52
+
+Transport positif : sommation compatible, pont stock–Fenchel et première ligne non minimale encadrée sans RH. Diagnostics jusqu’à1000. Loi globale du signe ouverte.
+
+Corpus récupéré avec limites explicites ; voir RECUPERATION.md.

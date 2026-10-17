@@ -1,0 +1,37 @@
+[
+  {
+    "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/76_COMPLEMENT_COUP_DOUBLE.md",
+    "sha256": "789b30a01a1dadcddaf6b3abf0894e5f58ad611c098285ca15b8e12a983a6351"
+  },
+  {
+    "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/76_COMPLEMENT_COUP_DOUBLE.html",
+    "sha256": "d517f259031927203659777f98999a72b5d9e013c6fe7680cfdb34edc3fcf30a"
+  },
+  {
+    "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/76_COMPLEMENT_COUP_DOUBLE.tex",
+    "sha256": "12d11fd133645fc4b389e22e631b5364a85c0cf6f2d237b3aca4aad29a7c7b78"
+  },
+  {
+    "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/76_COMPLEMENT_COUP_DOUBLE.pdf",
+    "sha256": "155e5385619bd45898ef60ca2a49fa5c51271d4e63b1ef4f9b24de246db4a069"
+  },
+  {
+    "source": "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/verifier_coup_double.py",
+    "sha256": "e303bfc6f3859c6d077092f86a43c524a842c47ae237ec3a436385ca6ed0bcd2"
+  },
+  {
+    "source": "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/resultats.json",
+    "sha256": "61698a1498798abcd5367331548fe188e3a6e2abe3fb241e49ce24844072b57a"
+  },
+  {
+    "source": "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+    "archive": "4_Archives/coup_double_avant_audit_20261015/CONFRONTATION.md",
+    "sha256": "e02d777687331f50f1b0e965bed1c0ff05e92b80eec0053f7315da7d8625a139"
+  }
+]
