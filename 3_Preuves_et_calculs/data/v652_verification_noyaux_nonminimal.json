@@ -1,0 +1,17 @@
+{
+  "all_checks_passed": true,
+  "kernel_file": "nonminimal_x1000_kernels.json",
+  "cutoff": 1000,
+  "row_count": 194,
+  "checked_initial_raccord": true,
+  "checked_arithmetic_weights": true,
+  "checked_positive_source_pieces": true,
+  "max_mass_error": "1.31999999999999999689863355453010651778570614333010957379604828888035022665e-58",
+  "max_moment_error": "4.17941716031274148435056750275392358116867955222189702826931359123167534943e-48",
+  "max_partition_gap_or_overlap": "7.58026811288190600966059045913213158049428538064202613243022743723120525774e-60",
+  "independent_formulas": "closed A_prime; Horner A with 180 terms; quantile inversion from original measure",
+  "working_digits": 75,
+  "declared_tolerance": "1.0e-38",
+  "interval_certificate": false,
+  "global_RH_claim": false
+}

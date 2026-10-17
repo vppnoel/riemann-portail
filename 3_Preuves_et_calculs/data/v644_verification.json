@@ -1,0 +1,22 @@
+{
+  "version": "V6.44",
+  "python_tests_passed": 282,
+  "python_tests_total": 282,
+  "client_contract_cases": 768,
+  "client_ui_scope": "DOM simulated, event handlers and search; no browser visual rendering",
+  "pdf_pages": {
+    "68": 10,
+    "69": 64
+  },
+  "pdf_all_pages_visual_review": true,
+  "pdf_final_overflow_warnings": 0,
+  "active_html_pages": 11,
+  "local_links_checked": 965,
+  "local_links_valid": true,
+  "registry_documents": 69,
+  "math_dictionary_entries": 219,
+  "registered_metaphors": 95,
+  "full_rh_claim": false,
+  "numeric_matrix_status": "exploratory; not validated interval eigenvalue certificate",
+  "tail_status": "explicit analytic integer tail contract; head not calculated"
+}

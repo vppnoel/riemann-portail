@@ -1,0 +1,1646 @@
+{
+  "version": "V6.41",
+  "diagnostics": [
+    {
+      "character_k": 1,
+      "step": 0.01,
+      "sign_changes": 18,
+      "candidate_in_radius": 10
+    },
+    {
+      "character_k": 1,
+      "step": 0.005,
+      "sign_changes": 18,
+      "candidate_in_radius": 10
+    },
+    {
+      "character_k": 5,
+      "step": 0.01,
+      "sign_changes": 19,
+      "candidate_in_radius": 10
+    },
+    {
+      "character_k": 5,
+      "step": 0.005,
+      "sign_changes": 19,
+      "candidate_in_radius": 10
+    }
+  ],
+  "all_candidates_including_rejections": [
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -23.232361762267693,
+      "radius": 0.37954184251740514,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -23.232361762267693,
+      "radius": 2.7620508110723883,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -20.23234236825491,
+      "radius": 2.3830756365799504,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -20.23234236825491,
+      "radius": 0.758517017009843,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -18.471605545138456,
+      "radius": 0.4958509775798241,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -18.471605545138456,
+      "radius": 2.6457416760099686,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -14.851632315161378,
+      "radius": 2.225893842416163,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -14.851632315161378,
+      "radius": 0.9156988111736295,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -12.925459331978534,
+      "radius": 0.3268258717429193,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -12.925459331978534,
+      "radius": 2.814766781846874,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -11.2481499748043,
+      "radius": 2.890396626587326,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -11.2481499748043,
+      "radius": 0.2511960270024671,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -6.229402974613312,
+      "radius": 0.925480608393781,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -6.229402974613312,
+      "radius": 2.216112045196012,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -0.017707429943687687,
+      "radius": 1.6793710628189715,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -0.017707429943687687,
+      "radius": 1.4622215907708214,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 4.861023490462168,
+      "radius": 0.2430793941650438,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 4.861023490462168,
+      "radius": 2.8985132594247496,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 7.144415552047931,
+      "radius": 2.454377814593557,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 7.144415552047931,
+      "radius": 0.687214838996236,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 9.920439465325902,
+      "radius": 1.1491600474391708,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 9.920439465325902,
+      "radius": 1.9924326061506226,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 11.817250053631629,
+      "radius": 1.949534546365331,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 11.817250053631629,
+      "radius": 1.1920581072244618,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 15.036565490877711,
+      "radius": 1.0501613576877897,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 15.036565490877711,
+      "radius": 2.0914312959020034,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 16.82633432270744,
+      "radius": 2.6962969076240757,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 16.82633432270744,
+      "radius": 0.4452957459657175,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 20.497066595741824,
+      "radius": 2.020315247129422,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 20.497066595741824,
+      "radius": 1.1212774064603708,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 20.761041677212955,
+      "radius": 2.4487743736776864,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 20.761041677212955,
+      "radius": 0.6928182799121069,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 22.24914610453878,
+      "radius": 0.5094391385531356,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 22.24914610453878,
+      "radius": 2.6321535150366575,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 24.003321889398084,
+      "radius": 2.6198669105347405,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 24.003321889398084,
+      "radius": 0.5217257430550527,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -23.23236176282246,
+      "radius": 0.37954184251740564,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -23.23236176282246,
+      "radius": 2.762050811072388,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -20.232342367765135,
+      "radius": 2.3830756365799504,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -20.232342367765135,
+      "radius": 0.7585170170098431,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -18.47160554494809,
+      "radius": 0.4958509775798272,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -18.47160554494809,
+      "radius": 2.645741676009966,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -14.851632314957584,
+      "radius": 2.225893842416165,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -14.851632314957584,
+      "radius": 0.9156988111736282,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -12.925459332134833,
+      "radius": 0.3268258717429194,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -12.925459332134833,
+      "radius": 2.814766781846874,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -11.248149974254257,
+      "radius": 2.8903966265873247,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -11.248149974254257,
+      "radius": 0.25119602700246846,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -6.229402975538883,
+      "radius": 0.9254806083937792,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -6.229402975538883,
+      "radius": 2.216112045196014,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -0.017707429089884236,
+      "radius": 1.679371062818972,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -0.017707429089884236,
+      "radius": 1.4622215907708211,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 4.861023490866242,
+      "radius": 0.2430793941650437,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 4.861023490866242,
+      "radius": 2.8985132594247496,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 7.144415552748969,
+      "radius": 2.454377814593557,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 7.144415552748969,
+      "radius": 0.687214838996236,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 9.920439464828068,
+      "radius": 1.1491600474391708,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 9.920439464828068,
+      "radius": 1.9924326061506223,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 11.817250053181661,
+      "radius": 1.9495345463653315,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 11.817250053181661,
+      "radius": 1.1920581072244616,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 15.036565492085002,
+      "radius": 1.0501613576877937,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 15.036565492085002,
+      "radius": 2.091431295901999,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 16.82633432396412,
+      "radius": 2.6962969076240775,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 16.82633432396412,
+      "radius": 0.44529574596571553,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 20.49706659611534,
+      "radius": 2.0203152471294166,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 20.49706659611534,
+      "radius": 1.121277406460376,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 20.761041676878207,
+      "radius": 2.448774373677691,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 20.761041676878207,
+      "radius": 0.6928182799121024,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 22.249146105082076,
+      "radius": 0.5094391385531338,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 22.249146105082076,
+      "radius": 2.6321535150366593,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 24.00332188892225,
+      "radius": 2.6198669105347334,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 24.00332188892225,
+      "radius": 0.5217257430550597,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -24.10805219064916,
+      "radius": 1.396542891461306,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -24.10805219064916,
+      "radius": 1.7450497621284873,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -22.263442093884375,
+      "radius": 0.322071783615856,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -22.263442093884375,
+      "radius": 2.819520869973937,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -20.595550042392258,
+      "radius": 2.5590308965047983,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -20.595550042392258,
+      "radius": 0.5825617570849951,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -18.9588576165799,
+      "radius": 0.9180344613631246,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -18.9588576165799,
+      "radius": 2.223558192226668,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -17.605550550685308,
+      "radius": 2.5744394474718897,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -17.605550550685308,
+      "radius": 0.5671532061179038,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -15.775935847936148,
+      "radius": 0.4882515831312402,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -15.775935847936148,
+      "radius": 2.6533410704585525,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -9.970874387992678,
+      "radius": 2.875493727455716,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -9.970874387992678,
+      "radius": 0.266098926134077,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -7.194462479829342,
+      "radius": 1.1157788242902829,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -7.194462479829342,
+      "radius": 2.0258138292995103,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -1.2693344178411483,
+      "radius": 1.9754178577327606,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -1.2693344178411483,
+      "radius": 1.1661747958570325,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 3.2766233452769096,
+      "radius": 1.2128753684095928,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 3.2766233452769096,
+      "radius": 1.9287172851802004,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 7.010807323389638,
+      "radius": 2.3347718060685483,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 7.010807323389638,
+      "radius": 0.8068208475212448,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 12.458152086386066,
+      "radius": 0.940799650574008,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 12.458152086386066,
+      "radius": 2.2007930030157854,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 15.703662328381618,
+      "radius": 1.6861412148288828,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 15.703662328381618,
+      "radius": 1.45545143876091,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 16.53648279030148,
+      "radius": 0.6863754183019086,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 16.53648279030148,
+      "radius": 2.4552172352878845,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 17.884819740804467,
+      "radius": 2.724198971204388,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 17.884819740804467,
+      "radius": 0.4173936823854052,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 19.626457100651823,
+      "radius": 0.28038931240978543,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 19.626457100651823,
+      "radius": 2.861203341180008,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 21.778811985258866,
+      "radius": 1.6113646905220558,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 21.778811985258866,
+      "radius": 1.5302279630677371,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 23.43409971508897,
+      "radius": 0.46632268507366464,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 23.43409971508897,
+      "radius": 2.6752699685161287,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 24.901145837493747,
+      "radius": 2.9432398037838863,
+      "step": 0.01,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 24.901145837493747,
+      "radius": 0.19835284980590684,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -24.108052190565864,
+      "radius": 1.3965428914613065,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -24.108052190565864,
+      "radius": 1.7450497621284868,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -22.263442094487715,
+      "radius": 0.3220717836158551,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -22.263442094487715,
+      "radius": 2.819520869973938,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -20.595550042713093,
+      "radius": 2.5590308965048,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -20.595550042713093,
+      "radius": 0.5825617570849934,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -18.95885761694345,
+      "radius": 0.9180344613631197,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -18.95885761694345,
+      "radius": 2.2235581922266734,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -17.60555055018026,
+      "radius": 2.574439447471889,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -17.60555055018026,
+      "radius": 0.5671532061179043,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -15.775935847427224,
+      "radius": 0.4882515831312402,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -15.775935847427224,
+      "radius": 2.653341070458553,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -9.970874387448715,
+      "radius": 2.8754937274557157,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -9.970874387448715,
+      "radius": 0.2660989261340775,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -7.194462480915714,
+      "radius": 1.1157788242902842,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -7.194462480915714,
+      "radius": 2.025813829299509,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -1.269334419247076,
+      "radius": 1.9754178577327597,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -1.269334419247076,
+      "radius": 1.1661747958570332,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 3.276623346354747,
+      "radius": 1.2128753684095928,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 3.276623346354747,
+      "radius": 1.9287172851802006,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 7.010807322103214,
+      "radius": 2.334771806068548,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 7.010807322103214,
+      "radius": 0.8068208475212453,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 12.458152087390319,
+      "radius": 0.9407996505740085,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 12.458152087390319,
+      "radius": 2.2007930030157845,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 15.703662328235037,
+      "radius": 1.6861412148288808,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 15.703662328235037,
+      "radius": 1.4554514387609123,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 16.536482790199354,
+      "radius": 0.6863754183019058,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 16.536482790199354,
+      "radius": 2.455217235287887,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 17.884819742150682,
+      "radius": 2.7241989712043893,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 17.884819742150682,
+      "radius": 0.41739368238540386,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 19.626457101610555,
+      "radius": 0.2803893124097871,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 19.626457101610555,
+      "radius": 2.861203341180006,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 21.778811985225442,
+      "radius": 1.6113646905220567,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 21.778811985225442,
+      "radius": 1.5302279630677365,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 23.43409971434119,
+      "radius": 0.4663226850736669,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 23.43409971434119,
+      "radius": 2.6752699685161265,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 24.9011458375906,
+      "radius": 2.9432398037838876,
+      "step": 0.005,
+      "accepted_radius": false,
+      "status": "outside_radius"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 24.9011458375906,
+      "radius": 0.1983528498059055,
+      "step": 0.005,
+      "accepted_radius": true,
+      "status": "candidate"
+    }
+  ],
+  "selected": [
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -23.232361762267693,
+      "radius": 0.37954184251740514,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_plus_1"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -18.471605545138456,
+      "radius": 0.4958509775798241,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_plus_2"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": -12.925459331978534,
+      "radius": 0.3268258717429193,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_plus_3"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": -11.2481499748043,
+      "radius": 0.2511960270024671,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_minus_4"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 4.861023490462168,
+      "radius": 0.2430793941650438,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_plus_5"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 7.144415552047931,
+      "radius": 0.687214838996236,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_minus_6"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 16.82633432270744,
+      "radius": 0.4452957459657175,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_minus_7"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 20.761041677212955,
+      "radius": 0.6928182799121069,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_minus_8"
+    },
+    {
+      "character_k": 1,
+      "side": "plus",
+      "height": 22.24914610453878,
+      "radius": 0.5094391385531356,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_plus_9"
+    },
+    {
+      "character_k": 1,
+      "side": "minus",
+      "height": 24.003321889398084,
+      "radius": 0.5217257430550527,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k1_minus_10"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -22.263442093884375,
+      "radius": 0.322071783615856,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_plus_11"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -20.595550042392258,
+      "radius": 0.5825617570849951,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_minus_12"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -17.605550550685308,
+      "radius": 0.5671532061179038,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_minus_13"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": -15.775935847936148,
+      "radius": 0.4882515831312402,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_plus_14"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": -9.970874387992678,
+      "radius": 0.266098926134077,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_minus_15"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 16.53648279030148,
+      "radius": 0.6863754183019086,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_plus_16"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 17.884819740804467,
+      "radius": 0.4173936823854052,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_minus_17"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 19.626457100651823,
+      "radius": 0.28038931240978543,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_plus_18"
+    },
+    {
+      "character_k": 5,
+      "side": "plus",
+      "height": 23.43409971508897,
+      "radius": 0.46632268507366464,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_plus_19"
+    },
+    {
+      "character_k": 5,
+      "side": "minus",
+      "height": 24.901145837493747,
+      "radius": 0.19835284980590684,
+      "step": 0.01,
+      "accepted_radius": true,
+      "status": "candidate",
+      "seen_steps": [
+        0.01,
+        0.005
+      ],
+      "id": "fold_k5_minus_20"
+    }
+  ],
+  "scanner_is_not_exhaustive": true
+}

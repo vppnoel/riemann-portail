@@ -1,0 +1,19 @@
+{
+  "version": "V6.41",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages"
+  ],
+  "document": "65_FIBRES_PLIS_ET_POSITIVITE.pdf",
+  "graph": "65_GRAPHE_DES_PASSAGES.html",
+  "result": "A prescrit : ellipse de faisabilité et fibres ; D constant à A=0 ; jets, 20 candidats de plis recoupés, six attribués, 18 blocs et 24 racines. Pont arithmétique global ouvert ; une perte coarse conservée.",
+  "proven": "Affine sphere geometry, defect constancy and contraction, conditional folds and two-zero moments, admissible test construction, density, finite-prefix obstruction and bounded Schur lemma.",
+  "next_actions": [
+    "certifier_bloc_local",
+    "audit_positivite_uniforme"
+  ],
+  "scope": "Numerical zero results, local conditional proofs and global contracts; no interval zero certificates, exhaustion or RH proof.",
+  "current_bellman_model": "v641_modele_bellman.json",
+  "maturity_levels_unchanged": true
+}

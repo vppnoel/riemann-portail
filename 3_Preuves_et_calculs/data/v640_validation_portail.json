@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "00_PORTAIL.html",
+    "00_Carte_des_idees.html",
+    "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html",
+    "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html",
+    "1_Presentation/44_MATRICE_DES_THEORIES.html",
+    "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html",
+    "00_Liste_des_figures.html"
+  ],
+  "n_local_links": 791,
+  "broken_links": [],
+  "atlas_documents": 64,
+  "current_version": "V6.40",
+  "bellman_completed_actions": [
+    "v13_contraintes",
+    "v13_comparaison"
+  ],
+  "bellman_client_configurations": 972,
+  "independent_completed_state_subset_enumeration": true,
+  "client_all_values_gains_choices_portfolios_match": true,
+  "new_registry_source_hashes_current": true
+}

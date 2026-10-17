@@ -1,0 +1,578 @@
+{
+  "model": "finite conditional documentary planning",
+  "comparisons_passed": 972,
+  "results": [
+    {
+      "budget": 2,
+      "profiles": 243,
+      "unique_portfolio_profiles": 201,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 237,
+        "v13_comparaison": 0,
+        "dh_rejeu": 237,
+        "dh_fenetres": 0,
+        "nb_audit": 0,
+        "nb_reste": 0,
+        "sources_conditions": 54,
+        "dossier_relecture": 0,
+        "bellman_objet": 0
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 210,
+        "v13_comparaison": 0,
+        "dh_rejeu": 210,
+        "dh_fenetres": 0,
+        "nb_audit": 0,
+        "nb_reste": 0,
+        "sources_conditions": 15,
+        "dossier_relecture": 0,
+        "bellman_objet": 0
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 237,
+        "v13_comparaison": 0,
+        "dh_rejeu": 237,
+        "dh_fenetres": 0,
+        "nb_audit": 0,
+        "nb_reste": 0,
+        "sources_conditions": 54,
+        "dossier_relecture": 0,
+        "bellman_objet": 0
+      },
+      "equal_weights": {
+        "value": 6,
+        "gain": 6,
+        "first_choices": [
+          "v13_contraintes",
+          "dh_rejeu"
+        ],
+        "portfolios": [
+          [
+            "dh_rejeu",
+            "v13_contraintes"
+          ]
+        ],
+        "states_visited": 12
+      }
+    },
+    {
+      "budget": 4,
+      "profiles": 243,
+      "unique_portfolio_profiles": 228,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 24,
+        "dh_rejeu": 242,
+        "dh_fenetres": 0,
+        "nb_audit": 233,
+        "nb_reste": 0,
+        "sources_conditions": 235,
+        "dossier_relecture": 0,
+        "bellman_objet": 0
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 10,
+        "dh_rejeu": 240,
+        "dh_fenetres": 0,
+        "nb_audit": 219,
+        "nb_reste": 0,
+        "sources_conditions": 220,
+        "dossier_relecture": 0,
+        "bellman_objet": 0
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 0,
+        "dh_rejeu": 242,
+        "dh_fenetres": 0,
+        "nb_audit": 233,
+        "nb_reste": 0,
+        "sources_conditions": 235,
+        "dossier_relecture": 0,
+        "bellman_objet": 0
+      },
+      "equal_weights": {
+        "value": 10,
+        "gain": 10,
+        "first_choices": [
+          "v13_contraintes",
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions"
+        ],
+        "portfolios": [
+          [
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_contraintes"
+          ]
+        ],
+        "states_visited": 37
+      }
+    },
+    {
+      "budget": 6,
+      "profiles": 243,
+      "unique_portfolio_profiles": 207,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 198,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 243,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 45,
+        "bellman_objet": 45
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 171,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 243,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 18,
+        "bellman_objet": 18
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 0,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 243,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 0,
+        "bellman_objet": 45
+      },
+      "equal_weights": {
+        "value": 12,
+        "gain": 12,
+        "first_choices": [
+          "v13_contraintes",
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions"
+        ],
+        "portfolios": [
+          [
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes"
+          ]
+        ],
+        "states_visited": 73
+      }
+    },
+    {
+      "budget": 8,
+      "profiles": 243,
+      "unique_portfolio_profiles": 153,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 234,
+        "dh_rejeu": 243,
+        "dh_fenetres": 5,
+        "nb_audit": 243,
+        "nb_reste": 5,
+        "sources_conditions": 243,
+        "dossier_relecture": 171,
+        "bellman_objet": 171
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 204,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 240,
+        "nb_reste": 0,
+        "sources_conditions": 240,
+        "dossier_relecture": 90,
+        "bellman_objet": 90
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 0,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 243,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 0,
+        "bellman_objet": 171
+      },
+      "equal_weights": {
+        "value": 13,
+        "gain": 13,
+        "first_choices": [
+          "v13_contraintes",
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions",
+          "bellman_objet"
+        ],
+        "portfolios": [
+          [
+            "bellman_objet",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes"
+          ],
+          [
+            "dh_rejeu",
+            "dossier_relecture",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes"
+          ]
+        ],
+        "states_visited": 112
+      }
+    }
+  ],
+  "empirical_transition_probabilities": null,
+  "cost_scenarios": [
+    {
+      "name": "V13 comparaison coût1",
+      "changed_action": "v13_comparaison",
+      "new_cost": 1,
+      "results": [
+        {
+          "budget": 2,
+          "value": 6,
+          "gain": 6,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 13
+        },
+        {
+          "budget": 4,
+          "value": 10,
+          "gain": 10,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 41
+        },
+        {
+          "budget": 6,
+          "value": 12,
+          "gain": 12,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 80
+        },
+        {
+          "budget": 8,
+          "value": 13,
+          "gain": 13,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "bellman_objet"
+          ],
+          "portfolios": [
+            [
+              "bellman_objet",
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_fenetres",
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "dossier_relecture",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "nb_reste",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 118
+        }
+      ]
+    },
+    {
+      "name": "DH extension coût1",
+      "changed_action": "dh_fenetres",
+      "new_cost": 1,
+      "results": [
+        {
+          "budget": 2,
+          "value": 6,
+          "gain": 6,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 13
+        },
+        {
+          "budget": 4,
+          "value": 10,
+          "gain": 10,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 44
+        },
+        {
+          "budget": 6,
+          "value": 12,
+          "gain": 12,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 87
+        },
+        {
+          "budget": 8,
+          "value": 13,
+          "gain": 13,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "bellman_objet"
+          ],
+          "portfolios": [
+            [
+              "bellman_objet",
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_fenetres",
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "dossier_relecture",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 126
+        }
+      ]
+    },
+    {
+      "name": "Contraintes V13 coût2",
+      "changed_action": "v13_contraintes",
+      "new_cost": 2,
+      "results": [
+        {
+          "budget": 2,
+          "value": 5,
+          "gain": 5,
+          "first_choices": [
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit"
+            ],
+            [
+              "dh_rejeu",
+              "sources_conditions"
+            ]
+          ],
+          "states_visited": 9
+        },
+        {
+          "budget": 4,
+          "value": 8,
+          "gain": 8,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "sources_conditions",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 29
+        },
+        {
+          "budget": 6,
+          "value": 10,
+          "gain": 10,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "v13_comparaison",
+              "v13_contraintes"
+            ],
+            [
+              "dh_rejeu",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 61
+        },
+        {
+          "budget": 8,
+          "value": 12,
+          "gain": 12,
+          "first_choices": [
+            "v13_contraintes",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions"
+          ],
+          "portfolios": [
+            [
+              "dh_rejeu",
+              "nb_audit",
+              "sources_conditions",
+              "v13_comparaison",
+              "v13_contraintes"
+            ]
+          ],
+          "states_visited": 98
+        }
+      ]
+    }
+  ],
+  "cost_scenario_status": "Exploratory sensitivity added after the base run; not a scientific preregistration.",
+  "guarantee": "Optimality within the stated model, not optimality of real research."
+}

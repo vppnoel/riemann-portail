@@ -1,0 +1,180 @@
+{
+  "_lisez_moi": "Registres V6.44–V6.50 déclarés historiques. De V6.44 à V6.50, chaque version produisait un registre « courant » (documents et empreintes de leurs sources, index des fonctions du code, état de recherche). Depuis V6.55, ce rôle est tenu par le pilotage (pilotage_recherche.json, registre_identifiants.json, indicateur, navigateur). Les registres V6.50 ne sont donc plus comparés au corpus courant : ils restent des instantanés datés, vérifiés pour eux-mêmes (empreinte du fichier, cohérence interne). Auteur et titulaire des droits : Vincent NOËL.",
+  "decision": {
+    "date": "2026-10-17",
+    "version": "V6.58",
+    "auteur": "Vincent NOËL",
+    "demande": "« Déclarer historique le pb des versions 6.50 versus 6.55 »",
+    "effet": "Les tests test_v644_domain_language, test_v645_prime_centered_bridge (deux fonctions) et test_v646_certificate_lego vérifient désormais ces registres comme instantanés historiques ; ils ne comparent plus leurs empreintes de sources ni leur index des fonctions au corpus courant. L'index courant du code doit seulement se lire sans erreur d'analyse."
+  },
+  "remplace_par": [
+    "2_Methode/Pilotage/pilotage_recherche.json",
+    "2_Methode/Pilotage/registre_identifiants.json",
+    "2_Methode/Indicateur/indicateur_avancement.json",
+    "2_Methode/Navigateur/carte_navigation.json"
+  ],
+  "instantanes": [
+    {
+      "path": "3_Preuves_et_calculs/data/v644_decisions.json",
+      "sha256": "e78bee07f01b6bd91644e2b4c23c266c007bee97eed02420b97ded4d1ce179e6",
+      "version": "V6.44",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v644_index_fonctions.json",
+      "sha256": "2e4d6e57901edd8c0cb964d1da8a516050aa0c0045c0a9b78575f101c85ec34a",
+      "version": "V6.44",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v644_etat_recherche.json",
+      "sha256": "c04d008933d14be0dc79aa799a48f45a4b157bd836763ffd91d5e42f04fdc2c6",
+      "version": "V6.44",
+      "role": "état de recherche"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v644_dictionnaire.json",
+      "sha256": "b529143702bdc0caa5c2917638a8e92fa1384509b140767b8729ab37aa168106",
+      "version": "V6.44",
+      "role": "dictionnaire des domaines"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v645_decisions.json",
+      "sha256": "c49e5e5d50fe966dcb10527982afba7e13da90b6517da85259cb9fa30562e370",
+      "version": "V6.45",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v645_index_fonctions.json",
+      "sha256": "06b0f6df2f56ee022a760fa2cf013e550a71e9a4d8c8c0999296c57d3b5c5dbb",
+      "version": "V6.45",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v645_etat_recherche.json",
+      "sha256": "e9252da7325d84ba34e5a801c21b0e759809f7fb245263c69d7a5433835541fc",
+      "version": "V6.45",
+      "role": "état de recherche"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v645_dictionnaire.json",
+      "sha256": "e13b5af38b4761fa2edbc932f0e268ed98416b90f1f06a75eaaf2bfd0ed568cb",
+      "version": "V6.45",
+      "role": "dictionnaire des domaines"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v646_decisions.json",
+      "sha256": "fbff514f2e5e1aca3a9d5ca3ae156e23f0c5814e85b41e6eb85913bb0a87b13e",
+      "version": "V6.46",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v646_index_fonctions.json",
+      "sha256": "353cb1eb71491f479563b0dbd33905320d1f0af28f72dbecd17fde9822a8f723",
+      "version": "V6.46",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v646_etat_recherche.json",
+      "sha256": "bab9128a1fc4fcaa5045eac2dd3610b06d583e8c4cbc1d118fbce3fbf97972c1",
+      "version": "V6.46",
+      "role": "état de recherche"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v646_dictionnaire.json",
+      "sha256": "2fc753de00d1825dfcee7d33acfe24e1ac641f859f28b72bc93eb15b4a8b7b44",
+      "version": "V6.46",
+      "role": "dictionnaire des domaines"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v647_decisions.json",
+      "sha256": "cb8dd6805c8ef34386a70fd2c01a919d86f51d0454d872856b3bfe138cadfc45",
+      "version": "V6.47",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v647_index_fonctions.json",
+      "sha256": "7f1b124f58fffec0a02e6eefd04c35443eee41c6fbaa47eaf0c9a84ffce7248b",
+      "version": "V6.47",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v647_etat_recherche.json",
+      "sha256": "b26376dc55a67176aeaa531afeb89d25030b7a130e91c416df52fb8c9fa7e313",
+      "version": "V6.47",
+      "role": "état de recherche"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v647_dictionnaire.json",
+      "sha256": "4a7371689ac30c3ecf06e971b0e996a74e32e44cd6b3feba02587bb752531305",
+      "version": "V6.47",
+      "role": "dictionnaire des domaines"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v648_decisions.json",
+      "sha256": "878133c01201b36b7bb305fdff52727df17978a955afdb40d619d91896687335",
+      "version": "V6.48",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v648_index_fonctions.json",
+      "sha256": "c532a2f234a7ace55457866df1911437525f02b50cdedbed27bd367f0357a039",
+      "version": "V6.48",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v648_etat_recherche.json",
+      "sha256": "11bacb5fc77251080c9a9ae645db2803b776ee5a68e2e6560a6b0ce958ecda96",
+      "version": "V6.48",
+      "role": "état de recherche"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v648_dictionnaire.json",
+      "sha256": "4c63ad583a747aae4a7e338570a77cd34eb4cc9f474504e2c0d2d22885289671",
+      "version": "V6.48",
+      "role": "dictionnaire des domaines"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v649_decisions.json",
+      "sha256": "a95686428c78aa97fc02e60c78579644cbc94810f03c9ddf70fd9f5362c94b49",
+      "version": "V6.49",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v649_index_fonctions.json",
+      "sha256": "7e9194491c1c3e2ed7267610d82bf90bb7a469f3a919bc76d32c817b59fa873d",
+      "version": "V6.49",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v649_etat_recherche.json",
+      "sha256": "f92459c49768ec89e813d148c57e3e922c1e9e6ee0bc68ac1a2c32d243637a29",
+      "version": "V6.49",
+      "role": "état de recherche"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v649_dictionnaire.json",
+      "sha256": "b8b1cc4b2c39e5c876983a22eb6ff644d155f9c1e1810142390b88a15be148c8",
+      "version": "V6.49",
+      "role": "dictionnaire des domaines"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v650_decisions.json",
+      "sha256": "9cd46c01feaecaf51c8bdc23f1fd546b8805d03972d07878c1fc66302caabc13",
+      "version": "V6.50",
+      "role": "registre des documents et de leurs sources"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v650_index_fonctions.json",
+      "sha256": "b5ccd49a166d359e732641efbee485dffa60cb9943c2485f96a2733942c42b08",
+      "version": "V6.50",
+      "role": "index des fonctions du code"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v650_etat_recherche.json",
+      "sha256": "27bb8f1175539e196565a024a587d04266a5e37d3e26319920beb80506e5a935",
+      "version": "V6.50",
+      "role": "état de recherche"
+    }
+  ]
+}

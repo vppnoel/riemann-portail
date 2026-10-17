@@ -1,0 +1,191 @@
+{
+  "version": "V6.42",
+  "title": "Graphe des certificats et du contrat global",
+  "nodes": [
+    {
+      "id": "pli",
+      "label": "I1–I3 · Pli unique",
+      "status": "demontre",
+      "x": 0,
+      "y": 0,
+      "detail": "Deux inclusions strictes et contractions, 50/80 décimales ; existence et unicité dans la boîte rationnelle. Projection réelle fixe non nulle ; Hr et Htt séparés de zéro. Certificat calculatoire, backend iv précisé.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md"
+    },
+    {
+      "id": "isolation",
+      "label": "I4 · Deux zéros isolés",
+      "status": "demontre",
+      "x": 1,
+      "y": 0,
+      "detail": "Rouché sur 256 arcs continus, pour tout r du petit intervalle. Borne du défaut strictement inférieure à celle du polynôme de comparaison ; exactement deux zéros avec multiplicité.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md"
+    },
+    {
+      "id": "racines",
+      "label": "I5 · Quatre boîtes",
+      "status": "demontre",
+      "x": 2,
+      "y": 0,
+      "detail": "Contractions uniformes en r : deux boîtes critiques avant, deux boîtes hors droite après. Criticité exacte par unicité et symétrie fonctionnelle, et non par une partie réelle approximativement égale à 1/2.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md"
+    },
+    {
+      "id": "paire",
+      "label": "Paire et compagnon",
+      "status": "demontre",
+      "x": 1,
+      "y": 1,
+      "detail": "Le contour isolant rend les moments de la paire valides. Avant : mu>0 ; au double : mu=0 et bloc de Jordan ; après : mu<0. Les deux paramètres latéraux sont certifiés.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md"
+    },
+    {
+      "id": "metrique",
+      "label": "I6 · Métrique au pli impossible",
+      "status": "ferme",
+      "x": 0,
+      "y": 2,
+      "detail": "Toute métrique hermitienne positive symétrisant ce compagnon exige mu>0. Son conditionnement diverge quand mu approche zéro. Cela ferme cette construction locale automatique ; cela ne ferme pas RH.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md"
+    },
+    {
+      "id": "a1",
+      "label": "A1 · Forme depuis les premiers",
+      "status": "demontre",
+      "x": 2,
+      "y": 2,
+      "detail": "À support [-S,S], les puissances premières au-delà de exp(2S) ne contribuent pas. La queue archimédienne est explicite. Le signe de la forme complète demeure à démontrer.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+    },
+    {
+      "id": "pont",
+      "label": "Pont arithmétique manquant",
+      "status": "ouvert",
+      "x": 1,
+      "y": 3,
+      "detail": "Un certificat local V13 ne donne pas le signe de la forme de Weil pour zêta. Il manque une inégalité arithmétique sur tous les tests admissibles ou une borne de croissance indépendante de RH.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+    },
+    {
+      "id": "a2",
+      "label": "A2 · Norme première divergente",
+      "status": "ferme",
+      "x": 0,
+      "y": 4,
+      "detail": "Sur L² avant restriction aux tests admissibles, la norme de la somme positive de translations vaut exactement deux fois la somme de ses poids et diverge. Pas de norme uniforme de cette seule partie ; la compensation archimédienne reste à contrôler.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+    },
+    {
+      "id": "uniforme",
+      "label": "Inégalité sur chaque support",
+      "status": "ouvert",
+      "x": 2,
+      "y": 4,
+      "detail": "Pour chaque S et f=(d²/dx²−1/4)psi à support compact : Qarch(f) doit dominer la somme signée des corrélations aux logarithmes des puissances premières. Cette inégalité reste ouverte.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+    },
+    {
+      "id": "croissance",
+      "label": "Borne Q(X) depuis les premiers",
+      "status": "ouvert",
+      "x": 0,
+      "y": 5,
+      "detail": "L’autre porte du corpus exige Q(X)=X^{o(1)} indépendamment de RH. La positivité automatique Q(X)≥0 ne la fournit pas. Le théorème B suppose déjà RH.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    },
+    {
+      "id": "weil",
+      "label": "Critère de Weil",
+      "status": "conditionnel",
+      "x": 2,
+      "y": 5,
+      "detail": "Le critère publié relie la positivité sur tous les tests admissibles à RH, dans la normalisation explicite. Un support ou une compression finie ne remplit pas le quantificateur global.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+    },
+    {
+      "id": "rh",
+      "label": "Destination précise · RH",
+      "status": "ouvert",
+      "x": 1,
+      "y": 6,
+      "detail": "Les zéros non triviaux de zêta ont tous partie réelle 1/2. Le certificat local et les voies fermées précisent la recherche ; aucune preuve globale n’est obtenue.",
+      "source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pli",
+      "target": "paire",
+      "kind": "preuve",
+      "label": "pli local"
+    },
+    {
+      "source": "isolation",
+      "target": "paire",
+      "kind": "preuve",
+      "label": "moments valides"
+    },
+    {
+      "source": "racines",
+      "target": "paire",
+      "kind": "preuve",
+      "label": "signature certifiée"
+    },
+    {
+      "source": "paire",
+      "target": "metrique",
+      "kind": "preuve",
+      "label": "classification complète"
+    },
+    {
+      "source": "paire",
+      "target": "pont",
+      "kind": "ouvert",
+      "label": "transfert absent"
+    },
+    {
+      "source": "a1",
+      "target": "uniforme",
+      "kind": "condition",
+      "label": "signe à établir"
+    },
+    {
+      "source": "pont",
+      "target": "uniforme",
+      "kind": "ouvert",
+      "label": "contrat de signe"
+    },
+    {
+      "source": "pont",
+      "target": "croissance",
+      "kind": "ouvert",
+      "label": "contrat de croissance"
+    },
+    {
+      "source": "a2",
+      "target": "uniforme",
+      "kind": "obstruction",
+      "label": "norme seule insuffisante"
+    },
+    {
+      "source": "uniforme",
+      "target": "weil",
+      "kind": "condition",
+      "label": "tous S et tous tests"
+    },
+    {
+      "source": "weil",
+      "target": "rh",
+      "kind": "equivalence",
+      "label": "critère publié"
+    },
+    {
+      "source": "croissance",
+      "target": "rh",
+      "kind": "condition",
+      "label": "théorème A du corpus"
+    }
+  ],
+  "author": "Vincent P. P. NOËL",
+  "date": "2026-10-12",
+  "edge_contract": "Les flèches ouvertes ne sont pas des implications. Les certificats locaux mentionnent leur backend et leur domaine."
+}

@@ -1,0 +1,19 @@
+{
+  "pdf_pages": 9,
+  "pdf_rendered_pages": 9,
+  "latex_overfull": false,
+  "identity_max_residual": "3.040E-66",
+  "conductor_grouping_verified": true,
+  "two_independent_integration_methods_at_X100": {
+    "X": 100,
+    "abs_difference_Q": "7.082195379527216440235017957E-11",
+    "abs_difference_D": "1.052461548352311423300011540E-10"
+  },
+  "mathematical_proofs_reviewed_constructively_and_critically": true,
+  "RH_proved": false,
+  "global_exponent_gain_obtained": false,
+  "version": "V6.55",
+  "version_visible_in_pdf": true,
+  "mathematical_code_byte_identical_to_prior_delivery": true,
+  "editorial_numbering_only": true
+}

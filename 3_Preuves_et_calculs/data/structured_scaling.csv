@@ -1,0 +1,43 @@
+source,nombre_de_zeros,rayon,rayon_relatif
+"Modèle réduit, F_3 (rayon médian)",2.0,0.8452994616207485,1.0
+"Modèle réduit, F_3 (rayon médian)",4.0,0.6804839614424602,0.8050211698203655
+"Modèle réduit, F_3 (rayon médian)",6.0,0.3355692262310717,0.3969826569955015
+"Modèle réduit, F_3 (rayon médian)",8.0,0.2805122939046315,0.3318496067261024
+"Modèle réduit, F_3 (rayon médian)",10.0,0.1526436867254977,0.1805794202599205
+"Modèle réduit, F_3 (rayon médian)",12.0,0.1919009240327934,0.22702123063564844
+"Modèle réduit, F_3 (rayon médian)",14.0,0.0829434558774295,0.09812316184183595
+"Modèle réduit, F_3 (rayon médian)",16.0,0.0766623054481997,0.09069248110156132
+"Modèle réduit, F_3 (rayon médian)",18.0,0.0838040073791963,0.09914120519905849
+"Modèle réduit, F_3 (rayon médian)",20.0,0.0421817104652885,0.04990149926797625
+"Modèle réduit, F_3 (rayon médian)",22.0,0.0579829964462425,0.06859462128967629
+"Modèle réduit, F_3 (rayon médian)",24.0,0.0656849260942381,0.07770610189233534
+"Modèle réduit, F_5 (rayon médian)",2.0,1.1055728090000845,1.0
+"Modèle réduit, F_5 (rayon médian)",4.0,0.6383027588849294,0.5773502691896256
+"Modèle réduit, F_5 (rayon médian)",6.0,0.2324122416247044,0.21021884739993332
+"Modèle réduit, F_5 (rayon médian)",8.0,0.2048504635415047,0.18528898492608376
+"Modèle réduit, F_5 (rayon médian)",10.0,0.139586555511831,0.1262572255535821
+"Modèle réduit, F_7 (rayon médian)",2.0,1.2440710539815454,1.0
+"Modèle réduit, F_7 (rayon médian)",4.0,0.5533075381388023,0.4447555759520228
+"Modèle réduit, F_7 (rayon médian)",6.0,0.2152734954840301,0.17303955010854508
+"Modèle réduit, F_7 (rayon médian)",8.0,0.2844888393417237,0.22867571625530628
+famille modulo 7 (plage de survie),10.0,0.2486333584553405,1.0
+famille modulo 7 (plage de survie),24.0,0.2486333584553405,1.0
+famille modulo 7 (plage de survie),59.0,0.0156780534630721,0.06305691867122565
+famille modulo 7 (plage de survie),99.0,0.0156780534630721,0.06305691867122565
+famille modulo 7 (plage de survie),140.0,0.0156780534630721,0.06305691867122565
+famille modulo 7 (plage de survie),230.0,0.0156780534630721,0.06305691867122565
+famille modulo 7 (plage de survie),325.0,0.0107321207995426,0.043164444490542096
+famille modulo 7 (plage de survie),424.0,0.0107321207995426,0.043164444490542096
+famille modulo 7 (plage de survie),525.0,0.0107321207995426,0.043164444490542096
+famille modulo 7 (plage de survie),630.0,0.0107321207995426,0.043164444490542096
+famille modulo 7 (plage de survie),737.0,0.0107321207995426,0.043164444490542096
+famille modulo 7 (plage de survie),847.0,0.0107321207995426,0.043164444490542096
+famille modulo 7 (plage de survie),958.0,0.0095822924718527,0.03853985053085252
+"famille modulo 5, trajet + (plage de survie)",8.0,0.7178973297860141,1.0
+"famille modulo 5, trajet + (plage de survie)",21.0,0.2320370021826959,0.3232175306347217
+"famille modulo 5, trajet + (plage de survie)",37.0,0.16698881713800365,0.23260821597954479
+"famille modulo 5, trajet + (plage de survie)",54.0,0.1534445019138345,0.21374156936838334
+"famille modulo 5, trajet + (plage de survie)",72.0,0.14212929739624255,0.19797997777566256
+"famille modulo 5, trajet + (plage de survie)",90.0,0.14212929739624255,0.19797997777566256
+"famille modulo 5, trajet + (plage de survie)",110.0,0.14212929739624255,0.19797997777566256
+"famille modulo 5, trajet + (plage de survie)",130.0,0.053329482643015035,0.07428566792261385

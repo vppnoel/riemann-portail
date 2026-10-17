@@ -1,0 +1,109 @@
+cribles et Q jusqu'à 5000000 : 2 s
+{'N': 998, 'L': 6.90575, 'b_N': np.float64(-1.23639), 'r_Q': np.float64(0.44053), 'r_Q_modele': 0.49339, 'part_beta2Q': np.float64(0.89788), 'tau': 0.39672, 'T_L2_sur_kappa': 2.73962, 'total': np.float64(1.2946), 'rapport_a_4_3': np.float64(0.97095), 'Q': np.float64(8.93525), 'T_N': 0.00265, 'meanE2': 1.96784, 'facteur_M': 400, 'secondes': 0.0}
+{'N': 2000, 'L': 7.6009, 'b_N': np.float64(-1.1601), 'r_Q': np.float64(0.50624), 'r_Q_modele': 0.52178, 'part_beta2Q': np.float64(0.90842), 'tau': 0.38967, 'T_L2_sur_kappa': 2.96182, 'total': np.float64(1.29809), 'rapport_a_4_3': np.float64(0.97357), 'Q': np.float64(13.69148), 'T_N': 0.00237, 'meanE2': 3.72154, 'facteur_M': 400, 'secondes': 0.0}
+{'N': 5000, 'L': 8.51719, 'b_N': np.float64(-1.146), 'r_Q': np.float64(0.56015), 'r_Q_modele': 0.55611, 'part_beta2Q': np.float64(0.98087), 'tau': 0.29892, 'T_L2_sur_kappa': 2.54598, 'total': np.float64(1.27979), 'rapport_a_4_3': np.float64(0.95984), 'Q': np.float64(21.31545), 'T_N': 0.00162, 'meanE2': 7.45505, 'facteur_M': 400, 'secondes': 0.1}
+{'N': 10000, 'L': 9.21034, 'b_N': np.float64(-1.13993), 'r_Q': np.float64(0.56166), 'r_Q_modele': 0.57964, 'part_beta2Q': np.float64(0.97312), 'tau': 0.33138, 'T_L2_sur_kappa': 3.05212, 'total': np.float64(1.3045), 'rapport_a_4_3': np.float64(0.97838), 'Q': np.float64(27.02723), 'T_N': 0.00166, 'meanE2': 12.72144, 'facteur_M': 400, 'secondes': 0.2}
+{'N': 20000, 'L': 9.90349, 'b_N': np.float64(-1.13079), 'r_Q': np.float64(0.60793), 'r_Q_modele': 0.60115, 'part_beta2Q': np.float64(1.03647), 'tau': 0.27741, 'T_L2_sur_kappa': 2.74729, 'total': np.float64(1.31387), 'rapport_a_4_3': np.float64(0.98541), 'Q': np.float64(36.36804), 'T_N': 0.00129, 'meanE2': 22.24204, 'facteur_M': 400, 'secondes': 0.4}
+{'N': 50000, 'L': 10.81978, 'b_N': np.float64(-1.13119), 'r_Q': np.float64(0.631), 'r_Q_modele': 0.62679, 'part_beta2Q': np.float64(1.07655), 'tau': 0.24706, 'T_L2_sur_kappa': 2.67309, 'total': np.float64(1.32361), 'rapport_a_4_3': np.float64(0.99271), 'Q': np.float64(49.22454), 'T_N': 0.00105, 'meanE2': 43.01346, 'facteur_M': 60, 'secondes': 0.1}
+{'N': 100000, 'L': 11.51293, 'b_N': np.float64(-1.12199), 'r_Q': np.float64(0.64366), 'r_Q_modele': 0.64428, 'part_beta2Q': np.float64(1.08038), 'tau': 0.23458, 'T_L2_sur_kappa': 2.70075, 'total': np.float64(1.31496), 'rapport_a_4_3': np.float64(0.98622), 'Q': np.float64(60.49407), 'T_N': 0.00094, 'meanE2': 77.71895, 'facteur_M': 60, 'secondes': 0.3}
+{'N': 200000, 'L': 12.20607, 'b_N': np.float64(-1.27595), 'r_Q': np.float64(0.64332), 'r_Q_modele': 0.66032, 'part_beta2Q': np.float64(1.39648), 'tau': 0.19525, 'T_L2_sur_kappa': 2.38324, 'total': np.float64(1.59173), 'rapport_a_4_3': np.float64(1.1938), 'Q': np.float64(72.05368), 'T_N': 0.00074, 'meanE2': 134.35932, 'facteur_M': 60, 'secondes': 0.8}
+{'N': 500000, 'L': 13.12236, 'b_N': np.float64(-1.6592), 'r_Q': np.float64(0.69092), 'r_Q_modele': 0.67955, 'part_beta2Q': np.float64(2.53608), 'tau': 1.8232, 'T_L2_sur_kappa': 23.92474, 'total': np.float64(4.35928), 'rapport_a_4_3': np.float64(3.26946), 'Q': np.float64(96.15265), 'T_N': 0.00642, 'meanE2': 2105.91771, 'facteur_M': 20, 'secondes': 1.0}
+{'N': 1000000, 'L': 13.81551, 'b_N': np.float64(-1.07992), 'r_Q': np.float64(0.68555), 'r_Q_modele': 0.69278, 'part_beta2Q': np.float64(1.066), 'tau': 0.23507, 'T_L2_sur_kappa': 3.24755, 'total': np.float64(1.30107), 'rapport_a_4_3': np.float64(0.9758), 'Q': np.float64(111.33637), 'T_N': 0.00079, 'meanE2': 538.18378, 'facteur_M': 10, 'secondes': 1.3}
+{'N': 2000000, 'L': 14.50866, 'b_N': np.float64(-1.07378), 'r_Q': np.float64(0.69821), 'r_Q_modele': 0.705, 'part_beta2Q': np.float64(1.07339), 'tau': 0.23647, 'T_L2_sur_kappa': 3.4309, 'total': np.float64(1.30986), 'rapport_a_4_3': np.float64(0.9824), 'Q': np.float64(131.3314), 'T_N': 0.00075, 'meanE2': 1147.9958, 'facteur_M': 10, 'secondes': 3.1}
+{'N': 5000000, 'L': 15.42495, 'b_N': np.float64(-1.07634), 'r_Q': np.float64(0.7188), 'r_Q_modele': 0.71979, 'part_beta2Q': np.float64(1.11032), 'tau': 0.20317, 'T_L2_sur_kappa': 3.13384, 'total': np.float64(1.31349), 'rapport_a_4_3': np.float64(0.98511), 'Q': np.float64(162.47328), 'T_N': 0.00061, 'meanE2': 2365.45289, 'facteur_M': 6, 'secondes': 6.2}
+{
+ "controle_queue": {
+  "N": 100000,
+  "T_facteur_60": 0.0009411824031810782,
+  "T_facteur_120": 0.0009410875808654612,
+  "N2": 1000000,
+  "T_facteur_10": 0.0007859295062280944,
+  "T_facteur_20": 0.0007898476167198749
+ },
+ "ecart_rel_max_v56_e2": 0.00011365218536749515,
+ "ecart_rel_max_v56_Q": 1.0537350311323208e-14,
+ "ajustement_rapport_a_4_3": {
+  "c0": -5.046944721555434,
+  "c1": 159.9128576978114,
+  "c2": -982.6479348526274
+ },
+ "ajustement_lineaire_rapport_a_4_3": {
+  "c0": 2.085090153118136,
+  "c1": -9.848005800179305
+ },
+ "ajustement_T_L2_sur_kappa": {
+  "c0": -33.29669476669283,
+  "c1": 1015.3012894151669,
+  "c2": -6447.086034223527
+ },
+ "ajustement_lineaire_T_L2_sur_kappa": {
+  "c0": 13.496099280138495,
+  "c1": -98.48814970858686
+ },
+ "ajustement_b_lisse": {
+  "c0": -1.173128704669515,
+  "c1": 59.79553472074508,
+  "c2": -379.3799704009833
+ },
+ "kappa": 0.04619141793224202,
+ "balayage_bQ": {
+  "n": 4990001,
+  "mediane_b": -1.0856876170954277,
+  "part_b2rQ_mediane": 0.8266861625843629,
+  "fraction_b_hors_m2_m05": 0.008834266766680006,
+  "max_abs_b": 93218.58685269706,
+  "N_max_abs_b": 33493
+ },
+ "balayage": {
+  "n": 64,
+  "mediane_rapport": 0.9845490178707919,
+  "q10": 0.9736277000844384,
+  "q90": 1.0096114218448506,
+  "fraction_sous_4_3": 0.84375,
+  "max_rapport": 2.549385736450798,
+  "N_max": 129975,
+  "mediane_T_L2_sur_kappa": 2.891840003086162
+ },
+ "medianes_par_tranche": [
+  {
+   "L": 9.703572127341126,
+   "r": 0.9853355916441953,
+   "tl": 2.7273665423241646
+  },
+  {
+   "L": 10.788659065351414,
+   "r": 0.9858721385738617,
+   "tl": 2.882182468475029
+  },
+  {
+   "L": 11.824419612330713,
+   "r": 0.9792438181560925,
+   "tl": 2.969541010517565
+  },
+  {
+   "L": 12.810868036293101,
+   "r": 0.9850808457820719,
+   "tl": 3.0877996063414574
+  },
+  {
+   "L": 13.846635124048849,
+   "r": 0.982431339240484,
+   "tl": 2.9073002481724477
+  },
+  {
+   "L": 14.931725670513332,
+   "r": 0.9894862177181177,
+   "tl": 3.0495321028805904
+  }
+ ],
+ "ajustement_medianes": {
+  "c0": 0.9881529005391193,
+  "c1": -0.04314498275771423
+ },
+ "developpement_premier_ordre": {
+  "coef_b": 2.3088626596061315,
+  "coef_rQ": -4.99,
+  "coef_T": 2.1688800023146215,
+  "c1": -0.5122573380792472
+ }
+}

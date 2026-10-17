@@ -1,0 +1,247 @@
+{
+  "version": "V6.48",
+  "tools": [
+    {
+      "id": "layers",
+      "name": "Projection et couches fréquentielles",
+      "question": "Comment borner l’énergie sans une tête astronomique ?",
+      "implementation": "certificate_lego.frequency_layers",
+      "input": "Support, 32 seuils, 256 milieux par seuil, 160 bits",
+      "output": "λ inférieur sur tous les tests de chaque parité",
+      "execution": "V 646, preuve historique conservée : Trois supports exécutés ; λ≥231/40 au support 347/1000.",
+      "status": "certificat local",
+      "limit": "La trace peut être trop large aux supports suivants.",
+      "doors": [
+        "Arithmétique",
+        "Tête praticable"
+      ]
+    },
+    {
+      "id": "boundary",
+      "name": "Potentiel et bandes premières",
+      "question": "Où les attaches premières peuvent-elles être payées ?",
+      "implementation": "certificate_lego.boundary_bricks",
+      "input": "Support et distances aux bords",
+      "output": "Deux planchers de potentiel et poids du premier 2",
+      "execution": "V 646, preuve historique conservée : Bandes de largeur 2 S−log 2 encadrées ; mélange positif à S=0,347.",
+      "status": "certificat local",
+      "limit": "Ce gabarit exige un seul premier et des bandes disjointes.",
+      "doors": [
+        "Arithmétique",
+        "Couplages"
+      ]
+    },
+    {
+      "id": "assembly",
+      "name": "Assembleur de certificat",
+      "question": "Les garanties de toutes les briques suffisent-elles ensemble ?",
+      "implementation": "certificate_lego.assemble_local_certificate",
+      "input": "Briques de même domaine, forme, norme, unité et moments",
+      "output": "Marge massique et contrats R, ou réponse indéterminée",
+      "execution": "V 646, preuve historique conservée : Un support maximal certifié ; deux supports plus grands indéterminés.",
+      "status": "certificat local",
+      "limit": "Ne valide pas des données arbitraires simplement étiquetées.",
+      "doors": [
+        "Tête praticable",
+        "Couplages",
+        "Couverture"
+      ]
+    },
+    {
+      "id": "rounded",
+      "name": "Certificat rationnel lisible",
+      "question": "Peut-on rendre le signe vérifiable avec quelques nombres ?",
+      "implementation": "certificate_lego.rounded_certificate",
+      "input": "Cinq encadrements déjà établis",
+      "output": "Q≥masse/25, Q≥R/200 et masse≤3 R/20",
+      "execution": "V 646, preuve historique conservée : Constantes vérifiées en fractions exactes.",
+      "status": "certificat local",
+      "limit": "Ne constitue pas une règle d’agrandissement non bornée.",
+      "doors": [
+        "Couverture"
+      ]
+    },
+    {
+      "id": "source_gram",
+      "name": "Projection du Gram de sources",
+      "question": "Comment diminuer toute la dette, termes croisés compris ?",
+      "implementation": "certificate_lego.project_source_gram",
+      "input": "Gram joint cohérent des sources et annihilateurs",
+      "output": "K−B*G⁻¹B, optimal en ordre de Loewner",
+      "execution": "Exemple rationnel exécuté : [[5,2],[2,2]] devient l’identité.",
+      "status": "algèbre exécutée",
+      "limit": "Les vraies sources ζ et leurs intégrations ne sont pas encore certifiées.",
+      "doors": [
+        "Couplages",
+        "Tête praticable"
+      ]
+    },
+    {
+      "id": "prime_residual",
+      "name": "Pont de Chebyshev",
+      "question": "Que reste-t-il après l’annulation du terme polaire ?",
+      "implementation": "prime_centered_bridge.prime_residual_intervals",
+      "input": "Tests polynomiaux et puissances premières",
+      "output": "Somme première et fluctuation par deux voies encadrées",
+      "execution": "144 entrées triangulaires exécutées en V 6.45.",
+      "status": "identités et encadrements",
+      "limit": "La décomposition ne donne pas à elle seule la loi de signe globale.",
+      "doors": [
+        "Arithmétique"
+      ]
+    },
+    {
+      "id": "ports",
+      "name": "Raccords typés",
+      "question": "Sommes-nous en train de prouver quelque chose pour le bon objet ?",
+      "implementation": "certificate_lego.check_ports",
+      "input": "Supports, formes, décalage η, unités, norme, statut tous tests",
+      "output": "Raccord accepté ou contrat refusé",
+      "execution": "Raccords incompatibles et modèles perturbés testés.",
+      "status": "contrôle de cohérence",
+      "limit": "Le contrôle de types ne remplace pas la preuve analytique.",
+      "doors": [
+        "Couplages",
+        "Couverture"
+      ]
+    },
+    {
+      "id": "grammar",
+      "name": "Arithmétique des domaines",
+      "question": "Que conserve ou détruit un geste sur les fonctions ?",
+      "implementation": "domain_grammar.translate",
+      "input": "Support, jets, unité et opération",
+      "output": "Nouveau contrat de domaine et pertes déclarées",
+      "execution": "768 cas concordants Python/JavaScript en V 6.44–V 6.45.",
+      "status": "outil de raisonnement",
+      "limit": "Les contrats codés sont partiels ; ils ne décident pas le signe.",
+      "doors": [
+        "Couverture"
+      ]
+    },
+    {
+      "id": "joint_fourier",
+      "name": "Diagnostic Fourier conjoint",
+      "question": "Une meilleure représentation conserve-t-elle la phase du premier ?",
+      "implementation": "v646_fourier_joint_diagnostic.py",
+      "input": "Multiplicateur énergie/premier 2 et projection des moments",
+      "output": "Comparaison séparation, enveloppe et sous-niveaux",
+      "execution": "40 000 puis 80 000 points ; le budget sous-niveaux améliore S=0,5 sans le certifier.",
+      "status": "exploration",
+      "limit": "Frontières des bandes, intégrales et queue restent sans encadrement.",
+      "doors": [
+        "Arithmétique",
+        "Tête praticable"
+      ]
+    },
+    {
+      "id": "bellman",
+      "name": "Pilote de contrats et décisions",
+      "question": "Quelle construction débloque plusieurs obligations ?",
+      "implementation": "bridge_planning.py ; modèle de contrats V6.43",
+      "input": "Obligations, gardes, coûts éditoriaux et résultats",
+      "output": "Choix motivé d’une prochaine construction",
+      "execution": "Le pilote V 6.43 est conservé ; cette étape reprend le choix par obligations, sans nouveau recalcul de ses scores.",
+      "status": "outil de planification",
+      "limit": "Une valeur de Bellman ou un score éditorial ne constitue pas une preuve de RH.",
+      "doors": [
+        "Arithmétique",
+        "Tête praticable",
+        "Couplages",
+        "Couverture"
+      ]
+    },
+    {
+      "id": "projected_hs",
+      "name": "Concentration projetée avec erreurs",
+      "question": "Les accords entre fréquences peuvent-ils certifier le signe ?",
+      "implementation": "projected_concentration.certify",
+      "input": "Port S=3/8, maillages rationnels, Gram,160 bits et 64 bits fixes",
+      "output": "Concentrations par couches puis Q≥masse/12 et R/100",
+      "execution": "2000 cellules ;970 retenues au dernierniveau ;470935 paires parparité ;marge massique>0,0858.",
+      "status": "certificat sur tous les tests",
+      "limit": "Famille bornée et un seul premier ; la couverture globale reste ouverte.",
+      "doors": [
+        "Arithmétique",
+        "Tête praticable",
+        "Couverture"
+      ]
+    },
+    {
+      "id": "common_operator",
+      "name": "Opérateur commun et compression",
+      "question": "Peut-on garder le même test et construire une tête utile ?",
+      "implementation": "common_operator_certificate.certify",
+      "input": "S=1/2,80 nœuds certifiés et 90000 cellules fréquentielles",
+      "output": "Norme entière, erreurs, Q≥masse/250 et R/2000",
+      "execution": "Deux blocs de 40 ; Bareiss exact ; marge massique>0,0047, tous tests.",
+      "status": "certificat local exécuté",
+      "limit": "Un seul premier ; sources du minorant B/A, distinctes des sources fortes de Q.",
+      "doors": [
+        "Tête praticable",
+        "Couplages",
+        "Couverture"
+      ]
+    },
+    {
+      "id": "cell_errors",
+      "name": "Cellules et erreurs de second ordre",
+      "question": "Comment garantir des sous-niveaux discontinus sans deviner leurs racines ?",
+      "implementation": "projected_concentration.validate_grid ; certify",
+      "input": "Bornes de b sur chaque cellule et dérivées du noyau",
+      "output": "Sur-ensembles certifiés et erreurs des milieux en O(h²)",
+      "execution": "Queue exclue par a(40)>7,2224 ; erreurs ajoutées avant la racineSchatten 2.",
+      "status": "preuve et intervalles",
+      "limit": "La précision de la grille seule ne constitue pas une garantie.",
+      "doors": [
+        "Arithmétique",
+        "Tête praticable"
+      ]
+    },
+    {
+      "id": "gauss_frame",
+      "name": "Cadre de Gauss et vecteurs encadrés",
+      "question": "Les coordonnées finies représentent-elles les bonnes fonctions ?",
+      "implementation": "common_operator_certificate.certify_gauss ; trig_interval",
+      "input": "80 racines Legendre, poids et ondes déjà projetées",
+      "output": "Cadre orthonormal exact, restes et vecteurs pondérés encadrés",
+      "execution": "Racines isolées en entiers ; sinus par polynômes intervalle ; erreur vectorielle<3·10⁻¹³.",
+      "status": "preuve et intervalles",
+      "limit": "La projection des moments et l’interpolation ne sont pas supposées commuter.",
+      "doors": [
+        "Tête praticable",
+        "Couplages"
+      ]
+    },
+    {
+      "id": "exact_ceiling",
+      "name": "Plafond matriciel exact",
+      "question": "La valeur propre flottante peut-elle devenir une borne ?",
+      "implementation": "common_operator_certificate.validated_matrix_norm ; bareiss_spd",
+      "input": "Matrice quantifiée symétrique et plafond candidat",
+      "output": "Déterminants principaux exacts prouvant τI−M>0",
+      "execution": "Deux blocs 40 × 40 validés, plafonds 1,63860 et 1,48237.",
+      "status": "algèbre exacte exécutée",
+      "limit": "La matrice seule exige encore toutes les erreurs pour couvrir l’opérateur infini.",
+      "doors": [
+        "Tête praticable"
+      ]
+    },
+    {
+      "id": "minorant_assembly",
+      "name": "Assembler tête, sources et queue",
+      "question": "Une même erreur peut-elle certifier toutes les attaches ?",
+      "implementation": "common_operator_certificate.assemble_minorant_contract",
+      "input": "Plafond τ, erreur δ et constante positiveη",
+      "output": "Queue positive, Gram source≤δ²I, dette de Schur et marge",
+      "execution": "Marge de Schur paire>0,00473 ; dette<0,000009.",
+      "status": "certificat du minorant",
+      "limit": "Sources de A_U dans L² ; pas les sources fortes de la forme originale Q_W.",
+      "doors": [
+        "Couplages",
+        "Tête praticable",
+        "Couverture"
+      ]
+    }
+  ]
+}

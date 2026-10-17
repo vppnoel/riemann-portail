@@ -1,0 +1,36 @@
+{
+  "version": "V6.41",
+  "date_utc": "2026-10-12T16:39:58.547778+00:00",
+  "full_suite": {
+    "successful": 257,
+    "total": 257,
+    "exit_code": 0,
+    "evidence": "Final terminal summary observed on a fresh copy; all eighteen V641 tests included."
+  },
+  "post_layout_checks": {
+    "indicator_and_navigator_tests": "passed",
+    "eight_active_HTML_pages": "all local href/src links exist; common nine-item menu includes research graph",
+    "interactive_graph": "fifteen nodes; selection, search and status filter exercised",
+    "PDF": "twelve final pages rendered and visually inspected; no overfull boxes or missing glyphs"
+  },
+  "Bellman": {
+    "profiles": 243,
+    "budgets": 4,
+    "independent_subset_comparisons": 972,
+    "JavaScript_client_comparisons": 972,
+    "all_ties_preserved": true
+  },
+  "numerical_data": {
+    "fold_candidates_recrossed": 20,
+    "attributed_folds": 6,
+    "blocks": 18,
+    "roots_recrossed": 24,
+    "geometric_rows": 120,
+    "jet_sections": 36,
+    "jet_candidates": 4,
+    "lost_coarse_continuation_preserved": true,
+    "interval_zero_certification": false,
+    "exhaustive_coverage": false
+  },
+  "global_status": "Arithmetic positivity and prime-side growth bound remain open; RH maturity levels unchanged."
+}

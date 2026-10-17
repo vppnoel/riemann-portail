@@ -1,0 +1,25 @@
+{
+  "N": 32768,
+  "n_log": 4096,
+  "multiplicative_defect_P": 48,
+  "tomo2_n_shifts": 32,
+  "tomo2_shift_step": 8,
+  "tomo3_segment_length": 512,
+  "tomo3_hop": 256,
+  "tomo3_max_bin": 24,
+  "phase_random_surrogates_per_core_object": 32,
+  "steinhaus_seeds": 4,
+  "chi_to_DH_theta_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.30000000000000004,
+    0.4,
+    0.5,
+    0.6000000000000001,
+    0.7000000000000001,
+    0.8,
+    0.9,
+    1.0
+  ]
+}

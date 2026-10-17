@@ -1,0 +1,29 @@
+{
+  "version": "6.36",
+  "date": "2026-10-12",
+  "tests_passed": 208,
+  "tests_total": 208,
+  "tests_skipped": 0,
+  "new_tests": 6,
+  "pdf_pages": {
+    "article2_prime_side_weil_forms.pdf": 7,
+    "article1_mean_square_double_poles.pdf": 10,
+    "article3_hasse_jets_and_spectral_bound.pdf": 8,
+    "59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf": 7,
+    "60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf": 5
+  },
+  "sha256": {
+    "1_Presentation/articles/article2_prime_side_weil_forms.pdf": "8082bd9feda71d3152723261110d8dc3f966a889fc825544b61194730c14620a",
+    "1_Presentation/articles/article1_mean_square_double_poles.pdf": "504412fd08463cd434892196ad0c36ccd6fc3459315fc799a783812ac9ce15e2",
+    "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf": "a78e17183879344f673f88982eb6b302516dfdc39e16b5585a56dbfea1dbc19b",
+    "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf": "2ebee67f534685b310dcfad545d998824bec47729547a15617c06737b76e4890",
+    "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf": "a354325f0acd70bc4019129a6483cbbe700a50f8f2f7e032ce8cee7a9490986a"
+  },
+  "certificate": {
+    "negative_directions_lower_bound": 25,
+    "exact_inertia_established": false,
+    "scope": "DH a=0.02 h=0.005 L=1115",
+    "model": "interval arithmetic and standard IEEE binary64 error bounds"
+  },
+  "visual_qa": "All five PDFs rendered and inspected; no clipping or unresolved references."
+}

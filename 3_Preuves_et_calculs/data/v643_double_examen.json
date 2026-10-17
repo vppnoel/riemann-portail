@@ -1,0 +1,24 @@
+{
+  "version": "V6.43",
+  "review": "double examen interne constructif et critique",
+  "constructive_findings": [
+    "Transport exact J/D/R et compression des translations premières",
+    "Forme hermitienne continue dans une métrique H¹ externe",
+    "Régularisation bornée, couverture des images et dette de Schur"
+  ],
+  "critical_findings": [
+    "Valeur documentaire sous-modulaire, pas algorithme glouton",
+    "L² Beurling ne contrôle pas directement H¹ Weil",
+    "Le décalage de la demi-droite et une famille de cutoffs sont nécessaires",
+    "La positivité de toutes les compressions garde son quantificateur infini"
+  ],
+  "corrections_applied": [
+    "0<a≤1 et t≥0 explicités",
+    "Γ_S décalée pour couvrir les abscisses négatives",
+    "Cutoffs adaptés au support, pas couverture par une seule coupure",
+    "Métrique de masse H¹ et portée du couplage singulier",
+    "Validateur de structure distingué d’un vérificateur de preuves"
+  ],
+  "independent_review_of_final_dossier": "B1–B5 et solveurs relus ; aucun défaut matériel restant identifié, expertise externe non revendiquée",
+  "scientific_status": "Auxiliary lemmas proved internally; global arithmetic family estimate remains open"
+}

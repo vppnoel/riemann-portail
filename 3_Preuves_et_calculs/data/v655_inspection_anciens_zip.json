@@ -1,0 +1,46 @@
+[
+  {
+    "archive": "RH_programme_v6_21.zip",
+    "sha256": "0828c84650b707cc10f0b977bc75f288855eebfb4bc744484e5d68ac2ec8cb64",
+    "size": 22737845,
+    "members": 560,
+    "crc_valid": true,
+    "matches": []
+  },
+  {
+    "archive": "77_RECHERCHE_MECANISMES_DU_SIGNE.zip",
+    "sha256": "9a33fb78033511ed66e9baf7047b5b25538d4b3935e1439d87510fee3a8cd2b9",
+    "size": 140157,
+    "members": 10,
+    "crc_valid": true,
+    "matches": []
+  },
+  {
+    "archive": "78_TRANSPORT_POSITIF_PROGRAMMES_ET_PREUVES.zip",
+    "sha256": "e49b0c490c8e82bdcf00eeb791f50875aea3d45087f8d1f4943165ad537eb5c4",
+    "size": 1174614,
+    "members": 56,
+    "crc_valid": true,
+    "matches": []
+  },
+  {
+    "source_archive": "programme-riemann_github_v6_50(1).zip",
+    "source_archive_sha256": "b5d996824beb3fc29279ea388b958abfb008fa0800ffc0a487ca09451de965c1",
+    "archive_files": 1299,
+    "archive_crc_valid": true,
+    "archive_manifest_sha256_entries_verified": 1298,
+    "files_restored_count": 176,
+    "restored_categories": {
+      "data": 96,
+      "proof_notes": 10,
+      "scripts": 32,
+      "modules": 9,
+      "tests": 8,
+      "archives": 21
+    },
+    "remaining_known_missing_references": [
+      "3_Preuves_et_calculs/scripts/v651_verifier_pistes_globales.py",
+      "3_Preuves_et_calculs/data/v651_pistes_globales_resultats.json"
+    ]
+  }
+]

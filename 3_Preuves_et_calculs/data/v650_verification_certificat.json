@@ -1,0 +1,22 @@
+{
+  "version": "V6.50",
+  "exact_budget_sums_verified": true,
+  "matrix_hashes_verified": true,
+  "independent_congruence_replay": [
+    {
+      "parity": "even",
+      "congruence_floor": 0.9999994359651841,
+      "mass_floor": 0.0003004510350528708
+    },
+    {
+      "parity": "odd",
+      "congruence_floor": 0.9999993872844256,
+      "mass_floor": 0.027566953364593756
+    }
+  ],
+  "clean_mass_floor": "3/10000",
+  "clean_R_floor": "1/25001",
+  "arithmetic_model": "declared IEEE64 dot-product model; rational sums; mpmath interval elementary constants",
+  "inherited_analytic_lifting": "reviewed proof and source code; this verifier does not rerun all cells",
+  "global_RH_claim": false
+}

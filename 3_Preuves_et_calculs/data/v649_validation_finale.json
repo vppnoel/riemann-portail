@@ -1,0 +1,44 @@
+{
+  "version": "V6.49",
+  "document": 74,
+  "python_tests": {
+    "passed": 351,
+    "total": 351,
+    "modules": 61,
+    "execution_groups": 5,
+    "runner": "unchanged repository runner; partitioned discovery",
+    "final_targeted_checks": 19
+  },
+  "historical_translation_contracts": 768,
+  "interface": {
+    "active_pages": 16,
+    "local_targets_checked": 1151,
+    "broken_targets": 0,
+    "common_navigation": true,
+    "scope": "static targets + shared navigation; no browser layout validation"
+  },
+  "pedagogy": {
+    "lessons": 43,
+    "stages": 5,
+    "tools": 19,
+    "math_formulas_visually_checked": 43
+  },
+  "pdf": {
+    "pages": 6,
+    "rendered_and_visually_checked_pages": 6,
+    "overfull_boxes": 0,
+    "missing_characters": 0
+  },
+  "scope": {
+    "joint_arithmetic_payment_certified": true,
+    "positive_support_unchanged": "0<S<=1/2",
+    "extended_positive_support_certificate": false,
+    "global_RH_claim": false,
+    "diagnostic_distinct": true
+  },
+  "preserved_prior_files": 1186,
+  "preserved_prior_data_source_and_archive_files": 543,
+  "modified_protected_prior_files": 0,
+  "tests_sha256": "76c95bf0a39688209416859c8d416ac9981190dc2c7614fa333cb96d4bae748c",
+  "journal_sha256": "baf2a043df8da22d2fed0ac5879b6efba929f4cb66e665eb9e480311353cb719"
+}

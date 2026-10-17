@@ -1,0 +1,5311 @@
+{
+  "version": "V6.38",
+  "scope": "File inventory of the delivered corpus, excluding this self-referential inventory and checksum file.",
+  "file_count": 756,
+  "family_counts": {
+    "entrees": 11,
+    "1_Presentation": 173,
+    "2_Methode": 28,
+    "3_Preuves_et_calculs": 515,
+    "4_Archives": 29
+  },
+  "semantic_review": "61 presentation documents plus selected proof/review annexes; see v638_decisions.json.",
+  "limitations": [
+    "Hashes and inventory do not constitute independent verification of all mathematics or all external citations.",
+    "Machine-readable numerical data were inventoried; calculations are verified through the appropriate test suite."
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 104,
+      "sha256": "8a2d5dec2096c8215e9a0e484ed46912896e543a92c18dcec63b44cf0fdee1cc",
+      "family": "entrees",
+      "extension": ""
+    },
+    {
+      "path": "00_Carte_des_idees.html",
+      "size_bytes": 77901,
+      "sha256": "c1bde26e4818c8b235ec84eee7a97f69060be984742ce05454072974bc7d6be9",
+      "family": "entrees",
+      "extension": ".html"
+    },
+    {
+      "path": "00_Liste_des_figures.html",
+      "size_bytes": 42645,
+      "sha256": "b217699820b32551b5dcc9bb9fce810f6ec8bbb04fd4da150a3b7e1a5ca8cde5",
+      "family": "entrees",
+      "extension": ".html"
+    },
+    {
+      "path": "00_PORTAIL.html",
+      "size_bytes": 49067,
+      "sha256": "26ae9c9d084d84b448750eb940fc6b7b369278bd662a2b3c24ad8ce7eac450a3",
+      "family": "entrees",
+      "extension": ".html"
+    },
+    {
+      "path": "1_Presentation/01_SYNTHESE_FR.md",
+      "size_bytes": 17303,
+      "sha256": "fcb59914c14e2f11896efbcbaabee6472e4b6d0772f4917e7acb4a6b4cb08c5a",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/01_SYNTHESE_FR.pdf",
+      "size_bytes": 126876,
+      "sha256": "07252f15f147cf1552edbe8ea44331a82f3dd1f9c341fbc2ca0981e6cde6b320",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/02_Article_court_EN.docx",
+      "size_bytes": 23961,
+      "sha256": "25b01ba15cc2be82ef238fb19a82e83a6ec2c3c62e6ba9d763866c4e2b80baf1",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/02_Article_court_EN.pdf",
+      "size_bytes": 183408,
+      "sha256": "3c6df5efab93b57c804a3b3c29159c6ed4821d10e08c676fb2d16d8a38f9ee75",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/03_Dossier_de_relecture_EN.docx",
+      "size_bytes": 18940,
+      "sha256": "31afcc210c6e428bd32acf984e6ae6289d54d8875bad630d4c8e8426e0466896",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/04_Brief_specialistes_EN.docx",
+      "size_bytes": 10828,
+      "sha256": "7210ffd8c39b046df23e182b5d546720fce825159534369c5cfe48765700acb3",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/05_Message_au_relecteur.docx",
+      "size_bytes": 10657,
+      "sha256": "d2d78f651a8dc0719288abe9bd2fdc1222426e2121c0482950045421638bf33a",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/06_CHEMINEMENT_INTELLECTUEL.md",
+      "size_bytes": 40059,
+      "sha256": "7770912ead7417f0f46ba86fc804b2cb2dd88d1a8a784a3fcf38835d4c8c5a3e",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf",
+      "size_bytes": 180427,
+      "sha256": "e0a343d30dede7968ae32c30fa225a69195973b4b160b9213c4b814aebade740",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.md",
+      "size_bytes": 48089,
+      "sha256": "a0e9e7ae9fbc97f4a2ed61acac18305695e685e1a951dfd44629dbe1dc76fe41",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf",
+      "size_bytes": 216907,
+      "sha256": "55e3bc42817ad64a6aa2fd40a0cbce017b3c8fab4c63f132e875c307147028bc",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/08_Dimension_energie_fractale.md",
+      "size_bytes": 3311,
+      "sha256": "cc0b96f9fd9b413f77ae7962c58bd9b56179a5bd85ddfb35178b009810d3cfb8",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/09_Attaques_audit_et_amelioration.docx",
+      "size_bytes": 16926,
+      "sha256": "b585b157fef835da639108fe98ecd8ae253c023c883c759c833a53b1c85376e7",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/09_Attaques_audit_et_amelioration.pdf",
+      "size_bytes": 133116,
+      "sha256": "6ece159f1c9497dd544a55f99ffd92816ce41dfd799b1377a1c222fda85f8a3e",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/10_Attaque2_resultats_N1000.docx",
+      "size_bytes": 109065,
+      "sha256": "a252e810ce87062c32520d9c82171511a3833261cebe1799633c33069929af0b",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/10_Attaque2_resultats_N1000.pdf",
+      "size_bytes": 143623,
+      "sha256": "902eed553e70df89eadbf71088f6a5ff7500769fa41f98b2e2aec3b2e20bb698",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/11_Estimation_sous_RH.docx",
+      "size_bytes": 13167,
+      "sha256": "3efffc96648261c591fe590d7d460f7efa4aa309321def08992f6eb0f67a20ab",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/11_Estimation_sous_RH.pdf",
+      "size_bytes": 80036,
+      "sha256": "3a918b23ab6176fecb8429ee93855d5893ee379a60c087a8eb8a4cae9f228079",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/12_Annulation_du_pole.docx",
+      "size_bytes": 119667,
+      "sha256": "f8739344501d59e0e3c33b60aaac3d78d1e6323519371a5f9549ee88998ece82",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/12_Annulation_du_pole.pdf",
+      "size_bytes": 202567,
+      "sha256": "a2a71e16cb13a7a513b19146271cd3c8c96df9ea3bc3dc5ffc90c21b3b3d727a",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/13_Lecon_2026.docx",
+      "size_bytes": 12983,
+      "sha256": "94e7a9f694fce25a2ea4cb3611fcde21525eb22711830127863aab6e0c74cea2",
+      "family": "1_Presentation",
+      "extension": ".docx"
+    },
+    {
+      "path": "1_Presentation/13_Lecon_2026.pdf",
+      "size_bytes": 56572,
+      "sha256": "d0c8945b4c62497a0a992a9a98bf269809002575eff1ccfba31ac69e0c789e16",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/14_Document_de_travail_V6_Atlas_mecanismes.md",
+      "size_bytes": 40737,
+      "sha256": "5b7185dbc9b528ffce731cc610ed4c90a985c3a968f61b01f7e83f7195da8c64",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/15_TOMO_DH_formalisation.md",
+      "size_bytes": 11877,
+      "sha256": "1069d9f2387668b14c963a5ee97cd75f3dfb51d6cec82e661f2ec9a8010c7f1c",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md",
+      "size_bytes": 12139,
+      "sha256": "cfe5824ed31d85b9328e9bef69d335bb12f429ce7e04ad8172c826ed3c3c3910",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md",
+      "size_bytes": 12225,
+      "sha256": "2c42baf423bb412ab2f8bb6c4eac49c9c2a0762c16bdac9ad7797fcb4c21efbf",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/18_PRIME_LOCK_premier_verrou_local.md",
+      "size_bytes": 10038,
+      "sha256": "66a3d0a5af526ce1ed45ad9621a6715c1b468c1632a4d2d26352d824ded0f111",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/19_DUAL_LOCK_plan_local_global.md",
+      "size_bytes": 6651,
+      "sha256": "b30c0b0c5dc77f3cdb34d58c2b431e6c510557d6d7f3bfd2ded2cc3da07808f5",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/20_Carte_du_lexique.png",
+      "size_bytes": 255882,
+      "sha256": "547316d315925bf6fedc10abd8b01d35e36147cc82d96375a89164249e8e1611",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/20_Registre_metaphores_V6.md",
+      "size_bytes": 45754,
+      "sha256": "c4cea55ea23b21ee1693efe8d0d988600e585f21126d21c9a9530c9ac68b6ed6",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md",
+      "size_bytes": 11237,
+      "sha256": "aaab7a2851b276a562f6ed9c76d40a95fc4077e791871a7d5394b2a63c2c84e5",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/22_AUDIT_V6_3A_INSTRUMENT_DUAL_LOCK.md",
+      "size_bytes": 7661,
+      "sha256": "fda1240a68dcfc091641ea2abd22756e0d8e861dfe1da1d021139919ace9f0cb",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/23_AUDIT_V6_3B_FORMULE_EXPLICITE.md",
+      "size_bytes": 8718,
+      "sha256": "341caace9f050040f7634ae537dd8dacb3db83dbafde6a29ed06c81d6acc5b53",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+      "size_bytes": 28724,
+      "sha256": "ceb4ae3c0cd2566ef11ac2da4f233e177be1678cfd7e64e1de0838d7d71cc55d",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.pdf",
+      "size_bytes": 389699,
+      "sha256": "91c3bc3faa1d8033bc48025d20fd64c69ec25b81412c80b105e39ce6fd873705",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/24_Differences_de_zeros.png",
+      "size_bytes": 114615,
+      "sha256": "128b99382c256e1105c9686fecb198029cadeff01b6143043088b5e60b5ddc0f",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/24_Largeur_du_creux.png",
+      "size_bytes": 114792,
+      "sha256": "dc0b0f253f3b5a967aa7ed44f68a7d291417a649826cc8000632dc1c8dbcf498",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/24_Largeur_selon_la_hauteur.png",
+      "size_bytes": 68806,
+      "sha256": "85bf22188c79746b6f88e6bb531617fbe2c644846d8ac05e720cdf8d66f8a53c",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/25_Atlas_metaphores_physique_mathematique_V6.pdf",
+      "size_bytes": 196207,
+      "sha256": "dc5896b7b0a98ecc8cd966c744ea747869f45d22f8ed58b06e25dd6a9ec52472",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.md",
+      "size_bytes": 15303,
+      "sha256": "4821edd3ab5bddfe79bd6cd40e335170bd1ca71e235df70c5cc90dc75f035e28",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.pdf",
+      "size_bytes": 215690,
+      "sha256": "99d72ead8728ff48c22881c25fa9b725bc7fd90aedffe18ad4db75101ce8d84f",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/26_Seuil_tau_c.png",
+      "size_bytes": 128690,
+      "sha256": "b9522907d420ccdaf7fdb58208d9fad6a9df68395e0dd54a70d94f2eee5de30e",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.md",
+      "size_bytes": 19112,
+      "sha256": "b72ed6de2646c04ce2cfead49ce07a54f7599b5485071f161a5230395188cd04",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.pdf",
+      "size_bytes": 313167,
+      "sha256": "98e717e97238785319370837ba5b0a37592ce8dcf195e07f5d315cc811e20368",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/27_Famille_modulo_7.png",
+      "size_bytes": 217086,
+      "sha256": "94a80fbdc0a734b2b4913893591e0cfc7413e03daf19ae331247c2945d69a8a5",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+      "size_bytes": 13499,
+      "sha256": "c5dd5a7ece84bfa6339a35c6a0b17dedcaa2cc62ec390469feef3f9fcdfa9ab6",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf",
+      "size_bytes": 344080,
+      "sha256": "44e65fe657f7af046cdd44d33fe98c4547e53b015f143aa67c46a3e67c7e72e3",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/28_Modele_reduit.png",
+      "size_bytes": 309431,
+      "sha256": "3e10295eef8abe8bccf3f4232bfe003a366c055ffada228171ed20fcb9ca856c",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/29_Loi_de_rang.png",
+      "size_bytes": 180002,
+      "sha256": "dfff0d183408fbde5f9a2bcefa1c50f7c6febc8f478a9fd422160baeca7429a8",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/29_Marge_forme_objet.png",
+      "size_bytes": 332546,
+      "sha256": "b5693d122388c5028df00569403b856438c6c8171c855f7e50c4a4d5ec974eaf",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/29_Objet_contre_forme.png",
+      "size_bytes": 199125,
+      "sha256": "dc73502c3b9db3ec644412e174c477644d046bb910070808dc0e1d7c9cd387a6",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md",
+      "size_bytes": 19279,
+      "sha256": "4bd0bcd41e11b58b71fbaa15e0e27a50c7648f654bbab4245f083e57ef841a30",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf",
+      "size_bytes": 668687,
+      "sha256": "1cc5c52bfdf87c3ad5f515e0ab06309ca35045c87a114a40f25adf4a47507559",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/30_ARCHIPEL_D_EULER.md",
+      "size_bytes": 21645,
+      "sha256": "c34c6f8ede67489d2926ba6135957b27131e78d571a0a904e9a90fa67473c41f",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/30_ARCHIPEL_D_EULER.pdf",
+      "size_bytes": 403553,
+      "sha256": "471ab605a4c1b275833ee1e7e1f4b092000d456c963e13e272e6dc0133dfe3d9",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/30_Archipel_d_Euler.png",
+      "size_bytes": 332513,
+      "sha256": "ab8f32e05e0ac1db3377229e4ce2d99b841f9a38397bac5bb41222cedc23bc6b",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html",
+      "size_bytes": 117283,
+      "sha256": "1a0c3c5f5ad700a0183d2ac0b18af987b4fcaec8d7ca816440230375d46217eb",
+      "family": "1_Presentation",
+      "extension": ".html"
+    },
+    {
+      "path": "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+      "size_bytes": 20225,
+      "sha256": "d6e232c3b996196b39bb59b7993f01f1eff19776cfe3b321e74000bad49d832c",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+      "size_bytes": 325083,
+      "sha256": "1aa4089b8c06b2acbb8beca63f6985a236b04ddcd9bbc3dba283e7f13ac286af",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/32_Le_chainon.png",
+      "size_bytes": 216016,
+      "sha256": "be9e4fb86ea1ffb8e92f1a967af7718628ddbf14a8d4add21431deaa3c4a93c3",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/33_Generateur_des_premiers.png",
+      "size_bytes": 294485,
+      "sha256": "fe02eb2d32b31614f4915dffe7619a670c5c79a861dc524c695040dfeaa7536a",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.md",
+      "size_bytes": 14695,
+      "sha256": "9c349262474cc04faf5432033295ed867c2c5326df30c251a1f76a952e48895c",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf",
+      "size_bytes": 334706,
+      "sha256": "335aa2c4a6a8e5062b66e1464b7a116592e71144ab139c8f343530c9e5c64ffa",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html",
+      "size_bytes": 105942,
+      "sha256": "c32317053476eee087e5c8a56c2c3e8b578b9f4589df0d83c3e3968706d935e0",
+      "family": "1_Presentation",
+      "extension": ".html"
+    },
+    {
+      "path": "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.md",
+      "size_bytes": 12179,
+      "sha256": "0392ca1328c40d839b999d6ab9a762aebd11af83c597018bb1d5c9fbe478d65e",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf",
+      "size_bytes": 228160,
+      "sha256": "0fc0749ba0f1b51625ed3167e868948adc4aa0e7bb0c5ac96ddc6d1d9f6eb9e0",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/35_La_base_comme_pas_de_temps.png",
+      "size_bytes": 168830,
+      "sha256": "f3aa8ae185c77f9cdbb821180b6132dee28c931a4f068660e243c66d2a6100a7",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md",
+      "size_bytes": 18977,
+      "sha256": "35f54a35094d8f14d26a0277b3fce72f91e9cf522bc393bdfe6a84a2f07f3a0e",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf",
+      "size_bytes": 268510,
+      "sha256": "9323ca86969972596519686c1b0d378516ef201801dba5e8cda4cb9ae3f29392",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/36_Les_idees_rejetees_relues.png",
+      "size_bytes": 162468,
+      "sha256": "a6908cfb1bb033e32b8287bf806174d31884b8f3dd52d909ce40812d3c9e6819",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+      "size_bytes": 20010,
+      "sha256": "a69cbfaed66337ed0f97d5551eb4f761d1e40434d23d635ffdd3d806735a728f",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf",
+      "size_bytes": 133182,
+      "sha256": "304de55fc03fe99459399ecc9a14d7b646b43e6ca3479ec65f21e834a098272a",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md",
+      "size_bytes": 19511,
+      "sha256": "a70e0d6b4934beebd865e36779facee0974c3f67c0f0b45522115aebd10cf246",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
+      "size_bytes": 295593,
+      "sha256": "48c7d31def3d8350f7c435735da3c853af2e24f2737429d57504b8c30d9d2fd6",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/38_Le_temps_de_Heisenberg.png",
+      "size_bytes": 225440,
+      "sha256": "753a3704324170004b7471e5b19f1ee22fa7ccd547cbf43e85fc73b2c64ff04e",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md",
+      "size_bytes": 18203,
+      "sha256": "e9896b6b0cc9d32a47fc3a1e1339e61c115efb6bcde96f4a5520ba6b09f14211",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
+      "size_bytes": 342181,
+      "sha256": "0cb0a837afce70db8d15c6c211c7911a5033542cd8a1ad81cb09a200743ce1f5",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/39_Le_degre_2.png",
+      "size_bytes": 153284,
+      "sha256": "8da2a7ad04ed942380417b119c055879436dd1a99c3d0ea30713fcaaca5fb49d",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/39_Le_recensement.png",
+      "size_bytes": 124765,
+      "sha256": "c07129747750a33a342ac588c6e965391afdf7cb00c40ffd8a55723520530d2a",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/40_LA_RENCONTRE_A_TROIS.md",
+      "size_bytes": 17801,
+      "sha256": "deeb94fcf650286978d0340ff0f43477676f8c18a39ec98e2743078bdc227ed0",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
+      "size_bytes": 297781,
+      "sha256": "c5125b5e229eb48580b70fe2a7e6e934beca16c343f3d1252bc8c224b036540e",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/40_La_rencontre_a_trois.png",
+      "size_bytes": 230668,
+      "sha256": "0ae474ebe3250ffe0e003e740957bffb53ec3601753a1d40f0d355b7bb46b2a9",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md",
+      "size_bytes": 28116,
+      "sha256": "ad0b0d53619bab602a4e5722639759b9f0f7b22a1ea6effd6a63dba2eb998eaf",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
+      "size_bytes": 416617,
+      "sha256": "f111c11ee4ed78e7069e2e5f75a1b5b23cfc75567605b70fa7c057806f80dffa",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/41_La_rencontre_en_degre_2.png",
+      "size_bytes": 301195,
+      "sha256": "af5f2dac0edd6eea33facea672571c0959aae743481e88dc3ecc6d8b3b1ac758",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/42_REGISTRE_DES_SOURCES.md",
+      "size_bytes": 144920,
+      "sha256": "bb894acb08fc3de0da332114edc1f768a141663789a9f7d14ff83054295ea30f",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/42_REGISTRE_DES_SOURCES.pdf",
+      "size_bytes": 530956,
+      "sha256": "2c6a19506a12cf45c4b9a6181ea4dfd89bc4c9970f395c2eda7ac5b665cf3679",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/43_La_rencontre_a_n.png",
+      "size_bytes": 260912,
+      "sha256": "babdffd0f8e37981289cd2855d775a2e4146bb97ad4217fd117db4c252aa891f",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.md",
+      "size_bytes": 26865,
+      "sha256": "5b1f2c3cbbaba6cf95527f5c40b12dc8d8effbd853b375f05f2319bb58f98477",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.pdf",
+      "size_bytes": 393551,
+      "sha256": "8d8b3190b250a77ce0d9c0d168b9474f9d2a4d02660a1059dcd6bd60d043f8f0",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/44_MATRICE_DES_THEORIES.html",
+      "size_bytes": 360571,
+      "sha256": "c233c300465f289f29f306fd73cb0ec2c216e4936a06812bdb009a54e8aa5377",
+      "family": "1_Presentation",
+      "extension": ".html"
+    },
+    {
+      "path": "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
+      "size_bytes": 15861,
+      "sha256": "a5f8c9e768cbe54f77ae3b5ff7b51723cf551d6e14e2b77469528495acb60229",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.pdf",
+      "size_bytes": 201992,
+      "sha256": "305b8e83bfb9440bebb6e06c752e4f5ca9c504047c4040fdd7b961def2558534",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/45_Le_palier_recalcule.png",
+      "size_bytes": 92425,
+      "sha256": "faba93a112f71519ddda49d72e0367575d2d8e20d9a4acb42fec7eafe55411e5",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/46_LA_SURFACE_VIRTUELLE.md",
+      "size_bytes": 9603,
+      "sha256": "648be82fa81fed3e45c78755d2e61bd52826c3b628859b0aaad04bea28763769",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/46_LA_SURFACE_VIRTUELLE.pdf",
+      "size_bytes": 167788,
+      "sha256": "2647ab1a011f15eac1bd38c7cbae6c113e99871e797f1e4df14e40e45856029f",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/46_La_surface_virtuelle.png",
+      "size_bytes": 88064,
+      "sha256": "823cebfc8aa5be191f0f08427387c88dff18f6275b3474b916cfa93114ddab03",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.md",
+      "size_bytes": 11338,
+      "sha256": "d5522c7cea98291d3a30fb705c7612fd648f057224a6b9fa2d26fe47ef7ce4bb",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.pdf",
+      "size_bytes": 137506,
+      "sha256": "813ee2f9c0d68e440871fea3e6525ad4fbbc8bd248469f77b47166d16b918b03",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/47_Le_riemann_roch_virtuel.png",
+      "size_bytes": 90200,
+      "sha256": "f7b66a0d7d7aee798f17dc3d1b66c1bc813cfdcb25465bc475e761aa72be49bb",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.md",
+      "size_bytes": 7987,
+      "sha256": "abaf9b638ca8dfe9de0fd9b9c25b2faed3a87b2103312326e19c7d3c5746814f",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.pdf",
+      "size_bytes": 142947,
+      "sha256": "c38f9fcf19998f5020e6d6cb0007f7fbfedb7338651a03d7960119b41dc608d0",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/48_Le_frobenius.png",
+      "size_bytes": 64598,
+      "sha256": "f6aca7e81a13034e99bb6ac2e36633a0ca910ac0298bcb7efbe65113bc726047",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.md",
+      "size_bytes": 9862,
+      "sha256": "9b6574717f3a32b0295a678a1cbd865a294270fb2481b7b8eba3b3622ed26e7c",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf",
+      "size_bytes": 177093,
+      "sha256": "4037dfeba52f8b9d8933d4cf24b341dfb4bd5a11991fa30dff072063f370a9ec",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/49_Le_meme_calcul.png",
+      "size_bytes": 96924,
+      "sha256": "941a488b6c11b2c44cc5746aa4c9ef66e075bd7459f43ed28fb769c81bc3fdb7",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/50_LES_UNITES_FICTIVES_AUDIT.md",
+      "size_bytes": 6311,
+      "sha256": "112aa99cceb06450965dd37a25f87d040033ee664d71bbed0a75316a88029200",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/50_LES_UNITES_FICTIVES_AUDIT.pdf",
+      "size_bytes": 65826,
+      "sha256": "0f070f723ef373880a8f6fea0f980b0ecd4c4b9bfd8a8a1a6a5c1c6c17149500",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.md",
+      "size_bytes": 7458,
+      "sha256": "90fa4d23d7f04eb2491d3cc8ad26cf7d4c618456a2ee68d2ab6f7066a69b8f12",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf",
+      "size_bytes": 44451,
+      "sha256": "aaac5b6f9c1da3d2ff3f89ce6f292078d424b340f2c1e37d9ad042cf79371edf",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/52_J6_LE_CARRE_EN_CONTINU.md",
+      "size_bytes": 5423,
+      "sha256": "8640376752e4fcd0dc4985b39f47a456803abb8bb5db214fb2301cd34f5c92ed",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/52_J6_LE_CARRE_EN_CONTINU.pdf",
+      "size_bytes": 145554,
+      "sha256": "34d7dd3d92f2bd7e9ae422357306ea7c99cb2b6f2de561b0b6a1b54e3b85b17b",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/52_Le_carre_en_continu.png",
+      "size_bytes": 110491,
+      "sha256": "d3a6577ed3f34aa5fa2a7156882ad8573f9d696082272757db020d037901da55",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.md",
+      "size_bytes": 5551,
+      "sha256": "87d5496939cb05b3841fa0747896b5894ece87c09f31c2c115d248d235c99624",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.pdf",
+      "size_bytes": 74025,
+      "sha256": "73c9eac46c5df66ce0dacf4d6721beabec136c6723fdae251aaa888a51bd2ed0",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
+      "size_bytes": 14176,
+      "sha256": "6f3e9baa2be9d2954f0ec93df82d5a53a2eb5e447bb312f34abf244998f4bd02",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf",
+      "size_bytes": 205092,
+      "sha256": "b9ee582e2145967ddefe3e33c2e7c3deb53a6fed2b04b66bfe918c6ffc0daebb",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/54_Le_trou_a_trois.png",
+      "size_bytes": 110716,
+      "sha256": "0e158a1cb71c09a478140629b49c5e1c92676d7a0da2d1f595b1bdc4daeae6d2",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/55_ARTICLES_PRESENTABLES.md",
+      "size_bytes": 3837,
+      "sha256": "0a5af8f4ef9677d8ffe38b28399415de7987109ea0d7e11f100c549f2f775662",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/55_ARTICLES_PRESENTABLES.pdf",
+      "size_bytes": 61588,
+      "sha256": "bce1f731be402dfd3616dd24f55d0f8d5d5d9befee669116a06e30f2b8da1731",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/56_LE_RELIEF_DE_L_ARCHIPEL.md",
+      "size_bytes": 5125,
+      "sha256": "a7c21521c4d8a00f542a453e83798beedd3b7c2a73bc8e43d50b5ee6e701d0c6",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/56_LE_RELIEF_DE_L_ARCHIPEL.pdf",
+      "size_bytes": 219535,
+      "sha256": "24d3fc0818ef7d14da8744e9a78c466cd9e87fc660e27f2e7a5d42b9ec86f1ed",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/56_Le_relief_de_l_archipel.png",
+      "size_bytes": 199372,
+      "sha256": "3ec8ea5e1e3eda23db52dba58769c177ea14e5e3cf4eeeafdb0333ae9d4ba515",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/57_LA_FORCE_DU_RELIEF.md",
+      "size_bytes": 5025,
+      "sha256": "c642acd414b9996afd988de513bebcaab5820fa1fb9fb6ced99f0d9f6eee1570",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/57_LA_FORCE_DU_RELIEF.pdf",
+      "size_bytes": 432516,
+      "sha256": "1c703e53e0446aac2862d2d0f13a413e7009fac4ce935efb05ca0b33d2c5746d",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/57_La_force_du_relief.png",
+      "size_bytes": 455111,
+      "sha256": "c3a76898bafaf91d266e1bb8f5588b636c66c0d1d5576467ff280091f65a608f",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md",
+      "size_bytes": 12882,
+      "sha256": "4d9a89200b837da151a8a9b8f1252e1c909142efdb366c1682555a75469c3d2d",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "size_bytes": 213222,
+      "sha256": "fc59cf5f163a03f410911a1a85a887dfc2c3e5b0f2ad6adedb686a491608954b",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/58_Validation_directe_et_jets.png",
+      "size_bytes": 154355,
+      "sha256": "ee830697a134d234006ae58813345c16e107b506bba26874c99ab7c0517e5121",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.md",
+      "size_bytes": 14469,
+      "sha256": "9dc0722b86e3edb65cdb9122ae1aa11518b066f77c8190b2e2cd83295be1ebda",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+      "size_bytes": 227303,
+      "sha256": "2ebee67f534685b310dcfad545d998824bec47729547a15617c06737b76e4890",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/59_Tour_et_spectre.png",
+      "size_bytes": 174959,
+      "sha256": "ba731b516576943438303bc9105d4555c121768a183a943d403fc384bce74406",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md",
+      "size_bytes": 10472,
+      "sha256": "42b7100529416b6c55b58fbb2852caa99244aadeff062cb5893ba80e3b6977fd",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf",
+      "size_bytes": 159417,
+      "sha256": "a354325f0acd70bc4019129a6483cbbe700a50f8f2f7e032ce8cee7a9490986a",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/60_Marges_du_certificat.png",
+      "size_bytes": 107004,
+      "sha256": "e711c6c73cf9b8f08b19d16a7cbb0bd5c877a510259d87ed2b87623e64436339",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/61_ANCRAGE_APPARIE_V13.md",
+      "size_bytes": 13920,
+      "sha256": "57c5e4df6c70a746042a0124543eac0e05805323e09356fb0c9dcacf4f1e4fe4",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/61_ANCRAGE_APPARIE_V13.pdf",
+      "size_bytes": 229351,
+      "sha256": "daafc3d7b16115d7ef796d759b33da99c515f7f981684f5fbd1e987131d4ed24",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/61_V13_signes.png",
+      "size_bytes": 90225,
+      "sha256": "b8bf04d38f923030f66cb0bb005abd9a30daa1533e164d857595cd0dae69abe4",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/61_V13_strates.png",
+      "size_bytes": 92032,
+      "sha256": "0d2d1bc93d6eb71d9d01293a7c37e121eec53f5abc75f4d6b7c8bdbe798cfcfc",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html",
+      "size_bytes": 442131,
+      "sha256": "e4c1be0d1fe25ca4fed35cfa23b2d53dd000bcaacfd8718b901ebbed9dc772ba",
+      "family": "1_Presentation",
+      "extension": ".html"
+    },
+    {
+      "path": "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.md",
+      "size_bytes": 42423,
+      "sha256": "f11ef92b8b9f222b4f3afb56a8c8a239a7f89c03775b2c58d7ab8138e3b37c97",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.pdf",
+      "size_bytes": 245150,
+      "sha256": "50a2c6a8f8551ae09541a7350d730cd6a32f3820b78b8883a0d93da0ea5e76d9",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/62_Bellman_sensibilite.png",
+      "size_bytes": 161990,
+      "sha256": "3df2e5685cf171c0867b2e7d099feb3a095e6b4ed8082a14dc4b872ea02ce3f2",
+      "family": "1_Presentation",
+      "extension": ".png"
+    },
+    {
+      "path": "1_Presentation/LISTE_DES_FIGURES.md",
+      "size_bytes": 14403,
+      "sha256": "c12ca26c1c677db4a63e9a2319df2242253328d06981fb39c74eaefd57e22238",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/articles/LISEZMOI_ARTICLES.md",
+      "size_bytes": 5676,
+      "sha256": "ee70c59d08da57cd278a96b86beed3574398a78c3f5800f76afb89288ae62858",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/articles/art1_fig1.pdf",
+      "size_bytes": 22999,
+      "sha256": "d7a4760ad39bade8087c4e6ce668c4e9390ee80e974b6815983804e5249d81c1",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/art1_fig2.pdf",
+      "size_bytes": 15335,
+      "sha256": "46795adf264df26a33facc68705fc0f0bde7235df49dd6288e128701db755d6c",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/art2_fig1.pdf",
+      "size_bytes": 24244,
+      "sha256": "7c02ac2a682442962ff3dec3f5dd862bec0c7b42f67ff13dc822124dcfe9aeaa",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/art2_fig2.pdf",
+      "size_bytes": 25123,
+      "sha256": "31ac11b916b9032f7eb04bda20d3153280ab15fc2f3fa7baabf070cfdae40fdc",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+      "size_bytes": 400832,
+      "sha256": "504412fd08463cd434892196ad0c36ccd6fc3459315fc799a783812ac9ce15e2",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/article1_mean_square_double_poles.tex",
+      "size_bytes": 35182,
+      "sha256": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1",
+      "family": "1_Presentation",
+      "extension": ".tex"
+    },
+    {
+      "path": "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
+      "size_bytes": 399284,
+      "sha256": "8082bd9feda71d3152723261110d8dc3f966a889fc825544b61194730c14620a",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/article2_prime_side_weil_forms.tex",
+      "size_bytes": 27450,
+      "sha256": "50b8206dc741fa646ad93be8c39772869d37396110ec98ece6ef1fbd56e230d9",
+      "family": "1_Presentation",
+      "extension": ".tex"
+    },
+    {
+      "path": "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf",
+      "size_bytes": 317130,
+      "sha256": "a78e17183879344f673f88982eb6b302516dfdc39e16b5585a56dbfea1dbc19b",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.tex",
+      "size_bytes": 23135,
+      "sha256": "a62b03df4ac9d62a4034669e1cce97342edc851ef27ed5bb8ac21a948b9b7bb0",
+      "family": "1_Presentation",
+      "extension": ".tex"
+    },
+    {
+      "path": "1_Presentation/articles/figures/art1_fig1.pdf",
+      "size_bytes": 22999,
+      "sha256": "d7a4760ad39bade8087c4e6ce668c4e9390ee80e974b6815983804e5249d81c1",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/figures/art1_fig2.pdf",
+      "size_bytes": 15335,
+      "sha256": "46795adf264df26a33facc68705fc0f0bde7235df49dd6288e128701db755d6c",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/figures/art2_fig1.pdf",
+      "size_bytes": 24244,
+      "sha256": "7c02ac2a682442962ff3dec3f5dd862bec0c7b42f67ff13dc822124dcfe9aeaa",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/figures/art2_fig2.pdf",
+      "size_bytes": 25123,
+      "sha256": "31ac11b916b9032f7eb04bda20d3153280ab15fc2f3fa7baabf070cfdae40fdc",
+      "family": "1_Presentation",
+      "extension": ".pdf"
+    },
+    {
+      "path": "1_Presentation/articles/figures/figs.py",
+      "size_bytes": 1851,
+      "sha256": "17d26f9efbc05c7b6669bd7acc7d2189a006a89c46c4d2a0f8996888730dd0a3",
+      "family": "1_Presentation",
+      "extension": ".py"
+    },
+    {
+      "path": "1_Presentation/articles/figures/figs2.py",
+      "size_bytes": 2823,
+      "sha256": "bae1af9f752d408251ddb6b3975d14b2f903549aeb46a4256caca422cf181de1",
+      "family": "1_Presentation",
+      "extension": ".py"
+    },
+    {
+      "path": "1_Presentation/articles/figures/matplotlibrc",
+      "size_bytes": 33,
+      "sha256": "94ddd4058eb83615ebddbe2d6cf8f3a7702b951d3f7b239e53afee2f17e252a2",
+      "family": "1_Presentation",
+      "extension": ""
+    },
+    {
+      "path": "1_Presentation/articles/figures/qcurve.json",
+      "size_bytes": 3257,
+      "sha256": "9b99f95d5e8e0fbd1cba61d9e4a4a76a7e35c838d94fa83c043303862debe3fe",
+      "family": "1_Presentation",
+      "extension": ".json"
+    },
+    {
+      "path": "1_Presentation/articles/figures/qcurve.py",
+      "size_bytes": 1326,
+      "sha256": "914bbe71b99cf95095d90c9e90990894f0a88e8f6b9e1a53c0e3e7321ff0d72d",
+      "family": "1_Presentation",
+      "extension": ".py"
+    },
+    {
+      "path": "1_Presentation/articles/letter_EN.txt",
+      "size_bytes": 1870,
+      "sha256": "ce9cbdeefba057d19e773d02bbda17da4e96faf9fdcca7a05bcff5cd749e68f3",
+      "family": "1_Presentation",
+      "extension": ".txt"
+    },
+    {
+      "path": "1_Presentation/articles/lettre_FR.txt",
+      "size_bytes": 2188,
+      "sha256": "3881b704edf341470c5298634568ca6f96cd7f4f13fc2a5a350a871c1881a430",
+      "family": "1_Presentation",
+      "extension": ".txt"
+    },
+    {
+      "path": "1_Presentation/relecture/00_READ_ME_FIRST_EN.md",
+      "size_bytes": 2583,
+      "sha256": "efa94e7aa76568a7609bb24286081ba8a1c52eb08935fbd9eea874720a5c68a9",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/relecture/RELECTURE_ARCHIPEL_EN.md",
+      "size_bytes": 23837,
+      "sha256": "c24b271141234bd34662b8c8418520e8a6f323aee47e5eba489d60b908423f05",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/relecture/RELECTURE_ARCHIPEL_RESUME_FR.md",
+      "size_bytes": 3157,
+      "sha256": "7f344434942d4322e8b2dda35389e192efb721314cf557bde56f7e91e1bd4d90",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md",
+      "size_bytes": 24522,
+      "sha256": "54b74bf30793fc23a104485ff6636939ca4a8afaab056569e5f5406c41d30c20",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/relecture/RELECTURE_THEOREME_A_RESUME_FR.md",
+      "size_bytes": 2357,
+      "sha256": "952c7ad3ab6ee08f9d9afad8361c2a5e5e2d2d78b81224c169ea8bb96df7174d",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/relecture/RELECTURE_THEOREME_B_EN.md",
+      "size_bytes": 27267,
+      "sha256": "1bff3421bc8bdad3e62d95ef119470b5caa50017cce11ff39da224e292efe4ed",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "1_Presentation/relecture/RELECTURE_THEOREME_B_RESUME_FR.md",
+      "size_bytes": 2991,
+      "sha256": "720d898df0a37987abbfdd2068f223895f4927a56ba856134fe4ef6aa6aa7290",
+      "family": "1_Presentation",
+      "extension": ".md"
+    },
+    {
+      "path": "2_Methode/Banc_d_audit/PLANTED_ERRORS.md",
+      "size_bytes": 9661,
+      "sha256": "0fd0a3c2a7601d6a69163bdbc251169723d19cc492053ac2aa4ccec2e116acd3",
+      "family": "2_Methode",
+      "extension": ".md"
+    },
+    {
+      "path": "2_Methode/Banc_d_audit/README.md",
+      "size_bytes": 693,
+      "sha256": "3a34c531c2264d02fd5aab847d648bacbe203cf6d5b72c8abb76bdbc0c6d295f",
+      "family": "2_Methode",
+      "extension": ".md"
+    },
+    {
+      "path": "2_Methode/Banc_d_audit/example_findings.json",
+      "size_bytes": 63,
+      "sha256": "1172f0b67f68a887a524c7fd31f2b725cab3c940fbe57e4a20db917419bd5f26",
+      "family": "2_Methode",
+      "extension": ".json"
+    },
+    {
+      "path": "2_Methode/Banc_d_audit/planted_errors.json",
+      "size_bytes": 11412,
+      "sha256": "c92a0225ba09051cbf933a1b896d020752c691ee8fdf63db7043f310213e8aaf",
+      "family": "2_Methode",
+      "extension": ".json"
+    },
+    {
+      "path": "2_Methode/Banc_d_audit/score_auditor.py",
+      "size_bytes": 1051,
+      "sha256": "edb4e98e2abee1b69ed284bdf3915cf1c33f45e1d19b018134bdcdd7b29c394f",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Etude_de_cas_plan.md",
+      "size_bytes": 2318,
+      "sha256": "7c6095adf26186226ff70605c9244d2913d8f236c243dffadfea4910d2300bfd",
+      "family": "2_Methode",
+      "extension": ".md"
+    },
+    {
+      "path": "2_Methode/Figures/build_figures.py",
+      "size_bytes": 7580,
+      "sha256": "c368b49f8ecc34d7ac52e5326edcab578ff931883ce14993e8c523cd2b0b155e",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Indicateur/build_indicateur.py",
+      "size_bytes": 35732,
+      "sha256": "f529fa775993e7270223bced3d0dca314a11b6fb6a3e699c6bb56de0a23a7eab",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Indicateur/indicateur_avancement.json",
+      "size_bytes": 59927,
+      "sha256": "26d34b25a836db9bee1943f4eefd3272082552f59fb787131b87261ab04df5f5",
+      "family": "2_Methode",
+      "extension": ".json"
+    },
+    {
+      "path": "2_Methode/Matrice/build_matrice.py",
+      "size_bytes": 29303,
+      "sha256": "5fb61ef1239e69487587b21bf5bf2a824978679b81a2afe41ee10b654bd90b7d",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Matrice/matrice_theories.json",
+      "size_bytes": 70821,
+      "sha256": "2c2f0bfcb6ff8272756d29b5aefe7b35aca070ddc3aee1830a28c6c5dcc3af17",
+      "family": "2_Methode",
+      "extension": ".json"
+    },
+    {
+      "path": "2_Methode/Matrice/render_formules.js",
+      "size_bytes": 839,
+      "sha256": "81f052a4fc1b47aa5dbf81fcf5a6414fb8199d13b6577ff538cca43c4796e4b6",
+      "family": "2_Methode",
+      "extension": ".js"
+    },
+    {
+      "path": "2_Methode/Navigateur/build_navigateur.py",
+      "size_bytes": 23879,
+      "sha256": "a03834e2708e713a9ef544c30cae797676890d7eece1a58b4d224e0a4afdf5b2",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Navigateur/carte_navigation.json",
+      "size_bytes": 106227,
+      "sha256": "a44545fde5fff9a866cc283fc4e6e30e551fb9621519294e4fe8c7247365000d",
+      "family": "2_Methode",
+      "extension": ".json"
+    },
+    {
+      "path": "2_Methode/Outils/bellman_atlas_client.js",
+      "size_bytes": 1534,
+      "sha256": "22d8a718c1c0ad5a1bc0be356355ea4d7ec8be2c1a675067b1cf4fc656e5a225",
+      "family": "2_Methode",
+      "extension": ".js"
+    },
+    {
+      "path": "2_Methode/Outils/build_v634_pdfs.py",
+      "size_bytes": 2159,
+      "sha256": "c71d5fab372c6e2dc1b7f36751a4e2e1543af7402bd3f7fb54c7e9b606d6a632",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Outils/build_v635_pdf.py",
+      "size_bytes": 1189,
+      "sha256": "f765bde7946442a54f677bb9655bed80d961a74193ae16126d980823f3fcb50b",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Outils/build_v636_pdfs.py",
+      "size_bytes": 1948,
+      "sha256": "4ff8e45ceb7c874ed286e76a4997b22c59ea805bfa783a0c32248d8091016423",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Outils/build_v637_pdf.py",
+      "size_bytes": 1306,
+      "sha256": "558051d387c69d725cb89c5d5ae826d96af452ba815f23e748924ebc19cd98f7",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Outils/build_v638_atlas.py",
+      "size_bytes": 27950,
+      "sha256": "6059aac844d86486617a3f51160001147f032225174e786b93c49465fcc31e60",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Outils/build_v638_inventory.py",
+      "size_bytes": 1649,
+      "sha256": "68da557a5610011517d58b0721323eef596e7cd536b87191309a179d96d8bfd0",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Outils/layout_v634.lua",
+      "size_bytes": 320,
+      "sha256": "caf4aa8587851f4fef57eb398503fc7bce4f80b70d381b31935e55a8874e62e4",
+      "family": "2_Methode",
+      "extension": ".lua"
+    },
+    {
+      "path": "2_Methode/Outils/md_utf8_bom.py",
+      "size_bytes": 1410,
+      "sha256": "eacca0eb94aee620d3a69ea7632bccbfe36199aed8dabc93dbcd01a35f9b8cfb",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Plan_d_impact.md",
+      "size_bytes": 2391,
+      "sha256": "57b6c2edb2b03b0b0620779c0f21ede32f5bd36e9fbaa97e2178a5a7c0daf1f3",
+      "family": "2_Methode",
+      "extension": ".md"
+    },
+    {
+      "path": "2_Methode/Portail/build_portail.py",
+      "size_bytes": 21596,
+      "sha256": "a3d0c9cb1e7ec5eddae049f83b4ca5f8b9f4ea1791790179da310e941adafe4f",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Protocole_multi_agents_et_panorama_physique_RH.docx",
+      "size_bytes": 20400,
+      "sha256": "745bc87235f7c44ba9d54fd301ebf09d9636acc1ab5939949252c96d8983b359",
+      "family": "2_Methode",
+      "extension": ".docx"
+    },
+    {
+      "path": "2_Methode/Sources/build_sources.py",
+      "size_bytes": 11760,
+      "sha256": "37139fae6c078e6353419557c31a7e477255cd65610ee673f3941d265c38387a",
+      "family": "2_Methode",
+      "extension": ".py"
+    },
+    {
+      "path": "2_Methode/Sources/sources.json",
+      "size_bytes": 177711,
+      "sha256": "ff5a4c12e05b21adf3d377c5b3c6eeea75619e02544c3a4b96adfa523def5a75",
+      "family": "2_Methode",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/README.md",
+      "size_bytes": 12017,
+      "sha256": "a5afdc08a9aaad8e66599c43acc9a8a2b2598cfe544a962fbd02f6c54ef6953e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/L2_oscillation.csv",
+      "size_bytes": 2301,
+      "sha256": "71a360d72d2627a251e62ad6350b2b9c7df3404de8d657a27dd7efe7b3b3a5b7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/L_chi5_zeros.csv",
+      "size_bytes": 7706,
+      "sha256": "0523030d75426dfc00d96ab38293f1762d805727e5928e3ba2fd546df0010484",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/L_chi5_zeros_600.csv",
+      "size_bytes": 37454,
+      "sha256": "5da742e9ef5d922732625bfb81ec82252f3ae60132b397d4a51bc88680d48805",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/abelian_check.csv",
+      "size_bytes": 822,
+      "sha256": "ba22437e10616f0530c6d6aba7e79889f8d0498d2ed7c7530c9ec3a574a7dec5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/apollo_trajectory.csv",
+      "size_bytes": 1006,
+      "sha256": "b3b7ce3d948e8ef9c3867d203d2487f81d4bea41317fd100b06045483c62f119",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipel_relief.csv",
+      "size_bytes": 654373,
+      "sha256": "70cf2ecad7aab92eb81f0aeed2ea3ce3787ce369d5d174ac9d6d991288285102",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipel_relief.json",
+      "size_bytes": 1340,
+      "sha256": "b56737a87313f48e2e678176282433d3c74bb4189c67b2a37ab42ad8bc877d57",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago.png",
+      "size_bytes": 332513,
+      "sha256": "ab8f32e05e0ac1db3377229e4ce2d99b841f9a38397bac5bb41222cedc23bc6b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_exits.csv",
+      "size_bytes": 13073,
+      "sha256": "56c3754e576fa3485de84de5d81a892422818bf840009462221b643e53701303",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_map_q7.csv",
+      "size_bytes": 2472445,
+      "sha256": "f26258ba26ec3e13b85ecbbfa34de610a70340eb34bddefdd316d2fc341a6df3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_map_q7_euler.csv",
+      "size_bytes": 148,
+      "sha256": "a1d92a9f646a852746b1c05aaee1c615687804a68262d89699a2430fc991bcab",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_radius.csv",
+      "size_bytes": 26155,
+      "sha256": "cf25d173a9fdb048b79d0c2d6b63e7001fea3ed482dfe3144a9eb63d18b64e04",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_right_of_1.csv",
+      "size_bytes": 2148,
+      "sha256": "270c6869db20a8abc19de2701a2d04de343f01d03b56b859921d837c1d64ea54",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_rigidity.csv",
+      "size_bytes": 1349,
+      "sha256": "e8ec2da4e3c86b42b9fb1ede2882e2605ac54ff883a532b52c91e2833e658225",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_scaling.csv",
+      "size_bytes": 737,
+      "sha256": "4c224ee12a174310dcba28912697aeb205684962155fa1e4e77842a5ac02b665",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_spaces.csv",
+      "size_bytes": 277,
+      "sha256": "5f4a655385dbc40f75f243badf4799193f21459dca6fa3e288164fd677ed738a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/archipelago_validation.csv",
+      "size_bytes": 2457,
+      "sha256": "4ef44614394f7dd2ece0dc4ea743354b85daf0e297ea5f258a708c649a2d8262",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/arithmetic_generator_demo.csv",
+      "size_bytes": 390,
+      "sha256": "d3dee7654474c80d34bbe3edba2d33ef145c65bc65bd47ec35f7102518d977a9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/article1_mean_square_double_poles_v636_compile.log",
+      "size_bytes": 22785,
+      "sha256": "1a4ebb0b4872b724eedc934ceb19aeca4e59a426f2e9fa4396c56d2e5fb2b268",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/article2_prime_side_weil_forms_v636_compile.log",
+      "size_bytes": 23316,
+      "sha256": "74de03163ae72740b7d60d39c954c74c37dfc32aee293da0dc83d8427ef24d59",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/article3_hasse_jets_and_spectral_bound_v636_compile.log",
+      "size_bytes": 20821,
+      "sha256": "d33723d228c83d2c6a3f3fefad639a7b624f8c2f239ca91eda56d58dd5e69e94",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_K_of_L.csv",
+      "size_bytes": 306,
+      "sha256": "355ef1c346ac716dd3705cd23f7bc24db7bf5a83850664e7ed9bbddc8282b387",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_controls.csv",
+      "size_bytes": 2760,
+      "sha256": "0b9832d63c6de9eda0914238029eac864e69ff9996831c9cf372ce9dffad8763",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_decomposition.csv",
+      "size_bytes": 1898,
+      "sha256": "9c2b5d50da9565815d8d46fe1e060bbd0896a8761008d911576ac86d2db2e9d3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_identities.csv",
+      "size_bytes": 218,
+      "sha256": "c2aef29d78c5cd3aa63cbbbaff3c0fac697af9cdb9e153269d544e9d44780eba",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_iter_figure.png",
+      "size_bytes": 104387,
+      "sha256": "e7ea99f776c3f71f74d4f53d54831e877c965bdf928d59edb038b215baf10757",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_iter_results.csv",
+      "size_bytes": 7350,
+      "sha256": "f65a77e7e9d8f7daa35dafd9f9f9d0270cf0c2abb1b76a45663ac1eb7dcad075",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_nb_family.csv",
+      "size_bytes": 2101,
+      "sha256": "e55d686b32ef1563f316fda7ff12072fa2bf968ff2d829e70b7d166a5f5f9b74",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/attack_scaling.csv",
+      "size_bytes": 836,
+      "sha256": "3fe24d0d678ce45ac8f1e209d0a1b0bec920dc3c91170bd659c94c8fdfa14d61",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/base_change.csv",
+      "size_bytes": 98510,
+      "sha256": "82a4b4ba23d451b331b5fcf8da2a0d6cd7b981fcccd7867d49823541ddb5b90b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/base_metric_step.csv",
+      "size_bytes": 1282,
+      "sha256": "5bdad6db68854a1141b512b61ee2dad7942ba9b23b115edfd6b046572d6cd0cf",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/base_step.png",
+      "size_bytes": 168830,
+      "sha256": "f3aa8ae185c77f9cdbb821180b6132dee28c931a4f068660e243c66d2a6100a7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/bblm_trou_a_trois.json",
+      "size_bytes": 2430,
+      "sha256": "02610aa57fc01cc16cc8a88aaef13ce4c76a583165f14426f16c0bcec9cf71a9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/carre_continu.csv",
+      "size_bytes": 10214,
+      "sha256": "99918e21f68c76ee9773e779401763c9d047d6b6d824d28b7d480ea3ecc84826",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/carre_continu.json",
+      "size_bytes": 1078,
+      "sha256": "da5ffafb9ad9cedd308542d1d7afbb400e051504f381d113a91890313550b42a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/chain.png",
+      "size_bytes": 216016,
+      "sha256": "be9e4fb86ea1ffb8e92f1a967af7718628ddbf14a8d4add21431deaa3c4a93c3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/chain_gns.csv",
+      "size_bytes": 112683,
+      "sha256": "7df4b0c45baa964d1707417989a7c37743e4d086bcac69c1a8c0b411229104aa",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/chain_length_spectrum.csv",
+      "size_bytes": 457175,
+      "sha256": "3abdbb2cf9287298496cb749f2d377c82f1e0c5fc758b104c828ba7d4d476c52",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/chain_lengths.csv",
+      "size_bytes": 10177,
+      "sha256": "7e0fffb9e5ef1780f5751d65d656a6f293da0348f1857e91ee3595b72c37efbe",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/channel_terminal_D100000_Q1000.csv",
+      "size_bytes": 57126,
+      "sha256": "ea2b0a2b16e1bd09f96c1916907342f01890d47a80d5a766c920f6e6590b41aa",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/channel_terminal_summary.csv",
+      "size_bytes": 538,
+      "sha256": "71d744a020827156cd929fedd557898178ec862b8c0a5e08fdd79632256aeed2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_residual_amplification.png",
+      "size_bytes": 82840,
+      "sha256": "838f6476a97f6fabf497533209b303b220f3e409842e8384ed4265dcb4697e4b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_residual_cases.csv",
+      "size_bytes": 1643,
+      "sha256": "599014965cd9e39ef71505182f876a286f558472575eee09798ad2477fd4d5f4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_residual_stability.csv",
+      "size_bytes": 1767,
+      "sha256": "66ff9aa2b3a36ed3d3767f53840dc6336d07b74f9580d87315d8379c0642528e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_residual_summary.json",
+      "size_bytes": 8178,
+      "sha256": "64855a01bf13c803f35afdad249723235adeebd9244746085ecc0f8497272285",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_chi_dh_scan.csv",
+      "size_bytes": 3140,
+      "sha256": "ed1a5c28227f19511b403e84fa91bab37dfeba732415c41b7adc2803d294418a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_defect_correlations.csv",
+      "size_bytes": 319,
+      "sha256": "703e36b826f5a22cfe65de725028ccce325c68d74f641ace364bbd07963991c3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_detector_summary.csv",
+      "size_bytes": 2026,
+      "sha256": "bec376aeb3867c6d9fffdc310fc90baf4daa5c2e4efe9f418b71048cbeb2a4c5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_phase_random_controls.csv",
+      "size_bytes": 10566,
+      "sha256": "a296dfd8cb878559edfb7dd0698de5ec8dfda8eac0fe4b0f7539deb014395016",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_protocol.json",
+      "size_bytes": 439,
+      "sha256": "8d35c8c708b3019500b8e4dfddae861619f82f6dce567262a8911535ed3b39ce",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_scaling_correlations.csv",
+      "size_bytes": 282,
+      "sha256": "060a498cad75b7738b775c8c7504e7726312155b65abbe4b02b4bffb39f8727d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_scaling_scan.csv",
+      "size_bytes": 2407,
+      "sha256": "8d4178d55c7038fe08bfa2bd1378821e22fcfd631b4d54fa38fe92ca17dfdaeb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_steinhaus_controls.csv",
+      "size_bytes": 1364,
+      "sha256": "e337514278731802b19de94e12c7e1407ab9b438ab452a141b3253fd20e215b3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo2_defect_scan.png",
+      "size_bytes": 87546,
+      "sha256": "3ea0e40ffd589c972be88d84cb74de5dce34939864ee29bc430178183957bf70",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo3_defect_scan.png",
+      "size_bytes": 80859,
+      "sha256": "becc287dec108df28c2cf5972a56e05ca6a3fd2da4d1fe95ecb301f57ea78ec4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo3_surrogate_calibration.csv",
+      "size_bytes": 1658,
+      "sha256": "5040c44623a53c66ab89e7eb942078bc947d09f086d2c089ca9f58205a4b105c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo3_surrogate_calibration.png",
+      "size_bytes": 48861,
+      "sha256": "ac59f466645f15e0ff15a56e447903c1a17eed5cdd825db47f9f2df0c4c516bf",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo3_triads_DH.csv",
+      "size_bytes": 15840,
+      "sha256": "d27adfb94de055e4ce03cb4e6ed3fc8fabce3a9df4dd888402251b46e26d5f4c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo3_triads_L_chi5.csv",
+      "size_bytes": 15879,
+      "sha256": "46d248bfde4ac3a218b83fa9629c38d1d27e3f8bc149c972d40d3eb50742ef95",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dark_zeta_tomo3_triads_zeta.csv",
+      "size_bytes": 15948,
+      "sha256": "c3e2d3c8fb0061ba441664aa0b77d597b7f1b27d16c83c72d0ad31b4d988ae2f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2.png",
+      "size_bytes": 301195,
+      "sha256": "af5f2dac0edd6eea33facea672571c0959aae743481e88dc3ecc6d8b3b1ac758",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_courbes_ap.csv",
+      "size_bytes": 4027,
+      "sha256": "b65ebda8536c4fc45bf4a9130ed8718e77908dd303410f31049eb2cafbc4817e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_courbes_par_p.csv",
+      "size_bytes": 1183,
+      "sha256": "76be723f8f5eca16bd7d904141d3a0d4a9f703c8981b861509cc3def4c897f1a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_cue.csv",
+      "size_bytes": 626,
+      "sha256": "55cd5aee21f1b57280eca8c763b0691c58649a35b497285c6b37174f79d8741a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_delta_zeros.csv",
+      "size_bytes": 154639,
+      "sha256": "3c0172256db4c764640514dad49b08f5b8e62a65affba012b3870930d8b84961",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_modele_reduit_weyl.csv",
+      "size_bytes": 53344,
+      "sha256": "c703a8caa7cd72d39e6aee7c5d5ad6a4e07e60ef61bcdda2ccacb76a20c431b8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_resume.csv",
+      "size_bytes": 2909,
+      "sha256": "5d7629fcc3ec5eab18df333b44d0689d5a221d72ed26d7896c50770c9ef7ccf3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_satake.csv",
+      "size_bytes": 290027,
+      "sha256": "c0fcb4ab2dfa1de24b1e0db23f1875f27e53bed922c6b3a52195f3f4daf171c4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/degre2_zetaK.csv",
+      "size_bytes": 73027,
+      "sha256": "7c6c88b1fd088aa0d575f48d6c4320d5cf802f2768c3f17a9307faf66656771d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_formule_explicite.csv",
+      "size_bytes": 155,
+      "sha256": "a06cf597611be693e8592dee03a406f23cbad77a11d67f9b05d25e65c422487a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_heisenberg.csv",
+      "size_bytes": 1483,
+      "sha256": "e213f31541553de7995e9ecda6c2880402f53fed5c6423037b433f219f937283",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_heisenberg.png",
+      "size_bytes": 153284,
+      "sha256": "8da2a7ad04ed942380417b119c055879436dd1a99c3d0ea30713fcaaca5fb49d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_weyl.csv",
+      "size_bytes": 119,
+      "sha256": "0bcd201eb366479cd0c3ec4f6f45223987e15b94425487360164c0895fb3402f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_zeros_contour.csv",
+      "size_bytes": 32635,
+      "sha256": "8ac629e45ed9f9b6ecb904c1ca32d5e0ae13a49e950f91eba5bee7ec95a372c8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_zeros_contour_audit.csv",
+      "size_bytes": 4274,
+      "sha256": "a7f3fe6b8859fbe76136bf4a675c2cfd86617c3b7a9c9bd1cfcc86f40048f148",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_zeros_mpmath.csv",
+      "size_bytes": 564,
+      "sha256": "f8ee6e9ca928f52b1a5d980baff25de5f0254a3a0575d68efc1408da5f5b72ec",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/delta_zeros_premiers.csv",
+      "size_bytes": 3491,
+      "sha256": "1f9181d413988320533d875007064fa5b4c9aa46e0c4e3c7285cb3240922df3a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zero_count_audit.csv",
+      "size_bytes": 666,
+      "sha256": "7e19e415f23c0f076168d412419ba4d5e8f82d9ac4b1968fb730a8303a66d19e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zeros.csv",
+      "size_bytes": 3378,
+      "sha256": "6c7cd94e9a7f0efcaeb6d4c57a7b5c3c0f75dbf86849331611267ef4e3f36887",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zeros_1100_1700.csv",
+      "size_bytes": 25379,
+      "sha256": "364c5bc7abe3811df412451dbd97139df387b628a03b6798e28caa5d8d65b7bc",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zeros_1100_1700_audit.csv",
+      "size_bytes": 1349,
+      "sha256": "f41dbe9f7db287ddc32d0e63ae3aa7224399c7062a096dcebe28f6b745f76750",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zeros_600.csv",
+      "size_bytes": 18469,
+      "sha256": "255e823124bc3d97ee875b8c2607373c8cb148654100e89140204586fabd0743",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zeros_600_1100.csv",
+      "size_bytes": 19246,
+      "sha256": "5d022fec7e3a4f1b433cc97e49215ab94476d984698ac1ad35f17df185f6e27d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dh_zeros_600_1100_audit.csv",
+      "size_bytes": 1103,
+      "sha256": "5024fbbd240e456e3bf527efe99cfd7a39bfc0feb35a5aebab6125559b4ad696",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_canonical.csv",
+      "size_bytes": 2672,
+      "sha256": "b5defa1f5096c214ea9bc243dae8564f495878a0162e0f8d8fd339508b4a09db",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_dimension_T113.csv",
+      "size_bytes": 3085,
+      "sha256": "ae6a6de7dd6b50ec1864fca368e9d6422f928cd7843474509f7193dbc8dedc34",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_dimension_T176.csv",
+      "size_bytes": 3059,
+      "sha256": "3ab0d5394502630db7774cf7fa90be3a6ceb877b1b53f1f29ed5b11a1712e3be",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_dimension_T86.csv",
+      "size_bytes": 3070,
+      "sha256": "9f1c09de0fc886e5007b705a44dece53979db402da854c25ab84de487176f90e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_dimension_compact.csv",
+      "size_bytes": 966,
+      "sha256": "f0c8f511eab418a61ba79c1ad10f0790fd912bb818881334935cdc1e701ccc45",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_independent.csv",
+      "size_bytes": 510,
+      "sha256": "55200f6254c1546d5229c58abead5aaa13a9aaf40da005cdd5184f7c51b0e01e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_quadrature.csv",
+      "size_bytes": 7296,
+      "sha256": "b4d5c39d9a94432e5fca1e33424118c0f67def75a41671922ded187571dc3745",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_audit_t176_tolerance.csv",
+      "size_bytes": 587,
+      "sha256": "f1702f0de761b496e4cb8b28c1e46b1dcd90d18eddd5934be873d1308475ffcd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_confirmed.csv",
+      "size_bytes": 945,
+      "sha256": "f1935ba22f86715965ade10080d8058797ab032b9f135b52df2bc7d0ebeab3ec",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_negative_intervals.csv",
+      "size_bytes": 687,
+      "sha256": "5c8a6a1a11d0f1c07788be4ffd68de20360bfe6900ec509687ef1cc3e8d100eb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_protocol.json",
+      "size_bytes": 525,
+      "sha256": "5458845bf3f9da2813e21db60dd4957416d1fcdf47c7775aec53267370297828",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_scan.png",
+      "size_bytes": 85718,
+      "sha256": "2c03ae2d5265c554039e139c8b3e2fb00fb1e4ca881b5d6301844849c4e6eba5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_scan_DH.csv",
+      "size_bytes": 42032,
+      "sha256": "1e1a89f79a6166aee9ebaa6a6f1d52b39889937d308d06b648496dc173e66998",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/dual_lock_summary.json",
+      "size_bytes": 5006,
+      "sha256": "b071a9ea17e8d33d8a7806026e47c771e5c3ed304cd5dd09776d77e40c8acc7d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/energy_complex_dimensions_sample.csv",
+      "size_bytes": 1234,
+      "sha256": "5bc8a24f7058b9434a63e219fd4cfc57fefca03ffab33aed654705e06b3192f3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/energy_dimension_rejection.csv",
+      "size_bytes": 201,
+      "sha256": "b7aef02e1165227a1dcdd719a897d8d0f8edd125cea234cb90f21365b8097e96",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/energy_dimension_zeta.csv",
+      "size_bytes": 612,
+      "sha256": "2c913c112d6714a132f1ca8112c74b81b24a69442a1595968604e1b58006fe3d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/energy_zeta_finite_validation.csv",
+      "size_bytes": 170,
+      "sha256": "ffbe028c63983df9fe1e4dc999c1493c7fe83eccbb453e6090d66c689134c180",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/eta_expansion_model.csv",
+      "size_bytes": 474,
+      "sha256": "355bda73507d91dd199b4ac6db4454f8449804e83100db1bfbd1c83493c0b3bc",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/explicit_formula_attribution.csv",
+      "size_bytes": 772,
+      "sha256": "56b93f8917cee763cf9158aac21b041ce241f2f7f5c676d8ad66d44ba4ae4b33",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/explicit_formula_audit.csv",
+      "size_bytes": 871,
+      "sha256": "6b3a248c3ea1030911973caa60ffaf9630cc7b44498a83308672c74488b8ec2f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/explicit_vs_measured.csv",
+      "size_bytes": 1393,
+      "sha256": "2b8e4ed48d6b3e92d7401d7ed0f4388209d34311ca305c7ac5b5ebf68a3a3906",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod5_intervals.csv",
+      "size_bytes": 20442,
+      "sha256": "d2b444a6c4f2758b0d1e60d26a22a865d381380f37e28bce9cd1286716e791ca",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7.png",
+      "size_bytes": 217086,
+      "sha256": "94a80fbdc0a734b2b4913893591e0cfc7413e03daf19ae331247c2945d69a8a5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_checks.csv",
+      "size_bytes": 329,
+      "sha256": "c2500e2c772e87dd21af459f4f52a561e39a4347d5c226e3216a3c44f3cd7616",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_diagram.csv",
+      "size_bytes": 56788,
+      "sha256": "325c68662051a49b64c6555cc0ebe047428d47247b43652b95fc27cd65cd0602",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_imprint.csv",
+      "size_bytes": 633,
+      "sha256": "74a74caadf0745e37850f01608da7f9ad3ee361f64fa69766219d2e10d57f443",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_intervals.csv",
+      "size_bytes": 106022,
+      "sha256": "8823354e29e3ed8399ee854b30f3ab26e60a642d557386427f15bf9845024f6f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_pair.csv",
+      "size_bytes": 6404,
+      "sha256": "1c8d749bf3c0b60f49d7834e2623167a8744fbeda929741f46d521c87bb564ff",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_proportion.csv",
+      "size_bytes": 4277,
+      "sha256": "3b4fec37de22b03f60599e3c0782b59cef7dbbb6e68e604e7608ec59dc40abcb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_right_count.csv",
+      "size_bytes": 336,
+      "sha256": "7003e2b18287e56c3f5a57939b35f149cf9f54fa213a9e5bd03f816e1940166e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_rightmost.csv",
+      "size_bytes": 192,
+      "sha256": "80100566c1a821d94f6c7f2d0195150c75d8a252c82a15371f73add5aacaedd9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/family_mod7_survival.csv",
+      "size_bytes": 1147,
+      "sha256": "1c7a57a381e3dda42a094e6f5cadceb0b9ade0e0215687f7ea45410ceac0c02e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/force_multiplicativite.csv",
+      "size_bytes": 1709446,
+      "sha256": "f759a6cd719cf7d327eaf10d24ea748032e42c270c940c94cf028ee8348e1503",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/force_multiplicativite.json",
+      "size_bytes": 611,
+      "sha256": "8b043ee64f1c86715181ec3a81de95f741695b07a9547009ba8cff1a482042c2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/frobenius_non_geometrique.json",
+      "size_bytes": 6292,
+      "sha256": "edc9fb0c232749c0ca386fd3d246b0125aa6db52b07c9ad231bb635453cef96b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/frobenius_non_geometrique_journal.txt",
+      "size_bytes": 5198,
+      "sha256": "e76eebf7ebe6a6c763fffa63f7efd93d788e00fc8581b87a145802bf0f57b75a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/function_field_analog.csv",
+      "size_bytes": 973,
+      "sha256": "a01a97108a4f7702b86c2f8a7a0a5c1fd3e79fb18223d2da1d62267b6c04bde4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/gcd_covariance_validation.csv",
+      "size_bytes": 894,
+      "sha256": "cc836d9a443feb4156c87a563f5a63f0df66812cdaeef911f1f04e605621061b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator.png",
+      "size_bytes": 294485,
+      "sha256": "fe02eb2d32b31614f4915dffe7619a670c5c79a861dc524c695040dfeaa7536a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator_convergence.csv",
+      "size_bytes": 4392,
+      "sha256": "61c5cac580a19122fff72af906885ad164d64e6e9de73377bf040c6e7f462d92",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator_dh_metric.csv",
+      "size_bytes": 1643,
+      "sha256": "b7e7b295790319fd37f26a78cc333335c4626caeaed8a587840e67e82a716665",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator_eigen.csv",
+      "size_bytes": 346967,
+      "sha256": "7d550b5182e3e902482cd179d4c188f292736232da5e5e5257cc2f56e5238c61",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator_real_signal.csv",
+      "size_bytes": 4322,
+      "sha256": "5578a88401931648e745cfbb9220eba7f71b31f840c8eebbefef4b593f8e49c1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator_step.csv",
+      "size_bytes": 420,
+      "sha256": "2e0fa699146f069eed8bb8fc8b486cbfe27306036d8306734bb1afad10decfef",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/generator_summary.csv",
+      "size_bytes": 940,
+      "sha256": "7b456ab45951e46d85d3be5e336bc4a50d5d5060713729ec34570a1fc98f1fd0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/gonek_moment.csv",
+      "size_bytes": 586,
+      "sha256": "90ac40606122fe1d8fae04060edc61cb1aa9c461a98166086365abb0255b0653",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/h3_gaps.csv",
+      "size_bytes": 368,
+      "sha256": "a787f80e038746a916f10c398aebcc7c81ada050245869deb754ac734c64d38b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/hauteur.png",
+      "size_bytes": 124765,
+      "sha256": "c07129747750a33a342ac588c6e965391afdf7cb00c40ffd8a55723520530d2a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/hauteur_allumage.csv",
+      "size_bytes": 6580,
+      "sha256": "deb3b47cf5c4c143fb377a48a6755f172ba74ec0677382aed17079df754e3443",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/hauteur_escalier.csv",
+      "size_bytes": 1173,
+      "sha256": "cb891d460e4e195c7186f533206124e22c4e23c2f2d83ceee43e3947356c6ee8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/hauteur_generateur.csv",
+      "size_bytes": 746,
+      "sha256": "4d4ff979e0f294eb27999047f653bca2022a6d266f91a2a3bd1d4fb104f12e3a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/hauteur_recensement.csv",
+      "size_bytes": 254,
+      "sha256": "88763e22839640fcec235dc360f813458e882d73dddda8b868ffd1618505ad84",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/kalman_information.csv",
+      "size_bytes": 570,
+      "sha256": "e3c528f2a2713576589bd91cb71221b1070d8c620e552d8b86d5a7895a3bd36e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/local_fourier_energy.csv",
+      "size_bytes": 597,
+      "sha256": "673ef03a4d71078d097f88e16b931cc0164c217430db81614500c0b0b9f5ed7e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/localisation_zeta.csv",
+      "size_bytes": 1530,
+      "sha256": "9fd516b1c93aae5bd8d95212b3a6119acfc7bdc1cabdcd5a1e18cae3253bf91f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/lock_independence_attribution.csv",
+      "size_bytes": 618,
+      "sha256": "df054d7ec7b6f75800d29cfe00822403ae0e35f66807e3a4d7d8093afecf4ba7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/lock_independence_audit.csv",
+      "size_bytes": 596,
+      "sha256": "18fb16c124e7026cbd1f01f6b8040a018e602af317be9ec05e760813a7a43446",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/lock_independence_table.csv",
+      "size_bytes": 522,
+      "sha256": "ba7bd48eb2c80df5a9e7cd13170c5e965e7f3b14e0a746ccf7107d336fa7d217",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/nb_gram_G100.npy",
+      "size_bytes": 80128,
+      "sha256": "ae6f2ca0419b5566d90078c0ec32d2ebf4b8d440947fa3a2632b8a8996aef02b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npy"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/nb_gram_dN.csv",
+      "size_bytes": 1041,
+      "sha256": "7bac38cb69a2743de7ef455e166afb8414126faa9f66b4a2fb6794fd64a3836a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/nb_gram_dN_ext.csv",
+      "size_bytes": 1028,
+      "sha256": "21a04413027c156ebd831615c65af0c06626e7833fb2243d9054de5e1b03b21d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/nb_gram_sqfree1000.npy",
+      "size_bytes": 2957440,
+      "sha256": "fda5378adb4407e172e18750b79bf4ba4a7ce970a8c395a52804878018841238",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npy"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/nb_gram_sqfree200.npy",
+      "size_bytes": 119200,
+      "sha256": "7a3c6daaed1caa9733184b79e572e7838c11b8effbd35ad9169fc66bd2ba464e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npy"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/nb_gram_sqfree500.npy",
+      "size_bytes": 749216,
+      "sha256": "117615191f8a001b5ebda46662e063fd3b5d3b3e1f6639e095622048366af0fc",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npy"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/object_vs_form.csv",
+      "size_bytes": 1959,
+      "sha256": "96b2c948433105d0b24d4bd4ba876c37e96fc6bb598c88aae230f6d6a6993548",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/object_vs_form.png",
+      "size_bytes": 199125,
+      "sha256": "dc73502c3b9db3ec644412e174c477644d046bb910070808dc0e1d7c9cd387a6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/palier_balayage.csv",
+      "size_bytes": 11798,
+      "sha256": "5dc9081a21c6ed1adff19214c60adcb8744e20eb943ec58ec1ddbd9a892b21b2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/palier_quatre_tiers.csv",
+      "size_bytes": 3014,
+      "sha256": "dcc1e25e84d41852a6284407752d3be6a5ed72f7b6d7f148903f71b468df03a9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/palier_quatre_tiers.json",
+      "size_bytes": 2203,
+      "sha256": "d3913ae277cc57851b948434677aef0faf328fe52ce0004dd6b916542b571a03",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/palier_quatre_tiers_journal.txt",
+      "size_bytes": 6455,
+      "sha256": "be93a2a24929aa0c4be9ec14c12e672c2560015ee5a4fd50c1c39b671ddc82ca",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/pole_cancellation_bN.csv",
+      "size_bytes": 1457,
+      "sha256": "b0a50367b9b5f8470d21c4bb7cf48f2c39ee6994fda572998864cdeb1f83f406",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/pole_cancellation_check.csv",
+      "size_bytes": 820,
+      "sha256": "5d4f040726b99b18476151f6a8a9f9106664311ce957829be2cc140aa6342b25",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/pole_cancellation_extension.csv",
+      "size_bytes": 1489,
+      "sha256": "ac860cb7033f8e6b60832dcac1bc5f0c7fdbc225bbe0fda6c29d45440e48211a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/pole_cancellation_figure.png",
+      "size_bytes": 114717,
+      "sha256": "69e32188a04c3f5c620a3be5af9d96830b93c485052de3b566832487e619f972",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v615.md",
+      "size_bytes": 1955,
+      "sha256": "ba609dba27e0d1242f6a45471feee78417e07f11169ca7a883ff49a137ef9155",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v616.md",
+      "size_bytes": 1693,
+      "sha256": "6215062f36cb3f237b8093930b42b03d8be01df7036e0e0c41c868d61c536093",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v617.md",
+      "size_bytes": 3482,
+      "sha256": "f101f327a1c4e5ba06d619a1bb668b13bc2ba1966f2be67bdcfa5e03d9fae6d2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v619.md",
+      "size_bytes": 1292,
+      "sha256": "40ebe0b5e9fd2b2f6691987cd762a91bf52c4c3e1a47fd26da7e6a3d96b174aa",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v620_palier.md",
+      "size_bytes": 1216,
+      "sha256": "6d3307dd8e1a2da0cee021838457a0faa5f0a62f7183cc5f1a41cef3913b3df1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v621_surface.md",
+      "size_bytes": 2080,
+      "sha256": "c782c6026128681d2b93e2d22bc9815a4d730f149168ec030558ec0eb74806c0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v622_riemann_roch.md",
+      "size_bytes": 2537,
+      "sha256": "f5f4373d504ffd853de69a708eac66f827d1a8ae66d59b389789597e3aeb157e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v623_frobenius.md",
+      "size_bytes": 1462,
+      "sha256": "470c06c11d537cb99b73b216668cba3867b3a86e6b743ab685e53d32b4b7b81e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v624.md",
+      "size_bytes": 1915,
+      "sha256": "fc3754a89204a34604a8f437a0158806455571f1de60a9127c13b4e0c42f97c3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v627_carre.md",
+      "size_bytes": 1129,
+      "sha256": "f15a818f087e68114b5c881c6e4e5d36ac1587b417c7390f9bf07830e2567503",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v628_hauteur.md",
+      "size_bytes": 1052,
+      "sha256": "1571b388af5bc9d3226062c1a05bd4d7d81b86e983eb82c3895fbffb1dd8258f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v629_bblm.md",
+      "size_bytes": 1767,
+      "sha256": "38b51cfccb785e0d23c1c336607caa4883cb2ee4402a7c4c0440dceb4823bf1d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v631_relief.md",
+      "size_bytes": 1143,
+      "sha256": "ad1e1bd67c206571e6466c708ade7bcbb8199f6924e354abd89875d1e7e143e6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v633_force.md",
+      "size_bytes": 1289,
+      "sha256": "1333d193b399744f78e80a609ae13cea4ce9029048d7dffb06fd343ecba3f885",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v634_relief.md",
+      "size_bytes": 2537,
+      "sha256": "1e0e72324d0127add1fad727f10ed23f76175ff529a99d9b158bfb113e910f4e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v636_norme.md",
+      "size_bytes": 2292,
+      "sha256": "042bd536618f8514878242f5babee4c0c721cfd3daa852b346039aadfe2b6468",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v637_apparie.md",
+      "size_bytes": 2602,
+      "sha256": "d048dd807c0428293e04a864dd5e9db7be9143946fbae03224dac612ec682dc4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prevision_v638_bellman.md",
+      "size_bytes": 942,
+      "sha256": "714fe1d3d037e0d5ded6a426ca87e0616fa074ed61562b343259f78f6014aaf0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_DH_scaling.png",
+      "size_bytes": 61348,
+      "sha256": "bea5e7dd9860f75c49fb2ffb5d291cf7ecb67c20511f3301e63bd8088e265441",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_chi_dh_scan.csv",
+      "size_bytes": 2488,
+      "sha256": "1a792e0982571c644113da1ff3b91caae3934b9bb1a434ef62c4f7d2df0fb703",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_chi_dh_scan.png",
+      "size_bytes": 104840,
+      "sha256": "c89067055bdc09432735a199cebff40a650538dd1f156b0efe52dc567c762fc7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_correlations.json",
+      "size_bytes": 167,
+      "sha256": "e9493d735e441a72196083c60e0d411a5badc29367b416954488fa7c9fa2a639",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_protocol.json",
+      "size_bytes": 844,
+      "sha256": "e8683cd03ca15c4c9c25754632f8b77c8c4b568265b8e47f9259445b5813086f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_scaling.csv",
+      "size_bytes": 1921,
+      "sha256": "32906eeb1469182d54b4d0f92664707ef6c68ebc1ac25e485532a5b4608fa6d9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_steinhaus_controls.csv",
+      "size_bytes": 2011,
+      "sha256": "723f2d5d7a9ab7ec0365195d0087e5bba76e17bc9c9957f2a1bf9ba041099e03",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/prime_lock_summary.csv",
+      "size_bytes": 868,
+      "sha256": "6cc9c0cf9616af92cf627d42c089c7812fc453c1d85fb020c1afff07bf7ce4e3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rank_law.csv",
+      "size_bytes": 77526,
+      "sha256": "2a81f6528cc8e80a521fc24f4684ca4f33197445515e7704d8405354d7e7fa5d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rank_law.png",
+      "size_bytes": 180002,
+      "sha256": "dfff0d183408fbde5f9a2bcefa1c50f7c6febc8f478a9fd422160baeca7429a8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rank_law_fits.csv",
+      "size_bytes": 553,
+      "sha256": "3105117c0f05f215824bddb02fc5bc9ca435e0d3ba02ada6bf3b3c6590f6685a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rank_law_reach.csv",
+      "size_bytes": 1235,
+      "sha256": "92b20b13362476b36b4922a1995c5a47f7182c39b8f3fd434df8c7e9c8b08b50",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reduced_model.png",
+      "size_bytes": 309431,
+      "sha256": "3e10295eef8abe8bccf3f4232bfe003a366c055ffada228171ed20fcb9ca856c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reduced_model_curves.csv",
+      "size_bytes": 113549,
+      "sha256": "af72697580171b5f6ad4cb1869855965f9e72ad61ed102f472c84ec18f37181b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reduced_model_example.csv",
+      "size_bytes": 330,
+      "sha256": "c2a83419a93913ccf5f769a071e633e849b3a96a0531306559e18e92df01d474",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reduced_model_fakes.csv",
+      "size_bytes": 198301,
+      "sha256": "1fd9f383b9f71f9b268d3c1792ee9759974f3271139f2e2231013d17096364bd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reduced_model_tower.csv",
+      "size_bytes": 24935,
+      "sha256": "f9bf09c915b94ca55fa9638a1c1bc5a2b054ca653a20dafeb71f7b2f77838528",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rejection_growth.csv",
+      "size_bytes": 519,
+      "sha256": "92d8cd2b9380a307bae41a9d87b13358bf3d595e8840ddfc5e4c780290c2e286",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre.png",
+      "size_bytes": 230668,
+      "sha256": "0ae474ebe3250ffe0e003e740957bffb53ec3601753a1d40f0d355b7bb46b2a9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_a_n.json",
+      "size_bytes": 1182,
+      "sha256": "a4c726b80f1199787aa01e1c03ecc823f09cea6c01fbc4a9bae11c3479e77dcd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_a_n_zeta.csv",
+      "size_bytes": 5069,
+      "sha256": "fef6dc7e70e0d7d2ded46591ecd7b2b77d352a3f632f7565b5a6342d7b8362c3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_blocs.csv",
+      "size_bytes": 2060,
+      "sha256": "fb9934d6f64f54caf07eec0326d39302f7d2fc0d7861d31825a6ae46fad5252e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_hauteur.json",
+      "size_bytes": 2866,
+      "sha256": "0ee69c383e3e642b3a17fe3e6e6c820d3f2d41be22a959c3f533df66263b7d0e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_lehmer.csv",
+      "size_bytes": 39799,
+      "sha256": "be7793e1241add44052afab2a411ed3c2c4e29df45ed2a1ae9130e613ed6a34a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_premiers.csv",
+      "size_bytes": 1690,
+      "sha256": "f76abf809f70e610ca43b108837bec7185e36326c7ab110183ec28b7c982a653",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_resume.csv",
+      "size_bytes": 974,
+      "sha256": "ae7f99d8c3360004c2a3ceba61cbe99610a19b732b605711dbb595413ef9cb27",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rencontre_zeros.csv",
+      "size_bytes": 174586,
+      "sha256": "c0c336623a4bb7d6c47d7e8c4318e3c806439290a6023ae88b2b52fe04308789",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread.png",
+      "size_bytes": 162468,
+      "sha256": "a6908cfb1bb033e32b8287bf806174d31884b8f3dd52d909ce40812d3c9e6819",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread_levinson.csv",
+      "size_bytes": 183583,
+      "sha256": "d94b6a123a2595e091a37df68522601c73abf6c09b1a6eba017a1906e8431299",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread_levinson_summary.csv",
+      "size_bytes": 297,
+      "sha256": "65a9cac7c86fda079d1ae55810989b172f7b9e7a2f94b6945d2c9493613f5cfd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread_quadruplets.csv",
+      "size_bytes": 552,
+      "sha256": "20ab0ffaf2833f07d7c012de0e935e69f337a9246f9170ebe9955a49c3ffc468",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread_sources.csv",
+      "size_bytes": 2207,
+      "sha256": "15ba718a32a0c0126273478640f9f51dc57f0005fd9184a8e49250a1688ba180",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread_theoremA.csv",
+      "size_bytes": 208,
+      "sha256": "7ecf697a230574bf270939f7c17507af465116893986c85d61a59510dbe28917",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/reread_threshold.csv",
+      "size_bytes": 812,
+      "sha256": "414bb9f447d57ee043c47d02249d6a61f801f4200f8814fc4272133e4c8e7650",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rh_heuristic_flatness.csv",
+      "size_bytes": 2705,
+      "sha256": "9f5713b58be43f9ae5f8cf309efd6d4a58e9e4660cad400ddbb96676c295dc27",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/rh_heuristic_test.csv",
+      "size_bytes": 3343,
+      "sha256": "64f6d93e1fcc16402acbb95b797b2b2f6530f00f2de2deff03227092c59cf03f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/riemann_roch_virtuel.csv",
+      "size_bytes": 27018,
+      "sha256": "2e631fdcc96c34dbd70830b490834097787c12c6a430253461790ac64126b748",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/riemann_roch_virtuel.json",
+      "size_bytes": 975,
+      "sha256": "2fee17c329182db7813210a7122030396576ef02d8ea3364389a506143636d87",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/riemann_roch_virtuel_journal.txt",
+      "size_bytes": 976,
+      "sha256": "beff8801e35e92b7eb437d2b59d34c4d8ad20aace9a3350ef1dcb299679fab04",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/schrodinger_flux_demo.csv",
+      "size_bytes": 393,
+      "sha256": "1285b72ad7f11d2d46e8fa3ab6f2d0830f306d9a4fddc92852ab22b05deb089a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil.png",
+      "size_bytes": 225440,
+      "sha256": "753a3704324170004b7471e5b19f1ee22fa7ccd547cbf43e85fc73b2c64ff04e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil_correction_fond.csv",
+      "size_bytes": 516,
+      "sha256": "cf81e8b880ebc15ade6705b2a0c51013b7a680bfa9bb3e303fe11a300327ad23",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil_inertie.csv",
+      "size_bytes": 490,
+      "sha256": "b745d8300cfdf72a3d99500c46719764a61ff9eed542a61438115ccaf89eb581",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil_precision.csv",
+      "size_bytes": 221,
+      "sha256": "f4d012a560ca44734f18f7968c6e5a9b4358d84a9cd7b02379ea621e6ed0dfe5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil_prevision.md",
+      "size_bytes": 981,
+      "sha256": "e6fe6e6a458bfefaea823a221468c23c2eb00eb120acdb8430ccdcc39650ec35",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil_reels.csv",
+      "size_bytes": 799,
+      "sha256": "32db68b6e8abe1c0f1e5b542a046e9b55a3ac2efb82d4b80695ef5505bc1d43c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/seuil_synthetiques.csv",
+      "size_bytes": 6317,
+      "sha256": "35e08626c6204c4ab33d5430c3cb2e5bcdd91679f8b2eb8067a8f5a34919379b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/source_localization_demo.csv",
+      "size_bytes": 242,
+      "sha256": "9c1a26a6e06d7882064ca0eb21e26c05f006e46438a09b9836f7aa401f40d2f3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/spectral_calibration.csv",
+      "size_bytes": 667,
+      "sha256": "db3112b72ff31221e67f84b02917e5aa0652010f35668204465f54c00256bb50",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model.png",
+      "size_bytes": 332546,
+      "sha256": "b5693d122388c5028df00569403b856438c6c8171c855f7e50c4a4d5ec974eaf",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model_curves.csv",
+      "size_bytes": 125373,
+      "sha256": "5407f51db3854554dda4078b4f56936ad731ec51115fdde8cd0016bb7f2fc7af",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model_fakes.csv",
+      "size_bytes": 32017,
+      "sha256": "59d23e02cc29c66b46ca21fd524c873fd5c14ac378821a6190900fce9fcdabeb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model_form_margin.csv",
+      "size_bytes": 170287,
+      "sha256": "c53937c14446df288dd795e83cdba10abcca0efa944afbdb0663be65cc4c64fa",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model_inertia.csv",
+      "size_bytes": 12021,
+      "sha256": "9ed66cfa0db5d843d3b631b586f72ba9baca7f2a20802dbca51bfec56aa8cffc",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model_new_curves.csv",
+      "size_bytes": 20000,
+      "sha256": "5507daa04a2e44d4f9393d60cafd573e8bf7dae37c5cbc9858d956e65f6ab3f9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/stability_model_paths.csv",
+      "size_bytes": 46791,
+      "sha256": "a8bbb6c381a8b6500fc075900dc83b7d130182ec1d9e23d10f5c90fc2f12dd75",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/structured_scaling.csv",
+      "size_bytes": 3446,
+      "sha256": "a03ac5de18bd5b8c40478051bdfcbbf34630a42ec570b1834cd3f67765f73e67",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/surface_virtuelle.json",
+      "size_bytes": 2985,
+      "sha256": "0a34ff277d163ecd23e0da1aa7a78d9fb530167b422dcae31d2be69018fe2576",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/surface_virtuelle_journal.txt",
+      "size_bytes": 2852,
+      "sha256": "92039b08f45f953d1c19db9ea1e849cdc6cd638cc3af0085d6f4ada61db06a94",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/surface_virtuelle_modele_reduit.csv",
+      "size_bytes": 26765,
+      "sha256": "174356b606545b8a29fc673ef6399e0f947e3ab1272678ef67fa6935b949a955",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/surface_virtuelle_premiers.csv",
+      "size_bytes": 687,
+      "sha256": "fecd6d85b3bbcca7cac2f8e3849637b10ab6228158919e474e3e035607b8599b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tau_threshold.csv",
+      "size_bytes": 4439,
+      "sha256": "0427bf6810f6e59fcf4d3adc64707dc8a2ae2ba11daa1ced547f7d2378fe3591",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tau_threshold.png",
+      "size_bytes": 128690,
+      "sha256": "b9522907d420ccdaf7fdb58208d9fad6a9df68395e0dd54a70d94f2eee5de30e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tau_threshold_2d.csv",
+      "size_bytes": 5319,
+      "sha256": "79322aa441dbe731123173cf4607560c584a6343a967ae490ae2143e6cb7bab4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tau_threshold_curve.csv",
+      "size_bytes": 20152,
+      "sha256": "dff72bcb5f660fdb90d39446ba2dc824e74aa7233ff5fade7835c867efcba05f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tau_threshold_width.csv",
+      "size_bytes": 716,
+      "sha256": "b443ec62dc8f862d2b3cbab0a04afce165a27b1092267462bf9a2419046eef2a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tau_threshold_witnesses.csv",
+      "size_bytes": 553,
+      "sha256": "056c85e56bb2e2a69f9556a05d164eeaa52df3aef0e9ea521c6c5dbe7d2c8932",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tomo3_bohr_closure.csv",
+      "size_bytes": 371,
+      "sha256": "c03f8d58cece3c006dec08a5daccb39f701e1b1ab27e278bfafdd209f373e6ef",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tomo_zero_attribution_DH.csv",
+      "size_bytes": 584,
+      "sha256": "ec6de6435e1358cec0217f109103b0d13bfeb5256cb8b881d054c41b0bd16c5d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/tomo_zero_reconciliation.csv",
+      "size_bytes": 1151,
+      "sha256": "2b032f2a5e06f8107a363a47f74dd2b6adb9da8b93b55c23f4adeb9ceaac6446",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v624.json",
+      "size_bytes": 6385,
+      "sha256": "5188a975900d7b9f601774110de416248599adcb85386f33ffa1f7768c3c0c7c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v624_journal.txt",
+      "size_bytes": 3201,
+      "sha256": "9bdb06cec64ca83e7c9ab084e11eda47a70983f9926d94169d60f259bb7e2c11",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_independant_v11.csv",
+      "size_bytes": 8804,
+      "sha256": "c7f4c0351db7b518ef34d2736fd6cffd4bc2cfbf964e74f9bfcd58e002b3ad4a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_independant_v11.json",
+      "size_bytes": 981,
+      "sha256": "fa81dbfc5022ba873a55267643ea4f04bf8f6dac4430a6106940441740bd6867",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_independant_v11_comptages.npz",
+      "size_bytes": 28756,
+      "sha256": "3bcae02d47cd2a1ae74ce46a33382eb08fe147876a84630ea57acfd02e1820ae",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npz"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_jets.csv",
+      "size_bytes": 283,
+      "sha256": "b72da5309b42c8bff4aeeb193ab03460042dc617a45adc4d24101077017e21c5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_jets_certificats.json",
+      "size_bytes": 19016,
+      "sha256": "e2deee98bc5975c273056cf8a0418b78b9464d2eb15f96c4d675ccf1bebac069",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_jets_parametres.json",
+      "size_bytes": 1015,
+      "sha256": "de00522050cee0e7eda7e0a17b243175d6c184627b5464edf30b51531996aaef",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_racines_recoupees.json",
+      "size_bytes": 3351,
+      "sha256": "f878e6da9da69689eea1b434708e3505ca7fb696f529dbd9977f0adcfd1aeec1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_relief_v7.csv",
+      "size_bytes": 1515,
+      "sha256": "2511af1e9f544b5fe60b59bf72f296606387e5eef6692a52659f25a912db4dcf",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_relief_v7.json",
+      "size_bytes": 745,
+      "sha256": "f265bf244738e97c8d2bded7a9aea5ff890a5d030c6a6724bbe73f330d062b67",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_relief_v7_comptages.npz",
+      "size_bytes": 7037,
+      "sha256": "038dfd8a87b6942512d2ac4e0883c063c08067aa2f14de02fce15d8134e1a033",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npz"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_selection_v11.json",
+      "size_bytes": 20880,
+      "sha256": "259f281dade04d749669222221ece748bad20086d3de22aebeae1eaa2eb85f5c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_selection_v7.json",
+      "size_bytes": 2750,
+      "sha256": "1616893fdc7dc16be3d35e046588a612322011cf6897ad6ec71c1a8f6f3b5a06",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_validation.json",
+      "size_bytes": 1438,
+      "sha256": "5ee65b56b1daf4c6c11cab0a96432a97ab7dc52dcbc11d7e69cb388a99ce5a1d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v634_validation_tests.txt",
+      "size_bytes": 14455,
+      "sha256": "61063b1c44f737eaf0df8ae1fc31d6bc854081b0006de6ef3aaa2e74f274885d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v635_certificats.json",
+      "size_bytes": 38761,
+      "sha256": "17b5e7edf488413edcc257923f3b9f590ead6c45cb64574a853076951ba0ca50",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v635_controles_avant_execution.json",
+      "size_bytes": 1571,
+      "sha256": "9f4f1b26adc18d3b84b0d309e6cfe9d8f400b28e1ee9bdccb124418b426802ae",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v635_tour.csv",
+      "size_bytes": 511,
+      "sha256": "ab5e797adb618e1d3f3828d540804b4407cda5c62005a07f5cf3d9e6992876d3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v635_tour.json",
+      "size_bytes": 4435,
+      "sha256": "47ffce3dd04cfe8c338d7e063718c8abb8d458b4a9eb681423e5550043a7eaf2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v635_validation.json",
+      "size_bytes": 2709,
+      "sha256": "21713741aec7c6227e7bbdebda5a1888e2ad7a75ecf94a1a91a56e8953f142c7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v635_validation_tests.txt",
+      "size_bytes": 15291,
+      "sha256": "4b2c7b0b9fc371c1760b7f1ad706d07de6ffcf8d2b93b5cf5b071d6e0c0751b0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v636_norme.json",
+      "size_bytes": 2283,
+      "sha256": "c9a08c04520113bb5753ef4541207edf2a2d148d37e8d457e80c1dce5fc16f63",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v636_temoin_negatif.npz",
+      "size_bytes": 199625,
+      "sha256": "1bdd4eaf083174df7f1ddcac9bd3b2b37ddd7fc303f55ce008b25ad58e49f62a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npz"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v636_traces_intervalles.json",
+      "size_bytes": 257322,
+      "sha256": "e83d94b78fa53974749409389bfa052f0ebe51e766994c251cc3a75d0d6d03e8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v636_validation.json",
+      "size_bytes": 1427,
+      "sha256": "ed7ae6d1570955d8b8cdb00b957ad2517641c998afaa02fa6ab28a8dc75dbc3b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v636_validation_tests.txt",
+      "size_bytes": 15850,
+      "sha256": "e594b929366f849a73e3c31bb149087bedadeeaa7d9f54d8983fc97205776f0e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_archive_validation_tests.txt",
+      "size_bytes": 16950,
+      "sha256": "36fc20938f8f28cc2891dedb6c1245404d80a84376524f9fe75f560e15b2aa33",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_execution_v13.log",
+      "size_bytes": 140515,
+      "sha256": "c4dc4449b6a53a0ae647ef263b73ff0663de7f4adc825a04f6dad598d855f4b3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_lecture_conditionnelle.json",
+      "size_bytes": 4624,
+      "sha256": "c79fcd52c8d4cf3216f9df260dc9af29af7bc6d4e297f576bb4cacd94332ff0b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_pdf_compile.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_postchecks.log",
+      "size_bytes": 3456,
+      "sha256": "93b0a2922c81b2cbd283e35c281a25dbb1741f45f1fbde8816877a9c76739d6c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_protocole_verrouille.json",
+      "size_bytes": 679,
+      "sha256": "874d3f093105b5dc1204039fcd5055d834bb85514e6acd2299f6221012934cfb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_provenance_publication.json",
+      "size_bytes": 505,
+      "sha256": "7268818b3c14b766650a606bbf977aa380abf6cd80cb107c11809e8470f43b2d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_racines_recoupees.json",
+      "size_bytes": 31812,
+      "sha256": "485e858a27a4d09a32043dae2a4902599975cf498f69dc3b56a40e960605fd4e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_root_crosscheck.log",
+      "size_bytes": 18737,
+      "sha256": "50c79af511061de7c54e4626338b8533846c415f053c40e40a4611cbde15da18",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_selection_v13.json",
+      "size_bytes": 96869,
+      "sha256": "685ddfe024480de8d0fc47364d998fa58de058082207efb32b61f4f05ee7fcbb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_v13.csv",
+      "size_bytes": 25465,
+      "sha256": "ba23387a561ed9d4c4818c535f0f5a3afd5313d7e4018bd1690de72a19170a66",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_v13.json",
+      "size_bytes": 240619,
+      "sha256": "dc2413eb9cca34e7d2ac9f86f8bb8bca36e284d976113c806aa859be07af813d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_v13_comptages.npz",
+      "size_bytes": 83563,
+      "sha256": "cdfbde520d401686e8c9c0729c2ce223fad32555c23abe6ea59a247e80820380",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".npz"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_validation.json",
+      "size_bytes": 889,
+      "sha256": "68e0aa858e30a1cc00393100d43188f21d68975ef3701e562c824aaa25313323",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v637_validation_tests.txt",
+      "size_bytes": 16950,
+      "sha256": "722a455afb9b8519d651d1935bf2dd8ca0531375844838c9a7c34e010ed3b13c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_bellman_resultats.json",
+      "size_bytes": 13970,
+      "sha256": "7bc6fcd4b9c3759b700d90ed3b3fc8595f96c976f7d8a06189e106468bb82737",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_corrections_actives.json",
+      "size_bytes": 3121,
+      "sha256": "9062be5e26945d68fd47462b7a3ad59c78ff77a71636b8d534b0bf01becc59d4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_decisions.json",
+      "size_bytes": 242028,
+      "sha256": "d673ccf6f388fb1cd425899c139da7978bfbe3439928e55228b723c9ec6df079",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_modele_bellman.json",
+      "size_bytes": 5651,
+      "sha256": "efb4cb0b10b6a4b6b9741590033913746769d6649870ca1120b4a260e9970d03",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_pdf_compile.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".log"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_validation.json",
+      "size_bytes": 1401,
+      "sha256": "334c0aac4881c92b261770fc91f84223e6e6375a7fe84537ae3039f4962cad67",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".json"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/v638_validation_tests.txt",
+      "size_bytes": 17418,
+      "sha256": "04bf3da1ff27bcaf223cd7bded7aeb92fe28bde7d670194fc044f1780b43c103",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/verify_c_identity.csv",
+      "size_bytes": 75,
+      "sha256": "acdd4ef758455fc01de4dfe2e84ed9ca333821d02b61773d0119b718e698acbe",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/weighted_energy_vs_diagonal.csv",
+      "size_bytes": 2708,
+      "sha256": "9dfdcb32bdc302316e4c561bf6c2024dfdbcfcff3bb2fbb4ed33ffdcd465cb06",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_dip_width.csv",
+      "size_bytes": 2750,
+      "sha256": "845b5d67fb3db9d419775f1849308661da94e6b32ecfb6f54f08042029fe0afd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_profile.csv",
+      "size_bytes": 5787,
+      "sha256": "88e5845992716cfa66f172c1486c2f7c08131410a079aec817c1ed7f911913f6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_profile.png",
+      "size_bytes": 114615,
+      "sha256": "128b99382c256e1105c9686fecb198029cadeff01b6143043088b5e60b5ddc0f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_resonances.csv",
+      "size_bytes": 2090,
+      "sha256": "e69573b175eb6d6db4d66e18e961f60836bc33008cc210d4b74de1cf8dab0571",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_width.csv",
+      "size_bytes": 2049,
+      "sha256": "2b2822bc3f755ecc9b28f4b671d30b7bdaedb3bab37d473f308ba46df523a4c6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_width.png",
+      "size_bytes": 114792,
+      "sha256": "dc0b0f253f3b5a967aa7ed44f68a7d291417a649826cc8000632dc1c8dbcf498",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_width_heights.csv",
+      "size_bytes": 2982,
+      "sha256": "c5307288efb8ba7cbdd092dc42d8d83724a2c94b0d6be6edac897cff7c1a35c4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_width_heights.png",
+      "size_bytes": 68806,
+      "sha256": "85bf22188c79746b6f88e6bb531617fbe2c644846d8ac05e720cdf8d66f8a53c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".png"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zero_difference_width_profile.csv",
+      "size_bytes": 19457,
+      "sha256": "d80b41b1adc8df9be595cd5c01086074398a3f92b81514d5c9ecbc560bb1226d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zeros_300.csv",
+      "size_bytes": 17661,
+      "sha256": "07886e733dbe5f6d2d646f9bbe9a2b6f9dbc9b8ad5e9f7e5ddc1faa3944f3539",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zeros_600_count_audit.csv",
+      "size_bytes": 4013,
+      "sha256": "ae9f14edf20c6b26b4d98193804e1bd8527756d734ece44c44abae23b1a16e58",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zeta_prime_at_zeros.csv",
+      "size_bytes": 11358,
+      "sha256": "9263c13a70dff1860c90cb7d896bae99aa1edb8d9d8915c7f4aad776612d8d79",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zeta_zeros_1500.csv",
+      "size_bytes": 40162,
+      "sha256": "e08a4b941f96b7d316f6416d06ba091029bd5ad9bc503fd3474d619f660c31a7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/data/zeta_zeros_1500_count_audit.csv",
+      "size_bytes": 3327,
+      "sha256": "bd1fd863be306fa9a425da40c665037d6c323d0ee64adb64fcba79e418acc69e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".csv"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/ALPHA_BETA_ANALYSE.md",
+      "size_bytes": 6272,
+      "sha256": "26cb5de43cc1e92697ec4ef42e1370cd80d46900744aab93d4ed8aeb62a8e0bd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/ATTAQUE_JOURNAL.md",
+      "size_bytes": 5200,
+      "sha256": "4dad9eb2f5df71f174a0899dcf576bc36f8da96a49f17feae236d0a242d8c2ed",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/ATTAQUE_RESULTATS_COURANTS.md",
+      "size_bytes": 1522,
+      "sha256": "472a8426822b0fbe428d0427db7a69d001a81dbc7aee6e198b3e5ce1e8a4835b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md",
+      "size_bytes": 3566,
+      "sha256": "a9c6444e6e9acc9fab6175e81d8a8ea2189448ac7e17cd8655cc3c923728de08",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/COMPARAISON_BCF.md",
+      "size_bytes": 3968,
+      "sha256": "f41559242843ce923c7ccadc726c59aee50bfadbab667ccff172a79ed7e0eb61",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/DARK_RESIDUAL.md",
+      "size_bytes": 945,
+      "sha256": "004a9ab135d16743f5766208b42f968dcc8e10ac24322f018efc2986731ec749",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/DARK_ZETA_DETECTOR.md",
+      "size_bytes": 2526,
+      "sha256": "4e1f363bc2ac62404fdfa3ad84f7daee12fac62d9af8aa8f8bc0cce66059dbef",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/DAVENPORT_HEILBRONN_TEST.md",
+      "size_bytes": 2968,
+      "sha256": "09aa7b8c9b59830195b0e5aba2926ca0c71f3b9242f40390c61b0b1bda2e22b5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/DUAL_LOCK_COMPRESSION.md",
+      "size_bytes": 3282,
+      "sha256": "3060dceef0f818a12b5e397beaca2f187694947f513d3a035ae216724fac96ad",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/ENERGY_FRACTAL_DIMENSION.md",
+      "size_bytes": 9340,
+      "sha256": "cb22afc02ca354af2b00a810eaefd868cfd60cd755d6e60f6620507cf4bb6a87",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/H3_ANALYSIS.md",
+      "size_bytes": 4551,
+      "sha256": "830aa0c0953082922b8e2e2d6ca95ca9e2afb82b7bd233580517ea6cd217935a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/KNOWN_GAPS.md",
+      "size_bytes": 9766,
+      "sha256": "3eac7bc5f6b1483de53011658124c1402b8961ee945439e8c051595c5ce3ea19",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/LECTURE_CONSTRUCTIVE_BELLMAN_V638.md",
+      "size_bytes": 12692,
+      "sha256": "c820903bcb43ba2b11e6ce942a86668266f640a325184f0fbac38d638ac9134d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/LECTURE_CRITIQUE_BELLMAN_V638.md",
+      "size_bytes": 26138,
+      "sha256": "82db6686db1caf34520f2237f9a22f778279ea2682376004913e56412f6776f0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/LEMMES_BELLMAN_V638.md",
+      "size_bytes": 5964,
+      "sha256": "465325ff43c3bd2d7d10cfb947e246faebec45657dbcc48ea308203031c04201",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+      "size_bytes": 11304,
+      "sha256": "065c3a338e7b58fcbadd90f6d792e5686ba416e80bf3fd9b7895c058a4ab209a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/LEMME_RANG_JETS_V634.md",
+      "size_bytes": 6071,
+      "sha256": "88ca0562e345a6586904ed462ff3be0ec27557c08619273d355d2bb70c7f70bb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/LEMME_TOUR_ET_SPECTRE_V635.md",
+      "size_bytes": 17838,
+      "sha256": "767b0ad8cc3bb7377813e11bb98a15c1ab1ccb668608e0b124075198a38be275",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/MEMO_P2_2_WEIL.md",
+      "size_bytes": 4355,
+      "sha256": "2843c7ecdacaa05dc55cbeb39906c995b7696448c2c7125dde74a2e63d30d1f1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/MEMO_P2_3_DENSITE.md",
+      "size_bytes": 3663,
+      "sha256": "dbba077aac539ac5844896a3231f01d9015f76b7e200ec2582ad57cf4f7cea9e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/NB_GRAM.md",
+      "size_bytes": 4714,
+      "sha256": "50a70a9f33a03ee298e52957a49969179ad7de9dc15e43e423b316fb159ba34d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/PREUVE_NORME_V636.md",
+      "size_bytes": 9172,
+      "sha256": "3229240bd805df9c63a13b9c66ca36a1bed19d9dd9ac090f5c91d2023260466e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/PRIME_LOCK_DETECTOR.md",
+      "size_bytes": 2006,
+      "sha256": "dd09463a6f1e3f382db4c664a7b770e03cd5ee7875f6b7fd96958f094e0497d6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/RELECTURE_INTERNE_V635.md",
+      "size_bytes": 3301,
+      "sha256": "2bef3e956ea9fc7fc038945eff6ae370d48881a2397901e543864d58c956e3ad",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/RELECTURE_INTERNE_V636.md",
+      "size_bytes": 4400,
+      "sha256": "a9aa4142df633bdd5982f1dc5e471e055211db5cf6cddb64c5e649d673080ce4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/RELECTURE_INTERNE_V637.md",
+      "size_bytes": 17780,
+      "sha256": "a00001a2c8751b196b8bb7cd7b502256b598f36995156957d7e0521d6eaffda8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/SYNTHESIS_NOTE_EN.md",
+      "size_bytes": 18019,
+      "sha256": "cbce441480358e816ecbfab9445c5dbc11fcde18ee9f7c4c6c5e3412256ef546",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/preuves/THEOREME_TERME_DOMINANT.md",
+      "size_bytes": 5923,
+      "sha256": "4de396c3ef529ee0d0b232b63cebe1921d5c342d868759f3879feea4e9217233",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".md"
+    },
+    {
+      "path": "3_Preuves_et_calculs/requirements.txt",
+      "size_bytes": 343,
+      "sha256": "7f7a108c0539bd754783ae4adfa2cd74e271efc8cfd8115c4287be1e7a0cd542",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".txt"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/audit_dh_zero_count.py",
+      "size_bytes": 2022,
+      "sha256": "c46718fa7f55935058653617abf11f2c22f3c14fae0de7670f4d0bd7d0ccab5d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/build_v634_document.py",
+      "size_bytes": 13745,
+      "sha256": "4d568a66674ef3f21c6d07377f0b1ab044c356c223fcf37182d5888760ab2bd6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/build_v637_document.py",
+      "size_bytes": 20146,
+      "sha256": "afb483f46e01bd8a4f4d6f8fe1a7e5d2de014ccaa8c8344db77eaa238a1a1ef7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/check_delta_contour_mpmath.py",
+      "size_bytes": 1196,
+      "sha256": "dcccd5f4a1d45daf5f41ca3976dc2270063704f3fa801efdfe13d2f5056df4f6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/compute_L_chi5_zeros.py",
+      "size_bytes": 1520,
+      "sha256": "feffd96d7e1cadd10f30d116263305a168f20c401a50bbbb6bd626797659300b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/compute_delta_zeros_contour.py",
+      "size_bytes": 3348,
+      "sha256": "d577279f086a4ce6cae90e8411b4962b77f7a87c6cec0ce4b4e40211c164fc48",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/compute_dh_zeros_high.py",
+      "size_bytes": 1486,
+      "sha256": "d17542ff36b6222308ecf4d81172b8d97e8c2248a9b2c9c21fb5fc2048f9bb23",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/compute_zeros_numpy.py",
+      "size_bytes": 3312,
+      "sha256": "e9f54643b5d7fbe640fb6815ed2d16a5732a1bcac7839f32b6d25366d108cf7f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/compute_zeta_zeros_numpy.py",
+      "size_bytes": 898,
+      "sha256": "05e1faf571ca3af5d1b12b7b4160f04f838ddb17b698d2227e0dff2ccf856b45",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/dh_zeros_chunk.py",
+      "size_bytes": 1796,
+      "sha256": "4180d3fd7f974f9dd282ad9ea6c61a38563d8910b67a414b66e9c85bd9cba5df",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/figure_v634.py",
+      "size_bytes": 1957,
+      "sha256": "7439938c97cf47e756ef360549f013fb004f0a94f4d6e7e9a53d2d651ce6e54f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/plot_v635_tour.py",
+      "size_bytes": 1916,
+      "sha256": "676fb6b48e5098e2c02521b2fde0b2ec116175289ea99b350ae2200f62ba0d48",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/plot_v636_norme.py",
+      "size_bytes": 1128,
+      "sha256": "2b134ea705b91b564bd0c59a90097c6c15b24d609923e1da8565724f130f3b15",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_abelian_check.py",
+      "size_bytes": 2106,
+      "sha256": "2bccade6bdf8afe76c81c21dfc6711cfb33dd4d8fb5a9aaafa0678dd0a986ce3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_all.py",
+      "size_bytes": 814,
+      "sha256": "0d55f76cbc3d57677897952666b7534d8a1429cd8015d031a972c619ecfa1338",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_alpha_beta.py",
+      "size_bytes": 2417,
+      "sha256": "12b6869476fa7c35fd4c25589de1bc39e74200e098c200c72d181b79f81bcb29",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_archipel_relief.py",
+      "size_bytes": 7144,
+      "sha256": "10fe08566e48590cbd6e9ce72f7859b855122ffa71ea2584f4fe7b0cee4a9da9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_arithmetic_generator_demo.py",
+      "size_bytes": 1331,
+      "sha256": "21665fc4bf0150a4db71e4a7cf272191b4c622b04fe970f92e3a29117ce1d693",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_attack_audit.py",
+      "size_bytes": 4697,
+      "sha256": "2f3cbaa6b76a050632158a6da932ed0130e07282ad193907d72aad25ed84810e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_attack_controls.py",
+      "size_bytes": 3435,
+      "sha256": "4bc1a852d12142aabfbfaaaff533531e669dc449cc9405cbacfb1f4ed6660532",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_attack_extended.py",
+      "size_bytes": 4926,
+      "sha256": "fd4e46d5730303531ffaed3907e6af026eec476b1eedc3a02a4a34ce8477716e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_attack_iter.py",
+      "size_bytes": 6579,
+      "sha256": "68c8e4471074576e2e4778e87a862a3f879a5f054d639aa031be77223351f172",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_attack_nb_family.py",
+      "size_bytes": 4288,
+      "sha256": "22e877f08a8be2baf14459a192192e35a6bf137b56111d28bc35f8068e2fe881",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_attack_v54.py",
+      "size_bytes": 3569,
+      "sha256": "97ad9e805a9012c6a3f50f953155476b1f25eb7694ae76df1b389f0b3761a1db",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_base_change.py",
+      "size_bytes": 11523,
+      "sha256": "a37ff8db7460cf3103800aed4561694df26917d76ba9639fd39092d3d44be486",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py",
+      "size_bytes": 4786,
+      "sha256": "6cbe29ad29ca60b04a2922f541df7d180978f77a4a6e7a5b7169a1b791c88462",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_carre_continu.py",
+      "size_bytes": 5430,
+      "sha256": "5c2e88d1cad507b87ce7ffb3f091156c8ef5a3678ed99ddcc760e955cc9cb11f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dark_residual.py",
+      "size_bytes": 2755,
+      "sha256": "76ae00e80f91c1fe571f3f75a39d8102bff3b0a47fd1e0e7e1b40d9a3d06161c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dark_zeta.py",
+      "size_bytes": 7095,
+      "sha256": "fa561c644645e12db6169dce9a6a707c11694e7bf4560f394d33d9eed087655f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_delta_heisenberg.py",
+      "size_bytes": 9187,
+      "sha256": "c9f744c2862209958d495667b344b84f9bcad5f5f19ff2dd185af39f0b6c2375",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_detection_threshold.py",
+      "size_bytes": 14887,
+      "sha256": "1bd44acfb2fcef5e1ee8cf53c8d0b1e92681421a3d9b2d68e689993a265e7377",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dip_width.py",
+      "size_bytes": 3091,
+      "sha256": "bbaae1b2467b23dc6e08d39d97acd89517e3061dcd7903c03ecc09784d29ec0b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dip_width_full.py",
+      "size_bytes": 5486,
+      "sha256": "a80a8f05e65c7eee84bc3d58b1446b73aacc4f83f5c9a451bbc9bdb4147ccb2e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dip_width_heights.py",
+      "size_bytes": 5380,
+      "sha256": "cfce21068a0abe61954ed4fe36584f9042aef227f3f4b4ef3d969e87dd5f67f6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dual_lock.py",
+      "size_bytes": 4601,
+      "sha256": "3b4ba0e09e3b265d2d40020dbeef49f204dbe468c85b6fcbd96bc361cccf3ae4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_dual_lock_audit.py",
+      "size_bytes": 3849,
+      "sha256": "912889917e8dc6aa30e5578a4f6e66fc111607efd43399b2fb366ebf1c40b1b0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_energy_dimension.py",
+      "size_bytes": 2996,
+      "sha256": "d03461c9650a826c2f6dd698afe1d8d1f8004e8cd2811dc76a634bfe7eb61273",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_euler_archipelago.py",
+      "size_bytes": 12759,
+      "sha256": "63caf1401b56ed6f6548de5d95a6aeb008405f9b090ceebd2c7a6ebc96729706",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_euler_right_of_one.py",
+      "size_bytes": 2834,
+      "sha256": "2d9983688f222a45d29d7283fd8c3f8c1495573910e3844f09e5f792573c1e61",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_explicit_formula_audit.py",
+      "size_bytes": 4624,
+      "sha256": "5a8a524eee919699f07235e07aa7feebccf956d36101692dc6b77fe26c98c41b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_family_mod7.py",
+      "size_bytes": 12943,
+      "sha256": "4ca7f292c8c7aaa6ba77d57c4e388bb34bbc83d1a3098ce37a71c4dce84a0a89",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_family_mod7_proved_part.py",
+      "size_bytes": 3490,
+      "sha256": "af70826b09ef602c3261089d245897007915888dc9f7f5153452b6fcd2d76ed9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_force_multiplicativite.py",
+      "size_bytes": 5698,
+      "sha256": "1f8bf4070844a2d0a4058533ae5d3b00f4cc1b395971fd1d0527d4684800e80a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_frobenius_chain.py",
+      "size_bytes": 11941,
+      "sha256": "97c270afc49ee82d46e1f6120a98a4251bbd52e9ac546bd90c63415ad501bf60",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py",
+      "size_bytes": 5470,
+      "sha256": "6f5c843b52659cfccb650bbe4b2696af74c8607ac61a7c37c8ce193b4c5af97a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_function_field_analog.py",
+      "size_bytes": 2705,
+      "sha256": "a1c0b04e1f37d7e465a440efcb5fdc4a6eba225d5079cbc61650d8d3eb3dbb8e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_generator_real_signal.py",
+      "size_bytes": 2998,
+      "sha256": "971c39934cd46a8ef75e92eb655c83156f10c076d6b926b9b5d9d30f0bc378e1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_gonek_moment.py",
+      "size_bytes": 1775,
+      "sha256": "20d04752729d56b885653a192a5ac90dfc54ce2ee88734c57ac424cc1e0be712",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_gps_latest.py",
+      "size_bytes": 1502,
+      "sha256": "e6ffadf4d03ecd3ace1ea12d2753579f70769798f957890b10a0774d3253951a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_h3_gaps.py",
+      "size_bytes": 1317,
+      "sha256": "5ac5d3488ffb174985b6493638bde43f92ec4c96324848cd0e1e15f895f6e766",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_localisation.py",
+      "size_bytes": 1442,
+      "sha256": "c2dfea663b689600725b3cfdc2e487c4bdab138c1cf704045d4c9a0e45bde12f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_lock_independence.py",
+      "size_bytes": 4524,
+      "sha256": "27dfd31a86359f3ade19f30ba865da26d88f35200d3e89fcbe5db6ac2e44f8eb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_metric_height.py",
+      "size_bytes": 7889,
+      "sha256": "aec216ff9814a3b241a717d1f72f4c620416edf3507fdfde1a611aa850bffcc6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_nb_gram.py",
+      "size_bytes": 1082,
+      "sha256": "896170e5a94734f9f09d9e3f2a2a95378564ec663f08b9fe07b47cbdace617d2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_nb_gram_ext.py",
+      "size_bytes": 1648,
+      "sha256": "2e34a1e59c3d4e666d759563c9b1db2e9be2e445595fe1d3fed5ee37f3aa4878",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_object_vs_form.py",
+      "size_bytes": 7764,
+      "sha256": "9c3dc5dbd7dac18cc3bfc041d98c67f8dae451caf2a4b71ff471dfafc16e2b15",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_palier_quatre_tiers.py",
+      "size_bytes": 9702,
+      "sha256": "7426c6ae7501d191576bc32eabdfafaa81371025685c762391f88236c5ef8321",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_pole_cancellation.py",
+      "size_bytes": 4304,
+      "sha256": "4971fd33e6c4ad83f095beef9c508fb79b8e7ea90868b6077d6a10429adbf519",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_prime_generator.py",
+      "size_bytes": 14320,
+      "sha256": "54cf028d3647252971c54a4a1c929b88cfba105aacbd73b5cb8bd0aa4dfba1db",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_prime_lock.py",
+      "size_bytes": 4931,
+      "sha256": "a1c046181d04c43823efdeccacfe6c9cbad06dc82b1df15d0c4fdc383a86c826",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rank_law.py",
+      "size_bytes": 8040,
+      "sha256": "016c24addd118df6cd5c7ab2a7851e5ff37522ea1c98fef2c5cf4e1167d6bc27",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_reduced_model.py",
+      "size_bytes": 10580,
+      "sha256": "d62fb3fa7dfb37f2a21698dfe9e8eadbcdce179f9d5ab286078b5501911d6c7a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rejected_reread.py",
+      "size_bytes": 9926,
+      "sha256": "e9a46fd9892a2f2ab26278ca4375192bac66fc4154d4527d3632e781f4008049",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rejection.py",
+      "size_bytes": 1084,
+      "sha256": "d0a23b2ca94cd2808bdaca5fbda95e81def8a5dce407cb6fc498a86726ab74a1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rencontre_a_n.py",
+      "size_bytes": 7330,
+      "sha256": "e1e5d243dd02fea0270ff064e4e8c87dcfa035c3e7a992d24cbffe25b304a896",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py",
+      "size_bytes": 13675,
+      "sha256": "1fe79efcfbbc5668c831698ae3bc72ca558c05fada557923eeebc84b1dc80e2b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rencontre_degre2.py",
+      "size_bytes": 19665,
+      "sha256": "9aee09e28ed35e093682562eba0c6aceed2f8076158b5bcc270dca5d4c99a8a1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py",
+      "size_bytes": 6653,
+      "sha256": "3050610aa3c0c179b4ca80d8775046ace0d08d0b8acf5eaef72c27079f6156c0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rh_heuristic_flatness.py",
+      "size_bytes": 1641,
+      "sha256": "73e803671e98bd883049b75daae21d9b96a32ee0efcd37e0a80dae57a0591a71",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_rh_heuristic_test.py",
+      "size_bytes": 2096,
+      "sha256": "b8f8e265449bb17f995ce16c4a807de1ae231c87c9814339cd586b797d6c26d6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_riemann_roch_virtuel.py",
+      "size_bytes": 7235,
+      "sha256": "9c65e1e22d7cd9952a32e5923dbdeb1edfd75c71719e3f73c4668aab82b89d28",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_schrodinger_flux_demo.py",
+      "size_bytes": 2485,
+      "sha256": "d42f51ab95c39349f2481eac8b2ae5bb7bc3a7427e447da924c074c3749e0330",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_source_localization_demo.py",
+      "size_bytes": 2015,
+      "sha256": "c92b21c9d26ecc3d9f91adbec09f44799100596353dca4595b83798f2666feeb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_stability_model.py",
+      "size_bytes": 13687,
+      "sha256": "13cce40fdfafb9011a2c92dd288ba32031b8bca89da56a51e2a9e7f888bf63cf",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_surface_virtuelle.py",
+      "size_bytes": 8340,
+      "sha256": "3eb95b43931ef787c0916f4db6b5b4164aecc55e02fbb40a2d8d883ddb20e855",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_tau_threshold.py",
+      "size_bytes": 9057,
+      "sha256": "9a69118bcd204a7c8024ef0b3a2e373b7942ffa4092db805014f36a4b875d4f2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_tomo3_channels.py",
+      "size_bytes": 2383,
+      "sha256": "657658955c8cef3056e7cb16ce83b3c4cf81211973c53245ac6096423de54b20",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_tomo_zero_reconciliation.py",
+      "size_bytes": 2974,
+      "sha256": "c75eed0aaa946bdcf362f42d0b8770bdd5ad81dfefb81ce499c708d815b51721",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v2.py",
+      "size_bytes": 1288,
+      "sha256": "c921b40a46c330206805393ca872d647b6702a16da04b430c787ab0b9b199a09",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v3.py",
+      "size_bytes": 1275,
+      "sha256": "6b10751feba70f7fe0c97ac0f79ac10e0d44ea3b956bdf2c97d4734d124ed4d5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v624.py",
+      "size_bytes": 4724,
+      "sha256": "b00d26a1666e0afa5710d67de7e4aa4946a18371e787329de951f39390a9a02f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v634_jet_bound.py",
+      "size_bytes": 1739,
+      "sha256": "6cb19f74ce7b70812a8ab0bb98605e953284e7a33b182c76d98ec7ddb5d2179c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v634_relief_direct.py",
+      "size_bytes": 7458,
+      "sha256": "e486cfd92b8fc737cc0c6eed578261a87d711a4e832e14458f4cfd197a801348",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v634_root_crosscheck.py",
+      "size_bytes": 3034,
+      "sha256": "9c0a4729bcae334f991f06169f1d33562f71db0be2a865dfa5657caadad09fe9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v636_norme.py",
+      "size_bytes": 5304,
+      "sha256": "56d49d0af51b9c3ccbeaa9c771c7d45175d73a2f679e1debda53841c42e1ca33",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v637_apparie.py",
+      "size_bytes": 13036,
+      "sha256": "8a217a6309badb1bab8876c6978c654c860d3d3fd248c3be3711c461f9f1bf8f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py",
+      "size_bytes": 13114,
+      "sha256": "08e46d0e6863a886627f21b390d06b23aa8828d66aec831c0a332fa0cf72e9e1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_v638_bellman.py",
+      "size_bytes": 2477,
+      "sha256": "3e3ddfde4ec2329a6cd295062a7d791c8ab54e343b0b660f88013029ef1fa576",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/scripts/run_zero_difference_resonances.py",
+      "size_bytes": 4591,
+      "sha256": "e77ccd12cd3534829a2c70a02118d86379d630edfabba86c842474b60b9d9772",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/arithmetic_generator.py",
+      "size_bytes": 5090,
+      "sha256": "5fd3f8009eb52304f19df659d8c4f93918be16063f8d63489657b0aa9c480844",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/base_change.py",
+      "size_bytes": 3330,
+      "sha256": "c5d0a919239afce2cc4765fc5c4a6c48295a27a004c04194fb861dceca1f057f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/bellman_research.py",
+      "size_bytes": 5652,
+      "sha256": "bfd0312a94acae3b4f8d8426360e709f92484a796ff1e02b5cfde5c9fc2d877d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/dark_residual.py",
+      "size_bytes": 4395,
+      "sha256": "f5a9ea3bd1408785df9c8af973246b773ee4e7b5c5d66e4f77eee94688f4206c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/dark_zeta.py",
+      "size_bytes": 10032,
+      "sha256": "87085201189d9eeb341b2f95656a21db8e3be007df634180a917a59b1da2823d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/delta_contour.py",
+      "size_bytes": 4566,
+      "sha256": "876955146f6743ad32668f725d64db4c3610ae301afd849fe15efe7ca3ddd3da",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/delta_ramanujan.py",
+      "size_bytes": 4217,
+      "sha256": "6d69d808c11ab2f89e8d4298a606bda843be336847faaab58947622e406d8d43",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/dual_lock.py",
+      "size_bytes": 12999,
+      "sha256": "0670829a992619497643278f3d1fd667b520ab0bacb8233747009b177eaada7e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/dual_lock_audit.py",
+      "size_bytes": 6211,
+      "sha256": "b78512f169d3a0b25e8882c59462024493aaa2bc30d7e4547bdce6ce948df2eb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/energy_dimension.py",
+      "size_bytes": 4128,
+      "sha256": "a0f177ee4bdc94a36a6db2e9f5b97e781c9a78d260ba86ad32e8bb08bf53b072",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/euler_archipelago.py",
+      "size_bytes": 9046,
+      "sha256": "7c19654a9ab020be3060bd8f88131cd175b8b5ee1a8182c3c223716ad976358f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/experiments.py",
+      "size_bytes": 5840,
+      "sha256": "4f79ae415b24e92a7ead07935638450fbc5b5c56775403c6989a2eaa7b825835",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/explicit_formula.py",
+      "size_bytes": 3338,
+      "sha256": "287c19ca7cf28f3c2d4b0342c56b8d303c21dec1e399ddda1ca86e468a6f082d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/family_mod5.py",
+      "size_bytes": 2895,
+      "sha256": "cd6e625045bd0d2ba7d009d2658a0e5a2bce41e5a3f3f5c7a1c2de532500cda7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/family_mod7.py",
+      "size_bytes": 3172,
+      "sha256": "cbe58af99ac73287d9e5dfc7aae2fff6a1451eb587d794241484fd73f76f7023",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/finite_field_jets.py",
+      "size_bytes": 9341,
+      "sha256": "f6be1410c56f36739851749a3eae389ac5475ba7e2d988867420bfe76859a9b2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/frobenius_chain.py",
+      "size_bytes": 5139,
+      "sha256": "6ca9dfde76e01aac47b1bd81ea48e224f1bcd73b279512859d2c0f773f6416a6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/function_field.py",
+      "size_bytes": 7953,
+      "sha256": "d3710f5faf2899e3414efa61f516dc44966ad34fa1d6ca962bd3de6f2d640468",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/gps_channels.py",
+      "size_bytes": 1825,
+      "sha256": "cbeea1e47500f3959b8b47dd9457dd213115e9b14a6af19f3bb81b120d9787b5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/jet_bound.py",
+      "size_bytes": 4695,
+      "sha256": "b4c3f67b64d1a1e9984f03842b031012f389b2bb3c45af19c84bf2a0fd888575",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/lock_witnesses.py",
+      "size_bytes": 6196,
+      "sha256": "4de4973a03836f691c31de7e3f344cd0331a5807aad7d45a5389601b4d689fc7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/nyman_beurling.py",
+      "size_bytes": 3201,
+      "sha256": "ef23ff3cb2efbde8779cb5754cb41123431c79ca7d09c43cb92babb8bfa0397b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/prime_generator.py",
+      "size_bytes": 9544,
+      "sha256": "cb8813cd8143a433cd870ccff598b549af73472582be3da8c47091a7a4cbe806",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/prime_lock.py",
+      "size_bytes": 9108,
+      "sha256": "8f616b0dc0fe5b5eca197389c558a57c6e4c4e4bfe4c4c62ee13db2876f5f95e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/rejection.py",
+      "size_bytes": 4581,
+      "sha256": "46bf51a7b20351b4a3aa93598b872e9bbd38e96b8120a586b292848b9071f8f2",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/relief_direct.py",
+      "size_bytes": 6518,
+      "sha256": "e457297d3954095b2561467cc8c50ff907100143794f5c30bf5535c6ba58690f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/rh_core.py",
+      "size_bytes": 6597,
+      "sha256": "22ffee5d556610ef95e64231e27fb8a5f64a58e631378d5b295613c5bef707ff",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/schrodinger_flux.py",
+      "size_bytes": 5357,
+      "sha256": "043ca9f32cd355d3e36be71ac2fc85283cec424e9bb33ff682f8ccd8e1f5de9b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/source_localization.py",
+      "size_bytes": 7715,
+      "sha256": "36733b8888361a5ad764a4e14597a507e2f97dd574664329e6854a0960dcdec5",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/spectral_calibration.py",
+      "size_bytes": 3552,
+      "sha256": "e248d0897893e6403e96462dcd7fa46e2407fdb05c744bfb448cbc925b396a24",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/stability_radius.py",
+      "size_bytes": 8749,
+      "sha256": "18a07ba2232b73bb1f2a84a8f0f1cb634200fd40c6b79924b729ec5dab50aecb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/v635_tour_et_spectre.py",
+      "size_bytes": 4314,
+      "sha256": "131af1dad8c39d4c086aeb66263e0d7580e25a239e781f5da3c0fc00ddb08f5a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/v637_apparie.py",
+      "size_bytes": 16083,
+      "sha256": "613af27c89cdd0ca8c9fd801f43abfa12633515feebe27000967b0a94a4b000c",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/weil_trace_intervals.py",
+      "size_bytes": 7002,
+      "sha256": "05298893a9f01c9f8af1d6d7f5e2114007e0f806b49fc66006f786260f07fccc",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/src/zero_reconstruction.py",
+      "size_bytes": 8864,
+      "sha256": "ad968413a2d4755a503373cfb9135063e50c8f30acdf16d6a0690480b7ed1bb1",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/run_all_tests.py",
+      "size_bytes": 1538,
+      "sha256": "880aa79bf105a0150e9a3864583a6aea113f1b21ffbcdcee1481c78cb60df8bd",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_dark_residual.py",
+      "size_bytes": 1388,
+      "sha256": "50f330581092acf2008efc752a85462b52af23de857778ae9d9e457881eb6455",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_dark_zeta.py",
+      "size_bytes": 1146,
+      "sha256": "42ebabec7cf5740bbbc40f6b856c57fe33e5b70bd95a81e91efebef39ad5dea8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_dual_lock.py",
+      "size_bytes": 1274,
+      "sha256": "5dcc99957fa1c8b25f70a15b2298e7e3b05fadff7c56702f62a0e9fca3c80f2a",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_dual_lock_audit.py",
+      "size_bytes": 1815,
+      "sha256": "b255e0d1ec511ba6d189894d3935853d0eeadfe20c9dc49ceabc44082ec72f76",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_explicit_formula_audit.py",
+      "size_bytes": 1992,
+      "sha256": "154c735bfcbee6f623ad2ebd89062149f719ee262ffe96e868a6158b140ef517",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_identities.py",
+      "size_bytes": 29938,
+      "sha256": "c1879cd58aa630471262f8c0026ada3c238d8859e4bec194b51889b100be702b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_prime_lock.py",
+      "size_bytes": 1483,
+      "sha256": "07c52a7a940f2054994efeff3d73c65a3e656d7908f829110978b65593ddb6c3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v610_navigateur.py",
+      "size_bytes": 1666,
+      "sha256": "62ebbae3292761b7a89c01a991a032bf4cf1febb4100ac765b0e9349ffb01693",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v610_prime_generator.py",
+      "size_bytes": 3032,
+      "sha256": "29975f106dd76bceb48c2a8c8244a83ec6339b2561aa1bfb81ac0db033a65f91",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v6111_portail.py",
+      "size_bytes": 1999,
+      "sha256": "c3887e51b831b44e898c524b593600f16f041201ce8b7a5be12b041222423137",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v611_base_change.py",
+      "size_bytes": 2613,
+      "sha256": "89738bb319fa156bfde1a04c1221b741700c76aaaef1748ae5c0b18058eb4dc3",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v612_reread.py",
+      "size_bytes": 2273,
+      "sha256": "1e96b522fa69611761fe5781a3a51ea08d5286df4cd8a0575a1ab01344625456",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v613_relecture.py",
+      "size_bytes": 4199,
+      "sha256": "7a6a8725470c0d300b1a7568b4ce14fdf408295dc63fea692a32c2d7f8764c27",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v614_seuil.py",
+      "size_bytes": 3117,
+      "sha256": "65027cde271188a194e1b0519d87d0c5d446ff5045a18e6f0f43926eb31fd6c9",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v615_degre2_recensement.py",
+      "size_bytes": 3322,
+      "sha256": "cb84d02b55a38cf01f5522f6b17013e9bc11a958c9f3ad7e2d6e58fd6b14ea7b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v616_rencontre_croisements.py",
+      "size_bytes": 3345,
+      "sha256": "36eb2e8f280a8e09e8bfd81fa6778d66064590b112485dbdb82b7fd8049732ee",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v617_degre2.py",
+      "size_bytes": 5140,
+      "sha256": "2dbb6338d23ed6e8fa24e8a0d501ed32952ad8abb0cf0b768a2645c8088136a6",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v618_sources.py",
+      "size_bytes": 1638,
+      "sha256": "5de55e774801597cbe9f683394d0111ee14c80001ffc8873ab598aa03cce37f7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v619_rencontre_a_n.py",
+      "size_bytes": 2808,
+      "sha256": "d3e68a75f1e0a4347133b85e4787d9ed7ae9436e8f0c561df61cb9e1a005b933",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v620_palier.py",
+      "size_bytes": 2336,
+      "sha256": "e3552644878c54acbd217363f477cbfce702b9e9bc4d31b3b4d00493f8f13b62",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v621_surface.py",
+      "size_bytes": 1771,
+      "sha256": "009743f6749cc394a8f9a9f0cea9c798bf4a2065fa057996db5f83532761261b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v622_riemann_roch.py",
+      "size_bytes": 1399,
+      "sha256": "7a5dbe42004fd348e8e78a0c194866fed2ff16219dc5fa99d51b16b0300b3f27",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v623_frobenius.py",
+      "size_bytes": 1334,
+      "sha256": "59030b26e41861d3346e0aae35ac312a2343aedb56067cc570ab5ce406ec7ddb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v624.py",
+      "size_bytes": 1212,
+      "sha256": "c9ef3e214a15e17e517b5e165d144b64da2996a7bf37f149a2e0b83c9fdac218",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v625_unites.py",
+      "size_bytes": 1091,
+      "sha256": "b94ff0463b49349c7ff185f404bc7b133cd01d9cec8635c8f38b75b31082f404",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v627_carre.py",
+      "size_bytes": 583,
+      "sha256": "a99153e8008048f2085d6da1f839f4e30911320014b06fd369149bc99478f7de",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v628_hauteur.py",
+      "size_bytes": 1075,
+      "sha256": "1260e96a30b597e8e6dffacfe146a98bec02808b765feecdc3b31e6c2512b0aa",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v629_bblm.py",
+      "size_bytes": 2022,
+      "sha256": "b16b2e5f546f1438914c628038a1451ec129dbc5afb00120b60cd1cd111df48e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v630_articles.py",
+      "size_bytes": 1866,
+      "sha256": "8bd5a815da48ca17e457f638bfd3f2cfbb758318c99fbd6d6ec8bf7e6422ad1d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v631.py",
+      "size_bytes": 1387,
+      "sha256": "1a59baffacc51b3f82c1b2acb08248de47211db84eb62eaddade53b516c25e3d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v632_encodage.py",
+      "size_bytes": 1200,
+      "sha256": "dcd24e61c7c431737e91f9c8cdfd77d0c69af1178eb48d6b8689fde09ae9645d",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v633_force.py",
+      "size_bytes": 1195,
+      "sha256": "6b327b20f1fc2379b20061abf81319658c0f876c1f01f15d3eb57f95756f4fcb",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v634_direct.py",
+      "size_bytes": 3000,
+      "sha256": "fa14a7480f163529b77a2e56eea6273881927701b2a7d578a0922f665a85d33f",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v634_jets.py",
+      "size_bytes": 1575,
+      "sha256": "e2e2352fa592929462644bb420bdf21a1401dcded133da6b17d1970f57e91d65",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v635_tour.py",
+      "size_bytes": 4715,
+      "sha256": "d14c2cc630fe7314cca99263cac86e1631d31b7948e061510507d514a2ace5e0",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v636_norme.py",
+      "size_bytes": 3482,
+      "sha256": "7e432b2947cbae7fde4aca7664285ffb1a30e14ce905041bf01a050379ec4f41",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v637_apparie.py",
+      "size_bytes": 7055,
+      "sha256": "038bfb01d5078822154bea5c3e7a27fe3beee4c9ecf4c580c311e20b05ca8aa7",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v637_root_crosscheck.py",
+      "size_bytes": 3543,
+      "sha256": "9a8ed6ded65eedc8c1f2cb3c4456eb5a07bb0226b410ad3d30341a39bd90bb7b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v638_bellman.py",
+      "size_bytes": 2531,
+      "sha256": "3864fa55852fd11c4b55a7fdc9ea21ec6202c738c7f90436faf64571aa778561",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v63d_classification.py",
+      "size_bytes": 9082,
+      "sha256": "5a4011ecc7e780b8346a3d41adcec9c125d1e64d874ead45df010af7e700a2fc",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v64_mpmath_crosscheck.py",
+      "size_bytes": 3713,
+      "sha256": "16369319e9dd382c0a0cb5e93353e392e8851737a7b5437cbe985703f4791757",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v64_tau_threshold.py",
+      "size_bytes": 3666,
+      "sha256": "cfbbc8ee9073da015c2d39ed9367f16b2ddef6065e8326bc5fc4926fe3ad712b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v65_family_mod7.py",
+      "size_bytes": 5508,
+      "sha256": "fd050d7f43ee6901622f745dfd3296fa04d5b9c43044c74d9cb596c2e010f86b",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v66_reduced_model.py",
+      "size_bytes": 6070,
+      "sha256": "5e949f1f3c56da63d8598f769c91e351fede15261b32cc03c4a08c1aadb7f575",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v67_stability_radius.py",
+      "size_bytes": 8014,
+      "sha256": "9ce40a263b3cd5999b640684a3f08bb187da798ac77581f119ab815df5d51e9e",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v681_indicateur.py",
+      "size_bytes": 1310,
+      "sha256": "9af8096c65e0123d0354fcd9445b6ed6c6c2f6e47af27048cd1d412ba96b3b77",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v68_euler_archipelago.py",
+      "size_bytes": 5398,
+      "sha256": "cdc447bae66c6125fc8094f64147bbdf543e5e686f9d73caa3ef14115f6b94f8",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "3_Preuves_et_calculs/tests/test_v69_frobenius_chain.py",
+      "size_bytes": 3997,
+      "sha256": "eab365bb903ab4ee44057ccab7d205029399bcedff942e0f18d83cb0c7ced3a4",
+      "family": "3_Preuves_et_calculs",
+      "extension": ".py"
+    },
+    {
+      "path": "4_Archives/NON_PUBLIE.md",
+      "size_bytes": 707,
+      "sha256": "b339e7071c6736acf1645402f77e6bfa0b642ed8443db93daf4b2dca19577c40",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/REFERENCES.md",
+      "size_bytes": 5300,
+      "sha256": "94b82f8f487b4dc48e3cf64eb07f6529b946672d235b9a657d160c07cd432f63",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/REPORT_FR.md",
+      "size_bytes": 21509,
+      "sha256": "0dc78364c27d3096fc51531025e5ac14fb8385090abdbc257c513442e6369f46",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/ARITHMETIC_SCHRODINGER_GENERATOR.md",
+      "size_bytes": 6682,
+      "sha256": "74ff014708d6b6c347c166cc632aee07a36c5ec25624b91b4efbb8d6abd57738",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/AUDIT_V4_3.md",
+      "size_bytes": 5647,
+      "sha256": "8b226f597dd3dbc639e831fc932bee7eb62186db9622cdf21717cf880334915c",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/CALIBRATION_SPECTRALE.md",
+      "size_bytes": 3796,
+      "sha256": "8d7f17912bbb452db936f4ba0ad26b393510f8620b220f4cb762eee8f5cc0f99",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/PRIORITES.md",
+      "size_bytes": 8436,
+      "sha256": "6504e555db05beb88d9b6f7bf1d2f6e0690cee32c0d47ddb3213a8c9c053c03d",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/PRIORITY_CHECK.md",
+      "size_bytes": 2534,
+      "sha256": "9b93c96815aa835315ecfb950d26b9d0ef73a1b5f57236d77e23801069616cad",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/REVIEW_PLAN.md",
+      "size_bytes": 1220,
+      "sha256": "c59af4819df4d7216438b145d4c21c202e0eccf1b86e8c3f02b07cbd5c8f8de1",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/ROADMAP_HISTORY.md",
+      "size_bytes": 28982,
+      "sha256": "bdecf1d2de90a4f19d0a5283e4a404749e5f063b738a8afb8765a835f55b04d5",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/SCHRODINGER_FLUX.md",
+      "size_bytes": 10471,
+      "sha256": "97ab8fc5a12a5b6714cf432950114b638eab2593c7a9ed6e31f92083455e97f3",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/SOURCES_RH_PROGRAMME.md",
+      "size_bytes": 19587,
+      "sha256": "92e67174663b2985940fea24da2b450418e1f9b0000da7ebb22a1d03ed663f2c",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/SOURCE_LOCALIZATION.md",
+      "size_bytes": 7821,
+      "sha256": "481633323182da7824f789b4ac94e9d2283c2375d28ec95d0027b0a55caf51bd",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/docs_techniques/USER_CORRECTIONS_2026-10-04.md",
+      "size_bytes": 3002,
+      "sha256": "92e154e517d612eff1e7e1fa0a86314e19bcf07029832c37209c3f492c464117",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/historique/AUDIT_STATUS.md",
+      "size_bytes": 3319,
+      "sha256": "61a3d07282a42833d6fd252f136c3995fde2b878cf95322ab974d9739cfa342a",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/historique/CHANGELOG.md",
+      "size_bytes": 78720,
+      "sha256": "dabc503f5859ceb3e6d07543ab52cc774b0251089f7ed25d0b27aa45bc531c62",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/historique/documents_v5/01_Synthese_FR.docx",
+      "size_bytes": 160496,
+      "sha256": "135bfc972df2b238c4359dad0bca4d7949f6dee5dba34fab16966d90850d7218",
+      "family": "4_Archives",
+      "extension": ".docx"
+    },
+    {
+      "path": "4_Archives/historique/documents_v5/01_Synthese_FR.pdf",
+      "size_bytes": 212791,
+      "sha256": "033254d87be6ea0eb672cc90f92517bca0ac3daeb1034597ce17cbbd98987b5c",
+      "family": "4_Archives",
+      "extension": ".pdf"
+    },
+    {
+      "path": "4_Archives/historique/documents_v5/06_Cheminement_intellectuel.docx",
+      "size_bytes": 137262,
+      "sha256": "19707eb79502cc2c63d903eeef827750547983a4f6ee3cef3ba093a12515010e",
+      "family": "4_Archives",
+      "extension": ".docx"
+    },
+    {
+      "path": "4_Archives/historique/documents_v5/06_Cheminement_intellectuel.pdf",
+      "size_bytes": 217344,
+      "sha256": "97b038d0af6a50bcaaa307768a13f0b672217c327598d871b03e033e7ebb129f",
+      "family": "4_Archives",
+      "extension": ".pdf"
+    },
+    {
+      "path": "4_Archives/historique/documents_v5/07_Guide_de_lecture_intuitif.docx",
+      "size_bytes": 51565,
+      "sha256": "8150f44fe38f53f08165143f97b574c6243a5f35d6b9ce086f110a8bd079d2c8",
+      "family": "4_Archives",
+      "extension": ".docx"
+    },
+    {
+      "path": "4_Archives/notes/LATEST_GPS_ANALYTIC.md",
+      "size_bytes": 2838,
+      "sha256": "50b1f20b93c5ae352128096470de5ad6c50542175576ae8858e628b5ca75c174",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/recus/V637/prevision_v637_apparie.md",
+      "size_bytes": 2599,
+      "sha256": "844842c26c5eb0bb1ebe0092792753d1255448a1b2005d23e90b1c497ef1a802",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/referee/README.md",
+      "size_bytes": 931,
+      "sha256": "0283b776679b758f2389c1f9ef54e476c04d7ff39810ec6f944bb6451472a061",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/referee/REFEREE_A.md",
+      "size_bytes": 3269,
+      "sha256": "f38f2704c6d3084a4c4638ba389776708185eb8fc5e3022dda3997b639d08bb0",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/referee/REFEREE_B.md",
+      "size_bytes": 3596,
+      "sha256": "4e58955b43da03444f5ef6792a84abccafb5764255eeb0927715def274d9ae95",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/referee/REFEREE_C.md",
+      "size_bytes": 2869,
+      "sha256": "c4ff9f6e38225a8be08157f3a6a924abd8bc66cc8602d765640a8a1a10208576",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/referee/REFEREE_INSTRUCTIONS.md",
+      "size_bytes": 2327,
+      "sha256": "4796243a6fd6b5ab4426df6d3b415354c409474a66cd8cef5d5161c7aeab953a",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "4_Archives/referee/REFEREE_SUMMARY.md",
+      "size_bytes": 1745,
+      "sha256": "79f806a5d9aee17e839f32086d85249f93089ef59ae2c3b14530ea9174183d3c",
+      "family": "4_Archives",
+      "extension": ".md"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 769,
+      "sha256": "7aa811c341104f91cd581bfbc8197965690930c50c363588d4de3a2b21ed6f48",
+      "family": "entrees",
+      "extension": ".cff"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1267,
+      "sha256": "c7bebbe3eff697d172cc92d1430136a1add7aadf7f7e552d4342dbdc7f92b40e",
+      "family": "entrees",
+      "extension": ""
+    },
+    {
+      "path": "LICENSE-CC-BY-4.0.md",
+      "size_bytes": 1381,
+      "sha256": "5653825eb82d3f4db88e3156777340cd4920cd7addc095a55107b49a83b440f6",
+      "family": "entrees",
+      "extension": ".md"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 73338,
+      "sha256": "613eaf5f7c85781018320aad63e0ca9ae74bbb87bc6892e2c4a116cce42f3647",
+      "family": "entrees",
+      "extension": ".md"
+    },
+    {
+      "path": "VERSION.txt",
+      "size_bytes": 19808,
+      "sha256": "d5d5f1a8038dae9e6ae68732f47b0a13e294ecf2d21d5a2b50e4b5289f116597",
+      "family": "entrees",
+      "extension": ".txt"
+    },
+    {
+      "path": "dual_run_output.json",
+      "size_bytes": 5007,
+      "sha256": "e0ff8d7a32277c8ed1f37ba0f43d98e8b43ba90dc70a6ca7aeb97df91d505e1d",
+      "family": "entrees",
+      "extension": ".json"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 76,
+      "sha256": "0c3ed6f07cb9283ddda53615c3cb68be2464906d66c004177ee0c6bfdcd35e15",
+      "family": "entrees",
+      "extension": ".txt"
+    }
+  ]
+}

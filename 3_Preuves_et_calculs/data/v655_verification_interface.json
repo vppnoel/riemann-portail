@@ -1,0 +1,41 @@
+{
+  "chromium": true,
+  "views": [
+    {
+      "page": "portail",
+      "desktop": true,
+      "mobile": true
+    },
+    {
+      "page": "indicateur",
+      "desktop": true,
+      "mobile": true
+    },
+    {
+      "page": "navigateur",
+      "desktop": true,
+      "mobile": true
+    },
+    {
+      "page": "carte",
+      "desktop": true,
+      "mobile": true
+    }
+  ],
+  "python_js_bellman_cases": 26,
+  "interactions": true,
+  "original_details_checked": 276,
+  "legacy_case_routes": 38,
+  "compact_documents_menu": true,
+  "direct_bellman": true,
+  "all_file_types_searchable": true,
+  "catalogue_pagination_ideas": 69,
+  "archive_filter": true,
+  "advanced_2d_maps": 3,
+  "advanced_maps_mobile_visible": true,
+  "original_indicator_charts": 7,
+  "original_navigator_rails": 7,
+  "pdf_links_from_ideas": true,
+  "console_errors": [],
+  "snapshot": "ff4df2e007c076e2e9a28b53c17b7e8e4546f8060f1c8e0ac8dffa585e830c5e"
+}

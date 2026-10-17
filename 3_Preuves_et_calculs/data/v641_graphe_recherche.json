@@ -1,0 +1,242 @@
+{
+  "version": "V6.41",
+  "title": "Graphe des passages vers RH",
+  "nodes": [
+    {
+      "id": "image",
+      "label": "La paire dans le labyrinthe",
+      "status": "idee",
+      "x": 1,
+      "y": 0,
+      "detail": "Changer l’objet suivi : une paire non ordonnée, son centre et son discriminant. L’image guide une construction ; elle ne prouve aucun signe.",
+      "source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md"
+    },
+    {
+      "id": "fibre",
+      "label": "T1 · Ellipse et fibre S²",
+      "status": "demontre",
+      "x": 0,
+      "y": 1,
+      "detail": "Pour toute cible complexe A prescrite, eta décide exactement : fibre vide, singleton ou sphère affine S². Hypothèses : rang M=2, ancre positive, 0<r<π/4.",
+      "source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md"
+    },
+    {
+      "id": "jet",
+      "label": "L4 · Sections de jets",
+      "status": "conditionnel",
+      "x": 1,
+      "y": 1,
+      "detail": "C c=b et ||c||=1. Au rang cinq, nu<1 donne deux candidats, nu=1 un, nu>1 aucun. Le rang exact et Ztt≠0 sont à établir pour appliquer le résultat à une collision.",
+      "source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md"
+    },
+    {
+      "id": "pli",
+      "label": "T2 · Pli critique double",
+      "status": "conditionnel",
+      "x": 2,
+      "y": 1,
+      "detail": "Z=Zt=0 et Zr Ztt≠0 donnent une paire locale. mu′(0)=−2 Zr/Ztt. C’est un théorème analytique sous hypothèses, distinct de leurs vérifications numériques.",
+      "source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md"
+    },
+    {
+      "id": "variation",
+      "label": "Voie universelle D fermée",
+      "status": "ferme",
+      "x": 0,
+      "y": 2,
+      "detail": "A=0 est réalisable à r=13/20 : D≡1 sur une fibre intérieure. Au bord, la fibre est un singleton. Cela réfute « D varie pour toute cible », sans réfuter une variation générique.",
+      "source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md"
+    },
+    {
+      "id": "paire",
+      "label": "L5 · Moments et compagnon",
+      "status": "conditionnel",
+      "x": 1,
+      "y": 2,
+      "detail": "Contour isolant exactement deux zéros, sans pôle : a=m1/2, Δw=2m2−m1², mu=Δw/4, H=[[a,1],[mu,a]]. Aucune étiquette de branche n’est nécessaire.",
+      "source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md"
+    },
+    {
+      "id": "mesure",
+      "label": "20 plis candidats · 18 blocs",
+      "status": "numerique",
+      "x": 2,
+      "y": 2,
+      "detail": "Deux grilles, recoupements à 40/70 chiffres, six plis attribués, 18 blocs et 24 racines. Une perte sur la grille coarse est conservée. Pas de certification par intervalles ni d’exhaustivité.",
+      "source": "3_Preuves_et_calculs/data/v641_blocs_paires.json"
+    },
+    {
+      "id": "prefixes",
+      "label": "G3 · Préfixes insuffisants",
+      "status": "ferme",
+      "x": 0,
+      "y": 3,
+      "detail": "K_M=I−2|e_(M+1)><e_(M+1)| : tous les préfixes jusqu’à M sont positifs, mais une direction négative reste cachée. Impossibilité pour les opérateurs arbitraires et les seules données finies.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    },
+    {
+      "id": "pont",
+      "label": "Pont V13 → ζ manquant",
+      "status": "ouvert",
+      "x": 1,
+      "y": 3,
+      "detail": "Le compagnon local et sa métrique ne sont pas la forme arithmétique de Weil pour ζ. Il manque une identité arithmétique, un domaine et un contrôle uniforme. Aucune implication n’est actuellement démontrée.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    },
+    {
+      "id": "g1",
+      "label": "G1–G2 · Tests et densité",
+      "status": "demontre",
+      "x": 0,
+      "y": 4,
+      "detail": "E=(∂²−1/4) Cc∞. Les espaces E_L,N sont denses dans la topologie des tests. La positivité de tous ces espaces passe au global si la forme est continue ; une liste finie ne suffit pas.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    },
+    {
+      "id": "g4",
+      "label": "G4 · Queue et couplage",
+      "status": "demontre",
+      "x": 1,
+      "y": 4,
+      "detail": "Pour K borné autoadjoint et A≥aI>0 : K≥0 iff C−B* A⁻¹B≥0. Budget suffisant : C≥cI et ||B||²≤ac. Les estimations arithmétiques et les domaines requis restent à fournir.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    },
+    {
+      "id": "borne",
+      "label": "Borne sur Q(X) à obtenir",
+      "status": "ouvert",
+      "x": 2,
+      "y": 4,
+      "detail": "Obtenir Q(X)=X^{o(1)} directement depuis les premiers. La positivité automatique Q(X)≥0 n’est pas une borne supérieure de croissance.",
+      "source": "1_Presentation/articles/article1_mean_square_double_poles.tex"
+    },
+    {
+      "id": "weil",
+      "label": "Porte 1 · QW sur tout E",
+      "status": "ouvert",
+      "x": 0,
+      "y": 5,
+      "detail": "Critère publié : QW(f)≥0 pour chaque test admissible iff RH. QW est l’opposée de la somme locale dans la convention Fourier. La vérification primaire du critère ne fournit pas la positivité manquante.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    },
+    {
+      "id": "theoremeA",
+      "label": "Porte 2 · Théorème A",
+      "status": "demontre",
+      "x": 2,
+      "y": 5,
+      "detail": "Théorème A du corpus : (1/2) limsup log(1+Q(X))/log X=Θ−1/2. Ainsi RH iff Q(X)=X^{o(1)}. Statut : démonstration du corpus et relecture interne, sans nouvelle expertise externe.",
+      "source": "1_Presentation/articles/article1_mean_square_double_poles.tex"
+    },
+    {
+      "id": "rh",
+      "label": "Destination précise · RH",
+      "status": "ouvert",
+      "x": 1,
+      "y": 6,
+      "detail": "Tous les zéros non triviaux de ζ ont partie réelle 1/2. La destination logique est connue. Le mécanisme arithmétique qui y mène reste ouvert.",
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image",
+      "target": "fibre",
+      "kind": "analogie",
+      "label": "image → contraintes"
+    },
+    {
+      "source": "image",
+      "target": "pli",
+      "kind": "analogie",
+      "label": "image → paire"
+    },
+    {
+      "source": "fibre",
+      "target": "jet",
+      "kind": "condition",
+      "label": "jets compatibles"
+    },
+    {
+      "source": "fibre",
+      "target": "variation",
+      "kind": "preuve",
+      "label": "contreexemple A=0"
+    },
+    {
+      "source": "jet",
+      "target": "pli",
+      "kind": "condition",
+      "label": "jet 2 et transversalité"
+    },
+    {
+      "source": "pli",
+      "target": "paire",
+      "kind": "condition",
+      "label": "contour isolant"
+    },
+    {
+      "source": "mesure",
+      "target": "pli",
+      "kind": "observation",
+      "label": "hypothèses recoupées"
+    },
+    {
+      "source": "paire",
+      "target": "pont",
+      "kind": "ouvert",
+      "label": "aucun transfert acquis"
+    },
+    {
+      "source": "pont",
+      "target": "weil",
+      "kind": "ouvert",
+      "label": "identité arithmétique ?"
+    },
+    {
+      "source": "pont",
+      "target": "borne",
+      "kind": "ouvert",
+      "label": "borne des premiers ?"
+    },
+    {
+      "source": "g1",
+      "target": "weil",
+      "kind": "condition",
+      "label": "toutes tailles + continuité"
+    },
+    {
+      "source": "g4",
+      "target": "weil",
+      "kind": "condition",
+      "label": "estimations + domaines"
+    },
+    {
+      "source": "prefixes",
+      "target": "weil",
+      "kind": "obstruction",
+      "label": "préfixes seuls : impossible"
+    },
+    {
+      "source": "borne",
+      "target": "theoremeA",
+      "kind": "condition",
+      "label": "borne à démontrer"
+    },
+    {
+      "source": "weil",
+      "target": "rh",
+      "kind": "equivalence",
+      "label": "critère de Weil"
+    },
+    {
+      "source": "theoremeA",
+      "target": "rh",
+      "kind": "equivalence",
+      "label": "avec Q=X^{o(1)}"
+    }
+  ],
+  "edge_contract": "Une flèche conditionnelle exige toutes les hypothèses de sa fiche ; une flèche ouverte n’est pas une implication.",
+  "author": "Vincent P. P. NOËL",
+  "date": "2026-10-12"
+}

@@ -1,0 +1,1974 @@
+{
+  "version": "V6.43",
+  "schema": "bridge_contract_scenarios_v1",
+  "initial_facts": [
+    "nb_transport",
+    "weil_continuity",
+    "admissible_core",
+    "regularization_bound",
+    "schur_identity",
+    "ladder_contract"
+  ],
+  "facts": {
+    "nb_transport": {
+      "status": "proved_internal",
+      "scope": "Domaine et hypothèses du lemme dans le dossier",
+      "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+    },
+    "weil_continuity": {
+      "status": "proved_internal",
+      "scope": "Domaine et hypothèses du lemme dans le dossier",
+      "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+    },
+    "admissible_core": {
+      "status": "proved_internal",
+      "scope": "Domaine et hypothèses du lemme dans le dossier",
+      "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+    },
+    "regularization_bound": {
+      "status": "proved_internal",
+      "scope": "Domaine et hypothèses du lemme dans le dossier",
+      "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+    },
+    "schur_identity": {
+      "status": "proved_internal",
+      "scope": "Domaine et hypothèses du lemme dans le dossier",
+      "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+    },
+    "ladder_contract": {
+      "status": "proved_internal",
+      "scope": "Domaine et hypothèses du lemme dans le dossier",
+      "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+    },
+    "regularization_assessed": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "coverage_candidate": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "coverage_gap": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "debt_assessed": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "invariant_candidate": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "candidate_refuted": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "open_debt": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "kernel_assessed": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "kernel_checked": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "kernel_obstruction": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "transfer_assessed": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "fixed_transfer_verified": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "transfer_insufficient": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "family_dossier": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "local_assessed": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "fixed_A_certificate": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "local_obstruction": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "local_inconclusive": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "weil_reading_assessed": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "weil_full_read": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "weil_access_gap": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "RH_proved": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    },
+    "global_sign_proved": {
+      "status": "hypothetical_outcome",
+      "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+      "evidence": null
+    }
+  },
+  "actions": [
+    {
+      "id": "regime_commun",
+      "label": "Construire une famille régularisée et son défaut",
+      "duration": [
+        2,
+        3
+      ],
+      "requires_any": [
+        [
+          "regularization_bound",
+          "admissible_core"
+        ]
+      ],
+      "forbids": [],
+      "outcomes": [
+        {
+          "id": "couverture_candidate",
+          "adds": [
+            "regularization_assessed",
+            "coverage_candidate"
+          ]
+        },
+        {
+          "id": "couverture_manquante",
+          "adds": [
+            "regularization_assessed",
+            "coverage_gap"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "domaines",
+        "coverage"
+      ]
+    },
+    {
+      "id": "dette_schur",
+      "label": "Chercher un invariant pour la dette de Schur",
+      "duration": [
+        2,
+        4
+      ],
+      "requires_any": [
+        [
+          "schur_identity",
+          "weil_continuity"
+        ]
+      ],
+      "forbids": [],
+      "outcomes": [
+        {
+          "id": "candidat",
+          "adds": [
+            "debt_assessed",
+            "invariant_candidate"
+          ]
+        },
+        {
+          "id": "refutation",
+          "adds": [
+            "debt_assessed",
+            "candidate_refuted"
+          ]
+        },
+        {
+          "id": "sans_borne",
+          "adds": [
+            "debt_assessed",
+            "open_debt"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "schur",
+        "global_sign"
+      ]
+    },
+    {
+      "id": "noyaux",
+      "label": "Auditer noyaux et couplages du candidat",
+      "duration": [
+        1,
+        2
+      ],
+      "requires_any": [
+        [
+          "invariant_candidate"
+        ],
+        [
+          "open_debt"
+        ]
+      ],
+      "forbids": [
+        "candidate_refuted"
+      ],
+      "outcomes": [
+        {
+          "id": "compatible",
+          "adds": [
+            "kernel_assessed",
+            "kernel_checked"
+          ]
+        },
+        {
+          "id": "obstacle",
+          "adds": [
+            "kernel_assessed",
+            "kernel_obstruction"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "schur",
+        "compact"
+      ]
+    },
+    {
+      "id": "transfert",
+      "label": "Contrôler un transfert d’erreur sur la famille choisie",
+      "duration": [
+        2,
+        3
+      ],
+      "requires_any": [
+        [
+          "coverage_candidate",
+          "invariant_candidate"
+        ]
+      ],
+      "forbids": [
+        "candidate_refuted"
+      ],
+      "outcomes": [
+        {
+          "id": "controle_fixe",
+          "adds": [
+            "transfer_assessed",
+            "fixed_transfer_verified"
+          ]
+        },
+        {
+          "id": "borne_insuffisante",
+          "adds": [
+            "transfer_assessed",
+            "transfer_insufficient"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "transport",
+        "coverage"
+      ]
+    },
+    {
+      "id": "synthese_famille",
+      "label": "Assembler le contrat et ses limites",
+      "duration": [
+        1,
+        2
+      ],
+      "requires_any": [
+        [
+          "regularization_assessed",
+          "debt_assessed",
+          "kernel_assessed"
+        ],
+        [
+          "regularization_assessed",
+          "candidate_refuted"
+        ]
+      ],
+      "forbids": [],
+      "outcomes": [
+        {
+          "id": "contrat",
+          "adds": [
+            "family_dossier"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "global_sign",
+        "coverage",
+        "weil_all"
+      ]
+    },
+    {
+      "id": "fibre_A",
+      "label": "Certifier un autre passage local à A fixé",
+      "duration": [
+        2,
+        4
+      ],
+      "requires_any": [
+        []
+      ],
+      "forbids": [],
+      "outcomes": [
+        {
+          "id": "certificat",
+          "adds": [
+            "local_assessed",
+            "fixed_A_certificate"
+          ]
+        },
+        {
+          "id": "obstacle",
+          "adds": [
+            "local_assessed",
+            "local_obstruction"
+          ]
+        },
+        {
+          "id": "inconclusif",
+          "adds": [
+            "local_assessed",
+            "local_inconclusive"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "v13"
+      ]
+    },
+    {
+      "id": "relire_weil",
+      "label": "Terminer l’audit du mémoire de Weil",
+      "duration": [
+        2,
+        3
+      ],
+      "requires_any": [
+        []
+      ],
+      "forbids": [],
+      "outcomes": [
+        {
+          "id": "lecture_integrale",
+          "adds": [
+            "weil_reading_assessed",
+            "weil_full_read"
+          ]
+        },
+        {
+          "id": "acces_partiel",
+          "adds": [
+            "weil_reading_assessed",
+            "weil_access_gap"
+          ]
+        }
+      ],
+      "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "nodes": [
+        "weil",
+        "sources_registre"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "contrat_structurel",
+      "label": "Domaine et dette définis ensemble",
+      "weight": 8,
+      "requires_any": [
+        [
+          "regularization_assessed",
+          "debt_assessed"
+        ]
+      ]
+    },
+    {
+      "id": "noyau_resolu",
+      "label": "Couplage du candidat audité",
+      "weight": 3,
+      "requires_any": [
+        [
+          "kernel_assessed"
+        ]
+      ]
+    },
+    {
+      "id": "transfert_controle",
+      "label": "Transfert fixe contrôlé",
+      "weight": 4,
+      "requires_any": [
+        [
+          "fixed_transfer_verified"
+        ]
+      ]
+    },
+    {
+      "id": "candidat_rejete",
+      "label": "Candidat précisément réfuté",
+      "weight": 3,
+      "requires_any": [
+        [
+          "candidate_refuted"
+        ]
+      ]
+    },
+    {
+      "id": "pont_conditionnel",
+      "label": "Contrat assemblé, quantificateurs ouverts",
+      "weight": 5,
+      "requires_any": [
+        [
+          "family_dossier"
+        ]
+      ]
+    },
+    {
+      "id": "lecture",
+      "label": "Audit de lecture circonscrit",
+      "weight": 2,
+      "requires_any": [
+        [
+          "weil_reading_assessed"
+        ]
+      ]
+    },
+    {
+      "id": "local",
+      "label": "Étude locale circonscrite",
+      "weight": 2,
+      "requires_any": [
+        [
+          "local_assessed"
+        ]
+      ]
+    }
+  ],
+  "reserved_global_claims": [
+    "RH_proved",
+    "global_sign_proved"
+  ],
+  "exclusive_groups": [
+    [
+      "coverage_candidate",
+      "coverage_gap"
+    ],
+    [
+      "invariant_candidate",
+      "candidate_refuted",
+      "open_debt"
+    ],
+    [
+      "kernel_checked",
+      "kernel_obstruction"
+    ],
+    [
+      "fixed_transfer_verified",
+      "transfer_insufficient"
+    ]
+  ],
+  "units": {
+    "budget": "H: unité conventionnelle de travail, pas heure",
+    "value": "U: préférence déclarée de capacité"
+  },
+  "assumptions": [
+    "No calibrated transition probabilities",
+    "No RH-distance or proof probability",
+    "Durations are declared intervals, not measured effort",
+    "Study completion is conditional; scientific outcomes branch",
+    "Lower/upper are declared scenario envelopes, not empirical confidence intervals",
+    "Costs and weights are editorial choices dated after the lemmas",
+    "Capabilities count mathematical contracts once, regardless of document subdivision"
+  ],
+  "next_contract": "Specify a candidate invariant and its arithmetic Schur debt for the complete form, with kernel and family quantifiers",
+  "_continuity_provenance": {
+    "source": "1_Presentation/67_GRAPHE_DES_PONTS.html#bridge-data",
+    "article": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+    "sections": [
+      "1",
+      "7"
+    ],
+    "retained_version": "V6.43",
+    "extracted_on": "2026-10-15",
+    "model_sha256_before_provenance": "7829fe9cd93269aef6350ead4aabbb1819c956c755b60b6c96d36c4263d9448d",
+    "scope": "Exact retained contract model; no new scientific result or new success probability.",
+    "initial_facts_origin": "Six facts retained in document 67; not the complete current corpus.",
+    "current_applicability": "Historical studies must be reconciled with actual outcomes before their reuse as current priorities.",
+    "source_path_warning": "Original fact evidence paths are preserved as provenance; the readable statements and proofs are in article 67."
+  },
+  "default_budget": 6,
+  "profiles": {
+    "Contrats du document 67": {
+      "structural": 1,
+      "local": 1,
+      "clarity": 1
+    }
+  },
+  "type": "Contract-scenario Bellman from document67, with reconciled bounded-study state",
+  "current_state": {
+    "date": "2026-10-15",
+    "facts": [
+      "nb_transport",
+      "weil_continuity",
+      "admissible_core",
+      "regularization_bound",
+      "schur_identity",
+      "ladder_contract",
+      "regularization_assessed",
+      "coverage_candidate",
+      "debt_assessed",
+      "open_debt"
+    ],
+    "completed": [
+      "regime_commun",
+      "dette_schur"
+    ],
+    "scope": "Études bornées évaluées ; leurs obligations globales restent ouvertes. Le calcul reprend les contrats et les issues du document67, avec cet état explicite.",
+    "evidence": [
+      {
+        "facts": [
+          "regularization_assessed",
+          "coverage_candidate"
+        ],
+        "study": "regime_commun",
+        "outcome": "couverture_candidate",
+        "source": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "also": [
+          "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf",
+          "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf"
+        ],
+        "scope": "Famille admissible et couvrante qualitative à support contrôlé ; signe sur toute la famille et contrôle global encore ouverts."
+      },
+      {
+        "facts": [
+          "debt_assessed",
+          "open_debt"
+        ],
+        "study": "dette_schur",
+        "outcome": "sans_borne",
+        "source": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "also": [
+          "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf"
+        ],
+        "scope": "Identité de dette et études bornées disponibles ; aucune loi de signe universelle ni invariant arithmétique global acquis."
+      }
+    ],
+    "not_credited": [
+      "invariant_candidate",
+      "fixed_transfer_verified",
+      "kernel_checked",
+      "fixed_A_certificate",
+      "RH_proved",
+      "global_sign_proved"
+    ],
+    "restriction": "fibre_A reste ouverte : A variable au pli radial ne certifie pas le déploiement à A fixé. Le modèle ne classe pas encore les grands conducteurs de V6.55."
+  },
+  "probabilities_assigned": false,
+  "RH_proved": false,
+  "decisions": [
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 8,
+      "first_choices": [
+        "STOP"
+      ],
+      "choice_values": {
+        "STOP": 8
+      },
+      "outcome_values": {},
+      "gain": 0,
+      "states": 1,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 0,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 8,
+      "first_choices": [
+        "STOP"
+      ],
+      "choice_values": {
+        "STOP": 8
+      },
+      "outcome_values": {},
+      "gain": 0,
+      "states": 1,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 0,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 8,
+      "first_choices": [
+        "STOP"
+      ],
+      "choice_values": {
+        "STOP": 8
+      },
+      "outcome_values": {},
+      "gain": 0,
+      "states": 1,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 1,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 11,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 11
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 11,
+          "obstacle": 11
+        }
+      },
+      "gain": 3,
+      "states": 3,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 1,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 11,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 11
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 11,
+          "obstacle": 11
+        }
+      },
+      "gain": 3,
+      "states": 3,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 2,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 16,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 16,
+        "fibre_A": 10,
+        "relire_weil": 10
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 16,
+          "obstacle": 16
+        },
+        "fibre_A": {
+          "certificat": 10,
+          "obstacle": 10,
+          "inconclusif": 10
+        },
+        "relire_weil": {
+          "lecture_integrale": 10,
+          "acces_partiel": 10
+        }
+      },
+      "gain": 8,
+      "states": 10,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 2,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 11,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 11,
+        "relire_weil": 10
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 11,
+          "obstacle": 11
+        },
+        "relire_weil": {
+          "lecture_integrale": 10,
+          "acces_partiel": 10
+        }
+      },
+      "gain": 3,
+      "states": 5,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 3,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 16,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 16,
+        "fibre_A": 13,
+        "relire_weil": 13
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 16,
+          "obstacle": 16
+        },
+        "fibre_A": {
+          "certificat": 13,
+          "obstacle": 13,
+          "inconclusif": 13
+        },
+        "relire_weil": {
+          "lecture_integrale": 13,
+          "acces_partiel": 13
+        }
+      },
+      "gain": 8,
+      "states": 20,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 3,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 16,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 16,
+        "fibre_A": 10,
+        "relire_weil": 10
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 16,
+          "obstacle": 16
+        },
+        "fibre_A": {
+          "certificat": 10,
+          "obstacle": 10,
+          "inconclusif": 10
+        },
+        "relire_weil": {
+          "lecture_integrale": 10,
+          "acces_partiel": 10
+        }
+      },
+      "gain": 8,
+      "states": 10,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 4,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 18,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 18,
+        "fibre_A": 18,
+        "relire_weil": 18
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 18,
+          "obstacle": 18
+        },
+        "fibre_A": {
+          "certificat": 18,
+          "obstacle": 18,
+          "inconclusif": 18
+        },
+        "relire_weil": {
+          "lecture_integrale": 18,
+          "acces_partiel": 18
+        }
+      },
+      "gain": 10,
+      "states": 36,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 4,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 16,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 16,
+        "fibre_A": 10,
+        "relire_weil": 13
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 16,
+          "obstacle": 16
+        },
+        "fibre_A": {
+          "certificat": 10,
+          "obstacle": 10,
+          "inconclusif": 10
+        },
+        "relire_weil": {
+          "lecture_integrale": 13,
+          "acces_partiel": 13
+        }
+      },
+      "gain": 8,
+      "states": 14,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 5,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 18,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 18,
+        "fibre_A": 18,
+        "relire_weil": 18
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 18,
+          "obstacle": 18
+        },
+        "fibre_A": {
+          "certificat": 18,
+          "obstacle": 18,
+          "inconclusif": 18
+        },
+        "relire_weil": {
+          "lecture_integrale": 18,
+          "acces_partiel": 18
+        }
+      },
+      "gain": 10,
+      "states": 48,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 5,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 16,
+      "first_choices": [
+        "noyaux"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 16,
+        "fibre_A": 13,
+        "relire_weil": 13
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 16,
+          "obstacle": 16
+        },
+        "fibre_A": {
+          "certificat": 13,
+          "obstacle": 13,
+          "inconclusif": 13
+        },
+        "relire_weil": {
+          "lecture_integrale": 13,
+          "acces_partiel": 13
+        }
+      },
+      "gain": 8,
+      "states": 20,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 6,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 6,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 18,
+      "first_choices": [
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 18,
+        "fibre_A": 13,
+        "relire_weil": 18
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 18,
+          "obstacle": 18
+        },
+        "fibre_A": {
+          "certificat": 13,
+          "obstacle": 13,
+          "inconclusif": 13
+        },
+        "relire_weil": {
+          "lecture_integrale": 18,
+          "acces_partiel": 18
+        }
+      },
+      "gain": 10,
+      "states": 30,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 7,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 7,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 18,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 18,
+        "fibre_A": 18,
+        "relire_weil": 18
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 18,
+          "obstacle": 18
+        },
+        "fibre_A": {
+          "certificat": 18,
+          "obstacle": 18,
+          "inconclusif": 18
+        },
+        "relire_weil": {
+          "lecture_integrale": 18,
+          "acces_partiel": 18
+        }
+      },
+      "gain": 10,
+      "states": 36,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 8,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 8,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 18,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 18,
+        "fibre_A": 18,
+        "relire_weil": 18
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 18,
+          "obstacle": 18
+        },
+        "fibre_A": {
+          "certificat": 18,
+          "obstacle": 18,
+          "inconclusif": 18
+        },
+        "relire_weil": {
+          "lecture_integrale": 18,
+          "acces_partiel": 18
+        }
+      },
+      "gain": 10,
+      "states": 48,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 9,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 9,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 18,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 18,
+        "fibre_A": 18,
+        "relire_weil": 18
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 18,
+          "obstacle": 18
+        },
+        "fibre_A": {
+          "certificat": 18,
+          "obstacle": 18,
+          "inconclusif": 18
+        },
+        "relire_weil": {
+          "lecture_integrale": 18,
+          "acces_partiel": 18
+        }
+      },
+      "gain": 10,
+      "states": 48,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 10,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 10,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 11,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 11,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 12,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    },
+    {
+      "profile": "Contrats du document 67",
+      "weights": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      },
+      "value": 20,
+      "first_choices": [
+        "fibre_A",
+        "noyaux",
+        "relire_weil"
+      ],
+      "choice_values": {
+        "STOP": 8,
+        "noyaux": 20,
+        "fibre_A": 20,
+        "relire_weil": 20
+      },
+      "outcome_values": {
+        "noyaux": {
+          "compatible": 20,
+          "obstacle": 20
+        },
+        "fibre_A": {
+          "certificat": 20,
+          "obstacle": 20,
+          "inconclusif": 20
+        },
+        "relire_weil": {
+          "lecture_integrale": 20,
+          "acces_partiel": 20
+        }
+      },
+      "gain": 12,
+      "states": 60,
+      "mode": "upper",
+      "scope": "Declared finite scenarios only; no RH probability",
+      "budget": 12,
+      "facts": [
+        "admissible_core",
+        "coverage_candidate",
+        "debt_assessed",
+        "ladder_contract",
+        "nb_transport",
+        "open_debt",
+        "regularization_assessed",
+        "regularization_bound",
+        "schur_identity",
+        "weil_continuity"
+      ],
+      "completed": [
+        "dette_schur",
+        "regime_commun"
+      ]
+    }
+  ]
+}

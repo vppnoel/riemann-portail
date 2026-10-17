@@ -1,0 +1,772 @@
+{
+  "version": "V6.49",
+  "scope": "exploratory multi-prime common compensation diagnostic",
+  "certified": false,
+  "new_positive_certificate": false,
+  "global_RH_claim": false,
+  "zero_data_used": false,
+  "chosen_after_exploration": true,
+  "exact_identity": "b_S=a+2 sum_(p,m) (log(p)/sqrt(p^m))(1-cos(m log(p)t)); C_S=C0+2 sum weights; Q=integral(b_S-C_S)|fhat|^2",
+  "normalization": "unitary Fourier; same moment projection and 1/pi in both parities",
+  "invariants": [
+    "phase of p^m is m log p",
+    "weight is log p / p^(m/2), not log(p^m)/p^(m/2)",
+    "moment Gram diag(S+sinh S,sinh S-S) is shared by all powers",
+    "changing the truncation cap does not change the original form"
+  ],
+  "limitations": [
+    "no outward intervals",
+    "no proven spatial or frequency quadrature error",
+    "point tail check is not an interval proof",
+    "Nystrom eigenvalues are not infinite operator upper bounds",
+    "refinement agreement describes stability only",
+    "support thresholds were classified in floating point"
+  ],
+  "supports": [
+    {
+      "S": "11/20",
+      "active_prime_powers": [
+        {
+          "p": 2,
+          "m": 1,
+          "n": 2,
+          "phase": 0.6931471805599453,
+          "weight": 0.49012907173427356,
+          "distance_from_threshold": 0.4068528194400548
+        },
+        {
+          "p": 3,
+          "m": 1,
+          "n": 3,
+          "phase": 1.0986122886681098,
+          "weight": 0.634284100597564,
+          "distance_from_threshold": 0.0013877113318903067
+        }
+      ],
+      "cases": [
+        {
+          "U": 9.0,
+          "resolutions": [
+            {
+              "U": 9.0,
+              "Tmax": 300.0,
+              "spatial_nodes": 160,
+              "frequency_nodes": 30000,
+              "duration_seconds": 0.10463842300003989,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.238088364508657,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.3819260817275238,
+                  "second_eigenvalue": 0.9834196257204926,
+                  "trace": 5.992589329151386,
+                  "schatten2": 2.1152832047420054,
+                  "margin": -0.002935845616863997,
+                  "moment_gram": 1.1281516037434547
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.3712644325405265,
+                  "second_eigenvalue": 0.8907821433943188,
+                  "trace": 5.3032311873564355,
+                  "schatten2": 1.939761035355807,
+                  "margin": 0.007725803570133305,
+                  "moment_gram": 0.02815160374345451
+                }
+              ],
+              "margin": -0.002935845616863997
+            },
+            {
+              "U": 9.0,
+              "Tmax": 300.0,
+              "spatial_nodes": 256,
+              "frequency_nodes": 60000,
+              "duration_seconds": 0.545457220000003,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.238088364508657,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.3819260253198817,
+                  "second_eigenvalue": 0.9834205192404305,
+                  "trace": 5.992599608172473,
+                  "schatten2": 2.1152842552638673,
+                  "margin": -0.002935789209221884,
+                  "moment_gram": 1.1281516037434545,
+                  "split_comparison": {
+                    "energy_shares": "equal a/count and cap U/count",
+                    "compensation_norms": [
+                      0.9505193815303186,
+                      0.7225015291156367
+                    ],
+                    "sum_of_norms": 1.6730209106459553,
+                    "norm_of_sum": 1.5919726975970563,
+                    "norm_of_sum_margin": -0.21298246148639643,
+                    "sum_of_norms_margin": -0.2940306745352954,
+                    "explanation": "sum of positive parts dominates positive part of sum; shared head also avoids separate maximizers"
+                  }
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.37126435282355,
+                  "second_eigenvalue": 0.8907818546049234,
+                  "trace": 5.3032413606909765,
+                  "schatten2": 1.9397620739130046,
+                  "margin": 0.00772588328710988,
+                  "moment_gram": 0.028151603743454306,
+                  "split_comparison": {
+                    "energy_shares": "equal a/count and cap U/count",
+                    "compensation_norms": [
+                      1.0201148195378633,
+                      0.5919440304365062
+                    ],
+                    "sum_of_norms": 1.6120588499743695,
+                    "norm_of_sum": 1.6038420518340653,
+                    "norm_of_sum_margin": -0.2248518157234054,
+                    "sum_of_norms_margin": -0.2330686138637097,
+                    "explanation": "sum of positive parts dominates positive part of sum; shared head also avoids separate maximizers"
+                  }
+                }
+              ],
+              "margin": -0.002935789209221884
+            }
+          ],
+          "refinement_margin_difference": 5.6407642112787926e-08
+        },
+        {
+          "U": 9.5,
+          "resolutions": [
+            {
+              "U": 9.5,
+              "Tmax": 400.0,
+              "spatial_nodes": 224,
+              "frequency_nodes": 40000,
+              "duration_seconds": 0.19697305199997572,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.52577063950735,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.879445181499824,
+                  "second_eigenvalue": 1.3294361467661653,
+                  "trace": 10.79751759556694,
+                  "schatten2": 3.0708986784242898,
+                  "margin": -0.00045494538916424077,
+                  "moment_gram": 1.1281516037434556
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.8577936530618477,
+                  "second_eigenvalue": 1.214509454984373,
+                  "trace": 9.855108365033843,
+                  "schatten2": 2.8503263633485765,
+                  "margin": 0.021196583048812112,
+                  "moment_gram": 0.0281516037434556
+                }
+              ],
+              "margin": -0.00045494538916424077
+            },
+            {
+              "U": 9.5,
+              "Tmax": 400.0,
+              "spatial_nodes": 320,
+              "frequency_nodes": 80000,
+              "duration_seconds": 0.649382237999987,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.52577063950735,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.879445152111956,
+                  "second_eigenvalue": 1.329435521073738,
+                  "trace": 10.79750389391736,
+                  "schatten2": 3.0708969407405955,
+                  "margin": -0.00045491600129610177,
+                  "moment_gram": 1.1281516037434567
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.857793539064649,
+                  "second_eigenvalue": 1.214508807988878,
+                  "trace": 9.855094704488398,
+                  "schatten2": 2.85032457929248,
+                  "margin": 0.021196697046010904,
+                  "moment_gram": 0.028151603743456592
+                }
+              ],
+              "margin": -0.00045491600129610177
+            }
+          ],
+          "refinement_margin_difference": 2.9387868138996964e-08
+        },
+        {
+          "U": 10.0,
+          "resolutions": [
+            {
+              "U": 10.0,
+              "Tmax": 700.0,
+              "spatial_nodes": 384,
+              "frequency_nodes": 50000,
+              "duration_seconds": 0.47413062600003286,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 10.08538660282568,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 2.378407182472527,
+                  "second_eigenvalue": 1.7456144437708563,
+                  "trace": 18.865363387629564,
+                  "schatten2": 4.312526786736348,
+                  "margin": 0.0005830536381328244,
+                  "moment_gram": 1.1281516037434534
+                },
+                {
+                  "parity": "odd",
+                  "norm": 2.351140883394205,
+                  "second_eigenvalue": 1.6042410776373202,
+                  "trace": 17.66222014615731,
+                  "schatten2": 4.058818777933521,
+                  "margin": 0.027849352716454945,
+                  "moment_gram": 0.02815160374345351
+                }
+              ],
+              "margin": 0.0005830536381328244
+            },
+            {
+              "U": 10.0,
+              "Tmax": 700.0,
+              "spatial_nodes": 512,
+              "frequency_nodes": 100000,
+              "duration_seconds": 1.130652108999982,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 10.08538660282568,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 2.378407210595138,
+                  "second_eigenvalue": 1.7456141688266196,
+                  "trace": 18.865363251219936,
+                  "schatten2": 4.312525357426125,
+                  "margin": 0.0005830255155219177,
+                  "moment_gram": 1.1281516037434547
+                },
+                {
+                  "parity": "odd",
+                  "norm": 2.3511409843069684,
+                  "second_eigenvalue": 1.6042410875520332,
+                  "trace": 17.66221977689997,
+                  "schatten2": 4.058817089767351,
+                  "margin": 0.027849251803691466,
+                  "moment_gram": 0.028151603743454493
+                }
+              ],
+              "margin": 0.0005830255155219177
+            }
+          ],
+          "refinement_margin_difference": -2.8122610906677892e-08
+        }
+      ]
+    },
+    {
+      "S": "3/5",
+      "active_prime_powers": [
+        {
+          "p": 2,
+          "m": 1,
+          "n": 2,
+          "phase": 0.6931471805599453,
+          "weight": 0.49012907173427356,
+          "distance_from_threshold": 0.5068528194400547
+        },
+        {
+          "p": 3,
+          "m": 1,
+          "n": 3,
+          "phase": 1.0986122886681098,
+          "weight": 0.634284100597564,
+          "distance_from_threshold": 0.10138771133189017
+        }
+      ],
+      "cases": [
+        {
+          "U": 9.0,
+          "resolutions": [
+            {
+              "U": 9.0,
+              "Tmax": 300.0,
+              "spatial_nodes": 160,
+              "frequency_nodes": 30000,
+              "duration_seconds": 0.08661024099995984,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.238088364508657,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.3821781250173895,
+                  "second_eigenvalue": 1.293239294244707,
+                  "trace": 6.647076550682186,
+                  "schatten2": 2.3342197333537613,
+                  "margin": -0.003187888906729608,
+                  "moment_gram": 1.2366535821482416
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.3862856085621997,
+                  "second_eigenvalue": 0.9576808743667915,
+                  "trace": 5.947324212866949,
+                  "schatten2": 2.0741607009171292,
+                  "margin": -0.007295372451539883,
+                  "moment_gram": 0.036653582148241576
+                }
+              ],
+              "margin": -0.007295372451539883
+            },
+            {
+              "U": 9.0,
+              "Tmax": 300.0,
+              "spatial_nodes": 256,
+              "frequency_nodes": 60000,
+              "duration_seconds": 0.455246523000028,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.238088364508657,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.3821780634277143,
+                  "second_eigenvalue": 1.2932395926171043,
+                  "trace": 6.647087519488231,
+                  "schatten2": 2.334220684093578,
+                  "margin": -0.00318782731705447,
+                  "moment_gram": 1.2366535821482416,
+                  "split_comparison": {
+                    "energy_shares": "equal a/count and cap U/count",
+                    "compensation_norms": [
+                      0.9964994708371664,
+                      0.8807910784871658
+                    ],
+                    "sum_of_norms": 1.8772905493243321,
+                    "norm_of_sum": 1.59943198094822,
+                    "norm_of_sum_margin": -0.22044174483756018,
+                    "sum_of_norms_margin": -0.4983003132136723,
+                    "explanation": "sum of positive parts dominates positive part of sum; shared head also avoids separate maximizers"
+                  }
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.3862854895494312,
+                  "second_eigenvalue": 0.957681388114772,
+                  "trace": 5.947335551980245,
+                  "schatten2": 2.0741620555652704,
+                  "margin": -0.007295253438771354,
+                  "moment_gram": 0.0366535821482413,
+                  "split_comparison": {
+                    "energy_shares": "equal a/count and cap U/count",
+                    "compensation_norms": [
+                      1.040678463768183,
+                      0.5935827204710862
+                    ],
+                    "sum_of_norms": 1.6342611842392691,
+                    "norm_of_sum": 1.6261395138489982,
+                    "norm_of_sum_margin": -0.2471492777383384,
+                    "sum_of_norms_margin": -0.2552709481286093,
+                    "explanation": "sum of positive parts dominates positive part of sum; shared head also avoids separate maximizers"
+                  }
+                }
+              ],
+              "margin": -0.007295253438771354
+            }
+          ],
+          "refinement_margin_difference": 1.1901276852910314e-07
+        },
+        {
+          "U": 9.5,
+          "resolutions": [
+            {
+              "U": 9.5,
+              "Tmax": 400.0,
+              "spatial_nodes": 224,
+              "frequency_nodes": 40000,
+              "duration_seconds": 0.1737034289999997,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.52577063950735,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.8798446875680308,
+                  "second_eigenvalue": 1.7382085536161516,
+                  "trace": 11.919362732018492,
+                  "schatten2": 3.369755379345021,
+                  "margin": -0.0008544514573709527,
+                  "moment_gram": 1.236653582148243
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.8795790105478947,
+                  "second_eigenvalue": 1.2985916382434892,
+                  "trace": 10.98024253578385,
+                  "schatten2": 3.0516726207388003,
+                  "margin": -0.000588774437234818,
+                  "moment_gram": 0.036653582148242984
+                }
+              ],
+              "margin": -0.0008544514573709527
+            },
+            {
+              "U": 9.5,
+              "Tmax": 400.0,
+              "spatial_nodes": 320,
+              "frequency_nodes": 80000,
+              "duration_seconds": 0.6095106190000479,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 9.52577063950735,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.879844663378532,
+                  "second_eigenvalue": 1.738208218521421,
+                  "trace": 11.919655704294403,
+                  "schatten2": 3.369753899406186,
+                  "margin": -0.0008544272678721043,
+                  "moment_gram": 1.2366535821482443
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.879578938654857,
+                  "second_eigenvalue": 1.2985911004692783,
+                  "trace": 10.979919689895723,
+                  "schatten2": 3.0516704744869187,
+                  "margin": -0.0005887025441970728,
+                  "moment_gram": 0.03665358214824428
+                }
+              ],
+              "margin": -0.0008544272678721043
+            }
+          ],
+          "refinement_margin_difference": 2.4189498848414814e-08
+        },
+        {
+          "U": 10.0,
+          "resolutions": [
+            {
+              "U": 10.0,
+              "Tmax": 700.0,
+              "spatial_nodes": 384,
+              "frequency_nodes": 50000,
+              "duration_seconds": 0.41855666699996164,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 10.08538660282568,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 2.3791020911540306,
+                  "second_eigenvalue": 2.209866621666094,
+                  "trace": 20.747282772359835,
+                  "schatten2": 4.697165427284312,
+                  "margin": -0.00011185504337074548,
+                  "moment_gram": 1.23665358214824
+                },
+                {
+                  "parity": "odd",
+                  "norm": 2.3766730580346316,
+                  "second_eigenvalue": 1.7024394849645015,
+                  "trace": 19.568020084239482,
+                  "schatten2": 4.345875780299637,
+                  "margin": 0.00231717807602827,
+                  "moment_gram": 0.036653582148240264
+                }
+              ],
+              "margin": -0.00011185504337074548
+            },
+            {
+              "U": 10.0,
+              "Tmax": 700.0,
+              "spatial_nodes": 512,
+              "frequency_nodes": 100000,
+              "duration_seconds": 1.310797875999981,
+              "C_constant": 7.62100976388934,
+              "point_a_Tmax": 10.08538660282568,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 2.379102113830415,
+                  "second_eigenvalue": 2.2098666517156125,
+                  "trace": 20.747282283927742,
+                  "schatten2": 4.697163977896924,
+                  "margin": -0.00011187771975507133,
+                  "moment_gram": 1.2366535821482416
+                },
+                {
+                  "parity": "odd",
+                  "norm": 2.3766731223870403,
+                  "second_eigenvalue": 1.7024391151709133,
+                  "trace": 19.568020065843424,
+                  "schatten2": 4.3458740984760205,
+                  "margin": 0.002317113723619535,
+                  "moment_gram": 0.03665358214824155
+                }
+              ],
+              "margin": -0.00011187771975507133
+            }
+          ],
+          "refinement_margin_difference": -2.2676384325848176e-08
+        }
+      ]
+    },
+    {
+      "S": "7/10",
+      "active_prime_powers": [
+        {
+          "p": 2,
+          "m": 1,
+          "n": 2,
+          "phase": 0.6931471805599453,
+          "weight": 0.49012907173427356,
+          "distance_from_threshold": 0.7068528194400546
+        },
+        {
+          "p": 3,
+          "m": 1,
+          "n": 3,
+          "phase": 1.0986122886681098,
+          "weight": 0.634284100597564,
+          "distance_from_threshold": 0.30138771133189013
+        },
+        {
+          "p": 2,
+          "m": 2,
+          "n": 4,
+          "phase": 1.3862943611198906,
+          "weight": 0.34657359027997264,
+          "distance_from_threshold": 0.013705638880109339
+        }
+      ],
+      "cases": [
+        {
+          "U": 9.0,
+          "resolutions": [
+            {
+              "U": 9.0,
+              "Tmax": 300.0,
+              "spatial_nodes": 160,
+              "frequency_nodes": 30000,
+              "duration_seconds": 0.08934923900000058,
+              "C_constant": 8.314156944449286,
+              "point_a_Tmax": 9.238088364508657,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 0.8765728467802503,
+                  "second_eigenvalue": 0.7245469591826129,
+                  "trace": 4.2139882071983115,
+                  "schatten2": 1.524530141221897,
+                  "margin": -0.19072979122953582,
+                  "moment_gram": 1.458583701839534
+                },
+                {
+                  "parity": "odd",
+                  "norm": 0.9096252048374537,
+                  "second_eigenvalue": 0.6939070251647862,
+                  "trace": 3.833755888902003,
+                  "schatten2": 1.4167384459428023,
+                  "margin": -0.22378214928673923,
+                  "moment_gram": 0.058583701839533986
+                }
+              ],
+              "margin": -0.22378214928673923
+            },
+            {
+              "U": 9.0,
+              "Tmax": 300.0,
+              "spatial_nodes": 256,
+              "frequency_nodes": 60000,
+              "duration_seconds": 0.5378390960000274,
+              "C_constant": 8.314156944449286,
+              "point_a_Tmax": 9.238088364508657,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 0.8765710179713613,
+                  "second_eigenvalue": 0.7245476717090594,
+                  "trace": 4.213994817897699,
+                  "schatten2": 1.524528225872511,
+                  "margin": -0.19072796242064682,
+                  "moment_gram": 1.4585837018395336,
+                  "split_comparison": {
+                    "energy_shares": "equal a/count and cap U/count",
+                    "compensation_norms": [
+                      0.6418791342474803,
+                      0.5286839826916634,
+                      0.61604249091296
+                    ],
+                    "sum_of_norms": 1.7866056078521038,
+                    "norm_of_sum": 1.3501787869000623,
+                    "norm_of_sum_margin": -0.6643357313493479,
+                    "sum_of_norms_margin": -1.1007625523013893,
+                    "explanation": "sum of positive parts dominates positive part of sum; shared head also avoids separate maximizers"
+                  }
+                },
+                {
+                  "parity": "odd",
+                  "norm": 0.9096231320203289,
+                  "second_eigenvalue": 0.693907117532849,
+                  "trace": 3.8337366726851867,
+                  "schatten2": 1.4167359005400249,
+                  "margin": -0.2237800764696144,
+                  "moment_gram": 0.05858370183953355,
+                  "split_comparison": {
+                    "energy_shares": "equal a/count and cap U/count",
+                    "compensation_norms": [
+                      0.5786257394142112,
+                      0.4875810034652963,
+                      0.5052152886013499
+                    ],
+                    "sum_of_norms": 1.5714220314808576,
+                    "norm_of_sum": 1.355576859440406,
+                    "norm_of_sum_margin": -0.6697338038896916,
+                    "sum_of_norms_margin": -0.8855789759301431,
+                    "explanation": "sum of positive parts dominates positive part of sum; shared head also avoids separate maximizers"
+                  }
+                }
+              ],
+              "margin": -0.2237800764696144
+            }
+          ],
+          "refinement_margin_difference": 2.0728171248318716e-06
+        },
+        {
+          "U": 9.5,
+          "resolutions": [
+            {
+              "U": 9.5,
+              "Tmax": 400.0,
+              "spatial_nodes": 224,
+              "frequency_nodes": 40000,
+              "duration_seconds": 0.18474749599999996,
+              "C_constant": 8.314156944449286,
+              "point_a_Tmax": 9.52577063950735,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.26021513277803,
+                  "second_eigenvalue": 1.1891040540339022,
+                  "trace": 8.016797996697989,
+                  "schatten2": 2.4349747629985234,
+                  "margin": -0.07437207722731554,
+                  "moment_gram": 1.458583701839536
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.2884108644815324,
+                  "second_eigenvalue": 1.1865054467892062,
+                  "trace": 7.454209583645673,
+                  "schatten2": 2.2877562649576593,
+                  "margin": -0.10256780893081796,
+                  "moment_gram": 0.05858370183953626
+                }
+              ],
+              "margin": -0.10256780893081796
+            },
+            {
+              "U": 9.5,
+              "Tmax": 400.0,
+              "spatial_nodes": 320,
+              "frequency_nodes": 80000,
+              "duration_seconds": 0.5255538540000089,
+              "C_constant": 8.314156944449286,
+              "point_a_Tmax": 9.52577063950735,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.2602151025766297,
+                  "second_eigenvalue": 1.1891043602735156,
+                  "trace": 8.019934603144836,
+                  "schatten2": 2.4349843517082257,
+                  "margin": -0.07437204702591527,
+                  "moment_gram": 1.4585837018395384
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.2884107054949794,
+                  "second_eigenvalue": 1.1865055159169013,
+                  "trace": 7.451051804236749,
+                  "schatten2": 2.287737041134875,
+                  "margin": -0.10256764994426493,
+                  "moment_gram": 0.058583701839538344
+                }
+              ],
+              "margin": -0.10256764994426493
+            }
+          ],
+          "refinement_margin_difference": 1.5898655303381304e-07
+        },
+        {
+          "U": 10.0,
+          "resolutions": [
+            {
+              "U": 10.0,
+              "Tmax": 700.0,
+              "spatial_nodes": 384,
+              "frequency_nodes": 50000,
+              "duration_seconds": 0.42409295999999586,
+              "C_constant": 8.314156944449286,
+              "point_a_Tmax": 10.08538660282568,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.7112449504097123,
+                  "second_eigenvalue": 1.685881233952461,
+                  "trace": 13.973471618542087,
+                  "schatten2": 3.5570756904811,
+                  "margin": -0.025401894858997798,
+                  "moment_gram": 1.4585837018395316
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.7140576442698685,
+                  "second_eigenvalue": 1.6838267220467547,
+                  "trace": 13.171998702707807,
+                  "schatten2": 3.363716641215677,
+                  "margin": -0.028214588719154055,
+                  "moment_gram": 0.05858370183953188
+                }
+              ],
+              "margin": -0.028214588719154055
+            },
+            {
+              "U": 10.0,
+              "Tmax": 700.0,
+              "spatial_nodes": 512,
+              "frequency_nodes": 100000,
+              "duration_seconds": 1.2882539859999724,
+              "C_constant": 8.314156944449286,
+              "point_a_Tmax": 10.08538660282568,
+              "parity": [
+                {
+                  "parity": "even",
+                  "norm": 1.7112463592344132,
+                  "second_eigenvalue": 1.6858812346961463,
+                  "trace": 13.974229932633627,
+                  "schatten2": 3.5570756316543015,
+                  "margin": -0.025403303683698697,
+                  "moment_gram": 1.458583701839534
+                },
+                {
+                  "parity": "odd",
+                  "norm": 1.7140602293914844,
+                  "second_eigenvalue": 1.683826854285525,
+                  "trace": 13.171242895732146,
+                  "schatten2": 3.3637142621541103,
+                  "margin": -0.028217173840769938,
+                  "moment_gram": 0.058583701839533944
+                }
+              ],
+              "margin": -0.028217173840769938
+            }
+          ],
+          "refinement_margin_difference": -2.5851216158834234e-06
+        }
+      ]
+    }
+  ]
+}

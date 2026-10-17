@@ -1,0 +1,29 @@
+{
+  "selection_sha256": "685ddfe024480de8d0fc47364d998fa58de058082207efb32b61f4f05ee7fcbb",
+  "prevision_sha256": "844842c26c5eb0bb1ebe0092792753d1255448a1b2005d23e90b1c497ef1a802",
+  "created_unix": 1791786803.4824755,
+  "zero_counts_started": false,
+  "q": 13,
+  "parity": 1,
+  "Tmax": 150,
+  "ceilings": [
+    50,
+    100,
+    150
+  ],
+  "critical_steps": [
+    0.02,
+    0.01,
+    0.005
+  ],
+  "horizontal_steps": [
+    0.05,
+    0.025
+  ],
+  "minimum_relative_boundary_margin": 1e-10,
+  "predictions": {
+    "P3": "positive > negative among comparable signs",
+    "P4": "contrast direction not uniform across anchor/radius strata"
+  },
+  "data_independent_selection": true
+}

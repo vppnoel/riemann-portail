@@ -1,0 +1,44 @@
+{
+  "version": "V6.48",
+  "document": 73,
+  "python_tests": {
+    "passed": 338,
+    "total": 338,
+    "not_run": 0,
+    "log": "v648_validation_tests.txt"
+  },
+  "historical_javascript_python_contracts": 768,
+  "current_ui": "DOM simulated; two parities; distinct minorant and original Q sources; support, metric and unit guards",
+  "interface": {
+    "active_pages": 15,
+    "local_targets_checked": 1108,
+    "broken_targets": 0,
+    "common_navigation": true,
+    "scope": "static targets + shared navigation; no browser layout validation"
+  },
+  "pedagogy": {
+    "lessons": 40,
+    "stages": 5,
+    "tools_with_uses": 16,
+    "math_formulas_visually_checked": 40
+  },
+  "pdf": {
+    "pages": 7,
+    "rendered_and_visually_checked_pages": 7,
+    "overfull_boxes": 0,
+    "missing_characters": 0
+  },
+  "research_scope": {
+    "all_admissible_complex_tests": true,
+    "support": "0<S<=1/2",
+    "mass_floor": "1/250",
+    "R_floor": "1/2000",
+    "minorant_sources_certified": true,
+    "original_Q_strong_sources_certified": false,
+    "global_sign_certified": false
+  },
+  "certificate_journal_sha256": "04f7187d71d7ad7ea9d77238a6da2f4ee9f0467610dc8d7bc87f8601e1109938",
+  "tests_log_sha256": "17fde737204eafff0f9d5e43f9c179599cfc602d5024e0495c6b657ae0a669e1",
+  "protected_prior_data_source_and_archive_files": 528,
+  "protected_prior_files_modified": 0
+}

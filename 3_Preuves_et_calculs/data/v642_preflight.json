@@ -1,0 +1,5 @@
+{
+  "checks": "Three complex locations, both component jets of orders 0..2 contain 80+ digit Hurwitz references; exact B24 checked.",
+  "backend_independence": false,
+  "new_interval_certificate": false
+}

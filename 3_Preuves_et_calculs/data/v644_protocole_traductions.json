@@ -1,0 +1,43 @@
+{
+  "version": "V6.44",
+  "created_utc": "2026-10-12T19:03:56.079530+00:00",
+  "scope": "Exploratory arithmetic matrices and exact symbolic bridges; not interval eigenvalue certificates",
+  "supports": [
+    "1/2",
+    "1",
+    "2",
+    "3"
+  ],
+  "dimensions": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "precisions": [
+    40,
+    70
+  ],
+  "seed": "psi_S,k=(1-x²/S²)^4(x/S)^k on[-S,S],0 otherwise",
+  "test": "f=Ppsi, P=d²/dx²-1/4",
+  "prime_cutoff": "certified floor(exp(2S)) by rational Taylor bounds",
+  "form": "Full V643 Q_W = Q_arch - Q_primes, no zero data",
+  "predeclared_checks": [
+    "Two moment cancellations and exact H¹ metric identity",
+    "Even/odd cross-form blocks exactly zero",
+    "Autocorrelation polynomial agrees with direct integration on selected pairs/points",
+    "Original archimedean normalization agrees with translation-defect normalization",
+    "Normalized spectra and flag-Schur debt agree at40/70 digits",
+    "Common translations, constant phases and simultaneous congruence preserve declared relations"
+  ],
+  "hypotheses": [
+    "No finite matrix proves every-index positivity",
+    "Support rescaling is not a Q invariance",
+    "Compactness forbids a strictly positive H¹ coercivity constant, not positivity itself"
+  ],
+  "failure_rules": [
+    "Any numerical sign instability stays undetermined",
+    "No numerical equality promoted to symbolic identity",
+    "No negative computed eigenvalue promoted to RH counterexample without validated error bounds"
+  ]
+}

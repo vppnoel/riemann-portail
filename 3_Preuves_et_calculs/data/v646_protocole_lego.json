@@ -1,0 +1,27 @@
+{
+  "version": "V6.46",
+  "created_utc": "2026-10-12T21:04:58.765527+00:00",
+  "source_v645_zip_sha256": "a9c4502ccf9a8e12217bff599712507f65ad30bb84025d8db5578ff543a48ed4",
+  "supports": [
+    "347/1000",
+    "87/250",
+    "1/2"
+  ],
+  "interval_bits": 160,
+  "layer_steps": 32,
+  "layer_step": "3/8",
+  "midpoint_subdivisions": 256,
+  "kernel_split": 64,
+  "known_before_certification": "Supports and mesh selected after constructive/critical exploratory calculations; interval validation is not a fresh sign prediction.",
+  "failure_rule": "No positive claim unless all interval endpoints and analytic template guards give a strictly positive rational margin.",
+  "analytic_templates": [
+    "projection and parity",
+    "finite positive frequency layers",
+    "midpoint Lipschitz error bound",
+    "boundary potential",
+    "prime2 edge estimate",
+    "convex energy/coupling bound",
+    "zero-extension coverage of bounded family"
+  ],
+  "global_RH_claim": false
+}

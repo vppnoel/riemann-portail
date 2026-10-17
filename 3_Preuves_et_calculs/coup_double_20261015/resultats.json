@@ -1,0 +1,68 @@
+{
+  "scope": "Contrôles exacts de lemmes et contre-modèles abstraits; ni matrice de Weil ni évaluation numérique de Suzuki. Raccord de constante exact et audit de parité inclus.",
+  "checks": [
+    {
+      "test": "diagonales exactes mais mélange négatif",
+      "passed": true,
+      "value": "-2"
+    },
+    {
+      "test": "tous vecteurs réels corrects, phase complexe négative",
+      "passed": true,
+      "value": "-2"
+    },
+    {
+      "test": "polarisation complexe et convention",
+      "passed": true,
+      "value": "2*I"
+    },
+    {
+      "test": "garde image indispensable malgré dette positive",
+      "passed": true,
+      "value": "-3"
+    },
+    {
+      "test": "insertion Gram singulière compatible",
+      "passed": true,
+      "value": "Matrix([[1, 0, 1], [0, 0, 0], [1, 0, 2]])"
+    },
+    {
+      "test": "identité Schur rationnelle",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "test": "décomposition constante archimédienne",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "test": "normalisation exacte de C0",
+      "passed": true,
+      "value": "log(2) + pi/2"
+    },
+    {
+      "test": "annihilation par prolongement pair",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "test": "phase de bord insuffisante",
+      "passed": true,
+      "value": "3"
+    },
+    {
+      "test": "translation conserve poids des moments",
+      "passed": true,
+      "value": "facteurs e^(±a/2)"
+    },
+    {
+      "test": "prolongement spectral par réflexion",
+      "passed": true,
+      "value": "0"
+    }
+  ],
+  "passed": 12,
+  "RH_proved": false,
+  "Suzuki_identity_proved": false
+}

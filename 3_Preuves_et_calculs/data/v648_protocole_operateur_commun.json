@@ -1,0 +1,16 @@
+{
+  "version": "V6.48",
+  "S": "1/2",
+  "T": "90",
+  "U": "8",
+  "frequency_step": "1/1000",
+  "joint_table_step": "1/100",
+  "spatial_gauss_nodes": 80,
+  "kernel_split": 256,
+  "interval_bits": 160,
+  "fixed_bits": 44,
+  "method": "common operator; Gauss cardinal interpolation; projected wave intervals; exact matrix SPD",
+  "chosen_after_exploratory_feedback": true,
+  "frozen_before_validation": true,
+  "global_RH_claim": false
+}

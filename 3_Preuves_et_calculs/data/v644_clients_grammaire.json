@@ -1,0 +1,12290 @@
+[
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 2,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 4,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 6,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 4,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 3.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.0,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 1.0,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.0,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 2,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 4,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 1,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 0,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 2,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 1,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 4,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 1,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 2,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 6,
+      "u": 2
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 4,
+      "u": 1
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 1
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 1
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 1
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 1
+    }
+  },
+  {
+    "op": "add",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "scalar",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "multiply",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 4
+    }
+  },
+  {
+    "op": "convolve",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 6,
+      "q": 6,
+      "u": 4
+    }
+  },
+  {
+    "op": "P",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 4,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "derivative",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 4,
+      "u": 2
+    }
+  },
+  {
+    "op": "position",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 2,
+      "q": 2,
+      "u": 2
+    }
+  },
+  {
+    "op": "translate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 2.6666666666666665,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "phase",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "conjugate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    }
+  },
+  {
+    "op": "modulate",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 0.6666666666666666,
+      "r": 0,
+      "q": 0,
+      "u": 2
+    }
+  },
+  {
+    "op": "rescale",
+    "input": {
+      "S": 0.6666666666666666,
+      "r": 3,
+      "q": 3,
+      "u": 2
+    },
+    "parameter": 2.0,
+    "expected": {
+      "S": 1.3333333333333333,
+      "r": 0,
+      "q": 3,
+      "u": 2
+    }
+  }
+]

@@ -1,0 +1,629 @@
+{
+  "schema": "ciblage_v2",
+  "decision_snapshot": "8bc1fd3bbee025c54f444de1604adfd6b939469e705d05cd90a24069b18c901f",
+  "version": "V6.59",
+  "mode": "recommandations_en_lecture_seule",
+  "source_snapshot": "b9ec08d815d90732375e45251bd13d598d11b3484b368e1b4c353f25491a2722",
+  "scientific_state_modified": false,
+  "indicator_levels_modified": false,
+  "proof_promotions": [],
+  "automatic_execution": false,
+  "provenance_note": "Chemins réellement lus par le ciblage. Leurs empreintes de référence sont dans le registre unique du pilotage (reviewed_source_hashes) ; elles ont été observées le 16 octobre 2026 dans la branche ciblage, puis retrouvées identiques dans le corpus le 17 octobre. Elles ne recréent pas la provenance historique d’un calcul ni une validation mathématique. CSS et menus exclus des dépendances scientifiques.",
+  "dependency_audits": {
+    "scalar": {
+      "changed": [],
+      "missing": [],
+      "unreviewed": [],
+      "unchanged": true
+    },
+    "matrix": {
+      "changed": [],
+      "missing": [],
+      "unreviewed": [],
+      "unchanged": true
+    }
+  },
+  "scalar": {
+    "object_type": "signal_scalaire",
+    "domain": "log(2) <= t <= log(cutoff)",
+    "closed_in_declared_window": true,
+    "cells": 44,
+    "actions": [],
+    "finite_only": true,
+    "reason": "Fenêtre déjà certifiée : ne pas ajouter de subdivisions comme nouvelle portée.",
+    "proof_promotions": []
+  },
+  "matrix": {
+    "object_type": "compression_matricielle_finie",
+    "certified": false,
+    "zero_data_used": false,
+    "infinite_tail_certified": false,
+    "recommendation": "Conserver les termes croisés et établir un contrat de dette/erreur sur le complément requis. Le rapport de phases ne mesure pas une proximité de RH.",
+    "source": "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json"
+  },
+  "bellman": {
+    "budget": 6,
+    "choices": [
+      {
+        "id": "noyaux",
+        "label": "Auditer noyaux et couplages du candidat",
+        "duration": [
+          1,
+          2
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "machine_ready": false,
+        "reason": "Étude déclarée par Bellman ; instance et programme non liés. Aucun lancement automatique.",
+        "nodes": [
+          "schur",
+          "compact"
+        ]
+      }
+    ],
+    "scope": "Sept contrats du document 67 ; les investigations restent hors modèle sans raccord explicite."
+  },
+  "theoretical_front": [
+    {
+      "id": "signe_paquets",
+      "label": "Paquets signés : garder premiers, coupures et dette",
+      "question": "Quelle inégalité locale des vrais paquets pourrait se sommer sans perdre les couplages ?",
+      "nodes": [
+        "fluctuation",
+        "global_sign",
+        "transport",
+        "coverage"
+      ],
+      "source": "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+      "witness": "Modèle continu négatif et blocs à rapport fixe déjà réfutés ; ne pas les reconstruire sans nouvelle hypothèse.",
+      "output": "Énoncé vérifiable avec bords, norme, dette et critère de rejet ; contre-exemple recevable. Aucun signe universel promis.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Un paquet admissible réfute la proposition, ou la somme des dettes n’est pas contrôlée."
+    },
+    {
+      "id": "duale_schur",
+      "label": "Dette de Schur dans la norme duale",
+      "question": "Peut-on payer la dette par une norme duale spécifique, sans exiger toutes les sources fortes de Q ?",
+      "nodes": [
+        "schur",
+        "global_sign",
+        "compact"
+      ],
+      "source": "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+      "witness": "Matrices positives en tête avec complément ou résidu non contrôlé.",
+      "output": "Borne candidate ou obstruction avec domaine et constantes ; bilan de portée local/global. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": true,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Une hypothèse de domaine manque ou l’inégalité duale ne domine pas le vrai couplage."
+    },
+    {
+      "id": "couverture_constructive",
+      "label": "Deux filtres : approximants et norme de forme",
+      "question": "Comment construire effectivement les approximants de la grammaire déjà démontrée, avec leur erreur de forme ?",
+      "nodes": [
+        "coverage",
+        "domaines",
+        "weil_all"
+      ],
+      "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+      "witness": "Convergence L² seule, moments perdus, ou contrôle qui dépend du support sans borne.",
+      "output": "Algorithme d’approximation et contrat d’erreur, ou obstruction précise. Cette tâche ne prouve pas le signe. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "La suite ne converge pas dans la topologie exigée ; le transfert de signe est alors refusé."
+    },
+    {
+      "id": "mu_correlations",
+      "label": "Carte d’identité de μ et corrélations pondérées",
+      "question": "Quelle identité spécifique distingue les vrais poids des suites qui imitent leurs statistiques partielles ?",
+      "nodes": [
+        "identity",
+        "anchoring",
+        "large_q"
+      ],
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+      "witness": "Masque sur les premiers et copies carrées ; une covariance moyenne de μ ne règle pas ces poids.",
+      "output": "Identité ou invariant candidat, avec témoin et dépendance aux coupures. Le vieux rejet du census à deux points est respecté.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "La propriété candidate est aussi satisfaite par un contre-modèle qui viole la borne visée."
+    },
+    {
+      "id": "v13_fibre",
+      "label": "Pli sur une fibre à coefficient A fixé",
+      "question": "Une direction candidate porte-t-elle un vrai pli transversal sur la fibre qui conserve A ?",
+      "nodes": [
+        "v13",
+        "archipel"
+      ],
+      "source": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+      "witness": "Fibre vide, rang perdu, ou dérivée paramétrique nulle.",
+      "output": "Certificat local ou obstacle documenté. Cette branche ne garantit pas la loi globale de Weil.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Un jet nul non certifié ne donne pas un zéro double ; préserver les pertes et les indéterminations."
+    },
+    {
+      "id": "noyau_S08",
+      "label": "Certificat du noyau des moments à S = 0,8",
+      "question": "Certifier un minorant de Q_W sur les tests à moments nuls de support [−0,8 ; 0,8], où agissent 2, 3 et 4.",
+      "nodes": [
+        "local",
+        "pos"
+      ],
+      "source": "1_Presentation/81_ZHU_REPRODUIT.md",
+      "witness": "Marge mesurée ≈ 5·10⁻¹² (doc. 81), non certifiée ; certificat existant jusqu’à 11/20 (doc. 75).",
+      "output": "Certificat local ou obstacle documenté. Renforce une marge déjà positive (Zhu) ; aucune fenêtre nouvelle ni conséquence globale : la positivité sur toutes les fenêtres est RH.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Marge mesurée sous 10⁻¹³ avec plus de modes, ou tête irréalisable en intervalles : la voie par fenêtres s’arrête à 11/20."
+    }
+  ],
+  "investigations": [
+    {
+      "id": "signe_paquets",
+      "label": "Paquets signés : garder premiers, coupures et dette",
+      "question": "Quelle inégalité locale des vrais paquets pourrait se sommer sans perdre les couplages ?",
+      "nodes": [
+        "fluctuation",
+        "global_sign",
+        "transport",
+        "coverage"
+      ],
+      "source": "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+      "witness": "Modèle continu négatif et blocs à rapport fixe déjà réfutés ; ne pas les reconstruire sans nouvelle hypothèse.",
+      "output": "Énoncé vérifiable avec bords, norme, dette et critère de rejet ; contre-exemple recevable. Aucun signe universel promis.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Un paquet admissible réfute la proposition, ou la somme des dettes n’est pas contrôlée."
+    },
+    {
+      "id": "duale_schur",
+      "label": "Dette de Schur dans la norme duale",
+      "question": "Peut-on payer la dette par une norme duale spécifique, sans exiger toutes les sources fortes de Q ?",
+      "nodes": [
+        "schur",
+        "global_sign",
+        "compact"
+      ],
+      "source": "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+      "witness": "Matrices positives en tête avec complément ou résidu non contrôlé.",
+      "output": "Borne candidate ou obstruction avec domaine et constantes ; bilan de portée local/global. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": true,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Une hypothèse de domaine manque ou l’inégalité duale ne domine pas le vrai couplage."
+    },
+    {
+      "id": "couverture_constructive",
+      "label": "Deux filtres : approximants et norme de forme",
+      "question": "Comment construire effectivement les approximants de la grammaire déjà démontrée, avec leur erreur de forme ?",
+      "nodes": [
+        "coverage",
+        "domaines",
+        "weil_all"
+      ],
+      "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+      "witness": "Convergence L² seule, moments perdus, ou contrôle qui dépend du support sans borne.",
+      "output": "Algorithme d’approximation et contrat d’erreur, ou obstruction précise. Cette tâche ne prouve pas le signe. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "La suite ne converge pas dans la topologie exigée ; le transfert de signe est alors refusé."
+    },
+    {
+      "id": "test_paquets",
+      "label": "Confronter la loi candidate aux vrais coefficients",
+      "question": "Sur le domaine à support positif, quel calcul arithmétique donne q(f) ≥ ||T_+f||², avec couplages complexes et erreurs réellement contrôlées ?",
+      "nodes": [
+        "global_sign",
+        "schur",
+        "anchoring"
+      ],
+      "source": "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+      "witness": "Contre-profils ayant mêmes masses et moments mais des coupures intérieures différentes.",
+      "output": "Rapport positif borné, réfutation ciblée ou indétermination ; aucune extrapolation infinie. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "requires": [
+        "signe_paquets",
+        "duale_schur"
+      ],
+      "missing_prerequisites": [
+        "signe_paquets",
+        "duale_schur"
+      ],
+      "status": "ouvert",
+      "subtasks_executed": true,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": false,
+      "refutation": "Un cas admissible et rigoureusement contrôlé contredit la loi ; un simple échec numérique reste indéterminé."
+    },
+    {
+      "id": "mu_correlations",
+      "label": "Carte d’identité de μ et corrélations pondérées",
+      "question": "Quelle identité spécifique distingue les vrais poids des suites qui imitent leurs statistiques partielles ?",
+      "nodes": [
+        "identity",
+        "anchoring",
+        "large_q"
+      ],
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+      "witness": "Masque sur les premiers et copies carrées ; une covariance moyenne de μ ne règle pas ces poids.",
+      "output": "Identité ou invariant candidat, avec témoin et dépendance aux coupures. Le vieux rejet du census à deux points est respecté.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "La propriété candidate est aussi satisfaite par un contre-modèle qui viole la borne visée."
+    },
+    {
+      "id": "grands_conducteurs",
+      "label": "Tester une loi spécifique des grands conducteurs",
+      "question": "Quel mécanisme pourrait donner R_{q>X} ≤ C X³ polylog sans effacer μ(q) ?",
+      "nodes": [
+        "large_q",
+        "head",
+        "copies",
+        "threequarters"
+      ],
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+      "witness": "Perte D√H du crible générique et contre-modèle sur les nombres premiers.",
+      "output": "Tentative bornée avec inégalité visée, dépendances et bilan. La borne globale n’est pas un livrable garanti.",
+      "requires": [
+        "mu_correlations"
+      ],
+      "missing_prerequisites": [
+        "mu_correlations"
+      ],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": false,
+      "refutation": "La constante dépend d’une coupure, une annulation est supposée, ou le lemme est contredit par un test admissible."
+    },
+    {
+      "id": "sources_manquantes",
+      "label": "Originaux V6.42–V6.50 retrouvés",
+      "question": "Les 27 scripts/modules et les trois notes recherchées sont retrouvés. L’audit complet ajoute176 fichiers originaux ; deux références V6.51 restent suivies séparément.",
+      "nodes": [
+        "sources_registre",
+        "local"
+      ],
+      "source": "RECUPERATION_2026_10_15.json",
+      "witness": "Un programme reconstruit n’est pas présenté comme l’original retrouvé.",
+      "output": "176 fichiers réintégrés avec leurs empreintes et provenance ;40 versions anciennes divergentes conservées en archives sans remplacer les versions courantes.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "cloture_documentaire",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": false,
+      "refutation": "Aucune trace originale vérifiable : maintenir l’absence, sans certificat de rejeu intégral."
+    },
+    {
+      "id": "v13_fibre",
+      "label": "Pli sur une fibre à coefficient A fixé",
+      "question": "Une direction candidate porte-t-elle un vrai pli transversal sur la fibre qui conserve A ?",
+      "nodes": [
+        "v13",
+        "archipel"
+      ],
+      "source": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+      "witness": "Fibre vide, rang perdu, ou dérivée paramétrique nulle.",
+      "output": "Certificat local ou obstacle documenté. Cette branche ne garantit pas la loi globale de Weil.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Un jet nul non certifié ne donne pas un zéro double ; préserver les pertes et les indéterminations."
+    },
+    {
+      "id": "noyau_S08",
+      "label": "Certificat du noyau des moments à S = 0,8",
+      "question": "Certifier un minorant de Q_W sur les tests à moments nuls de support [−0,8 ; 0,8], où agissent 2, 3 et 4.",
+      "nodes": [
+        "local",
+        "pos"
+      ],
+      "source": "1_Presentation/81_ZHU_REPRODUIT.md",
+      "witness": "Marge mesurée ≈ 5·10⁻¹² (doc. 81), non certifiée ; certificat existant jusqu’à 11/20 (doc. 75).",
+      "output": "Certificat local ou obstacle documenté. Renforce une marge déjà positive (Zhu) ; aucune fenêtre nouvelle ni conséquence globale : la positivité sur toutes les fenêtres est RH.",
+      "requires": [],
+      "missing_prerequisites": [],
+      "status": "ouvert",
+      "subtasks_executed": false,
+      "kind": "investigation",
+      "script": null,
+      "cost": null,
+      "bellman_mapping": null,
+      "bellman_status": "Hors modèle : aucun coût ni contrat équivalent explicitement lié.",
+      "ready_for_formulation": true,
+      "refutation": "Marge mesurée sous 10⁻¹³ avec plus de modes, ou tête irréalisable en intervalles : la voie par fenêtres s’arrête à 11/20."
+    }
+  ],
+  "graph_obligations": [
+    {
+      "source": "global_sign",
+      "target": "weil_all",
+      "kind": "conditionnel",
+      "requires": [
+        "global_sign",
+        "coverage"
+      ]
+    },
+    {
+      "source": "coverage",
+      "target": "weil_all",
+      "kind": "conditionnel",
+      "requires": [
+        "global_sign",
+        "coverage"
+      ]
+    }
+  ],
+  "graph_links_are_proofs": false,
+  "calculation_requests": [],
+  "executable_actions": [],
+  "next_theoretical_result": "Une inégalité candidate sur les vrais poids premiers, avec bords, norme, dette, dépendance au support et témoin de rejet. Son test global attend les prérequis déclarés.",
+  "inputs": {
+    "3_Preuves_et_calculs/signal_v657/resolution_resultats.json": "4852653d73d17dcc2c6b86d751fd1a3b4b4dfa88144199b934b6a718e66c1c16",
+    "3_Preuves_et_calculs/signal_v657/certifier_resolution.py": "4b2127ce850418888d9a018c6cfae66b5c13b84974cde222f08f7315a170083f",
+    "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py": "75fd5f1a615c4438a527acc6f24db24890a0ae975963895a13ca3ee4a14f07c8",
+    "3_Preuves_et_calculs/src/prime_centered_bridge.py": "8727fb2e1c7c0258e26e737039cb0aaf564d14f24faf57147a86f0a98a10d3d7",
+    "3_Preuves_et_calculs/src/symbolic_weil_family.py": "aeedb92782575a85d5102681dd232ac3591be03431e351741a175af9b595d224",
+    "3_Preuves_et_calculs/recherche79/compensation_blocks.py": "1e0ffce184e848994a82c40ee9f96a2c007d8ce1ea0bd750311a94d50c5537e7",
+    "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json": "21194b1ce4ccc3babfefbec01aaf418a984710f49d42436ef76bbb443ecb06bd",
+    "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py": "b5e0a84c43deee55b6045ba8e4c03566fb9583f84335e55eb88b438a91949e47",
+    "3_Preuves_et_calculs/data/v644_family_resultats.json": "513d0aa1e3605e01a956e6349e498411edf69d3cf33349b8e9420b9841739e07"
+  },
+  "fiches_proposees": [
+    {
+      "cle": "bellman:noyaux",
+      "genre": "lier_instance",
+      "role": "coordinateur",
+      "titre": "Auditer noyaux et couplages du candidat",
+      "question": "Lier une instance exécutable à l'étude Bellman « Auditer noyaux et couplages du candidat » : objet, domaine, entrées avec empreintes, commande bornée, issues possibles et vérificateur.",
+      "objet": "contrat d’étude",
+      "domaine": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "entrees": [
+        "2_Methode/Pilotage/bellman_contrats_v643.json"
+      ],
+      "commande": null,
+      "sortie_attendue": "Contrat d’exécution complet, soumis à l’auteur ; aucun lancement.",
+      "critere_rejet": "Aucune instance réalisable dans la durée déclarée ([1, 2] lots H) : l'étude reste hors exécution.",
+      "temoin": null,
+      "budget": [
+        1,
+        2
+      ],
+      "noeuds": [
+        "schur",
+        "compact"
+      ]
+    },
+    {
+      "cle": "investigation:signe_paquets",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Paquets signés : garder premiers, coupures et dette",
+      "question": "Quelle inégalité locale des vrais paquets pourrait se sommer sans perdre les couplages ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md"
+      ],
+      "commande": null,
+      "sortie_attendue": "Énoncé vérifiable avec bords, norme, dette et critère de rejet ; contre-exemple recevable. Aucun signe universel promis.",
+      "critere_rejet": "Un paquet admissible réfute la proposition, ou la somme des dettes n’est pas contrôlée.",
+      "temoin": "Modèle continu négatif et blocs à rapport fixe déjà réfutés ; ne pas les reconstruire sans nouvelle hypothèse.",
+      "budget": null,
+      "noeuds": [
+        "fluctuation",
+        "global_sign",
+        "transport",
+        "coverage"
+      ]
+    },
+    {
+      "cle": "investigation:duale_schur",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Dette de Schur dans la norme duale",
+      "question": "Peut-on payer la dette par une norme duale spécifique, sans exiger toutes les sources fortes de Q ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": [
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "commande": null,
+      "sortie_attendue": "Borne candidate ou obstruction avec domaine et constantes ; bilan de portée local/global. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "critere_rejet": "Une hypothèse de domaine manque ou l’inégalité duale ne domine pas le vrai couplage.",
+      "temoin": "Matrices positives en tête avec complément ou résidu non contrôlé.",
+      "budget": null,
+      "noeuds": [
+        "schur",
+        "global_sign",
+        "compact"
+      ]
+    },
+    {
+      "cle": "investigation:couverture_constructive",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Deux filtres : approximants et norme de forme",
+      "question": "Comment construire effectivement les approximants de la grammaire déjà démontrée, avec leur erreur de forme ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": [
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md"
+      ],
+      "commande": null,
+      "sortie_attendue": "Algorithme d’approximation et contrat d’erreur, ou obstruction précise. Cette tâche ne prouve pas le signe. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "critere_rejet": "La suite ne converge pas dans la topologie exigée ; le transfert de signe est alors refusé.",
+      "temoin": "Convergence L² seule, moments perdus, ou contrôle qui dépend du support sans borne.",
+      "budget": null,
+      "noeuds": [
+        "coverage",
+        "domaines",
+        "weil_all"
+      ]
+    },
+    {
+      "cle": "investigation:mu_correlations",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Carte d’identité de μ et corrélations pondérées",
+      "question": "Quelle identité spécifique distingue les vrais poids des suites qui imitent leurs statistiques partielles ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ],
+      "commande": null,
+      "sortie_attendue": "Identité ou invariant candidat, avec témoin et dépendance aux coupures. Le vieux rejet du census à deux points est respecté.",
+      "critere_rejet": "La propriété candidate est aussi satisfaite par un contre-modèle qui viole la borne visée.",
+      "temoin": "Masque sur les premiers et copies carrées ; une covariance moyenne de μ ne règle pas ces poids.",
+      "budget": null,
+      "noeuds": [
+        "identity",
+        "anchoring",
+        "large_q"
+      ]
+    },
+    {
+      "cle": "investigation:v13_fibre",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Pli sur une fibre à coefficient A fixé",
+      "question": "Une direction candidate porte-t-elle un vrai pli transversal sur la fibre qui conserve A ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": [
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md"
+      ],
+      "commande": null,
+      "sortie_attendue": "Certificat local ou obstacle documenté. Cette branche ne garantit pas la loi globale de Weil.",
+      "critere_rejet": "Un jet nul non certifié ne donne pas un zéro double ; préserver les pertes et les indéterminations.",
+      "temoin": "Fibre vide, rang perdu, ou dérivée paramétrique nulle.",
+      "budget": null,
+      "noeuds": [
+        "v13",
+        "archipel"
+      ]
+    },
+    {
+      "cle": "investigation:noyau_S08",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Certificat du noyau des moments à S = 0,8",
+      "question": "Certifier un minorant de Q_W sur les tests à moments nuls de support [−0,8 ; 0,8], où agissent 2, 3 et 4.",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": [
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "commande": null,
+      "sortie_attendue": "Certificat local ou obstacle documenté. Renforce une marge déjà positive (Zhu) ; aucune fenêtre nouvelle ni conséquence globale : la positivité sur toutes les fenêtres est RH.",
+      "critere_rejet": "Marge mesurée sous 10⁻¹³ avec plus de modes, ou tête irréalisable en intervalles : la voie par fenêtres s’arrête à 11/20.",
+      "temoin": "Marge mesurée ≈ 5·10⁻¹² (doc. 81), non certifiée ; certificat existant jusqu’à 11/20 (doc. 75).",
+      "budget": null,
+      "noeuds": [
+        "local",
+        "pos"
+      ]
+    }
+  ]
+}

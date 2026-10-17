@@ -1,0 +1,45 @@
+{
+ "P1_ecart_max_identite": 1.4233406120389702e-15,
+ "zeta": {
+  "n_origines": 1064,
+  "chi2_reduit_R3": 1.337367454405161,
+  "cases_R3": 120,
+  "chi2_reduit_Poisson": 17.33395989974937,
+  "cases_Poisson": 144,
+  "masse_zone_obs": 0.0,
+  "masse_zone_R3": 4.42573260754011,
+  "masse_zone_R2R2": 13.607026419637346,
+  "masse_zone_Poisson": 266.0
+ },
+ "zeta_L_chi5": {
+  "n_origines": 829,
+  "chi2_reduit_R3": 2.52201168690616,
+  "cases_R3": 120,
+  "chi2_reduit_Poisson": 9.503710963677792,
+  "cases_Poisson": 144,
+  "masse_zone_obs": 10.0,
+  "masse_zone_R3": 3.448244672604089,
+  "masse_zone_R2R2": 10.601715133345264,
+  "masse_zone_Poisson": 207.25,
+  "fraction_zeta": 0.40849722751509715,
+  "chi2_reduit_melange": 0.8727781267316284,
+  "cases_melange": 141,
+  "masse_zone_melange": 18.297023427759132
+ },
+ "zeta_t_le_600": {
+  "n_origines": 334,
+  "chi2_reduit_R3": 0.9688457089692202,
+  "cases_R3": 118,
+  "chi2_reduit_Poisson": 5.872837658017299,
+  "cases_Poisson": 144,
+  "masse_zone_obs": 0.0,
+  "masse_zone_R3": 1.3892807245473653,
+  "masse_zone_R2R2": 4.27137859413428,
+  "masse_zone_Poisson": 83.5
+ },
+ "n_zeros": {
+  "zeta": 1070,
+  "zeta_600": 341,
+  "L_chi5_600": 494
+ }
+}

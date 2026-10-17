@@ -1,0 +1,19 @@
+{
+ "courbes": 425,
+ "courbes_2g_pivots_positifs": 424,
+ "courbes_pivot_nul": [
+  {
+   "q": 5,
+   "g": 3,
+   "premier_pivot_non_positif": 4.0
+  }
+ ],
+ "faux": 220,
+ "faux_pivot_negatif": 219,
+ "faux_pivot_nul": 1,
+ "faux_index_du_premier_pivot_non_positif": {
+  "1.0": 4,
+  "2.0": 122,
+  "3.0": 94
+ }
+}

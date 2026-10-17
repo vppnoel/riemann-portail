@@ -1,0 +1,5 @@
+V6.55
+Amplification arithmetique - restitution exacte et petits conducteurs
+14 octobre 2026
+Base : V6.54
+Type : complement de recherche, avec PDF et programmes.

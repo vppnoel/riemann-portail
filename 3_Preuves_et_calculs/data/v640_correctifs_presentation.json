@@ -1,0 +1,22 @@
+{
+  "version": "V6.40",
+  "date_utc": "2026-10-12T13:38:23.432149+00:00",
+  "nature": "Presentation correction after the first full test run; no experimental choice changed",
+  "initial_tests_passed": 237,
+  "initial_tests_total": 239,
+  "initial_failures": [
+    "Carte des idées still declared Version6.39",
+    "New Markdown files missing corpus UTF-8 BOM"
+  ],
+  "original_prediction_path": "4_Archives/recus/V640/prevision_v640_comparaison.md",
+  "original_prediction_sha256": "68e5b6b6ab6e65b88f191ac64eb4386d1dcbd91301f42350fa84679589809b6a",
+  "active_prediction_sha256": "9a4d58cf54caa728577f8c8dbc2794d73a194fef79e066e2a1535f5f86c1aade",
+  "prediction_content_identical_after_removing_three_byte_BOM": true,
+  "selection_and_frozen_lock_unchanged": true,
+  "markdown_BOM_added": [
+    "3_Preuves_et_calculs/preuves/V640_RELECTURE_CONSTRUCTIVE.md",
+    "3_Preuves_et_calculs/preuves/LEMMES_ET_SUITE_V640.md",
+    "3_Preuves_et_calculs/preuves/V640_RELECTURE_CRITIQUE.md",
+    "3_Preuves_et_calculs/data/prevision_v640_comparaison.md"
+  ]
+}

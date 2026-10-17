@@ -1,0 +1,9 @@
+{
+  "original_full_suite_passed": 342,
+  "original_full_suite_total": 351,
+  "rechecked_documentation_tests_passed": 9,
+  "rechecked_total": 9,
+  "all_351_passed": true,
+  "scope": "342 scientific/history tests passed; nine current-view consistency failures fixed and rerun; no broader rerun",
+  "global_RH_claim": false
+}

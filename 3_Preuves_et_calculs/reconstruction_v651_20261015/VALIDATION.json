@@ -1,0 +1,56 @@
+{
+  "scope": "Finite reconstruction only, original files not recovered",
+  "default_bits": 160,
+  "precision_nesting_bits": [
+    80,
+    160,
+    256
+  ],
+  "precision_nesting_all_cases": true,
+  "rational_interval_known_values_passed": true,
+  "domain_rejections_passed": 4,
+  "optional_mpmath_crosscheck": {
+    "executed": true,
+    "backend": "mpmath1.3.0 interval arithmetic at320bits",
+    "truncated_witnesses": [
+      {
+        "S": 4,
+        "polynomial_and_mass_exact_match_original_modules": true,
+        "mpmath_interval_contained": true
+      },
+      {
+        "S": 8,
+        "polynomial_and_mass_exact_match_original_modules": true,
+        "mpmath_interval_contained": true
+      },
+      {
+        "S": 16,
+        "polynomial_and_mass_exact_match_original_modules": true,
+        "mpmath_interval_contained": true
+      },
+      {
+        "S": 32,
+        "polynomial_and_mass_exact_match_original_modules": true,
+        "mpmath_interval_contained": true
+      },
+      {
+        "S": 64,
+        "polynomial_and_mass_exact_match_original_modules": true,
+        "mpmath_interval_contained": true
+      },
+      {
+        "S": 128,
+        "polynomial_and_mass_exact_match_original_modules": true,
+        "mpmath_interval_contained": true
+      }
+    ],
+    "boundary_cases": 3,
+    "independent_human_or_agent_review_completed": false
+  },
+  "global_v655_zip_unchanged": true,
+  "global_v655_zip_sha256": "b21898f065678ecea28fd52ddbc1eb50888f0c273c99749adfd28cdd5bb772dc",
+  "independent_agent_reviews_completed": false,
+  "reason": "Both parallel reviews interrupted by usage limit",
+  "RH_proved": false,
+  "fresh_extracted_zip_replay_byte_identical": true
+}

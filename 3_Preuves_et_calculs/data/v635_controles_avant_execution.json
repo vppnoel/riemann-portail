@@ -1,0 +1,31 @@
+{
+  "version": "V6.35",
+  "date": "2026-10-12",
+  "nature": "Plan de validation écrit avant l'exécution consolidée. Les valeurs déjà connues sont des contrôles de reproduction, pas des prévisions de découverte.",
+  "courbe": "y^2=x^3+x+1 ; cubique lisse pour p=3,5,7,11",
+  "calcul_independant": "Construire F_p[u]/(m) avec m irréductible ; compter les carrés par arithmétique exacte avant de comparer à la récurrence spectrale.",
+  "controles_connus": [
+    {"p": 5, "n": 1, "N": 9},
+    {"p": 5, "n": 2, "N": 27},
+    {"p": 5, "n": 3, "N": 108},
+    {"p": 7, "n": 1, "N": 5},
+    {"p": 7, "n": 2, "N": 55},
+    {"p": 7, "n": 3, "N": 380}
+  ],
+  "certificats": [
+    {"p": 3, "n": 3, "J": 3, "K": 11, "M": 4, "torsion": false},
+    {"p": 5, "n": 2, "J": 7, "K": 9, "M": 6, "torsion": false},
+    {"p": 7, "n": 2, "J": 3, "K": 11, "M": 4, "torsion": false},
+    {"p": 5, "n": 3, "J": 5, "K": 45, "M": 8, "torsion": false},
+    {"p": 5, "n": 3, "J": 5, "K": 45, "M": 8, "torsion": true}
+  ],
+  "refutations": [
+    "Une opération d'extension échoue à l'inverse ou à a^q=a.",
+    "La matrice factorisée diffère d'une évaluation directe des polynômes.",
+    "Le rang exact dépasse sa majoration.",
+    "Le témoin est nul ou sa multiplicité est inférieure à M.",
+    "Le comptage direct contredit la récurrence issue de la rationalité.",
+    "Le cas M>p est traité par inversion d'une factorielle."
+  ],
+  "portee": "La preuve porte sur toute la tour. Une liste finie de corps vérifie l'implémentation et ne prouve pas l'énoncé universel."
+}

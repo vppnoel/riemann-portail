@@ -1,0 +1,15 @@
+{
+  "version": "V6.43",
+  "tests_passed": 271,
+  "tests_total": 271,
+  "independent_scenario_cases": 270,
+  "client_case_count": 270,
+  "current_html_pages_links_checked": 10,
+  "dom_interactions_checked": true,
+  "pdf_pages": 10,
+  "pdf_overfull_boxes": 0,
+  "historical_science_files_identical": 463,
+  "global_arithmetic_sign": "open",
+  "external_review": false,
+  "coverage": "Code, exact rational Schur examples, an independent archimedean quadrature, public primary readings and auxiliary proofs; no global positivity claim"
+}

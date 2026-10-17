@@ -1,0 +1,13 @@
+{
+  "version": "V6.40",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison"
+  ],
+  "proven": "Exact constraint feasibility from V6.39; R3 dominance and conditional root velocity lemmas.",
+  "document": "64_COMPARAISON_EXACTE_V13.pdf",
+  "result": "12 couples exacts : 8 détections plus précoces et 4 plus tardives à D élevé ; 24 racines recoupées à 80/110 chiffres de travail. Le signe se regroupe par ancre. Aucun ordre causal ou premier zéro certifié.",
+  "next_action": "v640_branches_v13",
+  "scope": "Numerical first deficit tranches; no certified earlier absence or causality.",
+  "next_action_is_in_historical_bellman_model": false
+}

@@ -1,0 +1,152 @@
+{
+ "A": {
+  "courbes": 425,
+  "courbes_une_seule_positive": 425,
+  "courbes_perp_sans_positive": 425,
+  "courbes_rang_perp_egal_2g": 424,
+  "faux_jumeaux": 220,
+  "jumeaux_au_moins_deux_positives": 220,
+  "jumeaux_surplus_egal_hors_cercle_sur_2": 220,
+  "jumeaux_rang_perp_egal_2g": 220,
+  "repartition_jumeaux": [
+   {
+    "hors_cercle": 2,
+    "positives_forme_complete": 2,
+    "n": 101
+   },
+   {
+    "hors_cercle": 4,
+    "positives_forme_complete": 3,
+    "n": 119
+   }
+  ]
+ }
+}
+{
+ "zeta": [
+  {
+   "L": 100,
+   "X": 4,
+   "positives": 1,
+   "negatives_metrique": 0,
+   "rang_metrique": 100,
+   "autointersection_diag": -0.0353882020094553
+  },
+  {
+   "L": 200,
+   "X": 10,
+   "positives": 1,
+   "negatives_metrique": 0,
+   "rang_metrique": 200,
+   "autointersection_diag": -0.0353882020094553
+  },
+  {
+   "L": 300,
+   "X": 23,
+   "positives": 1,
+   "negatives_metrique": 0,
+   "rang_metrique": 299,
+   "autointersection_diag": -0.0353882020094553
+  },
+  {
+   "L": 400,
+   "X": 61,
+   "positives": 1,
+   "negatives_metrique": 0,
+   "rang_metrique": 399,
+   "autointersection_diag": -0.0353882020094553
+  },
+  {
+   "L": 600,
+   "X": 439,
+   "positives": 1,
+   "negatives_metrique": 0,
+   "rang_metrique": 594,
+   "autointersection_diag": -0.0353882020094553
+  }
+ ],
+ "L_chi5": [
+  {
+   "L": 100,
+   "X": 4,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 100,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 200,
+   "X": 10,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 200,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 300,
+   "X": 23,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 300,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 400,
+   "X": 61,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 399,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 600,
+   "X": 439,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 598,
+   "autointersection_diag": -0.07104464193956328
+  }
+ ],
+ "DH": [
+  {
+   "L": 100,
+   "X": 4,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 100,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 200,
+   "X": 10,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 200,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 300,
+   "X": 23,
+   "positives": 0,
+   "negatives_metrique": 0,
+   "rang_metrique": 300,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 400,
+   "X": 61,
+   "positives": 2,
+   "negatives_metrique": 2,
+   "rang_metrique": 399,
+   "autointersection_diag": -0.07104464193956328
+  },
+  {
+   "L": 600,
+   "X": 439,
+   "positives": 10,
+   "negatives_metrique": 10,
+   "rang_metrique": 598,
+   "autointersection_diag": -0.07104464193956328
+  }
+ ]
+}

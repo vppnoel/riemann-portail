@@ -1,0 +1,24 @@
+{
+  "q": 7,
+  "Tmax": 300,
+  "nombre": 11,
+  "diagnostics": {
+    "max_phase_vertical": 0.06545582201083197,
+    "max_phase_horizontal": 0.7999984596551906,
+    "max_integer_residual": 1.7053025658242404e-11,
+    "refined_rows": 1080,
+    "unresolved_horizontal_rows": 0,
+    "sigma_right": 3.0,
+    "first_term_margin_min": 0.14147480701241172,
+    "max_phase_vertical_fin": 0.032728253751048896,
+    "max_ecart_enroulement_pas": 1.0494416868971177e-11
+  },
+  "nombres_stables_first": 11,
+  "tous_pairs_nonnegatifs": true,
+  "niveaux_modifies": 0,
+  "euler_sans_hors_droite": true,
+  "P3_proches_proxy": 4,
+  "P3_nombre": 8,
+  "proxy_et_direct_censures": 2,
+  "P3_statut": "non validée : 4 concordances observées, 2 désaccords, 2 censures"
+}

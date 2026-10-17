@@ -1,0 +1,7 @@
+{
+  "active_pages": 16,
+  "local_targets_checked": 1151,
+  "broken_targets": 0,
+  "common_navigation": true,
+  "scope": "static targets + shared navigation; no browser layout validation"
+}

@@ -1,0 +1,17 @@
+{
+  "all_checks_passed": true,
+  "kernel_file": "shadow_high_precision_x1000_kernels.json",
+  "cutoff": 1000,
+  "row_count": 194,
+  "checked_initial_raccord": true,
+  "checked_arithmetic_weights": true,
+  "checked_positive_source_pieces": true,
+  "max_mass_error": "1.50999999999999989386501039656027963318062050584712134949480848624881570081e-58",
+  "max_moment_error": "3.32459076801622720210163415918958494512317759643354233754922126841271372033e-48",
+  "max_partition_gap_or_overlap": "7.58026811288190600966059045913213158049428538064202613243022743723120525774e-60",
+  "independent_formulas": "closed A_prime; Horner A with 180 terms; quantile inversion from original measure",
+  "working_digits": 75,
+  "declared_tolerance": "1.0e-38",
+  "interval_certificate": false,
+  "global_RH_claim": false
+}

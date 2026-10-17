@@ -1,0 +1,71 @@
+{
+  "method": "Exact affine integration on integer intervals; double precision coefficients",
+  "family": "F_u(x)=sum_(n odd <=x) mu(n) Jacobi(u,n) B(x/n)",
+  "normalization": "Q_H(X)=sum_(1<=u<=H) integral_1^X |F_u(x)|^2 dx; H=X",
+  "status": "Finite diagnostic only; no interval certificate or infinite estimate",
+  "results": [
+    {
+      "X": 100,
+      "H": 100,
+      "odd_squarefree_columns": 41,
+      "Q_family": 59759.49215148359,
+      "D_weighted_diagonal": 59828.48808274758,
+      "R_crossed_signed": -68.99593126399122,
+      "Q_over_HX2": 0.05975949215148359,
+      "D_over_HX2": 0.05982848808274758,
+      "R_over_HX2": -6.899593126399123e-05,
+      "J_odd_target_over_X2": 0.03283978631204404,
+      "square_copy_primes": [
+        7
+      ],
+      "square_copy_count": 1,
+      "copied_energy_over_MX2": 0.03893854212518384,
+      "rounding_certified": false,
+      "infinite_bound_proved": false
+    },
+    {
+      "X": 300,
+      "H": 300,
+      "odd_squarefree_columns": 122,
+      "Q_family": 1566270.9902840753,
+      "D_weighted_diagonal": 1582542.6068952386,
+      "R_crossed_signed": -16271.616611163365,
+      "Q_over_HX2": 0.05801003667718797,
+      "D_over_HX2": 0.0586126891442681,
+      "R_over_HX2": -0.0006026524670801246,
+      "J_odd_target_over_X2": 0.025678133644700115,
+      "square_copy_primes": [
+        11,
+        13,
+        17
+      ],
+      "square_copy_count": 3,
+      "copied_energy_over_MX2": 0.028259400876211854,
+      "rounding_certified": false,
+      "infinite_bound_proved": false
+    },
+    {
+      "X": 1000,
+      "H": 1000,
+      "odd_squarefree_columns": 404,
+      "Q_family": 56402139.77886727,
+      "D_weighted_diagonal": 57665012.58051452,
+      "R_crossed_signed": -1262872.8016472533,
+      "Q_over_HX2": 0.056402139778867266,
+      "D_over_HX2": 0.05766501258051452,
+      "R_over_HX2": -0.0012628728016472533,
+      "J_odd_target_over_X2": 0.017779388336596622,
+      "square_copy_primes": [
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "square_copy_count": 5,
+      "copied_energy_over_MX2": 0.020670503923381423,
+      "rounding_certified": false,
+      "infinite_bound_proved": false
+    }
+  ]
+}

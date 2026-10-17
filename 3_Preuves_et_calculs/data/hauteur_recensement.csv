@@ -1,0 +1,8 @@
+cas,negatives
+DH (premiers),50
+"L(s, χ5) (premiers), témoin",0
+"ζ (premiers), contrôle non pré-enregistré",0
+DH sans les quadruplets ≤ 600,20
+DH sans les quadruplets ≤ 785,8
+DH sans les quadruplets ≤ 1100,6
+DH sans les quadruplets ≤ 1700,0

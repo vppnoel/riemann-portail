@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "prefix_count": 193,
+  "independent_sieve_agrees": true,
+  "euler_rational_to_binary_outward_check": true,
+  "first_prime_interval_contains_replay": true,
+  "summaries": [
+    {
+      "parts_per_block": 1,
+      "covered_noninitial_sources": 192,
+      "nonempty_guards": 9,
+      "all_recorded_intervals_contain_independent_140_digit_values": true
+    },
+    {
+      "parts_per_block": 8,
+      "covered_noninitial_sources": 192,
+      "nonempty_guards": 53,
+      "all_recorded_intervals_contain_independent_140_digit_values": true
+    }
+  ],
+  "root_witnesses_checked": 117,
+  "interior_strict_brackets_checked": 116,
+  "boundary_witnesses_checked": 1,
+  "archimedean_tail_at_T_contains_replay": true,
+  "scope": "numeric replay checks interval consistency, exact source coverage, gamma directed conversion and exported root witnesses; mathematical guard and root justification reviewed separately"
+}

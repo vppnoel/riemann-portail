@@ -1,0 +1,44 @@
+{
+  "version": "V6.42",
+  "date_utc": "2026-10-12T17:53:38.692374+00:00",
+  "full_tests": {
+    "passed": 262,
+    "total": 262,
+    "exit_code": 0,
+    "full_trace": "v642_tests.log"
+  },
+  "certificate": {
+    "fold": "fold_k1_plus_5",
+    "two_precision_plans_passed": true,
+    "continuous_contour_arcs": 256,
+    "local_zero_count": 2,
+    "uniform_root_boxes": 4,
+    "configuration_before": "two critical zeros",
+    "configuration_after": "one off-critical functional pair",
+    "rational_inequalities_replayed": true,
+    "independent_transcendental_backend_verification": false,
+    "scope": "one selected V13 family, rational fold box and local contour"
+  },
+  "PDF": {
+    "pages": 11,
+    "all_pages_rendered_and_inspected": true,
+    "overfull_boxes": 0,
+    "missing_glyphs": 0
+  },
+  "current_views": {
+    "documents": 66,
+    "eight_HTML_pages_local_links_valid": true,
+    "common_menu_graph_current": true,
+    "interactive_graph_nodes": 12,
+    "search_filter_selection_checked": true,
+    "all_current_source_hashes_verified": true
+  },
+  "Bellman": {
+    "independent_enumeration_cases": 972,
+    "JavaScript_client_cases": 972,
+    "actions": 12,
+    "completed_documentary_actions": 5,
+    "prerequisite_correction_is_editorial": true
+  },
+  "global_status": "Weil arithmetic inequality and prime-side growth bound remain open; RH maturity levels unchanged."
+}

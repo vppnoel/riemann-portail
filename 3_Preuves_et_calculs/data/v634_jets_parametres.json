@@ -1,0 +1,62 @@
+[
+  {
+    "p": 29,
+    "J": 2,
+    "K": 10,
+    "M": 3,
+    "dimension": 40,
+    "rang_majore": 39,
+    "noyau_minimal": 1,
+    "degre": 80,
+    "borne_S": 26,
+    "limite_optimisation": 256
+  },
+  {
+    "p": 61,
+    "J": 4,
+    "K": 25,
+    "M": 6,
+    "dimension": 200,
+    "rang_majore": 198,
+    "noyau_minimal": 2,
+    "degre": 297,
+    "borne_S": 49,
+    "limite_optimisation": 256
+  },
+  {
+    "p": 101,
+    "J": 5,
+    "K": 45,
+    "M": 8,
+    "dimension": 450,
+    "rang_majore": 448,
+    "noyau_minimal": 2,
+    "degre": 598,
+    "borne_S": 74,
+    "limite_optimisation": 256
+  },
+  {
+    "p": 1009,
+    "J": 14,
+    "K": 495,
+    "M": 26,
+    "dimension": 13860,
+    "rang_majore": 13858,
+    "noyau_minimal": 2,
+    "degre": 15123,
+    "borne_S": 581,
+    "limite_optimisation": 256
+  },
+  {
+    "p": 10007,
+    "J": 41,
+    "K": 4761,
+    "M": 80,
+    "dimension": 390402,
+    "rang_majore": 390400,
+    "noyau_minimal": 2,
+    "degre": 420049,
+    "borne_S": 5250,
+    "limite_optimisation": 256
+  }
+]

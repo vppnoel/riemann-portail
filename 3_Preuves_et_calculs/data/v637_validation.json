@@ -1,0 +1,32 @@
+{
+  "version": "6.37",
+  "tests_passed": 219,
+  "tests_total": 219,
+  "unexecuted_test_files": 0,
+  "directions": 150,
+  "pairs": 72,
+  "admissible_directions": 150,
+  "total_refinement_changes": 0,
+  "critical_refinement_changes": [
+    0,
+    0
+  ],
+  "off_counts_monotone": true,
+  "roots_recrossed": 24,
+  "roots_jobs": 24,
+  "pdf_pages": 5,
+  "pdf_visual_qa": "All five rendered pages inspected; tables/formulas/figures readable",
+  "archive_validation": {
+    "status": "passed",
+    "tests_passed": 219,
+    "tests_total": 219,
+    "unexecuted_test_files": 0,
+    "source_and_data_byte_checks": "passed on fresh extraction",
+    "only_metadata_and_validation_log_added_after_fresh_tests": true
+  },
+  "limitations": [
+    "Numerical presence recrossings, no zero-free certification",
+    "Targeted large contrasts, no population or causal inference",
+    "No proof of RH/GRH"
+  ]
+}

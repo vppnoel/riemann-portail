@@ -1,0 +1,18 @@
+{
+  "version": "V6.47",
+  "python_tests_passed": 323,
+  "python_tests_total": 323,
+  "javascript_python_grammar_cases": 768,
+  "interfaces": {
+    "active_pages": 14,
+    "local_targets_checked": 1072,
+    "broken_targets": 0,
+    "common_navigation": true,
+    "scope": "static targets + shared navigation; no browser layout validation"
+  },
+  "pdf_pages": 7,
+  "pdf_overfull_boxes": 0,
+  "visual_review": "all article pages and36 vector formulas inspected",
+  "previous_scientific_files_byte_identical": 514,
+  "global_RH_claim": false
+}

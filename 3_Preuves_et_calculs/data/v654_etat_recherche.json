@@ -1,0 +1,52 @@
+{
+  "version": "6.54",
+  "date": "2026-10-14",
+  "timezone": "Europe/Brussels",
+  "goal": "global Weil positivity, arithmetic sign law and coverage",
+  "RH_proved": false,
+  "global_arithmetic_sign_proved": false,
+  "global_energy_bound_proved": false,
+  "new_global_bound": false,
+  "current_report": "CORRELATIONS_IDENTITE_ET_ENERGIE.html",
+  "current_pdf": "CORRELATIONS_IDENTITE_ET_ENERGIE.pdf",
+  "current_tex": "CORRELATIONS_IDENTITE_ET_ENERGIE.tex",
+  "retrospective_report": "PARCOURS_ET_PROPRIETES.html",
+  "identity": {
+    "statement": "sum_{d|n} Lambda(d)=log n",
+    "status": "classical, unconditional",
+    "proof_written": true,
+    "symbolic_checks_to": 1000
+  },
+  "energy": {
+    "definition": "J(X)=integral_1^X (psi(x)-x)^2 dx",
+    "criterion": "RH iff J(X)=O(X^2)",
+    "criterion_status": "classical",
+    "sufficiency_proof_written": true,
+    "global_bound_obtained": false
+  },
+  "computed": {
+    "prime_power_cutoff": 1000,
+    "prime_power_count": 193,
+    "reproduction_digits": 85,
+    "independent_integer_interval_digits": 90,
+    "countermodel_interval_bits": 400
+  },
+  "preserved_local_certificate": {
+    "source": "V6.53 / document 79",
+    "cutoff": 1000,
+    "refined_positive_guards": 53,
+    "new_computation": false
+  },
+  "missing": [
+    "independent all-scale arithmetic bound",
+    "global sign or energy control",
+    "coverage of the chosen full family with its convergence conditions"
+  ],
+  "maturity_changed": false,
+  "historical_recovery_complete": false,
+  "summary": "V6.54 : identité arithmétique, corrélations ancrées et critère énergétique classique intégrés avec preuves, programmes, contre-modèles et audits. Borne globale et signe de Weil ouverts.",
+  "version_correction": {
+    "previous_delivery_label": "V6.53 with supplements",
+    "reason": "new research supplement and retrospective consolidated as V6.54"
+  }
+}

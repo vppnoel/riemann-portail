@@ -1,0 +1,68 @@
+{
+  "version": "V6.51",
+  "origin": "explicit reconstruction from traces",
+  "target": "Weil positivity for every compact polar test",
+  "RH_proved": false,
+  "logic": "AND sign + coverage within a route; OR between covering grammars",
+  "routes": [
+    {
+      "id": "toeplitz",
+      "coverage_proved": true,
+      "quantifiers": "all n,m>=1 and all N>=0",
+      "sign_obligation": "T_(1/n,1/m,N) is positive semidefinite",
+      "guards": [
+        "full arithmetic form",
+        "complex coefficients",
+        "all coupling terms"
+      ]
+    },
+    {
+      "id": "two_filters",
+      "coverage_proved": true,
+      "quantitative_coverage": false,
+      "quantifiers": "all compact smooth complex g2,g3",
+      "sign_obligation": "Q_W(B2*g2+B3*g3)>=0",
+      "guards": [
+        "all primes in Q_W",
+        "mixed B2/B3 couplings",
+        "weighted continuity"
+      ]
+    },
+    {
+      "id": "exhaustion",
+      "coverage_implication_proved": true,
+      "quantifiers": "S_j tends to infinity; all tests in each box",
+      "sign_obligation": "Q_W is nonnegative in every box"
+    }
+  ],
+  "actions": [
+    "Écrire les noyaux de paquets depuis la fluctuation signée et tous les premiers actifs.",
+    "Construire une borne certifiée de la norme duale restreinte des couplages.",
+    "Chercher une loi des dettes de Schur pour toutes les tailles et tous les pas.",
+    "Rendre constructive la couverture par deux filtres, sans confondre coût et signe."
+  ],
+  "refused_inferences": [
+    "positive constructor implies positive Weil",
+    "positive finite sample implies universal sign",
+    "negative minorant implies negative complete Q",
+    "absolute boundary payment remains globally sufficient",
+    "RH-equivalent prime error bound may be assumed"
+  ],
+  "classifications": {
+    "traced": [
+      67,
+      68,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "posterior": [
+      75
+    ],
+    "reconstructed": [
+      76
+    ]
+  }
+}

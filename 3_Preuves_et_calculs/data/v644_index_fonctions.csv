@@ -1,0 +1,1216 @@
+﻿path,line,name,kind,signature,docstring,explanation_status
+2_Methode/Banc_d_audit/score_auditor.py,7,score,function,"flagged, corpus",,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,18,_load,function,"name, path",,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,22,title_of,function,md: Path,,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,28,doc_figures,function,,,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,43,calc_figures,function,,,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,56,article_figures,function,,,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,65,build_html,function,"D, C, A",,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,94,build_md,function,"D, C, A",,pas de docstring ; comportement non inféré
+2_Methode/Figures/build_figures.py,107,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,18,load,function,,,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,21,txt,function,s: str,"Échappe, puis convertit la notation ^...^ en exposant.",docstring source
+2_Methode/Indicateur/build_indicateur.py,25,check_links,function,d,,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,34,topnav,function,"current: str, prefix: str=''",Barre de navigation commune aux pages d'entrée. prefix : chemin de la racine du corpus vu depuis la page.,docstring source
+2_Methode/Indicateur/build_indicateur.py,42,since,function,"d, dim",Première étape à partir de laquelle le niveau actuel est atteint sans interruption.,docstring source
+2_Methode/Indicateur/build_indicateur.py,233,load_sources,function,,,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,237,crossings,function,"d, links=True","Carte des croisements : matrice des conjectures, liste, zones d'ombre (cases vides, pendants manquants dans le Modèle réduit).",docstring source
+2_Methode/Indicateur/build_indicateur.py,245,crossings.chip,function,"x, mr=False",,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,252,crossings.dots,function,ids,,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,255,crossings.dots.one,function,z,,pas de docstring ; comportement non inféré
+2_Methode/Indicateur/build_indicateur.py,302,build,function,"d, links=True, standalone=True",,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,19,_load,function,"name, path",,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,22,esc,function,s,,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,25,load,function,,,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,30,check,function,"M, S",,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,48,doc_path,function,num: str,,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,54,cells,function,M,"{(ligne, colonne): (symbole, relation, déduite)} ; relations directes, inverses, puis fermeture transitive de ⇔ et ⇒.",docstring source
+2_Methode/Matrice/build_matrice.py,186,principal,function,"n, S",Premier article de la fiche qui a un lien vers son résumé.,docstring source
+2_Methode/Matrice/build_matrice.py,192,build,function,"M, S",,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,198,build.prov,function,v,,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,227,build.dl,function,num,,pas de docstring ; comportement non inféré
+2_Methode/Matrice/build_matrice.py,229,build.sl,function,k,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,19,_indicateur,function,,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,23,source,function,sec: str,Étiquette courte de la section du registre d'où vient un opérateur.,docstring source
+2_Methode/Navigateur/build_navigateur.py,30,esc,function,s: str,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,33,clean,function,s: str,Retire le gras markdown et la notation LaTeX \( \) du registre.,docstring source
+2_Methode/Navigateur/build_navigateur.py,38,operators,function,,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,55,load,function,,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,60,check,function,"carte, ops, ind=None",,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,73,missing_links,function,carte,Les maillons du chaînon (document 32) encore manquants pour ζ : la distance au but.,docstring source
+2_Methode/Navigateur/build_navigateur.py,77,score,function,"c, carte, open_ids",,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,86,_vtuple,function,txt: str,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,89,veille,function,"carte, ops","Veille rétrospective : pour chaque piste écartée, les opérateurs entrés au registre depuis sa dernière lecture.",docstring source
+2_Methode/Navigateur/build_navigateur.py,98,realized,function,"c, ind","Gains de niveau obtenus à la version du coup, lus dans l'indicateur (étape précédente -> étape du coup).",docstring source
+2_Methode/Navigateur/build_navigateur.py,104,itinerary,function,carte,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,146,build,function,"carte, ind, ops, links=True, standalone=True",,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,164,build.opblock,function,names,,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,167,build.chips,function,"c, s",,pas de docstring ; comportement non inféré
+2_Methode/Navigateur/build_navigateur.py,199,build.gtxt,function,g,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v634_pdfs.py,22,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,16,load,function,name,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,19,plain,function,value,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,28,short,function,"value, n=55",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,32,source_path,function,record,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,43,figure,function,"model, results",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,65,markdown,function,"registry, model, result",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,143,html_atlas,function,"registry, model, results",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_atlas.py,211,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v638_inventory.py,10,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v639_document.py,13,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v640_document.py,14,load,function,name,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v640_document.py,15,number,function,"x, digits=6",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v640_document.py,18,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_document.py,14,load,function,name,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_document.py,15,n,function,"x, d=6",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_document.py,17,write_markdown,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_document.py,614,compile_document,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_document.py,641,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_graph.py,14,load,function,name,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_graph.py,16,graph_data,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_graph.py,61,scientific_figures,function,graph,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_graph.py,143,reader,function,graph,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v641_graph.py,152,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_document.py,12,load,function,n,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_document.py,13,dec,function,"x, n=12",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_document.py,14,bound,function,"x, places=12, up=False",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_document.py,20,write_markdown,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_document.py,218,compile_document,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_document.py,239,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_figures.py,9,load,function,n,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_figures.py,11,graph_data,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v642_figures.py,30,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v643.py,7,graph,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v643.py,26,static_figure,function,g,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v643.py,45,build_html,function,g,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v643.py,74,document,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v643.py,105,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,6,module,function,"name, path",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,8,read,function,p,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,9,pdf,function,stem,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,27,report,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,39,dictionary,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,81,dictionary.sanitize,function,s,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,84,dictionary.plain,function,s,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,132,figure,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,146,interactive,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644.py,172,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644_dictionary.py,453,core,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644_dictionary.py,495,metaphors,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644_dictionary.py,503,metaphors.get,function,*names,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644_dictionary.py,512,code_inventory,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644_dictionary.py,518,code_inventory.walk,function,"node, ctx=''",,pas de docstring ; comportement non inféré
+2_Methode/Outils/build_v644_dictionary.py,529,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v640.py,14,read,function,path,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v640.py,15,write,function,"path, value",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v640.py,17,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v641.py,13,read,function,p,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v641.py,14,write,function,"p, x",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v641.py,15,module,function,"name, path",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v641.py,17,run,function,"relative, *args",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v641.py,19,bellman_figure,function,"model, result",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v641.py,34,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v642.py,5,read,function,p,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v642.py,6,write,function,"p, x",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v642.py,7,module,function,"name, p",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v642.py,9,run,function,"p, *args",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v642.py,10,figure,function,"model, result",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v642.py,21,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v643.py,5,read,function,p,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v643.py,6,write,function,"p, x",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v643.py,7,module,function,"name, p",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v643.py,9,run,function,p,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v643.py,10,patch,function,"p, old, new",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v643.py,15,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v644.py,7,read,function,p,,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v644.py,8,write,function,"p, x",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v644.py,9,module,function,"n, p",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v644.py,11,patch,function,"p, a, b",,pas de docstring ; comportement non inféré
+2_Methode/Outils/integrate_v644.py,14,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/md_utf8_bom.py,16,fichiers,function,,,pas de docstring ; comportement non inféré
+2_Methode/Outils/md_utf8_bom.py,21,main,function,,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,18,_load,function,"name, path",,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,33,dossier_label,function,stem: str,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,43,allowed,function,rel: str,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,49,esc,function,s: str,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,52,version_line,function,,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,55,count_tests,function,,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,58,documents,function,ind,"Un document par préfixe « NN_nom » de 1_Presentation, avec ses formats, ses figures et l'étape où il a été produit.",docstring source
+2_Methode/Portail/build_portail.py,108,build,function,standalone: bool=True,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,187,check_links,function,"page: str, base: Path",,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,206,rewrite,function,s: str,Liens relatifs vers des .md ou .docx -> .html (versions converties pour la lecture en ligne).,docstring source
+2_Methode/Portail/build_portail.py,210,_nav_snippet,function,depth: int,,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,214,publication,function,dest: Path,"Copie prête à publier : pages d'entrée, documents qu'elles citent, .md et .docx convertis en HTML, liens réécrits.",docstring source
+2_Methode/Portail/build_portail.py,260,publication.local,function,"out: Path, s: str",,pas de docstring ; comportement non inféré
+2_Methode/Portail/build_portail.py,262,publication.local.fix,function,m,,pas de docstring ; comportement non inféré
+2_Methode/Sources/build_sources.py,19,load,function,,,pas de docstring ; comportement non inféré
+2_Methode/Sources/build_sources.py,22,docx_text,function,p,Texte d'un document Word (paragraphes et tableaux) ; vide si python-docx manque.,docstring source
+2_Methode/Sources/build_sources.py,31,textes,function,,"Textes des documents numérotés de 1_Presentation : Markdown, et Word quand le document n'existe qu'en .docx (02–05, 09–13).",docstring source
+2_Methode/Sources/build_sources.py,38,citations,function,S,"Documents de 1_Presentation (Markdown, ou Word seul) où chaque fiche est citée, par clé ou par motif.",docstring source
+2_Methode/Sources/build_sources.py,49,priorite,function,"s, n_docs",,pas de docstring ; comportement non inféré
+2_Methode/Sources/build_sources.py,52,check,function,S,,pas de docstring ; comportement non inféré
+2_Methode/Sources/build_sources.py,66,lectures,function,"S, n=3",Les lectures prioritaires (coups « lecture » du navigateur) : appuis et résultats à confronter pas encore vérifiés en entier.,docstring source
+2_Methode/Sources/build_sources.py,72,fmt,function,s,Format bibliographique uniforme : [Clé] Auteurs. *Titre*. Publication. Lien.,docstring source
+2_Methode/Sources/build_sources.py,83,doc_refs,function,"text, S",Section « Références » d'un document : toutes les fiches dont la clé figure dans le texte (hors section).,docstring source
+2_Methode/Sources/build_sources.py,97,sync_docs,function,"S, write=True",Ajoute ou met à jour la section « Références » de chaque document numéroté (sauf 20 et 42). Renvoie les documents à jour.,docstring source
+2_Methode/Sources/build_sources.py,109,md_escape,function,t,,pas de docstring ; comportement non inféré
+2_Methode/Sources/build_sources.py,112,build,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/arithmetic_generator.py,13,fit_propagator,function,"states: np.ndarray, ridge: float=0.0","Least-squares A in z_{k+1} ~= A z_k.
+
+`states` has shape (dimension, n_snapshots).  A small ridge can regularize
+nearly dependent channels.",docstring source
+3_Preuves_et_calculs/src/arithmetic_generator.py,31,effective_generator,function,"A: np.ndarray, dt: float, hbar: float=1.0","H=(i*hbar/dt) log(A), so A=exp(-i H dt/hbar) on the chosen branch.",docstring source
+3_Preuves_et_calculs/src/arithmetic_generator.py,41,metric_self_adjointness_defect,function,"H: np.ndarray, M: np.ndarray","Relative defect ||H* M - M H||_F / max(||MH||_F,tiny).",docstring source
+3_Preuves_et_calculs/src/arithmetic_generator.py,50,metric_unitarity_defect,function,"A: np.ndarray, M: np.ndarray",Relative defect ||A* M A-M||_F/||M||_F.,docstring source
+3_Preuves_et_calculs/src/arithmetic_generator.py,59,spectral_metric,function,"H: np.ndarray, imag_tol: float=1e-09, cond_max: float=1000000000000.0, metric_cond_max: float | None=None","Construct M=(V^{-1})* V^{-1} when H is diagonalizable with real spectrum.
+
+Returns (M, eigenvalues, condition_number).  Returns (None, eig, cond) if the
+finite-dimensional quasi-Hermitian certificate fails the reality/conditioning
+checks.  This is a diagnostic, not an infinite-dimensional theorem.",docstring source
+3_Preuves_et_calculs/src/arithmetic_generator.py,83,modal_state_matrix,function,"t: np.ndarray, modes, mixing: np.ndarray | None=None","Synthetic multichannel state from modes (beta,gamma,complex amplitude).
+
+Hidden modal coordinates are a_j exp(((beta_j-1/2)+i gamma_j)t).  A fixed
+invertible mixing matrix may be supplied to make the observed generator
+non-normal while preserving its spectrum.",docstring source
+3_Preuves_et_calculs/src/arithmetic_generator.py,113,generator_diagnostics,function,"states: np.ndarray, dt: float, ridge: float=0.0",Fit A/H and report whether a finite positive spectral metric is found.,docstring source
+3_Preuves_et_calculs/src/base_change.py,15,gns_from_traces,function,"p: np.ndarray, tol: float=1e-09","Faisceau de Toeplitz sur une suite de traces réelles p_0..p_{L+1} : (rang, valeurs propres, valeurs propres du Gram).",docstring source
+3_Preuves_et_calculs/src/base_change.py,22,base_q2_traces,function,"b: np.ndarray, L: int","Traces normalisées vues sur F_q² : p'_n = p_2n, n = 0..L-1.",docstring source
+3_Preuves_et_calculs/src/base_change.py,26,real_weil,function,"c: list[int], q: int","a_j = alpha_j + q / alpha_j (une valeur par paire conjuguée), triés.",docstring source
+3_Preuves_et_calculs/src/base_change.py,32,descents,function,"a: np.ndarray, q: int, tol: float=1e-05",Polynômes de Weil réels entiers h(x) = prod (x - s_j |a_j|) qui ont la même image sur F_q² (a² - 2q).,docstring source
+3_Preuves_et_calculs/src/base_change.py,41,h_of,function,a: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/base_change.py,44,descents_by_factors,function,"h: tuple[int, ...]","(nombre de facteurs irréductibles distincts de h sur Z, nombre de polynômes prod f_i(±x) unitaires distincts).
+Explication attendue des descentes : la base q² efface un signe par facteur irréductible.",docstring source
+3_Preuves_et_calculs/src/bellman_research.py,10,validate,function,model,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bellman_research.py,36,utility,function,"model, completed, weights",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bellman_research.py,42,solve,function,"model, budget, weights, completed=()","Exact Bellman values, all optimal first choices and all terminal portfolios.",docstring source
+3_Preuves_et_calculs/src/bellman_research.py,58,solve.names,function,mask,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bellman_research.py,62,solve.visit,function,"mask, remaining",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bellman_research.py,86,enumerate_portfolios,function,"model, budget, weights","Independent subset enumeration, not a recursive Bellman implementation.",docstring source
+3_Preuves_et_calculs/src/bellman_research.py,106,sensitivity,function,"model, budgets=(2, 4, 6, 8)",243 explicit weight profiles on five criteria; frequencies are not probabilities.,docstring source
+3_Preuves_et_calculs/src/bridge_planning.py,9,satisfies,function,"facts, alternatives",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bridge_planning.py,13,validate,function,model,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bridge_planning.py,45,check_state,function,"model, facts, done",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bridge_planning.py,52,utility,function,"model, facts",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bridge_planning.py,57,solve,function,"model, budget, mode='lower', initial=None, done=()",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bridge_planning.py,68,solve.visit,function,"facts, executed, remaining",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/bridge_planning.py,95,bottom_up,function,"model, budget, mode='lower', initial=None, done=()","Independent explicit state graph and backward table, without recursion/cache.",docstring source
+3_Preuves_et_calculs/src/dark_residual.py,23,compression_components,function,"center: float, kind: str, *, half_width: float=2.5, dimension: int=7, frequency_step: float=0.6, arch_dt: float=0.02, correlation_eps: float=2e-08","Return the finite Weil compression split into canonical contributions.
+
+Components are defined before diagonalization:
+  archimedean : gamma/digamma term,
+  conductor   : log(q/pi) F(0),
+  pole        : zeta pole contribution (zero for non-polar examples),
+  local       : logarithmic-derivative / prime-side term,
+  total       : exact sum of the four matrices.",docstring source
+3_Preuves_et_calculs/src/dark_residual.py,101,residual_metrics,function,"components: dict[str, np.ndarray]","Quantify cancellation along the minimum-eigenvalue direction.
+
+cancellation_ratio = |q_total| / sum_i |q_i|
+residual_amplification = inverse of that ratio.
+
+Small cancellation_ratio means a small final value is selected from much
+larger signed contributions. This is an observability/numerical-sensitivity
+diagnostic, not evidence for RH.",docstring source
+3_Preuves_et_calculs/src/dark_residual.py,137,evaluate_case,function,"center: float, kind: str, **kwargs",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,45,Tomo2Metrics,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,53,Tomo3Metrics,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,63,signal_from_c,function,"c: np.ndarray, n_log: int=4096, t_min: float=1.0, t_max: float | None=None, normalize: bool=True","Return logarithmic grid u and g(u)=exp(-u/2) C(exp(u)).
+
+C is the stepwise partial sum of c. Sampling is uniform in log t. The
+returned signal is centered; when ``normalize`` is true it has unit RMS.",docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,90,phase_randomize_preserve_power,function,"g: np.ndarray, seed: int=0","Randomize discrete Fourier phases while preserving |FFT(g)| exactly.
+
+Works for real or complex signals. Since the inverse signal may be complex,
+this is a power-spectrum control rather than a surrogate constrained to be real.",docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,112,tomo2_gram,function,"g: np.ndarray, n_shifts: int=32, shift_step: int=8","Circular translation Gram matrix K_ij=<T_i g,T_j g>/M.
+
+Circular translation is deliberate: it gives an exact internal control that
+phase-randomized signals with the same power spectrum must produce the same K.",docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,127,tomo2_metrics,function,K: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,145,_segment_ffts,function,"g: np.ndarray, seg_len: int=512, hop: int=256",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,165,tomo3_bicoherence,function,"g: np.ndarray, seg_len: int=512, hop: int=256, max_bin: int=24","Estimate squared bicoherence over positive-frequency triads.
+
+For each (k,l), with k,l>=1 and k+l below Nyquist, estimate
+  b^2 = |E[X_k X_l conj X_{k+l}]|^2 /
+        (E[|X_k X_l|^2] E[|X_{k+l}|^2]).
+Values are clipped to [0,1] against floating-point roundoff.",docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,212,multiplicative_defect,function,"a: np.ndarray, P: int=48","Coefficient-level defect for coprime pairs m,n <= P.
+
+Requires coefficients through P^2. Returns raw mean-square defect and a
+scale-normalized defect in [0,~2] for typical bounded coefficient families.",docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,242,c_from_coefficients,function,"a: np.ndarray, pole: bool=False",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,247,interpolation_coeffs_chi_to_dh,function,"N: int, theta: float",Synthetic path from multiplicative chi_5 (theta=0) to DH (theta=1).,docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,254,_smallest_prime_factor,function,N: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dark_zeta.py,267,steinhaus_completely_multiplicative,function,"N: int, seed: int=0",Random completely multiplicative coefficients with prime values on unit circle.,docstring source
+3_Preuves_et_calculs/src/dark_zeta.py,282,build_signal,function,"kind: str, N: int=32768, n_log: int=4096","Return (a,c,u,g) for zeta/L_chi5/DH using the established rejection pipeline.",docstring source
+3_Preuves_et_calculs/src/delta_contour.py,20,tau_float,function,M: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/delta_contour.py,24,DeltaBand,class,,"Évaluateur de Λ(6 + it) pour t dans une bande [t1, t2] (un angle φ commun).",docstring source
+3_Preuves_et_calculs/src/delta_contour.py,26,DeltaBand.__init__,function,"self, taus: np.ndarray, t1: float, t2: float, c: float=6.0, cut: float=50.0, nodes: int=24, osc: float=3.0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/delta_contour.py,48,DeltaBand.reA,function,"self, t",Re(e^{6iφ} A(6+it)) pour un tableau de t.,docstring source
+3_Preuves_et_calculs/src/delta_contour.py,55,DeltaBand.reA_grid,function,"self, t0: float, dt: float, n: int","Même chose sur la grille t0 + k dt, k < n, par récurrence multiplicative.",docstring source
+3_Preuves_et_calculs/src/delta_contour.py,64,DeltaBand.Z,function,"self, t","Z_Δ(t) = Λ(6+it) / |(2π)^{-s} Γ(s)| = ± |L(Δ, 6 + it)| (normalisation non unitaire, réelle).",docstring source
+3_Preuves_et_calculs/src/delta_contour.py,69,DeltaBand.Lambda,function,"self, t",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/delta_contour.py,72,theta_delta,function,t,"θ(t) = arg Γ(6 + it) − t log 2π (continu, θ(0) = 0) ; N(T) = θ(T)/π + S(T).",docstring source
+3_Preuves_et_calculs/src/delta_ramanujan.py,23,tau,function,M: int,"[tau(0)=0, tau(1), ..., tau(M)] exacts (entiers Python).",docstring source
+3_Preuves_et_calculs/src/delta_ramanujan.py,46,delta_coeffs,function,M: int,"a[n] = lambda(n) = tau(n) / n^(11/2), a[0] = 0, a[1] = 1.",docstring source
+3_Preuves_et_calculs/src/delta_ramanujan.py,52,omega_delta,function,r,"Poids archimédien de L(Δ, s) : 2 Re ψ(6 + i r) - 2 log 2π (pair en r).",docstring source
+3_Preuves_et_calculs/src/delta_ramanujan.py,56,arch_traces_general,function,"n: np.ndarray, h: float, a: float, omega, R: float | None=None, block: float=0.25, order: int=16","(1/π) ∫_0^∞ g^(r) cos(r n h) Ω(r) dr, pour un poids Ω pair.",docstring source
+3_Preuves_et_calculs/src/delta_ramanujan.py,67,traces_delta,function,"c: np.ndarray, N: int, h: float, a: float","t_0..t_N pour L(Δ, s), sans aucun zéro ; c : coefficients de -L'/L (log_derivative_coeffs(delta_coeffs(M))).",docstring source
+3_Preuves_et_calculs/src/delta_ramanujan.py,74,Lambda_delta_mp,function,"t, taus, dps: int=40","Λ(6 + it) = somme_n tau(n) [ (2πn)^-s Γ(s, 2πn) + (2πn)^-(12-s) Γ(12-s, 2πn) ], s = 6 + it (réel pour t réel).",docstring source
+3_Preuves_et_calculs/src/domain_grammar.py,11,Word,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/domain_grammar.py,17,Word.__post_init__,function,self,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/domain_grammar.py,20,Word.json,function,self,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/domain_grammar.py,22,translate,function,"op, *args, parameter=0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/domain_grammar.py,51,assert_admissible,function,word,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/domain_grammar.py,55,allow_global_sign,function,"*, all_supports=False, tail_certified=False, schur_psd_certified=False",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/domain_grammar.py,79,examples,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,40,DualKind,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,57,_sinc,function,z,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,67,tent_fourier,function,"t, half_width: float, frequency: float","Fourier transform of (1-|x|/w)_+ cos(frequency*x).
+
+Convention: H(t)=int f(x) exp(i t x) dx.",docstring source
+3_Preuves_et_calculs/src/dual_lock.py,75,tent_fourier.h0,function,z,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,84,_tri,function,"x: float, w: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,88,_basis_value,function,"x: float, w: float, xi: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,92,correlation_direct,function,"x: float, w: float, xi: float, xj: float, eps: float=2e-08","(f_i * f_j)(x) for real even modulated-tent basis functions.
+
+Since each f_j is even, this is also the autocorrelation-type kernel used
+in the Weil quadratic form.  Breakpoints of the piecewise-linear envelope
+are supplied explicitly; oscillatory integration is numerical.",docstring source
+3_Preuves_et_calculs/src/dual_lock.py,122,_log_derivative_weights,function,"kind: str, nmax: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,132,_arch_matrix,function,"frequencies: np.ndarray, w: float, parity: int, tmax: float=350.0, dt: float=0.02","Archimedean digamma contribution by high-resolution trapezoid rule.
+
+For the present modulated tents the integrand decays as O(t^-4 log t).
+Cross-checks against adaptive quadrature are at ~1e-8 absolute scale for
+the frequency range used in the V6.3 scan.",docstring source
+3_Preuves_et_calculs/src/dual_lock.py,151,_pole_vector,function,"frequencies: np.ndarray, w: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,157,compression_accurate,function,"center: float, kind: str, *, half_width: float=2.5, dimension: int=7, frequency_step: float=0.6, arch_dt: float=0.02, correlation_eps: float=2e-08","Accurate finite compression from primes/generalized local data + gamma.
+
+The basis is fixed before looking at zeros:
+    f_j(x)=(1-|x|/w)_+ cos(xi_j x),
+    xi_j=center + frequency_step*(j-(m-1)/2).
+
+The convolution support is [-2w,2w], so the local sum is finite and only
+uses n <= exp(2w).  No zeros are loaded or used.",docstring source
+3_Preuves_et_calculs/src/dual_lock.py,230,compression_fast,function,"center: float, kind: str, *, half_width: float=2.5, dimension: int=7, frequency_step: float=0.6, dx: float=0.004, arch_dt: float=0.03",Fast screening version; candidate negatives must be accurately refined.,docstring source
+3_Preuves_et_calculs/src/dual_lock.py,289,inertia,function,"M: np.ndarray, tol: float=1e-10",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,298,matrix_metrics,function,M: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,313,scan_centers,function,"centers: np.ndarray, kind: str, *, half_width: float=2.5, dimension: int=7, frequency_step: float=0.6",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,340,negative_intervals,function,"rows: list[dict], threshold: float=-1e-05",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,368,load_offline_dh_zeros,function,"path: str | Path, sigma_tol: float=0.001, tmax: float | None=None",Post-hoc validation only.  Never called by compression construction.,docstring source
+3_Preuves_et_calculs/src/dual_lock.py,386,nearest_interval_match,function,"interval: dict, offline: list[tuple[float, float]]",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock.py,391,nearest_interval_match.dist,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock_audit.py,14,gram_matrix,function,"frequencies: np.ndarray, w: float, eps: float=2e-10",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock_audit.py,24,generalized_decomposition,function,"components: dict[str, np.ndarray], G: np.ndarray",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock_audit.py,58,_basis_value_np,function,"x: np.ndarray, w: float, xi: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock_audit.py,63,correlation_gauss,function,"x: float, w: float, xi: float, xj: float, order: int=384",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock_audit.py,83,arch_matrix_gauss,function,"frequencies: np.ndarray, w: float, parity: int, tmax: float | None=None, block: float=8.0, order: int=24",Independent composite Gauss--Legendre evaluation of the archimedean term.,docstring source
+3_Preuves_et_calculs/src/dual_lock_audit.py,105,compression_components_independent,function,"center: float, kind: str, *, half_width: float=2.5, dimension: int=7, frequency_step: float=0.6, gl_order: int=384, arch_quad_eps: float=2e-09",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/dual_lock_audit.py,139,gram_matrix_closed,function,"frequencies: np.ndarray, w: float","V6.7 — Gram en forme close des tentes modulées f_j(x) = (1 - |x|/w)_+ cos(xi_j x).
+
+<f_i, f_j> = (I(xi_i - xi_j) + I(xi_i + xi_j)) / 2,  I(k) = int (1 - |x|/w)_+^2 cos(k x) dx
+           = 4 (1 - sin(k w)/(k w)) / (w k^2)   (2w/3 en k = 0).
+Identique à gram_matrix (quadrature) à 1e-15 près pour T <= 200 ; la quadrature se dégrade aux grandes
+hauteurs (6e-5 à T = 1400), la forme close non.",docstring source
+3_Preuves_et_calculs/src/dual_lock_audit.py,148,gram_matrix_closed.I,function,k,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/energy_dimension.py,27,effective_dimension_from_Q,function,"X, Q",Finite-scale estimator D_Q(X)=1/2+1/2 log(1+Q)/log X.,docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,38,dimension_from_log_slope,function,alpha,"If Q(X) grows like X^alpha, the corresponding zero-abscissa is 1/2+alpha/2.",docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,43,energy_zeta_truncated,function,"C: np.ndarray, s: complex, X: int","Exact integral int_1^X |C(x)|^2 x^(-1-2s) dx for stepwise C.
+
+C[m] is interpreted as sum_{n<=m}c(n), constant on [m,m+1).",docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,61,signed_rh_modes,function,"gam: np.ndarray, A: np.ndarray, u: np.ndarray",Return signed RH zeros and coefficients for B(t)=sum (A_j t+u_j)e^{(rho_j-1/2)t}.,docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,73,finite_energy_zeta,function,"s: complex, rho: np.ndarray, A: np.ndarray, u: np.ndarray","Exact energy-zeta transform for a finite exponential-polynomial model.
+
+B(t)=sum_j (A_j t+u_j) exp((rho_j-1/2)t).
+Z(s)=int_0^infty B(t)^2 exp(-2(s-1/2)t) dt.
+
+The formula is valid when Re(2s-rho_j-rho_k)>0 for all j,k and then
+defines the meromorphic continuation elsewhere.",docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,98,finite_complex_dimensions,function,rho: np.ndarray,Candidate pole locations (rho_j+rho_k)/2 of the finite energy model.,docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,104,principal_real_dimension,function,rho: np.ndarray,Rightmost real part among finite-model pair-average poles.,docstring source
+3_Preuves_et_calculs/src/energy_dimension.py,110,finite_model_B,function,"t: np.ndarray, rho: np.ndarray, A: np.ndarray, u: np.ndarray",Evaluate B(t) for a generic finite model.,docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,25,hurwitz_vec,function,"s: np.ndarray, a: float, chunk: int=4096","zeta(s, a) pour un tableau de s (Euler–Maclaurin, mêmes paramètres que zero_reconstruction.hurwitz_zeta).",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,39,primitive_root,function,q: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/euler_archipelago.py,44,characters,function,"q: int, parity: int","Caractères non principaux modulo q premier, de parité donnée : dict(k, table {a: chi(a)}, eps, phi, reel).",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,55,vartheta,function,"t, q: int, parity: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/euler_archipelago.py,59,hardy_grid,function,"q: int, parity: int, t: np.ndarray",Z (d x len(t)) : fonctions de Hardy des A_chi ; défaut d'imaginaire relatif max ; liste des caractères.,docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,70,F_values,function,"q: int, parity: int, c: np.ndarray, s: np.ndarray","F_c(s) = somme c_chi e^{-i phi} L(s, chi) en des points complexes quelconques.",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,76,dirichlet_coefficients,function,"q: int, parity: int, c: np.ndarray, N: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/euler_archipelago.py,83,double_zero_distance,function,"Z: np.ndarray, Zp: np.ndarray, i0: int","d >= 3 : distance projective (sinus) de e_{i0} au sous-espace ker A(t), pour chaque t de la grille.",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,90,kernel_point,function,"Zt: np.ndarray, Zpt: np.ndarray, i0: int","Point de ker A(t) le plus proche de e_{i0} (projection orthogonale), normalisé.",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,95,wronskian_events,function,"t: np.ndarray, Z: np.ndarray, Zp: np.ndarray","d = 2 : zéros du wronskien (interpolation linéaire) et direction du noyau c = (Z_2, -Z_1).",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,104,first_order_euler_defect,function,"q: int, parity: int, i0: int, M: int=60","Forme quadratique du défaut de multiplicativité au premier ordre en e_{i0}, sur les directions orthogonales.
+Défaut(m, n) = a(1) b(mn) + b(1) a(mn) - a(m) b(n) - b(m) a(n), (m, n) = 1, mn <= M^2.
+Renvoie (plus petite valeur propre sur les directions orthogonales, valeur pour la direction e_{i0} elle-même).",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,109,first_order_euler_defect.coeffs,function,j,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/euler_archipelago.py,123,hardy_and_derivative,function,"q: int, parity: int, t: float, h: float=0.0001","Z_chi(t) et Z'_chi(t) (différences centrées, pas h) pour tous les caractères de l'espace.",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,128,refine_distance,function,"q: int, parity: int, i0: int, t_lo: float, t_hi: float","d >= 3 : minimum continu de la distance au zéro double sur [t_lo, t_hi] ; renvoie (rayon, t*, c*).",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,131,refine_distance.f,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/euler_archipelago.py,136,refine_wronskian,function,"q: int, parity: int, i0: int, t_lo: float, t_hi: float","d = 2 : zéro du wronskien dans [t_lo, t_hi] (brentq) ; renvoie (rayon, t*, c*).",docstring source
+3_Preuves_et_calculs/src/euler_archipelago.py,139,refine_wronskian.W,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,16,verify_c_identity,function,N: int=20000,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,27,apollo_trajectory,function,maxN: int=200000,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,53,weighted_energy_vs_diagonal,function,maxN: int=200000,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,67,local_fourier_energy,function,"Ns=(256, 512, 1024, 2048, 4096, 8192), oversample: int=16",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,92,saw_band_values,function,"xs: np.ndarray, lo: int, hi: int, a: np.ndarray",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,101,gcd_covariance_validation,function,X: int=200000,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/experiments.py,123,predictor_G,function,"X: int, D: int, a: np.ndarray",Finite low-divisor predictor used in the multiscale diagnostic.,docstring source
+3_Preuves_et_calculs/src/experiments.py,139,kalman_information,function,"Xs=(5000, 10000, 20000, 50000), ratio=1.2, dmax_exp=0.95",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/explicit_formula.py,18,load_zeros,function,n: int | None=None,"gamma_k>0 et c0_k ; lit data/zeros_300.csv, sinon recalcule avec mpmath.",docstring source
+3_Preuves_et_calculs/src/explicit_formula.py,40,_coeffs,function,"gam, c0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/explicit_formula.py,47,B_explicit,function,"t: np.ndarray, gam, c0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/explicit_formula.py,55,Q_diag_exact,function,"L: float, gam, c0, tail_correct: bool=True","Intégrale exacte de la partie diagonale 2*sum|A t + u|^2 sur [0,L].
+tail_correct : complète le coefficient en L^3 par l'identité (RH, zéros simples)
+sum_{gamma>0} 1/|rho|^2 = KAPPA/2 (zéros manquants, gamma > gamma_max).",docstring source
+3_Preuves_et_calculs/src/explicit_formula.py,69,Q_explicit_numeric,function,"L: float, gam, c0, dt: float=0.002",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/explicit_formula.py,75,Q_measured_cumulative,function,N: int,"Q(X) exacte pour tout X<=N, via c = Lambda*Lambda - Lambda log + 2 gamma Lambda.",docstring source
+3_Preuves_et_calculs/src/family_mod5.py,29,vartheta,function,t: float,Phase de (5/pi)^((s+1)/2) Gamma((s+1)/2) en s = 1/2 + it.,docstring source
+3_Preuves_et_calculs/src/family_mod5.py,33,L_pair,function,s: complex,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod5.py,37,A,function,s: complex,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod5.py,40,DH,function,s: complex,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod5.py,43,hardy,function,t: float,"(Z_A(t), Z_DH(t), défaut d'imaginaire relatif max).",docstring source
+3_Preuves_et_calculs/src/family_mod5.py,50,F_path,function,"s: complex, theta: float, sign: int=+1",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod7.py,33,coefficients,function,"theta: float, N: int","Coefficients de Dirichlet a(0..N) de F_theta (réels, a(1) = 1).",docstring source
+3_Preuves_et_calculs/src/family_mod7.py,43,L_chi,function,"s: complex, table: dict, conj: bool=False",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod7.py,47,F0,function,s: complex,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod7.py,48,F1,function,s: complex,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod7.py,49,F_theta,function,"s: complex, theta: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/family_mod7.py,51,completed,function,"F, s: complex",Lambda(s) = (7/pi)^((s+1)/2) Gamma((s+1)/2) F(s).,docstring source
+3_Preuves_et_calculs/src/family_mod7.py,56,vartheta,function,t: float,Phase de (7/pi)^((s+1)/2) Gamma((s+1)/2) en s = 1/2 + it.,docstring source
+3_Preuves_et_calculs/src/family_mod7.py,60,hardy,function,t: float,"(Z_0(t), Z_1(t)) : fonctions de Hardy de L(s, chi_3) et de f_7.",docstring source
+3_Preuves_et_calculs/src/finite_field_jets.py,12,_prime,function,p,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,15,_trim,function,a,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,20,_rem,function,"a, m, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,28,_pmul,function,"a, b, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,34,_ppowmod,function,"a, e, m, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,41,_gcd,function,"a, b, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,46,irreducible,function,"m, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,58,find_modulus,function,"p, n",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,66,FiniteField,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,67,FiniteField.__init__,function,"self, p, modulus",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,89,FiniteField.pow,function,"self, a, e",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,99,FiniteField.eval,function,"self, f, x",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,105,_cached_field,function,"p, modulus",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,108,field,function,"p, n, modulus=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,114,poly_mul,function,"a, b, F",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,120,poly_pow,function,"f, e, F",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,128,square_points,function,"f, F",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,133,parameters,function,"q, J, K, M",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,141,hasse_values,function,"poly, xs, M, F",Évaluation directe par coefficients binomiaux ; aucun k!^{-1}.,docstring source
+3_Preuves_et_calculs/src/finite_field_jets.py,152,jet_matrix,function,"f, xs, J, K, M, F",Hasse-Leibniz : D^[k](uv)=sum D^[l](u) D^[k-l](v).,docstring source
+3_Preuves_et_calculs/src/finite_field_jets.py,171,kernel_vector,function,"A, F",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,188,combine,function,"v, g, J, K, F",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,198,multiplicity,function,"poly, x, F",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,208,certificate,function,"p, n, f, J, K, M, modulus=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,223,tower_trace,function,"p, t, n",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/finite_field_jets.py,229,spectral_status,function,"p, t",Contrôle exact de la conclusion ; ne sert pas au comptage ni à sa preuve.,docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,20,traces_from_b,function,"b: np.ndarray, L: int","p_0..p_{L-1} (sommes de puissances des beta_j), réelles, depuis le polynôme normalisé b.",docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,29,gns_frobenius,function,"b: np.ndarray, tol: float=1e-09","Renvoie (rang, valeurs propres reconstruites, valeurs propres du Gram de taille 2g + 4).",docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,38,spectral_masses,function,"b: np.ndarray, lam: np.ndarray","Masses w_j de la mesure spectrale : p_n = somme w_j lam_j^n (Vandermonde, n < nombre de lam).
+La multiplicité d'un zéro, invisible comme dimension de l'espace reconstruit, y reparaît comme masse.",docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,44,distinct,function,"z: np.ndarray, tol: float=1e-06",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/frobenius_chain.py,50,match_error,function,"lam: np.ndarray, beta: np.ndarray","max sur lambda de la distance à la valeur propre vraie la plus proche, et réciproquement.",docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,56,inverse_closure,function,lam: np.ndarray,Équation fonctionnelle vue sur le spectre : l'ensemble est stable par lambda -> 1/lambda.,docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,61,length_spectrum,function,"gam: np.ndarray, u: np.ndarray, s: float, chunk: int=512","S(u) = -(sqrt(2 pi)/s) somme w(Re gamma) e^{i gamma u}, gamma complexes (zéros hors droite inclus).",docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,68,log_derivative_coefficients,function,a: np.ndarray,"c(n) avec -F'/F = somme c(n) n^-s, pour F = somme a(n) n^-s, a(1) = 1 (récurrence de Dirichlet).",docstring source
+3_Preuves_et_calculs/src/frobenius_chain.py,78,is_prime_power,function,n: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/frobenius_chain.py,88,curve_gammas,function,"b: np.ndarray, q: int, T: float","Zéros (gamma = -i(s - 1/2)) de P(q^-s), périodiques de période 2 pi / log q, |Re gamma| <= T.",docstring source
+3_Preuves_et_calculs/src/function_field.py,16,FiniteField,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,17,FiniteField.__init__,function,"self, q: int, n: int, seed: int=0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,30,FiniteField._try,function,"self, mod",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,40,FiniteField.mul,function,"self, a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,46,FiniteField.add_const,function,"self, a, c: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,49,FiniteField.quad_char,function,"self, a",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,54,field,function,"q: int, n: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,58,count_points,function,"f: list[int], q: int, n: int","#C(F_{q^n}) pour y^2 = f(x), f à coefficients dans F_q (du plus haut degré au plus bas), degré impair.",docstring source
+3_Preuves_et_calculs/src/function_field.py,67,_polymod,function,"a, b, q",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,76,squarefree,function,"f, q",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,84,random_curve,function,"q: int, g: int, rng: random.Random",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,90,L_polynomial,function,"N: list[int], q: int, g: int",Coefficients entiers c_0..c_{2g} de P(u) à partir de N_1..N_g (identités de Newton + équation fonctionnelle).,docstring source
+3_Preuves_et_calculs/src/function_field.py,100,power_sums,function,"c: list[int], nmax: int",S_1..S_nmax (entiers exacts) des racines inverses alpha_i de P(u) = sum c_k u^k (identités de Newton).,docstring source
+3_Preuves_et_calculs/src/function_field.py,109,closed_points,function,"S: list[int], q: int","a_1..a_D : nombre de points fermés de chaque degré (formule de Möbius), entiers exacts.",docstring source
+3_Preuves_et_calculs/src/function_field.py,111,closed_points.mu,function,n,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/function_field.py,127,roots_alpha,function,c: list[int],Racines inverses alpha_i (P(u) = prod (1 - alpha_i u)).,docstring source
+3_Preuves_et_calculs/src/function_field.py,131,castelnuovo_ratio,function,"S: list[int], q: int, g: int",rho_n = |S_n| / (2 g q^(n/2)) ; Q_n >= 0 <=> rho_n <= 1.,docstring source
+3_Preuves_et_calculs/src/function_field.py,136,angles,function,"c: list[int], q: int","Angles phi_j dans [0, pi] des racines alpha = sqrt(q) e^{+-i phi} (une par paire conjuguée).",docstring source
+3_Preuves_et_calculs/src/function_field.py,141,survival_margin,function,phi: np.ndarray,"H(w) = prod (w - 2 cos phi_j). Intervalle [e_-, e_+] des eps pour lesquels H + eps garde ses g racines réelles
+dans [-2, 2] (perturbation de la forme symétrique de P qui conserve l'équation fonctionnelle).
+Renvoie (e_-, e_+, max |H| sur [-2, 2]).",docstring source
+3_Preuves_et_calculs/src/function_field.py,148,survival_margin.edge,function,sign,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/gps_channels.py,8,mu_phi_spf_sieve,function,N: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/gps_channels.py,28,distinct_prime_factors,function,"q: int, spf: np.ndarray",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/gps_channels.py,36,terminal_channel,function,"q: int, mu: np.ndarray, phi: np.ndarray, spf: np.ndarray","Closed form for H_infty(q)=sum_{q|d} a(d)/d.
+
+For nonsquarefree q it is zero. For squarefree q:
+  H_inf(q) = -2 mu(q)/phi(q) * (log q + sum_{p|q} log p/(p-1)).
+H_inf(1)=0.",docstring source
+3_Preuves_et_calculs/src/gps_channels.py,49,partial_channel,function,"D: int, q: int, a: np.ndarray",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/gps_channels.py,54,terminal_channel_table,function,"D: int, Q: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,11,rank_upper,function,"p, J, K, M, cardinality=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,17,bound,function,"p, J, K, M",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,24,optimize,function,"p, limit=256","Minimum dans la fenêtre déclarée 1<=J,M<=limit; pas un optimum absolu.",docstring source
+3_Preuves_et_calculs/src/jet_bound.py,37,explicit_sqrt_parameters,function,p,"Famille J=r+1, M=2r, K=3r²-r+1, r=floor(sqrt((p-5)/6)).",docstring source
+3_Preuves_et_calculs/src/jet_bound.py,43,polynomial_power,function,"f, e, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,51,basis,function,"p, f, J, K",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,62,square_points,function,"f, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,66,hasse_matrix,function,"B, xs, M, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/jet_bound.py,74,kernel_vector,function,"A, p",Réduction modulaire exacte; renvoie rang et un vecteur non nul du noyau.,docstring source
+3_Preuves_et_calculs/src/jet_bound.py,92,multiplicity,function,"poly, x, p",Division synthétique indépendante du calcul des dérivées de Hasse.,docstring source
+3_Preuves_et_calculs/src/jet_bound.py,105,certificate,function,"p, f, J, K, M",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/lock_witnesses.py,43,coeffs_witness,function,"kind: str, N: int, a: float=A_E2","Coefficients de Dirichlet a(0..N) (a(0) = 0, a(1) = 1).",docstring source
+3_Preuves_et_calculs/src/lock_witnesses.py,59,lambda_witness,function,"kind: str, N: int, a: float=A_E2","Coefficients de -F'/F, calculés par la récurrence générique (aucune formule fermée injectée).",docstring source
+3_Preuves_et_calculs/src/lock_witnesses.py,64,lambda_closed_form,function,"kind: str, N: int, a: float=A_E2","Formule fermée de Lambda_F, pour contrôle indépendant de la récurrence.",docstring source
+3_Preuves_et_calculs/src/lock_witnesses.py,88,compression_from_lambda,function,"center: float, lam: np.ndarray, *, q: float, parity: int, pole: bool, half_width: float=2.5, dimension: int=5, frequency_step: float=0.6, arch_dt: float=0.02, correlation_eps: float=2e-08","Compression de la forme de Weil, côté premiers, pour des coefficients Lambda_F quelconques.
+
+Même construction que dual_lock.compression_accurate (mêmes briques), mais Lambda_F, le
+conducteur, la parité et le pôle sont fournis par l'appelant. Aucun zéro n'entre ici.",docstring source
+3_Preuves_et_calculs/src/lock_witnesses.py,121,polynomial_zero_gammas,function,"kind: str, gamma_max: float, a: float=A_E2","gamma = -i (rho - 1/2) pour les zéros de P, |Re gamma| <= gamma_max.
+
+Retourne {'on': réels (zéros sur la droite), 'off': complexes (zéros hors droite)}.",docstring source
+3_Preuves_et_calculs/src/lock_witnesses.py,143,zero_side,function,"freqs: np.ndarray, w: float, gammas: np.ndarray",Z_ij = somme_rho H_i(gamma_rho) H_j(gamma_rho) (sans conjugaison).,docstring source
+3_Preuves_et_calculs/src/nyman_beurling.py,21,_cell_integral,function,"a: int, b: int, Y: int","int_1^Y {t/a}{t/b} t^-2 dt, a,b entiers premiers entre eux ou non, Y entier.",docstring source
+3_Preuves_et_calculs/src/nyman_beurling.py,36,_G_coprime,function,"a: int, b: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/nyman_beurling.py,48,G,function,"a: int, b: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/nyman_beurling.py,53,chi_rho,function,a: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/nyman_beurling.py,57,gram,function,ks,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/nyman_beurling.py,66,norm2_of_combination,function,"coef: dict[int, float]",|| chi + sum a_k rho_k ||^2 = (1/2pi) int |1 - zeta A|^2 dt/(1/4+t^2).,docstring source
+3_Preuves_et_calculs/src/nyman_beurling.py,75,d2_optimal,function,"N: int, dps: int=60","d_N^2 = 1 - b^T G^-1 b (haute précision mpmath sur le système de Gram, entrées double).",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,32,_sinc,function,z,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_generator.py,37,phi,function,"u: np.ndarray, a: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_generator.py,41,phi_hat,function,"r, a: float","phi^(r) = int phi(u) e^{iru} du, en forme close (r réel ou complexe).",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,48,g_hat,function,"r, a: float",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_generator.py,51,g_of,function,"x: np.ndarray, a: float, order: int=64","g(x) = (phi * phi)(x), support [-2a, 2a], par Gauss-Legendre sur le recouvrement (exact à la machine près).",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,62,arch_traces,function,"n: np.ndarray, h: float, a: float, q: int, par: int, R: float | None=None, block: float=0.25, order: int=16",(1/pi) int_0^inf g^(r) cos(r n h) [log(q/pi) + Re psi((1/2+par)/2 + i r/2)] dr (g^ et Omega pairs).,docstring source
+3_Preuves_et_calculs/src/prime_generator.py,75,prime_traces,function,"c: np.ndarray, n: np.ndarray, h: float, a: float","- somme_m [c(m) g(log m - n h) + conj c(m) g(-log m - n h)] / sqrt(m), pour n >= 0.",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,86,traces_from_primes,function,"kind: str, c: np.ndarray, N: int, h: float, a: float",t_0..t_N calculées sans aucun zéro. c : coefficients de -F'/F jusqu'à au moins exp(N h + 2a).,docstring source
+3_Preuves_et_calculs/src/prime_generator.py,96,traces_from_zeros,function,"gammas: np.ndarray, N: int, h: float, a: float",Contrôle : t_n = somme g^(gamma) e^{i gamma n h} sur une liste de zéros (gamma complexes).,docstring source
+3_Preuves_et_calculs/src/prime_generator.py,102,toeplitz_pencil,function,"t: np.ndarray, L: int","G_jk = t_{j-k}, S_jk = t_{j-k+1} (t_{-n} = conj t_n), taille L x L ; il faut t_0..t_L.",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,104,toeplitz_pencil.T,function,off,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_generator.py,109,metric_and_generator,function,"t: np.ndarray, L: int, h: float, rel_tol: float=1e-11","Métrique G (valeurs propres) et générateur réduit au sous-espace de rang numérique.
+Renvoie dict : mu (valeurs propres de G, croissantes), rang, lam (valeurs propres de F_h), gamma (= log lam / i h),
+poids (masse spectrale de chaque gamma, par Vandermonde).",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,126,levinson,function,"t: np.ndarray, N: int","Récurrence de Levinson–Szegő sur la suite hermitienne t_0..t_N (Toeplitz G_jk = t_{j-k}).
+Renvoie (k, E) : coefficients de réflexion k_1..k_N et erreurs de prédiction (innovations) E_0..E_N.
+E_n = det G_{n+1} / det G_n ; G_{N+1} définie positive <=> tous les E_n > 0 <=> tous les |k_n| < 1.
+C'est le filtre de Kalman d'un signal stationnaire de covariance t : la première innovation négative
+est la première fenêtre où la métrique cesse d'être positive.",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,141,lmin_ratio,function,"t: np.ndarray, n: int","lambda_min / lambda_max de la métrique de Toeplitz G_n (taille n, G_jk = t_{j-k}).",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,146,first_negative_size,function,"t: np.ndarray, tau: float, nmax: int","Plus petite taille n <= nmax telle que lambda_min(G_n) < -tau * lambda_max(G_n).
+lambda_min(G_n) ne croît pas avec n (entrelacement de Cauchy : G_n est une sous-matrice principale de G_{n+1}),
+d'où une dichotomie. Critère robuste : contrairement au signe d'une innovation de Levinson, il ne dépend pas
+du conditionnement de G (en double précision, le bruit des valeurs propres est de l'ordre de 1e-15 * lambda_max).",docstring source
+3_Preuves_et_calculs/src/prime_generator.py,159,heisenberg_length,function,"q: int, gamma0: float","Temps de Heisenberg à la hauteur gamma0 : 2 pi x densité moyenne des zéros = log(q gamma0 / 2 pi),
+logarithme du conducteur analytique (degré 1).",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,38,PrimeLockMetrics,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,47,PrimeLockMetrics.to_dict,function,self,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,51,smallest_prime_factor,function,N: int,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,63,prime_power_tables,function,N: int,"Return arrays base[n], exponent[n], is_prime_power[n].",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,83,decompose_lambda,function,lam: np.ndarray,Split logarithmic-derivative coefficients into prime / pp-tail / leakage.,docstring source
+3_Preuves_et_calculs/src/prime_lock.py,107,support_leakage,function,lam: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,114,degree1_tower_defect,function,lam: np.ndarray,"Normalized defect in Lambda(p^k)/log p = (Lambda(p)/log p)^k.
+
+This is exact for degree-1 local Euler factors, including zeta and primitive
+Dirichlet L-functions. It is not intended as a universal identity for all
+higher-degree L-functions.",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,139,eulerize_lambda_degree1,function,lam: np.ndarray,"Preserve prime values and impose a degree-1 Euler tower at all p^k.
+
+Non-prime-power logarithmic-derivative coefficients are set to zero.",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,158,q_energy,function,c: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,166,global_signal_coherence,function,"c1: np.ndarray, c2: np.ndarray, n_log: int=4096",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,176,prime_lock_metrics_from_lambda,function,"lam: np.ndarray, pole: bool=False, n_log: int=4096",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,202,prime_lock_metrics_from_coefficients,function,"a: np.ndarray, pole: bool=False, n_log: int=4096",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/prime_lock.py,208,build_prime_lock,function,"kind: str, N: int=32768, n_log: int=4096","Return a, lambda, c, eulerized_lambda, eulerized_c, metrics.",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,217,channel_cumulative_signals,function,"lam: np.ndarray, n_log: int=4096","Log-grid cumulative signals of prime, higher-pp, and leakage channels.",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,242,channel_gram,function,"lam: np.ndarray, n_log: int=4096","3x3 Gram matrix of normalized arithmetic channels.
+
+Zero channels remain zero. Order: prime, higher prime powers, leakage.",docstring source
+3_Preuves_et_calculs/src/prime_lock.py,256,gram_effective_rank,function,G: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rejection.py,20,chi5,function,N: int,Caractère complexe mod 5 avec chi(2)=i (impair : chi(4)=-1).,docstring source
+3_Preuves_et_calculs/src/rejection.py,27,coeffs,function,"kind: str, N: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rejection.py,41,log_derivative_coeffs,function,a: np.ndarray,Lambda_f(n) avec -f'/f = sum Lambda_f n^-s ; a[1] doit valoir 1.,docstring source
+3_Preuves_et_calculs/src/rejection.py,54,c_from_lambda,function,"lam: np.ndarray, pole: bool",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rejection.py,69,build,function,"kind: str, N: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rejection.py,76,Q_curve,function,c: np.ndarray,Q(X)=int_1^X |C|^2 x^-2 dx pour X entier (C constante entre entiers).,docstring source
+3_Preuves_et_calculs/src/rejection.py,85,dh_zeros,function,"tmax=200.0, step=2.0, sigmas=(0.6, 0.8, 1.0, 1.2, 1.4)","Zéros de DH par Newton (mpmath, Hurwitz) : (sigma, t) distincts, t>0.",docstring source
+3_Preuves_et_calculs/src/rejection.py,93,dh_zeros.L,function,"s, conj",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rejection.py,113,dh_functional_equation_defect,function,"s_list=((0.3, 7.0), (0.7, 12.0), (0.5, 20.0))",|Lam(s) - Lam(1-s)| / |Lam(s)| pour Lam(s)=(5/pi)^{(s+1)/2} Gamma((s+1)/2) f(s).,docstring source
+3_Preuves_et_calculs/src/rejection.py,120,dh_functional_equation_defect.f,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,16,completed_phase_basis,function,"q, parity, s","Partie droite Re(s)>=1/2, avec phase de Gamma et facteur réel retiré.
+
+Retirer un facteur réel positif ne change pas le principe de l'argument.
+La partie gauche s'obtient par conjugaison en 1-conjugate(s).",docstring source
+3_Preuves_et_calculs/src/relief_direct.py,29,a1_and_defect,function,"q, parity, C",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,36,partial_rank,function,"x, y, z",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,45,DirectGrid,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,46,DirectGrid.__init__,function,"self, q, parity, Tmax=300, dt=0.02, sigma_right=3.0, ds=0.05, cache=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,63,DirectGrid.critical_counts,function,"self, C",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,72,DirectGrid.total_counts,function,"self, C, refine=True",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/relief_direct.py,122,DirectGrid.counts,function,"self, C",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rh_core.py,16,mobius_sieve,function,N: int,Linear sieve for mu(0..N).,docstring source
+3_Preuves_et_calculs/src/rh_core.py,39,von_mangoldt_sieve,function,N: int,"Return Lambda(n), 0 <= n <= N.",docstring source
+3_Preuves_et_calculs/src/rh_core.py,58,dirichlet_convolution,function,"f: np.ndarray, g: np.ndarray, N: int | None=None",Dirichlet convolution up to N (O(N log N) on dense arrays).,docstring source
+3_Preuves_et_calculs/src/rh_core.py,71,arithmetic_a,function,N: int,a(n)=mu(n)((log n)^2-2 gamma log n).,docstring source
+3_Preuves_et_calculs/src/rh_core.py,81,arithmetic_c_via_lambda,function,N: int,c(n)=(Lambda*Lambda)(n)-Lambda(n)log n+2 gamma Lambda(n).,docstring source
+3_Preuves_et_calculs/src/rh_core.py,91,arithmetic_c_via_a,function,N: int,c=1*a; independent check of arithmetic_c_via_lambda.,docstring source
+3_Preuves_et_calculs/src/rh_core.py,99,C_partial,function,c: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rh_core.py,103,Q_truncated,function,"C: np.ndarray, X: int",Exact integral int_1^X |C(x)|^2/x^2 dx for stepwise C(x)=sum_{n<=x}c(n).,docstring source
+3_Preuves_et_calculs/src/rh_core.py,111,H_eta_truncated,function,"C: np.ndarray, eta: float, X: int",Truncated weighted energy int_1^X |C(x)|^2 x^(-2-2eta) dx.,docstring source
+3_Preuves_et_calculs/src/rh_core.py,119,diagonal_proxy,function,"c: np.ndarray, eta: float, X: int",Positive diagonal proxy for the weighted quadratic form.,docstring source
+3_Preuves_et_calculs/src/rh_core.py,125,rho,function,u: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rh_core.py,129,fractional_representation_truncated,function,"x: np.ndarray, a: np.ndarray, D: int",-sum_{d<=D} a(d) {x/d}; finite truncation only.,docstring source
+3_Preuves_et_calculs/src/rh_core.py,138,sawtooth_covariance_exact,function,"d: int, e: int",Mean covariance of centered sawteeth over a common period.,docstring source
+3_Preuves_et_calculs/src/rh_core.py,144,jordan_J2_sieve,function,N: int,Jordan totient J_2(n).,docstring source
+3_Preuves_et_calculs/src/rh_core.py,160,gcd_gram_from_coeffs,function,"coeff: np.ndarray, lo: int, hi: int",Variance of sum_{lo<d<=hi} coeff[d]({x/d}-1/2) under period averaging.,docstring source
+3_Preuves_et_calculs/src/rh_core.py,173,channel_vectors,function,"a: np.ndarray, intervals: list[tuple[int, int]], qmax: int","H_I(q)=sum_{d in I, q|d} a(d)/d for divisor channels q.",docstring source
+3_Preuves_et_calculs/src/rh_core.py,186,covariance_from_channels,function,H: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rh_core.py,193,kappa_reference_Q,function,X: float,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rh_core.py,198,KalmanStep,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/rh_core.py,205,scalar_projection_step,function,"residual: np.ndarray, innovation: np.ndarray, weights: np.ndarray",One exact weighted L2 projection step (Kalman-like scalar innovation).,docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,14,energy_from_zero,function,"beta: float, gamma: float, hbar: float=1.0","Map rho=beta+i gamma to E for exp(-i E t/hbar).
+
+exp(-i E t/hbar) = exp((beta-1/2)t) exp(i gamma t)
+when E = -hbar*gamma + i*hbar*(beta-1/2).",docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,23,zero_parameters_from_energy,function,"E: complex, hbar: float=1.0","Inverse of energy_from_zero: returns (beta,gamma).",docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,29,amplitude_growth_rate,function,beta: float,Growth rate of modal amplitude in log-time.,docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,34,norm_growth_rate,function,beta: float,Growth rate of |psi|^2 for a single explicit-formula mode.,docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,39,schrodinger_matrix_1d,function,"x: np.ndarray, potential, mass: float=1.0, hbar: float=1.0","Dirichlet finite-difference Hamiltonian on the interior of a uniform grid.
+
+H = -(hbar^2/2m) d^2/dx^2 + V(x).
+`potential` may be a scalar, an array on the full grid, or a callable.
+Returns (H, x_interior).  Complex V is allowed for source/sink diagnostics.",docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,82,self_adjointness_defect,function,H: np.ndarray,"Relative Frobenius defect ||H-H*||/max(||H||,tiny).",docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,89,probability_current,function,"psi: np.ndarray, x: np.ndarray, mass: float=1.0, hbar: float=1.0",1-D probability current j=(hbar/m) Im(conj(psi) dpsi/dx).,docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,104,continuity_source_density,function,"psi: np.ndarray, potential, hbar: float=1.0",Source term s=(2/hbar) Im(V)|psi|^2 for complex potential V.,docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,120,stationary_eigenpairs,function,"H: np.ndarray, k: int | None=None","Eigenpairs sorted by real part, then imaginary part.
+
+For Hermitian H this agrees with ascending energy.  Dense linear algebra is used
+because this module is a diagnostic scaffold, not a large-scale eigensolver.",docstring source
+3_Preuves_et_calculs/src/schrodinger_flux.py,138,spectral_mismatch,function,"eigenvalues, target_gammas, scale: float=1.0","Simple finite-spectrum diagnostic against target ordinates gamma.
+
+It intentionally compares only a finite list and therefore has no proof content.",docstring source
+3_Preuves_et_calculs/src/schur_bridge.py,5,matrix,function,A,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/schur_bridge.py,12,psd,function,A,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/schur_bridge.py,26,linear_solution,function,"A, c",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/schur_bridge.py,44,append_contract,function,"G, c, a",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/schur_bridge.py,55,quadratic,function,"A, x",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/source_localization.py,19,gaussian_kernel_samples,function,"dt: float, sigma_t: float, nsigma: float=5.0",Normalized discrete Gaussian averaging kernel.,docstring source
+3_Preuves_et_calculs/src/source_localization.py,30,gaussian_average,function,"y: np.ndarray, dt: float, sigma_t: float",Ensemble-like pre-averaging: Gaussian convolution with same-length output.,docstring source
+3_Preuves_et_calculs/src/source_localization.py,37,regularized_laplacian,function,"y: np.ndarray, dt: float, lam: float=0.01","Regularized log-time Laplacian.
+
+Frequency response H(omega)=omega^2/(1+lam*omega^2).
+It enhances local/high-frequency structure while avoiding the unbounded omega^2
+amplification of a raw second derivative.",docstring source
+3_Preuves_et_calculs/src/source_localization.py,53,steering_vector,function,"t: np.ndarray, beta: float, gamma: float, normalize: bool=True",Complex source atom exp((beta-1/2)t) exp(i gamma t).,docstring source
+3_Preuves_et_calculs/src/source_localization.py,64,_whitener_from_covariance,function,"covariance: np.ndarray, ridge: float=1e-10",Return R^{-1/2} for a symmetric positive semidefinite covariance matrix.,docstring source
+3_Preuves_et_calculs/src/source_localization.py,75,matched_filter_score,function,"y: np.ndarray, t: np.ndarray, beta: float, gamma: float, covariance: np.ndarray | None=None","Normalized GLS/matched-filter score in [0,1] for one candidate source.
+
+This is a localization diagnostic, not a hypothesis test with probabilistic noise.
+The 'noise' in explicit-formula applications is deterministic and correlated.",docstring source
+3_Preuves_et_calculs/src/source_localization.py,102,matched_filter_map,function,"y: np.ndarray, t: np.ndarray, betas, gammas, covariance: np.ndarray | None=None","2-D source map P(beta,gamma) using normalized matched-filter scores.",docstring source
+3_Preuves_et_calculs/src/source_localization.py,119,morlet_demodulated_envelope,function,"y: np.ndarray, t: np.ndarray, gamma: float, sigma_t: float","Morlet-like local complex amplitude around angular frequency gamma.
+
+We demodulate y by exp(-i gamma t) and Gaussian-average the baseband signal.
+For a single mode exp((beta-1/2)t) exp(i gamma t), the logarithmic slope of
+the envelope estimates beta-1/2 away from boundaries.",docstring source
+3_Preuves_et_calculs/src/source_localization.py,142,envelope_growth_rate,function,"envelope: np.ndarray, t: np.ndarray, trim: float=0.15",Least-squares slope of log|envelope| vs t after trimming boundaries.,docstring source
+3_Preuves_et_calculs/src/source_localization.py,158,source_design_matrix,function,"t: np.ndarray, candidates","Columns are normalized steering vectors for (beta,gamma) candidates.",docstring source
+3_Preuves_et_calculs/src/source_localization.py,166,visibility_metrics,function,"t: np.ndarray, candidates, covariance: np.ndarray | None=None","Finite-dimensional observability diagnostics for a candidate source family.
+
+Returns min singular value, max singular value and condition number after optional
+whitening.  A proof-level RH application would require a uniform lower bound as
+frequency/height and model dimension grow; this routine supplies only finite tests.",docstring source
+3_Preuves_et_calculs/src/source_localization.py,192,synthetic_source_signal,function,"t: np.ndarray, sources, amplitudes=None","Deterministic synthetic sum of source modes, useful for rejection tests.",docstring source
+3_Preuves_et_calculs/src/spectral_calibration.py,13,B_grid_from_C,function,"C: np.ndarray, L: float, dt: float=0.01","Sample B(t)=e^{-t/2} C(e^t) on a uniform log-time grid.
+
+C[k] is interpreted as the step function sum_{n<=x} c(n) for k<=x<k+1.
+The grid stops before exp(t) exceeds the available C array.",docstring source
+3_Preuves_et_calculs/src/spectral_calibration.py,27,hann_window,function,n: int,"A deterministic Hann window, including the n<=1 edge cases.",docstring source
+3_Preuves_et_calculs/src/spectral_calibration.py,37,windowed_fourier,function,"t: np.ndarray, B: np.ndarray, window: str='hann'","Return angular frequencies omega and continuous-FT approximation F(omega).
+
+F(omega_k) ~= int B(t) w(t) exp(-i omega_k t) dt.
+Full FFT frequencies are returned, sorted increasingly.",docstring source
+3_Preuves_et_calculs/src/spectral_calibration.py,63,parseval_energies,function,"t: np.ndarray, B: np.ndarray, window: str='hann'",Return time energy and spectral energy; they agree up to discretization.,docstring source
+3_Preuves_et_calculs/src/spectral_calibration.py,73,gaussian_band_energy,function,"t: np.ndarray, B: np.ndarray, T: float, Delta: float, window: str='hann'","Compute a positive Gaussian-band version of Q_{w,W}(L;T,Delta).
+
+W(u)=exp(-u^2/2). This is a calibration observable, not a theorem about zeros.",docstring source
+3_Preuves_et_calculs/src/spectral_calibration.py,92,band_table,function,"t: np.ndarray, B: np.ndarray, centers, Delta: float, window: str='hann'","Return rows (T,Delta,energy) for several spectral centers.",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,28,normalized,function,"c: list[int], q: int","b_k = c_k q^(-k/2), k = 0..2g.",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,32,from_free,function,bfree: np.ndarray,(b_1..b_g) -> B palindromique complet (b_0 = 1).,docstring source
+3_Preuves_et_calculs/src/stability_radius.py,38,_cheb_term,function,m: int,"u^m + u^-m = 2 T_m(w/2) comme polynôme en w (coefficients, degré croissant).",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,45,H_poly,function,b: np.ndarray,"Coefficients de H (degré croissant), B(u) = u^g H(u + 1/u).",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,52,basis,function,g: int,"Effet sur H d'une variation unité de b_k (k = 1..g) : e_k(w), degré croissant.",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,62,weights,function,g: int,"Poids de la norme : b_k (k < g) apparaît deux fois dans B, b_g une fois.",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,66,is_rh,function,b: np.ndarray,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/stability_radius.py,69,off_circle,function,"b: np.ndarray, tol: float=1e-06",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/stability_radius.py,73,power_sums_b,function,"b: np.ndarray, L: int",p_0..p_{L-1} (réels) des racines inverses beta_j de B (identités de Newton).,docstring source
+3_Preuves_et_calculs/src/stability_radius.py,82,toeplitz_form,function,"b: np.ndarray, L: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/stability_radius.py,86,form_margin,function,"b: np.ndarray, L: int",Marge de la forme : lambda_min(T_L) / 2g.,docstring source
+3_Preuves_et_calculs/src/stability_radius.py,91,inertia,function,"b: np.ndarray, L: int, tol: float=1e-09",Nombre de valeurs propres négatives de T_L (relativement à 2g).,docstring source
+3_Preuves_et_calculs/src/stability_radius.py,96,exit_candidates,function,"b: np.ndarray, ngrid: int=4001","Points de sortie candidats de la région RH (minima locaux de la distance à une racine double de H, et les
+deux bords x = +-2), triés par distance. Chaque élément : dict(rayon, mecanisme, x, delta).",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,102,exit_candidates.cost_double,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/stability_radius.py,121,structured_radius,function,"b: np.ndarray, ngrid: int=4001","Plus petite perturbation (b_1..b_g), norme de B, qui fait sortir de la région RH.
+Renvoie dict(rayon, mecanisme, x, delta) ; mecanisme = 'rencontre' (racine double de H en x : deux zéros se
+rencontrent) ou 'bord' (racine de H en x = +-2 : un zéro réel alpha = +-sqrt q).",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,127,perturbed,function,"b: np.ndarray, delta: np.ndarray, scale: float=1.0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/stability_radius.py,131,form_threshold,function,"A: np.ndarray, Bm: np.ndarray","Interpolation des formes (1 - tau) A + tau B, A > 0 : tau_c = -1/mu_min, (B - A) v = mu A v.",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,139,object_threshold,function,"b0: np.ndarray, b1: np.ndarray, tol: float=1e-12",Interpolation des objets (1 - tau) b0 + tau b1 (équation fonctionnelle conservée) : premier tau où RH tombe.,docstring source
+3_Preuves_et_calculs/src/stability_radius.py,152,euler_counts,function,"b: np.ndarray, q: int, D: int=200","a_1..a_D (réels) pour des données normalisées b : N_n = q^n + 1 - q^(n/2) p_n, puis Möbius.",docstring source
+3_Preuves_et_calculs/src/stability_radius.py,156,euler_counts.mu,function,n,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,10,trim,function,p,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,14,add,function,"p, q",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,15,scale,function,"p, a",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,16,mul,function,"p, q",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,21,derivative,function,"p, n=1",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,24,integral_even,function,p,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,25,shift,function,"p, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,30,evalq,function,"p, x",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,34,evalmp,function,"p, x",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,38,seed,function,k,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,39,test,function,"S, k",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,42,mass,function,"S, i, j",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,43,metric,function,"S, i, j",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,45,seed_metric,function,"S, i, j",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,51,correlation,function,"S, i, j","h_ij(S*z), 0<=z<=2, by exact integral over u in[z-1,1].",docstring source
+3_Preuves_et_calculs/src/symbolic_weil_family.py,65,symmetric_correlation,function,"S, i, j",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,66,mpq,function,q,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,68,exp_floor_certificate,function,"x, terms=96",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,78,prime_powers,function,X,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,92,arch,function,"S, i, j, alternative=False",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,96,arch.difference,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,98,arch.f,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,102,arch.f,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,107,matrices,function,"S, n, digits",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,122,normalized_spectrum,function,"G, B",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/symbolic_weil_family.py,125,debt,function,M,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v635_tour_et_spectre.py,29,write_json,function,"path, data",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v635_tour_et_spectre.py,34,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v637_apparie.py,22,SelectionConfig,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v637_apparie.py,37,canonical_bytes,function,value: Mapping,"Canonical UTF-8 JSON, rejecting NaN/Infinity and excluding top hash.",docstring source
+3_Preuves_et_calculs/src/v637_apparie.py,44,manifest_sha256,function,manifest: Mapping,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v637_apparie.py,48,_validate_config,function,cfg: SelectionConfig,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v637_apparie.py,69,_rank_pairs,function,"values: np.ndarray, nuisance: np.ndarray, minimum_gap: float, caliper: float","Rank eligible edges by largest exposure contrast, then closest match.",docstring source
+3_Preuves_et_calculs/src/v637_apparie.py,81,build_selection,function,config: SelectionConfig | None=None,"Return a deterministic, outcome-blind manifest ready to freeze on disk.
+
+Each candidate is cos(radius)*e_anchor + sin(radius)*u with unit u
+orthogonal to e_anchor. Hence its projective distance to its unique nearest
+Euler axis is exactly radius. Pairs have identical anchor and radius.
+Candidates are never reused, including between the two arms.",docstring source
+3_Preuves_et_calculs/src/v637_apparie.py,182,selected_coefficients,function,manifest: Mapping,"Return IDs and coefficients in manifest order, including Euler controls.",docstring source
+3_Preuves_et_calculs/src/v637_apparie.py,190,detection_interval,function,"row: Mapping, ceiling: float","Translate a stable first-detection row to an interval at a fixed ceiling.
+
+Required fields: id; first_detected (None for no detection at study ceiling).
+``stable`` must be explicitly True. An optional ``previous_level`` supplies
+the lower endpoint (otherwise integer first_detected-1). These are numerical
+instrument intervals, not certified locations of the first genuine zero.",docstring source
+3_Preuves_et_calculs/src/v637_apparie.py,216,compare_detection_rows,function,"low: Mapping, high: Mapping, ceiling: float",Classify high-vs-low detection order without assigning censored heights.,docstring source
+3_Preuves_et_calculs/src/v637_apparie.py,234,_summarize,function,"comparisons: list[dict], arm: str",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v637_apparie.py,254,analysis,function,"manifest: Mapping, rows: Iterable[Mapping], ceilings: Iterable[float] | None=None","Analyze frozen pairs at preset ceilings; retain all missing/unclear pairs.
+
+``rows`` are dictionaries {id, first_detected, stable, previous_level?}.
+A missing row is unresolved. Neither non-detection nor a missing row is
+given a fabricated numeric height. The D arm reports its directional
+diagnostic and all signs by anchor/radius, without inferring 'no effect'
+from a pooled rate near one half.",docstring source
+3_Preuves_et_calculs/src/v639_contraintes.py,16,lo,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,20,hi,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,24,contains,function,"x, number=0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,28,point,function,q,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,33,endpoint_fraction,function,endpoint,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,39,enclosure,function,"x, places=12","Outward decimal bounds from exact binary endpoints, with no float rounding.",docstring source
+3_Preuves_et_calculs/src/v639_contraintes.py,46,enclosure.fmt,function,integer,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,54,midpoint,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,58,conj,function,z,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,63,exact_phases,function,dps=80,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,84,antisymmetric_direction,function,"phases, anchor",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,103,minor_direction,function,"phases, anchor, support",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,105,minor_direction.det,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,117,radius_values,function,name,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,124,pair_record,function,"phases, anchor, u, p, radius, kind",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_contraintes.py,154,certificate,function,dps=80,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,10,add,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,14,scale,function,"a, k",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,18,divide_positive,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,24,atan_bounds,function,"x, n",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,31,pi_bounds,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,37,trig_bounds,function,"angle, kind",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,50,gauss_enclosures,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,70,rational_certificate,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v639_rational.py,79,rational_certificate.box,function,pair,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_comparaison.py,10,digest,function,path,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_comparaison.py,14,verify_protocol,function,data_directory,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_comparaison.py,42,compare_members,function,"low, high, ceiling, require_roots=True","Compare the truncated observable, retaining censoring and failures.",docstring source
+3_Preuves_et_calculs/src/v640_comparaison.py,44,compare_members.member,function,record,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_comparaison.py,74,analyze,function,"manifest, rows, ceilings=(50, 100, 150), require_roots=True",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_racines.py,22,_phases,function,,"Reconstruct at the caller's mp precision, with the principal half angle.",docstring source
+3_Preuves_et_calculs/src/v640_racines.py,42,reconstruct_pair,function,"pair: dict, digits: int=110","Rebuild the frozen pair solely from its anchor, radius and support.
+
+Returned mp values retain their construction precision. Arithmetic on
+those values must still be performed within the desired mp.workdps.
+There is no search over supports and no use of zero outcomes.",docstring source
+3_Preuves_et_calculs/src/v640_racines.py,62,reconstruct_pair.determinant,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_racines.py,106,periodic_function,function,"coefficients, phases=None","Aggregate six phase-rotated characters into one periodic Dirichlet call.
+
+Call while inside mp.workdps. Passing a float to mp.mpf preserves its exact
+binary value; converting through str(float) would describe another input.",docstring source
+3_Preuves_et_calculs/src/v640_racines.py,123,periodic_function.evaluate,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_racines.py,130,locate_direction,function,"coefficients_binary64, ceiling: float, sigma_right: float=3.0","Use the fixed historical EM multistarts, with the V6.40 right edge.
+
+The helper's q13 function evaluations occur only when this is called.",docstring source
+3_Preuves_et_calculs/src/v640_racines.py,145,_root_metrics,function,"evaluate, value, seed, ceiling, sigma_right, residual_limit, partner_limit, digits",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_racines.py,151,_root_metrics.prefactor,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v640_racines.py,177,confirm_direction,function,"pair: dict, side: str, coefficients_binary64, located: dict, ceiling: float, sigma_right: float=3.0","Recross an EM candidate for the analytic recipe at 80 and 110 digits.
+
+Failure is returned explicitly. Precision agreement and a binary-input
+perturbation check never imply a certified digit error or earlier absence.",docstring source
+3_Preuves_et_calculs/src/v641_blocs.py,9,pair_from_moments,function,"m0, m1, m2, count_tolerance=1e-05",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_blocs.py,24,jet_section,function,"matrix, rhs, tolerance=1e-10",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_collisions.py,19,periodic_jet,function,"table, s, order=2","L,L',L'' from Hurwitz derivatives, with eight guard decimal digits.
+
+The optional order is 0, 1 or 2. The periodic table need not be a character.
+This formula is intended away from s=1, where pole cancellation should be
+evaluated separately rather than as a sum of infinite terms.",docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,53,Family,class,,c_sigma(r)=cos(r)e_i + sigma sin(r)u for the frozen analytic u.,docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,66,Family.sign,function,self,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_collisions.py,70,Family.scale,function,self,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_collisions.py,73,Family.evaluate,function,"self, s, r","Uncompleted F_sigma(s,r); operations use the caller's mp precision.",docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,78,Family.completed,function,"self, t, r",Holomorphic in t locally near the real critical-height axis.,docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,91,Family.critical,function,"self, r, t",Real critical-line evaluation; use reality_defect to audit projection.,docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,95,Family._part_jet,function,"self, table, t, order=2",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_collisions.py,124,Family.parts,function,"self, t, order=2","Completed X_i,Y_u and t-jets; full complex values retained.",docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,129,Family.jet,function,"self, r, t","Return Hasse coefficients Z,Z_t,Z_tt/2 and unfolding derivatives.",docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,146,Family.wronskian,function,"self, t",W=X Y'-X'Y; necessary for every critical double collision.,docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,151,Family.radius_from_height,function,"self, t","Unique candidate in [0,pi); None if X=Y=0 numerically exactly.
+
+The caller must enforce its registered radius bounds and independently
+check Z=Z_t=0. A Wronskian zero alone is not a collision certificate.",docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,164,make_family,function,"pair, side='plus', digits=80, normalization_height=0, normalization='hardy'",Rebuild solely from the existing frozen anchor/radius/minor recipe.,docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,183,companion_form,function,"z_r, z_tt, delta_r","Second-jet model. mu here is linearized, not a prepared exact discriminant.",docstring source
+3_Preuves_et_calculs/src/v641_collisions.py,194,operator_certificate,function,mu,"Exact algebraic identities for real mu, with its local metric signature.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,12,phase_values,function,dps=80,"Binary64 exports of exact V13 phase recipes, explicitly approximate.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,20,Fibre,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_fibres.py,36,Fibre.point,function,"self, direction","Export c=t e_i+s(u0+rho N v), with ||v||=1.
+
+At boundary_tolerance this is only an approximate boundary export.
+No numerical classification here replaces an exact eta<=1 proof.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,56,fibre_geometry,function,"phases, anchor, radius, target, tolerance=1e-11","Return affine operators and numerical feasibility for a prescribed A.
+
+Only 0<r<pi/4 and c_i=+cos(r) are covered. 'boundary_tolerance' deliberately
+reports that floating point cannot decide the exact boundary equality.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,100,ellipse_points,function,"phases, anchor, radius, count=181","Approximate geometric boundary A=t z_i+s M u, not a zero caustic.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,112,defect,function,"phases, coefficients",Normalised D for ||c||=1; rejects unnormalised exports.,docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,122,defect_polynomial,function,fibre,"C+L.v+v^T Q v+T[v,v,v] on the fibre's unit S2 coordinates.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,139,evaluate_polynomial,function,"polynomial, direction",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_fibres.py,146,constancy_residual,function,polynomial,"Approximate residual of the exact algebraic constancy criterion.
+
+Exact constancy iff Q=(tr Q/3)I and T=-sym(I tensor L).
+A small returned value is a diagnostic, never an exact proof.",docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,161,tangent_projector,function,"fibre, direction",Orthogonal projector in the five off-anchor coordinates onto T_u fibre.,docstring source
+3_Preuves_et_calculs/src/v641_fibres.py,170,interval_certificate,function,dps=80,"Enclose G and a feasible A=0 counterexample at the exact radius 13/20.
+
+Boundary targets use an exact analytic recipe; interval boxes only verify
+consistency of its identities. An interval touching eta=1 alone would not
+certify a singleton. Nothing here evaluates or counts a zero.",docstring source
+3_Preuves_et_calculs/src/v641_global.py,5,hidden_negative_prefix,function,size,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v641_global.py,11,schur_diagnostic,function,"A, B, C",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,12,lower,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,13,upper,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,14,interval,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,17,abs_upper,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,18,magnitude,function,z,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,19,symmetric,function,radius,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,20,complex_exp,function,z,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,23,rounded_midpoint,function,"x, places=12",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,27,bernoulli,function,n,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,31,serial,function,"z, places=18",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,35,IntervalFamily,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,36,IntervalFamily.__init__,function,"self, pair, side='plus', digits=50, N=32, M=12",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,69,IntervalFamily.jets,function,"self, s, order=2",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,99,IntervalFamily.function_jet,function,"self, r, s, order=2",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,103,IntervalFamily.critical_system,function,"self, r, t, omega=mp.iv.mpc(1)",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,111,rational_inverse,function,"matrix, places=12",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/v642_intervalles.py,116,contraction_certificate,function,"centre, halfwidth, values, jacobian, preconditioner",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,19,setup,function,dps=60,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,26,I,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,32,lower,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,36,upper,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,40,g_closed,function,x,Prolongement analytique de la branche 0<x<2a.,docstring source
+3_Preuves_et_calculs/src/weil_trace_intervals.py,49,g_interval,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,61,legendre,function,"n, x",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,71,gauss_rule,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,95,panel_error,function,"width, radius, majorant",Reste Gauss et estimation de Cauchy de la dérivée d'ordre 32.,docstring source
+3_Preuves_et_calculs/src/weil_trace_intervals.py,103,enclose_quadrature,function,"fun, breaks, radius, majorant",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,118,physical_grid,function,count,g aux noeuds ; deux branches analytiques séparées au point 0.,docstring source
+3_Preuves_et_calculs/src/weil_trace_intervals.py,132,arch_interval,function,n,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,157,arch_interval.integrand,function,u,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,170,dh_coefficients,function,M,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,183,prime_interval,function,"n, c, logs, roots",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,195,float_center_and_radius,function,value,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/weil_trace_intervals.py,202,traces,function,"L=1115, dps=60, progress=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/zero_reconstruction.py,46,hurwitz_zeta,function,"s: complex, a: float","zeta(s, a) par Euler-Maclaurin (prolongement analytique inclus), s complexe != 1.",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,62,F_eval,function,"kind: str, s: complex",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/src/zero_reconstruction.py,76,taylor,function,"kind: str, s0: complex, r: float=0.05, n: int=16","Coefficients de Taylor c_0, c_1, c_2 de F en s0 (intégrale de Cauchy sur un cercle).",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,83,regular_part_at_zero,function,"kind: str, rho: complex","(a_rho, |F(rho)|) avec q = -F'/F = -1/(s - rho) + a_rho + ... en un zéro simple.",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,89,q_and_derivative,function,"kind: str, s: complex",q(s) = -F'/F et q'(s) en un point régulier.,docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,95,trivial_zero_regular_part,function,"kind: str, rho: float","a_rho en un zéro trivial rho (entier négatif), par l'équation fonctionnelle.
+
+F'/F(s) = X'/X(s) - Fdual'/Fdual(1 - s),
+X'/X(s) = -log(q/pi) - psi((1 - s + par)/2)/2 - psi((s + par)/2)/2.",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,108,nontrivial_zeros,function,"kind: str, extended: bool=True","Zéros non triviaux connus (complexes), des deux signes de la partie imaginaire.
+
+extended=True : listes V6.3d jusqu'à |t| <= 600 (complétude contrôlée par le principe de l'argument) ;
+extended=False : listes historiques (L : |t| <= 245 ; DH : t <= 200, partenaires 1 - sigma ajoutés ici).",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,135,zero_terms,function,"kind: str, n_trivial: int=14","Pour chaque pôle de G_F(s)/s : lam = rho - 1/2 et (A, B) tels que le terme vaut e^(lam u)(A u + B).",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,164,g_from_zeros,function,"terms: dict, u: np.ndarray, sigma: float, families: tuple[str, ...] | None=None","Signal lissé reconstruit à partir des pôles de G_F(s)/s (zéros de F, zéros triviaux, s = 0).",docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,175,g_from_coefficients,function,"c: np.ndarray, u: np.ndarray, sigma: float, chunk: int=256",Signal lissé calculé exactement à partir des coefficients c_F(n) (aucun zéro).,docstring source
+3_Preuves_et_calculs/src/zero_reconstruction.py,192,coefficients_c,function,"kind: str, N: int",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/audit_dh_zero_count.py,15,winding,function,"kind, x0, x1, y0, y1, h=0.005",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/build_v634_document.py,5,fr,function,"x, d=3",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/build_v634_document.py,7,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/build_v637_document.py,17,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_delta_contour_mpmath.py,9,Lam,function,"t, dps",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,10,interval,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,11,plus,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,12,minus,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,13,times,function,"a, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,15,sum_,function,items,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,19,absolute,function,a,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,21,replay,function,"centre, half, values, J, certificate",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,35,verify,function,"output, protocol, root_audit",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/check_v642_certificate.py,68,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/compute_L_chi5_zeros.py,10,L,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/compute_delta_zeros_contour.py,20,main,function,"T: float=1500.0, dt: float=0.005, width: float=25.0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/compute_zeros_numpy.py,19,newton,function,"kind, z, it=40",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/compute_zeros_numpy.py,29,add,function,"found, z, y0, y1",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/compute_zeros_numpy.py,34,search_band,function,"kind, y0, y1, sigmas, dt",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/compute_zeros_numpy.py,45,run,function,"kind, t_lo, t_hi",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/dh_zeros_chunk.py,11,f,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/dh_zeros_chunk.py,17,f,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/figure_v634.py,8,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_abelian_check.py,20,Q_eta_measured,function,eta,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_abelian_check.py,32,Q_eta_diag,function,"eta, corr=True",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_archipel_relief.py,25,relief,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_archipel_relief.py,35,relief.counts,function,Zrows,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_archipel_relief.py,56,analyse,function,"UU, VV, TS, eu",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_archipel_relief.py,79,figure,function,"UU, VV, TS, eu, out",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_archipel_relief.py,110,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_arithmetic_generator_demo.py,12,one_case,function,"name, modes",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_audit.py,30,K_curve,function,"Cfun, Lmax, du=0.002",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_controls.py,13,best,function,"N, builders",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_controls.py,41,ebcf,function,N,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_extended.py,37,best,function,"N, blist",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_extended.py,43,fixed,function,"N, wfun",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_iter.py,44,setup,function,N,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_iter.py,48,proj,function,"V, Gm, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_nb_family.py,45,family,function,"N, powers, alpha_fixed=False",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_nb_family.py,52,e2,function,"beta, Gam, bb",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_v54.py,17,setup,function,N,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_attack_v54.py,21,proj,function,"V, Gm, b",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_base_change.py,19,zeros_mod,function,"gam, period",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_base_change.py,22,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_base_change.py,85,metric_step,function,,La métrique du générateur des premiers selon le pas h (aucun zéro utilisé).,docstring source
+3_Preuves_et_calculs/scripts/run_base_change.py,90,metric_step.run,function,"kind, h, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_base_change.py,106,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,21,cue_angles,function,"N, reps, rng, batch=2000",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,31,cue_spacings,function,th,"Écarts dépliés cycliques (moyenne 1) : tableau (reps, N).",docstring source
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,37,triples_fraction,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,42,ratios,function,"s1, s2",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,46,unfold,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,51,objets,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_bblm_trou_a_trois.py,57,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_carre_continu.py,17,form,function,"kind, t, L, h, a",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_carre_continu.py,29,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_carre_continu.py,70,figure,function,out,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dark_zeta.py,41,row_for,function,"name, a, g",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_delta_heisenberg.py,26,omega_deg1,function,"r, q, par",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_delta_heisenberg.py,28,traces,function,"gam, w, N, h",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_delta_heisenberg.py,31,quad,function,"g0, d",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_delta_heisenberg.py,33,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_delta_heisenberg.py,93,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,29,traces,function,"gam, w, N, h",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,32,quad,function,"g0, d",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,35,qtr,function,"g0, d, a, h, N, c=1.0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,38,zeros_split,function,kind,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,41,L_of,function,"n, h",Taille n de G -> longueur de fenêtre (plus grand décalage) (n - 1) h.,docstring source
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,45,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,48,main.B,function,"kind, a=A0, h=H0, N=N0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,79,main.add,function,"exp, kind, g0, d=0.2, c=1.0, a=A0, h=H0, N=N0, extra=None, base=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,123,main.ghat,function,"r, a",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_detection_threshold.py,151,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width.py,24,diffs,function,S,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width.py,26,profile,function,"S, bw, X",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width.py,33,model,function,"x, depth, w, c",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width.py,35,chi2_fixed,function,"x, y, e, wf",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width_full.py,27,analyse,function,X,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width_full.py,29,analyse.stacked_profile,function,S,Profil empilé des différences autour des zéros de zeta ; renvoie aussi cibles et poids.,docstring source
+3_Preuves_et_calculs/scripts/run_dip_width_full.py,39,analyse.kernel,function,"w, Zc, wts","K_w empilé avec les mêmes poids que les données (tous les zéros de zeta, des deux signes).",docstring source
+3_Preuves_et_calculs/scripts/run_dip_width_heights.py,24,analyse,function,"name, T1, T2, r_max=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dip_width_heights.py,35,analyse.kernel,function,w,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dual_lock_audit.py,15,gram_from_components,function,"comp, kind",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dual_lock_audit.py,18,write_csv,function,"path, rows",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_dual_lock_audit.py,22,main,function,full=False,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_energy_dimension.py,43,fpart,function,"t, imag=False",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_euler_archipelago.py,26,zeros_on_grid,function,"t, z",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_euler_archipelago.py,28,count_on,function,"t, z, lim",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_euler_archipelago.py,30,density,function,"t, q",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_euler_archipelago.py,32,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_euler_archipelago.py,118,online,function,cv,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_euler_right_of_one.py,19,winding,function,"q, par, c, sig0, T=TMAX, sig1=3.0, h=0.01",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_explicit_formula_audit.py,21,Hmat,function,"freqs, W, gams",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_explicit_formula_audit.py,36,gams_on,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_explicit_formula_audit.py,37,gams_quad,function,"s, t",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,22,theta_star,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,24,Z,function,"t, theta",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,26,density,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,27,winding_theta,function,"theta, y0, y1, h=0.01, x0=-0.9, x1=4.0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,33,newton,function,"theta, s, it=60, h=1e-05",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,42,figure,function,,Trace data/family_mod7.png à partir des fichiers CSV (appel direct : python scripts/run_family_mod7.py --figure).,docstring source
+3_Preuves_et_calculs/scripts/run_family_mod7.py,151,online_zeros,function,th,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7.py,154,imprint,function,"S, delta=0.15, ndraw=300",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7_proved_part.py,19,make_F,function,theta,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7_proved_part.py,21,make_F.F,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7_proved_part.py,24,winding,function,"F, x0, x1, y0, y1, h",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7_proved_part.py,30,count_right,function,"F, sigma0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_family_mod7_proved_part.py,40,newton,function,"F, s, it=80, h=1e-05",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_force_multiplicativite.py,18,coeffs_from_uv,function,"u, v",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_force_multiplicativite.py,24,defect,function,"P, q=7, par=1",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_force_multiplicativite.py,37,cmath_e,function,phi,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_force_multiplicativite.py,41,partial_spearman,function,"x, y, z",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_force_multiplicativite.py,47,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_force_multiplicativite.py,77,figure,function,"u, v, T, Dm, d, col, A1, out",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_chain.py,23,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_chain.py,74,record,function,"kind, q, g, c, label",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_chain.py,101,pick,function,q,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,16,pmul,function,"a, b, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,19,ppow,function,"a, e, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,26,interp,function,"vals, p",Polynôme (degré < p) qui prend les valeurs vals[x] en x ∈ F_p (Lagrange).,docstring source
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,37,rank_mod,function,"Mx, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,50,hasse_eval,function,"poly, xs, M, p","Lignes : pour chaque x ∈ xs et k < M, la valeur de la dérivée de Hasse d'ordre k de poly en x.",docstring source
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,61,experiment,function,"p, f, J, K, M, phis",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,80,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_frobenius_non_geometrique.py,94,figure,function,out,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_function_field_analog.py,17,Q_curve,function,"a, p, M",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_generator_real_signal.py,14,esprit,function,"y, dt, r",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_generator_real_signal.py,21,modes,function,"y, dt, r",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_gps_latest.py,19,J2,function,q,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_h3_gaps.py,11,S,function,N,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_lock_independence.py,58,local_metrics,function,"a, lam",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_metric_height.py,26,traces,function,"gam, w, N, h",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_metric_height.py,29,negatives,function,"t, n",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_metric_height.py,32,offline_list,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_metric_height.py,42,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_metric_height.py,81,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_object_vs_form.py,23,density,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_object_vs_form.py,25,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_object_vs_form.py,79,obj,function,tr,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_palier_quatre_tiers.py,18,sieves,function,N,μ et Λ jusqu'à N (crible d'Ératosthène vectorisé).,docstring source
+3_Preuves_et_calculs/scripts/run_palier_quatre_tiers.py,36,c_arith,function,"lam, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_palier_quatre_tiers.py,45,tail_T,function,"N, w, factor",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_palier_quatre_tiers.py,56,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_palier_quatre_tiers.py,128,figure,function,"sc, out, c1",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_pole_cancellation.py,17,weights,function,"N, mu",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_pole_cancellation.py,21,tail_T,function,"N, w, M_factor=400",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_pole_cancellation.py,33,Qint,function,N,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_pole_cancellation.py,35,Hint,function,N,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_generator.py,24,zeros,function,kind,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_generator.py,29,coeff_cache,function,"kind, M, _c={}",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_generator.py,33,run,function,"kind, a, h, N, Z, t=None",t (facultatif) : traces déjà calculées pour un N plus grand ; leur préfixe n'utilise que les premiers <= exp(N h + 2a).,docstring source
+3_Preuves_et_calculs/scripts/run_prime_generator.py,42,expected,function,"Z, a, h, rel=1e-08",Zéros que la fenêtre peut voir : |Re gamma| < pi/h et poids relatif g^(gamma)/g^(0) >= rel.,docstring source
+3_Preuves_et_calculs/scripts/run_prime_generator.py,51,sci,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_generator.py,54,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_lock.py,30,rankdata,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_lock.py,45,spearman,function,"x, y",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_lock.py,52,write_csv,function,"path, rows",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_prime_lock.py,61,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rank_law.py,25,gammas,function,kind,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rank_law.py,32,classes,function,g,Représentants de gamma modulo +-gamma (fonctions de test paires).,docstring source
+3_Preuves_et_calculs/scripts/run_rank_law.py,42,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_reduced_model.py,22,tower_max,function,"phi, g, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_reduced_model.py,27,classify,function,"c, q, g, D=DMAX",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_reduced_model.py,42,example_table,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_reduced_model.py,47,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rejected_reread.py,23,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rejected_reread.py,87,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rejection.py,15,q,function,X,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,19,DN,function,"d, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,23,sinc,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,26,gram_margin,function,"theta, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,30,kernel_det,function,"theta, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,33,R3,function,"x, y","Noyau sinus, trois points 0, x, x + y (densité normalisée).",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,38,R2,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,40,R3_melange,function,f1,"Superposition de deux familles indépendantes de fractions f1, 1 − f1 (chacune suit le noyau sinus à sa propre échelle).",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,43,R3_melange.R,function,"x, y",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,50,unfold_zeta,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,51,unfold_L,function,"t, q",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,53,triple_hist,function,"u, edges","Triplets ordonnés i < j < k : x = u_j − u_i, y = u_k − u_j, dans le carré des bords.",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,65,expected,function,"fun, edges, n0, sub=8",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,73,chi2,function,"H, E",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,77,measure,function,"u, edges, small=0.5",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,87,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_n.py,117,figure,function,"edges, H, E, n0, out",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,23,sinc,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,25,margin,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,27,wigner_cdf,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,31,nn_fraction_wigner,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,34,zeros_data,function,"gam, mp, dps=20",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,46,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_a_trois.py,132,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,26,sinc,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,27,margin,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,28,s_of_margin,function,m,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,31,nn_gaps,function,g,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,36,haar_unitary,function,"N, k, rng",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,40,cue_nn,function,"N, samples, rng, batch=200",Écarts au plus proche voisin (unités : espacement moyen 2π/N) de toutes les valeurs propres.,docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,49,part_A,function,rng,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,57,poisson_f,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,60,omega_delta,function,t,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,62,part_B,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,69,part_C,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,85,primes_upto,function,n,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,91,st_cdf,function,th,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,93,part_D,function,M=25000,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,103,curves_ap,function,p,"a_p de toutes les courbes y² = x³ + ax + b (discriminant non nul), comptées par (a, b).",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,114,part_E,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,129,part_E2,function,,"Les 425 courbes du Modèle réduit (V6.6) : métrique de taille N = 2g sur les angles de Frobenius.
+Identités : det G = Π_{l<m} |e^{iθ_l} − e^{iθ_m}|² (densité de Weyl de U(N)) ; marge d'une paire = 1 − D_N(Δ)².",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,147,neff_from_ratio,function,"cue, ratio, col='f01'",N (interpolé en 1/N²) tel que f_CUE(N)/f_CUE(200) = ratio ; None hors de la plage simulée.,docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,153,garwood,function,"k, a=0.05",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,156,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_degre2.py,198,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,15,neff,function,g,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,16,DN,function,"s, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,19,R3N,function,"x, y, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,21,R2N,function,"s, N",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,23,zone_obs,function,"u, idx, X=0.5",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,33,tri_hist,function,"u, idx, h=0.1, top=1.0",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,46,expected_grid,function,"fun_list, h=0.1, top=1.0, sub=10","Σ sur les origines de ∫_bin R ; fun_list : liste de fonctions R(x, y) (une par origine).",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,56,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,85,portees,function,,"Triples consécutifs de portée < 1 (écarts dépliés) : ζ, L(χ5), Δ, et contrôle CUE (Mezzadri).",docstring source
+3_Preuves_et_calculs/scripts/run_rencontre_hauteur.py,87,portees.stats,function,"t, name",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_riemann_roch_virtuel.py,20,elem_from_power,function,"p, k","e_1..e_k des racines à partir des sommes de puissances p[1..k] (Newton, entiers exacts).",docstring source
+3_Preuves_et_calculs/scripts/run_riemann_roch_virtuel.py,28,floors,function,"c, q, g",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_riemann_roch_virtuel.py,54,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_riemann_roch_virtuel.py,89,figure,function,out,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_schrodinger_flux_demo.py,22,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_stability_model.py,24,new_curves,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_stability_model.py,37,exact_inertia,function,"b, L, dps=60",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_stability_model.py,51,exact_off_circle,function,"b, dps=60",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_stability_model.py,56,figure,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_stability_model.py,112,beyond,function,cand,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,25,intersection_gram,function,"c, q, g, K","Forme d'intersection normalisée sur {f1, f2, D_0, …, D_K}, D_n = q^−n/2 Γ_n (calcul en flottants à partir des S_d exacts).",docstring source
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,38,perp_block,function,"c, q, g, K",Bloc orthogonal aux fibres : −q^−|d|/2 S_|d| (diagonale −2g).,docstring source
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,44,inertia,function,"M, tol=TOL",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,48,off_circle,function,"c, q, tol=1e-06",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,51,part_A,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,75,part_B,function,,"ζ, L(χ5), DH : forme d'intersection virtuelle depuis les premiers (paramètres du doc. 33).",docstring source
+3_Preuves_et_calculs/scripts/run_surface_virtuelle.py,103,figure,function,out,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tau_threshold.py,36,freqs,function,"T, m",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tau_threshold.py,37,zero_side,function,"fr, W, gam",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tau_threshold.py,39,lam_min,function,"ML, MD, G, tau",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tau_threshold.py,40,threshold,function,"ML, MD, G",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tau_threshold.py,45,figure,function,,Trace data/tau_threshold.png à partir des fichiers CSV (appel direct : python scripts/run_tau_threshold.py --figure).,docstring source
+3_Preuves_et_calculs/scripts/run_tomo3_channels.py,33,defect,function,c,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tomo_zero_reconciliation.py,22,norm,function,g,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_tomo_zero_reconciliation.py,24,entropy,function,g,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,15,part_A,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,20,part_A.mono,function,"k, extra=None",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,33,unfold,function,"t, q=1",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,36,sinc2,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,39,rank_trace,function,"u, A",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,46,theory,function,A,"Noyau sinus : tr G²/N = 1 + ∫ R2(u) sinc²(πAu) du − (terme de densité retiré par la diagonale, déjà compté).",docstring source
+3_Preuves_et_calculs/scripts/run_v624.py,53,part_B,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v624.py,64,figure,function,out,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_jet_bound.py,7,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_relief_direct.py,14,chart_coeff,function,"u, v",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_relief_direct.py,18,calibration_selection,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_relief_direct.py,32,evaluate,function,"q, T, selection, name",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_relief_direct.py,115,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_root_crosscheck.py,15,mp_function,function,"q, c",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_root_crosscheck.py,25,locate,function,"q, c, ceiling",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_root_crosscheck.py,26,locate.fun,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v634_root_crosscheck.py,38,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v636_norme.py,24,safe_float,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v636_norme.py,28,trace_norm_bound,function,radii,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v636_norme.py,36,negative_compression,function,"G, vectors, epsilon","Gershgorin avec budget gamma_2L pour les deux produits matriciels.
+
+Le modèle d'arrondi IEEE binary64, sans débordement ni sous-flux significatif,
+est une hypothèse explicitée dans la preuve. Les vecteurs sont des dyadiques
+exactes ; aucun signe d'une valeur propre flottante n'est utilisé comme preuve.",docstring source
+3_Preuves_et_calculs/scripts/run_v636_norme.py,76,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_apparie.py,28,digest,function,path,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_apparie.py,32,prepare,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_apparie.py,94,critical_from_basis,function,"C, basis, t, levels",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_apparie.py,104,boundary_margins,function,"C, grid",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_apparie.py,114,run,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_apparie.py,184,postchecks,function,,Contrôles de classification sur les grilles déjà enregistrées.,docstring source
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,28,digest,function,path: Path,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,32,selected_jobs,function,manifest: dict,"Select the frozen covariate-only jobs, without reading any outcomes.",docstring source
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,57,mp_function,function,"q: int, coefficients","Rebuild phases/characters at current mp.dps and call one mp.dirichlet.
+
+The six character contributions are aggregated into one length-q periodic
+coefficient table. Coefficients are the manifest float coordinates lifted
+from their decimal representation, not recomputed random directions.",docstring source
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,77,mp_function.evaluate,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,84,em_function,function,"q: int, coefficients",Aggregate periodic coefficients once for the double-precision evaluator.,docstring source
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,91,em_function.evaluate,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,99,locate,function,"q: int, coefficients, ceiling: float, sigma_right: float=9.0","Find one numerical off-line root in the indicated |t| tranche.
+
+Fixed multistarts are searched in a fixed order. Returning one root does
+not assert uniqueness, that it is the first true root, or interval accuracy.",docstring source
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,107,locate.equations,function,x,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,142,confirm,function,"q: int, coefficients, located: dict, ceiling: float, sigma_right: float=9.0, digits: int=50",Compute a high-precision residual and recross the critical partner.,docstring source
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,156,confirm.prefactor,function,s,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,184,read_rows,function,path: Path,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,203,run,function,"selection_path: Path, rows_path: Path, output_path: Path, lock_path: Path",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,225,run.save,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v637_root_crosscheck.py,265,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v638_bellman.py,12,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v639_contraintes.py,15,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v640_comparaison.py,24,save_json,function,"path, value",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v640_comparaison.py,28,write_rows,function,rows,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v640_comparaison.py,34,reconstruct_inputs,function,manifest,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v640_comparaison.py,62,run,function,cache_directory,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v640_comparaison.py,165,roots,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_bellman.py,15,independent,function,"model, budget, weights, completed","Enumerate all remaining subsets, and derive possible first actions directly.",docstring source
+3_Preuves_et_calculs/scripts/run_v641_bellman.py,30,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,24,load,function,name,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,25,save,function,"name, value",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,26,digest,function,path,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,27,verify,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,36,radius,function,key,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,43,mp_radius,function,key,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,50,EMFamily,class,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,51,EMFamily.__init__,function,"self, pair, side",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,59,EMFamily.parts,function,"self, s",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,63,EMFamily.evaluate,function,"self, s, r",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,65,EMFamily.derivative,function,"self, s, r, h=0.0001",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,68,EMFamily.critical_parts,function,"self, t, dh=0.0001",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,76,EMFamily.wronskian,function,"self, t, dh=0.0001",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,80,continue_path,function,"family, seed, denominator, direction",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,92,continue_path.equations,function,v,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,113,branch_scan,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,132,wronskian_scan,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,167,refine_collisions,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,204,contour_moments,function,"em, r, tcentre, n, h",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,215,pair_blocks,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v641_passages.py,258,geometry,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_bellman.py,10,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_certification.py,14,load,function,name,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_certification.py,15,encode_certificate,function,c,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_certification.py,21,fold_stage,function,"family, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_certification.py,37,contour_stage,function,"family, p",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_certification.py,64,root_stage,function,"family, p, fold",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v642_certification.py,86,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v643_bridges.py,11,build_model,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v643_bridges.py,18,build_model.action,function,"id, label, duration, req, outs, forbids=()",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v643_bridges.py,61,toy,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v643_bridges.py,69,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_v643_bridges.py,89,main.encode,function,o,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_zero_difference_resonances.py,24,diffs,function,S,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_zero_difference_resonances.py,26,count,function,"D, Z, delta",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/run_zero_difference_resonances.py,28,experiment,function,"name, S, Z, delta, rmin=10.0, ndraw=400",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/v644_family_experiment.py,9,strings,function,M,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/v644_family_experiment.py,10,maxdiff,function,"A, B",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/v644_family_experiment.py,11,symbolic_checks,function,"S, n",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/v644_family_experiment.py,31,numerical_checks,function,"S, M",,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/v644_family_experiment.py,51,main,function,,,pas de docstring ; comportement non inféré
+3_Preuves_et_calculs/scripts/v644_integer_tail.py,7,main,function,,,pas de docstring ; comportement non inféré

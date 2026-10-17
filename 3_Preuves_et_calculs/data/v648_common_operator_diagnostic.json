@@ -1,0 +1,305 @@
+{
+  "version": "V6.48",
+  "S": "1/2",
+  "scope": "continuous common operator point diagnostic",
+  "certified": false,
+  "new_positive_certificate": false,
+  "global_RH_claim": false,
+  "zero_data_used": false,
+  "chosen_after_exploration": true,
+  "normalization": "unitary Fourier, projected parity B_U integral 1/pi",
+  "constants": {
+    "C0": 5.3721834192256654,
+    "prime_shift": 0.6931471805599453,
+    "prime_weight": 0.49012907173427356
+  },
+  "numerical_method": "Gauss-Legendre spatial Nystrom; frequency midpoint weighted phi; symmetric eigenvalues",
+  "limitations": [
+    "no outward intervals",
+    "no certified quadrature error",
+    "Nystrom eigenvalues are not upper bounds on the infinite operator",
+    "resolution stability is not proof of accuracy",
+    "a(Tmax)>U is a point check, not a certified omitted-tail bound"
+  ],
+  "cases": [
+    {
+      "U": 8.0,
+      "resolutions": [
+        {
+          "configuration": {
+            "spatial_nodes": 96,
+            "frequency_nodes": 40000
+          },
+          "U": 8.0,
+          "Tmax": 100.0,
+          "duration_seconds": 0.12108714100031648,
+          "annihilator_gram": [
+            [
+              1.0210953054937473,
+              8.646296441915237e-18
+            ],
+            [
+              8.646296441915237e-18,
+              0.02109530549374722
+            ]
+          ],
+          "gram_max_point_error": 2.220446049250313e-16,
+          "omitted_frequency_tail_point_check": 8.139472372064825,
+          "parity": [
+            {
+              "parity": "even",
+              "largest_eigenvalue": 1.6385962875415765,
+              "second_eigenvalue": 0.8675066782121889,
+              "spectral_gap": 0.7710896093293876,
+              "top_six_eigenvalues": [
+                1.6385962875415765,
+                0.8675066782121889,
+                0.5975983135213762,
+                0.3885222803406574,
+                0.34796437346246634,
+                0.21456109626487338
+              ],
+              "trace": 4.388366813699189,
+              "schatten2": 2.0352323465165307,
+              "energy_floor": 6.361403712458424,
+              "margin": 0.008962149764210947
+            },
+            {
+              "parity": "odd",
+              "largest_eigenvalue": 1.4823678525383965,
+              "second_eigenvalue": 0.8054764345643852,
+              "spectral_gap": 0.6768914179740113,
+              "top_six_eigenvalues": [
+                1.4823678525383965,
+                0.8054764345643852,
+                0.5465922168514474,
+                0.3479959839320071,
+                0.21957508955607974,
+                0.1790514570434504
+              ],
+              "trace": 3.859225749722809,
+              "schatten2": 1.8356557777217393,
+              "energy_floor": 6.517632147461604,
+              "margin": 0.1651905847673909
+            }
+          ],
+          "margin": 0.008962149764210947
+        },
+        {
+          "configuration": {
+            "spatial_nodes": 144,
+            "frequency_nodes": 80000
+          },
+          "U": 8.0,
+          "Tmax": 100.0,
+          "duration_seconds": 0.3729090820015699,
+          "annihilator_gram": [
+            [
+              1.0210953054937475,
+              8.302385161865498e-18
+            ],
+            [
+              8.302385161865498e-18,
+              0.021095305493747163
+            ]
+          ],
+          "gram_max_point_error": 2.220446049250313e-16,
+          "omitted_frequency_tail_point_check": 8.139472372064825,
+          "parity": [
+            {
+              "parity": "even",
+              "largest_eigenvalue": 1.6385962871564814,
+              "second_eigenvalue": 0.8675066982513062,
+              "spectral_gap": 0.7710895889051752,
+              "top_six_eigenvalues": [
+                1.6385962871564814,
+                0.8675066982513062,
+                0.5975983112873912,
+                0.38852230085036893,
+                0.34796439224490344,
+                0.21456113638844715
+              ],
+              "trace": 4.388366971931263,
+              "schatten2": 2.035232368052892,
+              "energy_floor": 6.361403712843519,
+              "margin": 0.008962150149306014
+            },
+            {
+              "parity": "odd",
+              "largest_eigenvalue": 1.4823678533958886,
+              "second_eigenvalue": 0.8054764477115718,
+              "spectral_gap": 0.6768914056843168,
+              "top_six_eigenvalues": [
+                1.4823678533958886,
+                0.8054764477115718,
+                0.5465922220974386,
+                0.34799599781969875,
+                0.21957513777569465,
+                0.17905148070265492
+              ],
+              "trace": 3.859225905902103,
+              "schatten2": 1.8356557986822866,
+              "energy_floor": 6.517632146604111,
+              "margin": 0.16519058390989882
+            }
+          ],
+          "margin": 0.008962150149306014
+        }
+      ],
+      "refinement_margin_difference": 3.8509506694595075e-10
+    },
+    {
+      "U": 8.125,
+      "resolutions": [
+        {
+          "configuration": {
+            "spatial_nodes": 96,
+            "frequency_nodes": 40000
+          },
+          "U": 8.125,
+          "Tmax": 100.0,
+          "duration_seconds": 0.12774227599948063,
+          "annihilator_gram": [
+            [
+              1.0210953054937473,
+              8.646296441915237e-18
+            ],
+            [
+              8.646296441915237e-18,
+              0.02109530549374722
+            ]
+          ],
+          "gram_max_point_error": 2.220446049250313e-16,
+          "omitted_frequency_tail_point_check": 8.139472372064825,
+          "parity": [
+            {
+              "parity": "even",
+              "largest_eigenvalue": 1.7630143737991484,
+              "second_eigenvalue": 0.9784111447335886,
+              "spectral_gap": 0.7846032290655598,
+              "top_six_eigenvalues": [
+                1.7630143737991484,
+                0.9784111447335886,
+                0.7020837972034865,
+                0.46659546425182835,
+                0.4278050782027148,
+                0.27825468775445034
+              ],
+              "trace": 5.166674661171568,
+              "schatten2": 2.2591193787533306,
+              "energy_floor": 6.361985626200852,
+              "margin": 0.009544063506639056
+            },
+            {
+              "parity": "odd",
+              "largest_eigenvalue": 1.6025122951272568,
+              "second_eigenvalue": 0.9170153471642879,
+              "spectral_gap": 0.6854969479629689,
+              "top_six_eigenvalues": [
+                1.6025122951272568,
+                0.9170153471642879,
+                0.6431221711123669,
+                0.4254614153317798,
+                0.2898523620213442,
+                0.23120179769408195
+              ],
+              "trace": 4.580883881466825,
+              "schatten2": 2.0481049249678147,
+              "energy_floor": 6.522487704872743,
+              "margin": 0.17004614217853065
+            }
+          ],
+          "margin": 0.009544063506639056
+        },
+        {
+          "configuration": {
+            "spatial_nodes": 144,
+            "frequency_nodes": 80000
+          },
+          "U": 8.125,
+          "Tmax": 100.0,
+          "duration_seconds": 0.37973702599992976,
+          "annihilator_gram": [
+            [
+              1.0210953054937475,
+              8.302385161865498e-18
+            ],
+            [
+              8.302385161865498e-18,
+              0.021095305493747163
+            ]
+          ],
+          "gram_max_point_error": 2.220446049250313e-16,
+          "omitted_frequency_tail_point_check": 8.139472372064825,
+          "parity": [
+            {
+              "parity": "even",
+              "largest_eigenvalue": 1.7630143738073298,
+              "second_eigenvalue": 0.9784111533986861,
+              "spectral_gap": 0.7846032204086437,
+              "top_six_eigenvalues": [
+                1.7630143738073298,
+                0.9784111533986861,
+                0.7020837953695258,
+                0.46659548000078327,
+                0.42780507338990736,
+                0.27825468894945304
+              ],
+              "trace": 5.16667463532576,
+              "schatten2": 2.2591193829100806,
+              "energy_floor": 6.36198562619267,
+              "margin": 0.0095440634984576
+            },
+            {
+              "parity": "odd",
+              "largest_eigenvalue": 1.6025122960680651,
+              "second_eigenvalue": 0.9170153520507658,
+              "spectral_gap": 0.6854969440172993,
+              "top_six_eigenvalues": [
+                1.6025122960680651,
+                0.9170153520507658,
+                0.6431221652699529,
+                0.4254614111881488,
+                0.2898523741431243,
+                0.23120180541486562
+              ],
+              "trace": 4.5808838548381345,
+              "schatten2": 2.0481049266518125,
+              "energy_floor": 6.522487703931935,
+              "margin": 0.17004614123772233
+            }
+          ],
+          "margin": 0.0095440634984576
+        }
+      ],
+      "refinement_margin_difference": -8.181455513067704e-12
+    }
+  ],
+  "proposed_taylor_tail_budgets": [
+    {
+      "T": 90,
+      "S": 0.5,
+      "degree_count": 128,
+      "wave_remainder_point": 0.00010593553633662849,
+      "crude_operator_tail_point": 0.04855984503073104,
+      "scope": "architecture budget only; projected-annihilator remainder still required"
+    },
+    {
+      "T": 90,
+      "S": 0.5,
+      "degree_count": 136,
+      "wave_remainder_point": 1.8773030002997228e-08,
+      "crude_operator_tail_point": 8.604923183523905e-06,
+      "scope": "architecture budget only; projected-annihilator remainder still required"
+    },
+    {
+      "T": 90,
+      "S": 0.5,
+      "degree_count": 144,
+      "wave_remainder_point": 2.0810667402652667e-12,
+      "crude_operator_tail_point": 9.53890728818974e-10,
+      "scope": "architecture budget only; projected-annihilator remainder still required"
+    }
+  ],
+  "architecture": "ambient Legendre compression of projected waves; Legendre projection does not commute with moment projection; certify head, source residual and complement together"
+}

@@ -1,0 +1,282 @@
+{
+  "version": "V6.44",
+  "semantic_domain": "Cc∞, A(S;r,q;u)",
+  "rules": [
+    {
+      "op": "add",
+      "label": "Additionner",
+      "input": "A(S,r,u), A(T,s,u)",
+      "output": "A(max(S,T),min(r,s),u)",
+      "conserves": "annulations communes",
+      "loss": "annulations au-delà du minimum non garanties",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "min(q_f,q_g)"
+    },
+    {
+      "op": "scalar",
+      "label": "Multiplier par un nombre",
+      "input": "c∈ℂ, A(S,r,u)",
+      "output": "A(S,r,u)",
+      "conserves": "annulations ; Q,R multipliés par |c|²",
+      "loss": "c=0 efface le test",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f"
+    },
+    {
+      "op": "multiply",
+      "label": "Multiplier point par point",
+      "input": "A(S,r,u), A(T,s,v)",
+      "output": "A(min(S,T),0,u+v)",
+      "conserves": "support intérieur et lissage",
+      "loss": "moments généralement perdus",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "0 guaranteed"
+    },
+    {
+      "op": "convolve",
+      "label": "Convoluer",
+      "input": "A(S,r,u), A(T,s,v)",
+      "output": "A(S+T,r+s,u+v)",
+      "conserves": "jets : leurs ordres se renforcent",
+      "loss": "support et budget premier grandissent",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f+q_g"
+    },
+    {
+      "op": "P",
+      "label": "Passer dans le moule P",
+      "input": "A(S,r,u)",
+      "output": "A(S,r+1,u)",
+      "conserves": "support ; un ordre de jets gagné",
+      "loss": "dérivées et Q changent",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f"
+    },
+    {
+      "op": "derivative",
+      "label": "Dériver dans x",
+      "input": "A(S,r,u)",
+      "output": "A(S,r,u)",
+      "conserves": "jets fixes aux deux points ±1/2",
+      "loss": "coût de dérivée ; domaine plus exigeant",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f+1"
+    },
+    {
+      "op": "position",
+      "label": "Multiplier par x",
+      "input": "A(S,r+1,u)",
+      "output": "A(S,r,u)",
+      "conserves": "support",
+      "loss": "un ordre de jets garanti perdu",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "max(0,q_f−1)"
+    },
+    {
+      "op": "translate",
+      "label": "Déplacer la valise",
+      "input": "A(S,r,u)",
+      "output": "A(S+|a|,r,u)",
+      "conserves": "h,Q,R et diamètre ; jets",
+      "loss": "fenêtre centrée élargie ; translation n’est pas homomorphisme conv",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f"
+    },
+    {
+      "op": "phase",
+      "label": "Tourner tout le dessin",
+      "input": "A(S,r,u)",
+      "output": "A(S,r,u)",
+      "conserves": "moments,h,Q,R",
+      "loss": "phase variable n’est pas cette règle",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f"
+    },
+    {
+      "op": "conjugate",
+      "label": "Miroir complexe",
+      "input": "A(S,r,u)",
+      "output": "A(S,r,u)",
+      "conserves": "jets car poids réels",
+      "loss": "action sur phases explicite",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f"
+    },
+    {
+      "op": "modulate",
+      "label": "Tourner selon la position",
+      "input": "A(S,r,u), τ≠0",
+      "output": "A(S,0,u)",
+      "conserves": "L² ; algèbre convolution",
+      "loss": "points fixes de jets perdus ; Q change",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "0 if τ≠0"
+    },
+    {
+      "op": "rescale",
+      "label": "Changer d’échelle",
+      "input": "A(S,r,u), λ>0",
+      "output": "A(λS,0,u)",
+      "conserves": "support redimensionné",
+      "loss": "moments et Q non conservés en général",
+      "proof": "V644_LANGUE_ET_DOMAINES.md, L8 ; core Cc∞ only",
+      "origin_order": "q_f"
+    }
+  ],
+  "examples": [
+    {
+      "operation": "add",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        },
+        {
+          "S": "2",
+          "jets": 2,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "2",
+        "jets": 1,
+        "origin_jets": 0,
+        "unit": 1,
+        "smooth": true
+      }
+    },
+    {
+      "operation": "multiply",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        },
+        {
+          "S": "2",
+          "jets": 2,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "1",
+        "jets": 0,
+        "origin_jets": 0,
+        "unit": 2,
+        "smooth": true
+      }
+    },
+    {
+      "operation": "convolve",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        },
+        {
+          "S": "2",
+          "jets": 2,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "3",
+        "jets": 3,
+        "origin_jets": 0,
+        "unit": 2,
+        "smooth": true
+      }
+    },
+    {
+      "operation": "P",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "1",
+        "jets": 2,
+        "origin_jets": 0,
+        "unit": 1,
+        "smooth": true
+      }
+    },
+    {
+      "operation": "position",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "1",
+        "jets": 0,
+        "origin_jets": 0,
+        "unit": 1,
+        "smooth": true
+      }
+    },
+    {
+      "operation": "translate",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "3",
+        "jets": 1,
+        "origin_jets": 0,
+        "unit": 1,
+        "smooth": true
+      }
+    },
+    {
+      "operation": "modulate",
+      "input": [
+        {
+          "S": "1",
+          "jets": 1,
+          "origin_jets": 0,
+          "unit": 1,
+          "smooth": true
+        }
+      ],
+      "output": {
+        "S": "1",
+        "jets": 0,
+        "origin_jets": 0,
+        "unit": 1,
+        "smooth": true
+      }
+    }
+  ]
+}

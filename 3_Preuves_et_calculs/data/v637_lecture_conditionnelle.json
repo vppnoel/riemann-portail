@@ -1,0 +1,195 @@
+{
+  "analysis_status": "post-hoc diagnostic; not an additional prespecified prediction",
+  "D_pairs": [
+    {
+      "pair_id": "D_a00_r00_p00",
+      "delta_a1": -0.015935671642946514,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a00_r00_p01",
+      "delta_a1": 0.022415030888218057,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a00_r01_p00",
+      "delta_a1": 0.02654113481924103,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a00_r01_p01",
+      "delta_a1": -0.016007262043850945,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a00_r02_p00",
+      "delta_a1": -0.01615623672631461,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a00_r02_p01",
+      "delta_a1": -0.003888083688352806,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a01_r00_p00",
+      "delta_a1": 0.01719662741230943,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a01_r00_p01",
+      "delta_a1": 0.02927619654222624,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a01_r01_p00",
+      "delta_a1": 0.017435685720166072,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a01_r01_p01",
+      "delta_a1": 0.020003790496013307,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a01_r02_p00",
+      "delta_a1": 0.027051436538117035,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a01_r02_p01",
+      "delta_a1": 0.02627655727014311,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a02_r00_p00",
+      "delta_a1": -0.020952925761691055,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a02_r00_p01",
+      "delta_a1": 0.023881556580756413,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a02_r01_p00",
+      "delta_a1": 0.02018077492400594,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a02_r01_p01",
+      "delta_a1": -0.008709366393372497,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a02_r02_p00",
+      "delta_a1": 0.02420536271481022,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a02_r02_p01",
+      "delta_a1": -0.021664932388040237,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a03_r00_p00",
+      "delta_a1": 0.027594924882018423,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a03_r00_p01",
+      "delta_a1": 0.017522969946808575,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a03_r01_p00",
+      "delta_a1": -0.008180565404153906,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a03_r01_p01",
+      "delta_a1": 0.025303057756319358,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a03_r02_p00",
+      "delta_a1": 0.020994636990521842,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a03_r02_p01",
+      "delta_a1": 0.025024287121362176,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a04_r00_p00",
+      "delta_a1": -0.005471906370651314,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a04_r00_p01",
+      "delta_a1": 0.026930913711747273,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a04_r01_p00",
+      "delta_a1": 0.026521105810062062,
+      "order": "same_bin"
+    },
+    {
+      "pair_id": "D_a04_r01_p01",
+      "delta_a1": 0.004113938660598282,
+      "order": "same_bin"
+    },
+    {
+      "pair_id": "D_a04_r02_p00",
+      "delta_a1": 0.017323381977598418,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a04_r02_p01",
+      "delta_a1": 0.02659924764067023,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a05_r00_p00",
+      "delta_a1": 0.027619379777470643,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a05_r00_p01",
+      "delta_a1": 0.02531193861657144,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a05_r01_p00",
+      "delta_a1": -0.012136685257363888,
+      "order": "high_later"
+    },
+    {
+      "pair_id": "D_a05_r01_p01",
+      "delta_a1": 0.018965554424859254,
+      "order": "same_bin"
+    },
+    {
+      "pair_id": "D_a05_r02_p00",
+      "delta_a1": 0.010206360514972257,
+      "order": "high_earlier"
+    },
+    {
+      "pair_id": "D_a05_r02_p01",
+      "delta_a1": -0.000263424177371796,
+      "order": "high_earlier"
+    }
+  ],
+  "D_earlier_despite_larger_a1": 17,
+  "A1_low_range": [
+    0.0096968751585901,
+    0.3535640248117312
+  ],
+  "A1_high_range": [
+    1.1728138436714148,
+    1.4858325681247342
+  ],
+  "conclusion": "A1 association in targeted large contrasts; D majority earlier and heterogeneous, not absence of D signal; causal mechanism open"
+}

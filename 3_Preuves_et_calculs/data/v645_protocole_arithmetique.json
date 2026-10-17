@@ -1,0 +1,56 @@
+{
+  "version": "V6.45",
+  "created_utc": "2026-10-12T20:12:19.823547+00:00",
+  "source_v644_zip_sha256": "3e355e927b22656c7a000d2915b4ce550089845b230ed6fe9df02c1d2706efba",
+  "scope": "Prime-centered identities, validated prime/residual entries and tail budgets; full Schur sign remains open",
+  "supports": [
+    "1/2",
+    "1",
+    "2",
+    "3"
+  ],
+  "dimensions": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "wide_seed_supports": [
+    "4",
+    "8",
+    "16",
+    "32",
+    "64",
+    "128"
+  ],
+  "interval_binary_precision": 400,
+  "point_precision": 100,
+  "kernel_series_split": 64,
+  "tail_dyadic_J_range": [
+    1,
+    512
+  ],
+  "tail_order_recipe": "q=ceil(6*S*2^J), epsilon<=1/12",
+  "preexisting_inputs": "V644 matrices and positive observed signs are known; decomposition is a prospective reanalysis, not a fresh prediction",
+  "new_checks": [
+    "exact continuum equals negative seed energy",
+    "prime residual direct interval sum and independent Stieltjes integration by parts overlap",
+    "geometric ceiling decisions validated",
+    "row bound determined from exact integer products and cutoff",
+    "r(T) tail bound uses monotone series and explicit integral",
+    "rational negative witness for continuous base without fluctuations",
+    "tail and residual-Schur bounds do not imply sign automatically"
+  ],
+  "failure_rules": [
+    "Do not label archived archimedean/eigen calculations certified",
+    "interval nonoverlap -> stop or indeterminate",
+    "if no T in grid certifies tail -> report unavailable",
+    "finite subset never promoted to every-support result"
+  ],
+  "units": {
+    "x": "dimensionless logarithmic coordinate",
+    "Psi": "dimensionless prime weight",
+    "seed_and_test": "A_amp",
+    "all_forms_and_residual_Grams": "A_amp^2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "version": "V6.55",
+  "base_corpus": "V6.54",
+  "note_md_pdf_tex_byte_exact": true,
+  "programmes_results_byte_exact": true,
+  "verified_files": [
+    "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+    "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+    "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.tex",
+    "3_Preuves_et_calculs/amplification_20261014/calcul_famille.py",
+    "3_Preuves_et_calculs/amplification_20261014/verifier_identites.py",
+    "3_Preuves_et_calculs/amplification_20261014/VERSION.txt",
+    "3_Preuves_et_calculs/amplification_20261014/results/conducteurs_point.csv",
+    "3_Preuves_et_calculs/amplification_20261014/results/conducteurs_energie_X31.csv",
+    "3_Preuves_et_calculs/amplification_20261014/results/famille_diagnostic.json",
+    "3_Preuves_et_calculs/amplification_20261014/results/validation_livraison.json",
+    "3_Preuves_et_calculs/amplification_20261014/results/recoupement_moteurs.json",
+    "3_Preuves_et_calculs/amplification_20261014/results/verification_decimale.json"
+  ],
+  "html_native_mathml_count": 205,
+  "html_external_runtime_dependencies": false,
+  "html_missing_local_links": [],
+  "global_gain_obtained": false,
+  "global_navigation_integrated": true,
+  "active_state": "V6.55",
+  "scientific_inputs_changed": false
+}

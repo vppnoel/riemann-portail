@@ -1,0 +1,43 @@
+{
+ "courbes": 425,
+ "courbes_violant_E": 0,
+ "courbes_violant_C": 0,
+ "courbes_violant_S": 0,
+ "courbes_violant_castelnuovo": 0,
+ "jumeaux": 220,
+ "jumeaux_attrapes_E": 2,
+ "jumeaux_attrapes_C": 0,
+ "jumeaux_attrapes_S": 119,
+ "jumeaux_attrapes_E_ou_C": 2,
+ "jumeaux_attrapes_au_moins_un": 121,
+ "jumeaux_attrapes_castelnuovo": 220,
+ "E_ou_C_avant_castelnuovo": 0,
+ "E_ou_C_meme_etage": 2,
+ "courbes_violant_tordu": 0,
+ "jumeaux_attrapes_avec_tordu": 220,
+ "mediane_etage_avec_tordu": 4.0,
+ "mediane_rapport_avec_tordu_sur_castelnuovo": 2.0,
+ "avec_tordu_avant_castelnuovo": 0,
+ "avec_tordu_meme_etage": 12,
+ "etage_max_avec_tordu": 10.0,
+ "mediane_rapport_S_sur_castelnuovo": 3.0,
+ "S_avant_castelnuovo": 0,
+ "par_genre": {
+  "1": {
+   "n": 4,
+   "E": 2,
+   "C": 0,
+   "S": 0,
+   "mediane_etage_castelnuovo": 1.0,
+   "mediane_etage_S": null
+  },
+  "2": {
+   "n": 216,
+   "E": 0,
+   "C": 0,
+   "S": 119,
+   "mediane_etage_castelnuovo": 3.0,
+   "mediane_etage_S": 6.0
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+  "cutoff": 1000,
+  "digits": 70,
+  "prime_power_count": 193,
+  "true_divisor_identity_exact_count": 1000,
+  "fake_profile": "a(2)=2*Lambda(2), a(n)=Lambda(n) otherwise",
+  "fake_first_divisor_violation_at_n": 2,
+  "fake_divisor_violations": 500,
+  "energies": [
+    {
+      "X": 10,
+      "J": "29.040351204970515599793375193412838",
+      "J_over_X_squared": "0.29040351204970515599793375193412838",
+      "correlation_reconstruction_error": "5.7956346e-70",
+      "quadratic_pair_term": "186.55675499378927514282242939742304",
+      "linear_anchor_term": "490.51640378881875954302905420401021",
+      "background": "333.0"
+    },
+    {
+      "X": 100,
+      "J": "622.77929169015019402845908545060168",
+      "J_over_X_squared": "0.062277929169015019402845908545060168",
+      "correlation_reconstruction_error": "1.1665453e-65",
+      "quadratic_pair_term": "312816.66807181957581952939105569097",
+      "linear_anchor_term": "645526.88878012942562550093197024036",
+      "background": "333333.0"
+    },
+    {
+      "X": 1000,
+      "J": "22954.773327695780500814733763303817",
+      "J_over_X_squared": "0.022954773327695780500814733763303817",
+      "correlation_reconstruction_error": "2.9282551e-61",
+      "quadratic_pair_term": "330917028.6716633574264147928177715",
+      "linear_anchor_term": "664227406.8983356616459139780840082",
+      "background": "333333333.0"
+    }
+  ],
+  "RH_proved": false,
+  "global_energy_bound_proved": false,
+  "new_global_sign_estimate_found": false,
+  "known_reduction": "RH iff J(X)=O(X^2), with J=integral_1^X(psi-x)^2"
+}
+Homometric model: pair identity exact, triple and anchored potentials differ.
+Directed Mobius kernel: -0.03775870672814944727 -0.03775870672814944727

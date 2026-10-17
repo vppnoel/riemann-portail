@@ -1,0 +1,48 @@
+{
+  "version": "V6.46",
+  "result": "Certificat complet sur tout X_S pour 0<S≤347/1000, premier2 présent : Q_W≥masse/25 et R/200. Projection commune aux sources/fréquences, couches par parité et coût de bord assemblés. Supports plus grands, sources des têtes et transport non borné restent ouverts.",
+  "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+  "dictionary": "69_LANGUE_DES_PASSAGES.html",
+  "graph": "71_LEGO_REUTILISABLE.html",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages",
+    "certifier_bloc_local",
+    "audit_positivite_uniforme"
+  ],
+  "current_bellman_model": "v643_modele_ponts.json",
+  "current_grammar": "v644_grammaire.json",
+  "current_dictionary": "v646_parcours_pedagogique.json",
+  "next_actions": [
+    "v646_operateur_conjoint",
+    "v646_tete_praticable",
+    "v646_sources_tetes",
+    "v646_transport_non_borne"
+  ],
+  "maturity_levels_unchanged": true,
+  "open": [
+    "joint energy/prime bounds for larger supports",
+    "certified actual strong sources for noncoercive heads",
+    "transport to an unbounded support family",
+    "historical branch/collision/complex-A questions"
+  ],
+  "novelty_scope": "internal reconstruction; no priority claim; no RH proof",
+  "global_sign_certified": false,
+  "current_dictionary_archive": "v646_dictionnaire.json",
+  "local_certificate": {
+    "all_tests": true,
+    "maximum_support": "347/1000",
+    "mass_floor": "1/25",
+    "R_floor": "1/200",
+    "beta": "3/20",
+    "nonempty_prime_term": true
+  },
+  "four_doors": [
+    "compensation arithmétique",
+    "tête praticable",
+    "couplages et sources certifiés",
+    "couverture non bornée"
+  ],
+  "pedagogy": "32 fiches en cinq étapes ; formules vectorielles ; catalogue des usages séparé des archives"
+}

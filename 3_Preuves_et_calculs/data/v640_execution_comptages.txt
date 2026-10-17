@@ -1,0 +1,10 @@
+V640 START 2026-10-12T13:19:55.476927+00:00 30 directions; R=3; T=150
+GRILLE 0.02 0.05
+DIAGNOSTIC {"max_phase_vertical": 0.06306712898316695, "max_phase_horizontal": 0.7995519337493796, "max_integer_residual": 2.5067947717616335e-11, "refined_rows": 1196, "unresolved_horizontal_rows": 0, "sigma_right": 3, "first_term_margin_min": 0.2367525571258608}
+GRILLE 0.01 0.025
+DIAGNOSTIC {"max_phase_vertical": 0.03153368730097467, "max_phase_horizontal": 0.7976581212462523, "max_integer_residual": 2.637534635141492e-11, "refined_rows": 1046, "unresolved_horizontal_rows": 0, "sigma_right": 3, "first_term_margin_min": 0.2367525571258608}
+DROITE CRITIQUE 0.005
+COMPTAGE TERMINE 30 admissibles, 24 detections
+BILAN BRUT 50 {"higher_D_earlier": 8, "higher_D_later": 4, "same_tranche": 0, "both_no_detection": 0, "undetermined": 0}
+BILAN BRUT 100 {"higher_D_earlier": 8, "higher_D_later": 4, "same_tranche": 0, "both_no_detection": 0, "undetermined": 0}
+BILAN BRUT 150 {"higher_D_earlier": 8, "higher_D_later": 4, "same_tranche": 0, "both_no_detection": 0, "undetermined": 0}

@@ -1,0 +1,178 @@
+{
+  "version": "V6.46",
+  "scope": "exploratory diagnostic only",
+  "certified": false,
+  "global_RH_claim": false,
+  "new_positive_certificate": false,
+  "chosen_after_exploration": true,
+  "zero_data_used": false,
+  "normalization": "unitary Fourier; Q=integral (b-C0-2w)|fhat|^2; parity trace 1/pi",
+  "constants": {
+    "C0": 5.3721834192256654,
+    "prime_shift": 0.6931471805599453,
+    "prime_weight": 0.49012907173427356
+  },
+  "numerical_method": "midpoint sublevel sorting; endpoint trapezoid concentration and finite layers",
+  "limitations": [
+    "no outward intervals",
+    "no proven quadrature error",
+    "finite-frequency envelope infimum is not certified against omitted tail",
+    "resolution agreement is stability only",
+    "Schatten-2 diagnostic not done in this reproducible experiment"
+  ],
+  "supports": [
+    {
+      "S": "347/1000",
+      "resolutions": [
+        {
+          "Nfrequency": 40000,
+          "Tmax": 100.0,
+          "frequency_microstep": 0.0025,
+          "separate_energy_even_odd": [
+            5.832699410300843,
+            6.135417843980464
+          ],
+          "separate_geometric_margin": -0.02961308065909607,
+          "monotone_envelope_energy_even_odd": [
+            6.120748854456561,
+            6.346948092390307
+          ],
+          "monotone_envelope_margin": -0.2316927082376512,
+          "sublevel_joint_energy_even_odd": [
+            6.389971503776646,
+            6.719277773656981
+          ],
+          "sublevel_joint_margin": 0.03752994108243368
+        },
+        {
+          "Nfrequency": 80000,
+          "Tmax": 100.0,
+          "frequency_microstep": 0.00125,
+          "separate_energy_even_odd": [
+            5.832765959758879,
+            6.135465854211234
+          ],
+          "separate_geometric_margin": -0.02954653120106021,
+          "monotone_envelope_energy_even_odd": [
+            6.120801755724818,
+            6.346988392583008
+          ],
+          "monotone_envelope_margin": -0.23163980696939457,
+          "sublevel_joint_energy_even_odd": [
+            6.390099607466479,
+            6.719370790199198
+          ],
+          "sublevel_joint_margin": 0.03765804477226653
+        }
+      ],
+      "refinement_differences": {
+        "separate_geometric_margin": 6.654945803585832e-05,
+        "monotone_envelope_margin": 5.2901268256633216e-05,
+        "sublevel_joint_margin": 0.00012810368983284803
+      },
+      "interpretation": "positive diagnostics do not create a new certificate"
+    },
+    {
+      "S": "3/8",
+      "resolutions": [
+        {
+          "Nfrequency": 40000,
+          "Tmax": 100.0,
+          "frequency_microstep": 0.0025,
+          "separate_energy_even_odd": [
+            5.754609169000658,
+            6.057656395013127
+          ],
+          "separate_geometric_margin": -0.10770332195928078,
+          "monotone_envelope_energy_even_odd": [
+            6.052828908134774,
+            6.300258701012624
+          ],
+          "monotone_envelope_margin": -0.2996126545594382,
+          "sublevel_joint_energy_even_odd": [
+            6.313874069840203,
+            6.61849688949173
+          ],
+          "sublevel_joint_margin": -0.0385674928540094
+        },
+        {
+          "Nfrequency": 80000,
+          "Tmax": 100.0,
+          "frequency_microstep": 0.00125,
+          "separate_energy_even_odd": [
+            5.754681173005065,
+            6.057708294973551
+          ],
+          "separate_geometric_margin": -0.1076313179548739,
+          "monotone_envelope_energy_even_odd": [
+            6.05288697056761,
+            6.300294548541221
+          ],
+          "monotone_envelope_margin": -0.2995545921266023,
+          "sublevel_joint_energy_even_odd": [
+            6.3140140853270035,
+            6.618599657845373
+          ],
+          "sublevel_joint_margin": -0.038427477367209084
+        }
+      ],
+      "refinement_differences": {
+        "separate_geometric_margin": 7.200400440687815e-05,
+        "monotone_envelope_margin": 5.806243283590362e-05,
+        "sublevel_joint_margin": 0.00014001548680031561
+      },
+      "interpretation": "positive diagnostics do not create a new certificate"
+    },
+    {
+      "S": "1/2",
+      "resolutions": [
+        {
+          "Nfrequency": 40000,
+          "Tmax": 100.0,
+          "frequency_microstep": 0.0025,
+          "separate_energy_even_odd": [
+            5.464205094879355,
+            5.769112303451441
+          ],
+          "separate_geometric_margin": -0.3981073960805842,
+          "monotone_envelope_energy_even_odd": [
+            5.774865707795615,
+            6.0492757966244515
+          ],
+          "monotone_envelope_margin": -0.5775758548985974,
+          "sublevel_joint_energy_even_odd": [
+            6.165593099018609,
+            6.235595149372101
+          ],
+          "sublevel_joint_margin": -0.18684846367560382
+        },
+        {
+          "Nfrequency": 80000,
+          "Tmax": 100.0,
+          "frequency_microstep": 0.00125,
+          "separate_energy_even_odd": [
+            5.464301753965403,
+            5.769181600820979
+          ],
+          "separate_geometric_margin": -0.39801073699453615,
+          "monotone_envelope_energy_even_odd": [
+            5.774931773466706,
+            6.049345229221452
+          ],
+          "monotone_envelope_margin": -0.5775097892275063,
+          "sublevel_joint_energy_even_odd": [
+            6.165759717409256,
+            6.235737244592644
+          ],
+          "sublevel_joint_margin": -0.18668184528495657
+        }
+      ],
+      "refinement_differences": {
+        "separate_geometric_margin": 9.665908604805651e-05,
+        "monotone_envelope_margin": 6.606567109113115e-05,
+        "sublevel_joint_margin": 0.00016661839064724404
+      },
+      "interpretation": "positive diagnostics do not create a new certificate"
+    }
+  ]
+}

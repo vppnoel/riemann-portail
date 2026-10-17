@@ -1,0 +1,41 @@
+{
+  "version": "V6.2",
+  "N": 32768,
+  "n_log": 4096,
+  "P_multiplicative_defect": 48,
+  "main_objects": [
+    "zeta",
+    "L_chi5",
+    "DH"
+  ],
+  "chi_to_DH_theta": [
+    0.0,
+    0.1,
+    0.2,
+    0.30000000000000004,
+    0.4,
+    0.5,
+    0.6000000000000001,
+    0.7000000000000001,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "steinhaus_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "definitions": {
+    "support_leakage": "L2 energy fraction of -F'/F coefficients outside prime powers",
+    "tower_defect": "degree-1 local Euler tower defect Lambda(p^k)/log p - (Lambda(p)/log p)^k",
+    "eulerization": "preserve Lambda(p), impose degree-1 tower on p^k, zero non-prime-powers",
+    "q_residual_ratio": "Q(c-c_eulerized)/Q(c)",
+    "global_signal_coherence": "absolute normalized inner product of log-grid c signals"
+  }
+}

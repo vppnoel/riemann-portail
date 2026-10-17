@@ -1,0 +1,52 @@
+RECOUPEMENT k1_r9_20_plus 5
+STATUT root_recrossed
+RECOUPEMENT k1_r9_20_minus 12
+STATUT root_recrossed
+RECOUPEMENT k1_r13_20_plus 5
+STATUT root_recrossed
+RECOUPEMENT k1_r13_20_minus 12
+STATUT root_recrossed
+RECOUPEMENT k1_r3_4_plus 5
+STATUT root_recrossed
+RECOUPEMENT k1_r3_4_minus 8
+STATUT root_recrossed
+RECOUPEMENT k1_rpi_6_plus 5
+STATUT root_recrossed
+RECOUPEMENT k1_rpi_6_minus 12
+STATUT root_recrossed
+RECOUPEMENT k3_r9_20_plus 15
+STATUT root_recrossed
+RECOUPEMENT k3_r9_20_minus 9
+STATUT root_recrossed
+RECOUPEMENT k3_r13_20_plus 15
+STATUT root_recrossed
+RECOUPEMENT k3_r13_20_minus 9
+STATUT root_recrossed
+RECOUPEMENT k3_r3_4_plus 15
+STATUT root_recrossed
+RECOUPEMENT k3_r3_4_minus 9
+STATUT root_recrossed
+RECOUPEMENT k3_rpi_6_plus 15
+STATUT root_recrossed
+RECOUPEMENT k3_rpi_6_minus 9
+STATUT root_recrossed
+RECOUPEMENT k5_r9_20_plus 20
+STATUT root_recrossed
+RECOUPEMENT k5_r9_20_minus 10
+STATUT root_recrossed
+RECOUPEMENT k5_r13_20_plus 16
+STATUT root_recrossed
+RECOUPEMENT k5_r13_20_minus 11
+STATUT root_recrossed
+RECOUPEMENT k5_r3_4_plus 16
+STATUT root_recrossed
+RECOUPEMENT k5_r3_4_minus 11
+STATUT root_recrossed
+RECOUPEMENT k5_rpi_6_plus 16
+STATUT root_recrossed
+RECOUPEMENT k5_rpi_6_minus 11
+STATUT root_recrossed
+RECOUPEMENTS TERMINES 24 / 24
+BILAN VALIDE 50 {"higher_D_earlier": 8, "higher_D_later": 4, "same_tranche": 0, "both_no_detection": 0, "undetermined": 0} observed_for_the_frozen_numerical_observable
+BILAN VALIDE 100 {"higher_D_earlier": 8, "higher_D_later": 4, "same_tranche": 0, "both_no_detection": 0, "undetermined": 0} observed_for_the_frozen_numerical_observable
+BILAN VALIDE 150 {"higher_D_earlier": 8, "higher_D_later": 4, "same_tranche": 0, "both_no_detection": 0, "undetermined": 0} observed_for_the_frozen_numerical_observable

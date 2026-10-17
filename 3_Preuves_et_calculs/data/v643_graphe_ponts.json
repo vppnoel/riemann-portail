@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "nb",
+      "label": "Beurling et dilatations",
+      "status": "demontre",
+      "row": 0,
+      "col": 0,
+      "detail": "B1 : J est unitaire ; D devient le semi-groupe isométrique R. La densité NB reste équivalente à RH."
+    },
+    {
+      "id": "primes",
+      "label": "Translations des premiers",
+      "status": "demontre",
+      "row": 0,
+      "col": 2,
+      "detail": "B1 : compression exacte K_X vers la demi-droite. L’identité ne fournit aucun signe ; la norme de K_X diverge sur tout L²."
+    },
+    {
+      "id": "reg",
+      "label": "Régularisation et décalage",
+      "status": "demontre",
+      "row": 1,
+      "col": 0,
+      "detail": "B4 : Γ_S et Pχ(ηδ*Γ_S). Erreur H¹ bornée par Cδ^-3 fois erreur L². Cutoffs variables nécessaires à la couverture."
+    },
+    {
+      "id": "form",
+      "label": "Forme complète sur H¹",
+      "status": "demontre",
+      "row": 1,
+      "col": 2,
+      "detail": "B2 : métrique externe ; Q_W continue à S fixé ; représentant T_S autoadjoint signé. Aucune positivité supposée."
+    },
+    {
+      "id": "core",
+      "label": "Cœur admissible dense",
+      "status": "demontre",
+      "row": 2,
+      "col": 0,
+      "detail": "B3 : correction des deux moments par φ et φ′. Union des images régularisées dense avec entrées L² arbitraires."
+    },
+    {
+      "id": "blocks",
+      "label": "Compressions et masse",
+      "status": "demontre",
+      "row": 2,
+      "col": 2,
+      "detail": "B3 : G_S,n et métrique B_S,n. Erreur ε_n contrôlée dans H¹ ; les matrices positives finies seules ne suffisent pas."
+    },
+    {
+      "id": "schur",
+      "label": "Bellman de la forme",
+      "status": "demontre",
+      "row": 3,
+      "col": 2,
+      "detail": "B5 : élimination exacte et dette a−c*G†c. G⪰0, couplage dans Ran G et dette non négative sont tous nécessaires."
+    },
+    {
+      "id": "invariant",
+      "label": "Invariant arithmétique",
+      "status": "ouvert",
+      "row": 4,
+      "col": 2,
+      "detail": "À construire : expression et estimation de la dette pour la forme complète, conditions de noyau et portée sur toute une famille."
+    },
+    {
+      "id": "uniform",
+      "label": "Pour tout n et support",
+      "status": "ouvert",
+      "row": 4,
+      "col": 0,
+      "detail": "Estimation G_S,n⪰−ε_n B_S,n pour tous n, ε_n→0, chaque S entier. Aucun indice fini ne remplit ce contrat."
+    },
+    {
+      "id": "rh",
+      "label": "Positivité globale et RH",
+      "status": "ouvert",
+      "row": 5,
+      "col": 1,
+      "detail": "Le cœur, la continuité et l’estimation de toute la famille impliqueraient le signe global, puis RH par le critère de Weil. Estimation manquante."
+    },
+    {
+      "id": "local",
+      "label": "Certificat local V642",
+      "status": "local",
+      "row": 3,
+      "col": 0,
+      "detail": "Une paire locale et un pli sont certifiés. Le compagnon n’a pas de métrique positive au double. Aucun transfert de signe à ζ."
+    }
+  ],
+  "edges": [
+    {
+      "source": "nb",
+      "target": "reg",
+      "kind": "transport"
+    },
+    {
+      "source": "nb",
+      "target": "primes",
+      "kind": "transport"
+    },
+    {
+      "source": "reg",
+      "target": "core",
+      "kind": "preuve"
+    },
+    {
+      "source": "primes",
+      "target": "form",
+      "kind": "definition"
+    },
+    {
+      "source": "core",
+      "target": "blocks",
+      "kind": "definition"
+    },
+    {
+      "source": "form",
+      "target": "blocks",
+      "kind": "definition"
+    },
+    {
+      "source": "blocks",
+      "target": "schur",
+      "kind": "preuve"
+    },
+    {
+      "source": "schur",
+      "target": "invariant",
+      "kind": "construction"
+    },
+    {
+      "source": "invariant",
+      "target": "uniform",
+      "kind": "condition"
+    },
+    {
+      "source": "uniform",
+      "target": "rh",
+      "kind": "condition"
+    },
+    {
+      "source": "core",
+      "target": "rh",
+      "kind": "condition"
+    },
+    {
+      "source": "form",
+      "target": "rh",
+      "kind": "condition"
+    },
+    {
+      "source": "local",
+      "target": "invariant",
+      "kind": "diagnostic"
+    }
+  ],
+  "and_gate": {
+    "target": "rh",
+    "requires": [
+      "core",
+      "form",
+      "uniform"
+    ]
+  },
+  "scope": "Typed implications; dotted links are obligations, not established theorems"
+}

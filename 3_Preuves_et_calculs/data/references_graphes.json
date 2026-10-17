@@ -1,0 +1,889 @@
+{
+  "version": "V6.55",
+  "ideas": 69,
+  "cases": [
+    {
+      "id": "G65.image",
+      "label": "La paire dans le labyrinthe",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "image",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.fibre",
+      "label": "T1 · Ellipse et fibre S²",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "fibre",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.jet",
+      "label": "L4 · Sections de jets",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "jet",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf",
+      "primary_source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md",
+      "primary_source_label": "Lemme 4 — Section de collision de rang cinq (§6)",
+      "reference_note": "Le lemme de cette case est une section affine réelle de collision à coefficient complexe fixé. Il est distinct du lemme de jets de Hasse en caractéristique finie du document 58.",
+      "related_ideas": [
+        "IDE-066"
+      ],
+      "relation": "Parenté conceptuelle : contraintes de jets et contrôle du rang ; ni identité de lemme ni transfert automatique entre les deux domaines."
+    },
+    {
+      "id": "G65.pli",
+      "label": "T2 · Pli critique double",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "pli",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.variation",
+      "label": "Voie universelle D fermée",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "variation",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.paire",
+      "label": "L5 · Moments et compagnon",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "paire",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.mesure",
+      "label": "20 plis candidats · 18 blocs",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "mesure",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/data/v641_blocs_paires.json",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.prefixes",
+      "label": "G3 · Préfixes insuffisants",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "prefixes",
+      "ideas": [
+        "IDE-050",
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-050",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.pont",
+      "label": "Pont V13 → ζ manquant",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "pont",
+      "ideas": [
+        "IDE-051"
+      ],
+      "primary_idea": "IDE-051",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.g1",
+      "label": "G1–G2 · Tests et densité",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "g1",
+      "ideas": [
+        "IDE-050"
+      ],
+      "primary_idea": "IDE-050",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.g4",
+      "label": "G4 · Queue et couplage",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "g4",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.borne",
+      "label": "Borne sur Q(X) à obtenir",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "borne",
+      "ideas": [
+        "IDE-058"
+      ],
+      "primary_idea": "IDE-058",
+      "original_source": "1_Presentation/articles/article1_mean_square_double_poles.tex",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.weil",
+      "label": "Porte 1 · QW sur tout E",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "weil",
+      "ideas": [
+        "IDE-052"
+      ],
+      "primary_idea": "IDE-052",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.theoremeA",
+      "label": "Porte 2 · Théorème A",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "theoremeA",
+      "ideas": [
+        "IDE-002"
+      ],
+      "primary_idea": "IDE-002",
+      "original_source": "1_Presentation/articles/article1_mean_square_double_poles.tex",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G65.rh",
+      "label": "Destination précise · RH",
+      "view": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "local_id": "rh",
+      "ideas": [
+        "IDE-053"
+      ],
+      "primary_idea": "IDE-053",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf"
+    },
+    {
+      "id": "G66.pli",
+      "label": "I1–I3 · Pli unique",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "pli",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.isolation",
+      "label": "I4 · Deux zéros isolés",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "isolation",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.racines",
+      "label": "I5 · Quatre boîtes",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "racines",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.paire",
+      "label": "Paire et compagnon",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "paire",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.metrique",
+      "label": "I6 · Métrique au pli impossible",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "metrique",
+      "ideas": [
+        "IDE-038"
+      ],
+      "primary_idea": "IDE-038",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.a1",
+      "label": "A1 · Forme depuis les premiers",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "a1",
+      "ideas": [
+        "IDE-046",
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-046",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.pont",
+      "label": "Pont arithmétique manquant",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "pont",
+      "ideas": [
+        "IDE-051"
+      ],
+      "primary_idea": "IDE-051",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.a2",
+      "label": "A2 · Norme première divergente",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "a2",
+      "ideas": [
+        "IDE-069"
+      ],
+      "primary_idea": "IDE-069",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.uniforme",
+      "label": "Inégalité sur chaque support",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "uniforme",
+      "ideas": [
+        "IDE-051",
+        "IDE-050"
+      ],
+      "primary_idea": "IDE-051",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.croissance",
+      "label": "Borne Q(X) depuis les premiers",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "croissance",
+      "ideas": [
+        "IDE-058"
+      ],
+      "primary_idea": "IDE-058",
+      "original_source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.weil",
+      "label": "Critère de Weil",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "weil",
+      "ideas": [
+        "IDE-052"
+      ],
+      "primary_idea": "IDE-052",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G66.rh",
+      "label": "Destination précise · RH",
+      "view": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "local_id": "rh",
+      "ideas": [
+        "IDE-053"
+      ],
+      "primary_idea": "IDE-053",
+      "original_source": "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md",
+      "original_source_missing": false,
+      "document": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf"
+    },
+    {
+      "id": "G67.nb",
+      "label": "Beurling et dilatations",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "nb",
+      "ideas": [
+        "IDE-011",
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-011",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.primes",
+      "label": "Translations des premiers",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "primes",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.reg",
+      "label": "Régularisation et décalage",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "reg",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.form",
+      "label": "Forme complète sur H¹",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "form",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.core",
+      "label": "Cœur admissible dense",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "core",
+      "ideas": [
+        "IDE-050"
+      ],
+      "primary_idea": "IDE-050",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.blocks",
+      "label": "Compressions et masse",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "blocks",
+      "ideas": [
+        "IDE-045",
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-045",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.schur",
+      "label": "Bellman de la forme",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "schur",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.invariant",
+      "label": "Invariant arithmétique",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "invariant",
+      "ideas": [
+        "IDE-051"
+      ],
+      "primary_idea": "IDE-051",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.uniform",
+      "label": "Pour tout n et support",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "uniform",
+      "ideas": [
+        "IDE-050",
+        "IDE-051"
+      ],
+      "primary_idea": "IDE-050",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.rh",
+      "label": "Positivité globale et RH",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "rh",
+      "ideas": [
+        "IDE-052",
+        "IDE-053"
+      ],
+      "primary_idea": "IDE-052",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G67.local",
+      "label": "Certificat local V642",
+      "view": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "local_id": "local",
+      "ideas": [
+        "IDE-043"
+      ],
+      "primary_idea": "IDE-043",
+      "original_source": null,
+      "original_source_missing": false,
+      "document": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "G68.case01",
+      "label": "Graines / algèbre Cc∞",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case01",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G68.case02",
+      "label": "P et jets admissibles",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case02",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G68.case03",
+      "label": "Métrique H¹",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case03",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G68.case04",
+      "label": "Métrique logarithmique R",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case04",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G68.case05",
+      "label": "Marge H¹ stricte",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case05",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G68.case06",
+      "label": "Queue de moments",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case06",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G68.case07",
+      "label": "Schur fini avec couplages",
+      "view": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "local_id": "G68.case07",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "document": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf"
+    },
+    {
+      "id": "G71.case01",
+      "label": "Domaine et moments",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case01",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case02",
+      "label": "Projection commune",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case02",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case03",
+      "label": "Sources : C optimal",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case03",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case04",
+      "label": "Parité",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case04",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case05",
+      "label": "Couches fréquentielles",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case05",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case06",
+      "label": "Certificat complet local",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case06",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case07",
+      "label": "Potentiel de bord",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case07",
+      "ideas": [
+        "IDE-046"
+      ],
+      "primary_idea": "IDE-046",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case08",
+      "label": "Attaches du premier 2",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case08",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G71.case09",
+      "label": "Agrandissement non borné",
+      "view": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "local_id": "G71.case09",
+      "ideas": [
+        "IDE-050"
+      ],
+      "primary_idea": "IDE-050",
+      "document": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf"
+    },
+    {
+      "id": "G72.case01",
+      "label": "Moments et projection",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case01",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case02",
+      "label": "Coût énergie/premier",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case02",
+      "ideas": [
+        "IDE-046"
+      ],
+      "primary_idea": "IDE-046",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case03",
+      "label": "Opérateur commun",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case03",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case04",
+      "label": "Gram des sources",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case04",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case05",
+      "label": "Concentration Schatten-2",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case05",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case06",
+      "label": "Tête et sources réelles",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case06",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case07",
+      "label": "Cellules et erreurs C²",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case07",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case08",
+      "label": "Certificat : S ≤ 3/8",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case08",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G72.case09",
+      "label": "Couverture non bornée",
+      "view": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "local_id": "G72.case09",
+      "ideas": [
+        "IDE-050"
+      ],
+      "primary_idea": "IDE-050",
+      "document": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf"
+    },
+    {
+      "id": "G73.case01",
+      "label": "Forme originale Q",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case01",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case02",
+      "label": "Minorant A = ηI − B",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case02",
+      "ideas": [
+        "IDE-045"
+      ],
+      "primary_idea": "IDE-045",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case03",
+      "label": "Multi-premiers et transport",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case03",
+      "ideas": [
+        "IDE-049"
+      ],
+      "primary_idea": "IDE-049",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case04",
+      "label": "Moments et Gram",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case04",
+      "ideas": [
+        "IDE-044"
+      ],
+      "primary_idea": "IDE-044",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case05",
+      "label": "Cadre cardinal de Gauss",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case05",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case06",
+      "label": "Même erreur δ",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case06",
+      "ideas": [
+        "IDE-047"
+      ],
+      "primary_idea": "IDE-047",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case07",
+      "label": "Intervalles et erreurs",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case07",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case08",
+      "label": "Tête en deux blocs 40 × 40",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case08",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    },
+    {
+      "id": "G73.case09",
+      "label": "Certificat sur tous Xₛ",
+      "view": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "local_id": "G73.case09",
+      "ideas": [
+        "IDE-048"
+      ],
+      "primary_idea": "IDE-048",
+      "document": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+    }
+  ],
+  "documents_renumbered": false
+}

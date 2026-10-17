@@ -1,0 +1,1834 @@
+{
+  "version": "V6.59",
+  "revision": "v659-ciblage-repartition-20261017",
+  "date": "2026-10-17",
+  "fingerprint": "2227adb5f158ae890d8c1775671ca91033c1c622f6991be69aa59416ef9914e3",
+  "dimensions": {
+    "voir": {
+      "reason": "Le niveau 4 reste justifié par les témoins ζ/L/DH et les contrôles reproduits. Les calculs nouveaux sont finis ; ils ne deviennent pas un mécanisme démontré d’interdiction des zéros. V6.58 : fenêtres de Zhu reproduites par une méthode indépendante, contrôlée par les zéros (doc. 81, non certifié). Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "change": "Une loi explicative démontrée dans un cadre où RH est connue ; distinguer ensuite son transfert à ζ.",
+      "dimension": "voir",
+      "level": 4,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "comprendre": {
+      "reason": "Les modèles sur corps finis expliquent une nécessité (niveau 5). P, Schur, les métriques et la tête de conducteurs sont prouvés sous leurs gardes ; aucun mécanisme global pour ζ ne justifie de promouvoir tout cet axe au niveau 6. Complément 76 : raccord H¹ et assemblage conditionnel ; le verrou arithmétique reste ouvert, niveau inchangé. Audit : normalisations raccordées ; candidat global imprimé suspendu pour incohérence de parité. Domaine positif couvrant conservé, domination ouverte. V6.57 : information de phase mesurée et résolution adaptative certifiée sur la fenêtre déjà traitée. Niveau global inchangé. V6.58 : le Modèle réduit localise la source du signe dans un carré (Rosati), ni comptage ni degré (doc. 80). Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ],
+      "change": "Un énoncé précis répondant à la nécessité du signe pour ζ, avec une preuve dans son domaine.",
+      "dimension": "comprendre",
+      "level": 5,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "situer": {
+      "reason": "La rigidité de l’Archipel est établie dans les espaces de degré 1 déclarés (niveau 6). Elle ne donne pas produit d’Euler ⇒ RH. Les témoins récents resserrent les conditions sans ajouter cette implication.",
+      "evidence": [
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "change": "Relecture spécialisée de ces énoncés et de leur périmètre ; pas une nouvelle compression positive.",
+      "dimension": "situer",
+      "level": 6,
+      "reviewed_on": "2026-10-15",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "degre2": {
+      "reason": "Les expériences sur Δ et les comparaisons de marges restent reproduites dans le dossier (niveau 4). Les travaux locaux et l’amplification de ζ ne sont pas une preuve nouvelle en degré 2.",
+      "evidence": [
+        "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md",
+        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md"
+      ],
+      "change": "Un mécanisme démontré dans un modèle pertinent de degré 2 ; l’Archipel de poids 24 reste une piste secondaire ouverte.",
+      "dimension": "degre2",
+      "level": 4,
+      "reviewed_on": "2026-10-15",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "demontrer": {
+      "reason": "Le corpus contient des énoncés auxiliaires avec preuves, dont la tête V6.55 (niveau 6). Une pré-relecture interne et un audit informatique ne remplacent pas la relecture externe du niveau 7. Complément 76 : raccord H¹ et assemblage conditionnel ; le verrou arithmétique reste ouvert, niveau inchangé. Audit : normalisations raccordées ; candidat global imprimé suspendu pour incohérence de parité. Domaine positif couvrant conservé, domination ouverte. V6.57 : information de phase mesurée et résolution adaptative certifiée sur la fenêtre déjà traitée. Niveau global inchangé.",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "change": "Un rapport de spécialiste identifié sur les énoncés retenus. Aucun envoi ni rapport n’est présumé.",
+      "dimension": "demontrer",
+      "level": 6,
+      "reviewed_on": "2026-10-16",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "case": {
+      "reason": "Le niveau 4 correspond aux instruments et certificats dans leurs domaines bornés. La loi de signe de la forme complète sur une famille couvrante n’est pas établie. Cette échelle ne mesure pas une fraction de RH. V6.58 : la marge du noyau des moments à S = 0,8 est mesurée (≈ 5·10⁻¹²) ; la positivité à 0,8 suit déjà du minorant certifié de Zhu, qui domine en portée les certificats 71–75. Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "change": "Construire puis valider le mécanisme global ; un accroissement du plafond local ne suffit pas.",
+      "dimension": "case",
+      "level": 4,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "croiser": {
+      "reason": "Les identités de marge et les ponts entre domaines donnent un niveau 6 dans les cadres déclarés. Les nouvelles restitutions sont des ponts auxiliaires ; les corrélations signées et la couverture restent les obligations communes. Complément 76 : raccord H¹ et assemblage conditionnel ; le verrou arithmétique reste ouvert, niveau inchangé. Audit : normalisations raccordées ; candidat global imprimé suspendu pour incohérence de parité. Domaine positif couvrant conservé, domination ouverte. V6.57 : information de phase mesurée et résolution adaptative certifiée sur la fenêtre déjà traitée. Niveau global inchangé. V6.58 : trois niveaux de positivité transposés exactement entre courbes et ζ (doc. 80). Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/40_LA_RENCONTRE_A_TROIS.md",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ],
+      "change": "Relecture spécialisée des croisements sélectionnés ; aucune hausse automatique au nombre de documents.",
+      "dimension": "croiser",
+      "level": 6,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    }
+  },
+  "actions": [
+    {
+      "id": "modele_reduit",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "marges",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "archipel",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/30_ARCHIPEL_D_EULER.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "chainon",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "generateur_premiers",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "bases_q_q2",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "kalman_relu",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "sources_relues",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "theoreme_A_rayon",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "degre2_archipel",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "generateur_hauteur",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "paires_lehmer",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "loi_du_rayon",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "loi_de_seuil",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "ile_par_les_premiers",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "heisenberg_degre2",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "facteur_dh",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "devineur",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "repulsion_degre2",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "rencontre_modele_reduit",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "constante_Q_modele_reduit",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "taille_effective_delta",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "loi_marge_genre2",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "dbn_degre2",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "preparer_relecture",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "relecture",
+      "date": "2026-10-15",
+      "statut_avant": "humain",
+      "statut": "humain",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "relecture",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "metrique_objet",
+      "date": "2026-10-15",
+      "statut_avant": "route à construire",
+      "statut": "route à construire",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "seuil_detecteur_K",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "coefficients_bohr_psi",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "thermostat_du_sosie",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "tamis_a_deux_sosie",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "palier_quatre_tiers",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "plusieurs_bouchons",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "queue_par_l_echo",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "lire_Wei48",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "lire_Ham21",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "lire_Beu55",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "rencontre_a_n",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "rencontre_a_n_hauteur",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "montgomery_sans_rh",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "collisions_du_flot",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "lire_proportions_2026",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "completer_matrice",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "palier_recalcule",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "surface_virtuelle",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/46_LA_SURFACE_VIRTUELLE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "riemann_roch_virtuel",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "frobenius_non_geometrique",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "j3a_additivite_ou_derivee",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "deux_tiers_meme_calcul",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "j3b_lire_connes_consani",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "carre_en_continu",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/52_J6_LE_CARRE_EN_CONTINU.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "lire_BBLM06",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "trou_a_trois_bk13",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "completer_matrice_2",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v634_relief_direct",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v634_ancrage_independant",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v634_jet_lemme",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "ancrage_v13_apparie",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/61_ANCRAGE_APPARIE_V13.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "signature_erreur_norme",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v635_jet_extensions",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v635_tour_spectre",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "jets_arithmetiques_independants",
+      "date": "2026-10-15",
+      "statut_avant": "route à construire",
+      "statut": "route à construire",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v13_premier_coefficient_complexe_fixe",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/64_COMPARAISON_EXACTE_V13.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v639_contraintes_exactes",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/63_CONTRAINTES_EXACTES_V13.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v640_branches_v13",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "certifier_bloc_local",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v641_deploiement_A_fixe",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "v13_fibre",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "audit_positivite_uniforme",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v642_compensation_arithmetique",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Domaines, annulation et contrats ont été construits ; la borne globale n’a pas été fournie.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v643_ponts_construits",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v643_dette_schur",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "duale_schur",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v643_regime_commun",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Transports et familles couvrantes existent ; le signe et les taux nécessaires à la méthode globale restent à établir.",
+      "groupe": "secondaire",
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v644_langue_domaines",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v644_queue_serree",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Queue resserrée et certificats locaux obtenus ; la famille non bornée reste ouverte.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v644_schur_effectif",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Schur local a été certifié dans le cadre du minorant ; pas de contrôle universel.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v644_loi_tous_supports",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "signe_paquets",
+      "source": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v645_pont_arithmetique",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v645_sources_residus",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Sources et erreurs du minorant borné contrôlées ; les sources fortes de la forme Q ne s’en déduisent pas.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v645_tete_structuree",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Une tête praticable est obtenue pour les certificats bornés ; aucune règle universelle n’est acquise.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v645_loi_tous_supports",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "signe_paquets",
+      "source": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v646_lego_complet",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v646_operateur_conjoint",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Opérateur commun et paiement conjoint construits pour les cas déclarés ; la version non bornée reste ouverte.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v646_sources_tetes",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "Les sources du minorant ont une certification locale ; l’obligation forte pour Q reste conditionnelle au choix de méthode.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v646_transport_non_borne",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "couverture_constructive",
+      "source": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v646_tete_praticable",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "La concentration et l’opérateur commun rendent la tête locale praticable ; le contrôle général reste ouvert.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v647_concentration_certifiee",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v647_norme_commune",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "La norme commune a été certifiée dans le support borné de V6.48 ; ce n’est pas une nouvelle preuve en V6.47.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v647_sources_communes",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Les sources du minorant borné sont traitées en V6.48 ; les sources fortes de Q restent distinctes.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v647_multi_premiers",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "partiel",
+      "raison": "La construction multi-premiers et le paiement sont traités en V6.49 ; conserver la partie non bornée comme obligation.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v647_transport_non_borne",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "couverture_constructive",
+      "source": "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v648_operateur_certifie",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v648_multi_premiers",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "fait",
+      "raison": "Le coût conjoint et le paiement D/V ont été construits en V6.49 ; le transport global du signe ne suit pas.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v648_cadres_transport",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "couverture_constructive",
+      "source": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v648_sources_Q",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "duale_schur",
+      "source": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v648_transport_non_borne",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "couverture_constructive",
+      "source": "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v649_frequency_split",
+      "date": "2026-10-15",
+      "statut_avant": "ouvert",
+      "statut": "ouvert",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "duale_schur",
+      "source": "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.pdf",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v655_restitution",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v655_petits_conducteurs",
+      "date": "2026-10-15",
+      "statut_avant": "fait",
+      "statut": "fait",
+      "raison": "Résultat enregistré conservé dans son périmètre ; aucune nouvelle relecture mathématique intégrale n’est prétendue.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v655_grands_conducteurs",
+      "date": "2026-10-15",
+      "statut_avant": "route à construire",
+      "statut": "route à construire",
+      "raison": "Aucune clôture n’est enregistrée dans les sources de pilotage consultées. La question reste ouverte ; elle n’est pas répétée comme nouvelle idée.",
+      "groupe": "grands_conducteurs",
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v658_trois_niveaux",
+      "date": "2026-10-17",
+      "statut_avant": "nouveau",
+      "statut": "fait",
+      "raison": "Résultat de V6.58 enregistré dans son périmètre (Modèle réduit) ; transfert à ζ non revendiqué.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md",
+      "calcul_rejoue": true
+    },
+    {
+      "id": "v658_zhu_reproduit",
+      "date": "2026-10-17",
+      "statut_avant": "nouveau",
+      "statut": "fait",
+      "raison": "Mesure enregistrée comme mesure ; la certification de Zhu est citée, non reproduite.",
+      "groupe": "noyau_S08",
+      "source": "1_Presentation/81_ZHU_REPRODUIT.md",
+      "calcul_rejoue": true
+    },
+    {
+      "id": "v658_certificat_noyau_S08",
+      "date": "2026-10-17",
+      "statut_avant": "nouveau",
+      "statut": "route à construire",
+      "raison": "Pré-enregistré en V6.58 avec sa prévision ; non exécuté ; hors du classement numérique (aucune probabilité attribuée).",
+      "groupe": "noyau_S08",
+      "source": "1_Presentation/81_ZHU_REPRODUIT.md",
+      "calcul_rejoue": false
+    },
+    {
+      "id": "v659_ciblage_repartition",
+      "date": "2026-10-17",
+      "statut_avant": "nouveau",
+      "statut": "fait",
+      "raison": "Outil de méthode intégré en V6.59 avec ses contrôles ; aucune conséquence scientifique.",
+      "groupe": "secondaire",
+      "source": "1_Presentation/82_CIBLAGE_ET_REPARTITION.md",
+      "calcul_rejoue": true
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lemmes",
+      "status": "demontre",
+      "review": "Identités exactes conservées ; elles définissent les coefficients sans imposer leur signe global.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md"
+      ]
+    },
+    {
+      "id": "thA",
+      "status": "demontre",
+      "review": "Critère de croissance de Q conservé ; la borne suffisante depuis les premiers reste ouverte.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+      ]
+    },
+    {
+      "id": "thB",
+      "status": "conditionnel",
+      "review": "Asymptotique sous RH : calibration conditionnelle, pas démonstration de RH.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/THEOREME_TERME_DOMINANT.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+      ]
+    },
+    {
+      "id": "propC",
+      "status": "conditionnel",
+      "review": "Les hypothèses H1–H3 ne sont pas levées par les constructions récentes.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/H3_ANALYSIS.md"
+      ]
+    },
+    {
+      "id": "dh",
+      "status": "obstacle",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "ff",
+      "status": "mesure",
+      "review": "Le modèle réduit éclaire une vraie positivité géométrique ; son transfert à ζ manque.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md"
+      ]
+    },
+    {
+      "id": "dens",
+      "status": "obstacle",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "arret",
+      "status": "obstacle",
+      "review": "Arrêt de l’ancienne attaque non discriminante sur Q ; les identités de calibration restent utiles. La route arithmétique signée est active.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/13_Lecon_2026.pdf",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "relecture",
+      "status": "ouvert",
+      "review": "Dossier prêt ; aucune relecture externe n’est enregistrée. La préparation et le rapport humain restent distincts.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/03_Dossier_de_relecture_EN.docx"
+      ]
+    },
+    {
+      "id": "weil",
+      "status": "classique",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "nb",
+      "status": "classique",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "li",
+      "status": "classique",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "energyD",
+      "status": "outil",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "darkz",
+      "status": "outil",
+      "review": "Toujours utile : repérer ce que carré, moyenne et corrélation perdent ; les coupures et positions absolues doivent être gardées.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md",
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "tomo2",
+      "status": "outil",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "tomo3",
+      "status": "diagnostic",
+      "review": "Le bispectre brut ne force pas la multiplicativité. Cela ne ferme pas les corrélations ancrées et leurs poids arithmétiques.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "primelock",
+      "status": "outil",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "duallock",
+      "status": "outil",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "darkres",
+      "status": "outil",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "tauc",
+      "status": "obstacle",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "mod7",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "modred",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ]
+    },
+    {
+      "id": "marges",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "archipel",
+      "status": "demontre",
+      "review": "Rigidité dans V_q et sens RH ⇒ Euler conservés ; aucune réciproque globale pour ζ.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+      ]
+    },
+    {
+      "id": "chainon",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "generateur",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "base",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "heisenberg",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "degre2rec",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "rencontre3",
+      "status": "demontre",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "rencontre2",
+      "status": "mesure",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ]
+    },
+    {
+      "id": "sources_registre",
+      "status": "outil",
+      "review": "Registre actif : les vérifications sont datées fiche par fiche ; une référence partiellement lue ne vaut pas théorème importé. Ajout ciblé SuzH23 : 175 références, propositions 1.2–1.3, théorème 1.4 et borne du §3.2 vérifiés ; PDF antérieur conservé. Seconde passe : SuzH23 porte désormais une alerte précise de convention ; aucun résultat global attribué à la formule litigieuse. SuzSig23 : formule1.1 et théorème1.7 vérifiés ciblément ; référence distincte du candidat global audité.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/42_REGISTRE_DES_SOURCES.md"
+      ]
+    },
+    {
+      "id": "prochain",
+      "status": "outil",
+      "review": "La sélection utilise le modèle contractuel du document67 et son état attesté. Les questions récentes non encore modélisées restent explicitement visibles, sans score inventé.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+      ]
+    },
+    {
+      "id": "indicateur",
+      "status": "outil",
+      "review": "Sept dimensions réévaluées, avec justificatifs, comparaison jusqu’à V6.55 et critères de la prochaine marche.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html"
+      ]
+    },
+    {
+      "id": "navigateur",
+      "status": "outil",
+      "review": "Contrats complémentaires, issues et enveloppes de Bellman conservés ; état courant relié aux bilans, obligations globales toujours ouvertes.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+      ]
+    },
+    {
+      "id": "objet",
+      "status": "ouvert",
+      "review": "Construire une structure imposant le signe reste une voie ; aucune forme particulière d’objet n’est déclarée nécessaire à toutes les preuves de RH.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ]
+    },
+    {
+      "id": "sources_locales",
+      "status": "diagnostic",
+      "review": "Le mode fantôme ne pèse rien après audit ; les vraies sources reviennent dans les Grams de résidus.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.md",
+        "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md",
+        "3_Preuves_et_calculs/preuves/V648_OPERATEUR_COMMUN_CERTIFIE.md"
+      ]
+    },
+    {
+      "id": "schr",
+      "status": "obstacle",
+      "review": "Reconstruire un opérateur ne construit pas sa métrique positive ; au pli, un compagnon de Jordan interdit la métrique définie positive.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ]
+    },
+    {
+      "id": "kalman",
+      "status": "mesure",
+      "review": "Repris en innovations de Levinson et en contrôle de couplages ; utile pour le diagnostic et Schur, signe global non acquis.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md",
+        "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md"
+      ]
+    },
+    {
+      "id": "pos",
+      "status": "ouvert",
+      "review": "Le signe de Weil reste ouvert sur toute la famille admissible. Positivité ne signifie pas marge uniforme en H¹.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ]
+    },
+    {
+      "id": "compl",
+      "status": "ouvert",
+      "review": "Une réalisation spectrale doit capturer tous les zéros et justifier son domaine ; une fenêtre finie ne suffit pas.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ]
+    },
+    {
+      "id": "hp",
+      "status": "ouvert",
+      "review": "Réalisation arithmétique auto-adjointe et exhaustive non construite ; programme auxiliaire encore ouvert.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ]
+    },
+    {
+      "id": "v13",
+      "status": "demontre",
+      "review": "Un pli et sa paire sont certifiés dans une boîte ; un coefficient A complexe arbitraire reste un autre problème.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ]
+    },
+    {
+      "id": "domaines",
+      "status": "demontre",
+      "review": "P = ∂² − 1/4 construit les tests ; transports, cœur et parité sont établis sous leurs gardes.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md"
+      ]
+    },
+    {
+      "id": "compact",
+      "status": "demontre",
+      "review": "Compact en H¹ : pas de marge strictement positive uniforme ; identité moins compact dans la métrique d’énergie déclarée.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md"
+      ]
+    },
+    {
+      "id": "fluctuation",
+      "status": "demontre",
+      "review": "Annulation polaire et décomposition exacte : le modèle continu seul peut être négatif ; la fluctuation doit payer le bilan.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md"
+      ]
+    },
+    {
+      "id": "schur",
+      "status": "partiel",
+      "review": "Schur et ses gardes restent acquis. Réanalyse finie V644 : dette relative 4+4 proche de1 à S=3 ; aucune queue infinie supplémentaire certifiée. Le document73 conserve son certificat complet distinct.",
+      "reviewed_on": "2026-10-16",
+      "evidence": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md",
+        "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ]
+    },
+    {
+      "id": "local",
+      "status": "demontre",
+      "review": "Certificat du dossier sur tous les tests du support borné déclaré ; conservé, sans promotion à tous supports.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md",
+        "3_Preuves_et_calculs/preuves/V650_RECUPERATION_TRANSPORT_ET_RH.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ]
+    },
+    {
+      "id": "transport",
+      "status": "partiel",
+      "review": "Transport exact, grammaires et brique initiale acquis ; l’existence de toutes les lignes positives reste ouverte.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md"
+      ]
+    },
+    {
+      "id": "coverage",
+      "status": "partiel",
+      "review": "Couvertures du corpus conservées. Nouvelle exécution : 44 cellules certifient le signal scalaire entre log2 et log1000 ; ce domaine était déjà traité dans79 et ne correspond pas à tous les tests de Weil.",
+      "reviewed_on": "2026-10-16",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ]
+    },
+    {
+      "id": "global_sign",
+      "status": "ouvert",
+      "review": "Ouvert. Les modules de coefficients et observations diagonales perdent de fortes compensations dans les matrices V644. Le certificat adaptatif contrôle une fenêtre scalaire finie, sans loi arithmétique universelle.",
+      "reviewed_on": "2026-10-16",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ]
+    },
+    {
+      "id": "weil_all",
+      "status": "ouvert",
+      "review": "Ouvert. Le document73 certifie déjà un domaine fonctionnel entier à petit support. Les nouveaux diagnostics de matrices et cellules scalaires ne prolongent pas cette portée à tous les supports.",
+      "reviewed_on": "2026-10-16",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ]
+    },
+    {
+      "id": "RH",
+      "status": "ouvert",
+      "review": "But inchangé : tous les zéros non triviaux sur Re(s)=1/2. Non démontré.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "identity",
+      "status": "classique",
+      "review": "Σ_{d|n} Λ(d) = log n caractérise les poids arithmétiques ; elle ne donne pas, seule, une borne globale.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "anchoring",
+      "status": "demontre",
+      "review": "Les positions absolues et toutes les coupures sont conservées ; l’autocorrélation par écarts seule ne fixe pas le signe.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "J",
+      "status": "classique",
+      "review": "J(X) = ∫₁ˣ (ψ(x)−x)² dx est positive ; c’est sa croissance qui doit être bornée.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "J_bound",
+      "status": "ouvert",
+      "review": "J(X) = O(X²), pour les vrais coefficients Λ et toutes les échelles : ouverte.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "Q_bound",
+      "status": "ouvert",
+      "review": "Q(X) = X^{o(1)} depuis les premiers reste ouverte ; le théorème A en fait une autre porte vers RH.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md"
+      ]
+    },
+    {
+      "id": "copies",
+      "status": "demontre",
+      "review": "A_o(x) = F_{p²}(x) − F_{p²}(x/p), p premier impair ; stabilité exacte, sans borne globale déduite.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "head",
+      "status": "demontre",
+      "review": "Borne explicite de toute la tête q ≤ H, valable à toutes les échelles sous les paramètres déclarés.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "large_q",
+      "status": "ouvert",
+      "review": "À H=X : obtenir R_{q>X} ≤ C X³(1+log X)^k, en conservant μ(q) et les poids B.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "threequarters",
+      "status": "conditionnel",
+      "review": "Restitution + tête + borne de grande queue donneraient J ≪ X^{5/2} polylog, donc aucun zéro pour Re(s)>3/4. Non obtenu.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "generic_sieve",
+      "status": "obstacle",
+      "review": "Réintroduire les paramètres carrés coûte D√H. Cela invalide l’amélioration générique, pas une estimation spécifique des vrais poids.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "surface",
+      "status": "partiel",
+      "review": "Des signatures sont construites ; aucun objet géométrique imposant le signe pour ζ n’est obtenu.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/46_LA_SURFACE_VIRTUELLE.md",
+        "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.md"
+      ]
+    },
+    {
+      "id": "stepanov",
+      "status": "obstacle",
+      "review": "Le modèle d’échelle étudié échoue. Réouverture seulement avec une dérivation et un espace de fonctions adéquats explicitement construits.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.md",
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md"
+      ]
+    },
+    {
+      "id": "jets",
+      "status": "demontre",
+      "review": "Rang et jets donnent des contraintes précises ; une association numérique entre défaut et sortie ne prouve pas une causalité.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md"
+      ]
+    },
+    {
+      "id": "dh_cert",
+      "status": "demontre",
+      "review": "Au moins 25 directions négatives dans une fenêtre, sous le budget d’erreur du dossier ; ce n’est pas un compte exact de tous les zéros.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md"
+      ]
+    },
+    {
+      "id": "rencontre_n",
+      "status": "mesure",
+      "review": "La marge et les paires restent des objets d’étude ; leur statistique ne remplace pas une loi arithmétique universelle.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.md"
+      ]
+    },
+    {
+      "id": "prime_norm",
+      "status": "obstacle",
+      "review": "Obstruction du contrat A2 du document 66. Elle ne ferme pas les estimations de la forme complète, ni celles dans une autre norme.",
+      "reviewed_on": "2026-10-15",
+      "evidence": [
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ]
+    }
+  ]
+}

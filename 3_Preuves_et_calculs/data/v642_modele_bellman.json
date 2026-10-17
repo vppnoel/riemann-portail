@@ -1,0 +1,217 @@
+{
+  "version": "V6.42",
+  "unit_cost": "H = unité conventionnelle de travail ; aucune conversion en heures",
+  "unit_utility": "U = unité conventionnelle d’utilité documentaire",
+  "assumptions": [
+    "Actions réalisables une seule fois et coûts fixes positifs.",
+    "Tokens attribués seulement après réalisation vérifiable du livrable, même si sa conclusion est défavorable.",
+    "Le calcul est conditionnel à l’achèvement des livrables. Il ne garantit aucun succès mathématique.",
+    "Coûts, découpage et poids sont des choix de modèle et non des données apprises.",
+    "Un état décrit les livrables du modèle ; il ne prétend pas rendre Markov tout le processus scientifique.",
+    "Après un obstacle, une action de suite produit éventuellement un rapport de fermeture plutôt qu’une expérience : les tokens portent sur ce rapport, pas sur une expérience fictivement exécutée."
+  ],
+  "criteria": [
+    "discrimination",
+    "certification",
+    "reproduction",
+    "articulation",
+    "transmission"
+  ],
+  "tokens": {
+    "contraintes_v13": "discrimination",
+    "certificat_dh_rejoue": "certification",
+    "extension_dh_evaluee": "certification",
+    "bornes_nb_auditees": "certification",
+    "provenance_v13": "reproduction",
+    "provenance_dh": "reproduction",
+    "provenance_nb": "reproduction",
+    "sources_controlees": "reproduction",
+    "limites_ancrage": "articulation",
+    "limites_fenetres": "articulation",
+    "conditions_nb": "articulation",
+    "objet_bellman_defini": "articulation",
+    "dossier_conditions": "transmission",
+    "dossier_relecture_prepare": "transmission",
+    "etude_appariement_exact": "discrimination",
+    "bilan_conditionnel": "discrimination",
+    "passages_v13": "discrimination",
+    "provenance_passages": "reproduction",
+    "limites_passages": "articulation",
+    "audit_bloc_local": "certification",
+    "contrat_global": "articulation",
+    "conditions_uniformes": "certification"
+  },
+  "actions": [
+    {
+      "id": "v13_contraintes",
+      "label": "Définir les contraintes exactes V13",
+      "cost": 1,
+      "requires": [],
+      "tokens": [
+        "contraintes_v13",
+        "provenance_v13",
+        "limites_ancrage"
+      ],
+      "source": "1_Presentation/61_ANCRAGE_APPARIE_V13.md",
+      "output": "Noyau exact des contraintes et faisabilité ; conclusion négative admissible."
+    },
+    {
+      "id": "v13_comparaison",
+      "label": "Comparer à coefficient complexe fixé",
+      "cost": 2,
+      "requires": [
+        "v13_contraintes"
+      ],
+      "tokens": [
+        "etude_appariement_exact",
+        "bilan_conditionnel",
+        "provenance_v13",
+        "limites_ancrage"
+      ],
+      "source": "2_Methode/Navigateur/carte_navigation.json",
+      "output": "Rapport de comparaison conditionnelle si faisable, ou conclusion explicite d’impossibilité avec fermeture de la branche ; aucun couple ni effet promis."
+    },
+    {
+      "id": "dh_rejeu",
+      "label": "Rejouer le certificat DH",
+      "cost": 1,
+      "requires": [],
+      "tokens": [
+        "certificat_dh_rejoue",
+        "provenance_dh",
+        "limites_fenetres"
+      ],
+      "source": "3_Preuves_et_calculs/preuves/PREUVE_NORME_V636.md",
+      "output": "Reproduction et budget d’erreur du témoin existant ; résultat de contrôle documenté."
+    },
+    {
+      "id": "dh_fenetres",
+      "label": "Évaluer une extension de fenêtres DH",
+      "cost": 3,
+      "requires": [
+        "dh_rejeu"
+      ],
+      "tokens": [
+        "extension_dh_evaluee",
+        "provenance_dh",
+        "limites_fenetres"
+      ],
+      "source": "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md",
+      "output": "Dossier d’extension avec contrôle ou obstacle explicite ; négativité supplémentaire non promise."
+    },
+    {
+      "id": "nb_audit",
+      "label": "Auditer les hypothèses de Nyman-Beurling",
+      "cost": 1,
+      "requires": [],
+      "tokens": [
+        "provenance_nb",
+        "conditions_nb"
+      ],
+      "source": "1_Presentation/articles/article1_mean_square_double_poles.tex",
+      "output": "Séparer les conditions sur beta et le reste T ; pas de convergence acquise."
+    },
+    {
+      "id": "nb_reste",
+      "label": "Évaluer les bornes sur le reste NB",
+      "cost": 3,
+      "requires": [
+        "nb_audit"
+      ],
+      "tokens": [
+        "bornes_nb_auditees",
+        "provenance_nb",
+        "conditions_nb"
+      ],
+      "source": "3_Preuves_et_calculs/preuves/NB_GRAM.md",
+      "output": "Tentative bornée, hypothèses et obstacles consignés ; borne suffisante non promise."
+    },
+    {
+      "id": "sources_conditions",
+      "label": "Relever les conditions des sources prioritaires",
+      "cost": 1,
+      "requires": [],
+      "tokens": [
+        "sources_controlees",
+        "dossier_conditions"
+      ],
+      "source": "1_Presentation/42_REGISTRE_DES_SOURCES.md",
+      "output": "Notice des hypothèses réellement contrôlées et des accès encore manquants."
+    },
+    {
+      "id": "dossier_relecture",
+      "label": "Préparer un dossier de relecture humaine",
+      "cost": 2,
+      "requires": [
+        "sources_conditions"
+      ],
+      "tokens": [
+        "dossier_relecture_prepare",
+        "sources_controlees",
+        "dossier_conditions"
+      ],
+      "source": "1_Presentation/articles/LISEZMOI_ARTICLES.md",
+      "output": "Dossier prêt, sans envoi ni relecture externe prétendue."
+    },
+    {
+      "id": "bellman_objet",
+      "label": "Formaliser Bellman sur une compression",
+      "cost": 2,
+      "requires": [],
+      "tokens": [
+        "objet_bellman_defini",
+        "limites_fenetres"
+      ],
+      "source": "3_Preuves_et_calculs/preuves/PREUVE_NORME_V636.md",
+      "output": "État, récursion variationnelle et limite de portée ; aucune conséquence RH présupposée."
+    },
+    {
+      "id": "v13_passages",
+      "label": "Relier fibres, jets et paires locales",
+      "cost": 3,
+      "requires": [
+        "v13_comparaison"
+      ],
+      "tokens": [
+        "passages_v13",
+        "provenance_passages",
+        "limites_passages"
+      ],
+      "source": "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md",
+      "output": "Dossier démontré et bilan contrôlé des continuations, collisions et obstacles ; achevé en V6.41."
+    },
+    {
+      "id": "certifier_bloc_local",
+      "label": "Auditer la certification d’un bloc local",
+      "cost": 3,
+      "requires": [
+        "v13_passages"
+      ],
+      "tokens": [
+        "audit_bloc_local",
+        "provenance_passages",
+        "limites_passages"
+      ],
+      "source": "3_Preuves_et_calculs/preuves/V641_COLLISIONS_ET_LIMITES.md",
+      "output": "Budget d’intervalles et rapport de validation ou d’obstacle explicite ; aucun certificat de zéros promis."
+    },
+    {
+      "id": "audit_positivite_uniforme",
+      "label": "Auditer le contrat arithmétique global",
+      "cost": 2,
+      "requires": [
+        "v13_passages"
+      ],
+      "tokens": [
+        "contrat_global",
+        "conditions_uniformes",
+        "dossier_conditions"
+      ],
+      "source": "3_Preuves_et_calculs/preuves/V641_PASSAGE_AU_GLOBAL.md",
+      "output": "Primary-source normalization, exact arithmetic inequality and obstruction to a uniform prime-part norm; global sign still open."
+    }
+  ],
+  "extension_status": "Editorial state and prerequisite correction after V642 results; not a scientific preregistration.",
+  "historical_model": "v638_modele_bellman.json",
+  "prerequisite_correction": "The Weil-source checks are included in the global-contract audit. The broader sources_conditions action for other dossier sources remains uncompleted; no full-source audit is claimed."
+}

@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+mpmath>=1.3   # non requis pour les scripts V6.3d à V6.4 ; requis par test_identities.py et test_v64_mpmath_crosscheck.py
+sympy>=1.12   # factorint est utilisé explicitement dans tests/test_identities.py
+scipy>=1.11
+# pytest>=7   (facultatif : tests/run_all_tests.py lance toute la suite sans pytest)

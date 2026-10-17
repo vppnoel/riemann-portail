@@ -1,0 +1,10 @@
+{
+  "target": "Weil positivity via the specific Suzuki scalar bridge",
+  "RH_proved": false,
+  "global_sign_certified": false,
+  "finite_prime_power_cutoff": 1000,
+  "invariant": "positive residual; exact mass and first moment in each line",
+  "open_obligation": "admissibility of every future arithmetic demand",
+  "forbidden_inference": "finite closure atom equals actual future prime atoms",
+  "source_recovery_complete": false
+}

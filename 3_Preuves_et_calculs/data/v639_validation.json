@@ -1,0 +1,33 @@
+{
+  "version": "V6.39",
+  "date": "2026-10-12",
+  "tests_passed": 233,
+  "tests_total": 233,
+  "tests_skipped": 0,
+  "new_tests": 8,
+  "runner_exit_code": 0,
+  "logging_wrapper_note": "Tee finalizer raised after the runner completed successfully; full completion and SystemExit0 were recorded.",
+  "gauss_certificate": "Independent integer/fraction computation; no floating transcendental backend.",
+  "precision_checks": [
+    80,
+    120,
+    160
+  ],
+  "enclosures_reviewed_per_precision": 618,
+  "independent_D_checks_on_group": 96,
+  "exact_witness_pairs": 48,
+  "planned_representative_pairs": 12,
+  "new_zero_counts": 0,
+  "pdf_pages": 9,
+  "pdf_qa": "All9 pages rendered and inspected; no clipping or unresolved final references.",
+  "client_cases_checked": 1944,
+  "scope": "Constructed fibres A=cos(r)z_i; no guarantee for arbitrary complex A, no causal or RH implication.",
+  "sha256": {
+    "1_Presentation/63_CONTRAINTES_EXACTES_V13.pdf": "25b25f2608d1af7b9991d2b027bff00cf3775def2568bd6a979d99937cbcad3d",
+    "1_Presentation/63_CONTRAINTES_EXACTES_V13.tex": "7d80dceab41b1fa7930c3ffbf9fdda88d0508e87308d39a39d530d3dfe538e8e",
+    "3_Preuves_et_calculs/src/v639_contraintes.py": "0484f452fd5eb3eb90acf0a3840375733150d09b7d8f3532dc010821a8f8944d",
+    "3_Preuves_et_calculs/src/v639_rational.py": "9460431b3e67e6e8ce17650e25d5ad9d0916b4cb94678f1982a3c470bde81f83",
+    "3_Preuves_et_calculs/data/v639_contraintes.json": "f05444b8372ae7fe11cd94609964ea1908e052a826562c1bc2c17d7d8143be82",
+    "3_Preuves_et_calculs/data/v639_certificat_rationnel.json": "670f56cb3aa4e91f3484219e878d194d3442c767bb73cf94a1725cdf37986e1b"
+  }
+}

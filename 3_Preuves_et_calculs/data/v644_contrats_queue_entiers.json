@@ -1,0 +1,66 @@
+{
+  "version": "V6.44",
+  "scope": "Explicit analytic corollary after metric construction; not predeclared eigen experiment",
+  "contracts": [
+    {
+      "S": "1/2",
+      "prime_power_count": 1,
+      "L_upper": 10,
+      "J": 80,
+      "T_expression": "2^80",
+      "q": "3626777458843887524118528",
+      "q_decimal_digits": 25,
+      "q_expression": "ceil(6*S*2^J)",
+      "epsilon_upper": "1/2",
+      "r_lower": 21,
+      "eta_upper": "20/21",
+      "coercivity_lower": "1/21",
+      "status": "proved integer tail contract; head dimension q; no head/Schur solved"
+    },
+    {
+      "S": "1",
+      "prime_power_count": 5,
+      "L_upper": 18,
+      "J": 144,
+      "T_expression": "2^144",
+      "q": "133804471191183738849214309635890169035882496",
+      "q_decimal_digits": 45,
+      "q_expression": "ceil(6*S*2^J)",
+      "epsilon_upper": "1/2",
+      "r_lower": 37,
+      "eta_upper": "36/37",
+      "coercivity_lower": "1/37",
+      "status": "proved integer tail contract; head dimension q; no head/Schur solved"
+    },
+    {
+      "S": "2",
+      "prime_power_count": 24,
+      "L_upper": 56,
+      "J": 448,
+      "T_expression": "2^448",
+      "q": "8722064691547282686591885694656054412243696328247816723377882390167671457360775079914292608565162786729150259275194135202415219543375872",
+      "q_decimal_digits": 136,
+      "q_expression": "ceil(6*S*2^J)",
+      "epsilon_upper": "1/2",
+      "r_lower": 113,
+      "eta_upper": "112/113",
+      "coercivity_lower": "1/113",
+      "status": "proved integer tail contract; head dimension q; no head/Schur solved"
+    },
+    {
+      "S": "3",
+      "prime_power_count": 98,
+      "L_upper": 204,
+      "J": 1632,
+      "T_expression": "2^1632",
+      "q": "3437363244064508185668065340867177859018098498192957628578074986813872191955733112449526713314080894182914136428183330713511398534896866796019053506201134578527224749282060957523537003521073822788790363794743629359741742650974431983241959643434325270462126963399811955375781742769186015179361414327887755796826919095697106090281964520254213743773023709576953960114117386209292245564238435325670738356762682879773259935975680799963641013972055379942785776187279147783454804578782490690037219328",
+      "q_decimal_digits": 493,
+      "q_expression": "ceil(6*S*2^J)",
+      "epsilon_upper": "1/2",
+      "r_lower": 409,
+      "eta_upper": "408/409",
+      "coercivity_lower": "1/409",
+      "status": "proved integer tail contract; head dimension q; no head/Schur solved"
+    }
+  ]
+}

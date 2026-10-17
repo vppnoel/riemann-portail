@@ -1,0 +1,27 @@
+{
+  "version": "6.53",
+  "document": 79,
+  "date": "2026-10-14",
+  "goal": "global Weil positivity via the specific Suzuki signal",
+  "RH_proved": false,
+  "global_arithmetic_sign_proved": false,
+  "finite_prime_power_cutoff": 1000,
+  "finite_prime_power_count": 193,
+  "auxiliary_proofs": [
+    "exact phase/curvature recurrence",
+    "finite total curvature credit",
+    "sharp three-point aggregate block guard",
+    "fixed-ratio guard obstruction under PNT",
+    "Selberg positive-forcing countermodel with exponential reservoir"
+  ],
+  "finite_certificate": {
+    "coarse_negative_guards": 9,
+    "refined_positive_guards": 53,
+    "parts_per_block": 8,
+    "domain_original_signal": "log(2) <= t <= log(1000)",
+    "arithmetic_model": "mpmath.iv 400 bits with Euler remainder, geometric tail and exact integer bin assignment"
+  },
+  "missing": "independent signed arithmetic control of the interior profile and all-scale extension",
+  "recent_literature": "Suzuki arXiv:2606.09096v3; operator realization established, spectral limit conjectural",
+  "historical_recovery_complete": false
+}

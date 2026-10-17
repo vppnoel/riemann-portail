@@ -1,0 +1,31 @@
+{
+  "version": "V6.45",
+  "result": "Annulation polaire et identité de fluctuation de Chebyshev démontrées ; modèle continu négatif pour tout S≥16 ; moments finis insuffisants pour réduire la norme première L² ; queue resserrée et dette de Schur bornée par résidus de sources. Sources/tête certifiées et signe pour tous supports restent ouverts.",
+  "document": "70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+  "dictionary": "69_LANGUE_DES_PASSAGES.html",
+  "graph": "70_PONT_ARITHMETIQUE.html",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages",
+    "certifier_bloc_local",
+    "audit_positivite_uniforme"
+  ],
+  "current_bellman_model": "v643_modele_ponts.json",
+  "current_grammar": "v644_grammaire.json",
+  "current_dictionary": "v645_dictionnaire.json",
+  "next_actions": [
+    "v645_sources_residus",
+    "v645_tete_structuree",
+    "v645_loi_tous_supports"
+  ],
+  "maturity_levels_unchanged": true,
+  "open": [
+    "validated L2 strong-source and Gram bounds",
+    "practicable complete head with graph-norm control",
+    "effective Schur sign for every support",
+    "historical branch/collision/complex-A questions"
+  ],
+  "novelty_scope": "internal reconstruction; no priority claim; no RH proof",
+  "global_sign_certified": false
+}

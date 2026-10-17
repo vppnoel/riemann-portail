@@ -1,0 +1,22 @@
+[
+  {
+    "date_utc": "2026-10-12T17:12:42.335655+00:00",
+    "stage": "preflight before any new L value",
+    "reason": "mpmath iv.mpc copy constructor rejects an existing ivmpc; preserve the already-interval input instead.",
+    "scientific_parameters_changed": false
+  },
+  {
+    "date_utc": "2026-10-12T17:19:56.351214+00:00",
+    "stage": "post-execution serialization audit",
+    "reason": "ivmpf also exposes _mpci_: serialize _mpi_ first; remove exactly-zero imaginary wrappers from real interval fields. Original data and executed code retained in receipts.",
+    "scientific_parameters_changed": false,
+    "numerical_intervals_changed": false
+  },
+  {
+    "date_utc": "2026-10-12T17:40:18.235273+00:00",
+    "stage": "post-execution audit diagnostics",
+    "reason": "Root point values and Jacobians added for rational replay; all four primary certificate fields reproduced exactly.",
+    "scientific_parameters_changed": false,
+    "numerical_intervals_changed": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "scope": "diagnostic 60 vs75 digits; not a global proof",
+  "same_prime_count": true,
+  "same_record": true,
+  "scalar_absolute_differences": {
+    "minimum_prefix_defect": "0E-41",
+    "total_dispersion_credit": "0E-38",
+    "total_phase": "0E-39",
+    "final_defect": "0E-41"
+  },
+  "block_60_75_max_absolute_difference": "0E-41",
+  "same_refinement_counts": true
+}

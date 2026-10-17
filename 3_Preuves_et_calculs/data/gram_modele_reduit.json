@@ -1,0 +1,38 @@
+{
+ "G1": {
+  "courbes": 425,
+  "sans_racine_reelle_impaire": 425,
+  "B_sans_negatif": 425,
+  "B_rang_2g": 424
+ },
+ "G2": {
+  "faux_r4": 119,
+  "r4_sans_racine_reelle_impaire": 119,
+  "faux_r2": 101,
+  "r2_avec_racine_reelle_impaire": 101,
+  "genre1_dans_r2": 4
+ },
+ "G3": {
+  "r2_avec_u_trouve": 101,
+  "hauteurs": {
+   "1": 93,
+   "2": 8
+  }
+ },
+ "G4": {
+  "faux": 220,
+  "B_indefinie": 220,
+  "B_neg_egal_r_sur_2": 220
+ },
+ "exemples": {
+  "r2": {
+   "u": [
+    -2,
+    1
+   ],
+   "N": -1,
+   "hauteur": 2
+  },
+  "P_r2": "1 -4 3"
+ }
+}

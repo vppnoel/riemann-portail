@@ -1,0 +1,40 @@
+{
+  "version": "V6.34",
+  "date": "2026-10-12",
+  "tests": 192,
+  "reussis": 192,
+  "non_executes": 0,
+  "verification": "Suite complète sur une copie extraite de l’archive ; contrôles des pages, figures et index repris après les dernières corrections éditoriales.",
+  "pdf": [
+    {
+      "fichier": "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.pdf",
+      "pages": 4,
+      "sha256": "813ee2f9c0d68e440871fea3e6525ad4fbbc8bd248469f77b47166d16b918b03"
+    },
+    {
+      "fichier": "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf",
+      "pages": 2,
+      "sha256": "aaac5b6f9c1da3d2ff3f89ce6f292078d424b340f2c1e37d9ad042cf79371edf"
+    },
+    {
+      "fichier": "1_Presentation/56_LE_RELIEF_DE_L_ARCHIPEL.pdf",
+      "pages": 2,
+      "sha256": "24d3fc0818ef7d14da8744e9a78c466cd9e87fc660e27f2e7a5d42b9ec86f1ed"
+    },
+    {
+      "fichier": "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "pages": 5,
+      "sha256": "fc59cf5f163a03f410911a1a85a887dfc2c3e5b0f2ad6adedb686a491608954b"
+    },
+    {
+      "fichier": "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+      "pages": 10,
+      "sha256": "eaf93528015228525b9bb3824879fa6027c29d5a0067eeb6a909bc83c9073db6"
+    },
+    {
+      "fichier": "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
+      "pages": 6,
+      "sha256": "a9a579b00cc9d76d40b4a7c1cf4febd8d5cd58d626dd622d043d0c0123934c76"
+    }
+  ]
+}

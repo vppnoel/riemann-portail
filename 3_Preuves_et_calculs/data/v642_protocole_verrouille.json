@@ -1,0 +1,79 @@
+{
+  "version": "V6.42",
+  "created_utc": "2026-10-12T17:06:48.596597+00:00",
+  "fold_id": "fold_k1_plus_5",
+  "selection_rule": "minimum absolute height among six already attributed V641 folds",
+  "pair_id": "k1_rpi_6",
+  "side": "plus",
+  "centre_r": "0.243079394165",
+  "centre_t": "4.861023490998",
+  "fold_box_halfwidth": "0.000000001",
+  "root_box_halfwidth": "0.00000001",
+  "radius_offset": "0.0001",
+  "contour_radius": "0.2",
+  "contour_grids": [
+    256,
+    512,
+    1024
+  ],
+  "precisions": [
+    {
+      "digits": 50,
+      "N": 32,
+      "M": 12
+    },
+    {
+      "digits": 80,
+      "N": 48,
+      "M": 12
+    }
+  ],
+  "cauchy_radius": "0.125",
+  "omega_candidates": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "preconditioner_quantization_digits": 12,
+  "alpha_quantization_digits": 12,
+  "fold_parameter_enclosure_digits": 18,
+  "root_seeds": [
+    {
+      "offset": "-0.0001",
+      "root_index": 0,
+      "beta_mp": "0.500000000000000000000000000000000000000000000000000000000000000000003",
+      "gamma_mp": "4.874488964725203084775814222459687562123772155549676680613399741701417"
+    },
+    {
+      "offset": "-0.0001",
+      "root_index": 1,
+      "beta_mp": "0.4999999999999999999999999999999999999999999999999999999999999999999971",
+      "gamma_mp": "4.84759673706167845114716865641084651744945227628830738633021227645235"
+    },
+    {
+      "offset": "0.0001",
+      "root_index": 0,
+      "beta_mp": "0.4865538136130578589583436332659572451354432198561718029384583186781625",
+      "gamma_mp": "4.861004131619662081531718900644400119438004525594478613906951380671276"
+    },
+    {
+      "offset": "0.0001",
+      "root_index": 1,
+      "beta_mp": "0.5134461863869421410416563667340427548645567801438281970615416813218375",
+      "gamma_mp": "4.861004131619662081531718900644400119438004525594478613906951380671282"
+    }
+  ],
+  "input_hashes": {
+    "v639_couples_fixes.json": "9bcd0e5991d89a3efaaeab8dcf0789946d85ff22e9a4f14e298c9ff37b61a736",
+    "v641_collisions.json": "22b4e22cee58a19db356ec83ba056b738180025ae30fe1c12366dc424a46ea0b",
+    "v641_blocs_paires.json": "70f028f5e380aea71e4d7d74cacde44bbb7c9b3ee80c3621054279d7fde9dbca",
+    "prevision_v642_certification.md": "7f4f503f32926d51bdc6a2ff2e1375fa2ac1ec0adbe336fddac9c63447c51032"
+  },
+  "original_prediction_sha256": "eada6f35aa6adcd7a0ae15ac783e8f23096d3616713f4c2b0213b9429e338b02",
+  "scientific_claims_restricted_to": "chosen family, rational boxes and local contour; no global RH implication"
+}

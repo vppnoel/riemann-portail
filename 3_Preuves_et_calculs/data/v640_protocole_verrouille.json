@@ -1,0 +1,58 @@
+{
+  "version": "V6.40",
+  "created_utc": "2026-10-12T13:17:04.091155+00:00",
+  "created_unix": 1791811024.0911665,
+  "zero_counts_started": false,
+  "selection_file_sha256": "9bcd0e5991d89a3efaaeab8dcf0789946d85ff22e9a4f14e298c9ff37b61a736",
+  "selection_payload_sha256": "1218d67a838989857e0b174f991181019f155c79f7b6c9ef02ab974288d4b9ec",
+  "prediction_file_sha256": "68e5b6b6ab6e65b88f191ac64eb4386d1dcbd91301f42350fa84679589809b6a",
+  "q": 13,
+  "parity": 1,
+  "dimension": 6,
+  "n_pairs": 12,
+  "n_directions": 24,
+  "n_euler_controls": 6,
+  "Tmax": 150,
+  "ceilings": [
+    50,
+    100,
+    150
+  ],
+  "sigma_right": 3,
+  "critical_steps": [
+    0.02,
+    0.01,
+    0.005
+  ],
+  "contour_grids": [
+    [
+      0.02,
+      0.05
+    ],
+    [
+      0.01,
+      0.025
+    ]
+  ],
+  "minimum_sampled_boundary_margin": 1e-10,
+  "maximum_phase_increment": 0.8,
+  "maximum_integer_residual": 1e-08,
+  "majority_denominator": 12,
+  "majority_threshold": 7,
+  "mp_digits": [
+    80,
+    110
+  ],
+  "mp_root_residuals": [
+    "1e-50",
+    "1e-75"
+  ],
+  "mp_partner_scaled_residuals": [
+    "1e-45",
+    "1e-70"
+  ],
+  "root_agreement": "1e-30",
+  "EM_MP_agreement": 1e-07,
+  "binary_exact_root_shift": 1e-09,
+  "root_minimum_right_distance": "1e-6"
+}

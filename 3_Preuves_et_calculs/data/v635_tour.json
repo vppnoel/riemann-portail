@@ -1,0 +1,251 @@
+{
+  "version": "V6.35",
+  "limite_implementation_q": 1024,
+  "plan_sha256": "9f4f1b26adc18d3b84b0d309e6cfe9d8f400b28e1ee9bdccb124418b426802ae",
+  "comptages": [
+    {
+      "p": 3,
+      "n": 1,
+      "q": 3,
+      "module": [
+        0,
+        1
+      ],
+      "S": 1,
+      "racines_f": 1,
+      "N_direct": 4,
+      "ecart": 0,
+      "ecart_normalise": 0.0,
+      "borne_jets": null,
+      "trace_recurrence": 0,
+      "N_recurrence": 4
+    },
+    {
+      "p": 3,
+      "n": 2,
+      "q": 9,
+      "module": [
+        1,
+        0,
+        1
+      ],
+      "S": 6,
+      "racines_f": 3,
+      "N_direct": 16,
+      "ecart": 6,
+      "ecart_normalise": 2.0,
+      "borne_jets": null,
+      "trace_recurrence": -6,
+      "N_recurrence": 16
+    },
+    {
+      "p": 3,
+      "n": 3,
+      "q": 27,
+      "module": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "S": 13,
+      "racines_f": 1,
+      "N_direct": 28,
+      "ecart": 0,
+      "ecart_normalise": 0.0,
+      "borne_jets": 42,
+      "trace_recurrence": 0,
+      "N_recurrence": 28
+    },
+    {
+      "p": 3,
+      "n": 4,
+      "q": 81,
+      "module": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "S": 30,
+      "racines_f": 3,
+      "N_direct": 64,
+      "ecart": -18,
+      "ecart_normalise": 2.0,
+      "borne_jets": 50,
+      "trace_recurrence": 18,
+      "N_recurrence": 64
+    },
+    {
+      "p": 5,
+      "n": 1,
+      "q": 5,
+      "module": [
+        0,
+        1
+      ],
+      "S": 4,
+      "racines_f": 0,
+      "N_direct": 9,
+      "ecart": 3,
+      "ecart_normalise": 1.3416407864998738,
+      "borne_jets": null,
+      "trace_recurrence": -3,
+      "N_recurrence": 9
+    },
+    {
+      "p": 5,
+      "n": 2,
+      "q": 25,
+      "module": [
+        2,
+        0,
+        1
+      ],
+      "S": 13,
+      "racines_f": 0,
+      "N_direct": 27,
+      "ecart": 1,
+      "ecart_normalise": 0.2,
+      "borne_jets": 37,
+      "trace_recurrence": -1,
+      "N_recurrence": 27
+    },
+    {
+      "p": 5,
+      "n": 3,
+      "q": 125,
+      "module": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "S": 52,
+      "racines_f": 3,
+      "N_direct": 108,
+      "ecart": -18,
+      "ecart_normalise": 1.6099689437998486,
+      "borne_jets": 60,
+      "trace_recurrence": 18,
+      "N_recurrence": 108
+    },
+    {
+      "p": 7,
+      "n": 1,
+      "q": 7,
+      "module": [
+        0,
+        1
+      ],
+      "S": 2,
+      "racines_f": 0,
+      "N_direct": 5,
+      "ecart": -3,
+      "ecart_normalise": 1.1338934190276817,
+      "borne_jets": null,
+      "trace_recurrence": 3,
+      "N_recurrence": 5
+    },
+    {
+      "p": 7,
+      "n": 2,
+      "q": 49,
+      "module": [
+        1,
+        0,
+        1
+      ],
+      "S": 27,
+      "racines_f": 0,
+      "N_direct": 55,
+      "ecart": 5,
+      "ecart_normalise": 0.7142857142857143,
+      "borne_jets": 41,
+      "trace_recurrence": -5,
+      "N_recurrence": 55
+    },
+    {
+      "p": 7,
+      "n": 3,
+      "q": 343,
+      "module": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "S": 188,
+      "racines_f": 3,
+      "N_direct": 380,
+      "ecart": 36,
+      "ecart_normalise": 1.9438172897617398,
+      "borne_jets": 96,
+      "trace_recurrence": -36,
+      "N_recurrence": 380
+    },
+    {
+      "p": 11,
+      "n": 1,
+      "q": 11,
+      "module": [
+        0,
+        1
+      ],
+      "S": 6,
+      "racines_f": 1,
+      "N_direct": 14,
+      "ecart": 2,
+      "ecart_normalise": 0.6030226891555273,
+      "borne_jets": 18,
+      "trace_recurrence": -2,
+      "N_recurrence": 14
+    },
+    {
+      "p": 11,
+      "n": 2,
+      "q": 121,
+      "module": [
+        1,
+        0,
+        1
+      ],
+      "S": 68,
+      "racines_f": 3,
+      "N_direct": 140,
+      "ecart": 18,
+      "ecart_normalise": 1.6363636363636365,
+      "borne_jets": 58,
+      "trace_recurrence": -18,
+      "N_recurrence": 140
+    }
+  ],
+  "spectres_controles": [
+    {
+      "p": 3,
+      "trace": 0,
+      "discriminant": -12,
+      "hasse_exact": true
+    },
+    {
+      "p": 5,
+      "trace": -3,
+      "discriminant": -11,
+      "hasse_exact": true
+    },
+    {
+      "p": 7,
+      "trace": 3,
+      "discriminant": -19,
+      "hasse_exact": true
+    },
+    {
+      "p": 11,
+      "trace": -2,
+      "discriminant": -40,
+      "hasse_exact": true
+    }
+  ],
+  "methode": "Comptages directs, puis contrôle par récurrence ; la preuve universelle est séparée."
+}

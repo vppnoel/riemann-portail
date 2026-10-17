@@ -1,0 +1,10 @@
+{
+  "version": "V6.39",
+  "completed_bellman_actions": [
+    "v13_contraintes"
+  ],
+  "proven": "D varies at exact A=cos(r)z_i, anchor and radius in odd V13",
+  "document": "63_CONTRAINTES_EXACTES_V13.pdf",
+  "next_action": "v13_comparaison",
+  "scope": "Zero comparison remains unperformed."
+}

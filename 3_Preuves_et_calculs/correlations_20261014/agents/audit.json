@@ -1,0 +1,43 @@
+{
+  "program_sha256": "aa19c8ecb315a43dadcba7165fe0807566727a1937a8d38034e345cf1afa0954",
+  "reproduction_digits": 85,
+  "interval_precision_bits": 400,
+  "cutoff": 1000,
+  "independent_integration": {
+    "method": "Prime sieve and integration on every integer interval; independent from the prime-power breakpoint implementation",
+    "digits": 90,
+    "matches_printed_values_tolerance": "1e-29",
+    "energies": {
+      "10": "29.0403512049705155997933751934128383819475496",
+      "100": "622.779291690150194028459085450601682747999351",
+      "1000": "22954.7733276957805008147337633038170199890282"
+    }
+  },
+  "integer_and_rational_checks": {
+    "prime_power_count": 193,
+    "divisor_identity_exact_count": 1000,
+    "finite_modified_Lambda2_violations": 500,
+    "homometric_mass": 15,
+    "homometric_moment": 625,
+    "homometric_support": [
+      0,
+      90
+    ],
+    "global_reflection_excluded": true,
+    "triple_C3_1_6": [
+      3,
+      0
+    ]
+  },
+  "mobius_kernel_certified_bracket": [
+    "-38/1000",
+    "-37/1000"
+  ],
+  "log_coordinate_identity": "F(y)=exp(-y/2) E(exp(y)); R(y)=exp(-2y) J(exp(y)); R'=F^2-2R almost everywhere; R(0)=0",
+  "benefit": "An exact known global reduction to a positive anchored energy; the arithmetic identity identifies the true coefficients.",
+  "limitation": "No unconditional bound J=O(X^2) is proved. Positive forcing and positive energy alone are automatic. The equivalence to Weil positivity relies on the true zeta arithmetic/analytic identity; arbitrary finite changes of Lambda preserve the energy class but can change the modified signal sign.",
+  "RH_proved": false,
+  "new_global_sign_bound": false,
+  "program_mutated_by_auditor": false,
+  "audit_passed": true
+}

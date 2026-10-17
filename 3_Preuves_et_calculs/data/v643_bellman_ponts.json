@@ -1,0 +1,452 @@
+{
+  "version": "V6.43",
+  "comparisons_passed": 270,
+  "weight_profiles": 27,
+  "budgets": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "results": [
+    {
+      "budget": 2,
+      "lower": {
+        "value": 0,
+        "gain": 0,
+        "first_choices": [
+          "STOP"
+        ],
+        "choice_values": {
+          "STOP": 0
+        },
+        "outcome_values": {},
+        "states": 1,
+        "mode": "lower",
+        "scope": "Declared finite scenarios only; no RH probability"
+      },
+      "upper": {
+        "value": 3,
+        "gain": 3,
+        "first_choices": [
+          "dette_schur"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 0,
+          "dette_schur": 3,
+          "fibre_A": 2,
+          "relire_weil": 2
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 0,
+            "couverture_manquante": 0
+          },
+          "dette_schur": {
+            "candidat": 0,
+            "refutation": 3,
+            "sans_borne": 0
+          },
+          "fibre_A": {
+            "certificat": 2,
+            "obstacle": 2,
+            "inconclusif": 2
+          },
+          "relire_weil": {
+            "lecture_integrale": 2,
+            "acces_partiel": 2
+          }
+        },
+        "states": 11,
+        "mode": "upper",
+        "scope": "Declared finite scenarios only; no RH probability"
+      }
+    },
+    {
+      "budget": 4,
+      "lower": {
+        "value": 2,
+        "gain": 2,
+        "first_choices": [
+          "fibre_A",
+          "relire_weil"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 0,
+          "dette_schur": 0,
+          "fibre_A": 2,
+          "relire_weil": 2
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 0,
+            "couverture_manquante": 0
+          },
+          "dette_schur": {
+            "candidat": 0,
+            "refutation": 3,
+            "sans_borne": 0
+          },
+          "fibre_A": {
+            "certificat": 2,
+            "obstacle": 2,
+            "inconclusif": 2
+          },
+          "relire_weil": {
+            "lecture_integrale": 2,
+            "acces_partiel": 2
+          }
+        },
+        "states": 11,
+        "mode": "lower",
+        "scope": "Declared finite scenarios only; no RH probability"
+      },
+      "upper": {
+        "value": 11,
+        "gain": 11,
+        "first_choices": [
+          "dette_schur",
+          "regime_commun"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 11,
+          "dette_schur": 11,
+          "fibre_A": 5,
+          "relire_weil": 5
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 11,
+            "couverture_manquante": 11
+          },
+          "dette_schur": {
+            "candidat": 8,
+            "refutation": 11,
+            "sans_borne": 8
+          },
+          "fibre_A": {
+            "certificat": 5,
+            "obstacle": 5,
+            "inconclusif": 5
+          },
+          "relire_weil": {
+            "lecture_integrale": 5,
+            "acces_partiel": 5
+          }
+        },
+        "states": 52,
+        "mode": "upper",
+        "scope": "Declared finite scenarios only; no RH probability"
+      }
+    },
+    {
+      "budget": 6,
+      "lower": {
+        "value": 3,
+        "gain": 3,
+        "first_choices": [
+          "dette_schur"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 2,
+          "dette_schur": 3,
+          "fibre_A": 2,
+          "relire_weil": 2
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 2,
+            "couverture_manquante": 2
+          },
+          "dette_schur": {
+            "candidat": 3,
+            "refutation": 3,
+            "sans_borne": 3
+          },
+          "fibre_A": {
+            "certificat": 2,
+            "obstacle": 2,
+            "inconclusif": 2
+          },
+          "relire_weil": {
+            "lecture_integrale": 2,
+            "acces_partiel": 2
+          }
+        },
+        "states": 19,
+        "mode": "lower",
+        "scope": "Declared finite scenarios only; no RH probability"
+      },
+      "upper": {
+        "value": 16,
+        "gain": 16,
+        "first_choices": [
+          "dette_schur",
+          "regime_commun"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 16,
+          "dette_schur": 16,
+          "fibre_A": 13,
+          "relire_weil": 13
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 16,
+            "couverture_manquante": 16
+          },
+          "dette_schur": {
+            "candidat": 16,
+            "refutation": 16,
+            "sans_borne": 16
+          },
+          "fibre_A": {
+            "certificat": 13,
+            "obstacle": 13,
+            "inconclusif": 13
+          },
+          "relire_weil": {
+            "lecture_integrale": 13,
+            "acces_partiel": 13
+          }
+        },
+        "states": 152,
+        "mode": "upper",
+        "scope": "Declared finite scenarios only; no RH probability"
+      }
+    },
+    {
+      "budget": 8,
+      "lower": {
+        "value": 8,
+        "gain": 8,
+        "first_choices": [
+          "dette_schur",
+          "regime_commun"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 8,
+          "dette_schur": 8,
+          "fibre_A": 4,
+          "relire_weil": 4
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 8,
+            "couverture_manquante": 8
+          },
+          "dette_schur": {
+            "candidat": 8,
+            "refutation": 11,
+            "sans_borne": 8
+          },
+          "fibre_A": {
+            "certificat": 4,
+            "obstacle": 4,
+            "inconclusif": 4
+          },
+          "relire_weil": {
+            "lecture_integrale": 4,
+            "acces_partiel": 4
+          }
+        },
+        "states": 52,
+        "mode": "lower",
+        "scope": "Declared finite scenarios only; no RH probability"
+      },
+      "upper": {
+        "value": 20,
+        "gain": 20,
+        "first_choices": [
+          "dette_schur",
+          "regime_commun"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 20,
+          "dette_schur": 20,
+          "fibre_A": 18,
+          "relire_weil": 18
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 20,
+            "couverture_manquante": 18
+          },
+          "dette_schur": {
+            "candidat": 20,
+            "refutation": 18,
+            "sans_borne": 18
+          },
+          "fibre_A": {
+            "certificat": 18,
+            "obstacle": 18,
+            "inconclusif": 18
+          },
+          "relire_weil": {
+            "lecture_integrale": 18,
+            "acces_partiel": 18
+          }
+        },
+        "states": 320,
+        "mode": "upper",
+        "scope": "Declared finite scenarios only; no RH probability"
+      }
+    },
+    {
+      "budget": 10,
+      "lower": {
+        "value": 11,
+        "gain": 11,
+        "first_choices": [
+          "dette_schur",
+          "regime_commun"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 11,
+          "dette_schur": 11,
+          "fibre_A": 5,
+          "relire_weil": 10
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 11,
+            "couverture_manquante": 11
+          },
+          "dette_schur": {
+            "candidat": 11,
+            "refutation": 16,
+            "sans_borne": 11
+          },
+          "fibre_A": {
+            "certificat": 5,
+            "obstacle": 5,
+            "inconclusif": 5
+          },
+          "relire_weil": {
+            "lecture_integrale": 10,
+            "acces_partiel": 10
+          }
+        },
+        "states": 108,
+        "mode": "lower",
+        "scope": "Declared finite scenarios only; no RH probability"
+      },
+      "upper": {
+        "value": 22,
+        "gain": 22,
+        "first_choices": [
+          "dette_schur",
+          "fibre_A",
+          "regime_commun",
+          "relire_weil"
+        ],
+        "choice_values": {
+          "STOP": 0,
+          "regime_commun": 22,
+          "dette_schur": 22,
+          "fibre_A": 22,
+          "relire_weil": 22
+        },
+        "outcome_values": {
+          "regime_commun": {
+            "couverture_candidate": 22,
+            "couverture_manquante": 20
+          },
+          "dette_schur": {
+            "candidat": 22,
+            "refutation": 20,
+            "sans_borne": 20
+          },
+          "fibre_A": {
+            "certificat": 22,
+            "obstacle": 22,
+            "inconclusif": 22
+          },
+          "relire_weil": {
+            "lecture_integrale": 22,
+            "acces_partiel": 22
+          }
+        },
+        "states": 480,
+        "mode": "upper",
+        "scope": "Declared finite scenarios only; no RH probability"
+      }
+    }
+  ],
+  "toy": {
+    "budget": 4,
+    "bridge_value": 12,
+    "three_local_value": 6,
+    "optimal": {
+      "value": 12,
+      "gain": 12,
+      "first_choices": [
+        "construction_a",
+        "construction_b"
+      ],
+      "choice_values": {
+        "STOP": 0,
+        "construction_a": 12,
+        "construction_b": 12,
+        "local1": 6,
+        "local2": 6,
+        "local3": 6
+      },
+      "outcome_values": {
+        "construction_a": {
+          "ok": 12
+        },
+        "construction_b": {
+          "ok": 12
+        },
+        "local1": {
+          "ok": 6
+        },
+        "local2": {
+          "ok": 6
+        },
+        "local3": {
+          "ok": 6
+        }
+      },
+      "states": 23,
+      "mode": "lower",
+      "scope": "Declared finite scenarios only; no RH probability"
+    }
+  },
+  "schur_examples": [
+    {
+      "label": "pivot positif",
+      "accepted": true,
+      "reason": "nonnegative_debt",
+      "debt": "1/2",
+      "solution": [
+        "1/2"
+      ]
+    },
+    {
+      "label": "couplage dans le noyau",
+      "accepted": false,
+      "reason": "coupling_outside_range",
+      "debt": null
+    },
+    {
+      "label": "dette négative",
+      "accepted": false,
+      "reason": "negative_debt",
+      "debt": "-1",
+      "solution": [
+        "1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "version": "V6.50",
+  "provenance": "new reconstruction after recovery of V6.49",
+  "analytic_proof": "V650_RECUPERATION_TRANSPORT_ET_RH.md",
+  "numerical_examples_certified": false,
+  "exact_rational_conjugacy_checked": true,
+  "global_RH_claim": false,
+  "new_positive_certificate": false,
+  "zero_data_used": false,
+  "examples": [
+    {
+      "parity": "even",
+      "ratio": "3/4",
+      "support": "3/8",
+      "moments_float": [
+        0.0,
+        0.0
+      ],
+      "mass_ratio_float": 0.9950231726337299,
+      "exact_conjugacy": true,
+      "bounds": {
+        "ratio": "3/4",
+        "mass_lower": "81/256",
+        "mass_upper": "1",
+        "R_lower": "81/256",
+        "R_upper": "16/9",
+        "domain": "L2 compact support, both exponential moments zero; finite R for R bounds",
+        "preserves_polar_moments": true,
+        "group_law": "T_r T_s = T_(r*s)",
+        "sign_preserved": false,
+        "global_RH_claim": false
+      }
+    },
+    {
+      "parity": "even",
+      "ratio": "11/10",
+      "support": "11/20",
+      "moments_float": [
+        1.9081958235744878e-17,
+        1.9081958235744878e-17
+      ],
+      "mass_ratio_float": 1.0024011180929402,
+      "exact_conjugacy": true,
+      "bounds": {
+        "ratio": "11/10",
+        "mass_lower": "1",
+        "mass_upper": "14641/10000",
+        "R_lower": "100/121",
+        "R_upper": "14641/10000",
+        "domain": "L2 compact support, both exponential moments zero; finite R for R bounds",
+        "preserves_polar_moments": true,
+        "group_law": "T_r T_s = T_(r*s)",
+        "sign_preserved": false,
+        "global_RH_claim": false
+      }
+    },
+    {
+      "parity": "even",
+      "ratio": "2",
+      "support": "1",
+      "moments_float": [
+        2.7755575615628914e-17,
+        2.7755575615628914e-17
+      ],
+      "mass_ratio_float": 1.0350551844583282,
+      "exact_conjugacy": true,
+      "bounds": {
+        "ratio": "2",
+        "mass_lower": "1",
+        "mass_upper": "16",
+        "R_lower": "1/4",
+        "R_upper": "16",
+        "domain": "L2 compact support, both exponential moments zero; finite R for R bounds",
+        "preserves_polar_moments": true,
+        "group_law": "T_r T_s = T_(r*s)",
+        "sign_preserved": false,
+        "global_RH_claim": false
+      }
+    },
+    {
+      "parity": "odd",
+      "ratio": "3/4",
+      "support": "3/8",
+      "moments_float": [
+        -1.3010426069826053e-18,
+        1.3010426069826053e-18
+      ],
+      "mass_ratio_float": 0.99748139638907,
+      "exact_conjugacy": true,
+      "bounds": {
+        "ratio": "3/4",
+        "mass_lower": "81/256",
+        "mass_upper": "1",
+        "R_lower": "81/256",
+        "R_upper": "16/9",
+        "domain": "L2 compact support, both exponential moments zero; finite R for R bounds",
+        "preserves_polar_moments": true,
+        "group_law": "T_r T_s = T_(r*s)",
+        "sign_preserved": false,
+        "global_RH_claim": false
+      }
+    },
+    {
+      "parity": "odd",
+      "ratio": "11/10",
+      "support": "11/20",
+      "moments_float": [
+        5.247538514829842e-18,
+        -5.247538514829842e-18
+      ],
+      "mass_ratio_float": 1.0012107351984385,
+      "exact_conjugacy": true,
+      "bounds": {
+        "ratio": "11/10",
+        "mass_lower": "1",
+        "mass_upper": "14641/10000",
+        "R_lower": "100/121",
+        "R_upper": "14641/10000",
+        "domain": "L2 compact support, both exponential moments zero; finite R for R bounds",
+        "preserves_polar_moments": true,
+        "group_law": "T_r T_s = T_(r*s)",
+        "sign_preserved": false,
+        "global_RH_claim": false
+      }
+    },
+    {
+      "parity": "odd",
+      "ratio": "2",
+      "support": "1",
+      "moments_float": [
+        -3.0357660829594124e-18,
+        3.0357660829594124e-18
+      ],
+      "mass_ratio_float": 1.0174073533121777,
+      "exact_conjugacy": true,
+      "bounds": {
+        "ratio": "2",
+        "mass_lower": "1",
+        "mass_upper": "16",
+        "R_lower": "1/4",
+        "R_upper": "16",
+        "domain": "L2 compact support, both exponential moments zero; finite R for R bounds",
+        "preserves_polar_moments": true,
+        "group_law": "T_r T_s = T_(r*s)",
+        "sign_preserved": false,
+        "global_RH_claim": false
+      }
+    }
+  ],
+  "source_sha256": "32ef14bb0489fae53143a68a2da78395e00aa099345d0a87ffbddb1f88682c2a"
+}

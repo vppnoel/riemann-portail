@@ -1,0 +1,229 @@
+{
+  "version": "V6.40",
+  "digits": [
+    80,
+    110
+  ],
+  "selection_sha256": "9bcd0e5991d89a3efaaeab8dcf0789946d85ff22e9a4f14e298c9ff37b61a736",
+  "right_boundary": 3,
+  "analytic_first_term_margin": "0.236752557125860754199195904823",
+  "basis_phase_evaluation": "historical binary64; independently checked on localized roots",
+  "rows": [
+    {
+      "id": "k1_r9_20_plus",
+      "reconstruction_agreement_80_110": "1.27041074229000374e-80",
+      "max_binary64_coordinate_error": "3.47527687037237756e-17",
+      "binary64_norm_squared_error": "8.55932707650257361e-17",
+      "binary64_complex_A_error": "4.09545500553637342e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_r9_20_minus",
+      "reconstruction_agreement_80_110": "1.27041074229000374e-80",
+      "max_binary64_coordinate_error": "3.47527687037237756e-17",
+      "binary64_norm_squared_error": "8.55932707650257361e-17",
+      "binary64_complex_A_error": "3.28806500080250419e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_r13_20_plus",
+      "reconstruction_agreement_80_110": "1.77080172697467833e-80",
+      "max_binary64_coordinate_error": "3.6561258299397231e-17",
+      "binary64_norm_squared_error": "3.11795448009219326e-17",
+      "binary64_complex_A_error": "4.37890986975339285e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_r13_20_minus",
+      "reconstruction_agreement_80_110": "1.77080172697467833e-80",
+      "max_binary64_coordinate_error": "3.6561258299397231e-17",
+      "binary64_norm_squared_error": "3.11795448009219326e-17",
+      "binary64_complex_A_error": "3.34691577433132248e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_r3_4_plus",
+      "reconstruction_agreement_80_110": "1.97539198689330468e-80",
+      "max_binary64_coordinate_error": "1.8155889477194438e-17",
+      "binary64_norm_squared_error": "4.415903822600824e-17",
+      "binary64_complex_A_error": "9.6678119557349228e-18",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_r3_4_minus",
+      "reconstruction_agreement_80_110": "1.97539198689330468e-80",
+      "max_binary64_coordinate_error": "1.8155889477194438e-17",
+      "binary64_norm_squared_error": "4.415903822600824e-17",
+      "binary64_complex_A_error": "1.77179719483678441e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_rpi_6_plus",
+      "reconstruction_agreement_80_110": "1.4601615869394726e-80",
+      "max_binary64_coordinate_error": "5.01754211090345133e-17",
+      "binary64_norm_squared_error": "1.02104097931551715e-16",
+      "binary64_complex_A_error": "6.48557785264719214e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k1_rpi_6_minus",
+      "reconstruction_agreement_80_110": "1.4601615869394726e-80",
+      "max_binary64_coordinate_error": "5.01754211090345133e-17",
+      "binary64_norm_squared_error": "1.02104097931551715e-16",
+      "binary64_complex_A_error": "4.4047071311823686e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_r9_20_plus",
+      "reconstruction_agreement_80_110": "1.79505480305219714e-81",
+      "max_binary64_coordinate_error": "3.47527687037237756e-17",
+      "binary64_norm_squared_error": "6.01048011871338778e-17",
+      "binary64_complex_A_error": "1.10615335435732826e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_r9_20_minus",
+      "reconstruction_agreement_80_110": "1.79505480305219714e-81",
+      "max_binary64_coordinate_error": "3.47527687037237756e-17",
+      "binary64_norm_squared_error": "6.01048011871338778e-17",
+      "binary64_complex_A_error": "6.01598893073132845e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_r13_20_plus",
+      "reconstruction_agreement_80_110": "2.45259051007813751e-81",
+      "max_binary64_coordinate_error": "3.6561258299397231e-17",
+      "binary64_norm_squared_error": "2.57007511158723268e-17",
+      "binary64_complex_A_error": "3.36741662577355682e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_r13_20_minus",
+      "reconstruction_agreement_80_110": "2.45259051007813751e-81",
+      "max_binary64_coordinate_error": "3.6561258299397231e-17",
+      "binary64_norm_squared_error": "2.57007511158723268e-17",
+      "binary64_complex_A_error": "4.07152156516579774e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_r3_4_plus",
+      "reconstruction_agreement_80_110": "2.81355844512826396e-81",
+      "max_binary64_coordinate_error": "2.57213026991721423e-17",
+      "binary64_norm_squared_error": "5.13665754497028136e-18",
+      "binary64_complex_A_error": "2.06369782878276172e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_r3_4_minus",
+      "reconstruction_agreement_80_110": "2.81355844512826396e-81",
+      "max_binary64_coordinate_error": "2.57213026991721423e-17",
+      "binary64_norm_squared_error": "5.13665754497028136e-18",
+      "binary64_complex_A_error": "4.15763819550738643e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_rpi_6_plus",
+      "reconstruction_agreement_80_110": "1.99598743446942008e-81",
+      "max_binary64_coordinate_error": "5.01754211090345133e-17",
+      "binary64_norm_squared_error": "9.18887758255719313e-17",
+      "binary64_complex_A_error": "5.31126805611989894e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k3_rpi_6_minus",
+      "reconstruction_agreement_80_110": "1.99598743446942008e-81",
+      "max_binary64_coordinate_error": "5.01754211090345133e-17",
+      "binary64_norm_squared_error": "9.18887758255719313e-17",
+      "binary64_complex_A_error": "4.8393026692215078e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_r9_20_plus",
+      "reconstruction_agreement_80_110": "1.79505480305219714e-81",
+      "max_binary64_coordinate_error": "3.47527687037237756e-17",
+      "binary64_norm_squared_error": "6.01048011871338778e-17",
+      "binary64_complex_A_error": "4.50251311191488405e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_r9_20_minus",
+      "reconstruction_agreement_80_110": "1.79505480305219714e-81",
+      "max_binary64_coordinate_error": "3.47527687037237756e-17",
+      "binary64_norm_squared_error": "6.01048011871338778e-17",
+      "binary64_complex_A_error": "4.14041951196643701e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_r13_20_plus",
+      "reconstruction_agreement_80_110": "2.45259051007813751e-81",
+      "max_binary64_coordinate_error": "3.6561258299397231e-17",
+      "binary64_norm_squared_error": "2.57007511158723268e-17",
+      "binary64_complex_A_error": "2.94797718550583654e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_r13_20_minus",
+      "reconstruction_agreement_80_110": "2.45259051007813751e-81",
+      "max_binary64_coordinate_error": "3.6561258299397231e-17",
+      "binary64_norm_squared_error": "2.57007511158723268e-17",
+      "binary64_complex_A_error": "4.38477058702999887e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_r3_4_plus",
+      "reconstruction_agreement_80_110": "2.81355844512826396e-81",
+      "max_binary64_coordinate_error": "2.57213026991721423e-17",
+      "binary64_norm_squared_error": "5.13665754497028136e-18",
+      "binary64_complex_A_error": "3.1860613707786639e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_r3_4_minus",
+      "reconstruction_agreement_80_110": "2.81355844512826396e-81",
+      "max_binary64_coordinate_error": "2.57213026991721423e-17",
+      "binary64_norm_squared_error": "5.13665754497028136e-18",
+      "binary64_complex_A_error": "3.37547286093320301e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_rpi_6_plus",
+      "reconstruction_agreement_80_110": "1.99598743446942008e-81",
+      "max_binary64_coordinate_error": "5.01754211090345133e-17",
+      "binary64_norm_squared_error": "9.18887758255719313e-17",
+      "binary64_complex_A_error": "5.80597443771315365e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    },
+    {
+      "id": "k5_rpi_6_minus",
+      "reconstruction_agreement_80_110": "1.99598743446942008e-81",
+      "max_binary64_coordinate_error": "5.01754211090345133e-17",
+      "binary64_norm_squared_error": "9.18887758255719313e-17",
+      "binary64_complex_A_error": "4.23309337446216623e-17",
+      "historical_phase_coordinate_error": "9.30399807811837437e-16",
+      "errors_are_high_precision_estimates_not_interval_bounds": true
+    }
+  ]
+}

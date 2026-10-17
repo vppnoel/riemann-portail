@@ -1,0 +1,493 @@
+{
+  "notices": [
+    {
+      "document": 1,
+      "title": "Programme Riemann — Synthèse",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel socle présenter à un lecteur nouveau ?",
+      "summary": "A reformule RH, B est conditionnel et B′ porte sur la simplicité sous RH ; mesures et hypothèses sont séparées.",
+      "historical_status": "synthese historique ; Vue historique V6.24 ; aucune expertise externe attestée."
+    },
+    {
+      "document": 2,
+      "title": "A mean-square energy attached to the von Mangoldt double convolution: an exact criterion for the rightmost zero, an asymptotic under RH, and negative calibration results",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment présenter les résultats analytiques en anglais ?",
+      "summary": "A et B sont exposés ; les termes inférieurs requièrent H1–H3⋆ ; aucun gain de densité ou positivité nouvelle.",
+      "historical_status": "brouillon editorial ; Brouillon ancien ; les articles LaTeX révisés sont les textes actuels. Plusieurs références restent à vérifier."
+    },
+    {
+      "document": 3,
+      "title": "Referee dossier: Theorems A and B",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quels passages un spécialiste doit-il vérifier ?",
+      "summary": "Une demande de relecture précise est préparée, sans réponse externe dans le document.",
+      "historical_status": "brouillon editorial ; Préparation du dossier et expertise reçue sont distinctes ; version V4.5 complétée ensuite."
+    },
+    {
+      "document": 4,
+      "title": "Brief for specialists (v5.1) — one page",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment résumer le résultat et les questions utiles ?",
+      "summary": "Quatre questions portent sur antériorité, petits écarts, preuves et extensions.",
+      "historical_status": "brouillon editorial ; Aucun envoi ni verdict spécialisé attesté ; références 2026 alors vues en résumé."
+    },
+    {
+      "document": 5,
+      "title": "Message au relecteur / Message to the reviewer",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment demander une vérification sans revendiquer RH ?",
+      "summary": "Projet de demande de vérification ; aucun résultat ni expertise nouvelle.",
+      "historical_status": "brouillon editorial ; Brouillon, jamais assimilé à un message envoyé ; le verdict d’un lecteur reste lui-même discutable scientifiquement."
+    },
+    {
+      "document": 6,
+      "title": "D'où viennent les intuitions : le cheminement intellectuel du programme Riemann",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quelle logique relie les transitions ?",
+      "summary": "Récit d’intuitions, tests, erreurs et décisions jusqu’à V6.24 ; origines non précisées signalées.",
+      "historical_status": "synthese historique ; Récit rétrospectif, explicitement pas une interview ; état historique V6.24."
+    },
+    {
+      "document": 7,
+      "title": "Guide de lecture intuitif",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment guider une lecture non spécialisée ?",
+      "summary": "Un parcours du signal à la métrique et à la fonction auxiliaire est présenté ; aucun résultat nouveau.",
+      "historical_status": "synthese historique ; Vue V6.24 ; explications de hauteur finie et certains rapprochements retestés ensuite."
+    },
+    {
+      "document": 8,
+      "title": "Dimension de l'énergie : nouvelle branche active (v5.2)",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Peut-on lire Θ comme dimension d’une mesure positive ?",
+      "summary": "D_E=Θ, donc RH équivaut à D_E=1/2 ; demi-sommes de zéros dans le modèle fini.",
+      "historical_status": "identite et reformulation ; La positivité de la mesure ne borne pas sa dimension ; les modèles finis restent diagnostics."
+    },
+    {
+      "document": 9,
+      "title": "Vos deux attaques : audit et version améliorée",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Apportent-elles une contrainte nouvelle ?",
+      "summary": "Contractivité automatique et cible K borné de niveau RH ; gain fini de la famille μ,a sans limite prouvée.",
+      "historical_status": "audit interne ; Plateaux N≤200 non asymptotiques ; la courbure utile en log n n’est pas propre à a."
+    },
+    {
+      "document": 10,
+      "title": "Attaque 2 jusqu'à N = 1000 : résultats",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Persiste-t-il jusqu’à 1000 ?",
+      "summary": "Le plateau reste entre 1,22 et 1,36 fois κ/log N ; règle d’arrêt non déclenchée.",
+      "historical_status": "mesure numerique ; N≤998 ; passage sous κ/log N compatible avec une borne asymptotique liminf."
+    },
+    {
+      "document": 11,
+      "title": "Estimer sous RH : ce que dit l'heuristique, et ce qu'elle ne dit pas",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le terme principal sous RH suffit-il à l’expliquer ?",
+      "summary": "Le terme principal manque les petites tailles ; pente, courbure et coupure ont des effets préasymptotiques.",
+      "historical_status": "mesure et heuristique ; Heuristique non démontrée ; les hypothèses précises de BCF restent nécessaires."
+    },
+    {
+      "document": 12,
+      "title": "Annulation du pôle : vérification, extension, et retour à Q",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "La projection déplace-t-elle la difficulté de Q ?",
+      "summary": "L’identité est exacte ; b_N et T_N restent observés, non prouvés asymptotiquement.",
+      "historical_status": "identite et mesure ; Clôture historique trop forte ; les conclusions de limite sont corrigées ensuite."
+    },
+    {
+      "document": 13,
+      "title": "La leçon de 2026 : où se trouvait le levier",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel levier ressort des travaux récents sur les proportions ?",
+      "summary": "Rang–trace et inertie identifiés comme levier différent des sommes de carrés automatiques.",
+      "historical_status": "lecture documentaire ; Articles 2026 non lus intégralement ; le jugement stratégique « plus de cible » n’est pas un théorème."
+    },
+    {
+      "document": 14,
+      "title": "Programme Riemann — Version 6",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment chercher des mécanismes testables ?",
+      "summary": "Quatre programmes exploratoires sont définis avec témoins et règles d’arrêt ; TOMO initialement prioritaire.",
+      "historical_status": "plan recherche ; Un cadre ne prouve aucune hypothèse ; distinguer plan initial et mises à jour ultérieures."
+    },
+    {
+      "document": 15,
+      "title": "V6 — TOMO-DH : tomographie multiplicative inter-échelles",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le bispectre révèle-t-il une fermeture multiplicative perdue ?",
+      "summary": "TOMO2 ne voit que la puissance ; le pont brut TOMO3 n’est pas observé, puis est expliqué et fermé.",
+      "historical_status": "plan et refutation ; TOMO2 n’est pas universel ; dans le canal t, la fermeture redonne Δ par tautologie."
+    },
+    {
+      "document": 16,
+      "title": "V6 — DARK-ZETA : cartographie du secteur sombre arithmétique",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment tester une cause commune sans lui donner une ontologie ?",
+      "summary": "Premier bispectre brut négatif ; le cadre multicanal est conservé.",
+      "historical_status": "plan recherche ; Aucune entité sombre construite ; deux observables équivalents ne sont pas deux preuves indépendantes."
+    },
+    {
+      "document": 17,
+      "title": "V6 — DARK-ZETA : premier détecteur construit et testé",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le premier détecteur sépare-t-il multiplicativité et effet spectral ?",
+      "summary": "TOMO2 est invariant aux phases ; TOMO3 reste proche de son nul et sa corrélation change avec l’échelle.",
+      "historical_status": "mesure numerique ; La corrélation sur une trajectoire ne constitue pas une loi générale."
+    },
+    {
+      "document": 18,
+      "title": "V6.2 — PRIME-LOCK : premier verrou local",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "La log-dérivée rend-elle visible le verrou local ?",
+      "summary": "ζ/L passent ; DH fuit massivement ; Steinhaus passe aussi : diagnostic d’Euler local seulement.",
+      "historical_status": "mesure numerique ; Facteurs locaux de degré 1 seulement ; aucun lien de suffisance vers RH."
+    },
+    {
+      "document": 19,
+      "title": "V6 — DUAL-LOCK : plan de verrouillage local / global",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel objet joint local et archimédien sans multiplier deux scores ?",
+      "summary": "Le plan D0 est exécuté en V6.3 ; signes négatifs DH sans zéros injectés dans la construction.",
+      "historical_status": "plan et experience ; La positivité complète est déjà équivalente à RH ; le plan initial et le résultat sont temporellement distincts."
+    },
+    {
+      "document": 20,
+      "title": "V6 — Registre canonique des métaphores et mécanismes",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment conserver une métaphore avec une garde exacte ?",
+      "summary": "Le registre documente les opérateurs et garde aussi les rejets/correctifs.",
+      "historical_status": "outil methodologique ; Un nom ou une unité ne crée aucune propriété nouvelle."
+    },
+    {
+      "document": 21,
+      "title": "V6.3 — DUAL-LOCK et Résidu sombre : résultats du test local/global",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le signe vient-il d’un résidu stable de cancellation ?",
+      "summary": "Le signe principal survit ; amplitudes ordinaires et un second mode sont ensuite retirés ou corrigés.",
+      "historical_status": "mesure corrigee ; Cancellation non universelle et non physique ; valeurs historiques remplacées dans l’audit suivant."
+    },
+    {
+      "document": 22,
+      "title": "V6.3a — Audit de l'instrument DUAL-LOCK",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le phénomène résiste-t-il à une métrique correcte ?",
+      "summary": "Le signe principal tient ; le second mode à 176 est retiré ; magnitudes/facteurs ordinaires rétrogradés.",
+      "historical_status": "audit interne ; Les recoupements ne sont pas des certificats en norme ; précision liée à κ(G)."
+    },
+    {
+      "document": 23,
+      "title": "V6.3b/c — Audit des conventions de la formule explicite (DUAL-LOCK)",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "La compression est-elle bien celle de Weil ?",
+      "summary": "Accord numérique ; directions DH expliquées par leurs zéros hors droite.",
+      "historical_status": "audit interne ; Concordance ne borne pas l’erreur exacte ; le premier compte DH est corrigé ensuite."
+    },
+    {
+      "document": 24,
+      "title": "V6.3d/e/f — Ce que chaque instrument voit réellement",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Voient-ils une information indépendante de la configuration des zéros ?",
+      "summary": "Quatre coins séparent Euler local et signe global ; TOMO3 brut clos ; deux zéros DH manquants retrouvés.",
+      "historical_status": "audit et classification ; Témoins fabriqués, fenêtres finies ; largeur du creux heuristique ; pas de gain RH."
+    },
+    {
+      "document": 25,
+      "title": "ATLAS DES MÉTAPHORES",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel test concret les analogies physiques proposent-elles ?",
+      "summary": "Seuil 1D proposé avant carte 2D et théorie ; entropie non canonique tenue en attente.",
+      "historical_status": "plan recherche ; Une transition de matrice peut laisser les zéros fixes ; aucun mécanisme physique revendiqué."
+    },
+    {
+      "document": 26,
+      "title": "V6.4 — Le seuil τ_c : exécution du test prioritaire de l'Atlas",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Ce seuil est-il intrinsèque aux fonctions ?",
+      "summary": "Seuil reproductible mais dépendant de la compression ; aucun zéro ne bouge ; carte 2D translation exacte.",
+      "historical_status": "refutation documentee ; Le résultat concerne les conditions de l’interpolation étudiée ; aucune transition physique."
+    },
+    {
+      "document": 27,
+      "title": "V6.5 — Là où les zéros bougent : RH ne tient qu'au point d'Euler",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "La famille modulo 7 à symétrie fixe protège-t-elle RH ?",
+      "summary": "Plage finie de survie se resserre ; sorties par rencontres ; asymétrie observée.",
+      "historical_status": "mesure numerique ; Une famille et T≤1000 ; l’asymétrie reste heuristique ; Euler ne prouve pas GRH."
+    },
+    {
+      "document": 28,
+      "title": "V6.6 — Le Modèle réduit : à quoi ressemble une nécessité démontrée",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "À quoi ressemble une nécessité démontrée ?",
+      "summary": "Positivité de courbes et violations des faux ; quatre traits de signature dégagés.",
+      "historical_status": "modele et mesures ; Effectivité des faux vérifiée à degrés finis ; signature observée ne prouve pas une géométrie pour ζ."
+    },
+    {
+      "document": 29,
+      "title": "V6.7 — STABILITY-RADIUS : la marge de la forme et la marge de l'objet",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quelle perturbation définit chaque marge ?",
+      "summary": "Marge de forme nulle par rang ; marge d’objet positive ou nulle avec RH vraie.",
+      "historical_status": "identites et mesures ; Normes et fenêtres changent les valeurs ; aucune positivité globale de ζ démontrée."
+    },
+    {
+      "document": 30,
+      "title": "V6.8 — L'Archipel d'Euler : parmi les fonctions qui ont l'équation fonctionnelle, RH n'existe qu'aux points d'Euler",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Une déformation de V_q peut-elle garder Euler ?",
+      "summary": "Dans V_q, RH impose un point d’Euler ; rayons et sorties mesurés à hauteur finie.",
+      "historical_status": "preuve et mesures ; Condition nécessaire ; réciproque GRH ouverte ; restriction à V_q et antériorité connue."
+    },
+    {
+      "document": 31,
+      "title": "Indicateur d'avancement RH",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment documenter sa maturité sans confondre résolution ?",
+      "summary": "Sept dimensions ; niveaux généraux stables depuis V6.18 ; expertise externe non atteinte.",
+      "historical_status": "outil navigation ; L’échelle n’est pas une distance métrique à RH ; croisements partiellement attribués après coup."
+    },
+    {
+      "document": 32,
+      "title": "V6.9 — Le chaînon : du Frobenius discret au flot continu",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel maillon passe du Frobenius au continu ?",
+      "summary": "Opérateurs et symétries aussi pour les faux ; le Gram sépare dans les modèles observés.",
+      "historical_status": "mesure et classiques ; F=q^D ne détermine D qu’après une branche ; reconstruction finie ne donne pas un opérateur limite positif."
+    },
+    {
+      "document": 33,
+      "title": "V6.10 — Le générateur des premiers : l'opérateur de ζ reconstruit sans aucun zéro",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Peut-on reconstruire depuis les seuls coefficients ?",
+      "summary": "Zéros connus retrouvés avec masses proches de 1 ; négativité DH et effets de pas/fenêtre mesurés.",
+      "historical_status": "mesure numerique ; Tolérance de masse 1% et signes près des arrondis ; aucune positivité générale démontrée."
+    },
+    {
+      "document": 34,
+      "title": "Navigateur de recherche RH",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Comment choisir un coup avec prérequis et témoins ?",
+      "summary": "63 coups en V6.37 ; le premier coefficient complexe fixé devient prioritaire.",
+      "historical_status": "outil navigation ; Probabilités/coûts historiques subjectifs ; « fait » décrit la procédure ; maillons non distance à RH."
+    },
+    {
+      "document": 35,
+      "title": "V6.11 — La base comme pas de temps",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Que conserve le changement de base ou de pas ?",
+      "summary": "Métrique du modèle survit ; un pas grossier masque parfois la négativité DH.",
+      "historical_status": "mesure et classiques ; F seul ne fixe pas D sans branche ; un flot canonique de ζ n’est pas construit."
+    },
+    {
+      "document": 36,
+      "title": "V6.12 — Relecture : les trois idées rejetées relues, et les priorités refaites",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Les outils nouveaux changent-ils leur verdict ?",
+      "summary": "Détection principale DH ; masse d’un fantôme quasi nulle ; rayon reflète l’écart connu à la droite.",
+      "historical_status": "mesure corrigee ; Demi-exposant normalisé de Q=Θ−1/2 ; exposant de Q=2Θ−1 ; quatre seuils sont corrigés ensuite."
+    },
+    {
+      "document": 37,
+      "title": "V6.13 — Pré-relecture : les Théorèmes A et B et l'Archipel d'Euler",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Les dossiers résistent-ils à une pré-relecture et à l’antériorité ?",
+      "summary": "Retouches appliquées ; pas de faille trouvée dans les contrôles ; Archipel connu ; B′ isolé.",
+      "historical_status": "audit interne ; Agents IA sans expertise humaine ; nouveauté B/B′ non établie ; références exactes à vérifier."
+    },
+    {
+      "document": 38,
+      "title": "V6.14 — La loi de seuil : un quadruplet hors droite s'entend au temps de Heisenberg de sa hauteur",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quelle fenêtre permet la détection hors droite ?",
+      "summary": "Lemme exact ; loi mesurée proche du poids archimédien ; trois prévisions tenues et une réfutée.",
+      "historical_status": "preuve et mesure ; Fonction test et quadruplets synthétiques limités ; pas de loi uniforme démontrée."
+    },
+    {
+      "document": 39,
+      "title": "V6.15 — Le degré 2 et le recensement : la loi de seuil avec Δ de Ramanujan [Ram16], et les quadruplets de DH comptés par les premiers",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "La loi double-t-elle en degré 2 et le compte voit-il plus loin ?",
+      "summary": "Seuil proche du double ; 50 directions mesurées au lieu des 30 prévues ; contributions hautes identifiées.",
+      "historical_status": "mesure numerique ; Tolérance numérique ; pas un certificat exact ; l’instrument Δ est amélioré ensuite."
+    },
+    {
+      "document": 40,
+      "title": "V6.16 — La Rencontre à trois, et les croisements dans l'indicateur",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Peut-on les lire sur une même marge locale ?",
+      "summary": "Identité 1−sinc²(πs) ; répulsion ; β lisse à 95%, seule sa part d’écart suit les paires serrées.",
+      "historical_status": "identite et mesure ; Deux atomes ignorent les voisins ; plusieurs prévisions fausses ; lecture de la part d’écart après coup."
+    },
+    {
+      "document": 41,
+      "title": "V6.17 — La Rencontre en degré 2, et son pendant dans le Modèle réduit",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Les identités et distributions se transportent-elles ?",
+      "summary": "Identités Vandermonde/Haar ; répulsion Δ ; familles mixtes ; collisions en extension compatibles avec RH.",
+      "historical_status": "preuve et mesure ; Contrôle de Turing empirique dans le corpus ; petites marges rares ; tailles effectives basses hors domaine."
+    },
+    {
+      "document": 42,
+      "title": "Registre des sources",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Que vérifie chaque source et où sert-elle ?",
+      "summary": "163 fiches : 81 indiquées vérifiées en ligne, 67 partielles et 15 non vérifiées.",
+      "historical_status": "outil documentaire ; Statuts hérités du corpus, pas revérification V6.38 des 163 sources ; résumé distinct de texte intégral."
+    },
+    {
+      "document": 43,
+      "title": "V6.19 — Plan de recherche : la Rencontre à n et la matrice des théories (adapté en V6.20 à V6.29)",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quelle stratégie relie identité et question de recherche ?",
+      "summary": "Identité élémentaire ; mesures ζ/ζL ; plan adapté après retours avec nouveaux axes.",
+      "historical_status": "plan et resultats ; Plan vivant ; identité CUE ne démontre pas une loi globale des zéros."
+    },
+    {
+      "document": 44,
+      "title": "Matrice des théories RH",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quelles implications sont connues, retrouvées ou ouvertes ?",
+      "summary": "Vue lue : 27 théories, 92 cases écrites, 284 déduites, 326 à compléter.",
+      "historical_status": "outil documentaire ; Pas une expertise indépendante de chaque implication ; limites de classe/citations restent substantielles."
+    },
+    {
+      "document": 45,
+      "title": "V6.20 — Le Palier 4/3 recalculé, et ce que le programme a retrouvé",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le plateau est-il constant et les résultats retrouvés sont-ils nouveaux ?",
+      "summary": "Médiane 1,313≈0,985×4/3 avec pics ; décomposition exacte ; 14 redécouvertes recensées.",
+      "historical_status": "mesure et correction ; Médiane et pics finis ne prouvent ni limite ni non-convergence ; formulation encore corrigée en V6.36."
+    },
+    {
+      "document": 46,
+      "title": "V6.21 — Axe J : la surface virtuelle",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Peut-il se lire comme intersection virtuelle ?",
+      "summary": "Orthogonal aux fibres=−métrique ; 425 courbes et 220 faux contrastés ; signatures ζ/L/DH mesurées.",
+      "historical_status": "identite et mesure ; Surface de ζ non construite ; signature finie ne l’impose pas ; dictionnaire connu."
+    },
+    {
+      "document": 47,
+      "title": "V6.22 — Axe J2 : le Riemann–Roch virtuel",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel énoncé indépendant de RH les exclut ?",
+      "summary": "Clifford n’exclut aucun faux ; Stepanov 121/220 seul, 220/220 avec torsion.",
+      "historical_status": "mesure et formulation ; Dualité agrégée ne reconstruit pas les espaces de sections ; transfert à ζ non établi."
+    },
+    {
+      "document": 48,
+      "title": "V6.23 — Axe J5 : le Frobenius qui n'est pas un morphisme",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel rôle distingue Frobenius d’identité ou permutation ?",
+      "summary": "Rang faible et noyaux pour Frobenius ; identité échoue ; permutation parfois coïncidences.",
+      "historical_status": "mesure exacte ; Interprétation initiale trop forte ; tailles finies parfois bornes triviales ; mécanisme précisé ensuite."
+    },
+    {
+      "document": 49,
+      "title": "V6.24 — Analyse de risques, J3 simplifié, et « le même calcul » que les deux tiers",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel petit test décidera la suite ?",
+      "summary": "x^p+x fonctionne ; propriété de l’espace décisive ; proportions numériques dépendent de la fenêtre.",
+      "historical_status": "analyse et mesure ; Pas de nouvelle proportion inconditionnelle ; le calcul utilise les zéros connus."
+    },
+    {
+      "document": 50,
+      "title": "V6.25 — Les unités fictives : audit du document reçu",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "L’homogénéité ajoute-t-elle une contrainte ?",
+      "summary": "Identités exactes par Abel ; lecture mécanique cohérente ; aucune contrainte nouvelle sur les zéros.",
+      "historical_status": "audit interne ; Travail d’impulsion parfois négatif même avec énergie positive ; aucune physique de ζ établie."
+    },
+    {
+      "document": 51,
+      "title": "V6.26 — J3b : le Frobenius de caractéristique un",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "L’échelle de caractéristique 1 fournit-elle ce rôle ?",
+      "summary": "Le modèle ne construit pas les jets requis ; points/valeurs distingués des endomorphismes du carré.",
+      "historical_status": "lecture et limite ; Aucune impossibilité générale en caractéristique 1 ; sources ciblées et extraits, pas tout le programme."
+    },
+    {
+      "document": 52,
+      "title": "V6.27 — J6 : le carré, en continu",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "La signature résiste-t-elle aux paramètres ?",
+      "summary": "Signes robustes sur grille fiable ; nombre DH dépend du réglage ; cas impair 25 observé.",
+      "historical_status": "mesure numerique ; Grille non certifiée dans son ensemble ; accord des traces et signe au seuil sont distincts."
+    },
+    {
+      "document": 53,
+      "title": "V6.28 — Axe A : la Rencontre à n en hauteur",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le prolongement réel est-il une densité ?",
+      "summary": "Densités négatives, trois prévisions fausses ; trou à trois mesuré à basse hauteur.",
+      "historical_status": "refutation documentee ; L’échec du prolongement ne réfute pas CUE à taille entière."
+    },
+    {
+      "document": 54,
+      "title": "V6.29 — Le trou à trois, lu ; les proportions de 2026 ; la matrice complétée",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le CUE fini suffit-il dans son domaine ?",
+      "summary": "CUE fini réduit le déficit sans expliquer son ampleur ; rigidité de forme observée ; identité rang–trace.",
+      "historical_status": "lecture et mesure ; Sources partielles ; rigidité observée sans mécanisme démontré."
+    },
+    {
+      "document": 55,
+      "title": "V6.30 — Les articles présentables",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quels textes sont présentables à relecture ?",
+      "summary": "Candidat analytique et note expérimentale ; seuil DH≥61 requalifié comme échantillonnage de grille.",
+      "historical_status": "brouillon editorial ; Prépublication prête distincte d’acceptation ; références parfois encore de mémoire."
+    },
+    {
+      "document": 56,
+      "title": "V6.31 — Le relief de l'archipel : une seule vue 3D",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Un relief résume-t-il la persistance ?",
+      "summary": "Critère initial échoue ; critère persistant choisi après coup ; col à 145 dans cette carte.",
+      "historical_status": "exploration corrigee ; T* est déficit relatif persistant, pas première hauteur hors droite ; censures non imputées."
+    },
+    {
+      "document": 57,
+      "title": "V6.33 — La force qui abaisse le relief : le défaut de multiplicativité, puis le premier coefficient",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Le défaut multiplicatif l’abaisse-t-il ?",
+      "summary": "Trois prévisions fausses ; association avec a(1) trouvée après coup ; signal résiduel D à retester.",
+      "historical_status": "exploration et refutation ; Corrélation non causale ; D contient a1 par algèbre ; le seuil T* est relatif."
+    },
+    {
+      "document": 58,
+      "title": "V6.34 - Validation directe du relief et lemme des jets",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Que reste-t-il après validation directe et preuve ?",
+      "summary": "L’identification universelle T*=première détection est réfutée ; association a1 reproduite ; prévision D résiduelle fausse ; borne O(√p) prouvée.",
+      "historical_status": "preuve et mesures ; Comptages non certifiés ; aucune causalité ; jets sur corps premiers avec M<p ; méthode classique."
+    },
+    {
+      "document": 59,
+      "title": "V6.35 — De la tour finie à la borne spectrale",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Peut-on couvrir la tour sans circularité spectrale ?",
+      "summary": "Pour les cubiques sur un corps de caractéristique impaire : borne uniforme ; pour les elliptiques lisses : modules √p et Hasse déduits.",
+      "historical_status": "preuve et certificats ; Pas nouveauté historique ; caractéristique 2 et genres supérieurs non traités ; singularité interdit transfert aveugle."
+    },
+    {
+      "document": 60,
+      "title": "V6.36 — Trois articles et un certificat de négativité",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Peut-on certifier ce témoin et corriger les articles ?",
+      "summary": "ν_-(G_DH)≥25 pour a=.02,h=.005,L=1115 sous modèle explicite ; trois articles corrigés.",
+      "historical_status": "certificat conditionne ; Au moins 25, pas exactement ; complément non certifié ; aucune positivité générale de ζ ou preuve RH."
+    },
+    {
+      "document": 61,
+      "title": "V6.37 - Ancrage apparié V13",
+      "provenance": "Notice de la base V6.37 dans le document 62 ; pas un verdict actuel automatique",
+      "question": "Quel ordre donne l’appariement par ancre et rayon ?",
+      "summary": "A1 : 36/36 tardifs ; D : 25 précoces, 8 tardifs, 3 mêmes tranches ; stabilité numérique.",
+      "historical_status": "mesure numerique ; Grands contrastes ciblés ; tolérances résiduelles ; ordre d’instrument non causal et non absence certifiée."
+    }
+  ],
+  "source": "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.md"
+}

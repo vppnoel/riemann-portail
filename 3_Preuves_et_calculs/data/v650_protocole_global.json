@@ -1,0 +1,55 @@
+{
+  "version": "V6.50",
+  "target": "∀r>0, ∀f∈X_(1/2), Q_W(T_r f)≥0",
+  "global_RH_claim": false,
+  "evidence": [
+    "transport T_r, group law and dense form core proved",
+    "local certificate for S≤11/20 executed and replayed"
+  ],
+  "routes": [
+    {
+      "id": "bounded_minorant",
+      "condition": "Certified norms of common B_(S,U) with a strictly positive full reserve on an unbounded support family",
+      "status": "local_only"
+    },
+    {
+      "id": "original_schur",
+      "condition": "Certified strong sources and Schur sign on every required support, in stated graph domains",
+      "status": "alternative_open"
+    },
+    {
+      "id": "positive_structure",
+      "condition": "Arithmetic construction of a positive representation or form inequality covering every r",
+      "status": "global_open"
+    }
+  ],
+  "actions": [
+    {
+      "id": "v650_global_transported_sign",
+      "door": "Arithmétique",
+      "obligation": "Preserve phases and admissible directions; establish a sign law on the transported forms for every r",
+      "status": "open"
+    },
+    {
+      "id": "v650_scaled_cap_cost",
+      "door": "Tête et queue",
+      "obligation": "Obtain an effective family bound that avoids the present pointwise-tail cost; conditional local cap completeness does not prove it globally",
+      "status": "open"
+    },
+    {
+      "id": "v650_optional_Q_sources",
+      "door": "Couplages",
+      "obligation": "If original Schur is chosen, certify its strong L2 sources; bounded minorants have their own already certified source contracts",
+      "status": "alternative_dependent"
+    },
+    {
+      "id": "v650_unbounded_exhaustion",
+      "door": "Couverture",
+      "obligation": "Prove all r, or termination and positivity on a support sequence tending to infinity; no uniform strictly positive margin required",
+      "status": "open"
+    }
+  ],
+  "logic": "AND within the premises of a chosen route; OR between complete routes",
+  "negative_guard": "A negative bound from a sufficient minorant is inconclusive; only a verified negative value of original Q on an admissible test is a counterexample",
+  "scores": "No probability of RH, percentage of proof or quantitative reward attributed"
+}

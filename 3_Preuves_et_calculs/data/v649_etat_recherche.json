@@ -1,0 +1,57 @@
+{
+  "version": "V6.49",
+  "result": "Coût multi-premiers exact ; paiement joint D/V certifié avec multiplicité. À S=1 : alpha<0,796 contre somme séparée>1,24. Positivité complète inchangée jusqu’à1/2 ; extension à0,55 exploratoire seulement. Transport des supports et sources fortes de Q ouverts.",
+  "document": "74_COMPENSATION_MULTI_PREMIERS.pdf",
+  "dictionary": "69_LANGUE_DES_PASSAGES.html",
+  "graph": "74_COMPENSATION_MULTI_PREMIERS.html",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages",
+    "certifier_bloc_local",
+    "audit_positivite_uniforme"
+  ],
+  "current_bellman_model": "v643_modele_ponts.json",
+  "current_grammar": "v644_grammaire.json",
+  "current_dictionary": "v649_parcours_pedagogique.json",
+  "next_actions": [
+    "v649_frequency_split",
+    "v648_cadres_transport",
+    "v648_sources_Q",
+    "v648_transport_non_borne"
+  ],
+  "maturity_levels_unchanged": true,
+  "open": [
+    "pay remaining mass after joint arithmetic compensation",
+    "certified low/high frequency head and Schur",
+    "transport moments and forms in R across supports",
+    "original Q sources and unbounded coverage"
+  ],
+  "novelty_scope": "internal reconstruction; no priority claim; no RH proof",
+  "global_sign_certified": false,
+  "current_dictionary_archive": "v649_dictionnaire.json",
+  "local_certificate": {
+    "all_tests": true,
+    "maximum_support": "1/2",
+    "mass_floor": "1/250",
+    "R_floor": "1/2000",
+    "head_dimension": 80,
+    "head_form": "bounded A_U minorant",
+    "parity_dimensions": [
+      40,
+      40
+    ],
+    "nonempty_prime_term": true,
+    "method": "certified common operator; cardinal Gauss frame and global error",
+    "original_Q_strong_sources_certified": false
+  },
+  "four_doors": [
+    "compensation arithmétique",
+    "tête praticable",
+    "couplages et sources certifiés",
+    "couverture non bornée"
+  ],
+  "pedagogy": "43 fiches progressives, cinq étapes ;19outils avec usages ; paiement relatif distinct du signe global",
+  "current_multi_prime_payment": "v649_joint_payment_resultats.json",
+  "extended_positive_support_certificate": false
+}

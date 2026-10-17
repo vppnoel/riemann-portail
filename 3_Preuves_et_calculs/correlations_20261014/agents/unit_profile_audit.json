@@ -1,0 +1,15 @@
+{
+  "profile": "a(1)=0; a(n)=1 for every n>=2",
+  "psi": "floor(x)-1 for x>=1",
+  "global_energy_bound": "J_a(X)<=4*(X-1)<=4*X^2 for X>=1",
+  "exact_divisor_identity_fails_at_n2": true,
+  "same_Suzuki_archimedean_A": true,
+  "signal_at_log1000_lower": "-3372449313920329806522000633640172665522027308965314906801847691091482042002504317167344981369180793477739791902023033/2521728396569246669585858566409191283525103313309788586748690777871726193375821479130513040312634601011624191379636224",
+  "signal_at_log1000_upper": "-6744898627840527588650901736933265952332834842730028257670176477829929502241958365010512859230093190357910317725149211/5043456793138493339171717132818382567050206626619577173497381555743452386751642958261026080625269202023248382759272448",
+  "negative_certified": true,
+  "not_RH_counterexample": true,
+  "interval_model": "mpmath.iv 400 bits; directed Euler remainder; positive geometric archimedean tail",
+  "audit_passed": true,
+  "additional_program_sha256": "fc0b29638cb776d040909f565b8e49b75e8eeac0d2e7833cba482b1f3af9b885",
+  "interpretation": "Unconditional abstract coefficient profile, not prime powers or a Riemann-hypothesis counterexample; global quadratic energy control alone does not force the hybrid Weil signal sign."
+}

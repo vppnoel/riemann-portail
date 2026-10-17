@@ -1,0 +1,53 @@
+{
+  "exponential_bounds": [
+    {
+      "label": "e2_upper",
+      "argument": "2",
+      "lower_rational": "691283/93555",
+      "upper_rational": "134800213/18243225",
+      "required_lower": null,
+      "required_upper": "37/5",
+      "passed": true
+    },
+    {
+      "label": "e1p5_interval",
+      "argument": "3/2",
+      "lower_rational": "36185315027/8074035200",
+      "upper_rational": "11760227475629/2624061440000",
+      "required_lower": "22/5",
+      "required_upper": "9/2",
+      "passed": true
+    },
+    {
+      "label": "e1p2_lower",
+      "argument": "6/5",
+      "lower_rational": "141850698523/42724609375",
+      "upper_rational": "81138599601083/24438476562500",
+      "required_lower": "3",
+      "required_upper": null,
+      "passed": true
+    },
+    {
+      "label": "e2p4_lower",
+      "argument": "12/5",
+      "lower_rational": "5180561992073/469970703125",
+      "upper_rational": "1953074880883393/177178955078125",
+      "required_lower": "10",
+      "required_upper": null,
+      "passed": true
+    },
+    {
+      "label": "e2p5_interval",
+      "argument": "5/2",
+      "lower_rational": "956075243329/78479622144",
+      "upper_rational": "95289060449707/7821802340352",
+      "required_lower": "12",
+      "required_upper": "123/10",
+      "passed": true
+    }
+  ],
+  "Q_interval_12over5_to24over5_lower": "532/225",
+  "Q_interval_24over5_to_infinity_lower": "931/15",
+  "Z_at4_upper_strict": "-8/5",
+  "status": "exact rational Taylor bounds, no floating-point dependence"
+}

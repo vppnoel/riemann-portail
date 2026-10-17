@@ -1,0 +1,14 @@
+{
+  "version": "V6.47",
+  "support": "3/8",
+  "frequency_cutoff": "40",
+  "frequency_step": "1/50",
+  "value_cutoff": "36/5",
+  "value_step": "1/50",
+  "interval_bits": 160,
+  "fixed_bits": 64,
+  "method": "projected trace and Schatten2, cell supersets, second derivative midpoint errors",
+  "selected_after_exploratory_feedback": true,
+  "frozen_before_outward_validation": true,
+  "global_RH_claim": false
+}

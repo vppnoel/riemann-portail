@@ -1,0 +1,1315 @@
+{
+  "version": "V6.40",
+  "q": 13,
+  "parity": 1,
+  "dimension": 6,
+  "Tmax": 150,
+  "sigma_right": 3,
+  "n_pairs": 12,
+  "n_directions": 24,
+  "n_controls": 6,
+  "selection_sha256": "9bcd0e5991d89a3efaaeab8dcf0789946d85ff22e9a4f14e298c9ff37b61a736",
+  "n_stable": 30,
+  "n_ambiguous": 0,
+  "euler_controls_passed": true,
+  "n_detected": 24,
+  "diagnostics": [
+    {
+      "max_phase_vertical": 0.06306712898316695,
+      "max_phase_horizontal": 0.7995519337493796,
+      "max_integer_residual": 2.5067947717616335e-11,
+      "refined_rows": 1196,
+      "unresolved_horizontal_rows": 0,
+      "sigma_right": 3,
+      "first_term_margin_min": 0.2367525571258608
+    },
+    {
+      "max_phase_vertical": 0.03153368730097467,
+      "max_phase_horizontal": 0.7976581212462523,
+      "max_integer_residual": 2.637534635141492e-11,
+      "refined_rows": 1046,
+      "unresolved_horizontal_rows": 0,
+      "sigma_right": 3,
+      "first_term_margin_min": 0.2367525571258608
+    }
+  ],
+  "maximum_basis_imaginary_residual": 1.5895811334089764e-12,
+  "n_total_changed": 0,
+  "n_critical_changed_001": 0,
+  "n_critical_changed_0005": 0,
+  "n_input_sensitivity_changed": 0,
+  "analysis_before_root_recrossing": {
+    "reports": [
+      {
+        "ceiling": 50,
+        "counts": {
+          "higher_D_earlier": 8,
+          "higher_D_later": 4,
+          "same_tranche": 0,
+          "both_no_detection": 0,
+          "undetermined": 0
+        },
+        "pairs": [
+          {
+            "id": "k1_r9_20",
+            "character_k": 1,
+            "radius": "9/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r13_20",
+            "character_k": 1,
+            "radius": "13/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r3_4",
+            "character_k": 1,
+            "radius": "3/4",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 8
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_rpi_6",
+            "character_k": 1,
+            "radius": "pi/6",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r9_20",
+            "character_k": 3,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r13_20",
+            "character_k": 3,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r3_4",
+            "character_k": 3,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_rpi_6",
+            "character_k": 3,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r9_20",
+            "character_k": 5,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 20
+            },
+            "high": {
+              "status": "detected",
+              "first": 10
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r13_20",
+            "character_k": 5,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r3_4",
+            "character_k": 5,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_rpi_6",
+            "character_k": 5,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          }
+        ],
+        "fixed_denominator": 12,
+        "majority_threshold": 7,
+        "prediction_status": "observed_for_the_frozen_numerical_observable",
+        "independent_replications": false,
+        "comparable_strict_orders": 12
+      },
+      {
+        "ceiling": 100,
+        "counts": {
+          "higher_D_earlier": 8,
+          "higher_D_later": 4,
+          "same_tranche": 0,
+          "both_no_detection": 0,
+          "undetermined": 0
+        },
+        "pairs": [
+          {
+            "id": "k1_r9_20",
+            "character_k": 1,
+            "radius": "9/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r13_20",
+            "character_k": 1,
+            "radius": "13/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r3_4",
+            "character_k": 1,
+            "radius": "3/4",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 8
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_rpi_6",
+            "character_k": 1,
+            "radius": "pi/6",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r9_20",
+            "character_k": 3,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r13_20",
+            "character_k": 3,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r3_4",
+            "character_k": 3,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_rpi_6",
+            "character_k": 3,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r9_20",
+            "character_k": 5,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 20
+            },
+            "high": {
+              "status": "detected",
+              "first": 10
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r13_20",
+            "character_k": 5,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r3_4",
+            "character_k": 5,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_rpi_6",
+            "character_k": 5,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          }
+        ],
+        "fixed_denominator": 12,
+        "majority_threshold": 7,
+        "prediction_status": "observed_for_the_frozen_numerical_observable",
+        "independent_replications": false,
+        "comparable_strict_orders": 12
+      },
+      {
+        "ceiling": 150,
+        "counts": {
+          "higher_D_earlier": 8,
+          "higher_D_later": 4,
+          "same_tranche": 0,
+          "both_no_detection": 0,
+          "undetermined": 0
+        },
+        "pairs": [
+          {
+            "id": "k1_r9_20",
+            "character_k": 1,
+            "radius": "9/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r13_20",
+            "character_k": 1,
+            "radius": "13/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r3_4",
+            "character_k": 1,
+            "radius": "3/4",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 8
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_rpi_6",
+            "character_k": 1,
+            "radius": "pi/6",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r9_20",
+            "character_k": 3,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r13_20",
+            "character_k": 3,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r3_4",
+            "character_k": 3,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_rpi_6",
+            "character_k": 3,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r9_20",
+            "character_k": 5,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 20
+            },
+            "high": {
+              "status": "detected",
+              "first": 10
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r13_20",
+            "character_k": 5,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r3_4",
+            "character_k": 5,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_rpi_6",
+            "character_k": 5,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          }
+        ],
+        "fixed_denominator": 12,
+        "majority_threshold": 7,
+        "prediction_status": "observed_for_the_frozen_numerical_observable",
+        "independent_replications": false,
+        "comparable_strict_orders": 12
+      }
+    ],
+    "causal_inference": false,
+    "certified_first_zero": false,
+    "statistical_significance_test": null
+  },
+  "analysis": {
+    "reports": [
+      {
+        "ceiling": 50,
+        "counts": {
+          "higher_D_earlier": 8,
+          "higher_D_later": 4,
+          "same_tranche": 0,
+          "both_no_detection": 0,
+          "undetermined": 0
+        },
+        "pairs": [
+          {
+            "id": "k1_r9_20",
+            "character_k": 1,
+            "radius": "9/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r13_20",
+            "character_k": 1,
+            "radius": "13/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r3_4",
+            "character_k": 1,
+            "radius": "3/4",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 8
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_rpi_6",
+            "character_k": 1,
+            "radius": "pi/6",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r9_20",
+            "character_k": 3,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r13_20",
+            "character_k": 3,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r3_4",
+            "character_k": 3,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_rpi_6",
+            "character_k": 3,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r9_20",
+            "character_k": 5,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 20
+            },
+            "high": {
+              "status": "detected",
+              "first": 10
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r13_20",
+            "character_k": 5,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r3_4",
+            "character_k": 5,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_rpi_6",
+            "character_k": 5,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          }
+        ],
+        "fixed_denominator": 12,
+        "majority_threshold": 7,
+        "prediction_status": "observed_for_the_frozen_numerical_observable",
+        "independent_replications": false,
+        "comparable_strict_orders": 12
+      },
+      {
+        "ceiling": 100,
+        "counts": {
+          "higher_D_earlier": 8,
+          "higher_D_later": 4,
+          "same_tranche": 0,
+          "both_no_detection": 0,
+          "undetermined": 0
+        },
+        "pairs": [
+          {
+            "id": "k1_r9_20",
+            "character_k": 1,
+            "radius": "9/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r13_20",
+            "character_k": 1,
+            "radius": "13/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r3_4",
+            "character_k": 1,
+            "radius": "3/4",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 8
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_rpi_6",
+            "character_k": 1,
+            "radius": "pi/6",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r9_20",
+            "character_k": 3,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r13_20",
+            "character_k": 3,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r3_4",
+            "character_k": 3,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_rpi_6",
+            "character_k": 3,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r9_20",
+            "character_k": 5,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 20
+            },
+            "high": {
+              "status": "detected",
+              "first": 10
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r13_20",
+            "character_k": 5,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r3_4",
+            "character_k": 5,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_rpi_6",
+            "character_k": 5,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          }
+        ],
+        "fixed_denominator": 12,
+        "majority_threshold": 7,
+        "prediction_status": "observed_for_the_frozen_numerical_observable",
+        "independent_replications": false,
+        "comparable_strict_orders": 12
+      },
+      {
+        "ceiling": 150,
+        "counts": {
+          "higher_D_earlier": 8,
+          "higher_D_later": 4,
+          "same_tranche": 0,
+          "both_no_detection": 0,
+          "undetermined": 0
+        },
+        "pairs": [
+          {
+            "id": "k1_r9_20",
+            "character_k": 1,
+            "radius": "9/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r13_20",
+            "character_k": 1,
+            "radius": "13/20",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_r3_4",
+            "character_k": 1,
+            "radius": "3/4",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 8
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k1_rpi_6",
+            "character_k": 1,
+            "radius": "pi/6",
+            "order": "higher_D_later",
+            "low": {
+              "status": "detected",
+              "first": 5
+            },
+            "high": {
+              "status": "detected",
+              "first": 12
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r9_20",
+            "character_k": 3,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r13_20",
+            "character_k": 3,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_r3_4",
+            "character_k": 3,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k3_rpi_6",
+            "character_k": 3,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 15
+            },
+            "high": {
+              "status": "detected",
+              "first": 9
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r9_20",
+            "character_k": 5,
+            "radius": "9/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 20
+            },
+            "high": {
+              "status": "detected",
+              "first": 10
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r13_20",
+            "character_k": 5,
+            "radius": "13/20",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_r3_4",
+            "character_k": 5,
+            "radius": "3/4",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          },
+          {
+            "id": "k5_rpi_6",
+            "character_k": 5,
+            "radius": "pi/6",
+            "order": "higher_D_earlier",
+            "low": {
+              "status": "detected",
+              "first": 16
+            },
+            "high": {
+              "status": "detected",
+              "first": 11
+            },
+            "one_member_censored": false,
+            "order_is_for_truncated_numerical_observable": true
+          }
+        ],
+        "fixed_denominator": 12,
+        "majority_threshold": 7,
+        "prediction_status": "observed_for_the_frozen_numerical_observable",
+        "independent_replications": false,
+        "comparable_strict_orders": 12
+      }
+    ],
+    "causal_inference": false,
+    "certified_first_zero": false,
+    "statistical_significance_test": null
+  },
+  "arithmetic": "binary64 EM grids; numerical refinements; no interval certificate",
+  "boundary_margins_are_sampled": true,
+  "seconds_counting": 30.754889965057373,
+  "completed_utc": "2026-10-12T13:20:26.232039+00:00",
+  "n_roots_recrossed": 24,
+  "root_recrossing_file_sha256": "2da576e433f6a37f2f3824decd760411aec9a209c398f9ebec7b05e6714ed5ec"
+}

@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "00_PORTAIL.html",
+    "00_Carte_des_idees.html",
+    "00_Liste_des_figures.html",
+    "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html",
+    "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html",
+    "1_Presentation/44_MATRICE_DES_THEORIES.html",
+    "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html",
+    "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+    "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+    "1_Presentation/67_GRAPHE_DES_PONTS.html",
+    "1_Presentation/69_LANGUE_DES_PASSAGES.html",
+    "1_Presentation/70_PONT_ARITHMETIQUE.html",
+    "1_Presentation/71_LEGO_REUTILISABLE.html",
+    "1_Presentation/72_CONCENTRATION_PROJETEE.html",
+    "1_Presentation/73_OPERATEUR_COMMUN.html",
+    "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.html",
+    "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.html",
+    "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.html",
+    "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.html",
+    "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.html"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pdf_pages": 9,
+  "pdf_A4": true,
+  "pdf_visual_pages_inspected": 9,
+  "tex_overfull_boxes": 0,
+  "tex_missing_glyphs": 0,
+  "HTML_MathML_elements": 157,
+  "HTML_raw_TeX_fallbacks": 0,
+  "numerical_replay_60_75": true,
+  "independent_audit": "PASS",
+  "directed_gamma_fix": true,
+  "local_certificates_global_scope": false
+}

@@ -1,0 +1,20 @@
+{
+  "version": "V6.42",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages",
+    "certifier_bloc_local",
+    "audit_positivite_uniforme"
+  ],
+  "document": "66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+  "graph": "66_GRAPHE_DES_CERTIFICATS.html",
+  "result": "Un pli V13 choisi certifié dans sa boîte ; contour continu de deux zéros pour tout le petit intervalle radial ; quatre boîtes uniformes, deux critiques avant et une paire hors droite après. Inégalité de Weil explicitée ; signe global ouvert.",
+  "next_actions": [
+    "v641_deploiement_A_fixe",
+    "v642_compensation_arithmetique"
+  ],
+  "current_bellman_model": "v642_modele_bellman.json",
+  "scope": "One selected family, fold box and local contour; interval backend explicit, no independent backend verification or global RH proof.",
+  "maturity_levels_unchanged": true
+}

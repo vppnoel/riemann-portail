@@ -1,0 +1,341 @@
+{
+  "model": "finite conditional documentary planning V641",
+  "completed": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages"
+  ],
+  "comparisons_passed": 972,
+  "results": [
+    {
+      "budget": 2,
+      "profiles": 243,
+      "unique_portfolio_profiles": 162,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 162,
+        "nb_reste": 0,
+        "sources_conditions": 162,
+        "dossier_relecture": 0,
+        "bellman_objet": 0,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 0
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 81,
+        "nb_reste": 0,
+        "sources_conditions": 81,
+        "dossier_relecture": 0,
+        "bellman_objet": 0,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 0
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 0,
+        "v13_comparaison": 0,
+        "dh_rejeu": 243,
+        "dh_fenetres": 0,
+        "nb_audit": 162,
+        "nb_reste": 0,
+        "sources_conditions": 162,
+        "dossier_relecture": 0,
+        "bellman_objet": 0,
+        "v13_passages": 0,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 0
+      },
+      "equal_weights": {
+        "value": 13,
+        "gain": 5,
+        "first_choices": [
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions"
+        ],
+        "portfolios": [
+          [
+            "dh_rejeu",
+            "nb_audit",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ],
+          [
+            "dh_rejeu",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ]
+        ],
+        "states_visited": 8
+      }
+    },
+    {
+      "budget": 4,
+      "profiles": 243,
+      "unique_portfolio_profiles": 153,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 237,
+        "dh_fenetres": 0,
+        "nb_audit": 162,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 18,
+        "bellman_objet": 33,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 150
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 216,
+        "dh_fenetres": 0,
+        "nb_audit": 87,
+        "nb_reste": 0,
+        "sources_conditions": 228,
+        "dossier_relecture": 3,
+        "bellman_objet": 9,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 75
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 0,
+        "v13_comparaison": 0,
+        "dh_rejeu": 237,
+        "dh_fenetres": 0,
+        "nb_audit": 162,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 0,
+        "bellman_objet": 33,
+        "v13_passages": 0,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 0
+      },
+      "equal_weights": {
+        "value": 15,
+        "gain": 7,
+        "first_choices": [
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions"
+        ],
+        "portfolios": [
+          [
+            "audit_positivite_uniforme",
+            "dh_rejeu",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ],
+          [
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ]
+        ],
+        "states_visited": 27
+      }
+    },
+    {
+      "budget": 6,
+      "profiles": 243,
+      "unique_portfolio_profiles": 177,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 234,
+        "dh_fenetres": 0,
+        "nb_audit": 237,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 54,
+        "bellman_objet": 36,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 237
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 207,
+        "dh_fenetres": 0,
+        "nb_audit": 210,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 15,
+        "bellman_objet": 9,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 210
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 0,
+        "v13_comparaison": 0,
+        "dh_rejeu": 234,
+        "dh_fenetres": 0,
+        "nb_audit": 237,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 0,
+        "bellman_objet": 36,
+        "v13_passages": 0,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 0
+      },
+      "equal_weights": {
+        "value": 17,
+        "gain": 9,
+        "first_choices": [
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions"
+        ],
+        "portfolios": [
+          [
+            "audit_positivite_uniforme",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ]
+        ],
+        "states_visited": 57
+      }
+    },
+    {
+      "budget": 8,
+      "profiles": 243,
+      "unique_portfolio_profiles": 87,
+      "in_some_optimal_portfolio": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 240,
+        "dh_fenetres": 126,
+        "nb_audit": 243,
+        "nb_reste": 126,
+        "sources_conditions": 243,
+        "dossier_relecture": 129,
+        "bellman_objet": 129,
+        "v13_passages": 243,
+        "certifier_bloc_local": 126,
+        "audit_positivite_uniforme": 243
+      },
+      "in_all_optimal_portfolios": {
+        "v13_contraintes": 243,
+        "v13_comparaison": 243,
+        "dh_rejeu": 225,
+        "dh_fenetres": 0,
+        "nb_audit": 243,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 48,
+        "bellman_objet": 48,
+        "v13_passages": 243,
+        "certifier_bloc_local": 0,
+        "audit_positivite_uniforme": 243
+      },
+      "optimal_first_choice": {
+        "v13_contraintes": 0,
+        "v13_comparaison": 0,
+        "dh_rejeu": 240,
+        "dh_fenetres": 0,
+        "nb_audit": 243,
+        "nb_reste": 0,
+        "sources_conditions": 243,
+        "dossier_relecture": 0,
+        "bellman_objet": 129,
+        "v13_passages": 0,
+        "certifier_bloc_local": 126,
+        "audit_positivite_uniforme": 0
+      },
+      "equal_weights": {
+        "value": 18,
+        "gain": 10,
+        "first_choices": [
+          "dh_rejeu",
+          "nb_audit",
+          "sources_conditions",
+          "bellman_objet",
+          "certifier_bloc_local"
+        ],
+        "portfolios": [
+          [
+            "audit_positivite_uniforme",
+            "bellman_objet",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ],
+          [
+            "audit_positivite_uniforme",
+            "certifier_bloc_local",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ],
+          [
+            "audit_positivite_uniforme",
+            "dh_fenetres",
+            "dh_rejeu",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ],
+          [
+            "audit_positivite_uniforme",
+            "dh_rejeu",
+            "dossier_relecture",
+            "nb_audit",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ],
+          [
+            "audit_positivite_uniforme",
+            "dh_rejeu",
+            "nb_audit",
+            "nb_reste",
+            "sources_conditions",
+            "v13_comparaison",
+            "v13_contraintes",
+            "v13_passages"
+          ]
+        ],
+        "states_visited": 97
+      }
+    }
+  ],
+  "empirical_transition_probabilities": null,
+  "guarantee": "Optimality only within the declared twelve-action documentary model; no guarantee of research success.",
+  "extension_status": "Editorial extension after V641 results; not a scientific preregistration."
+}

@@ -1,0 +1,29 @@
+{
+  "version": "V6.44",
+  "result": "P et métrique exacte, famille dense, no-go de marge H¹, représentation I−compact, queue effective et arithmétique graduée des jets démontrés. 16 compressions arithmétiques positives numériquement ; signe du Schur pour tous supports ouvert.",
+  "document": "68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+  "dictionary": "69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.pdf",
+  "graph": "69_LANGUE_DES_PASSAGES.html",
+  "completed_bellman_actions": [
+    "v13_contraintes",
+    "v13_comparaison",
+    "v13_passages",
+    "certifier_bloc_local",
+    "audit_positivite_uniforme"
+  ],
+  "current_bellman_model": "v643_modele_ponts.json",
+  "current_grammar": "v644_grammaire.json",
+  "next_actions": [
+    "v644_queue_serree",
+    "v644_schur_effectif",
+    "v644_loi_tous_supports"
+  ],
+  "maturity_levels_unchanged": true,
+  "open": [
+    "certified Riesz/projection solver",
+    "effective Schur sign for each S",
+    "cover every S",
+    "historical branch/collision/complex-A questions"
+  ],
+  "novelty_scope": "internal reconstruction; no bibliographic priority claim; no RH proof"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "objet": "generateur_premiers",
+    "champ": "these",
+    "avant": "Le faisceau de Toeplitz des traces (formule explicite, aucun zéro) donne e^{iγh} ; la métrique est positive pour ζ.",
+    "apres": "Un faisceau de Toeplitz construit depuis les premiers permet une reconstruction spectrale dans une fenêtre finie ; pour ζ, la positivité est observée aux paramètres et seuils numériques testés, sans preuve globale."
+  },
+  {
+    "objet": "bases_q_q2",
+    "champ": "appris",
+    "avant": "D est intrinsèque (525 courbes : zéros sur F_q² = courbe ∪ tordue) ; la descente efface un signe par facteur irréductible ; la métrique survit au changement de base, mais pour DH à nombres premiers fixés elle se noie quand le pas grandit : le seul pas qui convienne à ζ est le flot.",
+    "apres": "Les comptages sur F_q² regroupent les données de la courbe et de sa tordue dans les 525 cas étudiés. Un générateur logarithmique dépend du choix de branche ; F reconstruit ne rend pas D unique. La descente peut perdre des signes. Pour DH, un pas grossier masque des directions négatives dans les compressions testées ; aucune nécessité universelle du flot pour ζ n’est démontrée."
+  },
+  {
+    "objet": "theoreme_A_rayon",
+    "champ": "question",
+    "avant": "L'exposant du Théorème A (Θ − 1/2) se lit-il au rayon spectral du générateur des premiers ?",
+    "apres": "Le demi-exposant normalisé du Théorème A, (1/2) limsup log(1+Q(X))/log X = Θ − 1/2, peut-il être comparé au rayon spectral observé ?"
+  },
+  {
+    "objet": "theoreme_A_rayon",
+    "champ": "these",
+    "avant": "Dans une fenêtre, Θ − 1/2 = max |Im γ| des valeurs propres de masse 1 ; la pente de Q mélange cet exposant avec (log X)³.",
+    "apres": "Pour ζ, l’exposant de Q est 2Θ−1, son demi-exposant normalisé Θ−1/2. Une fenêtre de zéros fournit seulement une borne inférieure au supremum global. L et DH servent de calibrations finies ; le Théorème A du corpus ne leur est pas automatiquement transféré."
+  },
+  {
+    "objet": "theoreme_A_rayon",
+    "champ": "appris",
+    "avant": "Circularité levée, blocs de Jordan expliqués (signal d'ordre 2) ; M > 0 ⟺ RH reste le verrou, désormais situé.",
+    "apres": "Des rayons spectraux ont été mesurés sur les fenêtres testées ; cela ne démontre pas une métrique globale positive pour ζ. Les blocs de Jordan décrivent le signal d’ordre deux. Corrections de portée précisées dans l’article1 V6.36."
+  },
+  {
+    "objet": "metrique",
+    "champ": "preuve",
+    "avant": "V6.10–V6.11 : mesurée fenêtre par fenêtre depuis les premiers (positive pour ζ et L), jamais imposée ; à pas grossier, l'imposteur DH passe. Dans le Modèle réduit, c'est la surface C×C qui l'impose.",
+    "apres": "V6.10–V6.11 : signes observés dans des compressions finies, aux seuils testés ; la positivité générale de ζ et L reste ouverte. V6.36 certifie au moins25 directions négatives dans une seule fenêtre DH. Dans le Modèle réduit, une positivité géométrique s’applique à un objet défini."
+  }
+]

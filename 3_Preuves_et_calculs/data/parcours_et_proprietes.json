@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Europe/Brussels",
+  "basis_archive": "programme-riemann_v6_53_COMPENSATION.zip",
+  "source_archive_sha256": "34bffbd5c6d34a17ca9b65b280f06ec70d80da1d0d1cf718dff334a61affa603",
+  "RH_proved": false,
+  "global_sign_proved": false,
+  "historical_proofs_fully_reaudited": false,
+  "events": [
+    {
+      "id": "chemin_01",
+      "system": "Nyman–Beurling et énergie Q ; 06, 12, 37, 62",
+      "question_and_path": "Approcher une fonction par des combinaisons arithmétiques, puis suivre une énergie de doubles convolutions de Mangoldt.",
+      "properties": "Identités de projection et d'annulation ; théorèmes A/B exposés et prérelus dans le corpus.",
+      "limitations_and_bifurcations": "Les projections étudiées retrouvaient Q. Les bornes asymptotiques suffisantes n'en découlaient pas ; le statut des articles reste celui du dossier.",
+      "sources": [
+        "1_Presentation/06_CHEMINEMENT_INTELLECTUEL.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_02",
+      "system": "Énergie, dimension et unités ; 08, 50",
+      "question_and_path": "Lire l'exposant comme une dimension, et la variation d'énergie comme un bilan.",
+      "properties": "Homogénéité des unités et identités de sommation par parties.",
+      "limitations_and_bifurcations": "Positivité et changement de vocabulaire ne bornent pas l'exposant. La lecture mécanique survit comme explication.",
+      "sources": [
+        "1_Presentation/08_Dimension_energie_fractale.md",
+        "1_Presentation/50_LES_UNITES_FICTIVES_AUDIT.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_03",
+      "system": "TOMO et DARK-ZETA ; 15–17, 24",
+      "question_and_path": "Chercher une signature statistique de la multiplicativité.",
+      "properties": "L'ordre 2 conserve la puissance mais perd la phase ; l'ordre 3 conserve certains couplages de phase.",
+      "limitations_and_bifurcations": "Le bispectre brut du canal choisi teste des relations entre ordonnées de zéros. Dans l'autre canal, il restitue le défaut multiplicatif par définition. Ce candidat précis est clos.",
+      "sources": [
+        "1_Presentation/15_TOMO_DH_formalisation.md",
+        "1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md",
+        "1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md",
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_04",
+      "system": "PRIME-LOCK et DUAL-LOCK ; 18–24",
+      "question_and_path": "Relier produit d'Euler local et signe global.",
+      "properties": "Détecteurs distincts de structure locale et d'inertie de Weil ; témoins adversariaux.",
+      "limitations_and_bifurcations": "Le verrou local mesuré ne suffit pas au signe global. Les quatre cas du tableau local/global interdisent ce raccourci.",
+      "sources": [
+        "1_Presentation/18_PRIME_LOCK_premier_verrou_local.md",
+        "1_Presentation/19_DUAL_LOCK_plan_local_global.md",
+        "1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md",
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_05",
+      "system": "Modèle réduit ; 28–29",
+      "question_and_path": "Comprendre une nécessité là où une RH est un théorème : courbes sur corps finis.",
+      "properties": "La positivité géométrique et les faux jumeaux séparent structure authentique et simple symétrie.",
+      "limitations_and_bifurcations": "Le transfert de cette géométrie à ζ n'est pas construit. Une marge nulle n'empêche pas la positivité.",
+      "sources": [
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_06",
+      "system": "Archipel d'Euler ; 27, 30, 38–45",
+      "question_and_path": "Déformer des fonctions de même équation fonctionnelle et suivre les sorties de la droite.",
+      "properties": "Rigidité dans les espaces précis de degré 1 ; îles et rencontres observées.",
+      "limitations_and_bifurcations": "Le corollaire de rigidité était déjà connu. Les lois universelles de hauteur, et l'extension au degré 2, ne résultent pas de la carte finie.",
+      "sources": [
+        "1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.md",
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md",
+        "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_07",
+      "system": "Chaînon et générateur ; 32–36",
+      "question_and_path": "Traduire comptages, traces, spectre et flot continu.",
+      "properties": "Reconstructions sans injecter les zéros cibles ; règles de passage discret/continu.",
+      "limitations_and_bifurcations": "L'opérateur seul ne suffit pas : la métrique positive et la complétude restent décisives. Le logarithme d'un opérateur exige aussi un choix de branche.",
+      "sources": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.md",
+        "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.md",
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_08",
+      "system": "Surface et Frobenius virtuels ; 46–54",
+      "question_and_path": "Chercher l'analogue de l'étage géométrique supérieur.",
+      "properties": "Des signatures et modèles algébriques de comparaison.",
+      "limitations_and_bifurcations": "Aucun objet géométrique suffisant pour ζ n'est construit. L'échec de la transplantation directe de Stepanov ferme ce modèle, avec conditions explicites de réouverture.",
+      "sources": [
+        "1_Presentation/46_LA_SURFACE_VIRTUELLE.md",
+        "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.md",
+        "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.md",
+        "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.md",
+        "1_Presentation/54_LE_TROU_A_TROIS_LU.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_09",
+      "system": "Jets, relief et certificats ; 56–61",
+      "question_and_path": "Distinguer multiplicativité, coefficients et mouvements des zéros.",
+      "properties": "Lemmatisation du rang ; témoin DH avec au moins 25 directions négatives dans une fenêtre, sous le budget déclaré.",
+      "limitations_and_bifurcations": "Une borne inférieure d'inertie n'est pas un compte exact. Les associations numériques entre défaut et sortie ne démontrent pas une causalité.",
+      "sources": [
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md",
+        "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.md",
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md",
+        "1_Presentation/61_ANCRAGE_APPARIE_V13.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_10",
+      "system": "A complexe, fibres et plis ; 63–66",
+      "question_and_path": "Fixer ancre, rayon et coefficient complexe avant de comparer.",
+      "properties": "Faisabilité par une ellipse ; fibres calculables ; à A=0, D est constant. Un pli et sa paire sont certifiés dans une boîte choisie.",
+      "limitations_and_bifurcations": "Le sens du déplacement dépend de la strate. Les passages entre toutes branches, toutes collisions et un A arbitraire ne sont pas réglés.",
+      "sources": [
+        "1_Presentation/63_CONTRAINTES_EXACTES_V13.md",
+        "1_Presentation/64_COMPARAISON_EXACTE_V13.md",
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_11",
+      "system": "Domaines et changement de métrique ; 67–70",
+      "question_and_path": "Construire des tests admissibles, une queue positive et un Schur effectif.",
+      "properties": "P, moments, parité, cœur dense, métrique logarithmique et réduction tête–queue.",
+      "limitations_and_bifurcations": "La marge uniforme en norme H¹ est exclue. La nouvelle métrique rend la réduction possible ; elle ne fournit pas le signe de la tête corrigée.",
+      "sources": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_12",
+      "system": "Legos et opérateur commun ; 71–75",
+      "question_and_path": "Payer ensemble tête, sources, queue et couplages.",
+      "properties": "Certificats locaux du dossier jusqu'à S=11/20 ; paiement multi-premiers et transport exact des supports.",
+      "limitations_and_bifurcations": "Le diagnostic au-delà de 1/2 a dû être séparé du certificat continu obtenu ensuite. Aucun de ces résultats ne couvre tous les supports.",
+      "sources": [
+        "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.md",
+        "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.md",
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.md",
+        "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.md",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_13",
+      "system": "Compensation signée et transport ; 76–79",
+      "question_and_path": "Revenir à la fluctuation première, puis chercher un transport positif conservant le barycentre.",
+      "properties": "Deux grammaires couvrantes ; bilans de réserve ; brique initiale ; gardes de coupures et obstructions précises.",
+      "limitations_and_bifurcations": "L'admissibilité de toutes les lignes et la loi de signe du profil réel restent ouvertes. Les gardes agrégées de rapport fixe échouent à grande échelle.",
+      "sources": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.md",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "chemin_14",
+      "system": "Corrélations, identité et énergie J ; complément courant",
+      "question_and_path": "Garder les positions et les coupures, identifier les vrais coefficients, borner une énergie globale.",
+      "properties": "Identité de diviseurs ; formule exacte de corrélation ancrée ; contre-modèles ; critère classique de Cramér.",
+      "limitations_and_bifurcations": "La borne globale J(X)=O(X²) reste à démontrer. Ce retour à une énergie retrouve un fil déjà cité dans 37/45.",
+      "sources": [
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "provenance": "Synthèse documentaire ; portée des résultats conservée",
+      "global_sign_proved": false
+    },
+    {
+      "id": "outil_01",
+      "system": "**Navigateur — 34**",
+      "function": "Comparer des coups avec question, témoin, garde, coût et prévision.",
+      "properties": "Les décisions et leurs raisons deviennent consultables.",
+      "limitations_and_corrections": "Ses scores sont conventionnels. Ils ne mesurent ni une distance à RH ni une probabilité de succès. Ses bilans ont été prolongés jusqu'au dossier courant.",
+      "sources": [
+        "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_02",
+      "system": "**Indicateur — 31**",
+      "function": "Situer sept dimensions : voir, comprendre, situer, degré 2, démontrer, case vide et croiser.",
+      "properties": "Les mesures, preuves et relectures occupent des niveaux distincts.",
+      "limitations_and_corrections": "Aucun pourcentage global de RH. La synchronisation actuelle ne relève aucun niveau de maturité.",
+      "sources": [
+        "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_03",
+      "system": "**Bellman documentaire — 62**",
+      "function": "Optimiser des livrables finis sous budget et prérequis.",
+      "properties": "Récursion exacte dans le modèle ; tokens partagés comptés une fois ; contrôles par énumération dans le dossier.",
+      "limitations_and_corrections": "L'union de tokens est sous-modulaire : elle représente mal les coups doubles qui n'existent qu'après jonction de deux constructions.",
+      "sources": [
+        "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.md"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_04",
+      "system": "**Bellman de contrats — 67**",
+      "function": "Représenter des obligations ET et des voies alternatives OU, avec issues favorables ou défavorables.",
+      "properties": "Une réfutation utile et une preuve positive reçoivent des statuts distincts. Les complémentarités peuvent être représentées.",
+      "limitations_and_corrections": "Les issues et les coûts restent déclarés. Un scénario ne peut créditer automatiquement RH ou le signe global.",
+      "sources": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_05",
+      "system": "**Bellman spectral — 62**",
+      "function": "Minimiser une trace sur des repères orthonormés.",
+      "properties": "Réécriture variationnelle de sommes de valeurs propres.",
+      "limitations_and_corrections": "Une trace négative ne compte pas les directions négatives ; cette écriture n'apporte pas seule une borne nouvelle.",
+      "sources": [
+        "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.md"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_06",
+      "system": "**Bellman de la forme — 67–70**",
+      "function": "Éliminer un bloc d'une forme quadratique.",
+      "properties": "Le complément de Schur identifie exactement la dette des couplages.",
+      "limitations_and_corrections": "La récursion devient mathématique ; le signe de chaque dette et les conditions de noyau restent à contrôler.",
+      "sources": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_07",
+      "system": "**Graphes — 65, 66, 67**",
+      "function": "Montrer respectivement passages, certificats et ponts de domaines.",
+      "properties": "Une implication, une expérience et une obligation manquante peuvent être distinguées.",
+      "limitations_and_corrections": "Un graphe ne prouve pas ses nœuds. Les graphes anciens gardent leur domaine ; la carte présente les relie au lieu de les fusionner.",
+      "sources": [
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "outil_08",
+      "system": "**Grammaire et Legos — 68–75**",
+      "function": "Faire circuler les tests avec support, moments, parité, norme et erreur.",
+      "properties": "Des transformations deviennent réutilisables ; la même erreur peut servir plusieurs contrats.",
+      "limitations_and_corrections": "Les jets d'un test ne sont pas les jets d'un zéro critique. Une opération qui préserve l'admissibilité ne préserve pas nécessairement le signe.",
+      "sources": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.md",
+        "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.md",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md"
+      ],
+      "provenance": "Fonction et trajectoire documentées ; pas de validation nouvelle de toutes les preuves"
+    },
+    {
+      "id": "v655_amplification",
+      "system": "Amplification arithmétique - V6.55",
+      "function": "Restituer la somme exacte depuis une famille et grouper la dette par conducteur.",
+      "properties": "Copies et restitution exactes ; stabilité ; tête q<=H contrôlée à toutes les échelles.",
+      "limitations_and_corrections": "Crible primitif exclut les copies carrées ; queue signée q>H ouverte ; implication vers 3/4 conditionnelle.",
+      "sources": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "3_Preuves_et_calculs/amplification_20261014/README.md"
+      ],
+      "provenance": "Preuves auxiliaires écrites et confrontées ; aucune borne globale nouvelle."
+    }
+  ],
+  "scoped_obstructions": [
+    {
+      "candidate": "TOMO-3 brut comme pont inédit vers la multiplicativité",
+      "reason": "Mauvaise variable de couplage ; dans le canal adapté, la fermeture redonne le défaut déjà défini.",
+      "remaining_scope": "D'autres statistiques et des corrélations qui gardent l'ancrage."
+    },
+    {
+      "candidate": "Produit d'Euler ou symétrie seuls comme garanties du signe",
+      "reason": "Témoins du dossier satisfaisant certains de ces traits sans le signe recherché.",
+      "remaining_scope": "L'identité complète de ζ avec une estimation quantitative supplémentaire."
+    },
+    {
+      "candidate": "Métrique positive non dégénérée du compagnon local au pli",
+      "reason": "Un bloc de Jordan non trivial ne peut être autoadjoint dans une métrique définie positive.",
+      "remaining_scope": "Une autre réalisation opératoire ou le signe global de Weil."
+    },
+    {
+      "candidate": "Marge strictement positive uniforme dans la norme H¹ à support fixé",
+      "reason": "L'opérateur représentant la forme y est compact, sur un espace de dimension infinie.",
+      "remaining_scope": "Une forme positive sans marge, ou une métrique différente."
+    },
+    {
+      "candidate": "Modèle continu corrigé B₀ positif sur tous supports",
+      "reason": "Familles admissibles donnant B₀ négatif aux grandes échelles.",
+      "remaining_scope": "La forme complète B₀ plus la fluctuation première signée."
+    },
+    {
+      "candidate": "Listes finies de phases ou préfixes matriciels comme contrôle universel",
+      "reason": "Réalignement des phases ; contre-opérateurs indiscernables sur un préfixe fini.",
+      "remaining_scope": "Une loi arithmétique couvrante et une queue contrôlée."
+    },
+    {
+      "candidate": "Blocs de transport de rapport fixe contrôlés seulement par masse et moment",
+      "reason": "La garde agrégée du document 79 devient négative sous le théorème des nombres premiers.",
+      "remaining_scope": "Le profil intérieur réel, un autre découpage ou une garde plus informative."
+    },
+    {
+      "candidate": "Forçage positif de Selberg ⇒ inversion positive générique",
+      "reason": "Contre-modèle exact avec réservoir exponentiel.",
+      "remaining_scope": "Une propriété supplémentaire propre aux vrais coefficients premiers."
+    },
+    {
+      "candidate": "Autocorrélation par écarts ⇒ signe de tous les potentiels",
+      "reason": "Deux configurations exactes de même masse, barycentre, bornes et paires ont des potentiels différents.",
+      "remaining_scope": "Les corrélations ancrées, qui conservent les positions absolues et les coupures."
+    },
+    {
+      "candidate": "Borne d'énergie d'une suite quelconque ⇒ signe du signal de Suzuki modifié",
+      "reason": "La suite a(n)=1, n≥2, a une énergie globalement bornée à l'échelle X² et un signal modifié négatif certifié.",
+      "remaining_scope": "Le transfert pour Λ, rendu valide par son identité arithmétique exacte."
+    }
+  ],
+  "reopened": [
+    "GPS/Kalman vers innovations de Levinson",
+    "Sources cachées vers contrôle de masse",
+    "Opérateur reconstruit depuis les premiers avec métrique encore ouverte",
+    "Compensation signée du document 70",
+    "Énergie classique J avec identité arithmétique et ancrage"
+  ],
+  "open_global_routes": [
+    "Weil : tout support et tout test admissible",
+    "Suzuki : signal spécifique à toutes les échelles",
+    "Cramér : J(X)=O(X^2) pour les vrais coefficients"
+  ],
+  "maturity_changed": false,
+  "latest_release": "V6.55"
+}

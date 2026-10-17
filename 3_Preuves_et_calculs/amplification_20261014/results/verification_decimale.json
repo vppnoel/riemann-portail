@@ -1,0 +1,168 @@
+{
+  "status": "diagnostics_only_no_infinite_bound",
+  "precision_decimal_digits": 70,
+  "gamma_input_digits": 100,
+  "identity_max_absolute_residual": "3.040E-66",
+  "identity_checks": [
+    {
+      "x": "1",
+      "residuals": {
+        "divisor_forward": "0E-69",
+        "mobius_inverse": "0E-69",
+        "remove_two": "0E-69",
+        "square_copy_p3": "0E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    },
+    {
+      "x": "1.4",
+      "residuals": {
+        "divisor_forward": "0E-69",
+        "mobius_inverse": "0E-69",
+        "remove_two": "0E-69",
+        "square_copy_p3": "0E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    },
+    {
+      "x": "2.7",
+      "residuals": {
+        "divisor_forward": "0E-69",
+        "mobius_inverse": "0E-69",
+        "remove_two": "0E-69",
+        "square_copy_p3": "0E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    },
+    {
+      "x": "10.3",
+      "residuals": {
+        "divisor_forward": "1.1E-68",
+        "mobius_inverse": "1.8E-68",
+        "remove_two": "1.8E-68",
+        "square_copy_p3": "0E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    },
+    {
+      "x": "31.25",
+      "residuals": {
+        "divisor_forward": "3.0E-68",
+        "mobius_inverse": "5.3E-68",
+        "remove_two": "5.3E-68",
+        "square_copy_p3": "2E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    },
+    {
+      "x": "100.75",
+      "residuals": {
+        "divisor_forward": "1.501E-66",
+        "mobius_inverse": "1.013E-66",
+        "remove_two": "1.013E-66",
+        "square_copy_p3": "2E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    },
+    {
+      "x": "257.125",
+      "residuals": {
+        "divisor_forward": "3.040E-66",
+        "mobius_inverse": "3.58E-67",
+        "remove_two": "3.58E-67",
+        "square_copy_p3": "0E-69",
+        "square_copy_p5": "0E-69",
+        "square_copy_p11": "0E-69",
+        "square_copy_p17": "0E-69"
+      }
+    }
+  ],
+  "conductor_reindexing": {
+    "x": "31.25",
+    "H": 31,
+    "direct_mean": "86.40322044015174288713548268368491950274940380996570233555849938161846",
+    "grouped_mean": "86.40322044015174288713548268368491950274940380996570233555849938161844",
+    "absolute_residual": "2E-68",
+    "diagonal_q1": "93.48167816839225511973649279488491818341565041059917170004030294681308",
+    "signed_debt_q_gt_1": "-7.07845772824051223260101011119999868066624660063346936448180356519464",
+    "different_q_group_signs": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "independent_affine_integrals": [
+    {
+      "X": 31,
+      "H": 31,
+      "Q_decimal": "1746.819520892697198021299205324046301427334530979701592291196523054398",
+      "D_decimal": "1791.605161547242728108549072452198861523939475934982538574478493545315",
+      "R_decimal": "-44.785640654545530087249867128152560096604944955280946283281970490917",
+      "grouping_residual": "0E-66",
+      "R_q_le_X": "-36.26623433857482495845340847881922022146859961873952903399907763940154",
+      "R_q_gt_X": "-8.519406315970705128796458649333339875136345336541417249282892851517241"
+    },
+    {
+      "X": 100,
+      "H": 100,
+      "Q_decimal": "59759.49215148351917804620472783559764982043092050712120295916084753149",
+      "D_decimal": "59828.48808274747475384516476885766999884604926494467091219136739835021",
+      "R_decimal": "-68.99593126395557579896004102207234902561834443754970923220655081872"
+    }
+  ],
+  "universal_countermodel": [
+    {
+      "D": 100,
+      "H": 100,
+      "prime_support_size": 10,
+      "exact_square_rows": 10,
+      "exact_square_energy": 1000,
+      "square_energy_over_primitive_scale": 0.5
+    },
+    {
+      "D": 1000,
+      "H": 1000,
+      "prime_support_size": 73,
+      "exact_square_rows": 31,
+      "exact_square_energy": 165199,
+      "square_energy_over_primitive_scale": 1.1315
+    },
+    {
+      "D": 10000,
+      "H": 10000,
+      "prime_support_size": 560,
+      "exact_square_rows": 100,
+      "exact_square_energy": 31360000,
+      "square_energy_over_primitive_scale": 2.8
+    },
+    {
+      "D": 100000,
+      "H": 100000,
+      "prime_support_size": 4459,
+      "exact_square_rows": 316,
+      "exact_square_energy": 6282927196,
+      "square_energy_over_primitive_scale": 7.04522
+    },
+    {
+      "D": 1000000,
+      "H": 1000000,
+      "prime_support_size": 36960,
+      "exact_square_rows": 1000,
+      "exact_square_energy": 1366041600000,
+      "square_energy_over_primitive_scale": 18.48
+    }
+  ],
+  "warning": "The countermodel uses a prime-only mask, not the exact B weight; it refutes a coefficient-blind estimate, not the special estimate for B."
+}

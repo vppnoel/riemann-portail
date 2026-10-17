@@ -1,0 +1,24 @@
+{
+  "version": "6.38",
+  "date": "2026-10-12",
+  "tests_total": 225,
+  "tests_passed": 225,
+  "tests_skipped": 0,
+  "new_tests": 6,
+  "bellman_configurations_checked": 972,
+  "client_configurations_checked": 972,
+  "exploratory_cost_scenarios_checked": 12,
+  "presentation_documents_indexed": 61,
+  "historical_stages": 44,
+  "pdf_pages": 15,
+  "pdf_qa": "All15 pages rendered and inspected; final bibliography page checked after source synchronization.",
+  "scope": "Documentary audit, targeted semantic reading, exact finite conditional planning; no independent review of every historical proof or external citation.",
+  "validation_provenance": "Full suite on extracted candidate archive; final source/portal/indicator checks after documentary bibliography updates.",
+  "sha256": {
+    "3_Preuves_et_calculs/src/bellman_research.py": "bfd0312a94acae3b4f8d8426360e709f92484a796ff1e02b5cfde5c9fc2d877d",
+    "3_Preuves_et_calculs/scripts/run_v638_bellman.py": "3e3ddfde4ec2329a6cd295062a7d791c8ab54e343b0b660f88013029ef1fa576",
+    "3_Preuves_et_calculs/data/v638_modele_bellman.json": "efb4cb0b10b6a4b6b9741590033913746769d6649870ca1120b4a260e9970d03",
+    "2_Methode/Outils/bellman_atlas_client.js": "22d8a718c1c0ad5a1bc0be356355ea4d7ec8be2c1a675067b1cf4fc656e5a225",
+    "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.pdf": "50a2c6a8f8551ae09541a7350d730cd6a32f3820b78b8883a0d93da0ea5e76d9"
+  }
+}

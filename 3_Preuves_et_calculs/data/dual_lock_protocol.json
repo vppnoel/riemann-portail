@@ -1,0 +1,21 @@
+{
+  "version": "V6.3",
+  "construction_uses_zeros": false,
+  "basis": "f_j(x)=(1-|x|/w)_+ cos(xi_j x)",
+  "dimension": 7,
+  "frequency_step": 0.6,
+  "screen_centers": [
+    0,
+    200,
+    1
+  ],
+  "apertures": [
+    2.5,
+    3.5
+  ],
+  "negative_screen_threshold": -1e-05,
+  "positive_control": "average explicit form of chi mod 5 and conjugate chi",
+  "adversarial_target": "Davenport-Heilbronn",
+  "posthoc_zero_file": "dh_zeros.csv",
+  "note": "Zeros are used only after the arithmetic/archimedean scan for validation."
+}

@@ -1,0 +1,12 @@
+PAQUET DE RECHERCHE 77–78
+
+Ouvrir 78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.pdf : preuves, visuel, statut et prochains verrous.
+La brique initiale non minimale est encadrée sans RH. Le signe global de Weil reste ouvert.
+
+Reproduction minimale : installer mpmath==1.3.0, puis exécuter les deux scripts
+initial_block_certificate.py et radial_reserve.py avec --corpus mini_corpus.
+Les scripts exploration sont des diagnostics à60 chiffres, pas des certificats par intervalles.
+Le vérificateur indépendant verifier_noyaux.py contrôle masse, moment, poids et partition.
+
+Dans le ZIP du corpus récupéré, RECUPERATION.html indique les sources historiques manquantes.
+Ce paquet de recherche est autonome pour les nouveaux calculs.

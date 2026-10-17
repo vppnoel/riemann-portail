@@ -1,0 +1,64 @@
+{
+  "version": "V6.35",
+  "date": "2026-10-12",
+  "tests": 202,
+  "reussis": 202,
+  "non_executes": 0,
+  "nouveaux_tests": 10,
+  "verification": "Suite complète sur une copie extraite de l’archive ; code, preuves et données identiques à ceux livrés. Dépendances mpmath 1.3.0 et sympy 1.14.0 rétablies avant la suite finale.",
+  "certificats_exacts": 5,
+  "comptages_directs": 12,
+  "pdf": {
+    "fichier": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+    "pages": 7,
+    "verification_visuelle": "Toutes les pages rendues ; formules, tableaux, figure et références inspectés."
+  },
+  "relectures": "Deux agents internes, constructif et critique ; aucune expertise humaine revendiquée.",
+  "portee": "Cubiques et corps finis impairs ; conséquence spectrale en genre un lisse. Transfert à la zêta des entiers ouvert.",
+  "fichiers": [
+    {
+      "fichier": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.md",
+      "sha256": "6edf4b03cbc79cdea1c40c2bf1e27a2c4aafcd8225df99b20f3a473863bada52"
+    },
+    {
+      "fichier": "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+      "sha256": "6758ce1f02ff269aaaa10d857aabcfebd04833ca6432b4958b2f11e10a5d16dd"
+    },
+    {
+      "fichier": "1_Presentation/59_Tour_et_spectre.png",
+      "sha256": "ba731b516576943438303bc9105d4555c121768a183a943d403fc384bce74406"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/preuves/LEMME_TOUR_ET_SPECTRE_V635.md",
+      "sha256": "433b9f34053e60444f1314c2424ed54a8b7c939dfeaf689bb3fe61f26d45bfd6"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/preuves/RELECTURE_INTERNE_V635.md",
+      "sha256": "45ac4af4b13e001ee95de16f77379a39755e0c93a315523d804a2a81952d4479"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/src/finite_field_jets.py",
+      "sha256": "f6be1410c56f36739851749a3eae389ac5475ba7e2d988867420bfe76859a9b2"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/src/v635_tour_et_spectre.py",
+      "sha256": "131af1dad8c39d4c086aeb66263e0d7580e25a239e781f5da3c0fc00ddb08f5a"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/tests/test_v635_tour.py",
+      "sha256": "d14c2cc630fe7314cca99263cac86e1631d31b7948e061510507d514a2ace5e0"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/data/v635_certificats.json",
+      "sha256": "17b5e7edf488413edcc257923f3b9f590ead6c45cb64574a853076951ba0ca50"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/data/v635_tour.json",
+      "sha256": "47ffce3dd04cfe8c338d7e063718c8abb8d458b4a9eb681423e5550043a7eaf2"
+    },
+    {
+      "fichier": "3_Preuves_et_calculs/data/v635_controles_avant_execution.json",
+      "sha256": "9f4f1b26adc18d3b84b0d309e6cfe9d8f400b28e1ee9bdccb124418b426802ae"
+    }
+  ]
+}

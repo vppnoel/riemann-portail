@@ -1,0 +1,17 @@
+{
+ "D1_spearman_T_D": -0.3117646293606195,
+ "spearman_T_distance": -0.4271135198962948,
+ "spearman_D_distance": 0.959493004657003,
+ "D2_partielle_T_D_sachant_d": 0.3848907339126067,
+ "D3_points_du_col": 283,
+ "D3_part_sous_la_mediane": 0.19081272084805653,
+ "defaut_aux_points_d_Euler": 3.806236748314098e-30,
+ "defaut_max": 1.789646476084138,
+ "exploratoire_apres_coup": {
+  "partielle_T_A1_sachant_d": 0.8059178767536113,
+  "partielle_D_A1_sachant_d": 0.6170141569048961,
+  "partielle_T_D_sachant_d_et_A1": -0.24119488517135224,
+  "A1_aux_points_d_Euler": 1.0,
+  "A1_max_sur_la_carte": 1.5448143387424937
+ }
+}
