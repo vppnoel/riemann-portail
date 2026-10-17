@@ -1,0 +1,23 @@
+Programme Riemann — V6.59, livraison du 17 octobre 2026
+
+Style de référence de Claude conservé ; portail et trois outils actifs.
+7 dimensions réévaluées ; 99 bilans conservés, 13 corrections ciblées.
+Bellman : contrats du document67, issues et enveloppes ; état attesté.
+69 idées stables, 79 relations, documents 1–79 et 72 cases reliées.
+110 figures avec identifiants permanents ; 176 références reliées aux trois articles.
+RH et loi de signe globale ouvertes ; aucun acquis global ajouté.
+Récupération :176 fichiers originaux de V6.50 réintégrés, dont les30 pièces recherchées.
+Deux références V6.51 restent absentes ; les versions récentes sont conservées.
+Menu commun : Bellman direct ; Documents → références, figures, articles et catalogue intégral.
+Trois cartes 2D liées des cibles ; sept courbes et sept échelles graphiques conservées.
+Compléments V651/V652/77/75 : deux rapports originaux ajoutés ;100 pièces archivées.
+
+Intégration complète : reconstruction V651 incluse et reliée ; originaux des compléments et variantes V654 préservés.
+
+V6.56 : incrément de livraison ; reprend intégralement la V6.55 finale avec audit et évaluation du coup double. Les publications datées et leurs numéros restent ceux de leur rédaction.
+
+V6.57 : contrôle de résolution adaptative et diagnostic de couplages, complément79. Certificat scalaire sur fenêtre déjà traitée ; signe global ouvert.
+
+V6.58 : document 80 (d'où vient le signe : comptage, degré ou carré, Modèle réduit, 4 prévisions justes) ; document 81 (Zhu reproduit par la forme de Weil en variable x, non certifié ; marge du noyau des moments ≈ 5·10⁻¹² à 0,8). RH ouverte.
+
+V6.59 : ciblage fusionné dans une méthode unique ; fiches de tâche pour répartir le travail entre l’auteur, des IA et des agents (document 82). Aucun résultat mathématique ; RH ouverte.

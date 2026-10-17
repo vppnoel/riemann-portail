@@ -1,0 +1,3417 @@
+{
+  "version": "V6.59",
+  "revision": "v659-ciblage-repartition-20261017",
+  "date": "2026-10-17",
+  "primary_pages": [
+    {
+      "id": "portail",
+      "label": "Portail",
+      "path": "00_PORTAIL.html"
+    },
+    {
+      "id": "indicateur",
+      "label": "Indicateurs",
+      "path": "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html"
+    },
+    {
+      "id": "navigateur",
+      "label": "Navigateur",
+      "path": "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+    },
+    {
+      "id": "carte",
+      "label": "Graphe des idées",
+      "path": "00_Carte_des_idees.html"
+    }
+  ],
+  "reviews": {
+    "voir": {
+      "reason": "Le niveau 4 reste justifié par les témoins ζ/L/DH et les contrôles reproduits. Les calculs nouveaux sont finis ; ils ne deviennent pas un mécanisme démontré d’interdiction des zéros. V6.58 : fenêtres de Zhu reproduites par une méthode indépendante, contrôlée par les zéros (doc. 81, non certifié). Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "change": "Une loi explicative démontrée dans un cadre où RH est connue ; distinguer ensuite son transfert à ζ.",
+      "dimension": "voir",
+      "level": 4,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "comprendre": {
+      "reason": "Les modèles sur corps finis expliquent une nécessité (niveau 5). P, Schur, les métriques et la tête de conducteurs sont prouvés sous leurs gardes ; aucun mécanisme global pour ζ ne justifie de promouvoir tout cet axe au niveau 6. Complément 76 : raccord H¹ et assemblage conditionnel ; le verrou arithmétique reste ouvert, niveau inchangé. Audit : normalisations raccordées ; candidat global imprimé suspendu pour incohérence de parité. Domaine positif couvrant conservé, domination ouverte. V6.57 : information de phase mesurée et résolution adaptative certifiée sur la fenêtre déjà traitée. Niveau global inchangé. V6.58 : le Modèle réduit localise la source du signe dans un carré (Rosati), ni comptage ni degré (doc. 80). Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ],
+      "change": "Un énoncé précis répondant à la nécessité du signe pour ζ, avec une preuve dans son domaine.",
+      "dimension": "comprendre",
+      "level": 5,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "situer": {
+      "reason": "La rigidité de l’Archipel est établie dans les espaces de degré 1 déclarés (niveau 6). Elle ne donne pas produit d’Euler ⇒ RH. Les témoins récents resserrent les conditions sans ajouter cette implication.",
+      "evidence": [
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "change": "Relecture spécialisée de ces énoncés et de leur périmètre ; pas une nouvelle compression positive.",
+      "dimension": "situer",
+      "level": 6,
+      "reviewed_on": "2026-10-15",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "degre2": {
+      "reason": "Les expériences sur Δ et les comparaisons de marges restent reproduites dans le dossier (niveau 4). Les travaux locaux et l’amplification de ζ ne sont pas une preuve nouvelle en degré 2.",
+      "evidence": [
+        "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md",
+        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md"
+      ],
+      "change": "Un mécanisme démontré dans un modèle pertinent de degré 2 ; l’Archipel de poids 24 reste une piste secondaire ouverte.",
+      "dimension": "degre2",
+      "level": 4,
+      "reviewed_on": "2026-10-15",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "demontrer": {
+      "reason": "Le corpus contient des énoncés auxiliaires avec preuves, dont la tête V6.55 (niveau 6). Une pré-relecture interne et un audit informatique ne remplacent pas la relecture externe du niveau 7. Complément 76 : raccord H¹ et assemblage conditionnel ; le verrou arithmétique reste ouvert, niveau inchangé. Audit : normalisations raccordées ; candidat global imprimé suspendu pour incohérence de parité. Domaine positif couvrant conservé, domination ouverte. V6.57 : information de phase mesurée et résolution adaptative certifiée sur la fenêtre déjà traitée. Niveau global inchangé.",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "change": "Un rapport de spécialiste identifié sur les énoncés retenus. Aucun envoi ni rapport n’est présumé.",
+      "dimension": "demontrer",
+      "level": 6,
+      "reviewed_on": "2026-10-16",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "case": {
+      "reason": "Le niveau 4 correspond aux instruments et certificats dans leurs domaines bornés. La loi de signe de la forme complète sur une famille couvrante n’est pas établie. Cette échelle ne mesure pas une fraction de RH. V6.58 : la marge du noyau des moments à S = 0,8 est mesurée (≈ 5·10⁻¹²) ; la positivité à 0,8 suit déjà du minorant certifié de Zhu, qui domine en portée les certificats 71–75. Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "change": "Construire puis valider le mécanisme global ; un accroissement du plafond local ne suffit pas.",
+      "dimension": "case",
+      "level": 4,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    },
+    "croiser": {
+      "reason": "Les identités de marge et les ponts entre domaines donnent un niveau 6 dans les cadres déclarés. Les nouvelles restitutions sont des ponts auxiliaires ; les corrélations signées et la couverture restent les obligations communes. Complément 76 : raccord H¹ et assemblage conditionnel ; le verrou arithmétique reste ouvert, niveau inchangé. Audit : normalisations raccordées ; candidat global imprimé suspendu pour incohérence de parité. Domaine positif couvrant conservé, domination ouverte. V6.57 : information de phase mesurée et résolution adaptative certifiée sur la fenêtre déjà traitée. Niveau global inchangé. V6.58 : trois niveaux de positivité transposés exactement entre courbes et ζ (doc. 80). Niveau inchangé.",
+      "evidence": [
+        "1_Presentation/40_LA_RENCONTRE_A_TROIS.md",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ],
+      "change": "Relecture spécialisée des croisements sélectionnés ; aucune hausse automatique au nombre de documents.",
+      "dimension": "croiser",
+      "level": 6,
+      "reviewed_on": "2026-10-17",
+      "review_kind": "Réévaluation documentaire des critères et de la portée ; preuves anciennes non toutes redémontrées, calculs anciens non tous rejoués."
+    }
+  },
+  "gates": [
+    {
+      "id": "arithmetique",
+      "title": "Arithmétique",
+      "nodes": [
+        "identity",
+        "fluctuation",
+        "anchoring",
+        "global_sign"
+      ],
+      "acquired": "Annulation polaire, fluctuation exacte, identité des poids et corrélations ancrées.",
+      "remaining": "Loi signée pour les vraies compensations, à toutes les échelles.",
+      "evidence": [
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "queue",
+      "title": "Tête et queue",
+      "nodes": [
+        "compact",
+        "local",
+        "head",
+        "large_q"
+      ],
+      "acquired": "Réduction identité moins compact, budgets de queue et tête de conducteurs contrôlée.",
+      "remaining": "Contrôle du complément dans la méthode choisie ; les grands conducteurs ne sont pas la queue spectrale.",
+      "evidence": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "couplages",
+      "title": "Couplages",
+      "nodes": [
+        "schur",
+        "transport",
+        "global_sign"
+      ],
+      "acquired": "Schur exact et sources du minorant certifiées dans les supports déclarés.",
+      "remaining": "Résidus uniformes ou estimation duale suffisante de la dette ; sources fortes de Q si cette voie est choisie.",
+      "evidence": [
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md"
+      ]
+    },
+    {
+      "id": "couverture",
+      "title": "Couverture",
+      "nodes": [
+        "domaines",
+        "coverage",
+        "weil_all"
+      ],
+      "acquired": "Familles denses, transports et grammaire à deux filtres.",
+      "remaining": "Signe sur toute la famille et convergence dans la norme de forme ; une densité seule ne prouve pas le signe.",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lemmes",
+      "title": "Lemmes 1 à 5",
+      "summary": "Identités exactes conservées ; elles définissent les coefficients sans imposer leur signe global.",
+      "status": "demontre",
+      "family": "Noyau initial",
+      "review": "Identités exactes conservées ; elles définissent les coefficients sans imposer leur signe global.",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md"
+      ],
+      "initial_detail_html": "\n  <p>Cinq identités exactes et inconditionnelles. Notations : <span class=\"m\">q = −ζ′/ζ = Σ Λ(n)n<sup>−s</sup></span>, <span class=\"m\">f = 1/ζ</span>, γ la constante d'Euler, γ₁ la première constante de Stieltjes.</p>\n  <h4>Lemme 1 : série génératrice</h4>\n  <p class=\"f\">c = Λ∗Λ − Λ·log + 2γΛ &nbsp;&nbsp;⟹&nbsp;&nbsp; G(s) = q² + q′ + 2γq = ζ·(f″ + 2γf′)</p>\n  <p>q² correspond à Λ∗Λ et q′ à −Λ·log. La seconde forme vient de f′ = fq, donc f″ = fq² + fq′.</p>\n  <h4>Lemme 2 : factorisation</h4>\n  <p class=\"f\">c = 1∗a, &nbsp; a(n) = μ(n)(log²n − 2γ log n)</p>\n  <p>C'est le pont vers Nyman–Beurling : C(x) s'écrit avec des parties fractionnaires pondérées par a.</p>\n  <h4>Lemme 3 : support</h4>\n  <ul>\n    <li><span class=\"m\">c(p<sup>k</sup>) = −log²p + 2γ log p</span></li>\n    <li><span class=\"m\">c(p<sup>a</sup>q<sup>b</sup>) = 2 log p · log q</span> pour p ≠ q</li>\n    <li>c(n) = 0 si n a au moins trois facteurs premiers distincts</li>\n  </ul>\n  <p>C'est le seul endroit où le produit d'Euler intervient. Aucun argument du programme n'exploite cette parcimonie.</p>\n  <h4>Lemme 4 : régularité en s = 1</h4>\n  <p>Avec ε = s − 1, <span class=\"m\">f = ε − γε² + (γ² + γ₁)ε³ + …</span>, donc f′(1) = 1 et f″(1) = −2γ. La combinaison f″ + 2γf′ s'annule en 1 et compense le pôle de ζ.</p>\n  <p class=\"f\">G(1) = 2γ² + 6γ₁ ≈ 0,2295</p>\n  <p>C'est la raison d'être du terme 2γΛ : sans lui, le pôle en 1 masquerait les zéros.</p>\n  <h4>Lemme 5 : pôles doubles</h4>\n  <p class=\"f\">G(s) = m(m+1)/(s−ρ)² + b<sub>ρ</sub>/(s−ρ) + …</p>\n  <p>Le coefficient m(m+1) est strictement positif pour tout zéro : aucun zéro n'est invisible pour G. Pour la fonction Λ₂ de Selberg, de série q² − q′, le coefficient m(m−1) s'annule aux zéros simples.</p>\n  <h4>Portée</h4>\n  <p>Ce sont des calculs élémentaires. Ils définissent proprement l'objet, ils n'apportent pas d'information nouvelle sur les zéros.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md\">LEMMES_RIGOUREUX.md</a> (L1 à L5).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/02_Article_court_EN.docx\">Article court</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-001"
+    },
+    {
+      "id": "thA",
+      "title": "Théorème A",
+      "summary": "Critère de croissance de Q conservé ; la borne suffisante depuis les premiers reste ouverte.",
+      "status": "demontre",
+      "family": "Noyau initial",
+      "review": "Critère de croissance de Q conservé ; la borne suffisante depuis les premiers reste ouverte.",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+      ],
+      "initial_detail_html": "\n  <p>Soit <span class=\"m\">C(x) = Σ<sub>n≤x</sub> c(n)</span>, <span class=\"m\">Q(X) = ∫₁<sup>X</sup> |C(x)|² x<sup>−2</sup> dx</span> et Θ la borne supérieure des parties réelles des zéros.</p>\n  <p class=\"f\">½ · limsup log(1 + Q(X)) / log X = Θ − ½</p>\n  <p>En particulier, RH équivaut à <span class=\"m\">Q(X) = X<sup>o(1)</sup></span>. L'énoncé est inconditionnel.</p>\n  <h4>Idée de la preuve</h4>\n  <ul>\n    <li>Si Q croît lentement, l'intégrale de Mellin donnant G(s)/s converge plus à gauche. Or G a un pôle double en chaque zéro, donc il n'y a pas de zéro dans cette région.</li>\n    <li>Réciproquement, la formule de Perron et un déplacement de contour donnent <span class=\"m\">C(x) ≪ x<sup>Θ+ε</sup></span>, donc une borne sur Q.</li>\n  </ul>\n  <h4>Lecture en temps logarithmique</h4>\n  <p>Avec u = log x, <span class=\"m\">Q(e<sup>L</sup>) = ∫₀<sup>L</sup> |e<sup>−u/2</sup> C(e<sup>u</sup>)|² du</span>. Le théorème dit que le taux de croissance exponentielle du signal normalisé, en moyenne quadratique, vaut Θ − ½. C'est un énoncé d'abscisse de convergence en moyenne quadratique, de type Paley–Wiener.</p>\n  <h4>Limite</h4>\n  <p>C'est une reformulation exacte de RH, pas une étape vers elle. Même la borne plus faible <span class=\"m\">Q(X) ≪ X<sup>1−δ</sup></span> donnerait Θ &lt; 1, ce qui est ouvert.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md\">LEMMES_RIGOUREUX.md</a> (L6) · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/SYNTHESIS_NOTE_EN.md\">SYNTHESIS_NOTE_EN.md</a> §3 · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-0, GAP-1).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/02_Article_court_EN.docx\">Article court</a> · <a class=\"doclink\" href=\"1_Presentation/03_Dossier_de_relecture_EN.docx\">Dossier de relecture</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n  <h4>Pré-relu en V6.13</h4>\n  <p>Preuve refaite pas à pas, aucune erreur. Trois retouches de rédaction (borne énoncée sur σ ≥ Θ + ε/4, référence exacte de Perron, attribution à Cramér et Montgomery–Vaughan plutôt qu'à Brent–Platt–Trudgian). Méthode standard : analogue au second ordre de la caractérisation de Θ par ψ(x) − x. À présenter comme une proposition, sans revendiquer de nouveauté.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf\">Document 37</a> · <a class=\"doclink\" href=\"1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md\">note de relecture (anglais)</a>.</p>\n<",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-002"
+    },
+    {
+      "id": "thB",
+      "title": "Théorème B",
+      "summary": "Asymptotique sous RH : calibration conditionnelle, pas démonstration de RH.",
+      "status": "conditionnel",
+      "family": "Noyau initial",
+      "review": "Asymptotique sous RH : calibration conditionnelle, pas démonstration de RH.",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/THEOREME_TERME_DOMINANT.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+      ],
+      "initial_detail_html": "\n  <p>Sous RH, avec <span class=\"m\">S = Σ<sub>ρ</sub> m²(m+1)²/|ρ|²</span> :</p>\n  <p class=\"f\">Q(X) ∼ (S/3)(log X)³</p>\n  <p>Pour des zéros simples, S = 4κ avec <span class=\"m\">κ = 2 + γ − log 4π ≈ 0,0462</span>.</p>\n  <h4>Preuve en six étapes</h4>\n  <ul>\n    <li>Borne a priori sous RH.</li>\n    <li>Mellin–Plancherel sur la droite Re s = ½ + η.</li>\n    <li>Contrôle de la queue des zéros hauts, uniforme en η.</li>\n    <li>Calcul local : chaque pôle double contribue en η<sup>−3</sup>.</li>\n    <li>Limite η → 0.</li>\n    <li>Théorème taubérien de Karamata pour revenir à Q(X).</li>\n  </ul>\n  <h4>Statut</h4>\n  <p>La preuve repose sur des faits classiques et n'a pas été relue par un spécialiste. C'est très probablement l'analogue, pour un pôle double, du théorème de moyenne quadratique de Cramér sur ψ(x) − x. Sa valeur tient à l'exactitude, pas à la nouveauté.</p>\n  <h4>Numérique</h4>\n  <p>Pour X jusqu'à 4·10⁶, Q mesurée vaut 0,44 à 0,72 fois le terme dominant. La convergence est lente parce que les termes en L² et L sont grands.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/THEOREME_TERME_DOMINANT.md\">THEOREME_TERME_DOMINANT.md</a> · <a class=\"doclink\" href=\"4_Archives/docs_techniques/PRIORITY_CHECK.md\">PRIORITY_CHECK.md</a>.</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/03_Dossier_de_relecture_EN.docx\">Dossier de relecture</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n  <h4>Pré-relu en V6.13</h4>\n  <p>Preuve refaite pas à pas, aucune erreur ; quatre retouches. Les paires de zéros proches ne touchent pas le terme dominant (η → 0 à hauteur fixée). Corollaire nouveau B′, à faire vérifier : sous RH, S ≥ 4κ, avec égalité si et seulement si tous les zéros sont simples. α corrigé : −0,3074 (au lieu de −0,264).</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf\">Document 37</a> · <a class=\"doclink\" href=\"1_Presentation/relecture/RELECTURE_THEOREME_B_EN.md\">note de relecture (anglais)</a>.</p>\n<",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-003"
+    },
+    {
+      "id": "propC",
+      "title": "Proposition C",
+      "summary": "Les hypothèses H1–H3 ne sont pas levées par les constructions récentes.",
+      "status": "conditionnel",
+      "family": "Noyau initial",
+      "review": "Les hypothèses H1–H3 ne sont pas levées par les constructions récentes.",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/H3_ANALYSIS.md"
+      ],
+      "initial_detail_html": "\n  <p>Après le terme en L³ (L = log X), on attendrait une constante fois L². Ce n'est pas le cas :</p>\n  <p class=\"f\">coefficient de L² = α + Φ(L), &nbsp; Φ presque périodique</p>\n  <p>Φ est une somme d'oscillations aux fréquences γ − γ′ et γ + γ′, c'est-à-dire des battements entre zéros. α et β sont des moyennes, pas des constantes ponctuelles.</p>\n  <h4>Ce qui est établi</h4>\n  <ul>\n    <li>Le développement local en η<sup>−3</sup>, η<sup>−2</sup>, η<sup>−1</sup> est prouvé et vérifié à quatre chiffres sur un modèle à 300 zéros.</li>\n    <li>Φ varie entre −0,032 et +0,027, avec une corrélation de 0,996 avec l'écart mesuré.</li>\n  </ul>\n  <h4>Ce qui reste conditionnel</h4>\n  <ul>\n    <li>H1 : RH et zéros simples.</li>\n    <li>H2 : convergence de Σ |b<sub>ρ</sub>|²/|ρ|², liée à une condition de moment de type Gonek.</li>\n    <li>H3 : contrôle des paires de zéros très proches. Cette hypothèse va au-delà de RH.</li>\n  </ul>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/ALPHA_BETA_ANALYSE.md\">ALPHA_BETA_ANALYSE.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/H3_ANALYSIS.md\">H3_ANALYSIS.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-3).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-004"
+    },
+    {
+      "id": "dh",
+      "title": "Davenport–Heilbronn",
+      "summary": "Ne distingue pas ζ",
+      "status": "obstacle",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>La fonction de Davenport–Heilbronn vérifie une équation fonctionnelle mais n'a pas de produit d'Euler, et elle a des zéros hors de la droite critique. Un cadre qui prétend prouver RH doit échouer sur elle.</p>\n  <h4>Résultat</h4>\n  <div class=\"tw\"><table>\n    <tr><th>Fonction</th><th>Pente de log Q / log X</th></tr>\n    <tr><td>ζ</td><td>0,33</td></tr>\n    <tr><td>L(s, χ₅)</td><td>0,34</td></tr>\n    <tr><td>Davenport–Heilbronn</td><td>0,56</td></tr>\n  </table></div>\n  <p>Le zéro hors ligne le plus à droite trouvé jusqu'à t = 200 est 0,8085 + 85,699i, ce qui prédit une pente de 0,62.</p>\n  <h4>Lecture</h4>\n  <p>Q détecte les zéros hors ligne de façon générique. Le test ne départage donc pas le cadre : rien dans Q n'utilise le produit d'Euler de manière irréversible. Il manque une inégalité qui serait vraie pour ζ et fausse pour cette fonction.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/DAVENPORT_HEILBRONN_TEST.md\">DAVENPORT_HEILBRONN_TEST.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-4).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/01_SYNTHESE_FR.pdf\">Synthèse</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-005"
+    },
+    {
+      "id": "ff",
+      "title": "Corps de fonctions",
+      "summary": "Le modèle réduit éclaire une vraie positivité géométrique ; son transfert à ζ manque.",
+      "status": "mesure",
+      "family": "Modèles et nécessité",
+      "review": "Le modèle réduit éclaire une vraie positivité géométrique ; son transfert à ζ manque.",
+      "evidence": [
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md"
+      ],
+      "initial_detail_html": "\n  <p>Pour les courbes sur un corps fini, RH est un théorème (Weil). La preuve repose sur trois ingrédients : la rationalité de la fonction zêta, la tour d'extensions du corps de base, et une positivité géométrique sur la surface C × C (théorème de l'indice de Hodge).</p>\n  <h4>Ce que le cadre Q en contient</h4>\n  <ul>\n    <li>Pas de finitude : il y a une infinité de zéros.</li>\n    <li>Pas de tour d'extensions.</li>\n    <li>Une positivité de type Parseval, automatique, donc sans contenu.</li>\n  </ul>\n  <p>Q est le carré de la formule explicite. Le critère de Weil porte sur la formule explicite appliquée à un carré. Le contenu de RH est un signe que Q ne voit pas.</p>\n  <h4>Démonstration numérique</h4>\n  <p>Sur les courbes elliptiques de 𝔽₁₀₁, l'analogue de Q croît en M³ quand la borne de Hasse est respectée, et exponentiellement pour un cas fictif qui la viole. Mais ce cas n'apparaît sur aucune des 10 100 courbes lisses : c'est la géométrie qui l'interdit, pas Q.</p>\n  <p>Q est un thermomètre, pas une interdiction.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/MEMO_P2_2_WEIL.md\">MEMO_P2_2_WEIL.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/scripts/run_function_field_analog.py\">run_function_field_analog.py</a>.</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/01_SYNTHESE_FR.pdf\">Synthèse</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-006"
+    },
+    {
+      "id": "dens",
+      "title": "Densité de zéros",
+      "summary": "Aucun gain",
+      "status": "obstacle",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Un cadre utile devrait au moins retrouver un résultat inconditionnel connu sur le nombre N(σ, T) de zéros de partie réelle supérieure à σ.</p>\n  <h4>Trois routes essayées</h4>\n  <ul>\n    <li>Plancherel n'est valable que sur les droites à droite de Θ : l'argument est circulaire.</li>\n    <li>L'énergie d'une fenêtre de fréquences ne se minore pas par un sous-ensemble de zéros, car les fréquences voisines ne sont pas orthogonales.</li>\n    <li>Les sommes partielles de G sont, à une contrainte près, le carré d'un polynôme de Dirichlet sur les premiers.</li>\n  </ul>\n  <h4>Conclusion</h4>\n  <p>Les trois routes ramènent aux grandes valeurs de polynômes de Dirichlet, c'est-à-dire à la technologie classique (Halász–Montgomery, Huxley, Guth–Maynard). Le meilleur exposant connu est 30/13, contre 2 pour l'hypothèse de densité. Le cadre n'offre aucun mécanisme pour l'améliorer.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/MEMO_P2_3_DENSITE.md\">MEMO_P2_3_DENSITE.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-5).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/01_SYNTHESE_FR.pdf\">Synthèse</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-007"
+    },
+    {
+      "id": "arret",
+      "title": "Arrêt de l'attaque directe",
+      "summary": "Arrêt de l’ancienne attaque non discriminante sur Q ; les identités de calibration restent utiles. La route arithmétique signée est active.",
+      "status": "obstacle",
+      "family": "Obstructions circonscrites",
+      "review": "Arrêt de l’ancienne attaque non discriminante sur Q ; les identités de calibration restent utiles. La route arithmétique signée est active.",
+      "evidence": [
+        "1_Presentation/13_Lecon_2026.pdf",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "initial_detail_html": "\n  <p>Avant toute reprise d'une attaque directe, le cadre devait passer trois contrôles fixés à l'avance :</p>\n  <ul>\n    <li>Davenport–Heilbronn : identifier un usage irréversible du produit d'Euler.</li>\n    <li>Corps de fonctions : identifier une positivité réellement restrictive.</li>\n    <li>Densité de zéros : retrouver un résultat connu sans réimporter toute la technologie classique.</li>\n  </ul>\n  <h4>Verdict</h4>\n  <p>Les tests 2 et 3 échouent. Le test 1 ne distingue pas le cadre. La règle d'arrêt est déclenchée : les résultats du noyau sont conservés comme matériel de calibration, et l'attaque directe de RH est arrêtée.</p>\n  <p>L'audit de la version 4.3 a appliqué la même règle aux branches ajoutées ensuite (localisation de sources, Schrödinger, générateur arithmétique), conservées comme diagnostics.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/SYNTHESIS_NOTE_EN.md\">SYNTHESIS_NOTE_EN.md</a> §8 · <a class=\"doclink\" href=\"4_Archives/docs_techniques/AUDIT_V4_3.md\">AUDIT_V4_3.md</a> · <a class=\"doclink\" href=\"4_Archives/docs_techniques/USER_CORRECTIONS_2026-10-04.md\">USER_CORRECTIONS_2026-10-04.md</a>.</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/01_SYNTHESE_FR.pdf\">Synthèse</a> · <a class=\"doclink\" href=\"1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf\">Cheminement intellectuel (PDF)</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-008"
+    },
+    {
+      "id": "relecture",
+      "title": "Relecture externe de A et B",
+      "summary": "Dossier prêt ; aucune relecture externe n’est enregistrée. La préparation et le rapport humain restent distincts.",
+      "status": "ouvert",
+      "family": "Outils de conduite",
+      "review": "Dossier prêt ; aucune relecture externe n’est enregistrée. La préparation et le rapport humain restent distincts.",
+      "evidence": [
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/03_Dossier_de_relecture_EN.docx"
+      ],
+      "initial_detail_html": "\n  <p>C'est l'axe 1 du plan d'impact, et le seul dont tout le reste dépend. Depuis la V6.13, les Théorèmes A et B et la note sur l'Archipel ont été pré-relus en interne (trois relectures indépendantes, aucune erreur dans A ni B). La relecture par un spécialiste reste à faire.</p>\n  <h4>Ce qu'il faut envoyer</h4>\n  <ul>\n    <li>Le dossier <span class=\"m\">1_Presentation/relecture/</span> : une page d'entrée et trois notes autonomes en anglais.</li>\n    <li>Le message d'accompagnement (document 37, annexe). L'ancien dossier 03 et le message 05 sont remplacés.</li>\n  </ul>\n  <h4>Ce qu'il faut demander</h4>\n  <ul>\n    <li>Théorème A : la majoration est-elle complète, et quelle référence citer ?</li>\n    <li>Théorème B : existe-t-il déjà, pour ψ ou pour des pôles d'ordre k ? Le corollaire B′ est-il juste et connu ?</li>\n    <li>Archipel : l'attribution à Saias–Weingartner est-elle la bonne ? La rigidité au premier ordre est-elle connue en degré 2 ?</li>\n  </ul>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/relecture/00_READ_ME_FIRST_EN.md\">Page d'entrée du dossier</a> · <a class=\"doclink\" href=\"1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf\">Document 37</a> · <a class=\"doclink\" href=\"2_Methode/Plan_d_impact.md\">Plan_d_impact.md</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-009"
+    },
+    {
+      "id": "weil",
+      "title": "Formule explicite de Weil",
+      "summary": "Dualité premiers, zéros",
+      "status": "classique",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Pour une fonction test h paire et sa transformée de Fourier g, la formule relie une somme sur les zéros ρ = ½ + iγ à une somme sur les puissances de nombres premiers :</p>\n  <p class=\"f\">Σ<sub>γ</sub> h(γ) = h(i/2) + h(−i/2) − g(0) log π + (1/2π) ∫ h(r) Re Γ′/Γ(¼ + ir/2) dr − 2 Σ<sub>n</sub> Λ(n) n<sup>−1/2</sup> g(log n)</p>\n  <h4>Ce qu'elle dit</h4>\n  <ul>\n    <li>Les hauteurs γ jouent le rôle de fréquences, les log p celui de positions dans la variable u = log x.</li>\n    <li>Elle est inconditionnelle : RH ne porte que sur la nature des fréquences.</li>\n    <li>Il faut une fonction test analytique dans une bande, car le pôle de ζ produit un terme en e<sup>|t|/2</sup> : la distribution brute n'est pas tempérée.</li>\n  </ul>\n  <h4>Place dans le programme</h4>\n  <p>La formule explicite avec 300 zéros reproduit Q mesurée à environ 5 % près. Cela valide les identités et l'implémentation, pas RH.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide_de_lecture_intuitif.docx</a> §11 · <a class=\"doclink\" href=\"3_Preuves_et_calculs/src/explicit_formula.py\">src/explicit_formula.py</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-010"
+    },
+    {
+      "id": "nb",
+      "title": "Nyman–Beurling",
+      "summary": "Même constante κ",
+      "status": "classique",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Le critère de Nyman–Beurling, renforcé par Báez-Duarte, traduit RH en un problème d'approximation dans un espace de Hilbert : RH équivaut à d<sub>N</sub> → 0, où d<sub>N</sub> est la distance de la fonction indicatrice de (0,1) à l'espace engendré par les dilatations de la partie fractionnaire.</p>\n  <h4>Lien avec le programme</h4>\n  <p>Bettin, Conrey et Farmer montrent, sous RH et une condition de moment, que <span class=\"m\">d<sub>N</sub>² ∼ κ / log N</span> avec la même constante κ = 2 + γ − log 4π. Les deux objets diagonalisent la même somme Σ 1/|ρ|².</p>\n  <div class=\"tw\"><table>\n    <tr><th>N</th><th>d<sub>N</sub>² · log N</th><th>Rapport à κ</th></tr>\n    <tr><td>10</td><td>0,0547</td><td>1,185</td></tr>\n    <tr><td>50</td><td>0,0464</td><td>1,005</td></tr>\n    <tr><td>100</td><td>0,0469</td><td>1,016</td></tr>\n  </table></div>\n  <h4>Limite</h4>\n  <p>κ n'est pas une découverte du programme : c'est la constante de Burnol et de Bettin–Conrey–Farmer. Aucune constante nouvelle ni équivalence nouvelle n'est revendiquée.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/NB_GRAM.md\">NB_GRAM.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/COMPARAISON_BCF.md\">COMPARAISON_BCF.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/BIBLIO_POSITIONNEMENT.md\">BIBLIO_POSITIONNEMENT.md</a>.</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-011"
+    },
+    {
+      "id": "li",
+      "title": "Critère de Li",
+      "summary": "Identité κ = 2λ₁",
+      "status": "classique",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Le critère de Li (1997, complété par Bombieri et Lagarias) est une équivalence rigoureuse. On pose</p>\n  <p class=\"f\">λ<sub>n</sub> = Σ<sub>ρ</sub> [1 − (1 − 1/ρ)<sup>n</sup>]</p>\n  <p>RH équivaut à λ<sub>n</sub> ≥ 0 pour tout n ≥ 1.</p>\n  <h4>Lien avec le programme</h4>\n  <p>Le premier coefficient vaut <span class=\"m\">λ₁ = Σ 1/ρ = 1 + γ/2 − ½ log 4π ≈ 0,0231</span>. Comme <span class=\"m\">κ = Σ 1/(ρ(1−ρ)) = 2 Σ 1/ρ</span>, on a l'identité exacte κ = 2λ₁.</p>\n  <h4>Limite</h4>\n  <p>Cette identité ne concerne que n = 1, qui est positif sans condition. Le contenu de RH est dans les λ<sub>n</sub> pour n grand, que le programme ne touche pas.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide_de_lecture_intuitif.docx</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-012"
+    },
+    {
+      "id": "energyD",
+      "title": "Dimension énergétique / fractal strings",
+      "summary": "D_E = Θ ; RH ⇔ D_E = 1/2",
+      "status": "outil",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>On associe à l'énergie une zêta de Mellin positive :</p>\n  <p class=\"f\">Z<sub>E</sub>(s) = ∫₁<sup>∞</sup> |C(x)|² x<sup>−1−2s</sup> dx</p>\n  <p>Elle est la zêta géométrique d'une <em>generalized fractal string</em> positive obtenue en poussant la mesure |C(x)|² dx/x par y=x².</p>\n  <h4>Résultat exact</h4>\n  <p class=\"f\">D<sub>E</sub> = Θ, &nbsp;&nbsp; donc &nbsp;&nbsp; RH ⇔ D<sub>E</sub> = 1/2.</p>\n  <p>C'est une reformulation rigoureuse du Théorème A. Elle ne force pas la dimension à 1/2 : il faut encore une propriété arithmétique supplémentaire.</p>\n  <h4>Retour au Théorème B</h4>\n  <p>Pour s=1/2+η, Z<sub>E</sub>(s)=Q<sub>η</sub>. Sous RH, Z<sub>E</sub>(1/2+η) ~ S/(4η³), donc le bord de dimension 1/2 porte une singularité abélienne cubique.</p>\n  <h4>Dimensions complexes du modèle fini</h4>\n  <p class=\"f\">ω<sub>jk</sub> = (ρ<sub>j</sub> + ρ<sub>k</sub>)/2</p>\n  <p>Sous RH, toutes ces valeurs ont Re ω=1/2. Une paire synthétique 0,63±7i produit un pôle réel à 0,63. Cela relie les battements de la Proposition C aux dimensions complexes de l'énergie.</p>\n  <h4>Tests v5.2</h4>\n  <ul>\n    <li>Z<sub>E</sub>(1/2+η)=Q<sub>η</sub> vérifié à la précision machine.</li>\n    <li>Formule méromorphe du modèle fini validée contre quadrature directe : erreur ≈1,6×10<sup>−10</sup>.</li>\n    <li>43/43 tests passent.</li>\n    <li>Davenport–Heilbronn donne D<sub>eff</sub>≈0,781 à l'échelle calculée : la dimension détecte bien le hors-ligne mais ne l'interdit pas.</li>\n  </ul>\n  <h4>Question active</h4>\n  <p>Trouver une propriété de la mesure d'énergie, issue du produit d'Euler ou d'une positivité non automatique, vraie pour ζ mais fausse pour Davenport–Heilbronn, et assez forte pour imposer D<sub>E</sub>≤1/2.</p>\n  <p class=\"src\"><strong>Sources internes.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/ENERGY_FRACTAL_DIMENSION.md\">ENERGY_FRACTAL_DIMENSION.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/src/energy_dimension.py\">energy_dimension.py</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/scripts/run_energy_dimension.py\">run_energy_dimension.py</a>.</p>\n  <div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/08_Dimension_energie_fractale.md\">Note dimension/énergie</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n  <div class=\"links\"><strong>Littérature.</strong> <a class=\"doclink\" href=\"https://arxiv.org/abs/1210.0882\">Herichi–Lapidus, spectral operator</a> · <a class=\"doclink\" href=\"https://link.springer.com/book/10.1007/978-1-4614-2176-4\">Lapidus–van Frankenhuijsen, fractal strings</a></div>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-013"
+    },
+    {
+      "id": "darkz",
+      "title": "DARK-ZETA",
+      "summary": "Toujours utile : repérer ce que carré, moyenne et corrélation perdent ; les coupures et positions absolues doivent être gardées.",
+      "status": "outil",
+      "family": "Instruments réutilisés",
+      "review": "Toujours utile : repérer ce que carré, moyenne et corrélation perdent ; les coupures et positions absolues doivent être gardées.",
+      "evidence": [
+        "1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md",
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "initial_detail_html": "\n  <p><strong>DARK-ZETA</strong> n'introduit aucune entité cachée : c'est un cadre d'observabilité. La question est de savoir quelle information discriminante est détruite par le carré, la norme, la moyenne ou la covariance.</p>\n  <p class=\"f\">énergie → covariance/TOMO-2 → phase/TOMO-3 → PRIME-LOCK → DUAL-LOCK</p>\n  <p>Le premier détecteur a été construit avec ζ, L(s,χ₅), Davenport–Heilbronn, phases randomisées et témoins complètement multiplicatifs.</p>\n  <p class=\"src\"><strong>Sources internes.</strong> <a class=\"doclink\" href=\"1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md\">Cadre DARK-ZETA</a> · <a class=\"doclink\" href=\"1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md\">Premier détecteur</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-014"
+    },
+    {
+      "id": "tomo2",
+      "title": "TOMO-2",
+      "summary": "Survit comme diagnostic de puissance inter-échelles",
+      "status": "outil",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>TOMO-2 utilise la matrice de Gram des translations logarithmiques du signal g(u)=e<sup>−u/2</sup>C(e<sup>u</sup>). Avec translations circulaires, elle dépend exactement du spectre de puissance.</p>\n  <p>Le contrôle à phases randomisées redonne la même matrice à ~10<sup>−15</sup>, comme exigé. Sur la trajectoire χ₅→DH, son entropie suit fortement le défaut multiplicatif (ρ de Spearman ≈ 0,88–0,96 selon l'échelle).</p>\n  <p><strong>Limite :</strong> les témoins Steinhaus ont un défaut multiplicatif nul mais des entropies très différentes. TOMO-2 n'est donc pas un invariant universel de multiplicativité.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md\">Résultats</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/DARK_ZETA_DETECTOR.md\">Note technique</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-015"
+    },
+    {
+      "id": "tomo3",
+      "title": "TOMO-3 brut",
+      "summary": "Le bispectre brut ne force pas la multiplicativité. Cela ne ferme pas les corrélations ancrées et leurs poids arithmétiques.",
+      "status": "diagnostic",
+      "family": "Obstructions circonscrites",
+      "review": "Le bispectre brut ne force pas la multiplicativité. Cela ne ferme pas les corrélations ancrées et leurs poids arithmétiques.",
+      "evidence": [
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "initial_detail_html": "\n  <p>TOMO-3 teste la fermeture de phase par bicoherence entre fréquences k, l et k+l. Le premier protocole ne confirme pas le pont naïf entre multiplicativité et bispectre du signal agrégé C<sub>F</sub>.</p>\n  <p>La corrélation avec le défaut multiplicatif change de signe ou disparaît avec l'échelle. Les valeurs observées restent proches du nul obtenu par 32 surrogats à phases randomisées.</p>\n  <p><strong>Décision V6 :</strong> ne pas escalader automatiquement à TOMO-4/TOMO-5 ; changer de canal et tester des couplages inter-canaux arithmétiques.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md\">Premier détecteur</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-016"
+    },
+    {
+      "id": "primelock",
+      "title": "PRIME-LOCK",
+      "summary": "Verrou local premiers / puissances de premiers validé comme détecteur eulérien",
+      "status": "outil",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p><strong>PRIME-LOCK</strong> résout la dérivée logarithmique en trois canaux : nombres premiers, puissances supérieures de premiers et fuite hors puissances de premiers.</p>\n  <p>À N=32768, la fuite vaut ~10<sup>−31</sup> pour ζ et L(s,χ₅), mais ≈0,9106 pour Davenport–Heilbronn. Le défaut local de tour vaut ≈0,7976 pour DH.</p>\n  <p>Une eulérisation qui conserve les valeurs aux premiers mais impose le verrou de degré 1 rend le signal global DH presque décorrélé de l'original (cohérence ≈0,075). Les témoins Steinhaus passent cependant le verrou exactement : PRIME-LOCK détecte la structure eulérienne locale, pas RH.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/18_PRIME_LOCK_premier_verrou_local.md\">Résultats PRIME-LOCK</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/PRIME_LOCK_DETECTOR.md\">Note technique</a> · <a class=\"doclink\" href=\"1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md\">Les quatre coins (V6.3d)</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-017"
+    },
+    {
+      "id": "duallock",
+      "title": "DUAL-LOCK",
+      "summary": "Compression local/global testée ; V6.3a : confirmation par problème généralisé Mv=λGv",
+      "status": "outil",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p><strong>DUAL-LOCK</strong> est maintenant exécuté : une compression finie de la forme explicite combine intrinsèquement terme archimédien, conducteur/pôle et dérivée logarithmique locale.</p>\n  <p>Sans utiliser les zéros dans la construction, le scan produit des directions négatives pour Davenport–Heilbronn près de 86, 113, 167 et 176, tandis que le contrôle eulérien apparié L(s,χ₅) reste positif sur les témoins confirmés. Les zéros DH sont comparés seulement post hoc.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/19_DUAL_LOCK_plan_local_global.md\">Plan</a> · <a class=\"doclink\" href=\"1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md\">Résultats V6.3</a> · <a class=\"doclink\" href=\"1_Presentation/22_AUDIT_V6_3A_INSTRUMENT_DUAL_LOCK.md\">Audit V6.3a</a> · <a class=\"doclink\" href=\"1_Presentation/23_AUDIT_V6_3B_FORMULE_EXPLICITE.md\">Audit V6.3b/c</a> · <a class=\"doclink\" href=\"1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md\">Classement V6.3d</a> · <a class=\"doclink\" href=\"1_Presentation/25_Atlas_metaphores_physique_mathematique_V6.pdf\">Atlas des métaphores</a> · <a class=\"doclink\" href=\"1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.md\">Seuil τ_c (V6.4)</a> · <a class=\"doclink\" href=\"1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.md\">Point d'Euler (V6.5)</a> · <a class=\"doclink\" href=\"1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md\">Modèle réduit (V6.6)</a> · <a class=\"doclink\" href=\"1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md\">Marge de la forme et de l'objet (V6.7)</a> · <a class=\"doclink\" href=\"1_Presentation/30_ARCHIPEL_D_EULER.md\">Archipel d'Euler (V6.8)</a> · <a class=\"doclink\" href=\"1_Presentation/31_INDICATEUR_D_AVANCEMENT.html\">Indicateur d'avancement (V6.8.1)</a> · <a class=\"doclink\" href=\"1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md\">Le chaînon (V6.9)</a> · <a class=\"doclink\" href=\"1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.md\">Le générateur des premiers (V6.10)</a> · <a class=\"doclink\" href=\"1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html\">Navigateur de recherche (V6.10)</a> · <a class=\"doclink\" href=\"1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.md\">La base comme pas de temps (V6.11)</a> · <a class=\"doclink\" href=\"1_Presentation/36_LES_IDEES_REJETEES_RELUES.md\">Les idées rejetées relues (V6.12)</a> · <a class=\"doclink\" href=\"1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md\">Pré-relecture (V6.13)</a> · <a class=\"doclink\" href=\"1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md\">Le temps de Heisenberg (V6.14)</a> · <a class=\"doclink\" href=\"1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md\">Le degré 2 et le recensement (V6.15)</a> · <a class=\"doclink\" href=\"1_Presentation/40_LA_RENCONTRE_A_TROIS.md\">La Rencontre à trois (V6.16)</a> · <a class=\"doclink\" href=\"1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md\">La Rencontre en degré 2 (V6.17)</a> · <a class=\"doclink\" href=\"1_Presentation/42_REGISTRE_DES_SOURCES.md\">Registre des sources (V6.18)</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-018"
+    },
+    {
+      "id": "darkres",
+      "title": "Résidu sombre",
+      "summary": "Cancellation confirmée qualitativement ; quantification révisée dans la métrique de Gram",
+      "status": "outil",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p><strong>Résidu sombre</strong> : après audit V6.3a, la cancellation reste visible mais doit être mesurée sur le vecteur propre généralisé normalisé par la matrice de Gram. Un faux second mode négatif à T=176 a été retiré.</p>\n  <p>Exemple DH à T=167 : +4,16895 + 0,43824 − 4,74011 = −0,13292. Le signe final représente ≈1,4 % de l'échelle absolue des contributions, soit une amplification de cancellation ≈70×.</p>\n  <p>Le mécanisme est stable au premier sweep de quadrature. Ce n'est pas une énergie physique ni un critère de RH : c'est un diagnostic d'observabilité et de sensibilité du signe.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/20_Registre_metaphores_V6.md\">Registre des métaphores</a> · <a class=\"doclink\" href=\"1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md\">Résultats</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/DARK_RESIDUAL.md\">Définition technique</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-019"
+    },
+    {
+      "id": "tauc",
+      "title": "V6.4Seuil τ_c",
+      "summary": "Existe, mais n'est pas un invariant",
+      "status": "obstacle",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Test prioritaire de l'Atlas des métaphores : un seuil τ_c où la compression de Weil change de signe. Il existe, il est unique et reproductible, mais il dépend de la fenêtre, de la dimension et de la largeur, et tend vers 0 quand le support s'élargit. Ce n'est pas un invariant.</p><p>La carte (τ, δ) est une translation exacte de la courbe à une dimension : le seuil suit les zéros hors droite, pas le produit d'Euler. Correctif en V6.7 : la décroissance vient de la forme, pas de l'objet.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.pdf\">Document 26</a> · <a class=\"doclink\" href=\"1_Presentation/25_Atlas_metaphores_physique_mathematique_V6.pdf\">Atlas des métaphores</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-020"
+    },
+    {
+      "id": "mod7",
+      "title": "V6.5Famille modulo 7",
+      "summary": "RH seulement près du point d'Euler",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Une famille modulo 7 à équation fonctionnelle constante, avec un produit d'Euler seulement au point θ = 0. Sur 958 zéros jusqu'à t = 1 000, tous restent sur la droite seulement pour θ dans [−0,0096 ; +0,072], et cette plage se referme avec la hauteur.</p><p>Les sorties de la droite se font par rencontre de paires. Au point d'Euler, aucun zéro à droite de Re s = 1 ; ailleurs, des dizaines.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.pdf\">Document 27</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-021"
+    },
+    {
+      "id": "modred",
+      "title": "V6.6Le Modèle réduit",
+      "summary": "Courbes sur F_q : la signature d'une nécessité démontrée",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ],
+      "initial_detail_html": "\n  <p>Courbes hyperelliptiques sur F₃, F₅, F₇, où RH est un théorème (Weil). 425 courbes puis 525 : comptages recoupés à l'unité ; positivité de Castelnuovo exacte. 220 faux jumeaux (équation fonctionnelle, produit d'Euler, RH fausse) sont démasqués à un étage fini.</p><p>La signature d'une nécessité démontrée tient en quatre traits ; ζ présente les trois premiers. Le quatrième, la positivité imposée par un objet d'un étage au-dessus (la surface C×C), est la case vide.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf\">Document 28</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-022"
+    },
+    {
+      "id": "marges",
+      "title": "V6.7Marges de la forme et de l'objet",
+      "summary": "La nécessité interdit le passage",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Deux marges : celle de la forme (la fenêtre de Weil), exactement nulle au-delà du nombre de zéros ; celle de l'objet, positive et fixée par la paire de zéros la plus serrée. Loi d'inertie : à la fenêtre 2g, les directions négatives comptent la moitié des zéros hors droite.</p><p>Lecture : là où RH est démontrée, la nécessité n'éloigne pas les objets du bord, elle interdit le passage.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf\">Document 29</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-023"
+    },
+    {
+      "id": "archipel",
+      "title": "V6.8L'Archipel d'Euler",
+      "summary": "Rigidité dans V_q et sens RH ⇒ Euler conservés ; aucune réciproque globale pour ζ.",
+      "status": "demontre",
+      "family": "Modèles et nécessité",
+      "review": "Rigidité dans V_q et sens RH ⇒ Euler conservés ; aucune réciproque globale pour ζ.",
+      "evidence": [
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+      ],
+      "initial_detail_html": "\n  <p>Dans les espaces V_q de combinaisons de L(s, χ) à même équation fonctionnelle : rigidité au premier ordre (prouvée ici) et, avec Saias–Weingartner, RH (ou seulement l'absence de zéro dans Re s &gt; 1) implique le produit d'Euler.</p><p>Autour de chacun des 27 points d'Euler, une île de rayon r(T) qui rétrécit avec la hauteur (pente −0,77). Hors des points d'Euler, des dizaines de zéros dans Re s &gt; 1 dès |t| ≤ 300.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/30_ARCHIPEL_D_EULER.pdf\">Document 30</a>.</p>\n  <h4>Pré-relu en V6.13</h4>\n  <p>Correct sur le fond. Une phrase fausse au §3.1 (V₅ pair, hors de V_q) et un trou comblable au §3.4, corrigés. Le corollaire « pas de zéro dans Re s &gt; 1 ⟺ point d'Euler » est un cas particulier immédiat de Saias–Weingartner (Th. 2) ; en degré 2, Booker–Thorne donnent déjà l'analogue. La rigidité au premier ordre devient une identité exacte, de constante 3.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf\">Document 37</a> · <a class=\"doclink\" href=\"1_Presentation/relecture/RELECTURE_ARCHIPEL_EN.md\">note de relecture (anglais)</a>.</p>\n\n  <h4>V6.37 : comparaison appariée dans V13</h4>\n  <p>72 couples fixés avant comptage, à ancre et rayon identiques. À hauteur 150, le bras A1 donne 36/36 détections plus tardives lorsque le premier coefficient augmente. Le bras D donne 25 détections plus précoces, 8 plus tardives et 3 dans la même tranche. Il s’agit d’un résultat descriptif : les contrôles numériques ne certifient pas l’absence de racines antérieures et ne démontrent pas de causalité.</p>\n  <p>Prochaine comparaison : fixer exactement le premier coefficient complexe, sa phase, l’ancre et le rayon. Aucun théorème supplémentaire sur RH ne découle de ces comptages.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/61_ANCRAGE_APPARIE_V13.pdf\">Document 61 — ancrage apparié V13</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-024"
+    },
+    {
+      "id": "chainon",
+      "title": "V6.9Le chaînon F = q^D",
+      "summary": "Il manque la métrique, pas l'opérateur",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Dans le Modèle réduit, F = q<sup>D</sup> : le pas discret est l'exponentielle d'un générateur. L'opérateur se reconstruit depuis les seuls comptages (749 objets) ; pour les 220 faux jumeaux aussi. Seule la métrique sépare les vraies courbes des imposteurs.</p><p>Le spectre des longueurs, lu dans les zéros, retrouve le produit d'Euler de ζ et révèle son absence pour DH. Ce qui manque à ζ n'est pas l'opérateur, c'est la métrique positive.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf\">Document 32</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-025"
+    },
+    {
+      "id": "generateur",
+      "title": "V6.10Le générateur des premiers",
+      "summary": "L'opérateur de ζ depuis les seuls premiers ; sa métrique",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Le chaînon porté jusqu'à ζ dans une fenêtre finie : avec les seuls nombres premiers ≤ 439, l'opérateur de translation donne 226 zéros de ζ, chacun de masse 1, sans fausse détection ; avec les premiers ≤ 23 862, 284 zéros à mieux que 1,6·10<sup>−4</sup>.</p><p>La métrique se lit aussi depuis les premiers : positivité observée pour ζ et L(s, χ₅) dans les fenêtres et seuils testés, deux directions négatives par quadruplet hors droite pour DH, attribuées exactement.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf\">Document 33</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-026"
+    },
+    {
+      "id": "base",
+      "title": "V6.11La base comme pas de temps",
+      "summary": "Le seul pas qui convienne à ζ est le flot",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Vue sur F_q², une courbe garde le même générateur D (525 courbes) ; la base n'est qu'un pas de temps. Redescendre efface un signe par facteur irréductible. La métrique survit au changement de base.</p><p>Pour ζ, à nombres premiers fixés, un pas grossier noie la métrique de DH (10 → 0 directions négatives) : l'imposteur passe. Le seul pas qui convienne à ζ est le flot.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf\">Document 35</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-027"
+    },
+    {
+      "id": "heisenberg",
+      "title": "V6.14Le temps de Heisenberg",
+      "summary": "Un quadruplet s'entend avec les premiers jusqu'au conducteur analytique",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>Un quadruplet de zéros hors droite à la hauteur γ₀ fait perdre sa positivité à la métrique des premiers quand la fenêtre atteint le <strong>temps de Heisenberg</strong> de sa hauteur :</p>\n  <p class=\"f\">L_c ≈ log(q·γ₀ / 2π)</p>\n  <p>C'est 2π fois la densité des zéros, et le logarithme du conducteur analytique : il faut les nombres premiers jusqu'à environ q·γ₀/2π. Mesuré : rapport 0,95 à 1,08 pour ζ et L(s, χ₅) (hauteurs 20 à 200), 0,80 à 0,89 pour les quadruplets réels de DH. L'écart à la droite, le poids, la position, le pas et la largeur ne jouent qu'en correction.</p>\n  <h4>Correction de la V6.12</h4>\n  <p>Le signe d'une innovation de Levinson n'est pas fiable dès que la métrique est mal conditionnée : quatre seuils par quadruplet étaient du bruit. Les seuils se lisent désormais sur les valeurs propres. La détection principale de DH (3,53, premiers ≤ 36) tient.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf\">Document 38</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-028"
+    },
+    {
+      "id": "degre2rec",
+      "title": "V6.15Le degré 2 et le recensement",
+      "summary": "Δ de Ramanujan depuis les premiers ; 25 quadruplets de DH comptés",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p><strong>Le degré 2.</strong> L(Δ, s), la fonction L de la forme de Ramanujan (poids 12), est reconstruite depuis les seuls coefficients τ(n) : ses zéros coïncident à 10⁻⁹ près avec ceux calculés sans les premiers. La loi de seuil y double, comme la densité des zéros : la longueur d'écoute est le poids archimédien Ω(γ₀) de la formule explicite (rapport 1,02 à 1,05).</p>\n  <p><strong>Le recensement.</strong> Avec les premiers ≤ 1 370, la métrique de DH a 50 directions négatives : 25 quadruplets hors droite jusqu'à la hauteur 1 464, dont 4 repliés, tous identifiés par un calcul indépendant des zéros. L(s, χ₅) et ζ n'en ont aucune. Chaque quadruplet s'allume à 0,75–0,95 de son temps de Heisenberg.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf\">Document 39</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-029"
+    },
+    {
+      "id": "rencontre3",
+      "title": "V6.16La Rencontre à trois",
+      "summary": "La marge de la métrique est la corrélation de Montgomery",
+      "status": "demontre",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>RH, la simplicité des zéros et la répulsion se rencontrent dans un seul événement : la rencontre de deux zéros. À la fenêtre de Heisenberg, la marge locale de la métrique pour une paire d'écart normalisé s vaut exactement</p>\n  <p class=\"f\">1 − (sin πs / πs)²</p>\n  <p>C'est la densité de corrélation de paires de Montgomery. Elle est nulle à la rencontre et négative pour une paire hors droite (identité élémentaire, démontrée ici).</p>\n  <h4>Mesuré</h4>\n  <p>Sur 1 070 zéros de ζ, il y a 4 marges sous 0,1, contre environ 13 attendues pour le GUE et 320 sans répulsion. Le coefficient β de Q est lisse à 95 % ; sa part d'écart suit 1/s² et compte les paires serrées. La paire de Lehmer près de 7 005 a une marge de 0,006 et pèse environ mille fois la médiane dans cette part.</p>\n  <h4>Croisements</h4>\n  <p>L'indicateur a désormais une dimension « Croiser » et une carte des croisements, avec ses zones d'ombre (degré 2 contre simplicité, répulsion et de Bruijn–Newman ; pendants manquants dans le Modèle réduit).</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf\">Document 40</a> · <a class=\"doclink\" href=\"1_Presentation/31_INDICATEUR_D_AVANCEMENT.html\">Indicateur, carte des croisements</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-030"
+    },
+    {
+      "id": "rencontre2",
+      "title": "V6.17La Rencontre en degré 2",
+      "summary": "Zéros de Δ, premiers de Δ, courbes : la loi de la marge",
+      "status": "mesure",
+      "family": "Origines et instruments",
+      "review": "Portée documentaire conservée ; les détails et les limites d’origine restent consultables. Aucune preuve globale n’est ajoutée par ce nœud.",
+      "evidence": [
+        "2_Methode/Pilotage/graphe_source.json"
+      ],
+      "initial_detail_html": "\n  <p>En degré 2, la rencontre a lieu deux fois : entre les zéros, et entre les deux racines α_p, β_p de chaque premier. Un instrument nouveau, le Contour tourné, calcule 2 139 zéros de L(Δ, s) jusqu'à 1 500 en double précision (accord 10⁻¹³ avec le calcul en haute précision, liste complète par la méthode de Turing).</p>\n  <h4>Démontré</h4>\n  <p>À la fenêtre N, la marge totale de la métrique est la densité de Weyl des matrices unitaires, et la marge d'une paire leur corrélation de paires. Pour une paire conjuguée, la marge vaut sin²θ : c'est (π/2) fois la densité de Sato–Tate. Aux premiers de Δ, les trois problèmes sont des théorèmes : positivité (Deligne), non-collision (arithmétique), répulsion (Sato–Tate).</p>\n  <h4>Mesuré</h4>\n  <p>Les zéros de Δ se repoussent (8 marges sous 0,1, contre 26 pour le GUE et 641 sans répulsion), avec le même déficit à basse hauteur que ζ. ζ·L(s, χ₅) superpose deux familles étrangères : 15 % de petites marges, toutes mixtes. Dans le Modèle réduit, Sato–Tate sur 561 258 courbes à l'étage 1 ; à l'étage 2, des collisions exactement aux courbes supersingulières, avec RH vraie.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf\">Document 41</a> · <a class=\"doclink\" href=\"1_Presentation/31_INDICATEUR_D_AVANCEMENT.html\">Indicateur, carte des croisements</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-031"
+    },
+    {
+      "id": "sources_registre",
+      "title": "V6.18Le registre des sources",
+      "summary": "Registre actif : les vérifications sont datées fiche par fiche ; une référence partiellement lue ne vaut pas théorème importé.",
+      "status": "outil",
+      "family": "Outils de conduite",
+      "review": "Registre actif : les vérifications sont datées fiche par fiche ; une référence partiellement lue ne vaut pas théorème importé. Ajout ciblé SuzH23 : 175 références, propositions 1.2–1.3, théorème 1.4 et borne du §3.2 vérifiés ; PDF antérieur conservé. Seconde passe : SuzH23 porte désormais une alerte précise de convention ; aucun résultat global attribué à la formule litigieuse. SuzSig23 : formule1.1 et théorème1.7 vérifiés ciblément ; référence distincte du candidat global audité.",
+      "evidence": [
+        "1_Presentation/42_REGISTRE_DES_SOURCES.md"
+      ],
+      "initial_detail_html": "\n  <p>Chaque article cité par le corpus a une fiche : bibliographie, lien vers le résumé, ce qui a été vérifié et quand, un extrait court, l'usage qu'en fait le corpus et un verdict. Sa couleur dit son intérêt : appui, à confronter, contexte ou outil. Il apparaît en pastille dans la carte des croisements. Les citations restent écrites dans le texte ; une clé entre crochets renvoie à la fiche.</p>\n  <p>Les lectures prioritaires deviennent des coups « lecture » du navigateur. Les pistes proposées par OpenAI au cours du travail ont été inventoriées : 27 pistes, 18 explorées, 7 nouveaux coups.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/42_REGISTRE_DES_SOURCES.pdf\">Document 42</a> · <a class=\"doclink\" href=\"1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf\">Cheminement intellectuel</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-032"
+    },
+    {
+      "id": "prochain",
+      "title": "Prochain coup",
+      "summary": "Les choix courants sont recalculés dans le navigateur, sous budget et prérequis ; l’ancien « Plusieurs bouchons » n’est plus annoncé comme priorité universelle.",
+      "status": "outil",
+      "family": "Outils de conduite",
+      "review": "La sélection utilise le modèle contractuel du document67 et son état attesté. Les questions récentes non encore modélisées restent explicitement visibles, sans score inventé.",
+      "evidence": [
+        "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+      ],
+      "initial_detail_html": "\n  <p>Choisi par le navigateur (score 2,50) : « Plusieurs bouchons », une piste proposée par OpenAI et jamais lancée. Ajouter à W_N(1) = 0 les contraintes W_N(0) = −2 et W'_N(1) = 1 change-t-il le palier e² log N/κ ? Thèse : le gain s'annule quand N croît. Ensuite : la Loi de la marge en genre 2, l'Archipel en degré 2, et trois lectures prioritaires (Weil 1948, Hamburger 1921, Beurling 1955).</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html\">Navigateur de recherche</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-033"
+    },
+    {
+      "id": "indicateur",
+      "title": "Indicateur d'avancement",
+      "summary": "Sept dimensions réévaluées, avec justificatifs, comparaison jusqu’à V6.55 et critères de la prochaine marche.",
+      "status": "outil",
+      "family": "Outils de conduite",
+      "review": "Sept dimensions réévaluées, avec justificatifs, comparaison jusqu’à V6.55 et critères de la prochaine marche.",
+      "evidence": [
+        "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html"
+      ],
+      "initial_detail_html": "\n  <p>Une échelle de maturité de 0 à 9 et six dimensions : voir, comprendre, situer, étendre au degré 2, démontrer et faire relire, la case vide. Chaque version y a son étape, ce qui a été franchi et un lien vers chaque document produit.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/31_INDICATEUR_D_AVANCEMENT.html\">Indicateur d'avancement</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-034"
+    },
+    {
+      "id": "navigateur",
+      "title": "Navigateur de recherche",
+      "summary": "Contrats complémentaires, issues et enveloppes de Bellman conservés ; état courant relié aux bilans, obligations globales toujours ouvertes.",
+      "status": "outil",
+      "family": "Outils de conduite",
+      "review": "Contrats complémentaires, issues et enveloppes de Bellman conservés ; état courant relié aux bilans, obligations globales toujours ouvertes.",
+      "evidence": [
+        "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+      ],
+      "initial_detail_html": "\n  <p>La démonstration comme itinéraire : la position est l'indicateur, la destination la case vide, les manœuvres sont les métaphores du registre prises comme opérateurs avec leur garde. Chaque coup a sa thèse, son témoin contraire et sa réfutation, écrits avant le calcul.</p><p>La distance au but est le chaînon : finitude non nécessaire, traces et symétrie acquises, métrique manquante.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html\">Navigateur de recherche</a> · <a class=\"doclink\" href=\"1_Presentation/20_Registre_metaphores_V6.md\">Registre des métaphores</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-035"
+    },
+    {
+      "id": "objet",
+      "title": "L'objet qui porte la métrique",
+      "summary": "Construire une structure imposant le signe reste une voie ; aucune forme particulière d’objet n’est déclarée nécessaire à toutes les preuves de RH.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "review": "Construire une structure imposant le signe reste une voie ; aucune forme particulière d’objet n’est déclarée nécessaire à toutes les preuves de RH.",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md"
+      ],
+      "initial_detail_html": "\n  <p>Dans le Modèle réduit, la positivité de la métrique est imposée d'un coup, pour toutes les fenêtres, par la surface C×C (théorème de l'indice de Hodge). Pour ζ, aucun objet connu ne joue ce rôle : la positivité de Weil pour toutes les fenêtres est RH elle-même.</p><p>C'est la place que l'hypothèse de l'auteur réserve à « quelque chose de plus grand qui rend RH nécessaire ». Le navigateur la signale comme une route à construire, sans la classer.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf\">Document 32, §7</a> · <a class=\"doclink\" href=\"1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf\">Document 35, §6</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-036"
+    },
+    {
+      "id": "sources_locales",
+      "title": "Localisation de sources",
+      "summary": "Le mode fantôme ne pèse rien après audit ; les vraies sources reviennent dans les Grams de résidus.",
+      "status": "diagnostic",
+      "family": "Instruments réutilisés",
+      "review": "Le mode fantôme ne pèse rien après audit ; les vraies sources reviennent dans les Grams de résidus.",
+      "evidence": [
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.md",
+        "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md",
+        "3_Preuves_et_calculs/preuves/V648_OPERATEUR_COMMUN_CERTIFIE.md"
+      ],
+      "initial_detail_html": "\n  <p>L'idée : traiter les zéros comme des sources cachées à retrouver à partir du signal des nombres premiers, avec les outils de la localisation de sources (filtre adapté, ondelettes de Morlet, inversion harmonique).</p>\n  <h4>Ce que l'audit a mesuré sur le vrai signal de ζ</h4>\n  <ul>\n    <li>Les fréquences sont retrouvées à 10<sup>−3</sup> près pour les premiers zéros.</li>\n    <li>La partie réelle estimée est biaisée de −0,002 à −0,09 pour des zéros qui sont sur la droite. Le biais est du même ordre que ce qu'on voudrait détecter.</li>\n  </ul>\n  <h4>Sur le témoin Davenport–Heilbronn</h4>\n  <p>Le vrai zéro hors ligne est détecté, sous-estimé de 25 %. Mais le mode désigné comme le plus hors ligne (partie imaginaire ≈ 73,8, partie réelle +0,345) est un fantôme : il n'y a aucun zéro à cet endroit.</p>\n  <h4>Verdict</h4>\n  <p>Outil de visualisation et de calibration. Une résolution finie ne peut pas exclure un zéro hors ligne à grande hauteur. Il manque une borne d'observabilité uniforme, qui n'est pas démontrée.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"4_Archives/docs_techniques/AUDIT_V4_3.md\">AUDIT_V4_3.md</a> (F2, F3) · <a class=\"doclink\" href=\"4_Archives/docs_techniques/SOURCE_LOCALIZATION.md\">SOURCE_LOCALIZATION.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-8).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf\">Cheminement intellectuel</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n  <h4>Relu en V6.12</h4>\n  <p>Avec la masse unité, le fantôme de DH (Im ≈ 73,8) porte une masse de 1,3·10<sup>−9</sup> et il est rejeté ; le vrai zéro hors droite sort avec une masse 1 et sa partie réelle à 10<sup>−9</sup> près. Reste : une fenêtre finie, pas une borne uniforme.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf\">Document 36, §4</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-037"
+    },
+    {
+      "id": "schr",
+      "title": "Schrödinger, Heff",
+      "summary": "Reconstruire un opérateur ne construit pas sa métrique positive ; au pli, un compagnon de Jordan interdit la métrique définie positive.",
+      "status": "obstacle",
+      "family": "Obstructions circonscrites",
+      "review": "Reconstruire un opérateur ne construit pas sa métrique positive ; au pli, un compagnon de Jordan interdit la métrique définie positive.",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ],
+      "initial_detail_html": "\n  <p>L'idée : lire chaque zéro comme un niveau d'énergie <span class=\"m\">E = −γ + i(β − ½)</span>, identifier un générateur effectif H<sub>eff</sub> à partir du signal, et certifier une métrique M &gt; 0 telle que H*M = MH.</p>\n  <h4>Ce que l'audit a établi</h4>\n  <ul>\n    <li>Les tests initiaux étaient circulaires : ils injectaient les zéros puis les retrouvaient.</li>\n    <li>En dimension finie, l'existence de M &gt; 0 équivaut à la réalité du spectre. Le certificat n'apporte rien au-delà de β = ½.</li>\n    <li>« RH équivaut à Im E = 0 » est la phrase « β = ½ » dans une autre variable.</li>\n    <li>Le signal de G est d'ordre 2 : son propagateur contient des blocs de Jordan, qu'aucune métrique positive ne rend auto-adjoints, même sous RH.</li>\n  </ul>\n  <h4>Verdict</h4>\n  <p>Reparamétrisation, pas mécanisme. Le verrou est exactement le problème de Hilbert–Pólya. Aucun investissement supplémentaire n'est justifié sans dérivation analytique de H et de M à partir de l'arithmétique.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"4_Archives/docs_techniques/AUDIT_V4_3.md\">AUDIT_V4_3.md</a> (F1, F4, F5) · <a class=\"doclink\" href=\"4_Archives/docs_techniques/SCHRODINGER_FLUX.md\">SCHRODINGER_FLUX.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-SCHR, GAP-SCHR-GEN).</p>\n<div class=\"links\"><strong>Présentation liée.</strong> <a class=\"doclink\" href=\"2_Methode/Protocole_multi_agents_et_panorama_physique_RH.docx\">Protocole multi-agents et panorama physique</a> · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a></div>\n  <h4>Relu en V6.12</h4>\n  <p>L'opérateur se construit désormais depuis les seuls nombres premiers (document 33) : la circularité est levée. Les blocs de Jordan venaient du signal d'ordre 2 ; le signal d'ordre 1 donne des masses simples. Le Théorème A se lit au rayon spectral du générateur (DH : 0,308517). Le verrou M &gt; 0 ⟺ RH reste, mais il est situé : la métrique.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf\">Document 36, §5</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-038"
+    },
+    {
+      "id": "kalman",
+      "title": "Kalman, GPS analytique",
+      "summary": "Repris en innovations de Levinson et en contrôle de couplages ; utile pour le diagnostic et Schur, signe global non acquis.",
+      "status": "mesure",
+      "family": "Instruments réutilisés",
+      "review": "Repris en innovations de Levinson et en contrôle de couplages ; utile pour le diagnostic et Schur, signe global non acquis.",
+      "evidence": [
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md",
+        "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md"
+      ],
+      "initial_detail_html": "\n  <p>L'idée : traiter chaque échelle comme une mesure bruitée et suivre l'information accumulée avec un filtre de Kalman (« GPS analytique »), par rapport à une trajectoire de référence (« Apollo »).</p>\n  <h4>Ce que les calculs montrent</h4>\n  <ul>\n    <li>Information par unité de log X : 0,092, 0,114, 0,102, 0,070 pour X de 5·10³ à 5·10⁴. Aucune loi ne se dégage.</li>\n    <li>Le rapport de Q à la référence passe de 0,34 à 0,64, ce qui reflète les termes d'ordre inférieur et non un phénomène nouveau.</li>\n  </ul>\n  <h4>Verdict</h4>\n  <p>Diagnostic reproductible, sans borne nouvelle. Les branches voisines (sommes de type I et II, Parseval locale uniforme) ont le même statut.</p>\n  <h4>Retour de l'idée en V6.10</h4>\n  <p>L'image du GPS revient sous une autre forme : non plus comme filtre sur les échelles, mais comme navigation de recherche. Le <a class=\"doclink\" href=\"1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html\">navigateur</a> prend l'indicateur pour position et les métaphores pour manœuvres.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"4_Archives/notes/LATEST_GPS_ANALYTIC.md\">LATEST_GPS_ANALYTIC.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-7) · <a class=\"doclink\" href=\"1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf\">06_CHEMINEMENT_INTELLECTUEL.pdf</a> (étape 9).</p>\n  <h4>Relu en V6.12</h4>\n  <p>Sur les traces des premiers (et non plus sur Q), le filtre de Kalman est la récurrence de Levinson. Ses innovations restent positives pour ζ et L(s, χ₅) ; pour DH, la première innovation négative arrive à la fenêtre 3,52, avec les nombres premiers ≤ 36. Le GPS donne enfin une alarme.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf\">Document 36, §3</a>.</p>\n  <h4>Loi de seuil en V6.14</h4>\n  <p>L'alarme sonne au temps de Heisenberg de la hauteur du quadruplet, log(q·γ₀/2π) (0,80 à 0,89 de ce temps pour DH). Correction : au-delà de la taille 270, le signe d'une innovation n'est plus fiable ; les seuils se lisent sur les valeurs propres.</p>\n  <p class=\"src\"><a class=\"doclink\" href=\"1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf\">Document 38</a>.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-039"
+    },
+    {
+      "id": "pos",
+      "title": "Positivité de Weil",
+      "summary": "Le signe de Weil reste ouvert sur toute la famille admissible. Positivité ne signifie pas marge uniforme en H¹.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "review": "Le signe de Weil reste ouvert sur toute la famille admissible. Positivité ne signifie pas marge uniforme en H¹.",
+      "evidence": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "initial_detail_html": "\n  <p>Le critère de Weil dit que RH équivaut à une positivité : pour toute fonction test f, la somme sur les zéros</p>\n  <p class=\"f\">Σ<sub>ρ</sub> f̂(ρ) · conj f̂(1 − ρ̄) ≥ 0</p>\n  <p>Sur la droite critique, 1 − ρ̄ = ρ et chaque terme est un carré. Hors de la droite, le signe n'est plus garanti : tout le contenu de RH est dans ce signe.</p>\n  <h4>Pourquoi M &gt; 0 est le même verrou</h4>\n  <p>La relation H*M = MH n'impose un spectre réel que si M est définie positive. Si M est indéfinie, on obtient seulement la symétrie ρ ↔ 1 − ρ̄, que l'équation fonctionnelle donne déjà. Chercher une métrique positive renomme le critère de Weil sans le simplifier.</p>\n  <h4>Dans le programme</h4>\n  <p>Les positivités présentes (norme, matrice de Gram, compléments de Schur) sont automatiques. Aucune positivité propre à l'arithmétique n'est isolée.</p>\n  <h4>Depuis V6.9</h4>\n  <p>Le chaînon (document 32) situe le verrou : ce qui manque à ζ est la métrique, pas l'opérateur. Le générateur des premiers (document 33) la mesure fenêtre par fenêtre depuis les seuls nombres premiers : positive pour ζ et L, négative pour DH à ses zéros hors droite. Elle reste lue, jamais imposée.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/MEMO_P2_2_WEIL.md\">MEMO_P2_2_WEIL.md</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-6) · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a> §11.8.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-040"
+    },
+    {
+      "id": "compl",
+      "title": "Complétude spectrale",
+      "summary": "Une réalisation spectrale doit capturer tous les zéros et justifier son domaine ; une fenêtre finie ne suffit pas.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "review": "Une réalisation spectrale doit capturer tous les zéros et justifier son domaine ; une fenêtre finie ne suffit pas.",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ],
+      "initial_detail_html": "\n  <p>Dans le programme de Connes, le point délicat est de montrer que la réalisation spectrale capte tous les zéros non triviaux, et pas seulement ceux de la droite critique. Le mot « complétude » est un raccourci ; chez Connes, cela prend la forme de la validité d'une formule de traces.</p>\n  <h4>Ce que Connes construit (1999)</h4>\n  <ul>\n    <li>Un espace : les classes d'adèles, sur lequel agit le flot de dilatation, celui de la variable u = log x.</li>\n    <li>Un opérateur : le générateur de ce flot, sur un espace de Hilbert bien choisi.</li>\n    <li>Un théorème : son spectre est formé exactement des parties imaginaires des zéros situés sur la droite critique.</li>\n  </ul>\n  <p>Les zéros y apparaissent comme un spectre d'absorption, des raies manquantes. C'est ce qui explique le signe inversé de la formule explicite.</p>\n  <h4>Où est le problème</h4>\n  <p>Le spectre est réel par construction. Un zéro hors de la droite n'est pas réfuté, il est invisible. Connes démontre que sa formule de traces globale est équivalente à RH : dire que la somme sur les zéros critiques coïncide avec la formule explicite de Weil, c'est dire qu'aucun zéro n'a échappé.</p>\n  <h4>Ce qui est démontré</h4>\n  <p>La formule de traces est prouvée pour un nombre fini de places. Le passage à toutes les places à la fois est le verrou.</p>\n  <h4>Dans le programme</h4>\n  <p>C'est le point 5 de GAP-SCHR-GEN : une observabilité excluant qu'un mode hors ligne soit caché dans un sous-espace non observé.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-SCHR-GEN) · <a class=\"doclink\" href=\"1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf\">Guide de lecture intuitif</a> §11.9.</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-041"
+    },
+    {
+      "id": "hp",
+      "title": "Hilbert–Pólya",
+      "summary": "Réalisation arithmétique auto-adjointe et exhaustive non construite ; programme auxiliaire encore ouvert.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "review": "Réalisation arithmétique auto-adjointe et exhaustive non construite ; programme auxiliaire encore ouvert.",
+      "evidence": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ],
+      "initial_detail_html": "\n  <p>L'idée attribuée à Hilbert et Pólya : s'il existe un opérateur auto-adjoint construit à partir de l'arithmétique et dont le spectre encode exactement tous les zéros non triviaux, alors les γ sont réels et RH est vraie.</p>\n  <h4>Ce qui soutient l'idée</h4>\n  <ul>\n    <li>La formule explicite ressemble à une formule de traces (Selberg, Gutzwiller).</li>\n    <li>Les corrélations des zéros suivent la statistique des matrices aléatoires de type GUE.</li>\n  </ul>\n  <h4>Ce qui manque</h4>\n  <ul>\n    <li>Un opérateur construit à partir de l'arithmétique, sans connaître les zéros. Un opérateur diagonal de spectre donné existe trivialement.</li>\n    <li>Une preuve d'auto-adjonction sur un domaine précis.</li>\n    <li>La correspondance exacte avec tous les zéros.</li>\n  </ul>\n  <h4>Candidats</h4>\n  <p>Berry–Keating (H = xp) ne reproduit que la densité moyenne. Le modèle de Bender, Brody et Müller a été critiqué sur l'auto-adjonction. Les variantes de Sierra introduisent les premiers à la main. Aucun candidat n'est confirmé.</p>\n  <p>Ce n'est pas une formulation équivalente à RH mais un programme non réalisé.</p>\n  <h4>Depuis V6.10</h4>\n  <p>Dans une fenêtre finie, un opérateur construit à partir de l'arithmétique seule existe : le générateur des premiers (document 33) donne les zéros de ζ sans les connaître. Ce qui manque est sa métrique positive pour toutes les fenêtres à la fois, c'est-à-dire la positivité de Weil.</p>\n  <p class=\"src\"><strong>Sources.</strong> <a class=\"doclink\" href=\"2_Methode/Protocole_multi_agents_et_panorama_physique_RH.docx\">Protocole_multi_agents_et_panorama_physique_RH.docx</a> · <a class=\"doclink\" href=\"3_Preuves_et_calculs/preuves/KNOWN_GAPS.md\">KNOWN_GAPS.md</a> (GAP-SCHR).</p>\n",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-042"
+    },
+    {
+      "id": "v13",
+      "title": "Fibres, jets et pli choisi",
+      "summary": "Un pli et sa paire sont certifiés dans une boîte ; un coefficient A complexe arbitraire reste un autre problème.",
+      "status": "demontre",
+      "family": "Passages et certificats",
+      "evidence": [
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ],
+      "review": "Un pli et sa paire sont certifiés dans une boîte ; un coefficient A complexe arbitraire reste un autre problème.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-043"
+    },
+    {
+      "id": "domaines",
+      "title": "P, moments et domaines",
+      "summary": "P = ∂² − 1/4 construit les tests ; transports, cœur et parité sont établis sous leurs gardes.",
+      "status": "demontre",
+      "family": "Passages et certificats",
+      "evidence": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md"
+      ],
+      "review": "P = ∂² − 1/4 construit les tests ; transports, cœur et parité sont établis sous leurs gardes.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-044",
+      "related_resources": [
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md"
+      ]
+    },
+    {
+      "id": "compact",
+      "title": "Changement de métrique",
+      "summary": "Compact en H¹ : pas de marge strictement positive uniforme ; identité moins compact dans la métrique d’énergie déclarée.",
+      "status": "demontre",
+      "family": "Passages et certificats",
+      "evidence": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md"
+      ],
+      "review": "Compact en H¹ : pas de marge strictement positive uniforme ; identité moins compact dans la métrique d’énergie déclarée.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-045"
+    },
+    {
+      "id": "fluctuation",
+      "title": "Fluctuation arithmétique signée",
+      "summary": "Annulation polaire et décomposition exacte : le modèle continu seul peut être négatif ; la fluctuation doit payer le bilan.",
+      "status": "demontre",
+      "family": "Voie de Weil",
+      "evidence": [
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md"
+      ],
+      "review": "Annulation polaire et décomposition exacte : le modèle continu seul peut être négatif ; la fluctuation doit payer le bilan.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-046",
+      "related_resources": [
+        "1_Presentation/RECONSTRUCTION_V651_INTEGREE.html",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json",
+        "4_Exports/V651_RECONSTRUCTION_DOCUMENTEE_20261015.zip"
+      ]
+    },
+    {
+      "id": "schur",
+      "title": "Dette des couplages",
+      "summary": "Schur et ses gardes restent acquis. Réanalyse finie V644 : dette relative 4+4 proche de1 à S=3 ; aucune queue infinie supplémentaire certifiée. Le document73 conserve son certificat complet distinct.",
+      "status": "partiel",
+      "family": "Voie de Weil",
+      "evidence": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md",
+        "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "review": "Schur et ses gardes restent acquis. Réanalyse finie V644 : dette relative 4+4 proche de1 à S=3 ; aucune queue infinie supplémentaire certifiée. Le document73 conserve son certificat complet distinct.",
+      "reviewed_on": "2026-10-16",
+      "uid": "IDE-047",
+      "related_resources": [
+        "1_Presentation/RECONSTRUCTION_V651_INTEGREE.html",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json",
+        "4_Exports/V651_RECONSTRUCTION_DOCUMENTEE_20261015.zip",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ]
+    },
+    {
+      "id": "local",
+      "title": "Lego local : S ≤ 11/20",
+      "summary": "Certificat du dossier sur tous les tests du support borné déclaré ; conservé, sans promotion à tous supports.",
+      "status": "demontre",
+      "family": "Voie de Weil",
+      "evidence": [
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md",
+        "3_Preuves_et_calculs/preuves/V650_RECUPERATION_TRANSPORT_ET_RH.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md"
+      ],
+      "review": "Certificat du dossier sur tous les tests du support borné déclaré ; conservé, sans promotion à tous supports.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-048"
+    },
+    {
+      "id": "transport",
+      "title": "Transport et réserve",
+      "summary": "Transport exact, grammaires et brique initiale acquis ; l’existence de toutes les lignes positives reste ouverte.",
+      "status": "partiel",
+      "family": "Voie de Weil",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md"
+      ],
+      "review": "Transport exact, grammaires et brique initiale acquis ; l’existence de toutes les lignes positives reste ouverte.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-049"
+    },
+    {
+      "id": "coverage",
+      "title": "Couverture et passage à la limite",
+      "summary": "Couvertures du corpus conservées. Nouvelle exécution : 44 cellules certifient le signal scalaire entre log2 et log1000 ; ce domaine était déjà traité dans79 et ne correspond pas à tous les tests de Weil.",
+      "status": "partiel",
+      "family": "Obligations vers RH",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "review": "Couvertures du corpus conservées. Nouvelle exécution : 44 cellules certifient le signal scalaire entre log2 et log1000 ; ce domaine était déjà traité dans79 et ne correspond pas à tous les tests de Weil.",
+      "reviewed_on": "2026-10-16",
+      "uid": "IDE-050",
+      "related_resources": [
+        "1_Presentation/RECONSTRUCTION_V651_INTEGREE.html",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json",
+        "4_Exports/V651_RECONSTRUCTION_DOCUMENTEE_20261015.zip",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ]
+    },
+    {
+      "id": "global_sign",
+      "title": "Loi de signe de la famille",
+      "summary": "Ouvert. Les modules de coefficients et observations diagonales perdent de fortes compensations dans les matrices V644. Le certificat adaptatif contrôle une fenêtre scalaire finie, sans loi arithmétique universelle.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "review": "Ouvert. Les modules de coefficients et observations diagonales perdent de fortes compensations dans les matrices V644. Le certificat adaptatif contrôle une fenêtre scalaire finie, sans loi arithmétique universelle.",
+      "reviewed_on": "2026-10-16",
+      "uid": "IDE-051",
+      "related_resources": [
+        "3_Preuves_et_calculs/recherche78/exploration/RAPPORT_SIGNE.md",
+        "3_Preuves_et_calculs/recherche78/critique/AUDIT_MECANISMES_UNIVERSELS.md",
+        "1_Presentation/RECONSTRUCTION_V651_INTEGREE.html",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py",
+        "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json",
+        "4_Exports/V651_RECONSTRUCTION_DOCUMENTEE_20261015.zip",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ]
+    },
+    {
+      "id": "weil_all",
+      "title": "Weil sur tous les tests",
+      "summary": "Ouvert. Le document73 certifie déjà un domaine fonctionnel entier à petit support. Les nouveaux diagnostics de matrices et cellules scalaires ne prolongent pas cette portée à tous les supports.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md"
+      ],
+      "review": "Ouvert. Le document73 certifie déjà un domaine fonctionnel entier à petit support. Les nouveaux diagnostics de matrices et cellules scalaires ne prolongent pas cette portée à tous les supports.",
+      "reviewed_on": "2026-10-16",
+      "uid": "IDE-052",
+      "related_resources": [
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ]
+    },
+    {
+      "id": "RH",
+      "title": "Hypothèse de Riemann",
+      "summary": "But inchangé : tous les zéros non triviaux sur Re(s)=1/2. Non démontré.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "evidence": [
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "review": "But inchangé : tous les zéros non triviaux sur Re(s)=1/2. Non démontré.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-053"
+    },
+    {
+      "id": "identity",
+      "title": "Identité des vrais coefficients",
+      "summary": "Σ_{d|n} Λ(d) = log n caractérise les poids arithmétiques ; elle ne donne pas, seule, une borne globale.",
+      "status": "classique",
+      "family": "Voie énergétique",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "review": "Σ_{d|n} Λ(d) = log n caractérise les poids arithmétiques ; elle ne donne pas, seule, une borne globale.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-054"
+    },
+    {
+      "id": "anchoring",
+      "title": "Corrélations ancrées",
+      "summary": "Les positions absolues et toutes les coupures sont conservées ; l’autocorrélation par écarts seule ne fixe pas le signe.",
+      "status": "demontre",
+      "family": "Voie énergétique",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "review": "Les positions absolues et toutes les coupures sont conservées ; l’autocorrélation par écarts seule ne fixe pas le signe.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-055"
+    },
+    {
+      "id": "J",
+      "title": "Énergie J",
+      "summary": "J(X) = ∫₁ˣ (ψ(x)−x)² dx est positive ; c’est sa croissance qui doit être bornée.",
+      "status": "classique",
+      "family": "Voie énergétique",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "review": "J(X) = ∫₁ˣ (ψ(x)−x)² dx est positive ; c’est sa croissance qui doit être bornée.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-056"
+    },
+    {
+      "id": "J_bound",
+      "title": "Borne de force RH",
+      "summary": "J(X) = O(X²), pour les vrais coefficients Λ et toutes les échelles : ouverte.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "evidence": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ],
+      "review": "J(X) = O(X²), pour les vrais coefficients Λ et toutes les échelles : ouverte.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-057"
+    },
+    {
+      "id": "Q_bound",
+      "title": "Borne de l’énergie initiale Q",
+      "summary": "Q(X) = X^{o(1)} depuis les premiers reste ouverte ; le théorème A en fait une autre porte vers RH.",
+      "status": "ouvert",
+      "family": "Obligations vers RH",
+      "evidence": [
+        "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md"
+      ],
+      "review": "Q(X) = X^{o(1)} depuis les premiers reste ouverte ; le théorème A en fait une autre porte vers RH.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-058"
+    },
+    {
+      "id": "copies",
+      "title": "Restitution et dilatations",
+      "summary": "A_o(x) = F_{p²}(x) − F_{p²}(x/p), p premier impair ; stabilité exacte, sans borne globale déduite.",
+      "status": "demontre",
+      "family": "Amplification",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ],
+      "review": "A_o(x) = F_{p²}(x) − F_{p²}(x/p), p premier impair ; stabilité exacte, sans borne globale déduite.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-059"
+    },
+    {
+      "id": "head",
+      "title": "Diagonale et petits conducteurs",
+      "summary": "Borne explicite de toute la tête q ≤ H, valable à toutes les échelles sous les paramètres déclarés.",
+      "status": "demontre",
+      "family": "Amplification",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ],
+      "review": "Borne explicite de toute la tête q ≤ H, valable à toutes les échelles sous les paramètres déclarés.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-060"
+    },
+    {
+      "id": "large_q",
+      "title": "Grands conducteurs signés",
+      "summary": "À H=X : obtenir R_{q>X} ≤ C X³(1+log X)^k, en conservant μ(q) et les poids B.",
+      "status": "ouvert",
+      "family": "Amplification",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ],
+      "review": "À H=X : obtenir R_{q>X} ≤ C X³(1+log X)^k, en conservant μ(q) et les poids B.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-061"
+    },
+    {
+      "id": "threequarters",
+      "title": "Étape conditionnelle : 3/4",
+      "summary": "Restitution + tête + borne de grande queue donneraient J ≪ X^{5/2} polylog, donc aucun zéro pour Re(s)>3/4. Non obtenu.",
+      "status": "conditionnel",
+      "family": "Amplification",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ],
+      "review": "Restitution + tête + borne de grande queue donneraient J ≪ X^{5/2} polylog, donc aucun zéro pour Re(s)>3/4. Non obtenu.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-062"
+    },
+    {
+      "id": "generic_sieve",
+      "title": "Crible générique : perte des copies",
+      "summary": "Réintroduire les paramètres carrés coûte D√H. Cela invalide l’amélioration générique, pas une estimation spécifique des vrais poids.",
+      "status": "obstacle",
+      "family": "Amplification",
+      "evidence": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ],
+      "review": "Réintroduire les paramètres carrés coûte D√H. Cela invalide l’amélioration générique, pas une estimation spécifique des vrais poids.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-063"
+    },
+    {
+      "id": "surface",
+      "title": "Surface et Frobenius virtuels",
+      "summary": "Des signatures sont construites ; aucun objet géométrique imposant le signe pour ζ n’est obtenu.",
+      "status": "partiel",
+      "family": "Modèles et nécessité",
+      "evidence": [
+        "1_Presentation/46_LA_SURFACE_VIRTUELLE.md",
+        "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.md"
+      ],
+      "review": "Des signatures sont construites ; aucun objet géométrique imposant le signe pour ζ n’est obtenu.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-064"
+    },
+    {
+      "id": "stepanov",
+      "title": "Transplantation directe de Stepanov",
+      "summary": "Le modèle d’échelle étudié échoue. Réouverture seulement avec une dérivation et un espace de fonctions adéquats explicitement construits.",
+      "status": "obstacle",
+      "family": "Obstructions circonscrites",
+      "evidence": [
+        "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.md",
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md"
+      ],
+      "review": "Le modèle d’échelle étudié échoue. Réouverture seulement avec une dérivation et un espace de fonctions adéquats explicitement construits.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-065"
+    },
+    {
+      "id": "jets",
+      "title": "Lemme des jets et relief",
+      "summary": "Rang et jets donnent des contraintes précises ; une association numérique entre défaut et sortie ne prouve pas une causalité.",
+      "status": "demontre",
+      "family": "Passages et certificats",
+      "evidence": [
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md"
+      ],
+      "review": "Rang et jets donnent des contraintes précises ; une association numérique entre défaut et sortie ne prouve pas une causalité.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-066"
+    },
+    {
+      "id": "dh_cert",
+      "title": "Certificat négatif de DH",
+      "summary": "Au moins 25 directions négatives dans une fenêtre, sous le budget d’erreur du dossier ; ce n’est pas un compte exact de tous les zéros.",
+      "status": "demontre",
+      "family": "Instruments réutilisés",
+      "evidence": [
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md"
+      ],
+      "review": "Au moins 25 directions négatives dans une fenêtre, sous le budget d’erreur du dossier ; ce n’est pas un compte exact de tous les zéros.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-067"
+    },
+    {
+      "id": "rencontre_n",
+      "title": "La Rencontre à n",
+      "summary": "La marge et les paires restent des objets d’étude ; leur statistique ne remplace pas une loi arithmétique universelle.",
+      "status": "mesure",
+      "family": "Modèles et nécessité",
+      "evidence": [
+        "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.md"
+      ],
+      "review": "La marge et les paires restent des objets d’étude ; leur statistique ne remplace pas une loi arithmétique universelle.",
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-068"
+    },
+    {
+      "id": "prime_norm",
+      "title": "Norme de la partie première seule",
+      "status": "obstacle",
+      "family": "Obstructions circonscrites",
+      "summary": "La norme première sur L² diverge avant restriction ; elle ne peut pas remplacer le contrôle de la forme complète et de son domaine.",
+      "review": "Obstruction du contrat A2 du document 66. Elle ne ferme pas les estimations de la forme complète, ni celles dans une autre norme.",
+      "evidence": [
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+        "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md",
+        "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md"
+      ],
+      "reviewed_on": "2026-10-15",
+      "uid": "IDE-069"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lemmes",
+      "target": "thA",
+      "kind": "construction",
+      "label": "Pôles et transformée de Mellin"
+    },
+    {
+      "source": "lemmes",
+      "target": "thB",
+      "kind": "construction",
+      "label": "Identités utiles sous RH"
+    },
+    {
+      "source": "thA",
+      "target": "Q_bound",
+      "kind": "critere",
+      "label": "Énonce la borne équivalente, sans la prouver"
+    },
+    {
+      "source": "Q_bound",
+      "target": "RH",
+      "kind": "equivalence",
+      "label": "Critère A dans son cadre"
+    },
+    {
+      "source": "nb",
+      "target": "thA",
+      "kind": "relation",
+      "label": "Projection étudiée ramenée à Q"
+    },
+    {
+      "source": "li",
+      "target": "lemmes",
+      "kind": "relation",
+      "label": "Constante commune ; pas tous les signes de Li"
+    },
+    {
+      "source": "dh",
+      "target": "darkz",
+      "kind": "temoin",
+      "label": "Témoin adversarial conservé"
+    },
+    {
+      "source": "darkz",
+      "target": "anchoring",
+      "kind": "construction",
+      "label": "Repérer la perte de l’origine"
+    },
+    {
+      "source": "tomo3",
+      "target": "anchoring",
+      "kind": "obstruction",
+      "label": "Le rejet du bispectre brut ne ferme pas l’ancrage"
+    },
+    {
+      "source": "ff",
+      "target": "modred",
+      "kind": "relation",
+      "label": "Modèle où la positivité est démontrée"
+    },
+    {
+      "source": "modred",
+      "target": "chainon",
+      "kind": "construction",
+      "label": "Faux jumeaux et métrique"
+    },
+    {
+      "source": "chainon",
+      "target": "generateur",
+      "kind": "construction",
+      "label": "Reconstruire depuis les premiers"
+    },
+    {
+      "source": "generateur",
+      "target": "compl",
+      "kind": "obligation",
+      "label": "Capturer toute la famille, pas seulement une fenêtre"
+    },
+    {
+      "source": "generateur",
+      "target": "global_sign",
+      "kind": "obligation",
+      "label": "La métrique positive ne suit pas de la reconstruction"
+    },
+    {
+      "source": "primelock",
+      "target": "duallock",
+      "kind": "relation",
+      "label": "Détecteurs locaux et globaux distincts"
+    },
+    {
+      "source": "duallock",
+      "target": "schur",
+      "kind": "construction",
+      "label": "Gram et couplages"
+    },
+    {
+      "source": "darkres",
+      "target": "schur",
+      "kind": "relation",
+      "label": "Normalisation par le vrai Gram"
+    },
+    {
+      "source": "marges",
+      "target": "compact",
+      "kind": "relation",
+      "label": "Forme positive et marge sont distinctes"
+    },
+    {
+      "source": "schr",
+      "target": "hp",
+      "kind": "obstruction",
+      "label": "Une reparamétrisation ne fournit pas la métrique"
+    },
+    {
+      "source": "hp",
+      "target": "RH",
+      "kind": "conditionnel",
+      "label": "Auto-adjonction arithmétique ET capture exhaustive",
+      "requires": [
+        "hp",
+        "compl"
+      ]
+    },
+    {
+      "source": "kalman",
+      "target": "schur",
+      "kind": "construction",
+      "label": "Innovations et dette de couplage"
+    },
+    {
+      "source": "sources_locales",
+      "target": "schur",
+      "kind": "construction",
+      "label": "Résidus et Grams"
+    },
+    {
+      "source": "archipel",
+      "target": "v13",
+      "kind": "construction",
+      "label": "Comparer sous contraintes exactes"
+    },
+    {
+      "source": "v13",
+      "target": "global_sign",
+      "kind": "insuffisant",
+      "label": "Un pli choisi ne donne pas le signe global"
+    },
+    {
+      "source": "rencontre3",
+      "target": "v13",
+      "kind": "relation",
+      "label": "Une identité de marge ne certifie pas toutes les collisions"
+    },
+    {
+      "source": "rencontre2",
+      "target": "degre2rec",
+      "kind": "relation",
+      "label": "Même instrument, cadre de degré 2"
+    },
+    {
+      "source": "heisenberg",
+      "target": "generateur",
+      "kind": "relation",
+      "label": "Loi de détection, pas loi de signe"
+    },
+    {
+      "source": "mod7",
+      "target": "archipel",
+      "kind": "relation",
+      "label": "Îles observées et rigidité déclarée"
+    },
+    {
+      "source": "base",
+      "target": "chainon",
+      "kind": "relation",
+      "label": "Discret et continu"
+    },
+    {
+      "source": "energyD",
+      "target": "Q_bound",
+      "kind": "critere",
+      "label": "Dimension et croissance, même borne manquante"
+    },
+    {
+      "source": "arret",
+      "target": "fluctuation",
+      "kind": "reouverture",
+      "label": "Nouvelle obligation arithmétique discriminante"
+    },
+    {
+      "source": "domaines",
+      "target": "compact",
+      "kind": "construction",
+      "label": "Domaines et métriques compatibles"
+    },
+    {
+      "source": "domaines",
+      "target": "fluctuation",
+      "kind": "construction",
+      "label": "Moments et annulation polaire"
+    },
+    {
+      "source": "compact",
+      "target": "local",
+      "kind": "construction",
+      "label": "Réduction tête–queue dans le bon domaine"
+    },
+    {
+      "source": "fluctuation",
+      "target": "global_sign",
+      "kind": "obligation",
+      "label": "Payer la dette réelle à toutes les échelles"
+    },
+    {
+      "source": "schur",
+      "target": "global_sign",
+      "kind": "obligation",
+      "label": "Contrôler les couplages de la famille choisie"
+    },
+    {
+      "source": "local",
+      "target": "global_sign",
+      "kind": "insuffisant",
+      "label": "Le plafond 11/20 ne couvre pas tous les supports"
+    },
+    {
+      "source": "domaines",
+      "target": "coverage",
+      "kind": "construction",
+      "label": "Cœur, transports et filtres"
+    },
+    {
+      "source": "transport",
+      "target": "global_sign",
+      "kind": "obligation",
+      "label": "Réserve et résidu pour toutes les lignes"
+    },
+    {
+      "source": "global_sign",
+      "target": "weil_all",
+      "kind": "conditionnel",
+      "label": "Signe ET couverture dans le domaine requis",
+      "requires": [
+        "global_sign",
+        "coverage"
+      ]
+    },
+    {
+      "source": "coverage",
+      "target": "weil_all",
+      "kind": "conditionnel",
+      "label": "Signe ET couverture dans le domaine requis",
+      "requires": [
+        "global_sign",
+        "coverage"
+      ]
+    },
+    {
+      "source": "weil_all",
+      "target": "RH",
+      "kind": "equivalence",
+      "label": "Critère de Weil, domaine précisé"
+    },
+    {
+      "source": "identity",
+      "target": "J",
+      "kind": "construction",
+      "label": "Vrais poids Λ"
+    },
+    {
+      "source": "anchoring",
+      "target": "J",
+      "kind": "construction",
+      "label": "Formule de corrélation avec bords"
+    },
+    {
+      "source": "J",
+      "target": "J_bound",
+      "kind": "obligation",
+      "label": "Majoration indépendante à toute échelle"
+    },
+    {
+      "source": "J_bound",
+      "target": "RH",
+      "kind": "equivalence",
+      "label": "Critère classique, pour Λ"
+    },
+    {
+      "source": "identity",
+      "target": "copies",
+      "kind": "construction",
+      "label": "Inversion exacte de Möbius"
+    },
+    {
+      "source": "copies",
+      "target": "head",
+      "kind": "construction",
+      "label": "Regroupement par conducteur"
+    },
+    {
+      "source": "head",
+      "target": "large_q",
+      "kind": "obligation",
+      "label": "Le reste ne disparaît pas"
+    },
+    {
+      "source": "copies",
+      "target": "threequarters",
+      "kind": "conditionnel",
+      "label": "Les trois contrats sont requis",
+      "requires": [
+        "copies",
+        "head",
+        "large_q"
+      ]
+    },
+    {
+      "source": "head",
+      "target": "threequarters",
+      "kind": "conditionnel",
+      "label": "Les trois contrats sont requis",
+      "requires": [
+        "copies",
+        "head",
+        "large_q"
+      ]
+    },
+    {
+      "source": "large_q",
+      "target": "threequarters",
+      "kind": "conditionnel",
+      "label": "Les trois contrats sont requis",
+      "requires": [
+        "copies",
+        "head",
+        "large_q"
+      ]
+    },
+    {
+      "source": "generic_sieve",
+      "target": "large_q",
+      "kind": "obstruction",
+      "label": "Exiger une propriété spécifique de μ(q) et B"
+    },
+    {
+      "source": "threequarters",
+      "target": "J_bound",
+      "kind": "insuffisant",
+      "label": "Exposant 5/2 encore au-dessus de 2"
+    },
+    {
+      "source": "identity",
+      "target": "fluctuation",
+      "kind": "relation",
+      "label": "Deux descriptions des vrais poids"
+    },
+    {
+      "source": "anchoring",
+      "target": "global_sign",
+      "kind": "obligation",
+      "label": "L’ancrage est nécessaire à la stratégie, pas une preuve du signe"
+    },
+    {
+      "source": "sources_registre",
+      "target": "relecture",
+      "kind": "outil",
+      "label": "Sources et périmètre de relecture"
+    },
+    {
+      "source": "indicateur",
+      "target": "navigateur",
+      "kind": "outil",
+      "label": "Position et critères de réévaluation"
+    },
+    {
+      "source": "navigateur",
+      "target": "prochain",
+      "kind": "outil",
+      "label": "Choix recalculés"
+    },
+    {
+      "source": "objet",
+      "target": "global_sign",
+      "kind": "hypothese",
+      "label": "Structure imposant le signe à construire"
+    },
+    {
+      "source": "tauc",
+      "target": "marges",
+      "kind": "obstruction",
+      "label": "Seuil dépendant de la fenêtre"
+    },
+    {
+      "source": "dens",
+      "target": "Q_bound",
+      "kind": "obstruction",
+      "label": "Le cadre ancien ne donne pas de gain"
+    },
+    {
+      "source": "propC",
+      "target": "thB",
+      "kind": "conditionnel",
+      "label": "Les hypothèses supplémentaires ne sont pas levées"
+    },
+    {
+      "source": "weil",
+      "target": "fluctuation",
+      "kind": "construction",
+      "label": "Forme explicite complète, normalisation et domaine"
+    },
+    {
+      "source": "pos",
+      "target": "global_sign",
+      "kind": "relation",
+      "label": "Même exigence de signe ; pas de coercivité uniforme"
+    },
+    {
+      "source": "tomo2",
+      "target": "darkz",
+      "kind": "relation",
+      "label": "Perte de phase dans les observables de puissance"
+    },
+    {
+      "source": "prochain",
+      "target": "global_sign",
+      "kind": "outil",
+      "label": "Les investigations visent cette obligation, sans la supposer vraie"
+    },
+    {
+      "source": "relecture",
+      "target": "thA",
+      "kind": "outil",
+      "label": "Relecture de la preuve et de ses conditions"
+    },
+    {
+      "source": "modred",
+      "target": "surface",
+      "kind": "construction",
+      "label": "Chercher la structure d’un étage supérieur"
+    },
+    {
+      "source": "surface",
+      "target": "stepanov",
+      "kind": "obstruction",
+      "label": "La transplantation directe étudiée est insuffisante"
+    },
+    {
+      "source": "surface",
+      "target": "objet",
+      "kind": "hypothese",
+      "label": "Une structure globale imposant le signe reste à construire"
+    },
+    {
+      "source": "stepanov",
+      "target": "jets",
+      "kind": "reouverture",
+      "label": "Des conditions de réouverture exigent des objets définis"
+    },
+    {
+      "source": "jets",
+      "target": "v13",
+      "kind": "construction",
+      "label": "Rang, contraintes exactes, fibres et plis"
+    },
+    {
+      "source": "dh",
+      "target": "dh_cert",
+      "kind": "construction",
+      "label": "De témoin numérique à certificat sous budget"
+    },
+    {
+      "source": "dh_cert",
+      "target": "global_sign",
+      "kind": "temoin",
+      "label": "Tester les arguments qui prétendent imposer le signe"
+    },
+    {
+      "source": "rencontre3",
+      "target": "rencontre_n",
+      "kind": "construction",
+      "label": "Étudier des interactions à plusieurs zéros"
+    },
+    {
+      "source": "rencontre_n",
+      "target": "schur",
+      "kind": "relation",
+      "label": "Les interactions motivent un contrôle des couplages"
+    },
+    {
+      "source": "prime_norm",
+      "target": "domaines",
+      "kind": "obstruction",
+      "label": "Contrôler la forme complète dans le domaine requis"
+    },
+    {
+      "source": "prime_norm",
+      "target": "schur",
+      "kind": "obstruction",
+      "label": "Ne pas payer le couplage par une norme divergente"
+    }
+  ],
+  "bellman": {
+    "version": "V6.43",
+    "schema": "bridge_contract_scenarios_v1",
+    "initial_facts": [
+      "nb_transport",
+      "weil_continuity",
+      "admissible_core",
+      "regularization_bound",
+      "schur_identity",
+      "ladder_contract"
+    ],
+    "facts": {
+      "nb_transport": {
+        "status": "proved_internal",
+        "scope": "Domaine et hypothèses du lemme dans le dossier",
+        "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+      },
+      "weil_continuity": {
+        "status": "proved_internal",
+        "scope": "Domaine et hypothèses du lemme dans le dossier",
+        "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+      },
+      "admissible_core": {
+        "status": "proved_internal",
+        "scope": "Domaine et hypothèses du lemme dans le dossier",
+        "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+      },
+      "regularization_bound": {
+        "status": "proved_internal",
+        "scope": "Domaine et hypothèses du lemme dans le dossier",
+        "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+      },
+      "schur_identity": {
+        "status": "proved_internal",
+        "scope": "Domaine et hypothèses du lemme dans le dossier",
+        "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+      },
+      "ladder_contract": {
+        "status": "proved_internal",
+        "scope": "Domaine et hypothèses du lemme dans le dossier",
+        "evidence": "preuves/V643_PONTS_MATHEMATIQUES.md"
+      },
+      "regularization_assessed": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "coverage_candidate": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "coverage_gap": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "debt_assessed": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "invariant_candidate": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "candidate_refuted": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "open_debt": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "kernel_assessed": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "kernel_checked": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "kernel_obstruction": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "transfer_assessed": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "fixed_transfer_verified": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "transfer_insufficient": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "family_dossier": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "local_assessed": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "fixed_A_certificate": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "local_obstruction": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "local_inconclusive": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "weil_reading_assessed": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "weil_full_read": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "weil_access_gap": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "RH_proved": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      },
+      "global_sign_proved": {
+        "status": "hypothetical_outcome",
+        "scope": "Issue d’étude bornée ; aucun quantificateur global acquis",
+        "evidence": null
+      }
+    },
+    "actions": [
+      {
+        "id": "regime_commun",
+        "label": "Construire une famille régularisée et son défaut",
+        "duration": [
+          2,
+          3
+        ],
+        "requires_any": [
+          [
+            "regularization_bound",
+            "admissible_core"
+          ]
+        ],
+        "forbids": [],
+        "outcomes": [
+          {
+            "id": "couverture_candidate",
+            "adds": [
+              "regularization_assessed",
+              "coverage_candidate"
+            ]
+          },
+          {
+            "id": "couverture_manquante",
+            "adds": [
+              "regularization_assessed",
+              "coverage_gap"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "domaines",
+          "coverage"
+        ]
+      },
+      {
+        "id": "dette_schur",
+        "label": "Chercher un invariant pour la dette de Schur",
+        "duration": [
+          2,
+          4
+        ],
+        "requires_any": [
+          [
+            "schur_identity",
+            "weil_continuity"
+          ]
+        ],
+        "forbids": [],
+        "outcomes": [
+          {
+            "id": "candidat",
+            "adds": [
+              "debt_assessed",
+              "invariant_candidate"
+            ]
+          },
+          {
+            "id": "refutation",
+            "adds": [
+              "debt_assessed",
+              "candidate_refuted"
+            ]
+          },
+          {
+            "id": "sans_borne",
+            "adds": [
+              "debt_assessed",
+              "open_debt"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "schur",
+          "global_sign"
+        ]
+      },
+      {
+        "id": "noyaux",
+        "label": "Auditer noyaux et couplages du candidat",
+        "duration": [
+          1,
+          2
+        ],
+        "requires_any": [
+          [
+            "invariant_candidate"
+          ],
+          [
+            "open_debt"
+          ]
+        ],
+        "forbids": [
+          "candidate_refuted"
+        ],
+        "outcomes": [
+          {
+            "id": "compatible",
+            "adds": [
+              "kernel_assessed",
+              "kernel_checked"
+            ]
+          },
+          {
+            "id": "obstacle",
+            "adds": [
+              "kernel_assessed",
+              "kernel_obstruction"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "schur",
+          "compact"
+        ]
+      },
+      {
+        "id": "transfert",
+        "label": "Contrôler un transfert d’erreur sur la famille choisie",
+        "duration": [
+          2,
+          3
+        ],
+        "requires_any": [
+          [
+            "coverage_candidate",
+            "invariant_candidate"
+          ]
+        ],
+        "forbids": [
+          "candidate_refuted"
+        ],
+        "outcomes": [
+          {
+            "id": "controle_fixe",
+            "adds": [
+              "transfer_assessed",
+              "fixed_transfer_verified"
+            ]
+          },
+          {
+            "id": "borne_insuffisante",
+            "adds": [
+              "transfer_assessed",
+              "transfer_insufficient"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "transport",
+          "coverage"
+        ]
+      },
+      {
+        "id": "synthese_famille",
+        "label": "Assembler le contrat et ses limites",
+        "duration": [
+          1,
+          2
+        ],
+        "requires_any": [
+          [
+            "regularization_assessed",
+            "debt_assessed",
+            "kernel_assessed"
+          ],
+          [
+            "regularization_assessed",
+            "candidate_refuted"
+          ]
+        ],
+        "forbids": [],
+        "outcomes": [
+          {
+            "id": "contrat",
+            "adds": [
+              "family_dossier"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "global_sign",
+          "coverage",
+          "weil_all"
+        ]
+      },
+      {
+        "id": "fibre_A",
+        "label": "Certifier un autre passage local à A fixé",
+        "duration": [
+          2,
+          4
+        ],
+        "requires_any": [
+          []
+        ],
+        "forbids": [],
+        "outcomes": [
+          {
+            "id": "certificat",
+            "adds": [
+              "local_assessed",
+              "fixed_A_certificate"
+            ]
+          },
+          {
+            "id": "obstacle",
+            "adds": [
+              "local_assessed",
+              "local_obstruction"
+            ]
+          },
+          {
+            "id": "inconclusif",
+            "adds": [
+              "local_assessed",
+              "local_inconclusive"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "v13"
+        ]
+      },
+      {
+        "id": "relire_weil",
+        "label": "Terminer l’audit du mémoire de Weil",
+        "duration": [
+          2,
+          3
+        ],
+        "requires_any": [
+          []
+        ],
+        "forbids": [],
+        "outcomes": [
+          {
+            "id": "lecture_integrale",
+            "adds": [
+              "weil_reading_assessed",
+              "weil_full_read"
+            ]
+          },
+          {
+            "id": "acces_partiel",
+            "adds": [
+              "weil_reading_assessed",
+              "weil_access_gap"
+            ]
+          }
+        ],
+        "scope": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+        "nodes": [
+          "weil",
+          "sources_registre"
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "contrat_structurel",
+        "label": "Domaine et dette définis ensemble",
+        "weight": 8,
+        "requires_any": [
+          [
+            "regularization_assessed",
+            "debt_assessed"
+          ]
+        ]
+      },
+      {
+        "id": "noyau_resolu",
+        "label": "Couplage du candidat audité",
+        "weight": 3,
+        "requires_any": [
+          [
+            "kernel_assessed"
+          ]
+        ]
+      },
+      {
+        "id": "transfert_controle",
+        "label": "Transfert fixe contrôlé",
+        "weight": 4,
+        "requires_any": [
+          [
+            "fixed_transfer_verified"
+          ]
+        ]
+      },
+      {
+        "id": "candidat_rejete",
+        "label": "Candidat précisément réfuté",
+        "weight": 3,
+        "requires_any": [
+          [
+            "candidate_refuted"
+          ]
+        ]
+      },
+      {
+        "id": "pont_conditionnel",
+        "label": "Contrat assemblé, quantificateurs ouverts",
+        "weight": 5,
+        "requires_any": [
+          [
+            "family_dossier"
+          ]
+        ]
+      },
+      {
+        "id": "lecture",
+        "label": "Audit de lecture circonscrit",
+        "weight": 2,
+        "requires_any": [
+          [
+            "weil_reading_assessed"
+          ]
+        ]
+      },
+      {
+        "id": "local",
+        "label": "Étude locale circonscrite",
+        "weight": 2,
+        "requires_any": [
+          [
+            "local_assessed"
+          ]
+        ]
+      }
+    ],
+    "reserved_global_claims": [
+      "RH_proved",
+      "global_sign_proved"
+    ],
+    "exclusive_groups": [
+      [
+        "coverage_candidate",
+        "coverage_gap"
+      ],
+      [
+        "invariant_candidate",
+        "candidate_refuted",
+        "open_debt"
+      ],
+      [
+        "kernel_checked",
+        "kernel_obstruction"
+      ],
+      [
+        "fixed_transfer_verified",
+        "transfer_insufficient"
+      ]
+    ],
+    "units": {
+      "budget": "H: unité conventionnelle de travail, pas heure",
+      "value": "U: préférence déclarée de capacité"
+    },
+    "assumptions": [
+      "No calibrated transition probabilities",
+      "No RH-distance or proof probability",
+      "Durations are declared intervals, not measured effort",
+      "Study completion is conditional; scientific outcomes branch",
+      "Lower/upper are declared scenario envelopes, not empirical confidence intervals",
+      "Costs and weights are editorial choices dated after the lemmas",
+      "Capabilities count mathematical contracts once, regardless of document subdivision"
+    ],
+    "next_contract": "Specify a candidate invariant and its arithmetic Schur debt for the complete form, with kernel and family quantifiers",
+    "_continuity_provenance": {
+      "source": "1_Presentation/67_GRAPHE_DES_PONTS.html#bridge-data",
+      "article": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+      "sections": [
+        "1",
+        "7"
+      ],
+      "retained_version": "V6.43",
+      "extracted_on": "2026-10-15",
+      "model_sha256_before_provenance": "7829fe9cd93269aef6350ead4aabbb1819c956c755b60b6c96d36c4263d9448d",
+      "scope": "Exact retained contract model; no new scientific result or new success probability.",
+      "initial_facts_origin": "Six facts retained in document 67; not the complete current corpus.",
+      "current_applicability": "Historical studies must be reconciled with actual outcomes before their reuse as current priorities.",
+      "source_path_warning": "Original fact evidence paths are preserved as provenance; the readable statements and proofs are in article 67."
+    },
+    "default_budget": 6,
+    "profiles": {
+      "Contrats du document 67": {
+        "structural": 1,
+        "local": 1,
+        "clarity": 1
+      }
+    }
+  },
+  "review_scope": "Sept dimensions réévaluées documentairement ;99 bilans conservés et13 corrections ciblées. Récupération de176 originaux V6.50 et vérification de85 tests fonctionnels historiques ; deux références V6.51 restent absentes. Pas de relecture scientifique intégrale ni de nouveau résultat global sur RH.",
+  "defects_fixed": [
+    "Comparaison de l’indicateur arrêtée à V6.18.",
+    "Prochaines marches incluant une tâche V13 déjà exécutée.",
+    "Graphe limité à une ancienne base et à des appendices ; ancien prochain coup figé.",
+    "Deux nœuds différents utilisaient sources et t-sources.",
+    "Positivité de Weil confondue dans un titre avec coercivité uniforme.",
+    "Actions de V6.47/V6.48 encore ouvertes ou datées avant leur réalisation effective.",
+    "Obligations récentes exclues du navigateur actif ; Bellman non réactualisé.",
+    "Navigation à 18 entrées et panneaux répétés au lieu de mises à jour des vues."
+  ],
+  "route_mapping": {
+    "chemin_01": [
+      "lemmes",
+      "thA",
+      "thB",
+      "nb",
+      "Q_bound"
+    ],
+    "chemin_02": [
+      "energyD",
+      "J"
+    ],
+    "chemin_03": [
+      "darkz",
+      "tomo2",
+      "tomo3",
+      "anchoring"
+    ],
+    "chemin_04": [
+      "primelock",
+      "duallock",
+      "dh_cert"
+    ],
+    "chemin_05": [
+      "modred",
+      "ff",
+      "marges"
+    ],
+    "chemin_06": [
+      "mod7",
+      "archipel",
+      "rencontre3",
+      "rencontre_n"
+    ],
+    "chemin_07": [
+      "chainon",
+      "generateur",
+      "base",
+      "compl"
+    ],
+    "chemin_08": [
+      "surface",
+      "stepanov",
+      "objet"
+    ],
+    "chemin_09": [
+      "jets",
+      "dh_cert"
+    ],
+    "chemin_10": [
+      "v13"
+    ],
+    "chemin_11": [
+      "domaines",
+      "compact",
+      "schur",
+      "fluctuation"
+    ],
+    "chemin_12": [
+      "local",
+      "schur",
+      "transport"
+    ],
+    "chemin_13": [
+      "transport",
+      "coverage",
+      "global_sign"
+    ],
+    "chemin_14": [
+      "identity",
+      "anchoring",
+      "J",
+      "J_bound"
+    ],
+    "outil_01": [
+      "navigateur",
+      "prochain"
+    ],
+    "outil_02": [
+      "indicateur"
+    ],
+    "outil_03": [
+      "navigateur"
+    ],
+    "outil_04": [
+      "navigateur",
+      "schur"
+    ],
+    "outil_05": [
+      "generateur",
+      "compl"
+    ],
+    "outil_06": [
+      "schur"
+    ],
+    "outil_07": [
+      "v13",
+      "global_sign",
+      "coverage"
+    ],
+    "outil_08": [
+      "domaines",
+      "local",
+      "transport"
+    ],
+    "v655_amplification": [
+      "copies",
+      "head",
+      "large_q",
+      "threequarters"
+    ]
+  },
+  "reviewed_source_hashes": {
+    "1_Presentation/03_Dossier_de_relecture_EN.docx": "31afcc210c6e428bd32acf984e6ae6289d54d8875bad630d4c8e8426e0466896",
+    "1_Presentation/13_Lecon_2026.pdf": "d0c8945b4c62497a0a992a9a98bf269809002575eff1ccfba31ac69e0c789e16",
+    "1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md": "cfe5824ed31d85b9328e9bef69d335bb12f429ce7e04ad8172c826ed3c3c3910",
+    "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md": "ceb4ae3c0cd2566ef11ac2da4f233e177be1678cfd7e64e1de0838d7d71cc55d",
+    "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md": "f742030ba42df52de89ace1ea8adb703be5dd98bf7492df57a1d16227745e5b7",
+    "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf": "44e65fe657f7af046cdd44d33fe98c4547e53b015f143aa67c46a3e67c7e72e3",
+    "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf": "1cc5c52bfdf87c3ad5f515e0ab06309ca35045c87a114a40f25adf4a47507559",
+    "1_Presentation/30_ARCHIPEL_D_EULER.md": "3604703a05e55f0baa1e98428ca5ff8b57f82fe8c168290a2d14ac0d6deeb7c8",
+    "1_Presentation/30_ARCHIPEL_D_EULER.pdf": "471ab605a4c1b275833ee1e7e1f4b092000d456c963e13e272e6dc0133dfe3d9",
+    "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md": "d6e232c3b996196b39bb59b7993f01f1eff19776cfe3b321e74000bad49d832c",
+    "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf": "1aa4089b8c06b2acbb8beca63f6985a236b04ddcd9bbc3dba283e7f13ac286af",
+    "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf": "335aa2c4a6a8e5062b66e1464b7a116592e71144ab139c8f343530c9e5c64ffa",
+    "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf": "0fc0749ba0f1b51625ed3167e868948adc4aa0e7bb0c5ac96ddc6d1d9f6eb9e0",
+    "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md": "35f54a35094d8f14d26a0277b3fce72f91e9cf522bc393bdfe6a84a2f07f3a0e",
+    "1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf": "9323ca86969972596519686c1b0d378516ef201801dba5e8cda4cb9ae3f29392",
+    "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md": "a43b65fe18df765943f52591ea5e6ddc179207e3c6cbbde1cdd206c592fd7f2b",
+    "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf": "304de55fc03fe99459399ecc9a14d7b646b43e6ca3479ec65f21e834a098272a",
+    "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md": "a70e0d6b4934beebd865e36779facee0974c3f67c0f0b45522115aebd10cf246",
+    "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf": "48c7d31def3d8350f7c435735da3c853af2e24f2737429d57504b8c30d9d2fd6",
+    "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md": "e9896b6b0cc9d32a47fc3a1e1339e61c115efb6bcde96f4a5520ba6b09f14211",
+    "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf": "0cb0a837afce70db8d15c6c211c7911a5033542cd8a1ad81cb09a200743ce1f5",
+    "1_Presentation/40_LA_RENCONTRE_A_TROIS.md": "deeb94fcf650286978d0340ff0f43477676f8c18a39ec98e2743078bdc227ed0",
+    "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf": "c5125b5e229eb48580b70fe2a7e6e934beca16c343f3d1252bc8c224b036540e",
+    "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md": "ad0b0d53619bab602a4e5722639759b9f0f7b22a1ea6effd6a63dba2eb998eaf",
+    "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf": "f111c11ee4ed78e7069e2e5f75a1b5b23cfc75567605b70fa7c057806f80dffa",
+    "1_Presentation/42_REGISTRE_DES_SOURCES.md": "a84a21be7812684e6829515dd9850c820da2a97ae5060f0e5e4e4aba7a35c93b",
+    "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.md": "5b1f2c3cbbaba6cf95527f5c40b12dc8d8effbd853b375f05f2319bb58f98477",
+    "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.pdf": "8d8b3190b250a77ce0d9c0d168b9474f9d2a4d02660a1059dcd6bd60d043f8f0",
+    "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.pdf": "305b8e83bfb9440bebb6e06c752e4f5ca9c504047c4040fdd7b961def2558534",
+    "1_Presentation/46_LA_SURFACE_VIRTUELLE.md": "648be82fa81fed3e45c78755d2e61bd52826c3b628859b0aaad04bea28763769",
+    "1_Presentation/46_LA_SURFACE_VIRTUELLE.pdf": "2647ab1a011f15eac1bd38c7cbae6c113e99871e797f1e4df14e40e45856029f",
+    "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.pdf": "813ee2f9c0d68e440871fea3e6525ad4fbbc8bd248469f77b47166d16b918b03",
+    "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.md": "abaf9b638ca8dfe9de0fd9b9c25b2faed3a87b2103312326e19c7d3c5746814f",
+    "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.pdf": "c38f9fcf19998f5020e6d6cb0007f7fbfedb7338651a03d7960119b41dc608d0",
+    "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf": "4037dfeba52f8b9d8933d4cf24b341dfb4bd5a11991fa30dff072063f370a9ec",
+    "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.md": "90fa4d23d7f04eb2491d3cc8ad26cf7d4c618456a2ee68d2ab6f7066a69b8f12",
+    "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf": "aaac5b6f9c1da3d2ff3f89ce6f292078d424b340f2c1e37d9ad042cf79371edf",
+    "1_Presentation/52_J6_LE_CARRE_EN_CONTINU.pdf": "34d7dd3d92f2bd7e9ae422357306ea7c99cb2b6f2de561b0b6a1b54e3b85b17b",
+    "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.pdf": "73c9eac46c5df66ce0dacf4d6721beabec136c6723fdae251aaa888a51bd2ed0",
+    "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf": "b9ee582e2145967ddefe3e33c2e7c3deb53a6fed2b04b66bfe918c6ffc0daebb",
+    "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md": "4d9a89200b837da151a8a9b8f1252e1c909142efdb366c1682555a75469c3d2d",
+    "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf": "fc59cf5f163a03f410911a1a85a887dfc2c3e5b0f2ad6adedb686a491608954b",
+    "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf": "2ebee67f534685b310dcfad545d998824bec47729547a15617c06737b76e4890",
+    "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md": "42b7100529416b6c55b58fbb2852caa99244aadeff062cb5893ba80e3b6977fd",
+    "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf": "a354325f0acd70bc4019129a6483cbbe700a50f8f2f7e032ce8cee7a9490986a",
+    "1_Presentation/61_ANCRAGE_APPARIE_V13.pdf": "daafc3d7b16115d7ef796d759b33da99c515f7f981684f5fbd1e987131d4ed24",
+    "1_Presentation/63_CONTRAINTES_EXACTES_V13.pdf": "25b25f2608d1af7b9991d2b027bff00cf3775def2568bd6a979d99937cbcad3d",
+    "1_Presentation/64_COMPARAISON_EXACTE_V13.pdf": "438beee36c590e6df02daab35f4bffb52913665e62b2a533b72397edbd8c6b53",
+    "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md": "cdff038a0473e829ba6832ad56c622dff8661a67f3c5191357e0d881778ab2e8",
+    "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf": "3cb89073f1c7c32eca002bab532ca64195855ebc451609e15c77146f7f595841",
+    "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md": "c11bef23320d92f9ce61f1284cbacf87946007d463ae4463bbfadaff45e5f5ec",
+    "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf": "1bed46baa8e3ac0a63fcb43688dacee025f1864754196363039f650808a376fa",
+    "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md": "b47c6dbcb9bf052d09f896e62a52773464d191c636789230af296d9af946f6e8",
+    "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf": "e622ff8f12470683fd744c21617f2a62e98e891459a0c668680167b2b4e62df7",
+    "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md": "301f7cc04b6fe750b9592a03e73f7ecf21d338db7e2feeae9894ccc25cee729d",
+    "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf": "8a0fdde28556ff4e2141e6935523dc34225ef6dc6b56ef5e14f4bdece2282170",
+    "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md": "e815672a9b7623d647ebca72d6cbe14d3456028d18655a1abb34a7331a6d3a91",
+    "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf": "d78e9e3a9a95d1c951a5c579d96cddf327e61ddc985b0583dac82f65a273d969",
+    "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf": "ad5199f30c2de50bb6e8504b760a8b564f1c0340ef4cd38eaa68bce2f95ff07a",
+    "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf": "1bc74b6e40c0d1c39c3db8882401117b49f08d0c4813adc7025c33a29f867bd2",
+    "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.md": "cf6d0ad686066514321f72b598e445ecd18568a9bba84661edc9ebcc5dc78bda",
+    "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf": "8d943cd0e7d1092095477fb5f12acbf44de12322246e93263691aae080a07d09",
+    "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.pdf": "5562c187d1bd492e509076dc8341c91b17fdbe7520bb28f05b446860ecf4c636",
+    "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md": "727c3992de287f8d96cb7943f5f23423e44dd46a0703c3088239745a3a4599ba",
+    "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf": "ac2d31839483434bb0e5b37fc69f08e0dd9ef2fe318037d3a150a83f82f41e3c",
+    "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md": "8f4585117c1ab7f888f9b263bf0ca952ca855cc1b80144807b1c024da3091633",
+    "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf": "1e2e639757d8e3407227f22de091ec759016d2f8e91112915d5c0c9c7be80ca9",
+    "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md": "a8ad7288058c17ebcbefd7255ebee41060d489ac12be1c745651a6536b1f839a",
+    "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md": "747320d1c51b5802c5e6bb21e99b945ae1ab59fae339e970d8f52b3a05add3de",
+    "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md": "07ca144d84f5fc6e4f9c2ce5e091c418fe7666a5911b28f8549a3869b49ad9f1",
+    "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md": "54c30871252c0ce2f4e6cbb457afe244991bf661aa927ba151f474cd4a59e7a1",
+    "1_Presentation/articles/article1_mean_square_double_poles.pdf": "504412fd08463cd434892196ad0c36ccd6fc3459315fc799a783812ac9ce15e2",
+    "1_Presentation/articles/article1_mean_square_double_poles.tex": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1",
+    "1_Presentation/articles/article2_prime_side_weil_forms.pdf": "8082bd9feda71d3152723261110d8dc3f966a889fc825544b61194730c14620a",
+    "1_Presentation/articles/article2_prime_side_weil_forms.tex": "50b8206dc741fa646ad93be8c39772869d37396110ec98ece6ef1fbd56e230d9",
+    "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf": "a78e17183879344f673f88982eb6b302516dfdc39e16b5585a56dbfea1dbc19b",
+    "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.tex": "a62b03df4ac9d62a4034669e1cce97342edc851ef27ed5bb8ac21a948b9b7bb0",
+    "2_Methode/Figures/registre_figures.json": "6019b9bb159640842724eadc1b8dd1ba5dc553361e564834dad6dda47e1ad613",
+    "2_Methode/Navigateur/carte_navigation.json": "ad09413bfb9ebacb23478ca78d6aec0e682d078a5076600259af7a8a78d71a5b",
+    "2_Methode/Pilotage/graphe_source.json": "8abb7470b61a507364adcc0d9eee350cd128a185dd3dc166e4de4af9850101a5",
+    "2_Methode/Sources/references_articles.json": "0b2eca26242eddfc30727d4b6c61ce1b57e64c5128a05ae7dd0d96766ab7924e",
+    "3_Preuves_et_calculs/preuves/H3_ANALYSIS.md": "830aa0c0953082922b8e2e2d6ca95ca9e2afb82b7bd233580517ea6cd217935a",
+    "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md": "065c3a338e7b58fcbadd90f6d792e5686ba416e80bf3fd9b7895c058a4ab209a",
+    "3_Preuves_et_calculs/preuves/THEOREME_TERME_DOMINANT.md": "4de396c3ef529ee0d0b232b63cebe1921d5c342d868759f3879feea4e9217233",
+    "RECUPERATION_2026_10_14.json": "3e5f81a09e1e597fd0e8a139144eb7a8308de8aed02ef42daa651c1444a3f989",
+    "3_Preuves_et_calculs/preuves/V642_CERTIFICATION_LOCALE.md": "50f1b7077be9d0756f7ae6d6efcd73ecc6a64309c5368163de74cbe7779d638d",
+    "3_Preuves_et_calculs/preuves/V642_CONTRAT_ARITHMETIQUE.md": "f7eb07778900653147cbc3de40cbd8586afba58e6e5c00c77fcbdf46ced957a6",
+    "3_Preuves_et_calculs/preuves/V643_PONTS_MATHEMATIQUES.md": "9aab283244c86a9d0ff51c5bb2ee5f543f06aa6c0ccb44b9a05020d4e22a92bf",
+    "3_Preuves_et_calculs/preuves/V644_LANGUE_ET_DOMAINES.md": "c780162bda2bde204a1278585f77717988f0dc7cbda8e448e6062a6cb03768a7",
+    "3_Preuves_et_calculs/preuves/V645_PONT_ARITHMETIQUE.md": "50ba43d3150e1dbdd74970bd1e2272d7e88cff4957832c308c4b023b9b375b31",
+    "3_Preuves_et_calculs/preuves/V646_LEGO_CERTIFICATS.md": "59343adc8869c4cadd5da3b4a57a6719de727854cbf2eaf093e008c381c9805e",
+    "3_Preuves_et_calculs/preuves/V647_CONCENTRATION_PROJETEE.md": "1f16e49d9adfa267c29569dfdd8283a226104a47f728ac7eb843db15d5f71b3f",
+    "3_Preuves_et_calculs/preuves/V648_OPERATEUR_COMMUN_CERTIFIE.md": "d1292ddfea39f8da2e9fbc9d270a73b349203005e6d41de4f9285d7d5ffa53c2",
+    "3_Preuves_et_calculs/preuves/V649_COMPENSATION_MULTI_PREMIERS.md": "7e54b114c3209cc7d6b853925b71cbb5d22abf67266d0d3a2be87a894c92d877",
+    "3_Preuves_et_calculs/preuves/V650_RECUPERATION_TRANSPORT_ET_RH.md": "1e65f1189715cd51038b70dcabd385a2c2b7b5cc6ff7d0d7ca0e87745bafa54a",
+    "3_Preuves_et_calculs/scripts/check_v642_bellman.js": "c34d43112c62e2a993696f8fee00ae7ad5ff53e866cdd05a1fc522d12fbdefda",
+    "3_Preuves_et_calculs/scripts/check_v642_certificate.py": "642b915e9bb1cd08f06000426bfe030773e627811e21c9f5f42ca1a24ae28224",
+    "3_Preuves_et_calculs/scripts/check_v643_client.js": "26922a3098311d88fba67176b668182b0939b5c502a15619f9c63e8f58730d6e",
+    "3_Preuves_et_calculs/scripts/check_v644_language.js": "9ce499d3c749d78e15b139f447bba8ac06ee7d248e52677bd2e668ac8dc24783",
+    "3_Preuves_et_calculs/scripts/check_v645_arithmetic.js": "ec62afd5f2d6d2b9e38776a3e17762ccbe70d0102ff02f94f3b76cb056004f74",
+    "3_Preuves_et_calculs/scripts/check_v646_grammar.js": "25321a1109d5df83e6ec77d9123014fad4d50eea83ee15f668b2ee674d9e9630",
+    "3_Preuves_et_calculs/scripts/check_v646_lego.js": "585d6c565b9cdddb9e1bac9a614432988d12e2705f5c9bc8227b39826017975f",
+    "3_Preuves_et_calculs/scripts/check_v646_pedagogy.js": "a22e25ee1cb4b8cb5de974bf79d4c9c50a94316737f45e7e77dbf418e9ee3988",
+    "3_Preuves_et_calculs/scripts/check_v647_interfaces.js": "39b789b992cd274bc34509bcfc36695ad8eaca88dd6f5055ecfffc8f56bd45ca",
+    "3_Preuves_et_calculs/scripts/check_v647_links.py": "45f9dc5c3a5bbae7396f294962aa0f11b209dc2e6fbae4a59b9c49d1cbb56368",
+    "3_Preuves_et_calculs/scripts/check_v648_interfaces.js": "a5bb5ee01d00f38baafe78a3242b283b090b086d767f89a1c3731995730d9b80",
+    "3_Preuves_et_calculs/scripts/check_v648_links.py": "979b03c57ff64485d0908a8d50ad00978f8b8862b7fe6e14dad44772375a4f92",
+    "3_Preuves_et_calculs/scripts/check_v649_interfaces.js": "58bd85b2e0e14490eff11c271a6d3436ca183b906d6b86988d696f55d31bf8f6",
+    "3_Preuves_et_calculs/scripts/check_v649_links.py": "d4ef48078f357b2d64b85e7532970cc6ac27c9c04146e7402499ca60e4c0d9e4",
+    "3_Preuves_et_calculs/scripts/run_v642_bellman.py": "ee3d9a59fde7c9572df6ef8fffb7a289399be0349e806c5ac78d8a69b6460a47",
+    "3_Preuves_et_calculs/scripts/run_v642_certification.py": "529a0c2717c3dcbf5f4649f9e30829e631eed513a5ac969e02c1dad62d196b34",
+    "3_Preuves_et_calculs/scripts/run_v643_bridges.py": "0a8f4f7256a1569c94dd2a07f038398f3b5aa9f1c78f1cbb18ffdb31def36469",
+    "3_Preuves_et_calculs/scripts/run_v650_certificate.py": "6bca75d2382d529bd19d163d2e5b76e5bf265a661e3e1df712ffc209fd63ffba",
+    "3_Preuves_et_calculs/scripts/v644_family_experiment.py": "203286ca86905935afc18cb0dd43b922b3de160ca47e451d5bc181b3d3089182",
+    "3_Preuves_et_calculs/scripts/v644_integer_tail.py": "c973e07e9e8a42462c8fffa238982c29cac63afce51aea9a16a7371825854fae",
+    "3_Preuves_et_calculs/scripts/v645_arithmetic_experiment.py": "1dbd8f2d4bcffa2b668a37e5c293ac2fc5d8b312a8b1aee16ea3b463fa7cc4bf",
+    "3_Preuves_et_calculs/scripts/v645_compensation_directions.py": "af668fa7b5af774bddc8736a4e7efd6d23515b4ea7082731498df3c3aea77c1f",
+    "3_Preuves_et_calculs/scripts/v646_fourier_joint_diagnostic.py": "bc888229cd1266066e220f193770ab40ec76add0c3a60b9ba04f56886fc8560c",
+    "3_Preuves_et_calculs/scripts/v646_lego_experiment.py": "b8731bc5a7665dc1ea9a24aa3de67d43804a5edaabd309b9c55eb0b14b4e80ff",
+    "3_Preuves_et_calculs/scripts/v647_concentration_experiment.py": "8c49a1afe9082407eb32e7b5ede38c4b44b53e24ecfef9d5f5cb0c953b4cd13e",
+    "3_Preuves_et_calculs/scripts/v647_operator_diagnostic.py": "daf845ebf33de757e5834b9d3da49ca0b57f156c252d75c3c87130db8de48ac1",
+    "3_Preuves_et_calculs/scripts/v648_common_certificate_experiment.py": "3404ef06b707ad9af5f9ea01c38c5035bd328e96e8f26f9732e47bbc90287259",
+    "3_Preuves_et_calculs/scripts/v648_common_operator_diagnostic.py": "30be1e1bce61128511549813c5d74458cf809c42e2d23be72083952b23e01c75",
+    "3_Preuves_et_calculs/scripts/v649_joint_payment_experiment.py": "5498bb1f58974c153ca0353620f5f72c0121c31504cc1b2238c2440d5a4a67d3",
+    "3_Preuves_et_calculs/scripts/v649_multi_prime_diagnostic.py": "bd3dad29da93271298c936a4b45e55b6449685b0afab4fe9c9d9b46d968c78bc",
+    "3_Preuves_et_calculs/scripts/v650_support_transport_experiment.py": "29ad85c6a93f4f92e8754571a0f32ee8401de434c86f923e7c2ea97216de5522",
+    "3_Preuves_et_calculs/scripts/verify_v650_certificate.py": "9929042ef434f290666396ed6f7d6df422bb5767d5ed39a41c6f88f7b947486a",
+    "3_Preuves_et_calculs/src/bridge_planning.py": "05d29a79c819fd98ceed68f126b12a2f6c87a88320bf27bbd8deaa6c1eb9de2d",
+    "3_Preuves_et_calculs/src/certificate_lego.py": "2208a6b0eec784db12ce9bc7b47990af207be0663facd48d94985e98164b1198",
+    "3_Preuves_et_calculs/src/common_operator_certificate.py": "80eb332e7aa818e032b3cf286efebc65dffffb6a49eec831d6c814f6005d4dfc",
+    "3_Preuves_et_calculs/src/domain_grammar.py": "6e191500c80ab409edecdcacf80d04f036fc3cac80bd11ae0b2e93c60d71c84f",
+    "3_Preuves_et_calculs/src/multi_prime_compensation.py": "5ee6e0b2830014093796695e943e63795e6c24ab36e2d67aac7f3d18a5781bca",
+    "3_Preuves_et_calculs/src/projected_concentration.py": "883ca28fd3874bc9e69f763a8a61fb26482d4e1affeaedfb4c7978354c6ab4e5",
+    "3_Preuves_et_calculs/src/schur_bridge.py": "75b62ccb9e8f8fb7f9cb00d554964bba53bf406f8e56f4e92f47dfb722194aa0",
+    "3_Preuves_et_calculs/src/support_transport.py": "32ef14bb0489fae53143a68a2da78395e00aa099345d0a87ffbddb1f88682c2a",
+    "3_Preuves_et_calculs/src/v642_intervalles.py": "a6169a58d2e089ef962c264e3cf4e792316ece54b99c7e028f58bdf350913d94",
+    "3_Preuves_et_calculs/tests/test_v642_certification.py": "85ef057a257fe973810fe95ebd2a92858e0d2447734cb761cf85400d869ce35b",
+    "3_Preuves_et_calculs/tests/test_v643_bridges.py": "24a53476fc3cdb8d3cb68e43f49fb47310025c6c5dfc9cecafaf2b8a21947cd6",
+    "3_Preuves_et_calculs/tests/test_v644_domain_language.py": "91be852ed18f0985cf5a615666a3ff0d26e07b466c18a04787622e8b55d5d64a",
+    "3_Preuves_et_calculs/tests/test_v645_prime_centered_bridge.py": "86bd9411cc7b5caf6db226b98e38502d5fc7db3a1cd175be52a2c0ddbc633853",
+    "3_Preuves_et_calculs/tests/test_v646_certificate_lego.py": "73b3e750068b487e7fbf789cdf4d88cc8147c400cae9c5a2d46d674372d52ead",
+    "3_Preuves_et_calculs/tests/test_v647_projected_concentration.py": "ee151df8606dfd9a26a733c848fc0ceac59ea990890ea58bfe2b7f8c124f5e60",
+    "3_Preuves_et_calculs/tests/test_v648_common_operator_certificate.py": "5f3600f5da87db3e40330b30e4331f1edd11316a0d22a140e219424fea9bf147",
+    "3_Preuves_et_calculs/tests/test_v649_multi_prime_compensation.py": "48ae350b0834608d0d9aa8166bbe2b0e8392ce503f45d16fe49f4ac78ff676fa",
+    "3_Preuves_et_calculs/recherche78/exploration/RAPPORT_SIGNE.md": "087259fadea10a501b33197ed7ea15f50ea6278d0c14e8585de43e61849d73e3",
+    "3_Preuves_et_calculs/recherche78/critique/AUDIT_MECANISMES_UNIVERSELS.md": "e554c0cc6a04c4a87163c222336551bf7237598e9b02995c12f0468cdc9ca2b0",
+    "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_verifier_pistes_globales_RECONSTRUIT.py": "1f7469ff5f829b6f619ab5e671cfa79f4fcd5e2af494b85ecdbc2bc92985021c",
+    "3_Preuves_et_calculs/reconstruction_v651_20261015/v651_pistes_globales_resultats_RECONSTRUITS.json": "941569c1d2801ef84dfe7b62507d2b1cb827bf0c501358e5314c2004bb16ec83",
+    "4_Exports/V651_RECONSTRUCTION_DOCUMENTEE_20261015.zip": "603cf3bd981eb4a2e368a371b43a0ac36e5a0452bbe4857c7a255d851327deeb",
+    "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md": "33b0c9d1fcf3d160d7b4946d43e73d9952c7b0dbf2a344998d268920acfe8bb9",
+    "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md": "52d09737701c7a55860e71296f5207a7420e24e2b3e669d71a724e19dada1302",
+    "3_Preuves_et_calculs/signal_v657/resolution_resultats.json": "4852653d73d17dcc2c6b86d751fd1a3b4b4dfa88144199b934b6a718e66c1c16",
+    "3_Preuves_et_calculs/signal_v657/certifier_resolution.py": "4b2127ce850418888d9a018c6cfae66b5c13b84974cde222f08f7315a170083f",
+    "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py": "75fd5f1a615c4438a527acc6f24db24890a0ae975963895a13ca3ee4a14f07c8",
+    "3_Preuves_et_calculs/src/prime_centered_bridge.py": "8727fb2e1c7c0258e26e737039cb0aaf564d14f24faf57147a86f0a98a10d3d7",
+    "3_Preuves_et_calculs/src/symbolic_weil_family.py": "aeedb92782575a85d5102681dd232ac3591be03431e351741a175af9b595d224",
+    "3_Preuves_et_calculs/recherche79/compensation_blocks.py": "1e0ffce184e848994a82c40ee9f96a2c007d8ce1ea0bd750311a94d50c5537e7",
+    "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json": "21194b1ce4ccc3babfefbec01aaf418a984710f49d42436ef76bbb443ecb06bd",
+    "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py": "b5e0a84c43deee55b6045ba8e4c03566fb9583f84335e55eb88b438a91949e47",
+    "3_Preuves_et_calculs/data/v644_family_resultats.json": "513d0aa1e3605e01a956e6349e498411edf69d3cf33349b8e9420b9841739e07"
+  },
+  "graph_views": [
+    {
+      "id": "G65",
+      "path": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "data_id": "graph-data",
+      "container": null,
+      "document": 65,
+      "mapping": {
+        "image": [
+          "v13"
+        ],
+        "fibre": [
+          "v13"
+        ],
+        "jet": [
+          "v13"
+        ],
+        "pli": [
+          "v13"
+        ],
+        "variation": [
+          "v13"
+        ],
+        "paire": [
+          "v13"
+        ],
+        "mesure": [
+          "v13"
+        ],
+        "prefixes": [
+          "coverage",
+          "local"
+        ],
+        "pont": [
+          "global_sign"
+        ],
+        "g1": [
+          "coverage"
+        ],
+        "g4": [
+          "schur"
+        ],
+        "borne": [
+          "Q_bound"
+        ],
+        "weil": [
+          "weil_all"
+        ],
+        "theoremeA": [
+          "thA"
+        ],
+        "rh": [
+          "RH"
+        ]
+      },
+      "case_annotations": {
+        "jet": {
+          "primary_source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md",
+          "primary_source_label": "Lemme 4 — Section de collision de rang cinq (§6)",
+          "note": "Le lemme de cette case est une section affine réelle de collision à coefficient complexe fixé. Il est distinct du lemme de jets de Hasse en caractéristique finie du document 58.",
+          "related_nodes": [
+            "jets"
+          ],
+          "relation": "Parenté conceptuelle : contraintes de jets et contrôle du rang ; ni identité de lemme ni transfert automatique entre les deux domaines."
+        }
+      }
+    },
+    {
+      "id": "G66",
+      "path": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "data_id": "graph-data",
+      "container": null,
+      "document": 66,
+      "mapping": {
+        "pli": [
+          "v13"
+        ],
+        "isolation": [
+          "v13"
+        ],
+        "racines": [
+          "v13"
+        ],
+        "paire": [
+          "v13"
+        ],
+        "metrique": [
+          "schr"
+        ],
+        "a1": [
+          "fluctuation",
+          "domaines"
+        ],
+        "pont": [
+          "global_sign"
+        ],
+        "a2": [
+          "prime_norm"
+        ],
+        "uniforme": [
+          "global_sign",
+          "coverage"
+        ],
+        "croissance": [
+          "Q_bound"
+        ],
+        "weil": [
+          "weil_all"
+        ],
+        "rh": [
+          "RH"
+        ]
+      }
+    },
+    {
+      "id": "G67",
+      "path": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "data_id": "bridge-data",
+      "container": "graph",
+      "document": 67,
+      "mapping": {
+        "nb": [
+          "nb",
+          "domaines"
+        ],
+        "primes": [
+          "domaines"
+        ],
+        "reg": [
+          "domaines"
+        ],
+        "form": [
+          "compact"
+        ],
+        "core": [
+          "coverage"
+        ],
+        "blocks": [
+          "compact",
+          "local"
+        ],
+        "schur": [
+          "schur"
+        ],
+        "invariant": [
+          "global_sign"
+        ],
+        "uniform": [
+          "coverage",
+          "global_sign"
+        ],
+        "rh": [
+          "weil_all",
+          "RH"
+        ],
+        "local": [
+          "v13"
+        ]
+      }
+    }
+  ],
+  "svg_views": [
+    {
+      "path": "1_Presentation/65_Graphe_des_passages.svg",
+      "graph": "G65",
+      "keys": [
+        "image",
+        "fibre",
+        "jet",
+        "pli",
+        "variation",
+        "paire",
+        "mesure",
+        "prefixes",
+        "pont",
+        "g1",
+        "g4",
+        "borne",
+        "weil",
+        "theoremeA",
+        "rh"
+      ],
+      "expected_labels": [
+        "La paire dans le labyrinthe",
+        "T1 · Ellipse et fibre S²",
+        "L4 · Sections de jets",
+        "T2 · Pli critique double",
+        "Variation universelle fermée",
+        "L5 · Moments et compagnon",
+        "20 candidats · 18 blocs",
+        "G3 · Préfixes insuffisants",
+        "Pont V13 → ζ manquant",
+        "G1–G2 · Tests et densité",
+        "G4 · Queue et couplage",
+        "Borne sur Q(X) ouverte",
+        "Porte 1 · Forme de Weil",
+        "Porte 2 · Théorème A",
+        "Destination précise · RH"
+      ]
+    },
+    {
+      "path": "1_Presentation/66_Graphe_des_certificats.svg",
+      "graph": "G66",
+      "keys": [
+        "pli",
+        "isolation",
+        "racines",
+        "paire",
+        "metrique",
+        "a1",
+        "pont",
+        "a2",
+        "uniforme",
+        "croissance",
+        "weil",
+        "rh"
+      ],
+      "expected_labels": [
+        "I1–I3 · Pli unique",
+        "I4 · Deux zéros isolés",
+        "I5 · Quatre boîtes",
+        "Paire et compagnon",
+        "I6 · Métrique au pli impossible",
+        "A1 · Forme depuis les premiers",
+        "Pont arithmétique manquant",
+        "A2 · Norme première divergente",
+        "Inégalité sur chaque support",
+        "Borne Q(X) depuis les premiers",
+        "Critère de Weil",
+        "Destination précise · RH"
+      ]
+    },
+    {
+      "path": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "graph": "G68",
+      "node_keys": [
+        "domaines",
+        "domaines",
+        "compact",
+        "compact",
+        "compact",
+        "schur",
+        "schur"
+      ],
+      "case_ids": [
+        "G68.case01",
+        "G68.case02",
+        "G68.case03",
+        "G68.case04",
+        "G68.case05",
+        "G68.case06",
+        "G68.case07"
+      ],
+      "expected_labels": [
+        "Graines / algèbre Cc∞",
+        "P et jets admissibles",
+        "Métrique H¹",
+        "Métrique logarithmique R",
+        "Marge H¹ stricte",
+        "Queue de moments",
+        "Schur fini avec couplages"
+      ]
+    },
+    {
+      "path": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "graph": "G71",
+      "node_keys": [
+        "domaines",
+        "domaines",
+        "schur",
+        "domaines",
+        "compact",
+        "local",
+        "fluctuation",
+        "local",
+        "coverage"
+      ],
+      "case_ids": [
+        "G71.case01",
+        "G71.case02",
+        "G71.case03",
+        "G71.case04",
+        "G71.case05",
+        "G71.case06",
+        "G71.case07",
+        "G71.case08",
+        "G71.case09"
+      ],
+      "expected_labels": [
+        "Domaine et moments",
+        "Projection commune",
+        "Sources : C optimal",
+        "Parité",
+        "Couches fréquentielles",
+        "Certificat complet local",
+        "Potentiel de bord",
+        "Attaches du premier 2",
+        "Agrandissement non borné"
+      ]
+    },
+    {
+      "path": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "graph": "G72",
+      "node_keys": [
+        "domaines",
+        "fluctuation",
+        "compact",
+        "schur",
+        "compact",
+        "schur",
+        "local",
+        "local",
+        "coverage"
+      ],
+      "case_ids": [
+        "G72.case01",
+        "G72.case02",
+        "G72.case03",
+        "G72.case04",
+        "G72.case05",
+        "G72.case06",
+        "G72.case07",
+        "G72.case08",
+        "G72.case09"
+      ],
+      "expected_labels": [
+        "Moments et projection",
+        "Coût énergie/premier",
+        "Opérateur commun",
+        "Gram des sources",
+        "Concentration Schatten-2",
+        "Tête et sources réelles",
+        "Cellules et erreurs C²",
+        "Certificat : S ≤ 3/8",
+        "Couverture non bornée"
+      ]
+    },
+    {
+      "path": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "graph": "G73",
+      "node_keys": [
+        "domaines",
+        "compact",
+        "transport",
+        "domaines",
+        "local",
+        "schur",
+        "local",
+        "local",
+        "local"
+      ],
+      "case_ids": [
+        "G73.case01",
+        "G73.case02",
+        "G73.case03",
+        "G73.case04",
+        "G73.case05",
+        "G73.case06",
+        "G73.case07",
+        "G73.case08",
+        "G73.case09"
+      ],
+      "expected_labels": [
+        "Forme originale Q",
+        "Minorant A = ηI − B",
+        "Multi-premiers et transport",
+        "Moments et Gram",
+        "Cadre cardinal de Gauss",
+        "Même erreur δ",
+        "Intervalles et erreurs",
+        "Tête en deux blocs 40 × 40",
+        "Certificat sur tous Xₛ"
+      ]
+    }
+  ],
+  "investigations": [
+    {
+      "id": "signe_paquets",
+      "label": "Paquets signés : garder premiers, coupures et dette",
+      "requires": [],
+      "nodes": [
+        "fluctuation",
+        "global_sign",
+        "transport",
+        "coverage"
+      ],
+      "question": "Quelle inégalité locale des vrais paquets pourrait se sommer sans perdre les couplages ?",
+      "witness": "Modèle continu négatif et blocs à rapport fixe déjà réfutés ; ne pas les reconstruire sans nouvelle hypothèse.",
+      "refutation": "Un paquet admissible réfute la proposition, ou la somme des dettes n’est pas contrôlée.",
+      "output": "Énoncé vérifiable avec bords, norme, dette et critère de rejet ; contre-exemple recevable. Aucun signe universel promis.",
+      "source": "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": true,
+      "dimensions": [
+        "comprendre",
+        "case",
+        "croiser"
+      ]
+    },
+    {
+      "id": "duale_schur",
+      "label": "Dette de Schur dans la norme duale",
+      "requires": [],
+      "nodes": [
+        "schur",
+        "global_sign",
+        "compact"
+      ],
+      "question": "Peut-on payer la dette par une norme duale spécifique, sans exiger toutes les sources fortes de Q ?",
+      "witness": "Matrices positives en tête avec complément ou résidu non contrôlé.",
+      "refutation": "Une hypothèse de domaine manque ou l’inégalité duale ne domine pas le vrai couplage.",
+      "output": "Borne candidate ou obstruction avec domaine et constantes ; bilan de portée local/global. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "source": "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": false,
+      "dimensions": [
+        "comprendre",
+        "case",
+        "croiser"
+      ],
+      "related_resources": [
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ],
+      "reviewed_on": "2026-10-16",
+      "execution_scope": "Sous-tâches exécutées : diagnostics matriciels finis et contrôle scalaire de résolution. Obligation globale encore ouverte."
+    },
+    {
+      "id": "couverture_constructive",
+      "label": "Deux filtres : approximants et norme de forme",
+      "requires": [],
+      "nodes": [
+        "coverage",
+        "domaines",
+        "weil_all"
+      ],
+      "question": "Comment construire effectivement les approximants de la grammaire déjà démontrée, avec leur erreur de forme ?",
+      "witness": "Convergence L² seule, moments perdus, ou contrôle qui dépend du support sans borne.",
+      "refutation": "La suite ne converge pas dans la topologie exigée ; le transfert de signe est alors refusé.",
+      "output": "Algorithme d’approximation et contrat d’erreur, ou obstruction précise. Cette tâche ne prouve pas le signe. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "source": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": true,
+      "dimensions": [
+        "comprendre",
+        "case",
+        "croiser"
+      ],
+      "related_resources": [
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ],
+      "reviewed_on": "2026-10-16"
+    },
+    {
+      "id": "test_paquets",
+      "label": "Confronter la loi candidate aux vrais coefficients",
+      "requires": [
+        "signe_paquets",
+        "duale_schur"
+      ],
+      "nodes": [
+        "global_sign",
+        "schur",
+        "anchoring"
+      ],
+      "question": "Sur le domaine à support positif, quel calcul arithmétique donne q(f) ≥ ||T_+f||², avec couplages complexes et erreurs réellement contrôlées ?",
+      "witness": "Contre-profils ayant mêmes masses et moments mais des coupures intérieures différentes.",
+      "refutation": "Un cas admissible et rigoureusement contrôlé contredit la loi ; un simple échec numérique reste indéterminé.",
+      "output": "Rapport positif borné, réfutation ciblée ou indétermination ; aucune extrapolation infinie. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "source": "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": false,
+      "dimensions": [
+        "voir",
+        "comprendre",
+        "case"
+      ],
+      "related_resources": [
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
+        "3_Preuves_et_calculs/coup_double_20261015/verifier_coup_double.py",
+        "3_Preuves_et_calculs/coup_double_20261015/resultats.json",
+        "3_Preuves_et_calculs/coup_double_20261015/CONFRONTATION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.tex",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png",
+        "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg",
+        "3_Preuves_et_calculs/signal_v657/CONSTRUCTION_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/README.md",
+        "3_Preuves_et_calculs/signal_v657/REVUE_CRITIQUE_SIGNAL.md",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/figure_signal.py",
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py"
+      ],
+      "reviewed_on": "2026-10-16",
+      "execution_scope": "Sous-tâches exécutées : diagnostics matriciels finis et contrôle scalaire de résolution. Obligation globale encore ouverte."
+    },
+    {
+      "id": "mu_correlations",
+      "label": "Carte d’identité de μ et corrélations pondérées",
+      "requires": [],
+      "nodes": [
+        "identity",
+        "anchoring",
+        "large_q"
+      ],
+      "question": "Quelle identité spécifique distingue les vrais poids des suites qui imitent leurs statistiques partielles ?",
+      "witness": "Masque sur les premiers et copies carrées ; une covariance moyenne de μ ne règle pas ces poids.",
+      "refutation": "La propriété candidate est aussi satisfaite par un contre-modèle qui viole la borne visée.",
+      "output": "Identité ou invariant candidat, avec témoin et dépendance aux coupures. Le vieux rejet du census à deux points est respecté.",
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": true,
+      "dimensions": [
+        "comprendre",
+        "situer",
+        "case"
+      ]
+    },
+    {
+      "id": "grands_conducteurs",
+      "label": "Tester une loi spécifique des grands conducteurs",
+      "requires": [
+        "mu_correlations"
+      ],
+      "nodes": [
+        "large_q",
+        "head",
+        "copies",
+        "threequarters"
+      ],
+      "question": "Quel mécanisme pourrait donner R_{q>X} ≤ C X³ polylog sans effacer μ(q) ?",
+      "witness": "Perte D√H du crible générique et contre-modèle sur les nombres premiers.",
+      "refutation": "La constante dépend d’une coupure, une annulation est supposée, ou le lemme est contredit par un test admissible.",
+      "output": "Tentative bornée avec inégalité visée, dépendances et bilan. La borne globale n’est pas un livrable garanti.",
+      "source": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": true,
+      "dimensions": [
+        "comprendre",
+        "case",
+        "croiser"
+      ]
+    },
+    {
+      "id": "sources_manquantes",
+      "label": "Originaux V6.42–V6.50 retrouvés",
+      "requires": [],
+      "nodes": [
+        "sources_registre",
+        "local"
+      ],
+      "question": "Les 27 scripts/modules et les trois notes recherchées sont retrouvés. L’audit complet ajoute176 fichiers originaux ; deux références V6.51 restent suivies séparément.",
+      "witness": "Un programme reconstruit n’est pas présenté comme l’original retrouvé.",
+      "refutation": "Aucune trace originale vérifiable : maintenir l’absence, sans certificat de rejeu intégral.",
+      "output": "176 fichiers réintégrés avec leurs empreintes et provenance ;40 versions anciennes divergentes conservées en archives sans remplacer les versions courantes.",
+      "source": "RECUPERATION_2026_10_15.json",
+      "status": "cloture_documentaire",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": true,
+      "dimensions": [
+        "voir",
+        "demontrer"
+      ],
+      "initial_label": "Rechercher les originaux des 27 sources absentes",
+      "initial_question": "Quels originaux peuvent être récupérés avec leur provenance et leur empreinte ?",
+      "reviewed_on": "2026-10-15"
+    },
+    {
+      "id": "v13_fibre",
+      "label": "Pli sur une fibre à coefficient A fixé",
+      "requires": [],
+      "nodes": [
+        "v13",
+        "archipel"
+      ],
+      "question": "Une direction candidate porte-t-elle un vrai pli transversal sur la fibre qui conserve A ?",
+      "witness": "Fibre vide, rang perdu, ou dérivée paramétrique nulle.",
+      "refutation": "Un jet nul non certifié ne donne pas un zéro double ; préserver les pertes et les indéterminations.",
+      "output": "Certificat local ou obstacle documenté. Cette branche ne garantit pas la loi globale de Weil.",
+      "source": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-15",
+      "not_executed": true,
+      "dimensions": [
+        "comprendre",
+        "situer",
+        "croiser"
+      ]
+    },
+    {
+      "id": "noyau_S08",
+      "label": "Certificat du noyau des moments à S = 0,8",
+      "requires": [],
+      "nodes": [
+        "local",
+        "pos"
+      ],
+      "question": "Certifier un minorant de Q_W sur les tests à moments nuls de support [−0,8 ; 0,8], où agissent 2, 3 et 4.",
+      "witness": "Marge mesurée ≈ 5·10⁻¹² (doc. 81), non certifiée ; certificat existant jusqu’à 11/20 (doc. 75).",
+      "refutation": "Marge mesurée sous 10⁻¹³ avec plus de modes, ou tête irréalisable en intervalles : la voie par fenêtres s’arrête à 11/20.",
+      "output": "Certificat local ou obstacle documenté. Renforce une marge déjà positive (Zhu) ; aucune fenêtre nouvelle ni conséquence globale : la positivité sur toutes les fenêtres est RH.",
+      "source": "1_Presentation/81_ZHU_REPRODUIT.md",
+      "status": "ouvert",
+      "probability": null,
+      "pre_registered_on": "2026-10-17",
+      "not_executed": true,
+      "dimensions": [
+        "case",
+        "demontrer"
+      ]
+    }
+  ],
+  "bellman_state": {
+    "date": "2026-10-15",
+    "facts": [
+      "nb_transport",
+      "weil_continuity",
+      "admissible_core",
+      "regularization_bound",
+      "schur_identity",
+      "ladder_contract",
+      "regularization_assessed",
+      "coverage_candidate",
+      "debt_assessed",
+      "open_debt"
+    ],
+    "completed": [
+      "regime_commun",
+      "dette_schur"
+    ],
+    "scope": "Études bornées évaluées ; leurs obligations globales restent ouvertes. Le calcul reprend les contrats et les issues du document67, avec cet état explicite.",
+    "evidence": [
+      {
+        "facts": [
+          "regularization_assessed",
+          "coverage_candidate"
+        ],
+        "study": "regime_commun",
+        "outcome": "couverture_candidate",
+        "source": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "also": [
+          "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf",
+          "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf"
+        ],
+        "scope": "Famille admissible et couvrante qualitative à support contrôlé ; signe sur toute la famille et contrôle global encore ouverts."
+      },
+      {
+        "facts": [
+          "debt_assessed",
+          "open_debt"
+        ],
+        "study": "dette_schur",
+        "outcome": "sans_borne",
+        "source": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "also": [
+          "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf"
+        ],
+        "scope": "Identité de dette et études bornées disponibles ; aucune loi de signe universelle ni invariant arithmétique global acquis."
+      }
+    ],
+    "not_credited": [
+      "invariant_candidate",
+      "fixed_transfer_verified",
+      "kernel_checked",
+      "fixed_A_certificate",
+      "RH_proved",
+      "global_sign_proved"
+    ],
+    "restriction": "fibre_A reste ouverte : A variable au pli radial ne certifie pas le déploiement à A fixé. Le modèle ne classe pas encore les grands conducteurs de V6.55."
+  },
+  "interface_corrections": [
+    "Accès direct Bellman dans le menu",
+    "Références, figures et articles groupés dans Documents",
+    "Courbes et rails de la présentation initiale remis en service",
+    "Trois cartes2D des cibles avancées, visibles sur mobile et reliées aux PDF",
+    "Catalogue transversal de tous les fichiers, fiches et références ; associations documentaires explicites, sans nouveau statut scientifique.",
+    "Reconstruction V651 intégrée au corpus global, fichiers originaux des compléments et versions V654 conservés sans écrasement."
+  ]
+}

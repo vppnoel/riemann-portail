@@ -1,0 +1,1664 @@
+{
+  "version": "V6.55",
+  "revision": "v659-document-82",
+  "registered_on": "2026-10-15",
+  "rules": [
+    "V6.55 désigne la version globale ; ce n’est pas un numéro d’idée ou de document.",
+    "Les numéros documentaires existants sont conservés, même si plusieurs formats et figures portent ce préfixe.",
+    "IDE-xxx désigne une idée stable ; un nouveau dessin ou bilan ne change pas son identifiant.",
+    "Gxx.nom désigne une case d’une vue précise ; plusieurs cases peuvent référencer la même idée sans effacer leurs détails.",
+    "Une idée retirée doit rester au registre ; son numéro ne peut pas être réutilisé."
+  ],
+  "ideas": [
+    {
+      "uid": "IDE-001",
+      "key": "lemmes",
+      "title": "Lemmes 1 à 5",
+      "retired": false
+    },
+    {
+      "uid": "IDE-002",
+      "key": "thA",
+      "title": "Théorème A",
+      "retired": false
+    },
+    {
+      "uid": "IDE-003",
+      "key": "thB",
+      "title": "Théorème B",
+      "retired": false
+    },
+    {
+      "uid": "IDE-004",
+      "key": "propC",
+      "title": "Proposition C",
+      "retired": false
+    },
+    {
+      "uid": "IDE-005",
+      "key": "dh",
+      "title": "Davenport–Heilbronn",
+      "retired": false
+    },
+    {
+      "uid": "IDE-006",
+      "key": "ff",
+      "title": "Corps de fonctions",
+      "retired": false
+    },
+    {
+      "uid": "IDE-007",
+      "key": "dens",
+      "title": "Densité de zéros",
+      "retired": false
+    },
+    {
+      "uid": "IDE-008",
+      "key": "arret",
+      "title": "Arrêt de l'attaque directe",
+      "retired": false
+    },
+    {
+      "uid": "IDE-009",
+      "key": "relecture",
+      "title": "Relecture externe de A et B",
+      "retired": false
+    },
+    {
+      "uid": "IDE-010",
+      "key": "weil",
+      "title": "Formule explicite de Weil",
+      "retired": false
+    },
+    {
+      "uid": "IDE-011",
+      "key": "nb",
+      "title": "Nyman–Beurling",
+      "retired": false
+    },
+    {
+      "uid": "IDE-012",
+      "key": "li",
+      "title": "Critère de Li",
+      "retired": false
+    },
+    {
+      "uid": "IDE-013",
+      "key": "energyD",
+      "title": "Dimension énergétique / fractal strings",
+      "retired": false
+    },
+    {
+      "uid": "IDE-014",
+      "key": "darkz",
+      "title": "DARK-ZETA",
+      "retired": false
+    },
+    {
+      "uid": "IDE-015",
+      "key": "tomo2",
+      "title": "TOMO-2",
+      "retired": false
+    },
+    {
+      "uid": "IDE-016",
+      "key": "tomo3",
+      "title": "TOMO-3 brut",
+      "retired": false
+    },
+    {
+      "uid": "IDE-017",
+      "key": "primelock",
+      "title": "PRIME-LOCK",
+      "retired": false
+    },
+    {
+      "uid": "IDE-018",
+      "key": "duallock",
+      "title": "DUAL-LOCK",
+      "retired": false
+    },
+    {
+      "uid": "IDE-019",
+      "key": "darkres",
+      "title": "Résidu sombre",
+      "retired": false
+    },
+    {
+      "uid": "IDE-020",
+      "key": "tauc",
+      "title": "V6.4Seuil τ_c",
+      "retired": false
+    },
+    {
+      "uid": "IDE-021",
+      "key": "mod7",
+      "title": "V6.5Famille modulo 7",
+      "retired": false
+    },
+    {
+      "uid": "IDE-022",
+      "key": "modred",
+      "title": "V6.6Le Modèle réduit",
+      "retired": false
+    },
+    {
+      "uid": "IDE-023",
+      "key": "marges",
+      "title": "V6.7Marges de la forme et de l'objet",
+      "retired": false
+    },
+    {
+      "uid": "IDE-024",
+      "key": "archipel",
+      "title": "V6.8L'Archipel d'Euler",
+      "retired": false
+    },
+    {
+      "uid": "IDE-025",
+      "key": "chainon",
+      "title": "V6.9Le chaînon F = q^D",
+      "retired": false
+    },
+    {
+      "uid": "IDE-026",
+      "key": "generateur",
+      "title": "V6.10Le générateur des premiers",
+      "retired": false
+    },
+    {
+      "uid": "IDE-027",
+      "key": "base",
+      "title": "V6.11La base comme pas de temps",
+      "retired": false
+    },
+    {
+      "uid": "IDE-028",
+      "key": "heisenberg",
+      "title": "V6.14Le temps de Heisenberg",
+      "retired": false
+    },
+    {
+      "uid": "IDE-029",
+      "key": "degre2rec",
+      "title": "V6.15Le degré 2 et le recensement",
+      "retired": false
+    },
+    {
+      "uid": "IDE-030",
+      "key": "rencontre3",
+      "title": "V6.16La Rencontre à trois",
+      "retired": false
+    },
+    {
+      "uid": "IDE-031",
+      "key": "rencontre2",
+      "title": "V6.17La Rencontre en degré 2",
+      "retired": false
+    },
+    {
+      "uid": "IDE-032",
+      "key": "sources_registre",
+      "title": "V6.18Le registre des sources",
+      "retired": false
+    },
+    {
+      "uid": "IDE-033",
+      "key": "prochain",
+      "title": "Prochain coup",
+      "retired": false
+    },
+    {
+      "uid": "IDE-034",
+      "key": "indicateur",
+      "title": "Indicateur d'avancement",
+      "retired": false
+    },
+    {
+      "uid": "IDE-035",
+      "key": "navigateur",
+      "title": "Navigateur de recherche",
+      "retired": false
+    },
+    {
+      "uid": "IDE-036",
+      "key": "objet",
+      "title": "L'objet qui porte la métrique",
+      "retired": false
+    },
+    {
+      "uid": "IDE-037",
+      "key": "sources_locales",
+      "title": "Localisation de sources",
+      "retired": false
+    },
+    {
+      "uid": "IDE-038",
+      "key": "schr",
+      "title": "Schrödinger, Heff",
+      "retired": false
+    },
+    {
+      "uid": "IDE-039",
+      "key": "kalman",
+      "title": "Kalman, GPS analytique",
+      "retired": false
+    },
+    {
+      "uid": "IDE-040",
+      "key": "pos",
+      "title": "Positivité de Weil",
+      "retired": false
+    },
+    {
+      "uid": "IDE-041",
+      "key": "compl",
+      "title": "Complétude spectrale",
+      "retired": false
+    },
+    {
+      "uid": "IDE-042",
+      "key": "hp",
+      "title": "Hilbert–Pólya",
+      "retired": false
+    },
+    {
+      "uid": "IDE-043",
+      "key": "v13",
+      "title": "Fibres, jets et pli choisi",
+      "retired": false
+    },
+    {
+      "uid": "IDE-044",
+      "key": "domaines",
+      "title": "P, moments et domaines",
+      "retired": false
+    },
+    {
+      "uid": "IDE-045",
+      "key": "compact",
+      "title": "Changement de métrique",
+      "retired": false
+    },
+    {
+      "uid": "IDE-046",
+      "key": "fluctuation",
+      "title": "Fluctuation arithmétique signée",
+      "retired": false
+    },
+    {
+      "uid": "IDE-047",
+      "key": "schur",
+      "title": "Dette des couplages",
+      "retired": false
+    },
+    {
+      "uid": "IDE-048",
+      "key": "local",
+      "title": "Lego local : S ≤ 11/20",
+      "retired": false
+    },
+    {
+      "uid": "IDE-049",
+      "key": "transport",
+      "title": "Transport et réserve",
+      "retired": false
+    },
+    {
+      "uid": "IDE-050",
+      "key": "coverage",
+      "title": "Couverture et passage à la limite",
+      "retired": false
+    },
+    {
+      "uid": "IDE-051",
+      "key": "global_sign",
+      "title": "Loi de signe de la famille",
+      "retired": false
+    },
+    {
+      "uid": "IDE-052",
+      "key": "weil_all",
+      "title": "Weil sur tous les tests",
+      "retired": false
+    },
+    {
+      "uid": "IDE-053",
+      "key": "RH",
+      "title": "Hypothèse de Riemann",
+      "retired": false
+    },
+    {
+      "uid": "IDE-054",
+      "key": "identity",
+      "title": "Identité des vrais coefficients",
+      "retired": false
+    },
+    {
+      "uid": "IDE-055",
+      "key": "anchoring",
+      "title": "Corrélations ancrées",
+      "retired": false
+    },
+    {
+      "uid": "IDE-056",
+      "key": "J",
+      "title": "Énergie J",
+      "retired": false
+    },
+    {
+      "uid": "IDE-057",
+      "key": "J_bound",
+      "title": "Borne de force RH",
+      "retired": false
+    },
+    {
+      "uid": "IDE-058",
+      "key": "Q_bound",
+      "title": "Borne de l’énergie initiale Q",
+      "retired": false
+    },
+    {
+      "uid": "IDE-059",
+      "key": "copies",
+      "title": "Restitution et dilatations",
+      "retired": false
+    },
+    {
+      "uid": "IDE-060",
+      "key": "head",
+      "title": "Diagonale et petits conducteurs",
+      "retired": false
+    },
+    {
+      "uid": "IDE-061",
+      "key": "large_q",
+      "title": "Grands conducteurs signés",
+      "retired": false
+    },
+    {
+      "uid": "IDE-062",
+      "key": "threequarters",
+      "title": "Étape conditionnelle : 3/4",
+      "retired": false
+    },
+    {
+      "uid": "IDE-063",
+      "key": "generic_sieve",
+      "title": "Crible générique : perte des copies",
+      "retired": false
+    },
+    {
+      "uid": "IDE-064",
+      "key": "surface",
+      "title": "Surface et Frobenius virtuels",
+      "retired": false
+    },
+    {
+      "uid": "IDE-065",
+      "key": "stepanov",
+      "title": "Transplantation directe de Stepanov",
+      "retired": false
+    },
+    {
+      "uid": "IDE-066",
+      "key": "jets",
+      "title": "Lemme des jets et relief",
+      "retired": false
+    },
+    {
+      "uid": "IDE-067",
+      "key": "dh_cert",
+      "title": "Certificat négatif de DH",
+      "retired": false
+    },
+    {
+      "uid": "IDE-068",
+      "key": "rencontre_n",
+      "title": "La Rencontre à n",
+      "retired": false
+    },
+    {
+      "uid": "IDE-069",
+      "key": "prime_norm",
+      "title": "Norme de la partie première seule",
+      "retired": false
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-001",
+      "number": 1,
+      "paths": [
+        "1_Presentation/01_SYNTHESE_FR.md",
+        "1_Presentation/01_SYNTHESE_FR.pdf",
+        "1_Presentation/english/01_SYNTHESIS_EN.md",
+        "1_Presentation/english/01_SYNTHESIS_EN.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-002",
+      "number": 2,
+      "paths": [
+        "1_Presentation/02_Article_court_EN.docx",
+        "1_Presentation/02_Article_court_EN.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-003",
+      "number": 3,
+      "paths": [
+        "1_Presentation/03_Dossier_de_relecture_EN.docx"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-004",
+      "number": 4,
+      "paths": [
+        "1_Presentation/04_Brief_specialistes_EN.docx"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-005",
+      "number": 5,
+      "paths": [
+        "1_Presentation/05_Message_au_relecteur.docx"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-006",
+      "number": 6,
+      "paths": [
+        "1_Presentation/06_CHEMINEMENT_INTELLECTUEL.md",
+        "1_Presentation/06_CHEMINEMENT_INTELLECTUEL.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-007",
+      "number": 7,
+      "paths": [
+        "1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.md",
+        "1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf",
+        "1_Presentation/english/07_READING_GUIDE_EN.md",
+        "1_Presentation/english/07_READING_GUIDE_EN.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-008",
+      "number": 8,
+      "paths": [
+        "1_Presentation/08_Dimension_energie_fractale.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-009",
+      "number": 9,
+      "paths": [
+        "1_Presentation/09_Attaques_audit_et_amelioration.docx",
+        "1_Presentation/09_Attaques_audit_et_amelioration.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-010",
+      "number": 10,
+      "paths": [
+        "1_Presentation/10_Attaque2_resultats_N1000.docx",
+        "1_Presentation/10_Attaque2_resultats_N1000.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-011",
+      "number": 11,
+      "paths": [
+        "1_Presentation/11_Estimation_sous_RH.docx",
+        "1_Presentation/11_Estimation_sous_RH.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-012",
+      "number": 12,
+      "paths": [
+        "1_Presentation/12_Annulation_du_pole.docx",
+        "1_Presentation/12_Annulation_du_pole.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-013",
+      "number": 13,
+      "paths": [
+        "1_Presentation/13_Lecon_2026.docx",
+        "1_Presentation/13_Lecon_2026.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-014",
+      "number": 14,
+      "paths": [
+        "1_Presentation/14_Document_de_travail_V6_Atlas_mecanismes.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-015",
+      "number": 15,
+      "paths": [
+        "1_Presentation/15_TOMO_DH_formalisation.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-016",
+      "number": 16,
+      "paths": [
+        "1_Presentation/16_DARK_ZETA_secteur_sombre_arithmetique.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-017",
+      "number": 17,
+      "paths": [
+        "1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-018",
+      "number": 18,
+      "paths": [
+        "1_Presentation/18_PRIME_LOCK_premier_verrou_local.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-019",
+      "number": 19,
+      "paths": [
+        "1_Presentation/19_DUAL_LOCK_plan_local_global.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-020",
+      "number": 20,
+      "paths": [
+        "1_Presentation/20_Carte_du_lexique.png",
+        "1_Presentation/20_Registre_metaphores_V6.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-021",
+      "number": 21,
+      "paths": [
+        "1_Presentation/21_DUAL_LOCK_RESIDU_SOMBRE_resultats.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-022",
+      "number": 22,
+      "paths": [
+        "1_Presentation/22_AUDIT_V6_3A_INSTRUMENT_DUAL_LOCK.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-023",
+      "number": 23,
+      "paths": [
+        "1_Presentation/23_AUDIT_V6_3B_FORMULE_EXPLICITE.md"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-024",
+      "number": 24,
+      "paths": [
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md",
+        "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.pdf",
+        "1_Presentation/24_Differences_de_zeros.png",
+        "1_Presentation/24_Largeur_du_creux.png",
+        "1_Presentation/24_Largeur_selon_la_hauteur.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-025",
+      "number": 25,
+      "paths": [
+        "1_Presentation/25_Atlas_metaphores_physique_mathematique_V6.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-026",
+      "number": 26,
+      "paths": [
+        "1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.md",
+        "1_Presentation/26_SEUIL_TAU_C_TEST_DE_L_ATLAS.pdf",
+        "1_Presentation/26_Seuil_tau_c.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-027",
+      "number": 27,
+      "paths": [
+        "1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.md",
+        "1_Presentation/27_FAMILLE_MODULO_7_POINT_D_EULER.pdf",
+        "1_Presentation/27_Famille_modulo_7.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-028",
+      "number": 28,
+      "paths": [
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf",
+        "1_Presentation/28_Modele_reduit.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-029",
+      "number": 29,
+      "paths": [
+        "1_Presentation/29_Loi_de_rang.png",
+        "1_Presentation/29_Marge_forme_objet.png",
+        "1_Presentation/29_Objet_contre_forme.png",
+        "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.md",
+        "1_Presentation/29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-030",
+      "number": 30,
+      "paths": [
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/30_ARCHIPEL_D_EULER.pdf",
+        "1_Presentation/30_Archipel_d_Euler.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-031",
+      "number": 31,
+      "paths": [
+        "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-032",
+      "number": 32,
+      "paths": [
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.md",
+        "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+        "1_Presentation/32_Le_chainon.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-033",
+      "number": 33,
+      "paths": [
+        "1_Presentation/33_Generateur_des_premiers.png",
+        "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.md",
+        "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-034",
+      "number": 34,
+      "paths": [
+        "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-035",
+      "number": 35,
+      "paths": [
+        "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.md",
+        "1_Presentation/35_LA_BASE_COMME_PAS_DE_TEMPS.pdf",
+        "1_Presentation/35_La_base_comme_pas_de_temps.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-036",
+      "number": 36,
+      "paths": [
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.md",
+        "1_Presentation/36_LES_IDEES_REJETEES_RELUES.pdf",
+        "1_Presentation/36_Les_idees_rejetees_relues.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-037",
+      "number": 37,
+      "paths": [
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
+        "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-038",
+      "number": 38,
+      "paths": [
+        "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.md",
+        "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
+        "1_Presentation/38_Le_temps_de_Heisenberg.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-039",
+      "number": 39,
+      "paths": [
+        "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.md",
+        "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
+        "1_Presentation/39_Le_degre_2.png",
+        "1_Presentation/39_Le_recensement.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-040",
+      "number": 40,
+      "paths": [
+        "1_Presentation/40_LA_RENCONTRE_A_TROIS.md",
+        "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
+        "1_Presentation/40_La_rencontre_a_trois.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-041",
+      "number": 41,
+      "paths": [
+        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.md",
+        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
+        "1_Presentation/41_La_rencontre_en_degre_2.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-042",
+      "number": 42,
+      "paths": [
+        "1_Presentation/42_REGISTRE_DES_SOURCES.md",
+        "1_Presentation/42_REGISTRE_DES_SOURCES.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-043",
+      "number": 43,
+      "paths": [
+        "1_Presentation/43_La_rencontre_a_n.png",
+        "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.md",
+        "1_Presentation/43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-044",
+      "number": 44,
+      "paths": [
+        "1_Presentation/44_MATRICE_DES_THEORIES.html"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-045",
+      "number": 45,
+      "paths": [
+        "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
+        "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.pdf",
+        "1_Presentation/45_Le_palier_recalcule.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-046",
+      "number": 46,
+      "paths": [
+        "1_Presentation/46_LA_SURFACE_VIRTUELLE.md",
+        "1_Presentation/46_LA_SURFACE_VIRTUELLE.pdf",
+        "1_Presentation/46_La_surface_virtuelle.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-047",
+      "number": 47,
+      "paths": [
+        "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.md",
+        "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.pdf",
+        "1_Presentation/47_Le_riemann_roch_virtuel.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-048",
+      "number": 48,
+      "paths": [
+        "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.md",
+        "1_Presentation/48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.pdf",
+        "1_Presentation/48_Le_frobenius.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-049",
+      "number": 49,
+      "paths": [
+        "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.md",
+        "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf",
+        "1_Presentation/49_Le_meme_calcul.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-050",
+      "number": 50,
+      "paths": [
+        "1_Presentation/50_LES_UNITES_FICTIVES_AUDIT.md",
+        "1_Presentation/50_LES_UNITES_FICTIVES_AUDIT.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-051",
+      "number": 51,
+      "paths": [
+        "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.md",
+        "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-052",
+      "number": 52,
+      "paths": [
+        "1_Presentation/52_J6_LE_CARRE_EN_CONTINU.md",
+        "1_Presentation/52_J6_LE_CARRE_EN_CONTINU.pdf",
+        "1_Presentation/52_Le_carre_en_continu.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-053",
+      "number": 53,
+      "paths": [
+        "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.md",
+        "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-054",
+      "number": 54,
+      "paths": [
+        "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
+        "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf",
+        "1_Presentation/54_Le_trou_a_trois.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-055",
+      "number": 55,
+      "paths": [
+        "1_Presentation/55_ARTICLES_PRESENTABLES.md",
+        "1_Presentation/55_ARTICLES_PRESENTABLES.pdf"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-056",
+      "number": 56,
+      "paths": [
+        "1_Presentation/56_LE_RELIEF_DE_L_ARCHIPEL.md",
+        "1_Presentation/56_LE_RELIEF_DE_L_ARCHIPEL.pdf",
+        "1_Presentation/56_Le_relief_de_l_archipel.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-057",
+      "number": 57,
+      "paths": [
+        "1_Presentation/57_LA_FORCE_DU_RELIEF.md",
+        "1_Presentation/57_LA_FORCE_DU_RELIEF.pdf",
+        "1_Presentation/57_La_force_du_relief.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-058",
+      "number": 58,
+      "paths": [
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md",
+        "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+        "1_Presentation/58_Validation_directe_et_jets.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-059",
+      "number": 59,
+      "paths": [
+        "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.md",
+        "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+        "1_Presentation/59_Tour_et_spectre.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-060",
+      "number": 60,
+      "paths": [
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.md",
+        "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf",
+        "1_Presentation/60_Marges_du_certificat.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-061",
+      "number": 61,
+      "paths": [
+        "1_Presentation/61_ANCRAGE_APPARIE_V13.md",
+        "1_Presentation/61_ANCRAGE_APPARIE_V13.pdf",
+        "1_Presentation/61_V13_signes.png",
+        "1_Presentation/61_V13_strates.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-062",
+      "number": 62,
+      "paths": [
+        "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.html",
+        "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.md",
+        "1_Presentation/62_ATLAS_DES_DECISIONS_BELLMAN.pdf",
+        "1_Presentation/62_Bellman_sensibilite.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-063",
+      "number": 63,
+      "paths": [
+        "1_Presentation/63_CONTRAINTES_EXACTES_V13.md",
+        "1_Presentation/63_CONTRAINTES_EXACTES_V13.pdf",
+        "1_Presentation/63_CONTRAINTES_EXACTES_V13.tex",
+        "1_Presentation/63_Contrastes_D.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-064",
+      "number": 64,
+      "paths": [
+        "1_Presentation/64_COMPARAISON_EXACTE_V13.md",
+        "1_Presentation/64_COMPARAISON_EXACTE_V13.pdf",
+        "1_Presentation/64_COMPARAISON_EXACTE_V13.tex",
+        "1_Presentation/64_Tranches_par_ancre.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-065",
+      "number": 65,
+      "paths": [
+        "1_Presentation/65_Bellman_sensibilite.png",
+        "1_Presentation/65_Branches_et_plis.png",
+        "1_Presentation/65_Discriminants_des_paires.png",
+        "1_Presentation/65_Ellipses_et_fibres.png",
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.md",
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.pdf",
+        "1_Presentation/65_FIBRES_PLIS_ET_POSITIVITE.tex",
+        "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+        "1_Presentation/65_Graphe_des_passages.png",
+        "1_Presentation/65_Graphe_des_passages.svg"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-066",
+      "number": 66,
+      "paths": [
+        "1_Presentation/66_Bellman_sensibilite.png",
+        "1_Presentation/66_Controle_du_contour.png",
+        "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+        "1_Presentation/66_Graphe_des_certificats.png",
+        "1_Presentation/66_Graphe_des_certificats.svg",
+        "1_Presentation/66_Paire_certifiee.png",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.tex"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-067",
+      "number": 67,
+      "paths": [
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+        "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.tex",
+        "1_Presentation/67_GRAPHE_DES_PONTS.html",
+        "1_Presentation/67_PONTS_ET_OBLIGATIONS.png",
+        "1_Presentation/67_PONTS_ET_OBLIGATIONS.svg"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-068",
+      "number": 68,
+      "paths": [
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+        "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.tex",
+        "1_Presentation/68_GRAPHE_LANGUE.png",
+        "1_Presentation/68_GRAPHE_LANGUE.svg"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-069",
+      "number": 69,
+      "paths": [
+        "1_Presentation/69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.md",
+        "1_Presentation/69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.pdf",
+        "1_Presentation/69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.tex",
+        "1_Presentation/69_LANGUE_DES_PASSAGES.html"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-070",
+      "number": 70,
+      "paths": [
+        "1_Presentation/70_COMPENSATION_ARITHMETIQUE.png",
+        "1_Presentation/70_COMPENSATION_ARITHMETIQUE.svg",
+        "1_Presentation/70_PONT_ARITHMETIQUE.html",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+        "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.tex"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-071",
+      "number": 71,
+      "paths": [
+        "1_Presentation/71_GRAPHE_LEGO.png",
+        "1_Presentation/71_GRAPHE_LEGO.svg",
+        "1_Presentation/71_LEGO_REUTILISABLE.html",
+        "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.md",
+        "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+        "1_Presentation/71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.tex"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-072",
+      "number": 72,
+      "paths": [
+        "1_Presentation/72_CONCENTRATION_PROJETEE.html",
+        "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.md",
+        "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+        "1_Presentation/72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.tex",
+        "1_Presentation/72_GRAPHE_CONCENTRATION.png",
+        "1_Presentation/72_GRAPHE_CONCENTRATION.svg"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-073",
+      "number": 73,
+      "paths": [
+        "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.png",
+        "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+        "1_Presentation/73_OPERATEUR_COMMUN.html",
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.md",
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+        "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.tex"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-074",
+      "number": 74,
+      "paths": [
+        "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.html",
+        "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.md",
+        "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.pdf",
+        "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.tex",
+        "1_Presentation/74_PAIEMENT_CONJOINT.png",
+        "1_Presentation/74_PAIEMENT_CONJOINT.svg"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-075",
+      "number": 75,
+      "paths": [
+        "1_Presentation/75_CARTE_RH.png",
+        "1_Presentation/75_CARTE_RH.svg",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.html",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.md",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf",
+        "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.tex"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-076",
+      "number": 76,
+      "paths": [
+        "1_Presentation/76_CARTE_PISTES_GLOBALES.png",
+        "1_Presentation/76_CARTE_PISTES_GLOBALES.svg",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.html",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.tex"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-077",
+      "number": 77,
+      "paths": [
+        "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.html",
+        "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.md",
+        "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL_nav.html"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-078",
+      "number": 78,
+      "paths": [
+        "1_Presentation/78_CARTE_TRANSPORT.png",
+        "1_Presentation/78_CARTE_TRANSPORT.svg",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.html",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.pdf",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.tex",
+        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE_nav.html"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-079",
+      "number": 79,
+      "paths": [
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.html",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.pdf",
+        "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.tex",
+        "1_Presentation/79_COMPENSATION_VISUEL.png",
+        "1_Presentation/79_COMPENSATION_VISUEL.svg"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-080",
+      "number": 80,
+      "paths": [
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.md",
+        "1_Presentation/80_D_OU_VIENT_LE_SIGNE.pdf",
+        "1_Presentation/80_Trois_niveaux_du_signe.png",
+        "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.md",
+        "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.pdf",
+        "1_Presentation/english/80_three_levels_EN.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-081",
+      "number": 81,
+      "paths": [
+        "1_Presentation/81_ZHU_REPRODUIT.md",
+        "1_Presentation/81_ZHU_REPRODUIT.pdf",
+        "1_Presentation/81_Zhu_reproduit.png",
+        "1_Presentation/english/81_ZHU_REPRODUCED.md",
+        "1_Presentation/english/81_ZHU_REPRODUCED.pdf",
+        "1_Presentation/english/81_zhu_reproduced_EN.png"
+      ],
+      "renumbered": false
+    },
+    {
+      "id": "DOC-082",
+      "number": 82,
+      "paths": [
+        "1_Presentation/82_CIBLAGE_ET_REPARTITION.md",
+        "1_Presentation/82_CIBLAGE_ET_REPARTITION.pdf",
+        "1_Presentation/english/82_TARGETING_AND_DIVISION_OF_WORK.md",
+        "1_Presentation/english/82_TARGETING_AND_DIVISION_OF_WORK.pdf",
+        "2_Methode/Pilotage/CIBLAGE.md",
+        "2_Methode/Pilotage/TARGETING_EN.md"
+      ],
+      "renumbered": false
+    }
+  ],
+  "supplements": [
+    {
+      "id": "SUP-CORR",
+      "paths": [
+        "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md"
+      ]
+    },
+    {
+      "id": "SUP-AMPL",
+      "paths": [
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md"
+      ]
+    },
+    {
+      "id": "PARCOURS",
+      "paths": [
+        "1_Presentation/PARCOURS_ET_PROPRIETES.html"
+      ]
+    }
+  ],
+  "graph_views": [
+    {
+      "id": "G65",
+      "path": "1_Presentation/65_GRAPHE_DES_PASSAGES.html",
+      "data_id": "graph-data",
+      "container": null,
+      "document": 65,
+      "mapping": {
+        "image": [
+          "v13"
+        ],
+        "fibre": [
+          "v13"
+        ],
+        "jet": [
+          "v13"
+        ],
+        "pli": [
+          "v13"
+        ],
+        "variation": [
+          "v13"
+        ],
+        "paire": [
+          "v13"
+        ],
+        "mesure": [
+          "v13"
+        ],
+        "prefixes": [
+          "coverage",
+          "local"
+        ],
+        "pont": [
+          "global_sign"
+        ],
+        "g1": [
+          "coverage"
+        ],
+        "g4": [
+          "schur"
+        ],
+        "borne": [
+          "Q_bound"
+        ],
+        "weil": [
+          "weil_all"
+        ],
+        "theoremeA": [
+          "thA"
+        ],
+        "rh": [
+          "RH"
+        ]
+      },
+      "case_annotations": {
+        "jet": {
+          "primary_source": "3_Preuves_et_calculs/preuves/V641_GEOMETRIE_ET_OPERATEURS.md",
+          "primary_source_label": "Lemme 4 — Section de collision de rang cinq (§6)",
+          "note": "Le lemme de cette case est une section affine réelle de collision à coefficient complexe fixé. Il est distinct du lemme de jets de Hasse en caractéristique finie du document 58.",
+          "related_nodes": [
+            "jets"
+          ],
+          "relation": "Parenté conceptuelle : contraintes de jets et contrôle du rang ; ni identité de lemme ni transfert automatique entre les deux domaines."
+        }
+      }
+    },
+    {
+      "id": "G66",
+      "path": "1_Presentation/66_GRAPHE_DES_CERTIFICATS.html",
+      "data_id": "graph-data",
+      "container": null,
+      "document": 66,
+      "mapping": {
+        "pli": [
+          "v13"
+        ],
+        "isolation": [
+          "v13"
+        ],
+        "racines": [
+          "v13"
+        ],
+        "paire": [
+          "v13"
+        ],
+        "metrique": [
+          "schr"
+        ],
+        "a1": [
+          "fluctuation",
+          "domaines"
+        ],
+        "pont": [
+          "global_sign"
+        ],
+        "a2": [
+          "prime_norm"
+        ],
+        "uniforme": [
+          "global_sign",
+          "coverage"
+        ],
+        "croissance": [
+          "Q_bound"
+        ],
+        "weil": [
+          "weil_all"
+        ],
+        "rh": [
+          "RH"
+        ]
+      }
+    },
+    {
+      "id": "G67",
+      "path": "1_Presentation/67_GRAPHE_DES_PONTS.html",
+      "data_id": "bridge-data",
+      "container": "graph",
+      "document": 67,
+      "mapping": {
+        "nb": [
+          "nb",
+          "domaines"
+        ],
+        "primes": [
+          "domaines"
+        ],
+        "reg": [
+          "domaines"
+        ],
+        "form": [
+          "compact"
+        ],
+        "core": [
+          "coverage"
+        ],
+        "blocks": [
+          "compact",
+          "local"
+        ],
+        "schur": [
+          "schur"
+        ],
+        "invariant": [
+          "global_sign"
+        ],
+        "uniform": [
+          "coverage",
+          "global_sign"
+        ],
+        "rh": [
+          "weil_all",
+          "RH"
+        ],
+        "local": [
+          "v13"
+        ]
+      }
+    }
+  ],
+  "svg_views": [
+    {
+      "path": "1_Presentation/65_Graphe_des_passages.svg",
+      "graph": "G65",
+      "keys": [
+        "image",
+        "fibre",
+        "jet",
+        "pli",
+        "variation",
+        "paire",
+        "mesure",
+        "prefixes",
+        "pont",
+        "g1",
+        "g4",
+        "borne",
+        "weil",
+        "theoremeA",
+        "rh"
+      ],
+      "expected_labels": [
+        "La paire dans le labyrinthe",
+        "T1 · Ellipse et fibre S²",
+        "L4 · Sections de jets",
+        "T2 · Pli critique double",
+        "Variation universelle fermée",
+        "L5 · Moments et compagnon",
+        "20 candidats · 18 blocs",
+        "G3 · Préfixes insuffisants",
+        "Pont V13 → ζ manquant",
+        "G1–G2 · Tests et densité",
+        "G4 · Queue et couplage",
+        "Borne sur Q(X) ouverte",
+        "Porte 1 · Forme de Weil",
+        "Porte 2 · Théorème A",
+        "Destination précise · RH"
+      ]
+    },
+    {
+      "path": "1_Presentation/66_Graphe_des_certificats.svg",
+      "graph": "G66",
+      "keys": [
+        "pli",
+        "isolation",
+        "racines",
+        "paire",
+        "metrique",
+        "a1",
+        "pont",
+        "a2",
+        "uniforme",
+        "croissance",
+        "weil",
+        "rh"
+      ],
+      "expected_labels": [
+        "I1–I3 · Pli unique",
+        "I4 · Deux zéros isolés",
+        "I5 · Quatre boîtes",
+        "Paire et compagnon",
+        "I6 · Métrique au pli impossible",
+        "A1 · Forme depuis les premiers",
+        "Pont arithmétique manquant",
+        "A2 · Norme première divergente",
+        "Inégalité sur chaque support",
+        "Borne Q(X) depuis les premiers",
+        "Critère de Weil",
+        "Destination précise · RH"
+      ]
+    },
+    {
+      "path": "1_Presentation/68_GRAPHE_LANGUE.svg",
+      "graph": "G68",
+      "node_keys": [
+        "domaines",
+        "domaines",
+        "compact",
+        "compact",
+        "compact",
+        "schur",
+        "schur"
+      ],
+      "case_ids": [
+        "G68.case01",
+        "G68.case02",
+        "G68.case03",
+        "G68.case04",
+        "G68.case05",
+        "G68.case06",
+        "G68.case07"
+      ],
+      "expected_labels": [
+        "Graines / algèbre Cc∞",
+        "P et jets admissibles",
+        "Métrique H¹",
+        "Métrique logarithmique R",
+        "Marge H¹ stricte",
+        "Queue de moments",
+        "Schur fini avec couplages"
+      ]
+    },
+    {
+      "path": "1_Presentation/71_GRAPHE_LEGO.svg",
+      "graph": "G71",
+      "node_keys": [
+        "domaines",
+        "domaines",
+        "schur",
+        "domaines",
+        "compact",
+        "local",
+        "fluctuation",
+        "local",
+        "coverage"
+      ],
+      "case_ids": [
+        "G71.case01",
+        "G71.case02",
+        "G71.case03",
+        "G71.case04",
+        "G71.case05",
+        "G71.case06",
+        "G71.case07",
+        "G71.case08",
+        "G71.case09"
+      ],
+      "expected_labels": [
+        "Domaine et moments",
+        "Projection commune",
+        "Sources : C optimal",
+        "Parité",
+        "Couches fréquentielles",
+        "Certificat complet local",
+        "Potentiel de bord",
+        "Attaches du premier 2",
+        "Agrandissement non borné"
+      ]
+    },
+    {
+      "path": "1_Presentation/72_GRAPHE_CONCENTRATION.svg",
+      "graph": "G72",
+      "node_keys": [
+        "domaines",
+        "fluctuation",
+        "compact",
+        "schur",
+        "compact",
+        "schur",
+        "local",
+        "local",
+        "coverage"
+      ],
+      "case_ids": [
+        "G72.case01",
+        "G72.case02",
+        "G72.case03",
+        "G72.case04",
+        "G72.case05",
+        "G72.case06",
+        "G72.case07",
+        "G72.case08",
+        "G72.case09"
+      ],
+      "expected_labels": [
+        "Moments et projection",
+        "Coût énergie/premier",
+        "Opérateur commun",
+        "Gram des sources",
+        "Concentration Schatten-2",
+        "Tête et sources réelles",
+        "Cellules et erreurs C²",
+        "Certificat : S ≤ 3/8",
+        "Couverture non bornée"
+      ]
+    },
+    {
+      "path": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg",
+      "graph": "G73",
+      "node_keys": [
+        "domaines",
+        "compact",
+        "transport",
+        "domaines",
+        "local",
+        "schur",
+        "local",
+        "local",
+        "local"
+      ],
+      "case_ids": [
+        "G73.case01",
+        "G73.case02",
+        "G73.case03",
+        "G73.case04",
+        "G73.case05",
+        "G73.case06",
+        "G73.case07",
+        "G73.case08",
+        "G73.case09"
+      ],
+      "expected_labels": [
+        "Forme originale Q",
+        "Minorant A = ηI − B",
+        "Multi-premiers et transport",
+        "Moments et Gram",
+        "Cadre cardinal de Gauss",
+        "Même erreur δ",
+        "Intervalles et erreurs",
+        "Tête en deux blocs 40 × 40",
+        "Certificat sur tous Xₛ"
+      ]
+    }
+  ]
+}

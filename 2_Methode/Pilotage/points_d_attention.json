@@ -1,0 +1,385 @@
+{
+  "_lisez_moi": "Source unique du bloc « À lire d'abord » : rendu en tête du portail (build_pilotage.py) et du README (2_Methode/Outils/integrate_v658.py). Chemins relatifs à la racine du corpus. Auteur et titulaire des droits : Vincent NOËL.",
+  "version": "V6.59",
+  "date": "17 octobre 2026",
+  "etat": "RH reste ouverte. Le corpus ne contient pas de preuve de RH. Il contient des énoncés démontrés dans des cadres délimités, des certificats sur des fenêtres bornées, des mesures avec prévisions écrites avant, et la liste précise de ce qui manque.",
+  "dernier_acquis": {
+    "titre": "Le signe vient d'un carré",
+    "texte": "Comptages et degrés ne suffisent pas ; seule la trace d'un carré exclut les faux jumeaux (doc. 80)."
+  },
+  "points": [
+    {
+      "id": "articles",
+      "titre": "Le noyau analytique : Théorèmes A et B, trois articles à faire relire",
+      "statut": "Démontré, relu en interne · non relu par un spécialiste",
+      "texte": "Théorème A : l'exposant de croissance de l'énergie Q(X), intégrale de |C(x)|² x⁻² entre 1 et X, construite avec c = Λ∗Λ − Λ·log + 2γΛ, vaut 2(Θ − ½). Théorème B : sous RH, Q(X) ∼ (S/3)(log X)³ ; la constante vaut 4κ/3 si et seulement si tous les zéros sont simples, d'où un critère conjoint RH–simplicité. Article 1 porte ces énoncés ; article 2 un certificat dans une fenêtre fixée ; article 3 est une note expositive (jets de Hasse), sans nouveauté historique revendiquée. La relecture externe est la marche suivante de l'indicateur (niveau 7).",
+      "liens": [
+        [
+          "Article 1",
+          "1_Presentation/articles/article1_mean_square_double_poles.pdf"
+        ],
+        [
+          "Article 2",
+          "1_Presentation/articles/article2_prime_side_weil_forms.pdf"
+        ],
+        [
+          "Article 3",
+          "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf"
+        ],
+        [
+          "Dossier pour un spécialiste",
+          "1_Presentation/relecture/00_READ_ME_FIRST_EN.md"
+        ],
+        [
+          "Pré-relecture (doc. 37)",
+          "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md"
+        ]
+      ]
+    },
+    {
+      "id": "carre",
+      "titre": "Ce qui manque n'est pas un comptage, c'est un carré",
+      "statut": "Démontré (élémentaire) · classique cité",
+      "texte": "Dans le Modèle réduit (courbes sur 𝔽_q), 119 faux jumeaux qui violent RH ont des comptages positifs et des degrés d'isogénie positifs. Seule la trace d'un carré, la positivité de Rosati qui vient d'une polarisation, les exclut. ζ passe déjà les deux premiers niveaux (Λ ≥ 0, aucun zéro réel). Il lui manque l'objet qui fournirait ce carré.",
+      "liens": [
+        [
+          "Document 80",
+          "1_Presentation/80_D_OU_VIENT_LE_SIGNE.pdf"
+        ],
+        [
+          "Modèle réduit (doc. 28)",
+          "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf"
+        ],
+        [
+          "Surface virtuelle (doc. 46)",
+          "1_Presentation/46_LA_SURFACE_VIRTUELLE.md"
+        ]
+      ]
+    },
+    {
+      "id": "fenetres",
+      "titre": "Positivité de Weil certifiée sur tous les tests, mais dans des fenêtres",
+      "statut": "Certifié dans son domaine · mesuré au-delà",
+      "texte": "Sur l'espace infini des tests à moments nuls, sans zéros ni RH : Q_W ≥ ‖f‖²/25 pour S ≤ 0,347 (doc. 71), ≥ ‖f‖²/250 pour S ≤ 1/2 (doc. 73), ≥ 3‖f‖²/10000 pour S ≤ 11/20 (doc. 75). Le doc. 81 retrouve indépendamment les valeurs de Zhu jusqu'à L = 0,8 (non certifié) et mesure, sur le même sous-espace, une marge d'environ 5·10⁻¹² à 0,8. Attention : le minorant certifié de Zhu (λ*(0,8) > 0 pour toutes les fonctions) couvre déjà ces fenêtres en portée ; les certificats du corpus apportent des marges plus fortes sur les tests à moments nuls, pas une fenêtre plus large. La marge s'effondre à chaque élargissement ; aucune approche fenêtre par fenêtre ne démontrera RH.",
+      "liens": [
+        [
+          "Document 73",
+          "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+        ],
+        [
+          "Document 75",
+          "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf"
+        ],
+        [
+          "Document 81",
+          "1_Presentation/81_ZHU_REPRODUIT.pdf"
+        ]
+      ]
+    },
+    {
+      "id": "archipel",
+      "titre": "L'Archipel d'Euler : RH n'existe qu'aux points d'Euler",
+      "statut": "Démontré dans les espaces déclarés · pré-relu en interne",
+      "texte": "Parmi les combinaisons de fonctions L qui partagent l'équation fonctionnelle, RH ne tient qu'aux points où la fonction a un produit d'Euler (espaces V_q de degré 1 déclarés). Le résultat situe la nécessité ; il ne donne pas « produit d'Euler ⇒ RH ».",
+      "liens": [
+        [
+          "Document 30",
+          "1_Presentation/30_ARCHIPEL_D_EULER.pdf"
+        ],
+        [
+          "Lemme des jets (doc. 58)",
+          "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.md"
+        ]
+      ]
+    },
+    {
+      "id": "arithmetique",
+      "titre": "Côté arithmétique : la tête est acquise, la grande queue est ouverte",
+      "statut": "Démontré sous ses gardes · ouvert",
+      "texte": "La somme de Möbius est restituée exactement et la tête des conducteurs q ≤ H est bornée à toutes les échelles. La dette signée des grands conducteurs reste à contrôler ; la conséquence vers Re(s) > 3/4 est conditionnelle à cette borne.",
+      "liens": [
+        [
+          "Essai d'amplification V6.55",
+          "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf"
+        ],
+        [
+          "Corrélations, identité et énergie",
+          "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.pdf"
+        ]
+      ]
+    },
+    {
+      "id": "ouvert",
+      "titre": "Ce qui reste ouvert, précisément",
+      "statut": "Ouvert",
+      "texte": "Trois obligations : la loi de signe sur une famille de tests (IDE-051), la couverture et le passage à la limite (IDE-050), la positivité de Weil sur tous les tests (IDE-052). La piste opératoire Q = ‖Tf‖² tirée de Suzuki est suspendue pour une incohérence de parité dans la convention publiée ; l'opérateur unilatéral T₊ est retenu à la place.",
+      "liens": [
+        [
+          "Document 76",
+          "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf"
+        ],
+        [
+          "Complément 76 (§8, parité)",
+          "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf"
+        ],
+        [
+          "Document 79",
+          "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.pdf"
+        ],
+        [
+          "Complément 79",
+          "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf"
+        ]
+      ]
+    }
+  ],
+  "precautions": [
+    "Les niveaux de l'indicateur sont des catégories de maturité : ni un pourcentage de RH, ni une probabilité de preuve.",
+    "« Mesuré » veut dire calculé en haute précision, pas certifié. Seuls les énoncés marqués « certifié » ou « démontré » le sont, et dans leur domaine.",
+    "Deux numéros portent deux pièces : 76 (document et complément) et 79 (document et complément). Les numéros ne sont jamais réattribués.",
+    "Chaque document décrit l'état de sa date. La synthèse (doc. 01) et le guide de lecture (doc. 07) sont à jour en V6.58, en français et en anglais ; les versions V6.24 sont conservées dans 4_Archives/historique.",
+    "Les documents reçus (4_Archives/recus) et les originaux archivés ne sont pas modifiés ; les pièces reconstruites sont marquées comme telles."
+  ],
+  "outils": [
+    [
+      "Portail",
+      "00_PORTAIL.html"
+    ],
+    [
+      "Guide de lecture intuitif (doc. 07)",
+      "1_Presentation/07_GUIDE_DE_LECTURE_INTUITIF.pdf"
+    ],
+    [
+      "Synthèse (doc. 01)",
+      "1_Presentation/01_SYNTHESE_FR.pdf"
+    ],
+    [
+      "Entrée en anglais (README_EN)",
+      "README_EN.md"
+    ],
+    [
+      "Indicateur d'avancement",
+      "1_Presentation/31_INDICATEUR_D_AVANCEMENT.html"
+    ],
+    [
+      "Navigateur et Bellman",
+      "1_Presentation/34_NAVIGATEUR_DE_RECHERCHE.html"
+    ],
+    [
+      "Ciblage et répartition du travail (doc. 82)",
+      "1_Presentation/82_CIBLAGE_ET_REPARTITION.pdf"
+    ],
+    [
+      "Travailler sur GitHub",
+      "GITHUB.md"
+    ],
+    [
+      "Graphe des idées",
+      "00_Carte_des_idees.html"
+    ],
+    [
+      "Matrice des théories",
+      "1_Presentation/44_MATRICE_DES_THEORIES.html"
+    ],
+    [
+      "Registre des sources",
+      "1_Presentation/42_REGISTRE_DES_SOURCES.html"
+    ],
+    [
+      "Liste des figures",
+      "00_Liste_des_figures.html"
+    ],
+    [
+      "Table logique",
+      "TABLE_LOGIQUE.md"
+    ],
+    [
+      "Références hiérarchisées",
+      "REFERENCES_HIERARCHISEES.md"
+    ],
+    [
+      "Guide pour une IA (prompt)",
+      "GUIDE_POUR_UNE_IA.md"
+    ],
+    [
+      "Plan du corpus",
+      "PLAN_DU_CORPUS.md"
+    ]
+  ],
+  "decisions_en_attente": [
+    "Choisir quoi pré-publier : proposition dans la note de livraison V6.58 (article 1 en premier, avec un spécialiste qui peut aussi parrainer le dépôt arXiv ; article 2 enrichi du document 80 ; dépôt du corpus avec DOI).",
+    "Fiches de tâche (document 82) : transmettre le lot 1 à ChatGPT (`2_Methode/Pilotage/lots/LOT_01_CHATGPT.md`), enregistrer ses prévisions ; attribuer TAC-004 à TAC-006 ; créer le dépôt GitHub privé (`GITHUB.md`)."
+  ],
+  "en": {
+    "etat": "RH remains open. The corpus contains no proof of RH. It contains statements proved in delimited settings, certificates on bounded windows, measurements with predictions written in advance, and a precise list of what is missing.",
+    "dernier_acquis": {
+      "titre": "The sign comes from a square",
+      "texte": "Counts and degrees are not enough; only the trace of a square excludes the fake twins (doc. 80)."
+    },
+    "points": {
+      "articles": {
+        "titre": "The analytic core: Theorems A and B, three papers ready for specialist review",
+        "statut": "Proved, internally reviewed · not yet refereed",
+        "texte": "Theorem A: the growth exponent of the energy Q(X), the integral of |C(x)|² x⁻² from 1 to X built from c = Λ∗Λ − Λ·log + 2γΛ, equals 2(Θ − ½). Theorem B: under RH, Q(X) ∼ (S/3)(log X)³; the constant equals 4κ/3 if and only if all zeros are simple, which gives a joint criterion for RH and simplicity. Paper 1 contains these statements; paper 2 a certificate in a fixed window; paper 3 is an expository note (Hasse jets) claiming no historical novelty. External review is the next step of the progress indicator (level 7).",
+        "liens": [
+          [
+            "Paper 1",
+            "1_Presentation/articles/article1_mean_square_double_poles.pdf"
+          ],
+          [
+            "Paper 2",
+            "1_Presentation/articles/article2_prime_side_weil_forms.pdf"
+          ],
+          [
+            "Paper 3",
+            "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf"
+          ],
+          [
+            "Specialist review file",
+            "1_Presentation/relecture/00_READ_ME_FIRST_EN.md"
+          ]
+        ]
+      },
+      "carre": {
+        "titre": "What is missing is not a count but a square",
+        "statut": "Proved (elementary) · classical results cited",
+        "texte": "In the reduced model (curves over 𝔽_q), 119 fake twins that violate RH have non-negative point counts and non-negative isogeny degrees. Only the trace of a square, the Rosati positivity coming from a polarization, excludes them. ζ already passes the first two levels (Λ ≥ 0, no real zero). What it lacks is the object that would supply this square.",
+        "liens": [
+          [
+            "Document 80 (EN)",
+            "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.pdf"
+          ],
+          [
+            "Reduced model (doc. 28, FR)",
+            "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf"
+          ]
+        ]
+      },
+      "fenetres": {
+        "titre": "Weil positivity certified on all test functions, but within windows",
+        "statut": "Certified in its domain · measured beyond",
+        "texte": "On the infinite space of test functions with vanishing moments, without zeros or RH: Q_W ≥ ‖f‖²/25 for S ≤ 0.347 (doc. 71), ≥ ‖f‖²/250 for S ≤ 1/2 (doc. 73), ≥ 3‖f‖²/10000 for S ≤ 11/20 (doc. 75). Document 81 independently reproduces Zhu's values up to L = 0.8 (not certified) and measures, on the same subspace, a margin of about 5·10⁻¹² at 0.8. Caution: Zhu's certified lower bound (λ*(0.8) > 0 for all functions) already covers these windows in range; the corpus certificates give stronger margins on zero-moment test functions, not a wider window.",
+        "liens": [
+          [
+            "Document 73 (FR)",
+            "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf"
+          ],
+          [
+            "Document 75 (FR)",
+            "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf"
+          ],
+          [
+            "Document 81 (EN)",
+            "1_Presentation/english/81_ZHU_REPRODUCED.pdf"
+          ]
+        ]
+      },
+      "archipel": {
+        "titre": "The Euler archipelago: RH holds only at the Euler points",
+        "statut": "Proved in the declared spaces · internally pre-reviewed",
+        "texte": "Among the combinations of L-functions sharing the functional equation, RH holds only at the points where the function has an Euler product (declared degree-1 spaces V_q). The result locates the necessity; it does not give “Euler product ⇒ RH”.",
+        "liens": [
+          [
+            "Document 30 (FR)",
+            "1_Presentation/30_ARCHIPEL_D_EULER.pdf"
+          ],
+          [
+            "Archipelago review (EN)",
+            "1_Presentation/relecture/RELECTURE_ARCHIPEL_EN.md"
+          ]
+        ]
+      },
+      "arithmetique": {
+        "titre": "Arithmetic side: the head is controlled, the large tail is open",
+        "statut": "Proved under its guards · open",
+        "texte": "The Möbius sum is restored exactly and the head of conductors q ≤ H is bounded at every scale. The signed debt of large conductors remains to be controlled; the consequence towards Re(s) > 3/4 is conditional on that bound.",
+        "liens": [
+          [
+            "Amplification essay V6.55 (FR)",
+            "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf"
+          ],
+          [
+            "Correlations, identity and energy (FR)",
+            "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.pdf"
+          ]
+        ]
+      },
+      "ouvert": {
+        "titre": "What remains open, precisely",
+        "statut": "Open",
+        "texte": "Three obligations: the sign law on a family of test functions (IDE-051), coverage and the passage to the limit (IDE-050), Weil positivity on all test functions (IDE-052). The operator route Q = ‖Tf‖² taken from Suzuki is suspended because of a parity inconsistency in the published convention; the one-sided operator T₊ is used instead.",
+        "liens": [
+          [
+            "Document 76 (FR)",
+            "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf"
+          ],
+          [
+            "Supplement 76, §8 parity (FR)",
+            "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf"
+          ],
+          [
+            "Document 79 (FR)",
+            "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.pdf"
+          ]
+        ]
+      }
+    },
+    "precautions": [
+      "The progress indicator levels are maturity categories: neither a percentage of RH nor a probability of proof.",
+      "“Measured” means computed in high precision, not certified. Only statements marked “certified” or “proved” are so, and only in their domain.",
+      "Two numbers carry two pieces each: 76 and 79 (a document and its supplement). Numbers are never reassigned.",
+      "Each document describes the state at its date. The synthesis (doc. 01) and the reading guide (doc. 07) are up to date at V6.58 in French and English; most other research documents are in French.",
+      "Received documents (4_Archives/recus) and archived originals are never modified; reconstructed pieces are marked as such."
+    ],
+    "outils": [
+      [
+        "Intuitive reading guide (doc. 07, EN)",
+        "1_Presentation/english/07_READING_GUIDE_EN.pdf"
+      ],
+      [
+        "Synthesis (doc. 01, EN)",
+        "1_Presentation/english/01_SYNTHESIS_EN.pdf"
+      ],
+      [
+        "Portal (FR)",
+        "00_PORTAIL.html"
+      ],
+      [
+        "Logical table",
+        "LOGICAL_TABLE.md"
+      ],
+      [
+        "Ranked references",
+        "REFERENCES_RANKED.md"
+      ],
+      [
+        "Targeting and division of work (doc. 82)",
+        "1_Presentation/english/82_TARGETING_AND_DIVISION_OF_WORK.pdf"
+      ],
+      [
+        "Working on GitHub (FR)",
+        "GITHUB.md"
+      ],
+      [
+        "Guide for an AI (prompt)",
+        "GUIDE_FOR_AN_AI.md"
+      ],
+      [
+        "Papers (PDF and LaTeX)",
+        "1_Presentation/articles/LISEZMOI_ARTICLES.md"
+      ],
+      [
+        "Documents 80 and 81 in English",
+        "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.md"
+      ],
+      [
+        "Corpus map (FR)",
+        "PLAN_DU_CORPUS.md"
+      ]
+    ],
+    "decisions_en_attente": [
+      "Choose what to pre-publish (see the delivery note).",
+      "Task cards (document 82): send batch 1 to ChatGPT and record its predictions; assign TAC-004 to TAC-006; create the private GitHub repository (GITHUB.md)."
+    ]
+  }
+}

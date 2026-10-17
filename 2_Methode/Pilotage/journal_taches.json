@@ -1,0 +1,179 @@
+{
+  "schema": "journal_taches_v1",
+  "evenements": [
+    {
+      "n": 1,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-001",
+      "evenement": "creee",
+      "details": {
+        "cle": "bellman:noyaux",
+        "cycle": 1
+      },
+      "empreinte_precedente": null
+    },
+    {
+      "n": 2,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-002",
+      "evenement": "creee",
+      "details": {
+        "cle": "investigation:signe_paquets",
+        "cycle": 1
+      },
+      "empreinte_precedente": "4eda0c4eeadeac1f1719f162dc7d71271b3e3187099024cc6195837994e78b61"
+    },
+    {
+      "n": 3,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-003",
+      "evenement": "creee",
+      "details": {
+        "cle": "investigation:duale_schur",
+        "cycle": 1
+      },
+      "empreinte_precedente": "4c6b7dec5666f871ec6b3f1f33fe7383341f72a99688f736d6eca776f4fe3ec8"
+    },
+    {
+      "n": 4,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-004",
+      "evenement": "creee",
+      "details": {
+        "cle": "investigation:couverture_constructive",
+        "cycle": 1
+      },
+      "empreinte_precedente": "8d8928f55c259e4383b0f4d32e5e51895694661446c57086b4681fcd17f59a5f"
+    },
+    {
+      "n": 5,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-005",
+      "evenement": "creee",
+      "details": {
+        "cle": "investigation:mu_correlations",
+        "cycle": 1
+      },
+      "empreinte_precedente": "1e734ac77e7535df5dc930704f7b53bb6a182ba94120315a77971780e5350518"
+    },
+    {
+      "n": 6,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-006",
+      "evenement": "creee",
+      "details": {
+        "cle": "investigation:v13_fibre",
+        "cycle": 1
+      },
+      "empreinte_precedente": "f272e17ffdaf88316a03112dedc414c5e4eb2e71f3910513e5a014d69869a7ef"
+    },
+    {
+      "n": 7,
+      "le": "2026-10-17T15:03:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-007",
+      "evenement": "creee",
+      "details": {
+        "cle": "investigation:noyau_S08",
+        "cycle": 1
+      },
+      "empreinte_precedente": "00dba7ae8c27ccaf934247360594bd7470ae7b97e48196472bba9f51c0e02edc"
+    },
+    {
+      "n": 8,
+      "le": "2026-10-17T17:44:32+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:mpt-decomposition-K",
+        "cycle": 1
+      },
+      "empreinte_precedente": "803c4ae9996768793c2430035e828eb99846a788ffe90f24ad567022c911b95f"
+    },
+    {
+      "n": 9,
+      "le": "2026-10-17T17:44:32+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-009",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:mpt-gram-nyman-beurling-differences",
+        "cycle": 1
+      },
+      "empreinte_precedente": "c7225254cc2b3867cc03f21648d9a159dfa94cb393580c8e611a7f0e4e3dc43d"
+    },
+    {
+      "n": 10,
+      "le": "2026-10-17T17:44:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-007",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "1d6bf3b8e578a56e75c7120cf983673d961ac3c7cead499e56e8c26b90542f96"
+    },
+    {
+      "n": 11,
+      "le": "2026-10-17T17:44:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "013524aacb1b2b9697afbe7b5bde3cbc7bcc68bb09b9d8597d1cfd01e9dcb62e"
+    },
+    {
+      "n": 12,
+      "le": "2026-10-17T17:44:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-001",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "55fcce8305f2189abf28bb54264115cb9ffad76277ba6de404656cbb4b314e03"
+    },
+    {
+      "n": 13,
+      "le": "2026-10-17T17:44:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-009",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:chatgpt-sol-6.1-max"
+      },
+      "empreinte_precedente": "8182290cec03f4995c44b417b433e3512300105e80cf396573bc238598d3a4b2"
+    },
+    {
+      "n": 14,
+      "le": "2026-10-17T17:44:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-003",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:chatgpt-sol-6.1-max"
+      },
+      "empreinte_precedente": "403fdfb41b7993606792512046f56b67af7ebf464e4835311fed1c9905f3451d"
+    },
+    {
+      "n": 15,
+      "le": "2026-10-17T17:44:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-002",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:chatgpt-sol-6.1-max"
+      },
+      "empreinte_precedente": "bf916bfe528a6d958c8f6d83cacb9ce2ce8438f355035b909dc1edbc0eb876fb"
+    }
+  ]
+}

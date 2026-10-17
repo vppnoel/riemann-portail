@@ -1,0 +1,93 @@
+{
+  "version": "6.55",
+  "date": "2026-10-14",
+  "timezone": "Europe/Brussels",
+  "goal": "global Weil positivity, arithmetic sign law and coverage",
+  "RH_proved": false,
+  "global_arithmetic_sign_proved": false,
+  "global_energy_bound_proved": false,
+  "new_global_bound": false,
+  "current_report": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+  "current_pdf": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+  "current_tex": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.tex",
+  "retrospective_report": "PARCOURS_ET_PROPRIETES.html",
+  "identity": {
+    "statement": "sum_{d|n} Lambda(d)=log n",
+    "status": "classical, unconditional",
+    "proof_written": true,
+    "symbolic_checks_to": 1000
+  },
+  "energy": {
+    "definition": "J(X)=integral_1^X (psi(x)-x)^2 dx",
+    "criterion": "RH iff J(X)=O(X^2)",
+    "criterion_status": "classical",
+    "sufficiency_proof_written": true,
+    "global_bound_obtained": false
+  },
+  "computed": {
+    "correlations_v654_preserved": {
+      "prime_power_cutoff": 1000,
+      "prime_power_count": 193,
+      "reproduction_digits": 85,
+      "independent_integer_interval_digits": 90,
+      "countermodel_interval_bits": 400
+    },
+    "amplification": {
+      "family_X_H": [
+        100,
+        300,
+        1000
+      ],
+      "independent_decimal_digits": 70,
+      "independent_integration_X": [
+        31,
+        100
+      ],
+      "max_identity_residual": "3.040E-66",
+      "interval_certificate": false,
+      "infinite_bound": false
+    }
+  },
+  "preserved_local_certificate": {
+    "source": "V6.53 / document 79",
+    "cutoff": 1000,
+    "refined_positive_guards": 53,
+    "new_computation": false
+  },
+  "missing": [
+    "Special signed estimate for q>H, keeping the Mobius weights",
+    "Independent all-scale bound of RH strength for J",
+    "Global Weil sign and full-family coverage with convergence conditions"
+  ],
+  "maturity_changed": false,
+  "historical_recovery_complete": false,
+  "summary": "Restitution exacte de la somme de Möbius et petits conducteurs contrôlés à toutes les échelles. Dette signée des grands conducteurs ouverte ; conséquence vers Re(s) > 3/4 conditionnelle. Aucun gain global sur l’énergie totale ni preuve de RH.",
+  "version_correction": {
+    "previous_delivery_label": "V6.55 complement only",
+    "reason": "Full V6.54 corpus retained and V6.55 amplification integrated into all current entry points."
+  },
+  "release_type": "global corpus",
+  "complete_relative_to_v654": true,
+  "base_archive": "programme-riemann_v6_54_CORRELATIONS.zip",
+  "base_archive_sha256": "188928b28430fa358eeebe5a58d41156c72940d568f3c1df1b711f5146b19594",
+  "amplification": {
+    "exact_restitution_proved": true,
+    "uniform_dilation_stability_proved": true,
+    "conductor_regrouping_proved": true,
+    "small_conductor_bound_proved": true,
+    "small_conductor_bound": "|R_(1<q<=Q)| <= X^2 Q (1+log X)(1+log Q)^2 (13/2 + 5/4 log Q)",
+    "bound_scope": "All X>=1, Q>=2, integer H>=1; unconditional",
+    "large_conductor_bound_proved": false,
+    "remaining": "R_(q>X)(X,H=X) <= C X^3(1+log X)^k, with C,k independent of X",
+    "conditional_conclusion": "If remaining bound is proved: J(X)<<X^(5/2) polylog; no zeros Re(s)>3/4",
+    "conditional_conclusion_obtained": false,
+    "global_Weil_positivity_obtained": false
+  },
+  "next_action": {
+    "titre": "Contrôler la dette signée à grand conducteur",
+    "question": "À H=X, établir R_(q>X)<=C X^3(1+log X)^k avec C,k fixes, en conservant μ(q) ; la Fourier quadratique et le crible générique ne suffisent pas.",
+    "document": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+    "statut": "route à construire",
+    "probabilite_estimee": null
+  }
+}

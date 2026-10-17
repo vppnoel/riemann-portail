@@ -1,0 +1,211 @@
+{
+ "version": "1",
+ "description": "Corpus d'erreurs plantées tiré de ce projet (E*) et d'énoncés corrects servant de leurres (D*). Un auditeur reçoit les versions 'wrong' des énoncés E* mélangées aux énoncés D* et doit signaler les seuls E*.",
+ "errors": [
+  {
+   "id": "E01",
+   "category": "mathématique/numérique",
+   "wrong": "Analogue corps de fonctions avec q_n = +s_n : le double pôle disparaît (q²+q′ sans somme des m(m+1)), Q_M croît linéairement.",
+   "right": "q_n = −s_n, donc c_n = (s∗s)_n + n·s_n ; Q_M/M³ ≈ 2,5–2,9 si |α| = √p.",
+   "signal": "Comparer la croissance de Q_M à la loi cubique attendue ; vérifier que q a un résidu −1 aux zéros.",
+   "ref": "scripts/run_function_field_analog.py ; docs/MEMO_P2_2_WEIL.md"
+  },
+  {
+   "id": "E02",
+   "category": "mathématique",
+   "wrong": "« Θ = 1 est connu » (Θ = sup Re ρ).",
+   "right": "On sait Θ ≤ 1 (Re ρ < 1) ; Θ < 1 est ouvert et Θ = 1 n'est pas non plus établi.",
+   "signal": "Relire la définition de Θ comme borne supérieure des parties réelles.",
+   "ref": "docs/PRIORITES.md ; docs/LEMMES_RIGOUREUX.md (L6)"
+  },
+  {
+   "id": "E03",
+   "category": "test",
+   "wrong": "Tests « circulaires » du générateur arithmétique : modes e^{λt} fabriqués avec (β,γ) imposés puis retrouvés à 10⁻¹³.",
+   "right": "Tester sur le vrai signal ψ(eᵗ) ; un test valide doit pouvoir échouer.",
+   "signal": "Demander quelle donnée entre dans le test et si elle contient déjà la réponse.",
+   "ref": "docs/AUDIT_V4_3.md (F1)"
+  },
+  {
+   "id": "E04",
+   "category": "numérique",
+   "wrong": "Identification de modes (ESPRIT) lue comme preuve que Re λ = β − ½ est retrouvé.",
+   "right": "Sur ψ, Re λ est biaisé (−0,002 à −0,09 pour des zéros critiques) et des fantômes apparaissent (−5,8 vers γ ≈ 67).",
+   "signal": "Comparer à la vérité connue (β − ½ = 0 pour tous les zéros testés).",
+   "ref": "docs/AUDIT_V4_3.md (F2) ; data/generator_real_signal.csv"
+  },
+  {
+   "id": "E05",
+   "category": "numérique",
+   "wrong": "Mode de Re λ maximal (Im ≈ 73,8 ; Re ≈ +0,345) sur Davenport–Heilbronn pris pour le zéro hors droite.",
+   "right": "Aucun zéro de DH près de 0,84 + 73,8i (balayage de |f| et Newton) ; le vrai zéro hors droite est 0,8085 + 85,699i, sous-estimé à +0,23.",
+   "signal": "Chercher un zéro à la position annoncée ; le témoin négatif doit être détecté au bon endroit.",
+   "ref": "docs/AUDIT_V4_3.md (F3) ; test_generator_dh_ghost_mode_in_data"
+  },
+  {
+   "id": "E06",
+   "category": "interprétation",
+   "wrong": "« L'annulation de 94–98 % par rapport au proxy diagonal révèle une structure ».",
+   "right": "G est régulière en s = 1 (L4) : les termes principaux disparaissent par construction.",
+   "signal": "Se demander si le résultat serait le même sans structure arithmétique.",
+   "ref": "REPORT_FR.md (mise en garde v2)"
+  },
+  {
+   "id": "E07",
+   "category": "mathématique/rédaction",
+   "wrong": "Reliquat « a_1 » dans la preuve de L6.2 ; log Q(X) non défini quand Q = 0.",
+   "right": "Supprimer a_1 ; utiliser log(1+Q(X)).",
+   "signal": "Relecture ligne à ligne des quantificateurs.",
+   "ref": "docs/LEMMES_RIGOUREUX.md (v4.5)"
+  },
+  {
+   "id": "E08",
+   "category": "mathématique",
+   "wrong": "Théorème B énoncé « sous RH et zéros simples ».",
+   "right": "La simplicité est inutile : S = Σ m²(m+1)²/|ρ|² sur les zéros distincts.",
+   "signal": "Vérifier où l'hypothèse est utilisée dans la preuve.",
+   "ref": "docs/THEOREME_TERME_DOMINANT.md"
+  },
+  {
+   "id": "E09",
+   "category": "mathématique",
+   "wrong": "Q(e^L) = (4κ/3)L³ + αL² + βL + o(L) comme développement ponctuel.",
+   "right": "Le coefficient de L² vaut α + Φ(L) avec Φ presque périodique (≈ ±0,03) ; α, β sont des moyennes.",
+   "signal": "Ajuster librement α, β : instables ; calculer Φ(L) par la formule.",
+   "ref": "docs/ALPHA_BETA_ANALYSE.md"
+  },
+  {
+   "id": "E10",
+   "category": "mathématique",
+   "wrong": "« L'hypothèse (H3) est levée par le théorème de Montgomery (ou sa version inconditionnelle). »",
+   "right": "Ces théorèmes résolvent des échelles ≳ 2π/log T ; (H3⋆) exige une répulsion sous l'espacement moyen.",
+   "signal": "Comparer l'échelle de Fourier disponible (|α| ≤ 1) à l'échelle η → 0 requise.",
+   "ref": "docs/H3_ANALYSIS.md"
+  },
+  {
+   "id": "E11",
+   "category": "rédaction",
+   "wrong": "« Le journal ne contenait pas d'entrées pour V4.1–V4.3. »",
+   "right": "Les entrées existent (vérifié par lecture du fichier).",
+   "signal": "Lire le fichier avant d'affirmer l'absence.",
+   "ref": "CHANGELOG.md (v4.4)"
+  },
+  {
+   "id": "E12",
+   "category": "numérique",
+   "wrong": "« 125 zéros de DH trouvés pour ≈ 129,5 attendus jusqu'à t = 200 : écart compatible avec le terme d'erreur O(log T), la liste est complète. »",
+   "right": "La liste était incomplète de six zéros : quatre partenaires 1 − σ des zéros hors droite et deux zéros bas (t = 5,094 et t = 8,940). Comptage exact par le principe de l'argument : 130 pour 0 < t ≤ 200,5.",
+   "signal": "Un écart à une formule asymptotique ne se règle pas en invoquant son terme d'erreur : compter par le principe de l'argument, bande par bande ; vérifier que la recherche couvre les petites hauteurs et les symétriques.",
+   "ref": "1_Presentation/24_CLASSEMENT_DES_INSTRUMENTS_V6_3D.md (§6) ; data/dh_zero_count_audit.csv"
+  },
+  {
+   "id": "E13",
+   "category": "physique",
+   "wrong": "Figure « Triangle » : ordonnées à l'origine arbitraires (−10 et −20), Planck placé en (−8, −28), Hubble tracé comme une verticale, Terre en (0, 2).",
+   "right": "Schwarzschild : log R = log M − 26,83 ; Compton réduite : log R = −log M − 42,45 ; croisement M = 1,539·10⁻⁸ kg, R = 2,286·10⁻³⁵ m ; Terre en (24,8 ; 6,8) dans les axes (log M, log R).",
+   "signal": "Recalculer à partir de G, c, ħ ; vérifier les objets connus.",
+   "ref": "archives_recherche_univers v1/v2 (hors package)"
+  },
+  {
+   "id": "E14",
+   "category": "physique",
+   "wrong": "« Remmen démontre RH par exclusion physique (causalité, absence de tachyons). »",
+   "right": "Remmen cartographie une amplitude et écrit « sans prouver » RH ; l'équivalence porte sur les masses du modèle, pas sur l'Univers.",
+   "signal": "Identifier l'hypothèse tacite : cette amplitude décrit l'Univers.",
+   "ref": "docs/Protocole_multi_agents_et_panorama_physique_RH.docx (B1)"
+  },
+  {
+   "id": "E15",
+   "category": "numérologie",
+   "wrong": "Masses du modèle standard (m²/100) « inscrites entre » les zéros² : preuve de régularisation.",
+   "right": "La division par 100 est arbitraire ; à tester avec des témoins aléatoires et une échelle fixée à l'avance.",
+   "signal": "Changer l'échelle : la conclusion survit-elle ?",
+   "ref": "Protocole A9 (garde-fous cognitifs)"
+  },
+  {
+   "id": "E16",
+   "category": "numérique",
+   "wrong": "Script de simulation « Remmen v5 » donné comme fonctionnel.",
+   "right": "Il plante (TypeError : tuple × float, ligne 58).",
+   "signal": "L'exécuter.",
+   "ref": "RH_programme_Remmen_v5.py (hors package)"
+  },
+  {
+   "id": "E17",
+   "category": "mathématique",
+   "wrong": "« Si la translation T_t f(u)=f(u+t) est contractive dans un espace H_arith construit sans les zéros, chaque zéro donne un mode e^{(ρ−1/2)t} donc Re(ρ−1/2) ≤ 0 : preuve de RH. »",
+   "right": "La translation est automatiquement contractive sur L²(0,∞) ; un mode avec Re λ > 0 n'appartient simplement pas à l'espace. Tout le contenu est l'appartenance du signal à H (équivalent au Théorème A), pas la contractivité.",
+   "signal": "Demander si la contractivité dépend d'une propriété des premiers ou seulement de la définition de l'espace ; où est démontrée l'appartenance ?",
+   "ref": "1_Presentation/09_Attaques_audit_et_amelioration.docx"
+  },
+  {
+   "id": "E18",
+   "category": "mathématique",
+   "wrong": "« La cible (★) : sup_L (1/L)∫₁^L |e^{−u/2}C(e^u)/u|² du < ∞ est une formulation nouvelle dont la preuve donnerait RH sans circularité. »",
+   "right": "(★) équivaut à Q(e^L) ≪ L³ (intégration par parties dans les deux sens) ; c'est un énoncé de niveau RH, reformulation du Théorème A, pas un palier.",
+   "signal": "Montrer (★) ⇔ Q ≪ L³ ; chercher un outil nouveau qui la rendrait accessible.",
+   "ref": "3_Preuves_et_calculs/data/attack_K_of_L.csv"
+  },
+  {
+   "id": "E19",
+   "category": "rédaction/priorité",
+   "wrong": "« L'identité C(1/x) = −Σ a(n){1/(nx)} est un raccord nouveau entre Q et Nyman–Beurling. »",
+   "right": "Elle figure déjà dans le corpus (Lemme L10, version formelle) et découle de c = 1∗a avec Σ a(n)/n = 0.",
+   "signal": "Chercher dans le corpus avant de revendiquer.",
+   "ref": "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md (L10)"
+  },
+  {
+   "id": "E20",
+   "category": "interprétation",
+   "wrong": "« Le gain 0,147 → 0,0136 à N = 100 montre que l'énergie Q fournit la direction de projection décisive. »",
+   "right": "Le gain exige une courbure en log n (μ log² n, μ log³ n donnent 0,0182 et 0,0151 ; μ log n seul 0,0864 ; fenêtre de queue 0,0271 ; directions génériques ≈ 0,14) ; la direction a(n) est la meilleure des paires testées mais non unique.",
+   "signal": "Faire des familles témoins avant d'attribuer l'effet.",
+   "ref": "3_Preuves_et_calculs/data/attack_controls.csv"
+  },
+  {
+   "id": "E21",
+   "category": "interprétation",
+   "wrong": "« V_N = (1/12)Σ J₂(q)(Σ_{q|d} w_d/d)² est la somme de carrés que nous cherchions : une prise arithmétique décisive sur RH. »",
+   "right": "V_N est positive par construction (Parseval) et déjà dans le corpus (L8–L9) ; elle gouverne la queue T_N, qui décroît. Le contenu de RH est dans β²Q(N) = b_N² Q(N)/log⁴N.",
+   "signal": "Demander quelle part de l'erreur la somme de carrés contrôle, et si cette part contient l'information sur les zéros.",
+   "ref": "1_Presentation/12_Annulation_du_pole.docx"
+  }
+ ],
+ "decoys": [
+  {
+   "id": "D01",
+   "statement": "Forme courte H_∞(q) = −(2μ(q)/φ(q)) Σ_{p|q} p log p/(p−1) : équivalente à la forme longue (log q + Σ log p/(p−1)).",
+   "ref": "docs/LEMMES_RIGOUREUX.md (L7)"
+  },
+  {
+   "id": "D02",
+   "statement": "G(1) = 2γ² + 6γ₁ (avec ζ(1+z) = 1/z + γ − γ₁z + …).",
+   "ref": "docs/LEMMES_RIGOUREUX.md (L4)"
+  },
+  {
+   "id": "D03",
+   "statement": "κ = 2 + γ − log 4π = 2λ₁ (premier coefficient de Li).",
+   "ref": "docs/Article_short_energy_functional.docx §6"
+  },
+  {
+   "id": "D04",
+   "statement": "Théorème B : Q(X) ∼ (S/3)(log X)³ sous RH, sans hypothèse de simplicité.",
+   "ref": "docs/THEOREME_TERME_DOMINANT.md"
+  },
+  {
+   "id": "D05",
+   "statement": "Théorème A : ½ limsup log(1+Q(X))/log X = Θ − ½.",
+   "ref": "docs/LEMMES_RIGOUREUX.md (L6)"
+  },
+  {
+   "id": "D06",
+   "statement": "Le noyau croisé K_η(d) = (8η³ − 6ηd²)/(4η²+d²)³ a une intégrale nulle.",
+   "ref": "docs/H3_ANALYSIS.md"
+  },
+  {
+   "id": "D07",
+   "statement": "Si Σ_{n≤N} w_n/n = 0, alors ‖χ + Σ w_n ρ_n‖² = β²Q(N) + T_N exactement, avec T_N = Σ_{m≥N} E(m)²/(m(m+1)).",
+   "ref": "3_Preuves_et_calculs/data/pole_cancellation_check.csv"
+  }
+ ]
+}

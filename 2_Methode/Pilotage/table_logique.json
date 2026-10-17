@@ -1,0 +1,735 @@
+{
+  "_lisez_moi": "Source de la table logique (TABLE_LOGIQUE.md, générée par 2_Methode/Outils/build_outils_de_lecture.py). Chaque énoncé est écrit en forme logique et rattaché à une fiche d'idée du pilotage (champ noeud) : le statut de la fiche est lu en direct dans pilotage_recherche.json. Le champ facultatif « statut » donne le statut de l'énoncé lui-même quand il diffère de celui de la fiche (par exemple un critère classique dont la conclusion reste ouverte). Les relations entre fiches viennent des 79 relations typées du graphe. Auteur et titulaire des droits : Vincent NOËL. Établi en V6.58, 17 octobre 2026.",
+  "notation": [
+    [
+      "⇒",
+      "implique (démontré dans le cadre indiqué)"
+    ],
+    [
+      "⇔",
+      "équivaut à"
+    ],
+    [
+      "⇏",
+      "n'implique pas (contre-exemple ou obstruction exhibée)"
+    ],
+    [
+      "∧",
+      "et : toutes les conditions de la garde sont requises"
+    ],
+    [
+      "Θ",
+      "sup des parties réelles des zéros de ζ ; RH ⇔ Θ = ½"
+    ],
+    [
+      "Q_W",
+      "forme quadratique de Weil (formule explicite), Fourier unitaire"
+    ],
+    [
+      "X_S",
+      "tests de support [−S, S], d'énergie finie, à moments exponentiels nuls"
+    ]
+  ],
+  "routes": [
+    {
+      "id": "W",
+      "titre": "Route W — positivité de Weil",
+      "but": "weil_all",
+      "resume": "RH ⇔ Q_W(f) ≥ 0 pour tous les tests admissibles. Le corpus certifie le signe sur des fenêtres bornées et cherche une loi de signe sur une famille couvrante.",
+      "enonces": [
+        {
+          "id": "W0",
+          "noeud": "weil",
+          "forme": "Formule explicite : Σ_ρ F(γ_ρ) = pôle + archimédien − Σ_n 2Λ(n) n^{−1/2} g(log n)",
+          "hypotheses": "f test lisse à support compact",
+          "portee": "Identité exacte entre zéros et premiers",
+          "piece": "1_Presentation/23_AUDIT_V6_3B_FORMULE_EXPLICITE.md",
+          "refs": [
+            "Wei52"
+          ],
+          "en": {
+            "forme": "Explicit formula: Σ_ρ F(γ_ρ) = pole + archimedean − Σ_n 2Λ(n) n^{−1/2} g(log n)",
+            "hypotheses": "smooth compactly supported test f",
+            "portee": "Exact identity between zeros and primes"
+          }
+        },
+        {
+          "id": "W1",
+          "noeud": "weil_all",
+          "forme": "Critère de Weil : RH ⇔ (∀ f admissible : Q_W(f ∗ f̃) ≥ 0)",
+          "hypotheses": "aucune (critère)",
+          "portee": "Critère classique ; le domaine exact est précisé dans le doc. 76",
+          "piece": "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf",
+          "refs": [
+            "Wei52",
+            "Bom00a"
+          ],
+          "statut": "classique",
+          "en": {
+            "forme": "Weil's criterion: RH ⇔ (∀ admissible f: Q_W(f ∗ f̃) ≥ 0)",
+            "hypotheses": "none (criterion)",
+            "portee": "Classical criterion; exact domain specified in doc. 76"
+          }
+        },
+        {
+          "id": "W2",
+          "noeud": "domaines",
+          "forme": "P = ∂² − ¼ engendre les tests ; transports, cœur dense et parité respectent le domaine de Q_W",
+          "hypotheses": "gardes des doc. 67–68",
+          "portee": "Construction des familles de tests",
+          "piece": "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+          "refs": [],
+          "en": {
+            "forme": "P = ∂² − ¼ generates the test functions; transports, dense core and parity respect the domain of Q_W",
+            "hypotheses": "guards of docs. 67–68",
+            "portee": "Construction of the test families"
+          }
+        },
+        {
+          "id": "W3",
+          "noeud": "fluctuation",
+          "forme": "Q_W = (modèle continu) + (fluctuation arithmétique signée), exactement ; le modèle continu seul peut être < 0",
+          "hypotheses": "annulation polaire (moments nuls)",
+          "portee": "La fluctuation doit payer le bilan",
+          "piece": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+          "refs": [],
+          "en": {
+            "forme": "Q_W = (continuous model) + (signed arithmetic fluctuation), exactly; the continuous model alone can be < 0",
+            "hypotheses": "pole cancellation (vanishing moments)",
+            "portee": "The fluctuation must pay the balance"
+          }
+        },
+        {
+          "id": "W4",
+          "noeud": "local",
+          "forme": "∀ S ≤ 11/20, ∀ f ∈ X_S : Q_W(f) ≥ (3/10000)‖f‖² ; (S ≤ ½ : ‖f‖²/250 ; S ≤ 0,347 : ‖f‖²/25)",
+          "hypotheses": "modèle arithmétique d'intervalles déclaré ; sans zéros ni RH",
+          "portee": "Certificat sur tout l'espace infini X_S, pas au-delà de 11/20 ; en portée, dominé par le minorant certifié de Zhu (L ≤ 0,8, toutes fonctions)",
+          "piece": "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf",
+          "refs": [],
+          "en": {
+            "forme": "∀ S ≤ 11/20, ∀ f ∈ X_S: Q_W(f) ≥ (3/10000)‖f‖²; (S ≤ ½: ‖f‖²/250; S ≤ 0.347: ‖f‖²/25)",
+            "hypotheses": "declared interval-arithmetic model; no zeros, no RH",
+            "portee": "Certificate on the whole infinite space X_S, not beyond 11/20; in range, dominated by Zhu's certified lower bound (L ≤ 0.8, all functions)"
+          }
+        },
+        {
+          "id": "W5",
+          "noeud": "pos",
+          "forme": "Mesuré (non certifié) : inf_{X_S} Q_W/‖f‖² ≈ 5,4·10⁻¹² à S = 0,8 ; λ*(0,8) ∈ [8,9·10⁻¹⁸ ; 2,27·10⁻¹⁷] (Zhu, certifié)",
+          "hypotheses": "Galerkin 40 modes, 60 chiffres",
+          "portee": "La positivité à 0,8 suit déjà de Zhu ; certifier 5·10⁻¹² sur le noyau renforcerait la marge, pas la portée. La marge s'effondre avec S",
+          "piece": "1_Presentation/81_ZHU_REPRODUIT.pdf",
+          "refs": [
+            "Zhu26"
+          ],
+          "statut": "mesure",
+          "en": {
+            "forme": "Measured (not certified): inf over X_S of Q_W/‖f‖² ≈ 5.4·10⁻¹² at S = 0.8; λ*(0.8) ∈ [8.9·10⁻¹⁸, 2.27·10⁻¹⁷] (Zhu, certified)",
+            "hypotheses": "Galerkin, 40 modes, 60 digits",
+            "portee": "Positivity at 0.8 already follows from Zhu; certifying 5·10⁻¹² on the kernel would strengthen the margin, not the range. The margin collapses with S"
+          }
+        },
+        {
+          "id": "W6",
+          "noeud": "compact",
+          "forme": "Q_W = identité − compact dans la métrique d'énergie ; pas de marge uniforme > 0 en H¹",
+          "hypotheses": "métrique d'énergie déclarée",
+          "portee": "Interdit d'espérer une coercivité uniforme",
+          "piece": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+          "refs": [],
+          "en": {
+            "forme": "Q_W = identity − compact in the energy metric; no uniform margin > 0 in H¹",
+            "hypotheses": "declared energy metric",
+            "portee": "Rules out hoping for uniform coercivity"
+          }
+        },
+        {
+          "id": "W7",
+          "noeud": "schur",
+          "forme": "Signe de Q_W sur un bloc ⇐ signe de la tête ∧ dette de Schur des couplages bornée",
+          "hypotheses": "gardes de Schur",
+          "portee": "Identité acquise ; borne de dette non uniforme",
+          "piece": "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+          "refs": [],
+          "en": {
+            "forme": "Sign of Q_W on a block ⇐ sign of the head ∧ bounded Schur debt of the couplings",
+            "hypotheses": "Schur guards",
+            "portee": "Identity established; debt bound not uniform"
+          }
+        },
+        {
+          "id": "W8",
+          "noeud": "transport",
+          "forme": "Transport exact d'un test positif ⇒ test positif, si réserve ≥ résidu sur la ligne",
+          "hypotheses": "brique initiale, réserve",
+          "portee": "Existence de toutes les lignes positives ouverte",
+          "piece": "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.pdf",
+          "refs": [],
+          "en": {
+            "forme": "Exact transport of a positive test function ⇒ positive test function, if reserve ≥ residue along the line",
+            "hypotheses": "initial brick, reserve",
+            "portee": "Existence of all positive lines open"
+          }
+        },
+        {
+          "id": "W9",
+          "noeud": "coverage",
+          "forme": "Signe sur une famille couvrante ∧ passage à la limite dans la norme de forme ⇒ signe sur tous les tests",
+          "hypotheses": "cœur dense en H¹ (doc. 67, B3)",
+          "portee": "Transfert acquis ; signe sur la famille ouvert",
+          "piece": "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
+          "refs": [
+            "SuzH23"
+          ],
+          "en": {
+            "forme": "Sign on a covering family ∧ passage to the limit in the form norm ⇒ sign on all test functions",
+            "hypotheses": "dense core in H¹ (doc. 67, B3)",
+            "portee": "Transfer established; sign on the family open"
+          }
+        },
+        {
+          "id": "W10",
+          "noeud": "global_sign",
+          "forme": "Il existe une loi arithmétique L telle que ∀ f de la famille couvrante : Q_W(f) ≥ 0",
+          "hypotheses": "à trouver",
+          "portee": "Le verrou central",
+          "piece": "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.pdf",
+          "refs": [
+            "Suz26",
+            "SuzSig23"
+          ],
+          "en": {
+            "forme": "There is an arithmetic law L such that ∀ f in the covering family: Q_W(f) ≥ 0",
+            "hypotheses": "to be found",
+            "portee": "The central lock"
+          }
+        },
+        {
+          "id": "W11",
+          "noeud": "weil_all",
+          "forme": "∀ f admissible : Q_W(f ∗ f̃) ≥ 0",
+          "hypotheses": "aucune : c'est la conclusion visée",
+          "portee": "Ouvert ; équivaut à RH par W1",
+          "piece": "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf",
+          "refs": [],
+          "en": {
+            "forme": "∀ admissible f: Q_W(f ∗ f̃) ≥ 0",
+            "hypotheses": "none: this is the target conclusion",
+            "portee": "Open; equivalent to RH by W1"
+          }
+        }
+      ],
+      "garde": "W10 (signe) ∧ W9 (couverture) ⇒ W11 ; W11 ⇔ RH (W1)",
+      "en": {
+        "titre": "Route W — Weil positivity",
+        "resume": "RH ⇔ Q_W(f) ≥ 0 for all admissible test functions. The corpus certifies the sign on bounded windows and looks for a sign law on a covering family.",
+        "garde": "W10 (sign) ∧ W9 (coverage) ⇒ W11; W11 ⇔ RH (W1)"
+      }
+    },
+    {
+      "id": "C",
+      "titre": "Route C — le carré (structure qui impose le signe)",
+      "but": "objet",
+      "resume": "Là où RH est un théorème, le signe vient d'un carré (polarisation). Pour ζ, l'objet qui fournirait ce carré reste à construire.",
+      "enonces": [
+        {
+          "id": "C1",
+          "noeud": "modred",
+          "forme": "Courbe C/𝔽_q : B(u) = Tr(u·ι(u)) ≥ 0 ∀u ⇔ RH(C) ; comptages ≥ 0 ∧ degrés ≥ 0 ⇏ RH (119 contre-exemples)",
+          "hypotheses": "racines distinctes pour (b)",
+          "portee": "Calcul exact, 425 courbes et 220 faux jumeaux",
+          "piece": "1_Presentation/80_D_OU_VIENT_LE_SIGNE.pdf",
+          "refs": [
+            "Wei48",
+            "Mum70",
+            "MT58"
+          ],
+          "statut": "demontre",
+          "en": {
+            "forme": "Curve C/𝔽_q: B(u) = Tr(u·ι(u)) ≥ 0 ∀u ⇔ RH(C); counts ≥ 0 ∧ degrees ≥ 0 ⇏ RH (119 counterexamples)",
+            "hypotheses": "distinct roots for (b)",
+            "portee": "Exact computation, 425 curves and 220 fake twins"
+          }
+        },
+        {
+          "id": "C2",
+          "noeud": "ff",
+          "forme": "Pour C/𝔽_q : positivité de Rosati (polarisation) ⇒ |α| = √q",
+          "hypotheses": "objet géométrique : jacobienne polarisée",
+          "portee": "Classique (Weil 1948)",
+          "piece": "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf",
+          "refs": [
+            "Wei48",
+            "Del74",
+            "Has36"
+          ],
+          "statut": "classique",
+          "en": {
+            "forme": "For C/𝔽_q: Rosati positivity (polarization) ⇒ |α| = √q",
+            "hypotheses": "geometric object: polarized Jacobian",
+            "portee": "Classical (Weil 1948)"
+          }
+        },
+        {
+          "id": "C3",
+          "noeud": "surface",
+          "forme": "Signature d'une « surface virtuelle » calculée depuis les premiers : celle de ζ a la forme attendue (une direction positive) ; DH a des directions en trop",
+          "hypotheses": "fenêtres finies",
+          "portee": "Signatures construites ; aucun objet imposant le signe",
+          "piece": "1_Presentation/46_LA_SURFACE_VIRTUELLE.pdf",
+          "refs": [
+            "CC21",
+            "Con99"
+          ],
+          "en": {
+            "forme": "Signature of a “virtual surface” computed from the primes: that of ζ has the expected shape (one positive direction); DH has extra directions",
+            "hypotheses": "finite windows",
+            "portee": "Signatures built; no object imposing the sign"
+          }
+        },
+        {
+          "id": "C4",
+          "noeud": "stepanov",
+          "forme": "Transplantation directe de Stepanov à ζ (modèle d'échelle étudié) ⇏ signe",
+          "hypotheses": "le modèle étudié",
+          "portee": "Obstruction de méthode, réouvrable avec une dérivation construite",
+          "piece": "1_Presentation/51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf",
+          "refs": [
+            "Ste69",
+            "Bom73"
+          ],
+          "en": {
+            "forme": "Direct transplantation of Stepanov's method to ζ (the scale model studied) ⇏ sign",
+            "hypotheses": "the model studied",
+            "portee": "Obstruction of method, reopenable with a constructed derivation"
+          }
+        },
+        {
+          "id": "C5",
+          "noeud": "objet",
+          "forme": "∃ ? une structure (polarisation, classe ample) telle que Q_W(f) = ‖Af‖² pour une raison de structure",
+          "hypotheses": "à construire",
+          "portee": "Hypothèse de travail ; aucune forme d'objet déclarée nécessaire",
+          "piece": "1_Presentation/80_D_OU_VIENT_LE_SIGNE.pdf",
+          "refs": [
+            "CC21"
+          ],
+          "en": {
+            "forme": "∃ ? a structure (polarization, ample class) such that Q_W(f) = ‖Af‖² for a structural reason",
+            "hypotheses": "to be built",
+            "portee": "Working hypothesis; no particular form of object is declared necessary"
+          }
+        }
+      ],
+      "garde": "C5 (objet qui fournit le carré) ⇒ W10, hypothèse de travail ; puis route W",
+      "en": {
+        "titre": "Route C — the square (a structure imposing the sign)",
+        "resume": "Where RH is a theorem, the sign comes from a square (a polarization). For ζ, the object that would supply this square is still to be built.",
+        "garde": "C5 (object supplying the square) ⇒ W10, working hypothesis; then route W"
+      }
+    },
+    {
+      "id": "Q",
+      "titre": "Route Q — l'énergie initiale",
+      "but": "Q_bound",
+      "resume": "Le Théorème A ramène RH à une borne de croissance de l'énergie Q construite avec les premiers.",
+      "enonces": [
+        {
+          "id": "Q1",
+          "noeud": "lemmes",
+          "forme": "c = Λ∗Λ − Λ·log + 2γΛ = 1∗a, a(n) = μ(n)(log²n − 2γ log n) ; G(s) = ζ·(f″ + 2γf′), f = 1/ζ",
+          "hypotheses": "aucune",
+          "portee": "Identités exactes",
+          "piece": "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+          "refs": [],
+          "en": {
+            "forme": "c = Λ∗Λ − Λ·log + 2γΛ = 1∗a, a(n) = μ(n)(log²n − 2γ log n); G(s) = ζ·(f″ + 2γf′), f = 1/ζ",
+            "hypotheses": "none",
+            "portee": "Exact identities"
+          }
+        },
+        {
+          "id": "Q2",
+          "noeud": "thA",
+          "forme": "Exposant de croissance de Q(X) = 2(Θ − ½) ; d'où le critère RH ⇔ Q(X) = X^{o(1)}",
+          "hypotheses": "aucune (inconditionnel)",
+          "portee": "Démontré, relu en interne",
+          "piece": "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+          "refs": [
+            "Cra22",
+            "Nym50",
+            "Beu55"
+          ],
+          "en": {
+            "forme": "Growth exponent of Q(X) = 2(Θ − ½); hence the criterion RH ⇔ Q(X) = X^{o(1)}",
+            "hypotheses": "none (unconditional)",
+            "portee": "Proved, internally reviewed"
+          }
+        },
+        {
+          "id": "Q3",
+          "noeud": "thB",
+          "forme": "RH ⇒ Q(X) ∼ (S/3)(log X)³ ; RH ⇒ (S = 4κ ⇔ zéros simples) ; Q/(log X)³ → 4κ/3 ⇔ RH ∧ simplicité",
+          "hypotheses": "RH pour l'asymptotique",
+          "portee": "Implication démontrée, relue en interne : une calibration sous RH, pas un pas vers RH",
+          "piece": "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+          "refs": [
+            "Cra22",
+            "Mon73"
+          ],
+          "statut": "demontre",
+          "en": {
+            "forme": "RH ⇒ Q(X) ∼ (S/3)(log X)³; RH ⇒ (S = 4κ ⇔ simple zeros); Q/(log X)³ → 4κ/3 ⇔ RH ∧ simplicity",
+            "hypotheses": "RH for the asymptotics",
+            "portee": "Implication proved, internally reviewed: a calibration under RH, not a step towards RH"
+          }
+        },
+        {
+          "id": "Q4",
+          "noeud": "Q_bound",
+          "forme": "Q(X) = X^{o(1)} prouvé depuis les premiers seuls",
+          "hypotheses": "à trouver",
+          "portee": "Ouvert ; équivalent à RH par Q2",
+          "piece": "3_Preuves_et_calculs/preuves/LEMMES_RIGOUREUX.md",
+          "refs": [],
+          "en": {
+            "forme": "Q(X) = X^{o(1)} proved from the primes alone",
+            "hypotheses": "to be found",
+            "portee": "Open; equivalent to RH by Q2"
+          }
+        }
+      ],
+      "garde": "Q4 ⇔ RH (par Q2)",
+      "en": {
+        "titre": "Route Q — the initial energy",
+        "resume": "Theorem A reduces RH to a growth bound for the energy Q built from the primes.",
+        "garde": "Q4 ⇔ RH (by Q2)"
+      }
+    },
+    {
+      "id": "J",
+      "titre": "Route J — l'énergie de Chebyshev et l'amplification",
+      "but": "J_bound",
+      "resume": "RH ⇔ J(X) = ∫₁ˣ (ψ − x)² ≪ X². Le corpus restitue exactement la somme de Möbius et contrôle la tête des conducteurs ; la grande queue est ouverte.",
+      "enonces": [
+        {
+          "id": "J1",
+          "noeud": "identity",
+          "forme": "Σ_{d|n} Λ(d) = log n",
+          "hypotheses": "aucune",
+          "portee": "Classique ; ne borne rien seule",
+          "piece": "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.pdf",
+          "refs": [],
+          "en": {
+            "forme": "Σ_{d|n} Λ(d) = log n",
+            "hypotheses": "none",
+            "portee": "Classical; bounds nothing on its own"
+          }
+        },
+        {
+          "id": "J2",
+          "noeud": "J_bound",
+          "forme": "Critère : RH ⇔ J(X) = O(X²) pour les vrais Λ",
+          "hypotheses": "aucune (critère)",
+          "portee": "Critère classique",
+          "piece": "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.pdf",
+          "refs": [
+            "Cra22"
+          ],
+          "statut": "classique",
+          "en": {
+            "forme": "Criterion: RH ⇔ J(X) = O(X²) for the true Λ",
+            "hypotheses": "none (criterion)",
+            "portee": "Classical criterion"
+          }
+        },
+        {
+          "id": "J3",
+          "noeud": "copies",
+          "forme": "A_o(x) = F_{p²}(x) − F_{p²}(x/p) : restitution exacte, stable par dilatation",
+          "hypotheses": "p premier impair",
+          "portee": "Démontré",
+          "piece": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+          "refs": [],
+          "en": {
+            "forme": "A_o(x) = F_{p²}(x) − F_{p²}(x/p): exact restitution, stable under dilation",
+            "hypotheses": "odd prime p",
+            "portee": "Proved"
+          }
+        },
+        {
+          "id": "J4",
+          "noeud": "head",
+          "forme": "Tête q ≤ H bornée explicitement, à toutes les échelles",
+          "hypotheses": "paramètres déclarés",
+          "portee": "Démontré",
+          "piece": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+          "refs": [],
+          "en": {
+            "forme": "Head q ≤ H bounded explicitly, at every scale",
+            "hypotheses": "declared parameters",
+            "portee": "Proved"
+          }
+        },
+        {
+          "id": "J5",
+          "noeud": "large_q",
+          "forme": "À H = X : R_{q>X} ≤ C X³(1 + log X)^k, en conservant μ(q)",
+          "hypotheses": "à trouver",
+          "portee": "Ouvert ; le crible générique ne suffit pas",
+          "piece": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+          "refs": [],
+          "en": {
+            "forme": "At H = X: R_{q>X} ≤ C X³(1 + log X)^k, keeping μ(q)",
+            "hypotheses": "to be found",
+            "portee": "Open; the generic sieve is not enough"
+          }
+        },
+        {
+          "id": "J6",
+          "noeud": "threequarters",
+          "forme": "copies ∧ head ∧ large_q ⇒ J ≪ X^{5/2} polylog ⇒ ζ(s) ≠ 0 pour Re s > 3/4",
+          "hypotheses": "les trois contrats",
+          "portee": "Conditionnel ; ne donne pas J_bound (5/2 > 2)",
+          "piece": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+          "refs": [],
+          "en": {
+            "forme": "copies ∧ head ∧ large_q ⇒ J ≪ X^{5/2} polylog ⇒ ζ(s) ≠ 0 for Re s > 3/4",
+            "hypotheses": "the three contracts",
+            "portee": "Conditional; does not give the bound J = O(X²) (5/2 > 2)"
+          }
+        },
+        {
+          "id": "J7",
+          "noeud": "J_bound",
+          "forme": "J(X) = O(X²) pour les vrais Λ, à toutes les échelles",
+          "hypotheses": "aucune : c'est la conclusion visée",
+          "portee": "Ouvert ; équivaut à RH par J2",
+          "piece": "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.pdf",
+          "refs": [
+            "Cra22"
+          ],
+          "en": {
+            "forme": "J(X) = O(X²) for the true Λ, at every scale",
+            "hypotheses": "none: this is the target conclusion",
+            "portee": "Open; equivalent to RH by J2"
+          }
+        }
+      ],
+      "garde": "J3 ∧ J4 ∧ J5 ⇒ zéro-libre pour Re s > 3/4 (J6) ; J7 ⇔ RH (J2)",
+      "en": {
+        "titre": "Route J — Chebyshev energy and amplification",
+        "resume": "RH ⇔ J(X) = ∫₁ˣ (ψ − x)² ≪ X². The corpus restores the Möbius sum exactly and controls the head of conductors; the large tail is open.",
+        "garde": "J3 ∧ J4 ∧ J5 ⇒ zero-free for Re s > 3/4 (J6); J7 ⇔ RH (J2)"
+      }
+    },
+    {
+      "id": "H",
+      "titre": "Route H — réalisation spectrale (Hilbert–Pólya)",
+      "but": "hp",
+      "resume": "Un opérateur auto-adjoint arithmétique dont le spectre capture exactement les zéros donnerait RH. Rien d'exhaustif n'est construit.",
+      "enonces": [
+        {
+          "id": "H1",
+          "noeud": "generateur",
+          "forme": "L'opérateur de ζ se reconstruit sur une fenêtre finie depuis les seuls premiers ; sa métrique est > 0 pour ζ et L, < 0 pour DH exactement à ses zéros hors droite",
+          "hypotheses": "fenêtre finie",
+          "portee": "Mesuré",
+          "piece": "1_Presentation/33_LE_GENERATEUR_DES_PREMIERS.pdf",
+          "refs": [],
+          "en": {
+            "forme": "The operator of ζ is rebuilt on a finite window from the primes alone; its metric is > 0 for ζ and L, < 0 for DH exactly at its off-line zeros",
+            "hypotheses": "finite window",
+            "portee": "Measured"
+          }
+        },
+        {
+          "id": "H2",
+          "noeud": "hp",
+          "forme": "Auto-adjonction arithmétique ∧ complétude spectrale ⇒ RH",
+          "hypotheses": "les deux",
+          "portee": "Conditionnel ; aucune des deux n'est acquise",
+          "piece": "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+          "refs": [
+            "Con99"
+          ],
+          "statut": "conditionnel",
+          "en": {
+            "forme": "Arithmetic self-adjointness ∧ spectral completeness ⇒ RH",
+            "hypotheses": "both",
+            "portee": "Conditional; neither is established"
+          }
+        },
+        {
+          "id": "H3",
+          "noeud": "hp",
+          "forme": "∃ ? un opérateur auto-adjoint construit depuis l'arithmétique dont les valeurs propres sont les γ",
+          "hypotheses": "à construire",
+          "portee": "Ouvert ; reparamétrisations (Schrödinger, Heff) insuffisantes",
+          "piece": "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+          "refs": [
+            "Con99"
+          ],
+          "en": {
+            "forme": "∃ ? a self-adjoint operator built from arithmetic whose eigenvalues are the γ",
+            "hypotheses": "to be built",
+            "portee": "Open; reparametrizations (Schrödinger, H_eff) are not enough"
+          }
+        },
+        {
+          "id": "H4",
+          "noeud": "compl",
+          "forme": "Le spectre de cet opérateur capture tous les zéros, avec multiplicités, et son domaine est justifié",
+          "hypotheses": "à construire",
+          "portee": "Ouvert ; une fenêtre finie ne suffit pas",
+          "piece": "1_Presentation/32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+          "refs": [],
+          "en": {
+            "forme": "The spectrum of this operator captures all zeros, with multiplicities, and its domain is justified",
+            "hypotheses": "to be built",
+            "portee": "Open; a finite window is not enough"
+          }
+        }
+      ],
+      "garde": "H3 ∧ H4 ⇒ RH (H2)",
+      "en": {
+        "titre": "Route H — spectral realization (Hilbert–Pólya)",
+        "resume": "A self-adjoint arithmetic operator whose spectrum captures exactly the zeros would give RH. Nothing exhaustive has been built.",
+        "garde": "H3 ∧ H4 ⇒ RH (H2)"
+      }
+    }
+  ],
+  "temoins": [
+    {
+      "id": "T1",
+      "noeud": "dh_cert",
+      "forme": "DH (équation fonctionnelle, sans produit d'Euler) : ≥ 25 directions négatives certifiées dans une fenêtre",
+      "role": "Tout argument qui prétend imposer le signe sans utiliser le produit d'Euler doit échouer sur DH.",
+      "piece": "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf",
+      "refs": [
+        "DH36a",
+        "DH36b"
+      ],
+      "en": {
+        "forme": "DH (functional equation, no Euler product): at least 25 negative directions certified in a window",
+        "role": "Any argument claiming to impose the sign without using the Euler product must fail on DH."
+      }
+    },
+    {
+      "id": "T2",
+      "noeud": "archipel",
+      "forme": "Dans V_q (degré 1 déclaré) : RH ⇒ point d'Euler ; la réciproque n'est pas établie",
+      "role": "Le produit d'Euler est nécessaire ici ; ce n'est pas une preuve qu'il suffit.",
+      "piece": "1_Presentation/30_ARCHIPEL_D_EULER.pdf",
+      "refs": [
+        "Ham21",
+        "SW09"
+      ],
+      "en": {
+        "forme": "In V_q (declared degree 1): RH ⇒ Euler point; the converse is not established",
+        "role": "The Euler product is necessary here; this does not prove it is sufficient."
+      }
+    },
+    {
+      "id": "T3",
+      "noeud": "modred",
+      "forme": "119 faux jumeaux : comptages ≥ 0 ∧ degrés ≥ 0 ∧ ¬RH",
+      "role": "Aucun argument de comptage ou de degré ne remplace un carré.",
+      "piece": "1_Presentation/80_D_OU_VIENT_LE_SIGNE.pdf",
+      "refs": [],
+      "en": {
+        "forme": "119 fake twins: counts ≥ 0 ∧ degrees ≥ 0 ∧ ¬RH",
+        "role": "No count or degree argument replaces a square."
+      }
+    }
+  ],
+  "obstructions": [
+    {
+      "noeud": "local",
+      "forme": "Certificat sur S ≤ 11/20 ⇏ signe sur tous les supports",
+      "piece": "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf",
+      "en": {
+        "forme": "Certificate on S ≤ 11/20 ⇏ sign on all supports"
+      }
+    },
+    {
+      "noeud": "v13",
+      "forme": "Un pli choisi certifié ⇏ signe global",
+      "piece": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+      "en": {
+        "forme": "A certified chosen fold ⇏ global sign"
+      }
+    },
+    {
+      "noeud": "generic_sieve",
+      "forme": "Crible générique ⇏ borne de la grande queue (coût D√H)",
+      "piece": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+      "en": {
+        "forme": "Generic sieve ⇏ bound on the large tail (cost D√H)"
+      }
+    },
+    {
+      "noeud": "prime_norm",
+      "forme": "Norme de la partie première seule : diverge, ⇏ contrôle de la forme",
+      "piece": "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+      "en": {
+        "forme": "Norm of the prime part alone: diverges, ⇏ control of the form"
+      }
+    },
+    {
+      "noeud": "threequarters",
+      "forme": "J ≪ X^{5/2} ⇏ J ≪ X² (exposant insuffisant)",
+      "piece": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
+      "en": {
+        "forme": "J ≪ X^{5/2} ⇏ J ≪ X² (exponent insufficient)"
+      }
+    },
+    {
+      "noeud": "compact",
+      "forme": "Pas de marge uniforme en H¹ ⇒ pas de preuve par coercivité seule",
+      "piece": "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "en": {
+        "forme": "No uniform margin in H¹ ⇒ no proof by coercivity alone"
+      }
+    },
+    {
+      "noeud": "pos",
+      "forme": "Fenêtre par fenêtre : marge ∼ 10⁻¹² à S = 0,8 et en chute rapide ⇏ stratégie vers RH",
+      "piece": "1_Presentation/81_ZHU_REPRODUIT.pdf",
+      "en": {
+        "forme": "Window by window: margin ∼ 10⁻¹² at S = 0.8 and collapsing fast ⇏ strategy towards RH"
+      }
+    }
+  ],
+  "notation_en": [
+    [
+      "⇒",
+      "implies (proved in the stated setting)"
+    ],
+    [
+      "⇔",
+      "is equivalent to"
+    ],
+    [
+      "⇏",
+      "does not imply (counterexample or obstruction exhibited)"
+    ],
+    [
+      "∧",
+      "and: every condition of the guard is required"
+    ],
+    [
+      "Θ",
+      "supremum of the real parts of the zeros of ζ; RH ⇔ Θ = ½"
+    ],
+    [
+      "Q_W",
+      "Weil quadratic form (explicit formula), unitary Fourier transform"
+    ],
+    [
+      "X_S",
+      "test functions supported in [−S, S], finite energy, vanishing exponential moments"
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "V6.59",
+  "previous_version": "V6.58",
+  "release_date": "2026-10-17",
+  "filename": "programme-riemann_v6_59.zip",
+  "source_sha256": null,
+  "source_note": "Construit à partir de la V6.58 du 17 octobre (documents 80 et 81, entrée réorganisée) et de la couche ciblage de la branche du 16 octobre (dossier Pilotage reçu le 17 octobre).",
+  "scope": "Document 82 ; ciblage en lecture seule fusionné dans la méthode unique (registre d’empreintes unique, prérequis attestés) ; fiches de tâche, zone de dépôt, journal chaîné ; guide pour une IA mis à jour.",
+  "documents_renumbered": false,
+  "RH_proved": false
+}

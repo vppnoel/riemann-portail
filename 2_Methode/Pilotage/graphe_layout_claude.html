@@ -1,0 +1,113 @@
+<ul class="legend">
+    <li><span class="sw core"></span>Démontré, non relu</li>
+    <li><span class="sw lit"></span>Littérature</li>
+    <li><span class="sw neg"></span>Obstacle ou test négatif</li>
+    <li><span class="sw low"></span>Diagnostic rétrogradé</li>
+    <li><span class="sw cond"></span>Conditionnel / hypothèses fortes</li>
+    <li><span class="sw mes"></span>Mesuré, reproduit</li>
+  </ul>
+<section aria-labelledby="s1">
+    <h2 id="s1">Noyau : démontré, non relu</h2>
+    <div class="solo"><button class="node" data-s="core" data-k="lemmes"><strong>Lemmes 1 à 5</strong><span>Pôle double, régularité en 1, support de c</span></button></div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="core" data-k="thA"><strong>Théorème A</strong><span>Équivalent à RH ; pré-relu en V6.13</span></button>
+      <button class="node" data-s="core" data-k="thB"><strong>Théorème B</strong><span>Sous RH, analogue de Cramér ; pré-relu en V6.13</span></button>
+      <button class="node" data-s="cond" data-k="propC"><strong>Proposition C</strong><span>Dépend de H1 à H3</span></button>
+    </div>
+  </section>
+
+  <div class="flow between" aria-hidden="true"></div>
+
+  <section aria-labelledby="s2">
+    <h2 id="s2">Tests de rejet</h2>
+    <div class="row">
+      <button class="node" data-s="neg" data-k="dh"><strong>Davenport–Heilbronn</strong><span>Ne distingue pas ζ</span></button>
+      <button class="node" data-s="neg" data-k="ff"><strong>Corps de fonctions</strong><span>Pas de positivité de Weil</span></button>
+      <button class="node" data-s="neg" data-k="dens"><strong>Densité de zéros</strong><span>Aucun gain</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="solo"><button class="node" data-s="neg" data-k="arret"><strong>Arrêt de l'attaque directe</strong><span>Règle d'arrêt déclenchée</span></button></div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="solo"><button class="node" data-s="act" data-k="relecture"><strong>Relecture externe de A et B</strong><span>Dossier prêt en V6.13 ; à envoyer</span></button></div>
+  </section>
+
+  <section aria-labelledby="s3">
+    <h2 id="s3">Cadres connus de la littérature</h2>
+    <div class="row">
+      <button class="node" data-s="lit" data-k="weil"><strong>Formule explicite de Weil</strong><span>Dualité premiers, zéros</span></button>
+      <button class="node" data-s="lit" data-k="nb"><strong>Nyman–Beurling</strong><span>Même constante κ</span></button>
+      <button class="node" data-s="lit" data-k="li"><strong>Critère de Li</strong><span>Identité κ = 2λ₁</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s35">
+    <h2 id="s35">Héritage V5 : énergie et dimension</h2>
+    <div class="solo"><button class="node" data-s="act" data-k="energyD"><strong>Dimension énergétique / fractal strings</strong><span>D_E = Θ ; RH ⇔ D_E = 1/2</span></button></div>
+  </section>
+
+  <section aria-labelledby="s6">
+    <h2 id="s6">V6 · DARK-ZETA : observabilité et détecteurs</h2>
+    <div class="row">
+      <button class="node" data-s="act" data-k="darkz"><strong>DARK-ZETA</strong><span>Cartographier l'information perdue par les observables</span></button>
+      <button class="node" data-s="act" data-k="tomo2"><strong>TOMO-2</strong><span>Survit comme diagnostic de puissance inter-échelles</span></button>
+      <button class="node" data-s="low" data-k="tomo3"><strong>TOMO-3 brut</strong><span>Bispectre de C_F rétrogradé après crash-tests</span></button>
+    </div>
+    <div class="row">
+      <button class="node" data-s="act" data-k="primelock"><strong>PRIME-LOCK</strong><span>Verrou local premiers / puissances de premiers validé comme détecteur eulérien</span></button>
+      <button class="node" data-s="act" data-k="duallock"><strong>DUAL-LOCK</strong><span>Compression local/global testée ; V6.3a : confirmation par problème généralisé Mv=λGv</span></button>
+      <button class="node" data-s="act" data-k="darkres"><strong>Résidu sombre</strong><span>Cancellation confirmée qualitativement ; quantification révisée dans la métrique de Gram</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s7">
+    <h2 id="s7">V6.4 à V6.11 · Nécessité et chaînon</h2>
+    <div class="row">
+      <button class="node" data-s="neg" data-k="tauc"><strong><span class="ver">V6.4</span>Seuil τ_c</strong><span>Existe, mais n'est pas un invariant</span></button>
+      <button class="node" data-s="mes" data-k="mod7"><strong><span class="ver">V6.5</span>Famille modulo 7</strong><span>RH seulement près du point d'Euler</span></button>
+      <button class="node" data-s="mes" data-k="modred"><strong><span class="ver">V6.6</span>Le Modèle réduit</strong><span>Courbes sur F_q : la signature d'une nécessité démontrée</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="mes" data-k="marges"><strong><span class="ver">V6.7</span>Marges de la forme et de l'objet</strong><span>La nécessité interdit le passage</span></button>
+      <button class="node" data-s="core" data-k="archipel"><strong><span class="ver">V6.8</span>L'Archipel d'Euler</strong><span>RH ⟹ produit d'Euler en degré 1 (déjà connu) ; îles qui rétrécissent</span></button>
+      <button class="node" data-s="mes" data-k="chainon"><strong><span class="ver">V6.9</span>Le chaînon F = q^D</strong><span>Il manque la métrique, pas l'opérateur</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="mes" data-k="generateur"><strong><span class="ver">V6.10</span>Le générateur des premiers</strong><span>L'opérateur de ζ depuis les seuls premiers ; sa métrique</span></button>
+      <button class="node" data-s="mes" data-k="base"><strong><span class="ver">V6.11</span>La base comme pas de temps</strong><span>Le seul pas qui convienne à ζ est le flot</span></button>
+      <button class="node" data-s="mes" data-k="heisenberg"><strong><span class="ver">V6.14</span>Le temps de Heisenberg</strong><span>Un quadruplet s'entend avec les premiers jusqu'au conducteur analytique</span></button>
+      <button class="node" data-s="mes" data-k="degre2rec"><strong><span class="ver">V6.15</span>Le degré 2 et le recensement</strong><span>Δ de Ramanujan depuis les premiers ; 25 quadruplets de DH comptés</span></button>
+      <button class="node" data-s="core" data-k="rencontre3"><strong><span class="ver">V6.16</span>La Rencontre à trois</strong><span>La marge de la métrique est la corrélation de Montgomery</span></button>
+      <button class="node" data-s="mes" data-k="rencontre2"><strong><span class="ver">V6.17</span>La Rencontre en degré 2</strong><span>Zéros de Δ, premiers de Δ, courbes : la loi de la marge</span></button>
+      <button class="node" data-s="act" data-k="sources"><strong><span class="ver">V6.18</span>Le registre des sources</strong><span>132 fiches, couleurs d'intérêt, priorités de lecture</span></button>
+      <button class="node" data-s="act" data-k="prochain"><strong>Prochain coup</strong><span>Plusieurs bouchons (piste OpenAI)</span></button>
+    </div>
+    <div class="flow" aria-hidden="true"></div>
+    <div class="row">
+      <button class="node" data-s="act" data-k="indicateur"><strong>Indicateur d'avancement</strong><span>Six dimensions, niveaux 0 à 9, version par version</span></button>
+      <button class="node" data-s="act" data-k="navigateur"><strong>Navigateur de recherche</strong><span>La démonstration comme itinéraire</span></button>
+      <button class="node" data-s="neg" data-k="objet"><strong>L'objet qui porte la métrique</strong><span>Route à construire</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s4">
+    <h2 id="s4">Diagnostics rétrogradés par l'audit</h2>
+    <div class="row">
+      <button class="node" data-s="low" data-k="sources"><strong>Localisation de sources</strong><span>Biais mesuré, mode fantôme ; relue en V6.12 : le fantôme ne pèse rien</span></button>
+      <button class="node" data-s="low" data-k="schr"><strong>Schrödinger, H<sub>eff</sub></strong><span>Reparamétrisation ; relu en V6.12 : l'opérateur existe, le verrou est la métrique</span></button>
+      <button class="node" data-s="low" data-k="kalman"><strong>Kalman, GPS analytique</strong><span>Aucune loi sur Q ; relu en V6.12 : les innovations de Levinson sonnent pour DH ; loi de seuil en V6.14</span></button>
+    </div>
+  </section>
+
+  <section aria-labelledby="s5">
+    <h2 id="s5">Verrous ouverts, aussi difficiles que RH</h2>
+    <div class="row">
+      <button class="node" data-s="neg" data-k="pos"><strong>Positivité de Weil</strong><span>Positivité coercive / métrique positive</span></button>
+      <button class="node" data-s="neg" data-k="compl"><strong>Complétude spectrale</strong><span>Tous les zéros captés</span></button>
+      <button class="node" data-s="neg" data-k="hp"><strong>Hilbert–Pólya</strong><span>Programme non réalisé</span></button>
+    </div>
+  </section>
+
+  

@@ -1,0 +1,27 @@
+{
+  "schema": "ciblage_contrats_v2",
+  "declare_le": "2026-10-17",
+  "provenance_note": "Chemins réellement lus par le ciblage. Leurs empreintes de référence sont dans le registre unique du pilotage (reviewed_source_hashes) ; elles ont été observées le 16 octobre 2026 dans la branche ciblage, puis retrouvées identiques dans le corpus le 17 octobre. Elles ne recréent pas la provenance historique d’un calcul ni une validation mathématique. CSS et menus exclus des dépendances scientifiques.",
+  "evidence": {
+    "scalar": {
+      "resultat": "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+      "lire": [
+        "3_Preuves_et_calculs/signal_v657/resolution_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/certifier_resolution.py",
+        "3_Preuves_et_calculs/signal_v657/verifier_resolution_independant.py",
+        "3_Preuves_et_calculs/src/prime_centered_bridge.py",
+        "3_Preuves_et_calculs/src/symbolic_weil_family.py",
+        "3_Preuves_et_calculs/recherche79/compensation_blocks.py"
+      ]
+    },
+    "matrix": {
+      "resultat": "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+      "lire": [
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings_resultats.json",
+        "3_Preuves_et_calculs/signal_v657/v657_signal_couplings.py",
+        "3_Preuves_et_calculs/data/v644_family_resultats.json",
+        "3_Preuves_et_calculs/src/symbolic_weil_family.py"
+      ]
+    }
+  }
+}

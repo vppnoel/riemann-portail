@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+node_modules/
+# Journaux et inventaires du corpus : à suivre (ils font partie des preuves et des archives).
+!3_Preuves_et_calculs/data/*.log
+!4_Archives/**/*.log
+!4_Archives/**/*.out
+# Jetons et fichiers temporaires de taches.py
+2_Methode/Pilotage/*.tmp

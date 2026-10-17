@@ -1,0 +1,190 @@
+{
+  "_lisez_moi": "Fichiers .md du corpus actif conservés à l'octet près : ce sont des copies identiques de pièces reçues ou récupérées, enregistrées par empreinte dans les inventaires d'intégrité (V6.55–V6.56). Ils ne reçoivent ni marque BOM, ni section de références générée. Tout 4_Archives/ suit la même règle. Le test test_v658_integrite.py vérifie leurs empreintes. Établi en V6.58 (17 octobre 2026) ; auteur : Vincent NOËL.",
+  "fichiers": [
+    {
+      "path": "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.md",
+      "sha256": "cb802ffc9ffaffb5b1fe18ac83c84f92ce783613d729e610a17bf0d79f4a85d1",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+      "sha256": "a8ad7288058c17ebcbefd7255ebee41060d489ac12be1c745651a6536b1f839a",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+      "sha256": "747320d1c51b5802c5e6bb21e99b945ae1ab59fae339e970d8f52b3a05add3de",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "1_Presentation/CORRELATIONS_IDENTITE_ET_ENERGIE.md",
+      "sha256": "07ca144d84f5fc6e4f9c2ce5e091c418fe7666a5911b28f8549a3869b49ad9f1",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+      "sha256": "54c30871252c0ce2f4e6cbb457afe244991bf661aa927ba151f474cd4a59e7a1",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "1_Presentation/PARCOURS_ET_PROPRIETES.md",
+      "sha256": "46ef40b0c1eabbf5abcc739c10946a8d5dc9f088f7b2bf0e1bcec90205176ef6",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/README.md",
+      "sha256": "e5794df2c428b38b813a8f4d8ac5127667589ce89b8b1b9c5372d598c143b29a",
+      "inventaires": [
+        "RECUPERATION_2026_10_15.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/correlations_20261014/CORRELATIONS_IDENTITE_ET_ENERGIE.md",
+      "sha256": "5a92da6db52ad6aaf7ec14f1f948f9a4aaf7dff6733126e38d4d25531496b7a4",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/correlations_20261014/README.md",
+      "sha256": "9a426f59221b7dd88317131b8ac53cc426cdff2eac4e4625f9bb0741c226ea1d",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/correlations_20261014/agents/audit.md",
+      "sha256": "3bdc07bfe56ec2e07be0eb42ecfbdcf596dc7db3ee3dac8a00530428dcfdb1ed",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/correlations_20261014/agents/constructive.md",
+      "sha256": "eb617d1d4d4328346ae1f0e9e543837cb1705948539b3ee1fcc46aa2a89aa469",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/correlations_20261014/agents/critique.md",
+      "sha256": "33bd50ad4d650f3a6feb0f379faef615aa0c06ee9dc32e4c8d86f971763b9178",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.md",
+      "sha256": "cb802ffc9ffaffb5b1fe18ac83c84f92ce783613d729e610a17bf0d79f4a85d1",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+      "sha256": "a8ad7288058c17ebcbefd7255ebee41060d489ac12be1c745651a6536b1f839a",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/critique/AUDIT_MECANISMES_UNIVERSELS.md",
+      "sha256": "e554c0cc6a04c4a87163c222336551bf7237598e9b02995c12f0468cdc9ca2b0",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/critique/AUDIT_REFUTATIF.md",
+      "sha256": "65fbb91aff5316334ae4c14703d6205a6ec3cd73a665bd1585360366667ad361",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/critique/NONMINIMAL_INITIAL.md",
+      "sha256": "fd15c3bfda5f42ba9973ab0d6c0d9697812baad834d386f1c7c23f1ee58408a7",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/exploration/RAPPORT_SIGNE.md",
+      "sha256": "087259fadea10a501b33197ed7ea15f50ea6278d0c14e8585de43e61849d73e3",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/exploration/constructive_report.md",
+      "sha256": "dba62e9983e58fe66ef398066a825c44ac2ae11b188e35048aef5509d30d04f6",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche78/exploration/nonminimal_report.md",
+      "sha256": "fb33f0cc11642712083301715bee53949c2eec4eb1cc6bf9692f719b00ddb7ff",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json",
+        "RECUPERATION_2026_10_15_V651_V652.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche79/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+      "sha256": "747320d1c51b5802c5e6bb21e99b945ae1ab59fae339e970d8f52b3a05add3de",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche79/README.md",
+      "sha256": "acb056fced16c9e5ccc4a59ade93509adbca01e626e8d91f15ffbd23e629f074",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche79/agents/CONSTRUCTIVE_COMPENSATION.md",
+      "sha256": "842f0b6c772565f1b74fbea8d291d6c346de8ea48671debd8d3cd184d8fdeece",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche79/agents/compensation_code_audit.md",
+      "sha256": "f571d3899e70b53e96b72f6ce7bb97f8c7d2f63d49723c68b80cad091db57964",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    },
+    {
+      "path": "3_Preuves_et_calculs/recherche79/agents/compensation_critique.md",
+      "sha256": "93f7353150ad40c6c5ddc41450d207f7780a5d73b2d7fcd1fbea25d0906d54d1",
+      "inventaires": [
+        "INTEGRATION_GLOBALE_20261015.json"
+      ]
+    }
+  ]
+}

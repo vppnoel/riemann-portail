@@ -1,0 +1,689 @@
+{
+  "version": "V6.55",
+  "figures": [
+    {
+      "id": "FIG-001",
+      "group": "documents",
+      "number": 1,
+      "fichier": "1_Presentation/20_Carte_du_lexique.png"
+    },
+    {
+      "id": "FIG-002",
+      "group": "documents",
+      "number": 2,
+      "fichier": "1_Presentation/24_Differences_de_zeros.png"
+    },
+    {
+      "id": "FIG-003",
+      "group": "documents",
+      "number": 3,
+      "fichier": "1_Presentation/24_Largeur_du_creux.png"
+    },
+    {
+      "id": "FIG-004",
+      "group": "documents",
+      "number": 4,
+      "fichier": "1_Presentation/24_Largeur_selon_la_hauteur.png"
+    },
+    {
+      "id": "FIG-005",
+      "group": "documents",
+      "number": 5,
+      "fichier": "1_Presentation/26_Seuil_tau_c.png"
+    },
+    {
+      "id": "FIG-006",
+      "group": "documents",
+      "number": 6,
+      "fichier": "1_Presentation/27_Famille_modulo_7.png"
+    },
+    {
+      "id": "FIG-007",
+      "group": "documents",
+      "number": 7,
+      "fichier": "1_Presentation/28_Modele_reduit.png"
+    },
+    {
+      "id": "FIG-008",
+      "group": "documents",
+      "number": 8,
+      "fichier": "1_Presentation/29_Loi_de_rang.png"
+    },
+    {
+      "id": "FIG-009",
+      "group": "documents",
+      "number": 9,
+      "fichier": "1_Presentation/29_Marge_forme_objet.png"
+    },
+    {
+      "id": "FIG-010",
+      "group": "documents",
+      "number": 10,
+      "fichier": "1_Presentation/29_Objet_contre_forme.png"
+    },
+    {
+      "id": "FIG-011",
+      "group": "documents",
+      "number": 11,
+      "fichier": "1_Presentation/30_Archipel_d_Euler.png"
+    },
+    {
+      "id": "FIG-012",
+      "group": "documents",
+      "number": 12,
+      "fichier": "1_Presentation/32_Le_chainon.png"
+    },
+    {
+      "id": "FIG-013",
+      "group": "documents",
+      "number": 13,
+      "fichier": "1_Presentation/33_Generateur_des_premiers.png"
+    },
+    {
+      "id": "FIG-014",
+      "group": "documents",
+      "number": 14,
+      "fichier": "1_Presentation/35_La_base_comme_pas_de_temps.png"
+    },
+    {
+      "id": "FIG-015",
+      "group": "documents",
+      "number": 15,
+      "fichier": "1_Presentation/36_Les_idees_rejetees_relues.png"
+    },
+    {
+      "id": "FIG-016",
+      "group": "documents",
+      "number": 16,
+      "fichier": "1_Presentation/38_Le_temps_de_Heisenberg.png"
+    },
+    {
+      "id": "FIG-017",
+      "group": "documents",
+      "number": 17,
+      "fichier": "1_Presentation/39_Le_degre_2.png"
+    },
+    {
+      "id": "FIG-018",
+      "group": "documents",
+      "number": 18,
+      "fichier": "1_Presentation/39_Le_recensement.png"
+    },
+    {
+      "id": "FIG-019",
+      "group": "documents",
+      "number": 19,
+      "fichier": "1_Presentation/40_La_rencontre_a_trois.png"
+    },
+    {
+      "id": "FIG-020",
+      "group": "documents",
+      "number": 20,
+      "fichier": "1_Presentation/41_La_rencontre_en_degre_2.png"
+    },
+    {
+      "id": "FIG-021",
+      "group": "documents",
+      "number": 21,
+      "fichier": "1_Presentation/43_La_rencontre_a_n.png"
+    },
+    {
+      "id": "FIG-022",
+      "group": "documents",
+      "number": 22,
+      "fichier": "1_Presentation/45_Le_palier_recalcule.png"
+    },
+    {
+      "id": "FIG-023",
+      "group": "documents",
+      "number": 23,
+      "fichier": "1_Presentation/46_La_surface_virtuelle.png"
+    },
+    {
+      "id": "FIG-024",
+      "group": "documents",
+      "number": 24,
+      "fichier": "1_Presentation/47_Le_riemann_roch_virtuel.png"
+    },
+    {
+      "id": "FIG-025",
+      "group": "documents",
+      "number": 25,
+      "fichier": "1_Presentation/48_Le_frobenius.png"
+    },
+    {
+      "id": "FIG-026",
+      "group": "documents",
+      "number": 26,
+      "fichier": "1_Presentation/49_Le_meme_calcul.png"
+    },
+    {
+      "id": "FIG-027",
+      "group": "documents",
+      "number": 27,
+      "fichier": "1_Presentation/52_Le_carre_en_continu.png"
+    },
+    {
+      "id": "FIG-028",
+      "group": "documents",
+      "number": 28,
+      "fichier": "1_Presentation/54_Le_trou_a_trois.png"
+    },
+    {
+      "id": "FIG-029",
+      "group": "documents",
+      "number": 29,
+      "fichier": "1_Presentation/56_Le_relief_de_l_archipel.png"
+    },
+    {
+      "id": "FIG-030",
+      "group": "documents",
+      "number": 30,
+      "fichier": "1_Presentation/57_La_force_du_relief.png"
+    },
+    {
+      "id": "FIG-031",
+      "group": "documents",
+      "number": 31,
+      "fichier": "1_Presentation/58_Validation_directe_et_jets.png"
+    },
+    {
+      "id": "FIG-032",
+      "group": "documents",
+      "number": 32,
+      "fichier": "1_Presentation/59_Tour_et_spectre.png"
+    },
+    {
+      "id": "FIG-033",
+      "group": "documents",
+      "number": 33,
+      "fichier": "1_Presentation/60_Marges_du_certificat.png"
+    },
+    {
+      "id": "FIG-034",
+      "group": "documents",
+      "number": 34,
+      "fichier": "1_Presentation/61_V13_signes.png"
+    },
+    {
+      "id": "FIG-035",
+      "group": "documents",
+      "number": 35,
+      "fichier": "1_Presentation/61_V13_strates.png"
+    },
+    {
+      "id": "FIG-036",
+      "group": "documents",
+      "number": 36,
+      "fichier": "1_Presentation/62_Bellman_sensibilite.png"
+    },
+    {
+      "id": "FIG-037",
+      "group": "documents",
+      "number": 37,
+      "fichier": "1_Presentation/63_Contrastes_D.png"
+    },
+    {
+      "id": "FIG-038",
+      "group": "documents",
+      "number": 38,
+      "fichier": "1_Presentation/64_Tranches_par_ancre.png"
+    },
+    {
+      "id": "FIG-039",
+      "group": "documents",
+      "number": 39,
+      "fichier": "1_Presentation/65_Bellman_sensibilite.png"
+    },
+    {
+      "id": "FIG-040",
+      "group": "documents",
+      "number": 40,
+      "fichier": "1_Presentation/65_Branches_et_plis.png"
+    },
+    {
+      "id": "FIG-041",
+      "group": "documents",
+      "number": 41,
+      "fichier": "1_Presentation/65_Discriminants_des_paires.png"
+    },
+    {
+      "id": "FIG-042",
+      "group": "documents",
+      "number": 42,
+      "fichier": "1_Presentation/65_Ellipses_et_fibres.png"
+    },
+    {
+      "id": "FIG-043",
+      "group": "documents",
+      "number": 43,
+      "fichier": "1_Presentation/65_Graphe_des_passages.png"
+    },
+    {
+      "id": "FIG-044",
+      "group": "documents",
+      "number": 44,
+      "fichier": "1_Presentation/66_Bellman_sensibilite.png"
+    },
+    {
+      "id": "FIG-045",
+      "group": "documents",
+      "number": 45,
+      "fichier": "1_Presentation/66_Controle_du_contour.png"
+    },
+    {
+      "id": "FIG-046",
+      "group": "documents",
+      "number": 46,
+      "fichier": "1_Presentation/66_Graphe_des_certificats.png"
+    },
+    {
+      "id": "FIG-047",
+      "group": "documents",
+      "number": 47,
+      "fichier": "1_Presentation/66_Paire_certifiee.png"
+    },
+    {
+      "id": "FIG-048",
+      "group": "documents",
+      "number": 48,
+      "fichier": "1_Presentation/67_PONTS_ET_OBLIGATIONS.png"
+    },
+    {
+      "id": "FIG-049",
+      "group": "documents",
+      "number": 49,
+      "fichier": "1_Presentation/68_GRAPHE_LANGUE.png"
+    },
+    {
+      "id": "FIG-050",
+      "group": "documents",
+      "number": 50,
+      "fichier": "1_Presentation/70_COMPENSATION_ARITHMETIQUE.png"
+    },
+    {
+      "id": "FIG-051",
+      "group": "documents",
+      "number": 51,
+      "fichier": "1_Presentation/71_GRAPHE_LEGO.png"
+    },
+    {
+      "id": "FIG-052",
+      "group": "documents",
+      "number": 52,
+      "fichier": "1_Presentation/72_GRAPHE_CONCENTRATION.png"
+    },
+    {
+      "id": "FIG-053",
+      "group": "documents",
+      "number": 53,
+      "fichier": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.png"
+    },
+    {
+      "id": "FIG-054",
+      "group": "documents",
+      "number": 54,
+      "fichier": "1_Presentation/74_PAIEMENT_CONJOINT.png"
+    },
+    {
+      "id": "FIG-055",
+      "group": "documents",
+      "number": 55,
+      "fichier": "1_Presentation/75_CARTE_RH.png"
+    },
+    {
+      "id": "FIG-056",
+      "group": "documents",
+      "number": 56,
+      "fichier": "1_Presentation/76_CARTE_PISTES_GLOBALES.png"
+    },
+    {
+      "id": "FIG-057",
+      "group": "documents",
+      "number": 57,
+      "fichier": "1_Presentation/78_CARTE_TRANSPORT.png"
+    },
+    {
+      "id": "FIG-058",
+      "group": "documents",
+      "number": 58,
+      "fichier": "1_Presentation/79_COMPENSATION_VISUEL.png"
+    },
+    {
+      "id": "FIG-059",
+      "group": "documents",
+      "number": 59,
+      "fichier": "1_Presentation/CARTE_DES_PARCOURS.png"
+    },
+    {
+      "id": "FIG-060",
+      "group": "documents",
+      "number": 60,
+      "fichier": "1_Presentation/CORRELATIONS_VISUEL.png"
+    },
+    {
+      "id": "CAL-001",
+      "group": "calculs",
+      "number": 1,
+      "fichier": "3_Preuves_et_calculs/data/archipelago.png"
+    },
+    {
+      "id": "CAL-002",
+      "group": "calculs",
+      "number": 2,
+      "fichier": "3_Preuves_et_calculs/data/attack_iter_figure.png"
+    },
+    {
+      "id": "CAL-003",
+      "group": "calculs",
+      "number": 3,
+      "fichier": "3_Preuves_et_calculs/data/base_step.png"
+    },
+    {
+      "id": "CAL-004",
+      "group": "calculs",
+      "number": 4,
+      "fichier": "3_Preuves_et_calculs/data/chain.png"
+    },
+    {
+      "id": "CAL-005",
+      "group": "calculs",
+      "number": 5,
+      "fichier": "3_Preuves_et_calculs/data/dark_residual_amplification.png"
+    },
+    {
+      "id": "CAL-006",
+      "group": "calculs",
+      "number": 6,
+      "fichier": "3_Preuves_et_calculs/data/dark_zeta_tomo2_defect_scan.png"
+    },
+    {
+      "id": "CAL-007",
+      "group": "calculs",
+      "number": 7,
+      "fichier": "3_Preuves_et_calculs/data/dark_zeta_tomo3_defect_scan.png"
+    },
+    {
+      "id": "CAL-008",
+      "group": "calculs",
+      "number": 8,
+      "fichier": "3_Preuves_et_calculs/data/dark_zeta_tomo3_surrogate_calibration.png"
+    },
+    {
+      "id": "CAL-009",
+      "group": "calculs",
+      "number": 9,
+      "fichier": "3_Preuves_et_calculs/data/degre2.png"
+    },
+    {
+      "id": "CAL-010",
+      "group": "calculs",
+      "number": 10,
+      "fichier": "3_Preuves_et_calculs/data/delta_heisenberg.png"
+    },
+    {
+      "id": "CAL-011",
+      "group": "calculs",
+      "number": 11,
+      "fichier": "3_Preuves_et_calculs/data/dual_lock_scan.png"
+    },
+    {
+      "id": "CAL-012",
+      "group": "calculs",
+      "number": 12,
+      "fichier": "3_Preuves_et_calculs/data/family_mod7.png"
+    },
+    {
+      "id": "CAL-013",
+      "group": "calculs",
+      "number": 13,
+      "fichier": "3_Preuves_et_calculs/data/generator.png"
+    },
+    {
+      "id": "CAL-014",
+      "group": "calculs",
+      "number": 14,
+      "fichier": "3_Preuves_et_calculs/data/hauteur.png"
+    },
+    {
+      "id": "CAL-015",
+      "group": "calculs",
+      "number": 15,
+      "fichier": "3_Preuves_et_calculs/data/object_vs_form.png"
+    },
+    {
+      "id": "CAL-016",
+      "group": "calculs",
+      "number": 16,
+      "fichier": "3_Preuves_et_calculs/data/pole_cancellation_figure.png"
+    },
+    {
+      "id": "CAL-017",
+      "group": "calculs",
+      "number": 17,
+      "fichier": "3_Preuves_et_calculs/data/prime_lock_DH_scaling.png"
+    },
+    {
+      "id": "CAL-018",
+      "group": "calculs",
+      "number": 18,
+      "fichier": "3_Preuves_et_calculs/data/prime_lock_chi_dh_scan.png"
+    },
+    {
+      "id": "CAL-019",
+      "group": "calculs",
+      "number": 19,
+      "fichier": "3_Preuves_et_calculs/data/rank_law.png"
+    },
+    {
+      "id": "CAL-020",
+      "group": "calculs",
+      "number": 20,
+      "fichier": "3_Preuves_et_calculs/data/reduced_model.png"
+    },
+    {
+      "id": "CAL-021",
+      "group": "calculs",
+      "number": 21,
+      "fichier": "3_Preuves_et_calculs/data/rencontre.png"
+    },
+    {
+      "id": "CAL-022",
+      "group": "calculs",
+      "number": 22,
+      "fichier": "3_Preuves_et_calculs/data/reread.png"
+    },
+    {
+      "id": "CAL-023",
+      "group": "calculs",
+      "number": 23,
+      "fichier": "3_Preuves_et_calculs/data/seuil.png"
+    },
+    {
+      "id": "CAL-024",
+      "group": "calculs",
+      "number": 24,
+      "fichier": "3_Preuves_et_calculs/data/stability_model.png"
+    },
+    {
+      "id": "CAL-025",
+      "group": "calculs",
+      "number": 25,
+      "fichier": "3_Preuves_et_calculs/data/tau_threshold.png"
+    },
+    {
+      "id": "CAL-026",
+      "group": "calculs",
+      "number": 26,
+      "fichier": "3_Preuves_et_calculs/data/zero_difference_profile.png"
+    },
+    {
+      "id": "CAL-027",
+      "group": "calculs",
+      "number": 27,
+      "fichier": "3_Preuves_et_calculs/data/zero_difference_width.png"
+    },
+    {
+      "id": "CAL-028",
+      "group": "calculs",
+      "number": 28,
+      "fichier": "3_Preuves_et_calculs/data/zero_difference_width_heights.png"
+    },
+    {
+      "id": "ARTFIG-001",
+      "group": "articles",
+      "number": 1,
+      "fichier": "1_Presentation/articles/art1_fig1.pdf"
+    },
+    {
+      "id": "ARTFIG-002",
+      "group": "articles",
+      "number": 2,
+      "fichier": "1_Presentation/articles/art1_fig2.pdf"
+    },
+    {
+      "id": "ARTFIG-003",
+      "group": "articles",
+      "number": 3,
+      "fichier": "1_Presentation/articles/art2_fig1.pdf"
+    },
+    {
+      "id": "ARTFIG-004",
+      "group": "articles",
+      "number": 4,
+      "fichier": "1_Presentation/articles/art2_fig2.pdf"
+    },
+    {
+      "id": "FIG-061",
+      "group": "documents",
+      "number": 61,
+      "fichier": "1_Presentation/65_Graphe_des_passages.svg"
+    },
+    {
+      "id": "FIG-062",
+      "group": "documents",
+      "number": 62,
+      "fichier": "1_Presentation/66_Graphe_des_certificats.svg"
+    },
+    {
+      "id": "FIG-063",
+      "group": "documents",
+      "number": 63,
+      "fichier": "1_Presentation/67_PONTS_ET_OBLIGATIONS.svg"
+    },
+    {
+      "id": "FIG-064",
+      "group": "documents",
+      "number": 64,
+      "fichier": "1_Presentation/68_GRAPHE_LANGUE.svg"
+    },
+    {
+      "id": "FIG-065",
+      "group": "documents",
+      "number": 65,
+      "fichier": "1_Presentation/70_COMPENSATION_ARITHMETIQUE.svg"
+    },
+    {
+      "id": "FIG-066",
+      "group": "documents",
+      "number": 66,
+      "fichier": "1_Presentation/71_GRAPHE_LEGO.svg"
+    },
+    {
+      "id": "FIG-067",
+      "group": "documents",
+      "number": 67,
+      "fichier": "1_Presentation/72_GRAPHE_CONCENTRATION.svg"
+    },
+    {
+      "id": "FIG-068",
+      "group": "documents",
+      "number": 68,
+      "fichier": "1_Presentation/73_GRAPHE_OPERATEUR_COMMUN.svg"
+    },
+    {
+      "id": "FIG-069",
+      "group": "documents",
+      "number": 69,
+      "fichier": "1_Presentation/74_PAIEMENT_CONJOINT.svg"
+    },
+    {
+      "id": "FIG-070",
+      "group": "documents",
+      "number": 70,
+      "fichier": "1_Presentation/75_CARTE_RH.svg"
+    },
+    {
+      "id": "FIG-071",
+      "group": "documents",
+      "number": 71,
+      "fichier": "1_Presentation/76_CARTE_PISTES_GLOBALES.svg"
+    },
+    {
+      "id": "FIG-072",
+      "group": "documents",
+      "number": 72,
+      "fichier": "1_Presentation/78_CARTE_TRANSPORT.svg"
+    },
+    {
+      "id": "FIG-073",
+      "group": "documents",
+      "number": 73,
+      "fichier": "1_Presentation/79_COMPENSATION_VISUEL.svg"
+    },
+    {
+      "id": "FIG-074",
+      "group": "documents",
+      "number": 74,
+      "fichier": "1_Presentation/CARTE_DES_PARCOURS.svg"
+    },
+    {
+      "id": "FIG-075",
+      "group": "documents",
+      "number": 75,
+      "fichier": "1_Presentation/CORRELATIONS_VISUEL.svg"
+    },
+    {
+      "id": "FIG-076",
+      "group": "documents",
+      "number": 76,
+      "fichier": "1_Presentation/CIBLES_ENERGIE_V655.svg"
+    },
+    {
+      "id": "FIG-077",
+      "group": "documents",
+      "number": 77,
+      "fichier": "1_Presentation/CIBLES_PONTS_V655.svg"
+    },
+    {
+      "id": "FIG-078",
+      "group": "documents",
+      "number": 78,
+      "fichier": "1_Presentation/CIBLES_WEIL_V655.svg"
+    },
+    {
+      "id": "FIG-079",
+      "group": "documents",
+      "number": 79,
+      "fichier": "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.png"
+    },
+    {
+      "id": "FIG-080",
+      "group": "documents",
+      "number": 80,
+      "fichier": "1_Presentation/79_SIGNAL_RESOLUTION_VISUEL.svg"
+    },
+    {
+      "id": "FIG-081",
+      "group": "documents",
+      "number": 81,
+      "fichier": "1_Presentation/80_Trois_niveaux_du_signe.png"
+    },
+    {
+      "id": "FIG-082",
+      "group": "documents",
+      "number": 82,
+      "fichier": "1_Presentation/81_Zhu_reproduit.png"
+    }
+  ]
+}

@@ -1,0 +1,3564 @@
+{
+  "_lisez_moi": "Carte de navigation du Programme Riemann. Position : l'indicateur (2_Methode/Indicateur). Opérateurs : les métaphores du registre (1_Presentation/20_Registre_metaphores_V6.md), lues automatiquement. Les gains, probabilités et coûts sont des estimations écrites à la main, à corriger librement : leur rôle est de rendre le choix explicite et discutable. À chaque version : mettre à jour les statuts, ajouter les coups nouveaux, relancer python 2_Methode/Navigateur/build_navigateur.py. Depuis V6.11 : chaque coup ouvert porte sa prévision (pré-enregistrée) et son maillon ; la chaîne donne la distance au but.",
+  "but": {
+    "dimension": "case",
+    "niveau": 9,
+    "libelle": "La case vide au niveau 9 : l'objet d'un étage au-dessus pour ζ, ce qui rendrait RH nécessaire."
+  },
+  "poids": {
+    "case": 3.0,
+    "comprendre": 2.0,
+    "demontrer": 2.0,
+    "situer": 1.5,
+    "degre2": 1.0,
+    "voir": 0.5,
+    "croiser": 2.0
+  },
+  "regles": [
+    [
+      "Score",
+      "score = (valeur + explicatif) / coût, avec valeur = somme des poids × gain de niveau × probabilité, et explicatif = questions ouvertes du corpus auxquelles le coup répond + 0,5 par coup ouvert qu'il débloque."
+    ],
+    [
+      "Règle du témoin",
+      "Un coup sans témoin contraire (un objet qui devrait faire échouer la thèse) voit sa valeur divisée par deux : un gain d'indicateur sans antithèse ne compte qu'à moitié."
+    ],
+    [
+      "Règle de relecture",
+      "Un gain au niveau 7 ou plus exige un relecteur humain : le coup sort de la navigation autonome."
+    ],
+    [
+      "Route à construire",
+      "Un coup qui demande des mathématiques qui n'existent pas encore est signalé, pas classé : le navigateur dit où la route manque, il ne prétend pas la tracer."
+    ],
+    [
+      "Garde des opérateurs",
+      "Chaque opérateur arrive avec sa garde, lue dans le registre (correspondance interdite ou « où l'image casse ») : c'est la première antithèse du coup."
+    ],
+    [
+      "Maillons ouverts",
+      "Le nombre de catégories encore manquantes organise le dossier. Il ne mesure ni une distance numérique à RH, ni le nombre d’étapes nécessaires. Le bonus de maillon est une préférence explicite."
+    ],
+    [
+      "Pré-enregistrement",
+      "La prévision d'un coup (gains, probabilité, coût, réfutation) est écrite avant le calcul et conservée telle quelle ; une fois le coup fait, on note ce que l'indicateur a enregistré et si la réfutation a eu lieu. Le bilan compare les deux."
+    ],
+    [
+      "Règle du croisement",
+      "Un coup qui relie plusieurs conjectures (champ « croise » : RH, simplicité, répulsion, de Bruijn–Newman, degré 2) reçoit +poids_croisement par conjecture reliée au-delà de la première. Les cases vides de la carte des croisements (indicateur) sont des zones d'ombre à viser."
+    ],
+    [
+      "Veille rétrospective",
+      "Quand au moins seuil_veille opérateurs sont entrés au registre depuis la dernière lecture d'une piste écartée, elle est signalée « à relire » (idée reçue avec le « Classement des instruments 3D »)."
+    ],
+    [
+      "Pendant dans le Modèle réduit",
+      "Chaque croisement établi sur ζ devrait avoir son pendant là où RH est démontrée (courbes sur les corps finis) ; un croisement sans pendant est une zone d'ombre (idée reçue avec la « Nécessité démontrée du Modèle réduit »)."
+    ]
+  ],
+  "coups": [
+    {
+      "id": "modele_reduit",
+      "titre": "Le Modèle réduit",
+      "statut": "fait",
+      "version": "V6.6",
+      "document": "28_MODELE_REDUIT_NECESSITE_DEMONTREE.pdf",
+      "question": "À quoi ressemble une nécessité démontrée, là où RH est un théorème ?",
+      "operateurs": [
+        "Le Modèle réduit",
+        "Le Faux jumeau entier",
+        "La Tour"
+      ],
+      "these": "Courbes sur F_q : la positivité de Castelnuovo est la signature de la nécessité.",
+      "temoin": "220 faux jumeaux entiers : équation fonctionnelle, comptages positifs, RH fausse.",
+      "appris": "Signature en quatre traits ; ζ présente les trois premiers."
+    },
+    {
+      "id": "marges",
+      "titre": "Marge de la forme et marge de l'objet",
+      "statut": "fait",
+      "version": "V6.7",
+      "document": "29_STABILITY_RADIUS_MARGE_DE_LA_FORME_ET_DE_L_OBJET.pdf",
+      "question": "La nécessité éloigne-t-elle les objets du bord ?",
+      "operateurs": [
+        "Le Rang",
+        "Le Recensement",
+        "Le Passage interdit",
+        "La Rencontre figée"
+      ],
+      "these": "La marge de la forme s'annule au-delà du nombre de zéros ; celle de l'objet reste positive.",
+      "temoin": "Zéros confondus : marge nulle, et aucune courbe ne sort.",
+      "appris": "La nécessité n'éloigne pas du bord, elle interdit le passage."
+    },
+    {
+      "id": "archipel",
+      "titre": "L'Archipel d'Euler",
+      "statut": "fait",
+      "version": "V6.8",
+      "document": "30_ARCHIPEL_D_EULER.pdf",
+      "question": "Une sortie de RH peut-elle garder un produit d'Euler ?",
+      "operateurs": [
+        "L'Archipel d'Euler",
+        "L'Île sans mer",
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "these": "Dans les espaces V_q étudiés, RH impose un point d’Euler ; la réciproque (GRH) reste ouverte.",
+      "temoin": "Combinaisons de L(s, χ) : équation fonctionnelle sans produit d'Euler.",
+      "appris": "Condition nécessaire d’Euler en degré 1 ; carte finie numérique. V6.34 distingue seuil relatif T* et première détection directe."
+    },
+    {
+      "id": "chainon",
+      "titre": "Le chaînon",
+      "statut": "fait",
+      "version": "V6.9",
+      "document": "32_LE_CHAINON_DU_DISCRET_AU_CONTINU.pdf",
+      "question": "Quel opérateur manque entre le discret et le continu ?",
+      "operateurs": [
+        "Le Chaînon",
+        "Le Spectre des longueurs",
+        "L'Axe par zéro distinct",
+        "La Métrique manquante"
+      ],
+      "these": "F = q^D ; l'opérateur se reconstruit depuis les comptages.",
+      "temoin": "Faux jumeaux : opérateur, symétrie et réseau intacts.",
+      "appris": "Ce qui manque n'est pas l'opérateur, c'est la métrique."
+    },
+    {
+      "id": "generateur_premiers",
+      "titre": "Le générateur des premiers",
+      "statut": "fait",
+      "version": "V6.10",
+      "question": "L'opérateur de ζ se construit-il depuis les seuls nombres premiers, et sa métrique sépare-t-elle ζ de DH ?",
+      "operateurs": [
+        "Le Chaînon",
+        "Compression fertile",
+        "Le Recensement",
+        "Jumeau de crash-test"
+      ],
+      "these": "Un faisceau de Toeplitz construit depuis les premiers permet une reconstruction spectrale dans une fenêtre finie ; pour ζ, la positivité est observée aux paramètres et seuils numériques testés, sans preuve globale.",
+      "temoin": "DH : même conducteur et même équation fonctionnelle que L(s, χ₅), zéros hors droite.",
+      "appris": "284 zéros de ζ depuis les premiers ≤ 23 862, masses 1 ; DH : zéros hors droite retrouvés, 2 directions négatives par quadruplet.",
+      "document": "33_LE_GENERATEUR_DES_PREMIERS.pdf"
+    },
+    {
+      "id": "bases_q_q2",
+      "titre": "La base comme pas de temps",
+      "statut": "fait",
+      "question": "Le générateur D est-il le même vu sur F_q et sur F_q² ? Que perd-on en changeant de base ?",
+      "operateurs": [
+        "Le Chaînon",
+        "Le Modèle réduit",
+        "Le Spectre des longueurs",
+        "La Tour",
+        "Le Repliement"
+      ],
+      "these": "D est intrinsèque ; la base q n'est qu'un pas d'échantillonnage du flot (log q). Passer à q² double le pas, replie le spectre et efface l'information de signe.",
+      "temoin": "Une courbe et sa tordue quadratique : objets différents, mêmes comptages sur F_q².",
+      "refutation": "D dépendrait de la base, ou deux courbes non tordues auraient les mêmes comptages sur F_q².",
+      "gains": {},
+      "probabilite": 0.9,
+      "cout": 1,
+      "repond_a": [
+        "Le Chaînon : le générateur D est-il le même vu sur F_q et sur F_q² ?",
+        "La Tour : quel est l'étage n de ζ (fenêtre T, corps cyclotomique, flot continu) ?",
+        "Le Repliement : la base d'un corps fini est-elle un pas de temps du même flot ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "chainon",
+        "generateur_premiers"
+      ],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.9,
+        "cout": 1,
+        "refutation": "D dépendrait de la base, ou deux courbes non tordues auraient les mêmes comptages sur F_q²."
+      },
+      "version": "V6.11",
+      "document": "35_LA_BASE_COMME_PAS_DE_TEMPS.pdf",
+      "maillon": "traces",
+      "appris": "Les comptages sur F_q² regroupent les données de la courbe et de sa tordue dans les 525 cas étudiés. Un générateur logarithmique dépend du choix de branche ; F reconstruit ne rend pas D unique. La descente peut perdre des signes. Pour DH, un pas grossier masque des directions négatives dans les compressions testées ; aucune nécessité universelle du flot pour ζ n’est démontrée.",
+      "refutation_tenue": "Tenue : aucune autre courbe du corpus n'a les mêmes comptages sur F_q² (0 sur 525) ; 55 courbes ont d'autres descentes possibles, hors corpus."
+    },
+    {
+      "id": "kalman_relu",
+      "titre": "Le Kalman relu : les innovations de Levinson",
+      "statut": "fait",
+      "version": "V6.12",
+      "document": "36_LES_IDEES_REJETEES_RELUES.pdf",
+      "maillon": "metrique",
+      "question": "Le filtre de Kalman, rejeté en V4.3 faute de loi, dit-il quelque chose s'il tourne sur les traces des premiers ?",
+      "operateurs": [
+        "Le Générateur des premiers",
+        "La Métrique noyée",
+        "Le Chaînon"
+      ],
+      "these": "La récurrence de Levinson (le Kalman d'un signal stationnaire) sur les traces des premiers garde ζ et L dans le disque et sonne pour DH à une fenêtre finie.",
+      "temoin": "L(s, χ₅) : mêmes données analytiques que DH, aucune alarme attendue.",
+      "refutation": "Une innovation négative pour L au-dessus du bruit, ou aucune pour DH alors que sa métrique a des directions négatives.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 1,
+        "refutation": "Une innovation négative pour L au-dessus du bruit, ou aucune pour DH alors que sa métrique a des directions négatives."
+      },
+      "refutation_tenue": "Tenue : aucune innovation négative pour ζ et L avant l'horizon numérique ; DH sonne à la fenêtre 3,52 (premiers ≤ 36).",
+      "appris": "ζ et L restent dans le disque (|k| ≤ 0,79) ; DH sonne dès les premiers ≤ 36 ; seuil 2,7 à 3,5 selon le quadruplet ; un pas grossier retarde l'alarme.",
+      "revision": "V6.14 : les seuils par quadruplet de 114,2 à 240,4 étaient du bruit numérique (document 38) ; la détection principale de DH (3,53) et l'absence d'alarme pour ζ et L tiennent."
+    },
+    {
+      "id": "sources_relues",
+      "titre": "Les sources relues : le fantôme pesé",
+      "statut": "fait",
+      "version": "V6.12",
+      "document": "36_LES_IDEES_REJETEES_RELUES.pdf",
+      "maillon": "traces",
+      "question": "Le mode fantôme de la V4.3 survit-il au test de la masse unité ?",
+      "operateurs": [
+        "La Masse unité",
+        "Le Recensement",
+        "Le Générateur des premiers"
+      ],
+      "these": "Une vraie valeur propre porte la masse ĝ(γ) ; un fantôme ne pèse rien.",
+      "temoin": "DH : un vrai zéro hors droite (85,7) et un fantôme connu (73,8) dans la même fenêtre.",
+      "refutation": "Le fantôme porterait une masse proche de 1, ou le vrai zéro hors droite une masse loin de 1.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.9,
+        "cout": 0.5,
+        "refutation": "Le fantôme porterait une masse proche de 1, ou le vrai zéro hors droite une masse loin de 1."
+      },
+      "refutation_tenue": "Tenue : fantôme de masse 1,3·10⁻⁹ ; zéro hors droite de masse 1,000000, à 6·10⁻¹⁰ près.",
+      "appris": "La masse unité tranche le fantôme et le biais ; reste une fenêtre finie."
+    },
+    {
+      "id": "theoreme_A_rayon",
+      "titre": "Le Schrödinger relu : le Théorème A au rayon spectral",
+      "statut": "fait",
+      "version": "V6.12",
+      "document": "36_LES_IDEES_REJETEES_RELUES.pdf",
+      "maillon": "metrique",
+      "question": "Le demi-exposant normalisé du Théorème A, (1/2) limsup log(1+Q(X))/log X = Θ − 1/2, peut-il être comparé au rayon spectral observé ?",
+      "operateurs": [
+        "Le Chaînon",
+        "La Métrique manquante",
+        "Le Générateur des premiers"
+      ],
+      "these": "Pour ζ, l’exposant de Q est 2Θ−1, son demi-exposant normalisé Θ−1/2. Une fenêtre de zéros fournit seulement une borne inférieure au supremum global. L et DH servent de calibrations finies ; le Théorème A du corpus ne leur est pas automatiquement transféré.",
+      "temoin": "ζ et L (exposant nul) contre DH (σ = 0,8085).",
+      "refutation": "Un rayon spectral non nul pour ζ ou L au-dessus de la précision, ou différent de 0,3085 pour DH.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 0.5,
+        "refutation": "Un rayon spectral non nul pour ζ ou L au-dessus de la précision, ou différent de 0,3085 pour DH."
+      },
+      "refutation_tenue": "Tenue : DH 0,308517 ; ζ et L inférieurs à 10⁻⁶.",
+      "appris": "Des rayons spectraux ont été mesurés sur les fenêtres testées ; cela ne démontre pas une métrique globale positive pour ζ. Les blocs de Jordan décrivent le signal d’ordre deux. Corrections de portée précisées dans l’article1 V6.36."
+    },
+    {
+      "id": "degre2_archipel",
+      "titre": "L'Archipel en degré 2, par les premiers",
+      "statut": "ouvert",
+      "question": "Parmi les formes de poids 24 et niveau 1, RH n'existe-t-elle qu'aux formes propres de Hecke ?",
+      "operateurs": [
+        "L'Archipel d'Euler",
+        "Le Point d'Euler",
+        "Fermeture multiplicative",
+        "Jumeau de crash-test",
+        "Le Générateur des premiers"
+      ],
+      "these": "Booker–Thorne (2014, Th. 1.1) donnent déjà : une forme de S₂₄ sans zéro dans Re s > 25/2 est propre. Reste à voir : la rigidité au premier ordre (analogue de la constante 3) et des îles autour des deux formes propres qui rétrécissent avec la hauteur.",
+      "temoin": "Combinaisons réelles des deux formes propres : même équation fonctionnelle, pas de produit d'Euler.",
+      "refutation": "Une combinaison non propre sans zéro hors droite jusqu'à haute altitude, ou des îles qui ne rétrécissent pas.",
+      "gains": {
+        "degre2": 2
+      },
+      "probabilite": 0.7,
+      "cout": 2,
+      "repond_a": [
+        "Indicateur : le degré 2 (prochaine marche)",
+        "Relecture de l'Archipel : en degré 2, la rigidité au premier ordre aux formes propres de Hecke est-elle connue ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "archipel"
+      ],
+      "maillon": "traces",
+      "prevision": {
+        "gains": {
+          "degre2": 2
+        },
+        "probabilite": 0.7,
+        "cout": 4,
+        "refutation": "Une combinaison non propre sans zéro hors droite jusqu'à haute altitude, ou des îles qui ne rétrécissent pas."
+      },
+      "revision": "V6.12 : coût revu de 4 à 2,5 (le générateur n'a besoin que des coefficients de Hecke et du facteur gamma, pas des zéros). V6.13 : la partie « aucun zéro hors de la bande ⇒ forme propre » est publiée (Booker–Thorne) ; le coup garde la rigidité et les îles. V6.15 : L(Δ, s) est reconstruit depuis les premiers ; les formes propres de poids 24 se calculent de la même façon (coût revu de 2,5 à 2).",
+      "croise": [
+        "RH",
+        "D2"
+      ]
+    },
+    {
+      "id": "generateur_hauteur",
+      "titre": "La métrique des premiers, plus haut",
+      "statut": "fait",
+      "question": "La métrique construite sur les premiers compte-t-elle exactement les quadruplets hors droite de DH jusqu'à |t| = 600 ?",
+      "operateurs": [
+        "Le Recensement",
+        "Le Chaînon",
+        "Jumeau de crash-test",
+        "La Métrique en avance"
+      ],
+      "these": "Deux directions négatives par quadruplet hors droite, à toute hauteur atteinte par la fenêtre.",
+      "temoin": "L(s, χ₅) : mêmes données analytiques, aucune direction négative attendue.",
+      "refutation": "Une direction négative pour L, ou un quadruplet de DH sans direction négative alors que son poids dépasse le bruit.",
+      "gains": {},
+      "probabilite": 0.8,
+      "cout": 2,
+      "repond_a": [
+        "Le Recensement : peut-on compter les zéros hors droite d'une fonction inconnue par une seule fenêtre ?",
+        "La Métrique en avance : jusqu'où suivre la métrique de ζ vers le haut ?"
+      ],
+      "debloque": [
+        "paires_lehmer"
+      ],
+      "prerequis": [
+        "generateur_premiers"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 2,
+        "refutation": "Une direction négative pour L, ou un quadruplet de DH sans direction négative alors que son poids dépasse le bruit."
+      },
+      "revision": "V6.14 : la loi de seuil donne le plan. Pour voir un quadruplet à la hauteur T : fenêtre ≈ log(5T/2π), pas h < π/T, largeur a < 3π/T ; pour T = 600 : fenêtre 6,2, h < 0,005, a < 0,016, environ 1 300 échantillons.",
+      "version": "V6.15",
+      "document": "39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
+      "refutation_tenue": "Tenue : aucune direction négative pour L ; les 15 quadruplets de |t| ≤ 600 portent exactement 30 directions négatives. La prévision « exactement 30 » était fausse dans sa lettre : 50, dont 20 viennent de zéros hors droite plus hauts (6 dans le lobe, 4 repliés), tous identifiés.",
+      "appris": "La métrique des premiers est un recensement : 50 directions négatives = 25 quadruplets de DH jusqu'à 1 464 (premiers ≤ 1 370), aucune pour L ni ζ ; allumages à 0,75–0,95 du temps de Heisenberg ; compter voit plus loin que localiser."
+    },
+    {
+      "id": "paires_lehmer",
+      "titre": "La Rencontre à trois (paires de Lehmer)",
+      "statut": "fait",
+      "question": "RH, la simplicité des zéros et la répulsion se lisent-elles sur la même quantité, paire par paire ?",
+      "operateurs": [
+        "La Rencontre figée",
+        "La Rencontre",
+        "Le Temps de Heisenberg",
+        "Le Compteur de paires"
+      ],
+      "these": "À la fenêtre de Heisenberg, la marge locale de la métrique d'une paire est 1 − sinc²(πs), la corrélation de paires de Montgomery ; β lit les paires serrées.",
+      "temoin": "Suites simulées sans répulsion (Poisson) ; la paire de Lehmer près de 7 005.",
+      "refutation": "Aucune corrélation entre écart des paires et plus petite valeur propre.",
+      "gains": {},
+      "probabilite": 0.6,
+      "cout": 2,
+      "repond_a": [
+        "La Rencontre figée : ζ a-t-elle des paires « presque figées » (paires de Lehmer) qui jouent ce rôle ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "generateur_premiers"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.6,
+        "cout": 2,
+        "refutation": "Aucune corrélation entre écart des paires et plus petite valeur propre."
+      },
+      "version": "V6.16",
+      "document": "40_LA_RENCONTRE_A_TROIS.pdf",
+      "croise": [
+        "RH",
+        "SZ",
+        "PC",
+        "dBN"
+      ],
+      "refutation_tenue": "Tenue : la marge suit exactement l'écart (identité démontrée). Prévisions détaillées (data/prevision_v616.md) : contrôle de β tenu ; répulsion nette (80 fois moins de petites marges que Poisson) mais 3 fois moins que le GUE prévu ; la part de β portée par les paires serrées est fausse pour β complet (lisse à 95 %), juste pour sa part d'écart ; marge de Lehmer 0,006 (tenue), poids dans β 39–43 fois la médiane (100 prévu).",
+      "appris": "La marge locale de la métrique est la densité de Montgomery : RH, simplicité et répulsion sont trois lectures d'une même quantité. β est lisse à 95 % ; sa part d'écart lit les paires serrées (35 % portés par les 10 % plus serrés ; Lehmer : environ mille fois la médiane)."
+    },
+    {
+      "id": "loi_du_rayon",
+      "titre": "La loi du rayon",
+      "statut": "ouvert",
+      "question": "La pente −0,77 des îles tient-elle jusqu'à |t| = 2 000, et le rayon est-il une signature du caractère ?",
+      "operateurs": [
+        "L'Archipel d'Euler",
+        "La Rencontre"
+      ],
+      "these": "Le rayon suit les plus petits écarts entre zéros (statistique des matrices aléatoires).",
+      "temoin": "Points d'Euler à paires exceptionnellement proches.",
+      "refutation": "Une pente qui dérive avec la hauteur.",
+      "gains": {},
+      "probabilite": 0.8,
+      "cout": 3,
+      "repond_a": [
+        "La loi du rayon : la pente −0,77 dérive-t-elle avec la hauteur ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "archipel"
+      ],
+      "maillon": "traces",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 3,
+        "refutation": "Une pente qui dérive avec la hauteur."
+      }
+    },
+    {
+      "id": "loi_de_seuil",
+      "titre": "La loi de seuil des innovations",
+      "statut": "fait",
+      "maillon": "metrique",
+      "cout": 1.5,
+      "question": "De quoi dépend la longueur de fenêtre où les innovations de DH deviennent négatives (2,7 à 3,5 selon le quadruplet) ?",
+      "operateurs": [
+        "L'Innovation",
+        "La Métrique noyée",
+        "Le Recensement"
+      ],
+      "these": "La longueur de détection suit une loi simple en l'écart à la droite, le poids et l'écart aux voisins.",
+      "temoin": "Quadruplets synthétiques placés à la main (écart, poids, voisins contrôlés) et L(s, χ₅) sans alarme.",
+      "refutation": "Aucune loi : la longueur de détection varie sans relation stable avec ces trois grandeurs.",
+      "repond_a": [
+        "La Métrique noyée : combien d'échantillons faut-il pour entendre un quadruplet de poids donné ?",
+        "L'Innovation : la longueur de détection suit-elle une loi simple ?"
+      ],
+      "gains": {},
+      "probabilite": 0.6,
+      "debloque": [
+        "generateur_hauteur"
+      ],
+      "prerequis": [
+        "kalman_relu"
+      ],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.6,
+        "cout": 1.5,
+        "refutation": "Aucune loi : la longueur de détection varie sans relation stable avec ces trois grandeurs."
+      },
+      "version": "V6.14",
+      "document": "38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
+      "refutation_tenue": "Non réfutée : une loi existe. Mais la thèse était fausse : ni l'écart à la droite, ni le poids, ni les voisins ne gouvernent ; c'est la hauteur, par le temps de Heisenberg log(q·γ₀/2π) (rapport 0,95–1,08 pour ζ et L, 0,80–0,89 pour DH).",
+      "appris": "Correction : quatre seuils de la V6.12 étaient du bruit (le signe d'une innovation est fragile). Loi : L_c ≈ log(q·γ₀/2π), premiers jusqu'au conducteur analytique ; δ, poids, position, pas et largeur en correction ; lemme d'inertie exact."
+    },
+    {
+      "id": "ile_par_les_premiers",
+      "titre": "L'île vue par les premiers",
+      "statut": "ouvert",
+      "maillon": "metrique",
+      "cout": 2,
+      "question": "Dans les espaces de l'Archipel d'Euler, le bord d'une île est-il le premier paramètre où une innovation devient négative ?",
+      "operateurs": [
+        "L'Archipel d'Euler",
+        "L'Innovation",
+        "Le Générateur des premiers"
+      ],
+      "these": "Le rayon r(T) d'une île se mesure sans aucun zéro : premier paramètre du chemin où la métrique des coefficients perd sa positivité.",
+      "temoin": "Les rayons r(T) mesurés par les zéros en V6.8 (27 points d'Euler).",
+      "refutation": "Des rayons lus par les innovations sans relation avec ceux de V6.8.",
+      "repond_a": [
+        "L'Archipel d'Euler : le rayon d'une île est-il une signature de son caractère ?",
+        "Le Passage interdit : pour ζ, une sortie peut-elle garder un produit d'Euler ?"
+      ],
+      "gains": {},
+      "probabilite": 0.6,
+      "debloque": [],
+      "prerequis": [
+        "archipel",
+        "kalman_relu"
+      ],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.6,
+        "cout": 2,
+        "refutation": "Des rayons lus par les innovations sans relation avec ceux de V6.8."
+      }
+    },
+    {
+      "id": "heisenberg_degre2",
+      "titre": "Le temps de Heisenberg en degré 2 (Δ de Ramanujan)",
+      "statut": "fait",
+      "question": "La loi de seuil vaut-elle en degré 2 : un quadruplet ajouté au fond de L(Δ, s), calculé par les τ(n), s'entend-il au logarithme du conducteur analytique, environ deux fois log(T/2π) ?",
+      "operateurs": [
+        "Le Temps de Heisenberg",
+        "La Balance d'inertie",
+        "Le Générateur des premiers"
+      ],
+      "these": "L_c ≈ log C(T), avec C(T) ≈ (T/2π)² pour L(Δ, s) : la densité des zéros double, la longueur de détection aussi.",
+      "temoin": "ζ à la même hauteur (degré 1, conducteur 1) : longueur de détection moitié.",
+      "refutation": "La longueur de détection de L(Δ, s) égale à celle de ζ, ou sans relation avec log C(T).",
+      "gains": {
+        "degre2": 1
+      },
+      "probabilite": 0.7,
+      "cout": 2,
+      "repond_a": [
+        "Indicateur : le degré 2 (prochaine marche)",
+        "Le Temps de Heisenberg : la loi vaut-elle au-delà du degré 1 ?"
+      ],
+      "debloque": [
+        "degre2_archipel"
+      ],
+      "prerequis": [
+        "loi_de_seuil"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {
+          "degre2": 1
+        },
+        "probabilite": 0.7,
+        "cout": 2,
+        "refutation": "La longueur de détection de L(Δ, s) égale à celle de ζ, ou sans relation avec log C(T)."
+      },
+      "version": "V6.15",
+      "document": "39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
+      "refutation_tenue": "Tenue : L_c(Δ)/Ω = 1,02–1,05 et L_c(Δ)/L_c(ζ) = 1,91–2,07 ; la longueur d'écoute double avec la densité des zéros.",
+      "appris": "La loi de seuil est celle du poids archimédien Ω(γ₀) = 2π × densité des zéros. L(Δ, s) reconstruit depuis les τ(n) (zéros à 1,2·10⁻⁹ des zéros calculés sans les premiers). Le produit ζ·L s'allume plus tôt (0,87–0,98), comme DH.",
+      "croise": [
+        "RH",
+        "D2"
+      ]
+    },
+    {
+      "id": "facteur_dh",
+      "titre": "Le facteur de DH",
+      "statut": "ouvert",
+      "question": "Pourquoi les quadruplets réels de DH sont-ils entendus à 0,80–0,89 du temps de Heisenberg, quand leurs analogues synthétiques le sont à 0,82–0,99 ?",
+      "operateurs": [
+        "Le Temps de Heisenberg",
+        "Jumeau de crash-test",
+        "La Rencontre"
+      ],
+      "these": "Sans produit d'Euler, les zéros de DH se repoussent moins : la statistique des écarts entre voisins fixe le facteur.",
+      "temoin": "Quadruplets synthétiques sur le fond de DH contre le même quadruplet sur le fond de L(s, χ₅) ; le produit ζ·L(s, χ₅) (deux familles sans répulsion mutuelle, 0,87–0,98 en V6.15).",
+      "refutation": "Même facteur sur les deux fonds, ou statistique des écarts identique pour DH et L.",
+      "gains": {},
+      "probabilite": 0.5,
+      "cout": 1.5,
+      "repond_a": [
+        "Le Temps de Heisenberg : le facteur dépend-il de la statistique des zéros (répulsion ou non) ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "loi_de_seuil"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 1.5,
+        "refutation": "Même facteur sur les deux fonds, ou statistique des écarts identique pour DH et L."
+      },
+      "revision": "V6.15 : le contrôle ζ·L (somme de deux familles de zéros indépendantes) s'allume aussi plus tôt que Ω ; indice en faveur de la thèse.",
+      "croise": [
+        "RH",
+        "PC"
+      ]
+    },
+    {
+      "id": "devineur",
+      "titre": "Le devineur de lois",
+      "statut": "ouvert",
+      "question": "Une détection de relations entières (PSLQ) et une analyse dimensionnelle sur les tables du corpus proposent-elles des lois vérifiables, comme le temps de Heisenberg l'a été à la main ?",
+      "operateurs": [
+        "Compression fertile",
+        "Le Temps de Heisenberg"
+      ],
+      "these": "Les lois du corpus (seuil, rayon des îles, constantes α et β) ont des formes closes devinables, à tester par pré-enregistrement.",
+      "temoin": "Tables aléatoires de même taille : le devineur ne doit rien y trouver.",
+      "refutation": "Autant de lois proposées sur les tables aléatoires que sur celles du corpus.",
+      "gains": {},
+      "probabilite": 0.5,
+      "cout": 1.5,
+      "repond_a": [
+        "La loi du rayon : la pente −0,77 dérive-t-elle avec la hauteur ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 1.5,
+        "refutation": "Autant de lois proposées sur les tables aléatoires que sur celles du corpus."
+      }
+    },
+    {
+      "id": "repulsion_degre2",
+      "titre": "La Rencontre en degré 2",
+      "statut": "fait",
+      "question": "Les 189 zéros de L(Δ, s) reconstruits par les premiers se repoussent-ils comme le prévoit le GUE, et leur marge de Heisenberg suit-elle 1 − sinc²(πs) avec la densité double ?",
+      "operateurs": [
+        "La Rencontre à trois",
+        "Le Poids archimédien",
+        "La Somme sans répulsion",
+        "Le Contour tourné",
+        "La Loi de la marge"
+      ],
+      "croise": [
+        "PC",
+        "D2",
+        "RH"
+      ],
+      "these": "Même répulsion qu'en degré 1, à condition de normaliser les écarts par la densité de degré 2 (Ω/2π).",
+      "temoin": "La superposition ζ·L(s, χ5), de même densité, sans répulsion entre ses deux familles.",
+      "refutation": "Des écarts de L(Δ, s) distribués comme ceux de ζ·L (pas de répulsion), ou une marge qui ne suit pas 1 − sinc²(πs).",
+      "gains": {},
+      "probabilite": 0.7,
+      "cout": 1,
+      "repond_a": [
+        "La Somme sans répulsion : DH est-il, localement, une somme sans répulsion ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "heisenberg_degre2"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.7,
+        "cout": 1,
+        "refutation": "Des écarts de L(Δ, s) distribués comme ceux de ζ·L (pas de répulsion), ou une marge qui ne suit pas 1 − sinc²(πs)."
+      },
+      "version": "V6.17",
+      "document": "41_LA_RENCONTRE_EN_DEGRE_2.pdf",
+      "refutation_tenue": "Non réfutée : les 2 139 zéros de L(Δ, s) jusqu'à 1 500 (Contour tourné) se repoussent (8 marges sous 0,1 contre 641 pour Poisson), et ζ·L(χ5) sert de témoin sans répulsion mutuelle (15 % de marges sous 0,1, toutes mixtes). Prévisions (data/prevision_v617.md) : P1, P3, P4 tenues ; P2 fausse (Δ garde le même déficit de petites marges que ζ, rapport 0,31 au GUE exact).",
+      "appris": "En degré 2, la rencontre a lieu deux fois : entre zéros (répulsion mesurée, avec un déficit à basse hauteur) et entre les racines de chaque premier (marge sin²θ_p : Deligne, arithmétique, Sato–Tate, trois théorèmes). Une fonction non primitive superpose des familles étrangères.",
+      "revision": "V6.17 : question écrite pour 189 zéros (V6.15) ; jouée sur 2 139 zéros grâce au Contour tourné, et le générateur de la V6.15 avait manqué 7 zéros près de 232."
+    },
+    {
+      "id": "rencontre_modele_reduit",
+      "titre": "La Rencontre dans le Modèle réduit",
+      "statut": "fait",
+      "question": "Sur les 525 courbes du Modèle réduit, où RH est démontrée, la marge des paires d'angles de Frobenius suit-elle 1 − sinc²(πs), et les zéros confondus ont-ils marge nulle sans sortie ?",
+      "operateurs": [
+        "Le Modèle réduit",
+        "La Rencontre à trois",
+        "Le Faux jumeau entier",
+        "La Loi de la marge",
+        "Les Familles étrangères"
+      ],
+      "croise": [
+        "RH",
+        "SZ",
+        "PC"
+      ],
+      "these": "Le croisement de la V6.16 a son pendant exact sur les corps finis ; la répulsion y est celle de la famille (Katz–Sarnak, symétrie symplectique), et les faux jumeaux sortent par une marge négative.",
+      "temoin": "Les 220 faux jumeaux entiers : comptages positifs, RH fausse.",
+      "refutation": "Des marges sans relation avec les écarts, ou des faux jumeaux sans marge négative.",
+      "gains": {},
+      "probabilite": 0.8,
+      "cout": 1.5,
+      "repond_a": [
+        "La Zone d'ombre : chaque croisement sur ζ a-t-il son pendant dans le Modèle réduit ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 1.5,
+        "refutation": "Des marges sans relation avec les écarts, ou des faux jumeaux sans marge négative."
+      },
+      "version": "V6.17",
+      "document": "41_LA_RENCONTRE_EN_DEGRE_2.pdf",
+      "refutation_tenue": "Non réfutée : à la fenêtre N la marge d'une paire est exactement la corrélation de paires du CUE(N) (identité), la marge totale la densité de Weyl (vérifié sur les 425 courbes à 2,5·10⁻¹³) ; une courbe à angles confondus a marge nulle avec RH vraie ; les 220 faux jumeaux ont tous une marge négative (V6.7). Sur 561 258 courbes de genre 1 : Sato–Tate (moments 1, 2, 5) ; collisions de l'étage 2 = courbes supersingulières. P5 tenue sauf la clause de monotonie.",
+      "appris": "Le pendant n'est pas 1 − sinc²(πs) mais sa version finie, la corrélation du CUE de taille 2g ; et la loi des familles est la loi de la marge (Sato–Tate = (2/π) × marge). Le changement de base F_p → F_p² est le pendant exact de ζ·L(χ5) : il superpose deux familles et fabrique des collisions sans casser RH."
+    },
+    {
+      "id": "constante_Q_modele_reduit",
+      "titre": "La constante de Q dans le Modèle réduit",
+      "statut": "ouvert",
+      "question": "Pour une courbe sur F_q à zéros confondus (supersingulière), l'analogue de Q a-t-il la constante modifiée que prévoit le corollaire B′ ?",
+      "operateurs": [
+        "Le Modèle réduit",
+        "Le Compteur de paires"
+      ],
+      "croise": [
+        "RH",
+        "SZ"
+      ],
+      "these": "Sur les corps finis, la constante de croissance de l'analogue de Q compte les multiplicités : S = Σ m²(m+1)²/|ρ|², plus grande que pour des zéros simples.",
+      "temoin": "Les courbes à zéros simples de même genre.",
+      "refutation": "Une constante insensible aux multiplicités.",
+      "gains": {},
+      "probabilite": 0.7,
+      "cout": 1.5,
+      "repond_a": [
+        "La Zone d'ombre : chaque croisement sur ζ a-t-il son pendant dans le Modèle réduit ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.7,
+        "cout": 1.5,
+        "refutation": "Une constante insensible aux multiplicités."
+      }
+    },
+    {
+      "id": "taille_effective_delta",
+      "titre": "La taille effective de Δ",
+      "statut": "ouvert",
+      "question": "Le déficit de petites marges des zéros de L(Δ, s) (0,31 du GUE exact au seuil 0,1, 0,62 au seuil 0,3) est-il l'effet de hauteur finie de Bogomolny et al., avec une constante Λ_Δ propre à Δ ?",
+      "operateurs": [
+        "La Loi de la marge",
+        "Le Temps de Heisenberg",
+        "Le Poids archimédien"
+      ],
+      "croise": [
+        "PC",
+        "D2"
+      ],
+      "these": "La constante Λ de la formule de Bogomolny–Keating, adaptée à Δ par sa fonction de Rankin–Selberg, vaut entre 2,8 et 5,1 (contre 1,57314 pour ζ).",
+      "temoin": "ζ : la même formule doit redonner Λ = 1,57314 et un N_eff compatible avec le déficit mesuré en V6.16.",
+      "refutation": "Λ_Δ ≤ 2 : le déficit de Δ ne serait pas l'effet de hauteur finie.",
+      "gains": {},
+      "probabilite": 0.5,
+      "cout": 2,
+      "repond_a": [
+        "La Loi de la marge : le déficit à basse hauteur est-il le même phénomène en degré 1 et 2 ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "repulsion_degre2"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 2,
+        "refutation": "Λ_Δ ≤ 2 : le déficit de Δ ne serait pas l'effet de hauteur finie."
+      }
+    },
+    {
+      "id": "loi_marge_genre2",
+      "titre": "La Loi de la marge en genre 2",
+      "statut": "ouvert",
+      "question": "Pour les courbes de genre 2 (famille symplectique USp(4)), quelle métrique a pour marge la densité de Haar, et la famille la suit-elle ?",
+      "operateurs": [
+        "La Loi de la marge",
+        "Le Modèle réduit",
+        "Les Familles étrangères"
+      ],
+      "croise": [
+        "RH",
+        "SZ",
+        "PC"
+      ],
+      "these": "La densité de USp(4) est le produit des marges locales sin²θ_j et de la marge de la paire (cos θ_1, cos θ_2) : c'est la marge d'une métrique de taille 2 sur les variables réelles x = 2 cos θ.",
+      "temoin": "Le déterminant de la métrique de taille 4 (loi de U(4)), qui ne doit pas convenir.",
+      "refutation": "Une famille de courbes de genre 2 dont les angles ne suivent ni la marge proposée ni celle de U(4).",
+      "gains": {},
+      "probabilite": 0.7,
+      "cout": 1.5,
+      "repond_a": [
+        "La Loi de la marge : quelle métrique a pour marge la densité de USp(2g) ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "rencontre_modele_reduit"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.7,
+        "cout": 1.5,
+        "refutation": "Une famille de courbes de genre 2 dont les angles ne suivent ni la marge proposée ni celle de U(4)."
+      }
+    },
+    {
+      "id": "dbn_degre2",
+      "titre": "De Bruijn–Newman en degré 2",
+      "statut": "ouvert",
+      "question": "Sous le flot de la chaleur appliqué à Ξ_Δ, à quel temps la paire la plus serrée de Δ (823,13 ; s = 0,123) se rencontre-t-elle, et quelle borne inférieure en tire-t-on pour la constante de de Bruijn–Newman de Δ ?",
+      "operateurs": [
+        "La Rencontre à trois",
+        "Le Contour tourné",
+        "La Zone d'ombre"
+      ],
+      "croise": [
+        "dBN",
+        "D2",
+        "RH"
+      ],
+      "these": "Comme pour ζ, la paire la plus serrée fixe la borne ; la répulsion mesurée de Δ la rend comparable à celle des paires de ζ de même s.",
+      "temoin": "ζ : la paire de Lehmer près de 7 005 et la borne connue qu'elle donne (littérature).",
+      "refutation": "Une borne sans relation avec l'écart de la paire.",
+      "gains": {},
+      "probabilite": 0.5,
+      "cout": 2,
+      "repond_a": [
+        "La Zone d'ombre : de Bruijn–Newman × degré 2 est-elle vide par manque de calcul ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "repulsion_degre2"
+      ],
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 2,
+        "refutation": "Une borne sans relation avec l'écart de la paire."
+      }
+    },
+    {
+      "id": "preparer_relecture",
+      "titre": "Préparer la relecture",
+      "statut": "fait",
+      "cout": 1.5,
+      "question": "Le dossier de relecture (Théorèmes A et B, note sur l'Archipel) est-il à jour et pose-t-il des questions précises ?",
+      "operateurs": [
+        "Le Rayon spectral"
+      ],
+      "these": "Un dossier court, à jour (A, B, rigidité au premier ordre, usage de Saias–Weingartner), avec trois questions précises, rend la relecture possible.",
+      "temoin": "Le dossier de relecture de la V4.5 (document 03), à refaire.",
+      "refutation": "Une erreur trouvée dans A ou B pendant la préparation.",
+      "repond_a": [
+        "Relecture externe de A et B : le seul axe dont tout le reste dépend"
+      ],
+      "gains": {
+        "demontrer": 1
+      },
+      "probabilite": 0.3,
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {
+          "demontrer": 1
+        },
+        "probabilite": 0.3,
+        "cout": 1.5,
+        "refutation": "Une erreur trouvée dans A ou B pendant la préparation."
+      },
+      "version": "V6.13",
+      "document": "37_PRE_RELECTURE_A_B_ARCHIPEL.pdf",
+      "refutation_tenue": "Tenue : aucune erreur dans A ni dans B ; une phrase fausse corrigée dans la note 30 (§3.1), un trou comblable au §3.4 (citer Saias–Weingartner, Th. 2).",
+      "appris": "A et B corrects, méthodes standard (analogues de Cramér et de la caractérisation de Θ par ψ) ; corollaire de l'Archipel déjà publié (Saias–Weingartner ; Booker–Thorne en degré 2) ; corollaire nouveau B′ : sous RH, la constante de Q vaut 4κ/3 si et seulement si les zéros sont simples ; dossier envoyable dans 1_Presentation/relecture/."
+    },
+    {
+      "id": "relecture",
+      "titre": "Faire relire",
+      "statut": "humain",
+      "question": "Les Théorèmes A et B et la note sur l'Archipel sont-ils justes ?",
+      "operateurs": [],
+      "these": "Les énoncés démontrés tiennent.",
+      "temoin": "Un spécialiste, avec le dossier 1_Presentation/relecture/ (V6.13) et le message d'accompagnement (document 37, annexe).",
+      "refutation": "Une erreur trouvée par le relecteur.",
+      "gains": {
+        "demontrer": 1
+      },
+      "probabilite": 0.5,
+      "cout": 3,
+      "repond_a": [],
+      "debloque": [],
+      "prerequis": [
+        "preparer_relecture"
+      ]
+    },
+    {
+      "id": "metrique_objet",
+      "titre": "L'objet qui porte la métrique",
+      "statut": "route à construire",
+      "question": "Quel objet, un étage au-dessus de ζ, induirait la métrique positive comme C×C le fait pour une courbe ?",
+      "operateurs": [
+        "Scène manquante",
+        "La Métrique manquante",
+        "Positivité porteuse"
+      ],
+      "these": "La positivité de ζ est la restriction d'une positivité nécessaire sur un objet plus grand.",
+      "temoin": "DH : opérateur reconstructible, métrique indéfinie ; aucun objet derrière.",
+      "refutation": "—",
+      "gains": {
+        "case": 6
+      },
+      "probabilite": 0.0,
+      "cout": 5,
+      "repond_a": [],
+      "debloque": [],
+      "prerequis": [],
+      "maillon": "metrique"
+    },
+    {
+      "id": "seuil_detecteur_K",
+      "titre": "Le seuil du Détecteur K(L)",
+      "statut": "ouvert",
+      "question": "Dans l'interpolation L(s, χ₅) → DH (V6.7), où β − ½ et γ de chaque paire sortante sont connus, à quelle longueur L* la densité K(L) décolle-t-elle de la courbe de ζ, et comment L* dépend-il de β − ½ et de γ ?",
+      "these": "K étant global, L* est fixé par la compétition e^{(2β−1)L} contre L³ (donc surtout par β − ½), et non par la hauteur γ comme le temps de Heisenberg des innovations.",
+      "temoin": "ζ et L(s, χ₅) : aucun décollage jusqu'à l'horizon calculable ; comparaison avec la loi de seuil des innovations (V6.14) sur les mêmes paires.",
+      "refutation": "L* indépendant de β − ½, ou égal au temps de Heisenberg log(qγ/2π) : K n'apporterait rien de plus que l'Innovation.",
+      "croise": [
+        "RH"
+      ],
+      "cout": 1.0,
+      "probabilite": 0.6,
+      "gains": {},
+      "repond_a": [
+        "Le Détecteur : quel est le seuil de détection en fonction de la hauteur du zéro fautif ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "Le Détecteur",
+        "Le Thermomètre",
+        "Le Temps de Heisenberg"
+      ],
+      "origine": "OpenAI (attachment-5eb2a7ac.txt)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.6,
+        "cout": 1.0,
+        "refutation": "L* indépendant de β − ½, ou égal au temps de Heisenberg log(qγ/2π) : K n'apporterait rien de plus que l'Innovation."
+      }
+    },
+    {
+      "id": "coefficients_bohr_psi",
+      "titre": "Les coefficients de Bohr de Ψ",
+      "statut": "ouvert",
+      "question": "Les moyennes (1/L)∫Ψ(u)e^{−iγu}du, calculées depuis C(x) seul, retrouvent-elles les ordonnées des zéros et les amplitudes A_ρ du pôle double, et la somme Σ|A_ρ|² referme-t-elle la limite de K(L) (Parseval de Besicovitch) ?",
+      "these": "Le spectre de Bohr de Ψ est l'ensemble des γ ; les amplitudes portent la multiplicité (m(m+1)), donc la même information que le corollaire B′ ; l'écart au Diapason à hauteur finie est la part non résolue de cette somme.",
+      "temoin": "DH : Ψ n'est pas dans B² (croissance exponentielle) ; pendant dans le Modèle réduit : courbe supersingulière à zéros confondus.",
+      "refutation": "Parseval qui ne se referme pas à la précision mesurée, ou amplitudes insensibles à la multiplicité.",
+      "croise": [
+        "RH",
+        "SZ"
+      ],
+      "cout": 1.5,
+      "probabilite": 0.5,
+      "gains": {},
+      "repond_a": [
+        "Le Diapason : l'écart au diapason à hauteur finie est-il une signature exploitable ?",
+        "Le Carrousel : quel « moteur » arithmétique imposerait la rotation pure ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "Le Carrousel",
+        "La Loupe double",
+        "Le Diapason"
+      ],
+      "origine": "OpenAI (attachment-5eb2a7ac.txt)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 1.5,
+        "refutation": "Parseval qui ne se referme pas à la précision mesurée, ou amplitudes insensibles à la multiplicité."
+      }
+    },
+    {
+      "id": "thermostat_du_sosie",
+      "titre": "Le Thermostat du Sosie",
+      "statut": "ouvert",
+      "question": "Sous le flot de la chaleur appliqué à Ξ_DH (combinaison linéaire des Ξ_χ mod 5, donc flot calculable), à quel temps Λ_DH les quadruplets hors droite rejoignent-ils la droite, et l'inertie n₋(t) de la compression DUAL-LOCK décroît-elle par paliers, un par quadruplet, dans l'ordre inverse des sorties θ = 0,280 ; 0,602 ; 0,646 ; 0,937 de V6.7 ?",
+      "these": "Λ_DH > 0 est fixé par le quadruplet le plus éloigné (σ = 0,8085, t = 85,7) ; n₋(t) est une fonction en escalier qui compte les quadruplets encore hors droite (programme V6-A).",
+      "temoin": "L(s, χ₅) : n₋(t) = 0 pour tout t ≥ 0 ; ζ : borne de la littérature (0 ≤ Λ ≤ 0,2).",
+      "refutation": "n₋(t) non monotone, ou ordre de retour sans rapport avec l'écart à la droite ni avec l'ordre de sortie en θ.",
+      "croise": [
+        "dBN",
+        "RH"
+      ],
+      "cout": 2.0,
+      "probabilite": 0.5,
+      "gains": {},
+      "repond_a": [
+        "Le Point critique : quel principe placerait un objet pile au point critique ?"
+      ],
+      "debloque": [
+        "dbn_degre2"
+      ],
+      "prerequis": [],
+      "operateurs": [
+        "Thermostat critique",
+        "Flux d'inertie",
+        "Le Point critique",
+        "Le Sosie"
+      ],
+      "origine": "OpenAI (attachment-5eb2a7ac.txt ; doc 14)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 2.0,
+        "refutation": "n₋(t) non monotone, ou ordre de retour sans rapport avec l'écart à la droite ni avec l'ordre de sortie en θ."
+      }
+    },
+    {
+      "id": "tamis_a_deux_sosie",
+      "titre": "Le Tamis à deux contre le Sosie",
+      "statut": "ouvert",
+      "question": "La parcimonie de c (nul dès trois facteurs premiers distincts) a-t-elle un analogue pour L(s, χ₅), échoue-t-elle pour DH, et restreint-elle la somme de carrés V_N à un petit nombre de canaux q ?",
+      "these": "La parcimonie est une conséquence du produit d'Euler et ne laisse dans V_N que les canaux q à au plus deux facteurs premiers.",
+      "temoin": "Steinhaus (produit d'Euler sans équation fonctionnelle) : s'il a la même parcimonie, la propriété ne dit rien de plus que PRIME-LOCK.",
+      "refutation": "Parcimonie identique chez Steinhaus et aucun effet sur V_N : branche réduite à PRIME-LOCK.",
+      "croise": [
+        "RH"
+      ],
+      "cout": 1.0,
+      "probabilite": 0.3,
+      "gains": {},
+      "repond_a": [
+        "Le Tamis à deux : le produit d'Euler se cache-t-il là ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "Le Tamis à deux",
+        "Fermeture multiplicative",
+        "Jumeau de crash-test"
+      ],
+      "origine": "OpenAI (attachment-5eb2a7ac.txt)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.3,
+        "cout": 1.0,
+        "refutation": "Parcimonie identique chez Steinhaus et aucun effet sur V_N : branche réduite à PRIME-LOCK."
+      }
+    },
+    {
+      "id": "palier_quatre_tiers",
+      "titre": "Le Palier 4/3 : antériorité et simplicité",
+      "statut": "ouvert",
+      "question": "La limite 4/3 · κ/log N des familles qui annulent le pôle est-elle connue (Landreau–Richard, BCF), est-elle la même pour toute direction de courbure qui annule le pôle (μ log² n, μ log³ n), et sa constante compte-t-elle les multiplicités comme le corollaire B′ ?",
+      "these": "Le palier vaut (4/3)·b² κ/log N pour toute famille avec W_N(1) = 0 ; via Q ∼ (S/3) log³N il porte S, donc la simplicité des zéros.",
+      "temoin": "Les familles sans annulation du pôle ({μ, μ log n}) : palier différent, sans limite 4/3.",
+      "refutation": "Deux familles qui annulent le pôle avec des paliers asymptotiques distincts au-delà de l'erreur mesurée.",
+      "croise": [
+        "RH",
+        "SZ"
+      ],
+      "cout": 1.5,
+      "probabilite": 0.5,
+      "gains": {},
+      "repond_a": [
+        "Le Palier : le palier est-il une constante universelle des familles à deux directions ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "Le Palier",
+        "Filtre antipôle",
+        "Le Diapason"
+      ],
+      "origine": "OpenAI (attachment-be001772.txt)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 1.5,
+        "refutation": "Deux familles qui annulent le pôle avec des paliers asymptotiques distincts au-delà de l'erreur mesurée."
+      }
+    },
+    {
+      "id": "plusieurs_bouchons",
+      "titre": "Plusieurs bouchons",
+      "statut": "ouvert",
+      "question": "Ajouter à W_N(1) = 0 les contraintes W_N(0) = −2 et W'_N(1) = 1 (multiplicateurs de Lagrange, Gram exacte jusqu'à N = 998, puis identité e² = β²Q + T_N au-delà) change-t-il le palier e² log N/κ ?",
+      "these": "Le bouchon en s = 0 retire le terme ¼(Σw + 2)² (fluctuation de Mertens), utile à petit N, mais le palier asymptotique reste gouverné par β²Q : gain qui s'annule quand N croît.",
+      "temoin": "μ seul : le bouchon en s = 0 y retire ¼M(N)², effet massif attendu.",
+      "refutation": "Un gain asymptotique d'au moins 10 % sur le palier de {μ, a}, ou une dégradation systématique (ce qui confirmerait OpenAI et infirmerait la thèse).",
+      "croise": [
+        "RH"
+      ],
+      "cout": 1.0,
+      "probabilite": 0.6,
+      "gains": {},
+      "repond_a": [
+        "Le Bouchon et la Fuite : plusieurs bouchons à la fois (s = 1, s = 0, dérivées) ?",
+        "Le Contrepoids : quels autres contrepoids ?"
+      ],
+      "debloque": [
+        "palier_quatre_tiers"
+      ],
+      "prerequis": [],
+      "operateurs": [
+        "Le Bouchon et la Fuite",
+        "Le Contrepoids",
+        "Filtre antipôle"
+      ],
+      "origine": "OpenAI (attachment.txt)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.6,
+        "cout": 1.0,
+        "refutation": "Un gain asymptotique d'au moins 10 % sur le palier de {μ, a}, ou une dégradation systématique (ce qui confirmerait OpenAI et infirmerait la thèse)."
+      }
+    },
+    {
+      "id": "queue_par_l_echo",
+      "titre": "La queue bornée par l'Écho",
+      "statut": "ouvert",
+      "question": "Peut-on démontrer sans RH que N·T_N ≪ V_N (et T_N → 0) pour w = μ + β_pc·a, en exploitant la constance de E(m) sur [m, m+1) et la factorisation par J₂ ?",
+      "these": "La queue est contrôlée inconditionnellement par la somme de carrés ; RH est alors localisée exactement dans β²Q(N), sans reste.",
+      "temoin": "Construction analogue avec les coefficients de DH : la queue doit rester bornée elle aussi (la queue ne voit pas les zéros hors droite).",
+      "refutation": "N·T_N / V_N non borné jusqu'à N = 10⁷, ou queue de DH qui diverge (la queue porterait alors de l'information).",
+      "croise": [
+        "RH"
+      ],
+      "cout": 2.0,
+      "probabilite": 0.4,
+      "gains": {},
+      "repond_a": [],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "L'Écho des pgcd",
+        "Le Bouchon et la Fuite",
+        "Effaceur orthogonal"
+      ],
+      "origine": "OpenAI (attachment.txt)",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.4,
+        "cout": 2.0,
+        "refutation": "N·T_N / V_N non borné jusqu'à N = 10⁷, ou queue de DH qui diverge (la queue porterait alors de l'information)."
+      }
+    },
+    {
+      "id": "lire_Wei48",
+      "titre": "Lire A. Weil (1948) en entier",
+      "statut": "ouvert",
+      "type": "lecture",
+      "question": "La source [Wei48] dit-elle exactement ce que le corpus lui attribue ? (RH pour les courbes sur les corps finis est rendue nécessaire par une positivité sur la surface C × C (inégalité de Castelnuovo).)",
+      "these": "Lecture ciblée du mémoire via retranscription : positivité de trace sur les correspondances et Frobenius ; ne pas réduire ce mémoire à la seule jacobienne. Lecture intégrale et recoupement de l’édition encore ouverts.",
+      "temoin": "La fiche du registre des sources (document 42) et ce qui y est déjà vérifié.",
+      "refutation": "Un énoncé de la source contraire à l'usage du corpus.",
+      "gains": {},
+      "probabilite": 0.8,
+      "cout": 1.0,
+      "repond_a": [
+        "Registre des sources : [Wei48] est partiellement vérifié (intérêt : appui)."
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "source": "Wei48",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 1.0,
+        "refutation": "Un énoncé de la source contraire à l'usage du corpus."
+      },
+      "appris_v643": "Théorème 10 et application au Frobenius consultés ; fiche précédente rectifiée, statut intégral non attribué."
+    },
+    {
+      "id": "lire_Ham21",
+      "titre": "Lire H. Hamburger (1921) en entier",
+      "statut": "fait",
+      "type": "lecture",
+      "question": "La source [Ham21] dit-elle exactement ce que le corpus lui attribue ? (Une série de Dirichlet avec l'équation fonctionnelle de ζ (ordre fini, nombre fini de pôles) est un multiple de ζ.)",
+      "these": "Énoncé original : nombre fini de pôles et croissance e^(|s|^γ) hors disque ; convergence absolue et équation fonctionnelle exacte.",
+      "temoin": "La fiche du registre des sources (document 42) et ce qui y est déjà vérifié.",
+      "refutation": "Un énoncé de la source contraire à l'usage du corpus.",
+      "gains": {},
+      "probabilite": 0.8,
+      "cout": 1.0,
+      "repond_a": [
+        "Registre des sources : [Ham21] est partiellement vérifié (intérêt : appui)."
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "source": "Ham21",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 1.0,
+        "refutation": "Un énoncé de la source contraire à l'usage du corpus."
+      },
+      "version": "V6.43",
+      "appris": "Original 1921 relu ; nombre fini de pôles autorisé, croissance contrôlée, séries de Dirichlet et équation exacte. La version Perelli plus étroite n’est pas l’énoncé original.",
+      "document": "67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "lire_Beu55",
+      "titre": "Lire A. Beurling (1955) en entier",
+      "statut": "fait",
+      "type": "lecture",
+      "question": "La source [Beu55] dit-elle exactement ce que le corpus lui attribue ? (Critère de Nyman–Beurling (moitié Beurling, cas Lᵖ).)",
+      "these": "La citation est exacte ; la lire en entier la rend vérifiée.",
+      "temoin": "La fiche du registre des sources (document 42) et ce qui y est déjà vérifié.",
+      "refutation": "Un énoncé de la source contraire à l'usage du corpus.",
+      "gains": {},
+      "probabilite": 0.8,
+      "cout": 1.0,
+      "repond_a": [
+        "Registre des sources : [Beu55] est partiellement vérifié (intérêt : appui)."
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "source": "Beu55",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.8,
+        "cout": 1.0,
+        "refutation": "Un énoncé de la source contraire à l'usage du corpus."
+      },
+      "version": "V6.43",
+      "appris": "Texte primaire relu ; semi-groupe invariant, densité ↔ approximation de 1, Mellin et dépendance au théorème 1953 explicités. Pont d’erreur reconstruit sans signe global.",
+      "document": "67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf"
+    },
+    {
+      "id": "rencontre_a_n",
+      "titre": "La Rencontre à n",
+      "statut": "fait",
+      "cout": 0.5,
+      "question": "La marge d'un n-uplet de zéros est-elle sa corrélation à n points, et les triplets de ζ suivent-ils le noyau sinus ?",
+      "operateurs": [
+        "La Loi de la marge",
+        "La Rencontre à trois",
+        "Le Temps de Heisenberg"
+      ],
+      "these": "det(G/N) = det[D_N(θ_l − θ_m)] = (2π/N)^n R_n du CUE(N) ; les triplets de ζ suivent R3.",
+      "temoin": "Poisson ; ζ·L(χ5) (familles étrangères).",
+      "refutation": "χ² réduit > 2 pour R3 ou < 5 pour Poisson.",
+      "repond_a": [
+        "La Loi de la marge : vaut-elle au-delà des paires ?"
+      ],
+      "gains": {
+        "comprendre": 1,
+        "croiser": 1,
+        "voir": 1
+      },
+      "probabilite": 0.6,
+      "debloque": [],
+      "prerequis": [],
+      "croise": [
+        "PC",
+        "SZ"
+      ],
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "croiser": 1,
+          "voir": 1
+        },
+        "probabilite": 0.6,
+        "cout": 0.5,
+        "refutation": "χ² réduit > 2 pour R3 ou < 5 pour Poisson."
+      },
+      "version": "V6.19",
+      "document": "43_PLAN_DE_RECHERCHE_LA_RENCONTRE_A_N.pdf",
+      "refutation_tenue": "Tenue : χ² 1,34 pour R3, 17,3 pour Poisson ; identité à 1,4·10⁻¹⁵.",
+      "appris": "Identité démontrée pour tout n ; trou triple plus profond que le produit des paires ; loi de superposition des Familles étrangères (χ² 0,87) ; déficit à basse hauteur (0 triplet pour 4,4 attendus).",
+      "origine": "Plan V6.19 (doc. 43)"
+    },
+    {
+      "id": "rencontre_a_n_hauteur",
+      "titre": "La Rencontre à n en hauteur",
+      "statut": "fait",
+      "question": "Le déficit de triplets serrés de ζ à basse hauteur (0 pour 4,4 attendus) disparaît-il avec la formule det[D_N] prolongée aux N réels, à N = N_eff ≈ 1,08 de Bogomolny et al. (une vraie matrice de taille N_eff n'a pas de triplets) ?",
+      "these": "La formule prolongée det[D_N] à N réel ramène le χ² réduit sous 1,2 et la masse de la zone serrée près de 0.",
+      "temoin": "Suite de Poisson dépliée de même densité.",
+      "refutation": "Le CUE(N_eff) n'améliore pas le χ² de 20 %.",
+      "croise": [
+        "PC",
+        "SZ"
+      ],
+      "cout": 1,
+      "probabilite": 0.6,
+      "gains": {
+        "comprendre": 1,
+        "croiser": 1
+      },
+      "repond_a": [
+        "La Rencontre à n : le déficit à basse hauteur est-il l'effet de taille finie ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "rencontre_a_n"
+      ],
+      "operateurs": [
+        "La Rencontre à n",
+        "Le Temps de Heisenberg",
+        "La Loi de la marge"
+      ],
+      "origine": "Plan V6.19 (doc. 43)",
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "croiser": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1,
+        "refutation": "Le CUE(N_eff) n'améliore pas le χ² de 20 %."
+      },
+      "version": "V6.28",
+      "document": "53_LA_RENCONTRE_EN_HAUTEUR.pdf",
+      "refutation_tenue": "Réfutée : la formule det[D_N] prolongée aux N réels donne des densités négatives près de N = 1 ; aucun triplet dans la zone x + y ≤ 1.",
+      "appris": "Le modèle de taille effective est inutilisable à ces hauteurs ; fait mesuré : trou à trois (triples de portée < 1) : ζ 0 pour 15,6, L(χ5) 0 pour 7,2, Δ 3 pour 31,1 ; le CUE de taille finie suit le noyau sinus."
+    },
+    {
+      "id": "montgomery_sans_rh",
+      "titre": "Montgomery sans RH et le Compteur de paires",
+      "statut": "ouvert",
+      "question": "La part d'écart de β (35 % portée par 10 % des zéros) se déduit-elle du facteur de forme F(α), dont Baluyot et al. donnent une version sans RH ?",
+      "these": "La part de β se lit sur F(α) à 10 % près.",
+      "temoin": "DH : F n'a pas la forme GUE.",
+      "refutation": "Écart de plus de 25 %.",
+      "croise": [
+        "PC",
+        "RH"
+      ],
+      "cout": 1.5,
+      "probabilite": 0.45,
+      "gains": {
+        "comprendre": 1,
+        "situer": 1
+      },
+      "repond_a": [
+        "Le Compteur de paires : quelle loi gouverne la part d'écart de β ?"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "rencontre_a_n"
+      ],
+      "operateurs": [
+        "La Loi de la marge",
+        "Le Compteur de paires"
+      ],
+      "origine": "Plan V6.19 (doc. 43)",
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "situer": 1
+        },
+        "probabilite": 0.45,
+        "cout": 1.5,
+        "refutation": "Écart de plus de 25 %."
+      }
+    },
+    {
+      "id": "collisions_du_flot",
+      "titre": "Les collisions du flot de la chaleur",
+      "statut": "ouvert",
+      "question": "En remontant le flot de de Bruijn–Newman, le temps de collision d'une paire de zéros de ζ suit-il une puissance de sa marge initiale, la paire de Lehmer en tête ?",
+      "these": "|t_c| ∝ m^a avec 0,5 ≤ a ≤ 1,5 ; la paire de Lehmer entre en collision la première dans sa fenêtre.",
+      "temoin": "DH : quadruplets hors droite (coup « Le Thermostat du Sosie »).",
+      "refutation": "Spearman(|t_c|, m) < 0,3.",
+      "croise": [
+        "dBN",
+        "SZ",
+        "RH"
+      ],
+      "cout": 2,
+      "probabilite": 0.45,
+      "gains": {
+        "croiser": 2,
+        "case": 1
+      },
+      "repond_a": [
+        "Matrice des théories : la case dBN × simplicité"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "rencontre_a_n"
+      ],
+      "operateurs": [
+        "Thermostat critique",
+        "La Rencontre à trois"
+      ],
+      "origine": "Plan V6.19 (doc. 43)",
+      "prevision": {
+        "gains": {
+          "croiser": 2,
+          "case": 1
+        },
+        "probabilite": 0.45,
+        "cout": 2,
+        "refutation": "Spearman(|t_c|, m) < 0,3."
+      }
+    },
+    {
+      "id": "lire_proportions_2026",
+      "titre": "Lire les proportions de 2026",
+      "statut": "fait",
+      "question": "Les proportions de zéros simples et critiques (Alpöge–Furman, Lamzouri, B. Wang, Pearce-Crump) sont-elles des proportions de marges non nulles ?",
+      "these": "La compression de Weil d'Alpöge–Furman se réécrit comme un recensement de marges.",
+      "temoin": "Davenport–Heilbronn : mêmes compressions, autre conclusion.",
+      "refutation": "Aucun lien lisible entre la compression et la marge après lecture.",
+      "croise": [
+        "SZ",
+        "RH"
+      ],
+      "cout": 1,
+      "probabilite": 0.4,
+      "gains": {
+        "situer": 1,
+        "comprendre": 1
+      },
+      "repond_a": [
+        "Census spectral : que recensent exactement les proportions ?"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "Census spectral",
+        "Positivité porteuse"
+      ],
+      "origine": "Plan V6.19 (doc. 43)",
+      "type": "lecture",
+      "prevision": {
+        "gains": {
+          "situer": 1,
+          "comprendre": 1
+        },
+        "probabilite": 0.4,
+        "cout": 1,
+        "refutation": "Aucun lien lisible entre la compression et la marge après lecture."
+      },
+      "version": "V6.29",
+      "document": "54_LE_TROU_A_TROIS_LU.pdf",
+      "refutation_tenue": "Tenue pour Alpöge–Furman : avec une métrique normalisée, la borne rang–trace s'écrit n / (1 + (1/n) Σ_{i≠j} (1 − m_ij)), où m_ij est la marge de la paire (doc. 41) ; c'est un recensement de marges. Lamzouri, B. Wang et Pearce-Crump : résumés seulement, non relus dans ce sens.",
+      "appris": "Les deux tiers comptent les marges des paires : plus les marges sont proches de 1, plus la borne approche n. DH reste le témoin : ses proportions peuvent être de 100 % sans RH (Bombieri–Hejhal)."
+    },
+    {
+      "id": "completer_matrice",
+      "titre": "Compléter la matrice des théories",
+      "statut": "fait",
+      "question": "Quelles relations manquent entre les théories de la matrice (doc. 44), en commençant par les cases « ? », la ligne de Mertens, Hilbert–Pólya × Weil et énergie transverse × Nyman–Beurling ?",
+      "these": "Au moins dix cases se remplissent avec une source du registre.",
+      "temoin": "Une case remplie sans source est refusée par le générateur de la matrice.",
+      "refutation": "Moins de cinq cases sourcées après une séance.",
+      "croise": [
+        "RH"
+      ],
+      "cout": 1,
+      "probabilite": 0.7,
+      "gains": {
+        "situer": 2
+      },
+      "repond_a": [
+        "Matrice des théories : les cases à compléter"
+      ],
+      "debloque": [],
+      "prerequis": [],
+      "operateurs": [
+        "Géométrie par empreintes"
+      ],
+      "origine": "Plan V6.19 (doc. 43)",
+      "prevision": {
+        "gains": {
+          "situer": 2
+        },
+        "probabilite": 0.7,
+        "cout": 1,
+        "refutation": "Moins de cinq cases sourcées après une séance."
+      },
+      "version": "V6.29",
+      "document": "54_LE_TROU_A_TROIS_LU.pdf",
+      "refutation_tenue": "Tenue : 11 cases sourcées en une séance (Mertens par Titchmarsh, Lindelöf pour les premiers, Li ⇔ Weil, Hilbert–Pólya ≈ Modèle réduit, Katz–Sarnak deux fois, Weil ↗ simplicité, DH ✗ proportion, Riemann–Roch pour Spec Z ≈ Modèle réduit, Mertens ↗ Nyman–Beurling). Une ligne ajoutée (Lindelöf pour les premiers).",
+      "appris": "La case la plus utile est DH ✗ proportion : aucune proportion, même de 100 %, ne peut donner RH ; il faut une propriété qui distingue ζ de DH, comme la signature de la surface virtuelle."
+    },
+    {
+      "id": "palier_recalcule",
+      "titre": "Le Palier 4/3, recalculé",
+      "statut": "fait",
+      "cout": 1,
+      "question": "Le palier e_N² log N/κ ≈ 1,3 de la famille qui annule le pôle est-il 4/3, ou légèrement différent ?",
+      "these": "Le palier n'est pas une constante : rapport à 4/3 = 1 − c/L + O(1/L²), toutes valeurs sous 4/3, limite 4/3.",
+      "temoin": "La V5.6 (sept valeurs de N jusqu'à 10⁵).",
+      "refutation": "Valeurs au-dessus de 4/3, ou limite extrapolée hors de 4/3 ± 0,05.",
+      "croise": [
+        "RH",
+        "SZ"
+      ],
+      "operateurs": [
+        "Le Palier",
+        "Filtre antipôle",
+        "Le Diapason"
+      ],
+      "repond_a": [
+        "Le Palier : le palier est-il une constante universelle des familles à deux directions ?"
+      ],
+      "gains": {
+        "comprendre": 1,
+        "croiser": 1
+      },
+      "probabilite": 0.5,
+      "debloque": [],
+      "prerequis": [],
+      "origine": "OpenAI (attachment.txt) ; demande de l'auteur (V6.20)",
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "croiser": 1
+        },
+        "probabilite": 0.5,
+        "cout": 1,
+        "refutation": "Valeurs au-dessus de 4/3, ou limite extrapolée hors de 4/3 ± 0,05."
+      },
+      "version": "V6.20",
+      "document": "45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.pdf",
+      "refutation_tenue": "À moitié : médiane 0,985 × 4/3 (dans ± 0,05) ; mais 16 % des N au-dessus de 4/3, pics jusqu'à 3,27 × 4/3 là où A_N s'annule.",
+      "appris": "Légèrement différent : 1,313 = 0,985 × 4/3 en médiane de 10⁴ à 5·10⁶, sans montée visible ; le 4/3 apparent est une compensation (b² ≈ 1,16, r_Q ≈ 0,72, queue ≈ 0,15) ; pics où A_N s'annule ; T_N ≈ 2,9 κ/log²N ; la médiane lirait la simplicité (S/4κ)."
+    },
+    {
+      "id": "surface_virtuelle",
+      "titre": "La surface virtuelle",
+      "statut": "fait",
+      "cout": 1,
+      "question": "La forme d'intersection de la surface « virtuelle » des entiers, calculée depuis les premiers, a-t-elle la signature d'une vraie surface (indice de Hodge), et le sosie DH la viole-t-il ?",
+      "these": "Une seule direction positive pour ζ ; 2 en trop par quadruplet hors droite pour DH ; dans le Modèle réduit, 1 pour les courbes, 1 + (hors cercle)/2 pour les faux jumeaux.",
+      "temoin": "Les 220 faux jumeaux ; DH.",
+      "refutation": "ζ avec plus d'une direction positive, ou une courbe qui viole l'indice de Hodge.",
+      "croise": [
+        "RH"
+      ],
+      "operateurs": [
+        "La Surface virtuelle",
+        "Scène manquante",
+        "Positivité porteuse",
+        "Géométrie par empreintes"
+      ],
+      "repond_a": [
+        "Scène manquante : quelle structure expliquerait trace, dualité, positivité ?"
+      ],
+      "gains": {
+        "comprendre": 1,
+        "situer": 1,
+        "case": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Demande de l'auteur (V6.21)",
+      "version": "V6.21",
+      "document": "46_LA_SURFACE_VIRTUELLE.pdf",
+      "refutation_tenue": "Tenue : 425/425 courbes, 220/220 jumeaux (surplus exact), ζ une seule positive, DH 2 puis 10 en trop ; L(χ5) 0 (sans pôle, prévision mal formulée).",
+      "appris": "La marge du corpus est, au signe près, la forme d'intersection d'une surface ; le dictionnaire est classique (Weil, Bombieri, Connes) ; l'effectivité (comptages positifs) ne suffit pas : il manque un Riemann–Roch.",
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "situer": 1,
+          "case": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1,
+        "refutation": "ζ avec plus d'une direction positive, ou une courbe qui viole l'indice de Hodge."
+      }
+    },
+    {
+      "id": "riemann_roch_virtuel",
+      "titre": "Le Riemann–Roch virtuel",
+      "statut": "fait",
+      "cout": 1.5,
+      "question": "Dans le Modèle réduit, quelle inégalité de type Riemann–Roch, écrite avec les seuls comptages, les 425 courbes vérifient-elles et les 220 faux jumeaux violent-ils, avant l'étage où Castelnuovo les démasque ?",
+      "these": "Une telle inégalité existe dès la fenêtre g + 1 (Castelnuovo demande 2g + 1).",
+      "temoin": "Les faux jumeaux (comptages positifs, équation fonctionnelle, RH fausse).",
+      "refutation": "Aucune inégalité plus précoce que Castelnuovo ne sépare courbes et jumeaux.",
+      "croise": [
+        "RH"
+      ],
+      "operateurs": [
+        "La Surface virtuelle",
+        "Géométrie par empreintes",
+        "Positivité porteuse"
+      ],
+      "repond_a": [
+        "La Surface virtuelle : quelle propriété des premiers jouerait le rôle de Riemann–Roch ?"
+      ],
+      "gains": {
+        "comprendre": 2,
+        "case": 2,
+        "demontrer": 1
+      },
+      "probabilite": 0.35,
+      "origine": "Plan V6.21, axe J2",
+      "maillon": "metrique",
+      "prerequis": [
+        "surface_virtuelle"
+      ],
+      "debloque": [],
+      "prevision": {
+        "gains": {
+          "comprendre": 2,
+          "case": 2,
+          "demontrer": 1
+        },
+        "probabilite": 0.35,
+        "cout": 1.5,
+        "refutation": "Aucune inégalité plus précoce que Castelnuovo ne sépare courbes et jumeaux."
+      },
+      "version": "V6.22",
+      "document": "47_LE_RIEMANN_ROCH_VIRTUEL.pdf",
+      "refutation_tenue": "À moitié : aucune inégalité plus précoce que Castelnuovo ; Clifford 0/220, existence 2/220 ; Stepanov + tordu 220/220 à l'étage médian 4 (Castelnuovo 3).",
+      "appris": "La dimension seule (Clifford) ne suffit pas ; il faut une fonction auxiliaire, qui existe grâce à Riemann–Roch et au Frobenius (preuve de Bombieri), plus un revêtement (tordu) pour l'autre côté. Pour ζ, le lemme manquant est une borne unilatérale de ψ(x) − x par une fonction auxiliaire ; il demande un Frobenius absolu."
+    },
+    {
+      "id": "frobenius_non_geometrique",
+      "titre": "Le Frobenius qui n'est pas un morphisme",
+      "statut": "fait",
+      "cout": 1,
+      "question": "Dans le Modèle réduit, la borne de Stepanov–Bombieri tient-elle encore si l'on remplace le Frobenius par une permutation des points de même degré qui n'est pas un morphisme de la courbe ?",
+      "these": "Non : la construction de la fonction auxiliaire échoue (l'espace de Riemann–Roch ne contient plus de fonction s'annulant aux points permutés à l'ordre voulu) ; c'est le caractère géométrique du Frobenius qui porte RH.",
+      "temoin": "Le vrai Frobenius sur les 425 courbes.",
+      "refutation": "La borne tient avec une permutation quelconque : le Frobenius n'y jouerait aucun rôle propre.",
+      "croise": [
+        "RH"
+      ],
+      "operateurs": [
+        "La Fonction auxiliaire",
+        "Le Frobenius absolu",
+        "Géométrie par empreintes"
+      ],
+      "repond_a": [
+        "Le Frobenius absolu : une permutation qui n'est pas un morphisme suffit-elle ?"
+      ],
+      "gains": {
+        "comprendre": 2,
+        "case": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Plan V6.22, axe J5",
+      "prerequis": [
+        "riemann_roch_virtuel"
+      ],
+      "debloque": [],
+      "prevision": {
+        "gains": {
+          "comprendre": 2,
+          "case": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1,
+        "refutation": "La borne tient avec une permutation quelconque : le Frobenius n'y jouerait aucun rôle propre."
+      },
+      "version": "V6.23",
+      "document": "48_LE_FROBENIUS_QUI_N_EST_PAS_UN_MORPHISME.pdf",
+      "refutation_tenue": "Tenue : avec une permutation (et avec l'identité), plus de fonction auxiliaire (0 dans 10 et 12 cas sur 12) ; avec le Frobenius, 13 à 52.",
+      "appris": "Ni permuter les points ni être un morphisme ne suffit : c'est l'inséparabilité (dérivée nulle de x^p) qui fait chuter le rang des conditions d'annulation ; le Frobenius absolu de ζ devrait en avoir un analogue."
+    },
+    {
+      "id": "j3a_additivite_ou_derivee",
+      "titre": "J3 simplifié : additivité ou dérivée nulle ?",
+      "statut": "fait",
+      "cout": 0.5,
+      "question": "Dans la construction de Stepanov, est-ce l'additivité du Frobenius ou sa dérivée nulle qui fait exister la fonction auxiliaire ?",
+      "these": "Seule la dérivée nulle compte : x^p + x (additif, dérivée 1) échoue.",
+      "temoin": "x^p, x^p + 1, x^{2p}.",
+      "refutation": "x^p + x donne autant de fonctions auxiliaires que x^p.",
+      "croise": [
+        "RH"
+      ],
+      "operateurs": [
+        "La Fonction auxiliaire",
+        "La Dérivée nulle",
+        "Le Frobenius absolu"
+      ],
+      "repond_a": [
+        "La Dérivée nulle : l'action d'échelle de Connes–Consani a-t-elle une dérivée nulle ?"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Analyse de risques V6.24 (doc. 49)",
+      "version": "V6.24",
+      "document": "49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf",
+      "refutation_tenue": "Réfutée : x^p + x donne autant de fonctions auxiliaires que x^p (50, 52, 42 pour p = 101).",
+      "appris": "Ni l'additivité ni la dérivée de φ ne décident : ce qui compte est que l'espace contienne x^p, une fonction de haut degré égale aux points à une fonction simple et invisible aux dérivations ; sur Z, elle existe pour chaque premier séparément, pas pour tous à la fois.",
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {
+          "comprendre": 1
+        },
+        "probabilite": 0.6,
+        "cout": 0.5,
+        "refutation": "x^p + x donne autant de fonctions auxiliaires que x^p."
+      }
+    },
+    {
+      "id": "deux_tiers_meme_calcul",
+      "titre": "Le même calcul que les deux tiers",
+      "statut": "fait",
+      "cout": 0.5,
+      "question": "Que donne l'inégalité rang–trace d'Alpöge–Furman appliquée à nos zéros, selon la fenêtre de corrélation de paires utilisée ?",
+      "these": "À A = 1 : distincts 0,75, simples 0,50 (noyau de Fejér) ; distincts ≥ 0,95 à A = 4 ; le mélange ζ·L(χ5) fait moins bien.",
+      "temoin": "ζ·L(χ5) (familles étrangères) ; le noyau sinus théorique.",
+      "refutation": "Borne de nos zéros très différente de la théorie, ou mélange aussi bon que ζ seule.",
+      "croise": [
+        "SZ",
+        "PC"
+      ],
+      "operateurs": [
+        "Census spectral",
+        "La Loi de la marge",
+        "La Rencontre à n"
+      ],
+      "repond_a": [
+        "Census spectral : que recensent exactement les proportions ?"
+      ],
+      "gains": {
+        "situer": 1,
+        "croiser": 1
+      },
+      "probabilite": 0.7,
+      "origine": "Demande de l'auteur (V6.24)",
+      "version": "V6.24",
+      "document": "49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.pdf",
+      "refutation_tenue": "Tenue : 0,56 de simples à A = 1 (théorie 0,50 ; un peu au-dessus de la fourchette prévue), 0,97 à A = 4 ; mélange 0,30.",
+      "appris": "La méthode des deux tiers ne marche que pour une famille qui se repousse elle-même ; elle chiffre ce que rapporterait la corrélation de paires au-delà de A = 1 (88 % à A = 2).",
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {
+          "situer": 1,
+          "croiser": 1
+        },
+        "probabilite": 0.7,
+        "cout": 0.5,
+        "refutation": "Borne de nos zéros très différente de la théorie, ou mélange aussi bon que ζ seule."
+      }
+    },
+    {
+      "id": "j3b_lire_connes_consani",
+      "titre": "J3b : lire Connes–Consani sur la caractéristique un",
+      "statut": "fait",
+      "cout": 1,
+      "type": "lecture",
+      "question": "Le Frobenius de caractéristique un (action d'échelle) fournit-il, pour tous les premiers à la fois, une fonction égale aux points à une fonction simple et invisible aux dérivations, comme x^p sur F_p ?",
+      "these": "Non sous cette forme : en caractéristique un, les dérivations ne s'annulent pas (n·a = a) ; il faudra un autre mécanisme que Stepanov.",
+      "temoin": "Le Frobenius de F_p (doc. 48–49).",
+      "refutation": "Une telle fonction existe dans leur cadre : J3 complet devient prioritaire.",
+      "croise": [
+        "RH"
+      ],
+      "operateurs": [
+        "Le Frobenius absolu",
+        "La Dérivée nulle",
+        "La Fonction auxiliaire"
+      ],
+      "repond_a": [
+        "Le Frobenius absolu : quelle dynamique ferait des premiers les points fixes d'un Frobenius ?"
+      ],
+      "gains": {
+        "comprendre": 2,
+        "situer": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Analyse de risques V6.24 (doc. 49)",
+      "prerequis": [
+        "j3a_additivite_ou_derivee"
+      ],
+      "debloque": [],
+      "prevision": {
+        "gains": {
+          "comprendre": 2,
+          "situer": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1,
+        "refutation": "Une telle fonction existe dans leur cadre : J3 complet devient prioritaire."
+      },
+      "version": "V6.26",
+      "document": "51_J3B_LE_FROBENIUS_DE_CARACTERISTIQUE_UN.pdf",
+      "refutation_tenue": "Portée rectifiée en V6.34 : échec de la transplantation directe dans le modèle d’échelle testé ; pas de théorème d’impossibilité dans tous les cadres de caractéristique un.",
+      "appris": "Distinguer les automorphismes sur les valeurs et les points des endomorphismes sur les faisceaux du carré. Aucun espace de jets adéquat n’a été construit ; la route de Weil reste active."
+    },
+    {
+      "id": "carre_en_continu",
+      "titre": "J6 : le carré, en continu",
+      "statut": "fait",
+      "cout": 1,
+      "question": "La forme d'intersection virtuelle de ζ (doc. 46) garde-t-elle une seule direction positive pour toute la famille continue des correspondances de Frobenius : plusieurs largeurs de fonction-test a, plusieurs pas h, des fenêtres plus longues ; et DH garde-t-il ses directions en trop ?",
+      "these": "Oui pour ζ et L(χ5) (0 en trop) à toutes les largeurs et tous les pas fiables ; DH : directions en trop dès que la fenêtre résout ses quadruplets hors droite.",
+      "temoin": "DH (Davenport–Heilbronn).",
+      "refutation": "Une largeur ou un pas fiables où ζ montre une direction positive en trop.",
+      "croise": [
+        "RH"
+      ],
+      "operateurs": [
+        "La Surface virtuelle",
+        "Positivité porteuse",
+        "Scène manquante"
+      ],
+      "repond_a": [
+        "La Surface virtuelle : la signature tient-elle pour toute la famille des correspondances de Frobenius ?"
+      ],
+      "gains": {
+        "voir": 1,
+        "case": 1
+      },
+      "probabilite": 0.7,
+      "origine": "Plan V6.26 (doc. 51)",
+      "prerequis": [
+        "j3b_lire_connes_consani"
+      ],
+      "debloque": [],
+      "prevision": {
+        "gains": {
+          "voir": 1,
+          "case": 1
+        },
+        "probabilite": 0.7,
+        "cout": 1,
+        "refutation": "Une largeur ou un pas fiables où ζ montre une direction positive en trop."
+      },
+      "version": "V6.27",
+      "document": "52_J6_LE_CARRE_EN_CONTINU.pdf",
+      "refutation_tenue": "Tenue : ζ une seule direction positive dans 60 réglages sur 60, L(χ5) aucune (60/60), DH en trop dès X ≥ 61 (39/39) ; mais le nombre de directions en trop de DH dépend du pas et de la largeur (P3 fausse).",
+      "appris": "Signature stable sur la grille calculée ; décompte DH dépendant de la fenêtre. Article 2 révisé en V6.34 : accord des traces et certificat de signe sont distincts."
+    },
+    {
+      "id": "lire_BBLM06",
+      "titre": "Lire Bogomolny et al. pour de vrai (le trou à trois)",
+      "statut": "fait",
+      "cout": 1,
+      "type": "lecture",
+      "question": "La correction effective de Bogomolny–Bohigas–Leboeuf–Monastra, prise dans son vrai domaine (corrélation de paires et écarts consécutifs, développement en 1/N_eff), prévoit-elle le trou à trois mesuré aux hauteurs du corpus (ζ 0 pour 15,6 ; Δ 3 pour 31,1) ?",
+      "these": "Leur développement prévoit un déficit de triples serrés du bon sens, mais plus faible que mesuré à t ≤ 1 500.",
+      "temoin": "CUE de taille 20 et 60 (suit le noyau sinus).",
+      "refutation": "Leur correction prévoit un excès de triples serrés, ou rien.",
+      "croise": [
+        "PC"
+      ],
+      "operateurs": [
+        "La Rencontre à n",
+        "Le Temps de Heisenberg",
+        "La Loi de la marge"
+      ],
+      "repond_a": [
+        "La Rencontre à n : le déficit à basse hauteur est-il le même pour toutes les n ?"
+      ],
+      "gains": {
+        "comprendre": 1,
+        "situer": 1
+      },
+      "probabilite": 0.5,
+      "origine": "Axe A, V6.28 (doc. 53)",
+      "debloque": [],
+      "prerequis": [],
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "situer": 1
+        },
+        "probabilite": 0.5,
+        "cout": 1,
+        "refutation": "Leur correction prévoit un excès de triples serrés, ou rien."
+      },
+      "version": "V6.29",
+      "document": "54_LE_TROU_A_TROIS_LU.pdf",
+      "refutation_tenue": "Tenue dans le domaine de la correction : le CUE(N), même à N = 3, donne un déficit de triples serrés du bon sens (0,0082 contre 0,0146) mais trop faible (8,8 attendus pour ζ, 0 observé) ; à la taille effective de ζ (N_eff ≤ 1,26), la correction sort de son domaine. Test de Nishigaki : le rapport d'écarts, sans échelle, s'écarte aussi du noyau sinus (ζ +2,7σ, L(χ5) +4,4σ, Δ +5,2σ) ; B2 et B3 fausses.",
+      "appris": "Le trou à trois n'est pas un effet de taille finie du CUE ni un défaut de dépliage : c'est une rigidité de forme, visible dans le rapport d'écarts. La correction arithmétique (termes des petits premiers, Bogomolny–Keating 2013) est l'outil suivant."
+    },
+    {
+      "id": "trou_a_trois_bk13",
+      "titre": "Le trou à trois par la formule à trois points de Bogomolny–Keating",
+      "statut": "ouvert",
+      "cout": 2,
+      "type": "calcul",
+      "question": "La formule heuristique R3 de Bogomolny–Keating décrit-elle les triples quelconques de ζ à basse hauteur ? Pour des écarts consécutifs ou leur rapport, construire en plus le terme d’exclusion (Jánossy) et calibrer par blocs.",
+      "these": "Prévision historique à requalifier avant calcul : R3 seule ne donne pas une distribution d’écarts consécutifs.",
+      "temoin": "L(χ5) et Δ : mêmes mesures, autres coefficients aux petits premiers ; CUE(N) (suit le noyau sinus).",
+      "refutation": "Une comparaison hors du domaine de R3 ou des erreurs calculées comme si les écarts chevauchants étaient indépendants invalide le test.",
+      "croise": [
+        "PC"
+      ],
+      "operateurs": [
+        "La Rencontre à n",
+        "Le Temps de Heisenberg",
+        "La Loi de la marge"
+      ],
+      "repond_a": [
+        "La Rencontre à n : le déficit à basse hauteur est-il le même pour toutes les n ?"
+      ],
+      "gains": {
+        "comprendre": 1,
+        "situer": 1
+      },
+      "probabilite": 0.4,
+      "origine": "V6.29 (doc. 54)",
+      "debloque": [],
+      "prerequis": [
+        "lire_BBLM06"
+      ],
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "situer": 1
+        },
+        "probabilite": 0.4,
+        "cout": 2,
+        "refutation": "La formule prévoit 8 triples serrés ou plus pour ζ, ou un rapport moyen sous 0,605."
+      }
+    },
+    {
+      "id": "completer_matrice_2",
+      "titre": "Compléter la matrice des théories, deuxième séance",
+      "statut": "ouvert",
+      "question": "Les cases « ? » de la matrice (de Bruijn–Newman × simplicité, Nyman–Beurling × simplicité, Tamis × Nyman–Beurling, Riemann–Roch pour Spec Z × borne unilatérale, Stepanov × borne unilatérale) ont-elles une réponse dans la littérature ?",
+      "these": "Au moins deux des cinq cases « ? » se ferment avec une source.",
+      "temoin": "Une case remplie sans source est refusée par le générateur de la matrice.",
+      "refutation": "Aucune case « ? » fermée après une séance.",
+      "croise": [
+        "RH"
+      ],
+      "cout": 1,
+      "probabilite": 0.4,
+      "gains": {
+        "situer": 2
+      },
+      "repond_a": [
+        "Matrice des théories : les cases à compléter"
+      ],
+      "debloque": [],
+      "prerequis": [
+        "completer_matrice"
+      ],
+      "operateurs": [
+        "Géométrie par empreintes"
+      ],
+      "origine": "V6.29 (doc. 54)",
+      "prevision": {
+        "gains": {
+          "situer": 2
+        },
+        "probabilite": 0.4,
+        "cout": 1,
+        "refutation": "Aucune case « ? » fermée après une séance."
+      }
+    },
+    {
+      "id": "v634_relief_direct",
+      "titre": "Valider directement le relief V7",
+      "statut": "fait",
+      "version": "V6.34",
+      "document": "58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "cout": 1,
+      "question": "Le déficit relatif T* coïncide-t-il avec la première paire hors droite ?",
+      "these": "Prévision P3 : au moins six concordances à ±2 sur huit points.",
+      "temoin": "Trois points d’Euler, raffinements du contour, six racines recoupées à 50 chiffres.",
+      "operateurs": [
+        "L'Archipel d'Euler",
+        "Le Point d'Euler"
+      ],
+      "prerequis": [
+        "archipel"
+      ],
+      "debloque": [
+        "ancrage_v13_apparie"
+      ],
+      "repond_a": [
+        "Ce que mesure le relief"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Audit V6.33",
+      "appris": "Quatre concordances, deux désaccords et deux censures ; prévision non validée. Au col : sorties vers 79,40 et 112,55 malgré T*=145."
+    },
+    {
+      "id": "v634_ancrage_independant",
+      "titre": "Retester l’ancrage sur V11",
+      "statut": "fait",
+      "version": "V6.34",
+      "document": "58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "cout": 1,
+      "question": "Le premier coefficient prédit-il encore la hauteur directe à distance d’Euler contrôlée ?",
+      "these": "P4 : corrélation au moins +0,3 ; P5 : corrélation résiduelle négative avec D.",
+      "temoin": "96 directions indépendantes et cinq points d’Euler ; graine fixée ; trois censures identifiées.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "prerequis": [
+        "archipel"
+      ],
+      "debloque": [
+        "ancrage_v13_apparie"
+      ],
+      "repond_a": [
+        "Ancrage ou seconde force ?"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Prévision V6.34",
+      "appris": "P4 tenue : +0,815, IC bootstrap [0,704 ; 0,876]. P5 fausse : +0,142, IC incluant zéro ; aucune seconde force indépendante établie."
+    },
+    {
+      "id": "v634_jet_lemme",
+      "titre": "Le rang des jets donne une borne",
+      "statut": "fait",
+      "version": "V6.34",
+      "document": "58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
+      "cout": 1,
+      "question": "La perte de rang mesurée produit-elle une fonction non nulle et une borne non triviale ?",
+      "these": "Dimension indépendante 2JK, rang majoré M(K+J−1)+M(M−1), puis comptage par multiplicités.",
+      "temoin": "Témoins polynomiaux exacts p=29,61,101 ; divisions synthétiques indépendantes.",
+      "operateurs": [
+        "La Dérivée nulle",
+        "La Fonction auxiliaire",
+        "Le Frobenius absolu"
+      ],
+      "prerequis": [
+        "j3a_additivite_ou_derivee"
+      ],
+      "debloque": [],
+      "repond_a": [
+        "Existence indépendante et degré"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.7,
+      "origine": "Audit V6.33",
+      "appris": "Lemme démontré ; famille explicite avec noyau minimal de dimension 2 et erreur O(√p) via le tordu. Réalisation de la méthode classique de Stepanov ; transfert à ζ ouvert."
+    },
+    {
+      "id": "ancrage_v13_apparie",
+      "titre": "Ancrage V13 : comparer des directions appariées",
+      "statut": "fait",
+      "type": "calcul",
+      "cout": 1.5,
+      "question": "À distance d’Euler comparable, des couples fixés avant calcul permettent-ils de dissocier l’effet de a(1) et du défaut D sur la première sortie directement comptée ?",
+      "these": "L’effet associé à a(1) subsiste sur V13 avec comparaisons appariées ; D ne donne pas un signe résiduel stable.",
+      "temoin": "Points d’Euler, directions à a(1) comparable, contours raffinés et censures.",
+      "refutation": "Effet disparu dans les couples appariés ou contours non résolus.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "prerequis": [
+        "v634_ancrage_independant",
+        "v634_relief_direct"
+      ],
+      "debloque": [
+        "v13_premier_coefficient_complexe_fixe"
+      ],
+      "repond_a": [
+        "Dissocier les grandeurs liées algébriquement"
+      ],
+      "gains": {
+        "comprendre": 2,
+        "case": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Résultat indépendant V6.34",
+      "prevision": {
+        "gains": {
+          "comprendre": 2,
+          "case": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1.5,
+        "refutation": "Effet disparu dans les couples appariés ou contours non résolus.",
+        "these": "L’effet associé à a(1) subsiste sur V13 avec comparaisons appariées ; D ne donne pas un signe résiduel stable."
+      },
+      "version": "V6.37",
+      "document": "61_ANCRAGE_APPARIE_V13.pdf",
+      "appris": "72 couples fixés avant comptage, 144 directions et 6 témoins ; A1 : 36/36 détections plus tardives, pour de grands contrastes. D : 25 précoces, 8 tardives, 3 mêmes tranches ; tendance majoritaire et hétérogène, pas absence de signal. Tous les comptages sont stables aux pas 0,02/0,01/0,005 ; 24 racines recoupées. Première détection numérique, aucun certificat d’absence ni conclusion de RH.",
+      "note_historique": "Le champ these conserve l’hypothèse antérieure au calcul ; le champ appris est le bilan, qui ne valide pas l’absence de signal D."
+    },
+    {
+      "id": "signature_erreur_norme",
+      "titre": "Certifier les signes par une erreur en norme",
+      "statut": "fait",
+      "type": "calcul",
+      "cout": 1.5,
+      "question": "Les signes du cas DH à 25 directions restent-ils établis avec une borne en norme sur l’erreur totale ?",
+      "these": "Les directions nettement séparées de zéro survivent ; le décompte proche du seuil doit être requalifié.",
+      "temoin": "DH, a=0,02, h=0,005, L=1115 ; comparaison arithmétique, zéros et précision accrue.",
+      "refutation": "Marge spectrale inférieure à l’erreur complète : signe non certifié.",
+      "operateurs": [
+        "La Surface virtuelle",
+        "Positivité porteuse"
+      ],
+      "prerequis": [
+        "carre_en_continu"
+      ],
+      "debloque": [],
+      "repond_a": [
+        "Écart entre audit de traces et certificat de signe"
+      ],
+      "gains": {
+        "comprendre": 1,
+        "case": 1
+      },
+      "probabilite": 0.7,
+      "origine": "Article 2 et audit V6.34",
+      "maillon": "metrique",
+      "prevision": {
+        "gains": {
+          "comprendre": 1,
+          "case": 1
+        },
+        "probabilite": 0.7,
+        "cout": 1.5,
+        "refutation": "Marge spectrale inférieure à l’erreur complète : signe non certifié.",
+        "these": "Les directions nettement séparées de zéro survivent ; le décompte proche du seuil doit être requalifié."
+      },
+      "version": "V6.36",
+      "document": "60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf",
+      "appris": "Pour DH a=0,02,h=0,005,L=1115 : traces physiques en intervalles et erreur en norme 1,757e−16 ; compression de 25 colonnes négative par Gershgorin (<−6,087e−9), sous le modèle d’arrondi indiqué. Au moins25 directions négatives ; compte exact et positivité du complément non établis. Grille180 non certifiée globalement."
+    },
+    {
+      "id": "v635_jet_extensions",
+      "titre": "Étendre les jets à tous les corps finis impairs",
+      "statut": "fait",
+      "version": "V6.35",
+      "document": "59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+      "cout": 1,
+      "question": "Le lemme demeure-t-il valide sur F_p^n lorsque M dépasse p ?",
+      "these": "Les dérivées de Hasse directes, sans facteur k!, conservent la borne de rang pour M<q.",
+      "temoin": "Certificats F27 avec M=4 et F125 avec M=8 ; évaluations directes et divisions exactes.",
+      "operateurs": [
+        "La Dérivée nulle",
+        "La Fonction auxiliaire",
+        "La Tour"
+      ],
+      "prerequis": [
+        "v634_jet_lemme"
+      ],
+      "debloque": [
+        "v635_tour_spectre"
+      ],
+      "repond_a": [
+        "Borne uniforme sur la tour"
+      ],
+      "gains": {},
+      "probabilite": 1,
+      "origine": "Étape 1 autorisée après V6.34",
+      "appris": "Lemme démontré sur les extensions ; 10√q uniforme, petits corps inclus. Cinq témoins exacts ; la torsion F125 a 560 conditions, dimension 450 et rang 400."
+    },
+    {
+      "id": "v635_tour_spectre",
+      "titre": "Déduire le spectre de la borne uniforme sur la tour",
+      "statut": "fait",
+      "version": "V6.35",
+      "document": "59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
+      "cout": 1,
+      "question": "Une borne en racine carrée sur toute la tour impose-t-elle les modules spectraux ?",
+      "these": "En genre un lisse, rationalité indépendante et αβ=p empêchent une racine inverse de dépasser √p.",
+      "temoin": "Paire fictive (5,1), produit 5 mais moments divergents ; cubique singulière au zéro brut de module 1.",
+      "operateurs": [
+        "La Tour",
+        "La Fonction auxiliaire"
+      ],
+      "prerequis": [
+        "v635_jet_extensions"
+      ],
+      "debloque": [
+        "jets_arithmetiques_independants"
+      ],
+      "repond_a": [
+        "Non-circularité de la déduction spectrale"
+      ],
+      "gains": {},
+      "probabilite": 1,
+      "origine": "Étape 2 autorisée après V6.34",
+      "appris": "Rationalité par Riemann–Roch vérifiée dans Milne ; preuve des modules √p, de Hasse et de la droite 1/2 pour la zêta elliptique. Aucun transfert à ζ."
+    },
+    {
+      "id": "jets_arithmetiques_independants",
+      "titre": "Construire un candidat arithmétique de jets et de degré",
+      "statut": "route à construire",
+      "type": "construction",
+      "cout": 3,
+      "question": "Peut-on définir pour ζ un espace indépendant, des relations abaissant son rang et un contrôle global des annulations ?",
+      "these": "Un candidat utile doit fournir ces trois propriétés avant toute connaissance des zéros et être uniforme dans son paramètre.",
+      "temoin": "Davenport–Heilbronn et faux jumeaux ; l’action d’échelle seule ne fournit pas l’annulation de Hasse.",
+      "refutation": "Rang diminué seulement par un ajustement utilisant les zéros, ou absence de borne globale.",
+      "operateurs": [
+        "La Fonction auxiliaire",
+        "La Dérivée nulle",
+        "La Tour"
+      ],
+      "prerequis": [
+        "v635_tour_spectre"
+      ],
+      "debloque": [],
+      "repond_a": [
+        "Maillon indépendant pour les entiers"
+      ],
+      "gains": {
+        "case": 1,
+        "comprendre": 1
+      },
+      "probabilite": 0.2,
+      "origine": "Bilan V6.35 : propriétés séparées à construire"
+    },
+    {
+      "id": "v13_premier_coefficient_complexe_fixe",
+      "titre": "V13 : comparer les couples à contraintes exactes",
+      "statut": "fait",
+      "type": "calcul",
+      "cout": 1.0,
+      "question": "Le contraste D conserve-t-il une tendance quand a(1), sa phase, l’ancre et le rayon sont identiques dans les couples ?",
+      "these": "La tendance à une détection plus précoce à D élevé résiste dans une partie des strates au contrôle exact de a(1) complexe.",
+      "temoin": "Directions du noyau des contraintes u_i=0 et somme u_j exp(−i phi_j)=0 ; témoins d’Euler, nouveaux couples figés avant calcul, contours raffinés et non-détections.",
+      "refutation": "Tendance disparue sous contrôle exact, variation de D insuffisante, strates infaisables ou comptage non résolu.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "prerequis": [
+        "ancrage_v13_apparie",
+        "v639_contraintes_exactes"
+      ],
+      "debloque": [
+        "v640_branches_v13"
+      ],
+      "repond_a": [
+        "Distinguer le signal D de la tolérance sur le premier coefficient",
+        "Contrôler simultanément le module et la phase"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Résultat et relecture V6.37 ; estimation de priorité, pas probabilité mathématique",
+      "prevision": {
+        "these": "La tendance à une détection plus précoce à D élevé résiste dans une partie des strates au contrôle exact de a(1) complexe.",
+        "refutation": "Tendance disparue sous contrôle exact, variation de D insuffisante, strates infaisables ou comptage non résolu.",
+        "gains": {
+          "comprendre": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1.0
+      },
+      "appris_etape_preparatoire": "V6.39 démontre la faisabilité de D variable à A=cos(r)z_i, ancre/rayon fixés. Témoins par fractions et intervalles. Les anciens écarts0,25 ne sont pas atteints par les témoins choisis ; un reçu analytique de12 couples représentatifs prépare la comparaison, qui est exécutée en V6.40 ; cette note reste le bilan antérieur.",
+      "version": "V6.40",
+      "document": "64_COMPARAISON_EXACTE_V13.pdf",
+      "appris": "12 couples exacts : 8 détections plus précoces et 4 plus tardives à D élevé ; 24 racines recoupées à 80/110 chiffres de travail. Le signe se regroupe par ancre. Aucun ordre causal ou premier zéro certifié.",
+      "resultat_prevision_v640": "Majorité stricte annoncée de 7/12 atteinte : 8/12 ; quatre signes contraires conservés.",
+      "limites_v640": "Rayons dépendants ; pas de causalité, d’ordre uniforme ni d’absence antérieure certifiée."
+    },
+    {
+      "id": "v639_contraintes_exactes",
+      "titre": "V13 : faisabilité des contraintes exactes",
+      "statut": "fait",
+      "type": "preuve",
+      "version": "V6.39",
+      "document": "63_CONTRAINTES_EXACTES_V13.pdf",
+      "question": "D peut-il varier à coefficient complexe, ancre et rayon exactement identiques ?",
+      "these": "Construire un témoin explicite et démontrer son coefficient cubique non nul.",
+      "temoin": "Contrôle négatif : une dimension3 peut exister avec un coefficient cubique identiquement nul ; le témoin non nul est indispensable.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "prerequis": [
+        "ancrage_v13_apparie"
+      ],
+      "debloque": [
+        "v13_premier_coefficient_complexe_fixe"
+      ],
+      "appris": "Oui, pour chaque ancre et tout0<r<pi/4 à A=cos(r)z_i. Noyau de dimension3 ; paires conjuguées et mineurs. Non-annulation prouvée par bornes rationnelles sur Gauss. Écarts construits0,0088–0,0584 et0,0294–0,1438 sur rayons nominaux ; ni optimum global, ni causalité, ni zéro compté.",
+      "cout": 1.0,
+      "gains": {},
+      "probabilite": 1.0
+    },
+    {
+      "id": "v640_branches_v13",
+      "titre": "V13 : suivre les branches et expliquer le signe par ancre",
+      "statut": "fait",
+      "type": "calcul",
+      "cout": 1.0,
+      "question": "Le signe opposé de χ1 vient-il du déplacement d’une branche, d’une collision ou d’un changement de branche première ?",
+      "these": "La continuation et la vitesse implicite conditionnelle distinguent ces trois mécanismes dans les familles exactes.",
+      "temoin": "Ancres χ1 et χ5, mêmes familles ; conserver branches perdues, dérivée petite et collisions ; vérifier le partenaire fonctionnel.",
+      "refutation": "Identité de branche non suivie, racine multiple ou différences non résolues : conserver un bilan indéterminé.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "prerequis": [
+        "v13_premier_coefficient_complexe_fixe"
+      ],
+      "debloque": [
+        "certifier_bloc_local",
+        "v641_deploiement_A_fixe",
+        "audit_positivite_uniforme"
+      ],
+      "repond_a": [
+        "Distinguer mouvement de branche et ordre de détection",
+        "Expliquer le regroupement du signe par ancre",
+        "Tester la formule de vitesse locale"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Priorité éditoriale après le bilan V6.40 ; estimation conventionnelle, pas probabilité d’un théorème.",
+      "prevision": {
+        "these": "Identifier ou documenter l’échec de suivi du mécanisme local ; protocole de continuation à figer avant calcul.",
+        "gains": {
+          "comprendre": 1
+        },
+        "probabilite": 0.6,
+        "cout": 1.0
+      },
+      "version": "V6.41",
+      "document": "65_FIBRES_PLIS_ET_POSITIVITE.pdf",
+      "appris": "A prescrit : ellipse de faisabilité et fibres ; D constant à A=0 ; jets, 20 candidats de plis recoupés, six attribués, 18 blocs et 24 racines. Pont arithmétique global ouvert ; une perte coarse conservée.",
+      "limites_v641": "Pertes conservées, attribution par proximité, réalité et isolation non certifiées ; A varie dans les suivis radiaux."
+    },
+    {
+      "id": "certifier_bloc_local",
+      "titre": "Certifier un pli et un bloc de deux zéros",
+      "statut": "fait",
+      "type": "calcul",
+      "cout": 3.0,
+      "question": "Peut-on certifier un des six plis attribués, sa transversalité et un contour continu isolant exactement deux zéros ?",
+      "these": "Un jet analytique et une boîte rationnelle permettent une validation locale par intervalles ; succès ou obstacle doivent être documentés.",
+      "temoin": "Boîte sans contraction, dérivée seconde proche de zéro ou bord de contour contenant un zéro : conserver le refus.",
+      "refutation": "Aucune existence, unicité ou isolation n’est déduite d’un petit résidu ou d’une marge échantillonnée.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "La Rencontre figée"
+      ],
+      "prerequis": [
+        "v640_branches_v13"
+      ],
+      "debloque": [
+        "v641_deploiement_A_fixe"
+      ],
+      "repond_a": [
+        "Existence et unicité locale des collisions",
+        "Contrat de deux zéros pour les moments"
+      ],
+      "gains": {
+        "demontrer": 1
+      },
+      "probabilite": 0.6,
+      "origine": "Priorité conventionnelle de dossier ; pas probabilité de succès ni de preuve de RH.",
+      "prevision": {
+        "these": "Un jet analytique et une boîte rationnelle permettent une validation locale par intervalles ; succès ou obstacle doivent être documentés.",
+        "gains": {
+          "demontrer": 1
+        },
+        "probabilite": 0.6,
+        "cout": 3.0
+      },
+      "version": "V6.42",
+      "document": "66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+      "appris": "Un pli V13 choisi certifié dans sa boîte ; contour continu de deux zéros pour tout le petit intervalle radial ; quatre boîtes uniformes, deux critiques avant et une paire hors droite après. Inégalité de Weil explicitée ; signe global ouvert.",
+      "limites_v642": "Un seul pli ; backend iv et modèles d’erreur explicites ; pas d’exhaustivité, pas de relecture indépendante du backend."
+    },
+    {
+      "id": "v641_deploiement_A_fixe",
+      "titre": "Déployer un candidat de jets sur sa fibre à A fixé",
+      "statut": "ouvert",
+      "type": "calcul",
+      "cout": 2.0,
+      "question": "Une des quatre directions candidates donne-t-elle un pli transversal sur une géodésique préservant exactement A, ancre et rayon ?",
+      "these": "Paramétrer la fibre S² permet de séparer la transversalité locale des variations radiales de A.",
+      "temoin": "Section vide, perte de rang ou dérivée paramétrique nulle ; aucune collision transverse n’est alors promise.",
+      "refutation": "Les quatre directions ont seulement un jet numérique nul : elles ne sont pas des zéros doubles certifiés.",
+      "operateurs": [
+        "Le Point d'Euler",
+        "Fermeture multiplicative"
+      ],
+      "prerequis": [
+        "v640_branches_v13"
+      ],
+      "debloque": [],
+      "repond_a": [
+        "Pli local à coefficient complexe constant"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.5,
+      "origine": "Programme postérieur aux résultats ; choix à verrouiller avant toute nouvelle expérience.",
+      "prevision": {
+        "these": "Paramétrer la fibre S² permet de séparer la transversalité locale des variations radiales de A.",
+        "gains": {
+          "comprendre": 1
+        },
+        "probabilite": 0.5,
+        "cout": 2.0
+      }
+    },
+    {
+      "id": "audit_positivite_uniforme",
+      "titre": "Auditer le contrat arithmétique vers le global",
+      "statut": "fait",
+      "type": "audit",
+      "cout": 2.0,
+      "question": "Quelle forme arithmétique, quel domaine et quelle estimation uniforme relient réellement le calcul aux deux portes vers RH ?",
+      "these": "G1–G4 séparent admissibilité, densité, queue et couplage ; le théorème A exige une borne supérieure depuis les premiers.",
+      "temoin": "Gram automatiquement positif, préfixes positifs avec direction cachée, métrique construite après les racines, ou hypothèse RH circulaire.",
+      "refutation": "Aucune identité arithmétique ou borne uniforme établie : consigner le pont absent au lieu de faire monter le niveau RH.",
+      "operateurs": [
+        "La Rencontre figée",
+        "La Tour"
+      ],
+      "prerequis": [
+        "v640_branches_v13"
+      ],
+      "debloque": [
+        "v642_compensation_arithmetique"
+      ],
+      "repond_a": [
+        "Positivité globale pour ζ",
+        "Croissance indépendante de RH",
+        "Limites des préfixes finis"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.5,
+      "origine": "Audit de livrable sous budget conventionnel ; la construction mathématique suffisante reste une route à construire.",
+      "prevision": {
+        "these": "G1–G4 séparent admissibilité, densité, queue et couplage ; le théorème A exige une borne supérieure depuis les premiers.",
+        "gains": {
+          "comprendre": 1
+        },
+        "probabilite": 0.5,
+        "cout": 2.0
+      },
+      "version": "V6.42",
+      "document": "66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+      "appris": "Convention Mellin, somme finie à support fixé, inégalité signée et norme de la partie première divergente sur L². Signe global non établi."
+    },
+    {
+      "id": "v642_compensation_arithmetique",
+      "titre": "Définir le budget de la forme arithmétique complète",
+      "statut": "ouvert",
+      "type": "audit",
+      "cout": 2.0,
+      "question": "Quel domaine et quelle borne d’erreur permettent de contrôler la compensation archimédienne et les corrélations signées ?",
+      "these": "Une représentation depuis les premiers et une hiérarchie dense donnent des contrats vérifiables, avec refus explicite si la borne uniforme manque.",
+      "temoin": "Norme de la seule partie première divergente, métrique dégénérée au pli, compression positive sans contrôle du complément.",
+      "refutation": "La borne globale de signe reste une route à construire : aucun certificat fini ne la remplace.",
+      "operateurs": [
+        "La Rencontre figée",
+        "La Tour"
+      ],
+      "prerequis": [
+        "audit_positivite_uniforme"
+      ],
+      "debloque": [],
+      "repond_a": [
+        "Domaine de la forme complète",
+        "Erreur de compression",
+        "Compensation signée"
+      ],
+      "gains": {
+        "comprendre": 1
+      },
+      "probabilite": 0.5,
+      "origine": "Priorité conventionnelle de dossier ; aucune probabilité de prouver RH.",
+      "prevision": {
+        "these": "Écrire ou refuser un contrat uniforme justifié.",
+        "cout": 2.0,
+        "gains": {
+          "comprendre": 1
+        },
+        "probabilite": 0.5
+      }
+    },
+    {
+      "id": "v643_ponts_construits",
+      "titre": "Construire les transports, le domaine et Schur",
+      "statut": "fait",
+      "type": "construction",
+      "question": "Quels ponts peuvent être démontrés avant de connaître le signe ?",
+      "these": "B1–B5 : transports exacts, continuité H¹, cœur, régularisation et Schur.",
+      "appris": "Transport Beurling–translations, continuité de Weil dans H¹, cœur admissible, régularisation décalée et Schur démontrés. Bellman de contrats et de formes distingués ; estimation arithmétique de toute la famille encore ouverte.",
+      "cout": 4.0,
+      "document": "67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4.0,
+        "refutation": "Preuve auxiliaire ou garde manquante."
+      },
+      "probabilite_scope": "Convention éditoriale du navigateur historique ; non utilisée par le nouveau Bellman.",
+      "version": "V6.43",
+      "temoin": "Document 67 ; preuves B1–B5 et programmes de contrôle.",
+      "refutation": "Hypothèse de domaine ou étape de preuve invalide ; pas de conclusion globale automatique.",
+      "repond_a": []
+    },
+    {
+      "id": "v643_dette_schur",
+      "titre": "Construire un invariant arithmétique pour la dette de Schur",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Pour une famille de tests explicitée, comment borner a_n−c_n*G_n†c_n et contrôler la portée du couplage pour tous les indices ?",
+      "these": "La forme complète et son domaine, plutôt que la partie première seule, doivent gouverner la récurrence.",
+      "temoin": "B2–B5 du document 67 ; matrices de masse H¹ ; contre-exemple de portée synthétique.",
+      "refutation": "Contre-exemple au candidat avec domaine et indices précisés ; absence de borne classée comme question ouverte.",
+      "cout": 4.0,
+      "gains": {},
+      "probabilite": 0.5,
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4.0,
+        "refutation": "Contre-exemple au candidat avec domaine et indices précisés ; absence de borne classée comme question ouverte."
+      },
+      "probabilite_scope": "Convention éditoriale du navigateur historique ; non utilisée par le nouveau Bellman.",
+      "version": "V6.43",
+      "repond_a": []
+    },
+    {
+      "id": "v643_regime_commun",
+      "titre": "Contrôler une famille régularisée et son défaut de transport",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Quel choix de cutoffs et paramètres contrôle couverture et défaut dans H¹ sans prendre la densité NB pour un acquis ?",
+      "these": "T=Pχ(ηδ*Γ_S) donne un contrôle fixe ; la famille et le taux doivent être définis avant toute limite.",
+      "temoin": "B4 : décalage, borne δ^-3, défaut bilinéaire et dépendance aux cutoffs.",
+      "refutation": "Défaut non contrôlé ou circularité ; conserver le résultat fixe et fermer seulement la conclusion effectivement réfutée.",
+      "cout": 3.0,
+      "gains": {},
+      "probabilite": 0.5,
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 3.0,
+        "refutation": "Défaut non contrôlé ou circularité ; conserver le résultat fixe et fermer seulement la conclusion effectivement réfutée."
+      },
+      "probabilite_scope": "Convention éditoriale du navigateur historique ; non utilisée par le nouveau Bellman.",
+      "version": "V6.43",
+      "repond_a": []
+    },
+    {
+      "id": "v644_langue_domaines",
+      "titre": "Construire la langue et la queue effective",
+      "statut": "fait",
+      "type": "construction",
+      "question": "L1–L8 et tableaux exécutés",
+      "these": "P et métrique exacte, famille dense, no-go de marge H¹, représentation I−compact, queue effective et arithmétique graduée des jets démontrés. 16 compressions arithmétiques positives numériquement ; signe du Schur pour tous supports ouvert.",
+      "cout": 4,
+      "version": "V6.44",
+      "temoin": "Document 68 : L1–L8, protocole, matrices et contrat de queue.",
+      "document": "68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention historique du navigateur, non une probabilité de RH ; grammaire sans score probabiliste.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Garde invalide, borne non contrôlée ou témoin négatif certifié ; échec de calcul reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Nommer la borne manquante ; aucun plafond fini promu en signe global."
+      },
+      "appris": "P et métrique exacte, famille dense, no-go de marge H¹, représentation I−compact, queue effective et arithmétique graduée des jets démontrés. 16 compressions arithmétiques positives numériquement ; signe du Schur pour tous supports ouvert."
+    },
+    {
+      "id": "v644_queue_serree",
+      "titre": "Resserrer et certifier le contrat de queue",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Comment réduire la tête astronomique avec une borne validée de r(T), ε et L_S ?",
+      "these": "Le corollaire entier fournit une queue prouvée ; chercher un budget utilisable.",
+      "cout": 3,
+      "version": "V6.44",
+      "temoin": "Document 68 : L1–L8, protocole, matrices et contrat de queue.",
+      "document": "68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention historique du navigateur, non une probabilité de RH ; grammaire sans score probabiliste.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Garde invalide, borne non contrôlée ou témoin négatif certifié ; échec de calcul reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 3,
+        "refutation": "Nommer la borne manquante ; aucun plafond fini promu en signe global."
+      }
+    },
+    {
+      "id": "v644_schur_effectif",
+      "titre": "Calculer le Schur effectif avec solveurs certifiés",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Comment encadrer Riesz, projection, couplages et inverse de queue sans omettre la métrique ?",
+      "these": "Conserver les résidus et le reste Neumann ; vérifier un support avant une loi couvrante.",
+      "cout": 4,
+      "version": "V6.44",
+      "temoin": "Document 68 : L1–L8, protocole, matrices et contrat de queue.",
+      "document": "68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention historique du navigateur, non une probabilité de RH ; grammaire sans score probabiliste.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Garde invalide, borne non contrôlée ou témoin négatif certifié ; échec de calcul reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Nommer la borne manquante ; aucun plafond fini promu en signe global."
+      }
+    },
+    {
+      "id": "v644_loi_tous_supports",
+      "titre": "Trouver une loi arithmétique couvrant tous les supports",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Quelle identité ou borne contrôle le signe du Schur complet pour tous S ?",
+      "these": "Interaction premiers/archimédien ; aucun signe global acquis.",
+      "cout": 5,
+      "version": "V6.44",
+      "temoin": "Document 68 : L1–L8, protocole, matrices et contrat de queue.",
+      "document": "68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention historique du navigateur, non une probabilité de RH ; grammaire sans score probabiliste.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Garde invalide, borne non contrôlée ou témoin négatif certifié ; échec de calcul reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Nommer la borne manquante ; aucun plafond fini promu en signe global."
+      }
+    },
+    {
+      "id": "v645_pont_arithmetique",
+      "titre": "Retirer le pôle et garder la fluctuation",
+      "statut": "fait",
+      "type": "construction",
+      "question": "C1–C5, intervalles et témoin uniforme",
+      "these": "Annulation polaire et identité de fluctuation de Chebyshev démontrées ; modèle continu négatif pour tout S≥16 ; moments finis insuffisants pour réduire la norme première L² ; queue resserrée et dette de Schur bornée par résidus de sources. Sources/tête certifiées et signe pour tous supports restent ouverts.",
+      "cout": 4,
+      "version": "V6.45",
+      "temoin": "Document 70 : C1–C5, 144 entrées encadrées, budget de queue et obstruction S≥16.",
+      "document": "70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif encadré de Q_W avec toutes les gardes ; échec de calcul ou B0 négative ne tranche pas RH.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Nommer sources, tête ou loi manquantes ; aucun budget fini promu en signe global."
+      },
+      "appris": "Annulation polaire et identité de fluctuation de Chebyshev démontrées ; modèle continu négatif pour tout S≥16 ; moments finis insuffisants pour réduire la norme première L² ; queue resserrée et dette de Schur bornée par résidus de sources. Sources/tête certifiées et signe pour tous supports restent ouverts."
+    },
+    {
+      "id": "v645_sources_residus",
+      "titre": "Certifier les sources et les résidus en L²",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Comment encadrer les intégrales de source et leur Gram avec des erreurs L² garanties ?",
+      "these": "Le majorant de dette H−β·Gramρ/μ évite le solveur Riesz exact sous ses prémisses.",
+      "cout": 4,
+      "version": "V6.45",
+      "temoin": "Document 70 : C1–C5, 144 entrées encadrées, budget de queue et obstruction S≥16.",
+      "document": "70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif encadré de Q_W avec toutes les gardes ; échec de calcul ou B0 négative ne tranche pas RH.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Nommer sources, tête ou loi manquantes ; aucun budget fini promu en signe global."
+      }
+    },
+    {
+      "id": "v645_tete_structuree",
+      "titre": "Construire une tête complète de taille praticable",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Quelle représentation compacte garde les couplages et contrôle les sources en norme de graphe ?",
+      "these": "La queue améliorée reste immense ; la densité en R seule ne garantit pas la convergence des sources.",
+      "cout": 5,
+      "version": "V6.45",
+      "temoin": "Document 70 : C1–C5, 144 entrées encadrées, budget de queue et obstruction S≥16.",
+      "document": "70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif encadré de Q_W avec toutes les gardes ; échec de calcul ou B0 négative ne tranche pas RH.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Nommer sources, tête ou loi manquantes ; aucun budget fini promu en signe global."
+      }
+    },
+    {
+      "id": "v645_loi_tous_supports",
+      "titre": "Établir une loi de signe des compensations et couplages",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Quelle propriété arithmétique force le signe du Schur complet pour tout S sans présupposer RH ?",
+      "these": "Le modèle continu échoue ; garder phase et corrélations de la fluctuation première.",
+      "cout": 5,
+      "version": "V6.45",
+      "temoin": "Document 70 : C1–C5, 144 entrées encadrées, budget de queue et obstruction S≥16.",
+      "document": "70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif encadré de Q_W avec toutes les gardes ; échec de calcul ou B0 négative ne tranche pas RH.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Nommer sources, tête ou loi manquantes ; aucun budget fini promu en signe global."
+      }
+    },
+    {
+      "id": "v646_lego_complet",
+      "titre": "Assembler le premier Lego complet",
+      "statut": "fait",
+      "type": "construction",
+      "question": "K1–K7, bornes et tous tests sur une famille bornée",
+      "these": "Certificat complet sur tout X_S pour 0<S≤347/1000, premier2 présent : Q_W≥masse/25 et R/200. Projection commune aux sources/fréquences, couches par parité et coût de bord assemblés. Supports plus grands, sources des têtes et transport non borné restent ouverts.",
+      "cout": 4,
+      "version": "V6.46",
+      "temoin": "Document71 : premier2 présent, bornes binaires, marge et contrôle perturbé.",
+      "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif de la forme complète sous toutes les gardes ; échec du certificat reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Un modèle perturbé ne réfute pas RH ; une famille bornée ne couvre pas l’infini."
+      },
+      "appris": "Certificat complet sur tout X_S pour 0<S≤347/1000, premier2 présent : Q_W≥masse/25 et R/200. Projection commune aux sources/fréquences, couches par parité et coût de bord assemblés. Supports plus grands, sources des têtes et transport non borné restent ouverts."
+    },
+    {
+      "id": "v646_operateur_conjoint",
+      "titre": "Affiner conjointement énergie et déplacements premiers",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Comment conserver le coût énergétique des attaches quand le support et les bandes grandissent ?",
+      "these": "Concentration par opérateur et potentiels par cellules ; une norme première séparée perd la compensation.",
+      "cout": 4,
+      "version": "V6.46",
+      "temoin": "Document71 : premier2 présent, bornes binaires, marge et contrôle perturbé.",
+      "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif de la forme complète sous toutes les gardes ; échec du certificat reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Un modèle perturbé ne réfute pas RH ; une famille bornée ne couvre pas l’infini."
+      }
+    },
+    {
+      "id": "v646_sources_tetes",
+      "titre": "Réutiliser la projection pour les vraies sources des têtes",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Comment certifier les sources et leur Gram optimal en L² avec leurs erreurs ?",
+      "these": "Même projection pour les fréquences et les résidus ; certificat borné direct n’a pas encore exécuté cette branche générale.",
+      "cout": 4,
+      "version": "V6.46",
+      "temoin": "Document71 : premier2 présent, bornes binaires, marge et contrôle perturbé.",
+      "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif de la forme complète sous toutes les gardes ; échec du certificat reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Un modèle perturbé ne réfute pas RH ; une famille bornée ne couvre pas l’infini."
+      }
+    },
+    {
+      "id": "v646_transport_non_borne",
+      "titre": "Construire la règle d’agrandissement non bornée",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Quelle loi couvre une suite S_n→∞ avec les nouvelles directions et les couplages ?",
+      "these": "L’inclusion fournit tous S≤S₀ ; les supports au-delà demandent une nouvelle construction.",
+      "cout": 5,
+      "version": "V6.46",
+      "temoin": "Document71 : premier2 présent, bornes binaires, marge et contrôle perturbé.",
+      "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif de la forme complète sous toutes les gardes ; échec du certificat reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Un modèle perturbé ne réfute pas RH ; une famille bornée ne couvre pas l’infini."
+      }
+    },
+    {
+      "id": "v646_tete_praticable",
+      "titre": "Affiner la concentration sans tête brute",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Comment remplacer la seule trace par un contrôle opératoire certifié, avec un coût praticable ?",
+      "these": "Même Gram, concentrations par bandes et éventuel contrôle Schatten2 ; source du gain et coût doivent être explicités.",
+      "cout": 4,
+      "version": "V6.46",
+      "temoin": "Document71 : premier2 présent, bornes binaires, marge et contrôle perturbé.",
+      "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; aucune probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Témoin négatif de la forme complète sous toutes les gardes ; échec du certificat reste indéterminé.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Un modèle perturbé ne réfute pas RH ; une famille bornée ne couvre pas l’infini."
+      }
+    },
+    {
+      "id": "v647_concentration_certifiee",
+      "titre": "Certifier les interactions de fréquences",
+      "statut": "fait",
+      "type": "construction",
+      "question": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "these": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "cout": 3,
+      "version": "V6.47",
+      "temoin": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "document": "72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; ni recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’une condition suffisante : indéterminé. Seul un témoin négatif complet réfuterait le signe.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 3,
+        "refutation": "Famille bornée et diagnostic ne prouvent pas RH."
+      },
+      "appris": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes."
+    },
+    {
+      "id": "v647_norme_commune",
+      "titre": "Certifier la norme de l’opérateur commun",
+      "statut": "fait",
+      "type": "construction",
+      "question": "À S=1/2, Nyström donne une petite marge positive. Il faut une compression et une erreur sur tout l’espace.",
+      "these": "À S=1/2, Nyström donne une petite marge positive. Il faut une compression et une erreur sur tout l’espace.",
+      "cout": 4,
+      "version": "V6.47",
+      "temoin": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "document": "72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; ni recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’une condition suffisante : indéterminé. Seul un témoin négatif complet réfuterait le signe.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Famille bornée et diagnostic ne prouvent pas RH."
+      },
+      "appris": "V648 : norme commune et sources/queue du minorant certifiées à1/2 ; sources fortes de Q restent une autre obligation."
+    },
+    {
+      "id": "v647_sources_communes",
+      "titre": "Construire tête, sources et queue ensemble",
+      "statut": "fait",
+      "type": "construction",
+      "question": "Les colonnes de l’opérateur commun fournissent les sources du bloc croisé ; leurs Grams et les erreurs restent à certifier.",
+      "these": "Les colonnes de l’opérateur commun fournissent les sources du bloc croisé ; leurs Grams et les erreurs restent à certifier.",
+      "cout": 4,
+      "version": "V6.47",
+      "temoin": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "document": "72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; ni recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’une condition suffisante : indéterminé. Seul un témoin négatif complet réfuterait le signe.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Famille bornée et diagnostic ne prouvent pas RH."
+      },
+      "appris": "V648 : norme commune et sources/queue du minorant certifiées à1/2 ; sources fortes de Q restent une autre obligation."
+    },
+    {
+      "id": "v647_multi_premiers",
+      "titre": "Conserver les phases des nouveaux premiers",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Étendre b=a+2Σw(1−cos) et ses sous-niveaux, avec le nouveau décalage de masse et les gardes de support.",
+      "these": "Étendre b=a+2Σw(1−cos) et ses sous-niveaux, avec le nouveau décalage de masse et les gardes de support.",
+      "cout": 4,
+      "version": "V6.47",
+      "temoin": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "document": "72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; ni recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’une condition suffisante : indéterminé. Seul un témoin négatif complet réfuterait le signe.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Famille bornée et diagnostic ne prouvent pas RH."
+      }
+    },
+    {
+      "id": "v647_transport_non_borne",
+      "titre": "Construire le transport au-delà des supports bornés",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Maintenir les contrats lorsque S augmente, avec nouvelles directions, nouveaux premiers et convergence de forme.",
+      "these": "Maintenir les contrats lorsque S augmente, avec nouvelles directions, nouveaux premiers et convergence de forme.",
+      "cout": 5,
+      "version": "V6.47",
+      "temoin": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes.",
+      "document": "72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique ; ni recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’une condition suffisante : indéterminé. Seul un témoin négatif complet réfuterait le signe.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Famille bornée et diagnostic ne prouvent pas RH."
+      }
+    },
+    {
+      "id": "v648_operateur_certifie",
+      "titre": "Certifier le même opérateur, sa tête et ses attaches",
+      "statut": "fait",
+      "type": "construction",
+      "question": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "these": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "cout": 4,
+      "version": "V6.48",
+      "temoin": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "document": "73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, sans recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’un minorant : indéterminé pour Q. Une matrice finie sans erreur ne prouve pas le signe global.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Les sources exactes de Q ne sont pas celles de son minorant."
+      },
+      "appris": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts."
+    },
+    {
+      "id": "v648_multi_premiers",
+      "titre": "Construire le coût conjoint multi-premiers",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Conserver les phases des nouveaux premiers avec le décalage de masse correct, puis contrôler le même opérateur.",
+      "these": "Conserver les phases des nouveaux premiers avec le décalage de masse correct, puis contrôler le même opérateur.",
+      "cout": 4,
+      "version": "V6.48",
+      "temoin": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "document": "73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, sans recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’un minorant : indéterminé pour Q. Une matrice finie sans erreur ne prouve pas le signe global.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Les sources exactes de Q ne sont pas celles de son minorant."
+      },
+      "appris": "Coût multi-premiers exact ; paiement joint D/V certifié avec multiplicité. À S=1 : alpha<0,796 contre somme séparée>1,24. Positivité complète inchangée jusqu’à1/2 ; extension à0,55 exploratoire seulement. Transport des supports et sources fortes de Q ouverts."
+    },
+    {
+      "id": "v648_cadres_transport",
+      "titre": "Transporter les cadres et les erreurs entre supports",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Réutiliser les cardinaux, leurs Grams et une erreur opératoire lorsque le support et les fréquences changent.",
+      "these": "Réutiliser les cardinaux, leurs Grams et une erreur opératoire lorsque le support et les fréquences changent.",
+      "cout": 4,
+      "version": "V6.48",
+      "temoin": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "document": "73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, sans recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’un minorant : indéterminé pour Q. Une matrice finie sans erreur ne prouve pas le signe global.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Les sources exactes de Q ne sont pas celles de son minorant."
+      }
+    },
+    {
+      "id": "v648_sources_Q",
+      "titre": "Construire les sources fortes de Q dans la méthode générale",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Ne pas transférer automatiquement les sources de A vers Q ; contrôler le supplément positif non borné et sa norme de graphe.",
+      "these": "Ne pas transférer automatiquement les sources de A vers Q ; contrôler le supplément positif non borné et sa norme de graphe.",
+      "cout": 5,
+      "version": "V6.48",
+      "temoin": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "document": "73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, sans recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’un minorant : indéterminé pour Q. Une matrice finie sans erreur ne prouve pas le signe global.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Les sources exactes de Q ne sont pas celles de son minorant."
+      }
+    },
+    {
+      "id": "v648_transport_non_borne",
+      "titre": "Établir une règle sur une famille non bornée",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Couvrir S_n→∞ avec nouveaux premiers, couplages et convergence ; la famille jusqu’à1/2 reste bornée.",
+      "these": "Couvrir S_n→∞ avec nouveaux premiers, couplages et convergence ; la famille jusqu’à1/2 reste bornée.",
+      "cout": 5,
+      "version": "V6.48",
+      "temoin": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts.",
+      "document": "73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, sans recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’un minorant : indéterminé pour Q. Une matrice finie sans erreur ne prouve pas le signe global.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 5,
+        "refutation": "Les sources exactes de Q ne sont pas celles de son minorant."
+      }
+    },
+    {
+      "id": "v649_frequency_split",
+      "titre": "Certifier le découpage basse et haute fréquence",
+      "statut": "ouvert",
+      "type": "construction",
+      "question": "Traiter la haute fréquence par sa petite action sur la tête, puis Schur, au lieu d’une tête brute.",
+      "these": "Conserver le même opérateur et payer sa queue en norme et dans les sources croisées.",
+      "cout": 4,
+      "version": "V6.49",
+      "temoin": "Coût multi-premiers exact ; paiement joint D/V certifié avec multiplicité. À S=1 : alpha<0,796 contre somme séparée>1,24. Positivité complète inchangée jusqu’à1/2 ; extension à0,55 exploratoire seulement. Transport des supports et sources fortes de Q ouverts.",
+      "document": "74_COMPENSATION_MULTI_PREMIERS.pdf",
+      "gains": {},
+      "probabilite": 0.5,
+      "probabilite_scope": "Convention éditoriale historique, sans recalcul ni probabilité de RH.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "refutation": "Échec d’un minorant : indéterminé pour Q. Une matrice finie sans erreur ne prouve pas le signe global.",
+      "prevision": {
+        "gains": {},
+        "probabilite": 0.5,
+        "cout": 4,
+        "refutation": "Les sources exactes de Q ne sont pas celles de son minorant."
+      }
+    },
+    {
+      "id": "v655_restitution",
+      "titre": "Construire une restitution exacte par carrés",
+      "statut": "fait",
+      "type": "preuve auxiliaire",
+      "question": "Retrouver la somme impaire depuis deux échelles de F_(p^2).",
+      "these": "Retrouver la somme impaire depuis deux échelles de F_(p^2).",
+      "cout": 1,
+      "version": "V6.55",
+      "temoin": "Preuve écrite et recoupement indépendant dans la note.",
+      "document": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "gains": {},
+      "probabilite": 0,
+      "probabilite_scope": "Aucune estimation de probabilité ; étude déjà exécutée.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "appris": "A_o(x)=F_(p^2)(x)-F_(p^2)(x/p) ; dilatation de coût p^(-1/2).",
+      "prevision": null,
+      "refutation_tenue": "Aucun gain global annoncé."
+    },
+    {
+      "id": "v655_petits_conducteurs",
+      "titre": "Contrôler tous les petits conducteurs",
+      "statut": "fait",
+      "type": "preuve auxiliaire",
+      "question": "Regrouper la dette par q et payer la tête q<=H pour toutes les échelles.",
+      "these": "Regrouper la dette par q et payer la tête q<=H pour toutes les échelles.",
+      "cout": 1,
+      "version": "V6.55",
+      "temoin": "Preuve écrite et recoupement indépendant dans la note.",
+      "document": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "gains": {},
+      "probabilite": 0,
+      "probabilite_scope": "Aucune estimation de probabilité ; étude déjà exécutée.",
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "appris": "Borne explicite inconditionnelle de la tête ; aucune borne de la queue q>H.",
+      "prevision": null,
+      "refutation_tenue": "Aucun gain global annoncé."
+    },
+    {
+      "id": "v655_grands_conducteurs",
+      "titre": "Contrôler la dette signée à grand conducteur",
+      "statut": "route à construire",
+      "type": "estimation arithmétique",
+      "question": "À H=X, établir R_(q>X)<=C X^3(1+log X)^k avec C,k fixes, en conservant μ(q) ; la Fourier quadratique et le crible générique ne suffisent pas.",
+      "temoin": "Queue q>H identifiée ; aucune estimation globale obtenue.",
+      "document": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "gains": {},
+      "cout": null,
+      "probabilite": null,
+      "prerequis": [],
+      "debloque": [],
+      "operateurs": [],
+      "croise": [
+        "RH"
+      ],
+      "repond_a": [],
+      "probabilite_scope": "Hors du classement numérique ; aucune probabilité attribuée."
+    }
+  ],
+  "poids_maillon": 1.0,
+  "chaine": [
+    {
+      "id": "finitude",
+      "nom": "Finitude (rationalité)",
+      "etat": "non nécessaire",
+      "preuve": "V6.9 : la reconstruction n'en a pas besoin (un axe par zéro distinct) ; pour ζ, l'espace est de dimension infinie."
+    },
+    {
+      "id": "traces",
+      "nom": "Traces (la tour, le produit d'Euler)",
+      "etat": "acquis",
+      "preuve": "V6.9 : les pics du spectre des longueurs aux log p^k^ ; V6.10 : l'opérateur de ζ se construit depuis les seuls nombres premiers."
+    },
+    {
+      "id": "symetrie",
+      "nom": "Symétrie (équation fonctionnelle)",
+      "etat": "acquis",
+      "preuve": "V6.9 : spectre stable par λ ↦ 1/λ ; V6.10 : métrique hermitienne pour ζ, L et DH."
+    },
+    {
+      "id": "metrique",
+      "nom": "Métrique positive",
+      "etat": "manquant",
+      "preuve": "V6.10–V6.11 : signes observés dans des compressions finies, aux seuils testés ; la positivité générale de ζ et L reste ouverte. V6.36 certifie au moins25 directions négatives dans une seule fenêtre DH. Dans le Modèle réduit, une positivité géométrique s’applique à un objet défini."
+    }
+  ],
+  "poids_croisement": 0.5,
+  "seuil_veille": 3,
+  "pistes_ecartees": [
+    {
+      "titre": "Kalman, GPS analytique",
+      "rejet": "V4.3",
+      "relue": "V6.12",
+      "raison": "aucune loi sur Q ; relu en récurrence de Levinson"
+    },
+    {
+      "titre": "Localisation de sources",
+      "rejet": "V4.3",
+      "relue": "V6.12",
+      "raison": "biais et mode fantôme ; relue avec la masse unité"
+    },
+    {
+      "titre": "Schrödinger, H_eff",
+      "rejet": "V4.3",
+      "relue": "V6.12",
+      "raison": "circularité, blocs de Jordan ; relu au rayon spectral"
+    },
+    {
+      "titre": "TOMO-3 brut (bispectre)",
+      "rejet": "V6.3",
+      "relue": null,
+      "raison": "rétrogradé après crash-tests (document 17)"
+    },
+    {
+      "titre": "Seuil τ_c comme invariant",
+      "rejet": "V6.4",
+      "relue": null,
+      "raison": "existe mais dépend de la fenêtre, de la dimension et de la largeur (document 26)"
+    },
+    {
+      "titre": "Densité de zéros",
+      "rejet": "V3.9",
+      "relue": null,
+      "raison": "aucun gain par les estimations de densité (mémo P2.3)"
+    },
+    {
+      "titre": "Attaque directe sur Q",
+      "rejet": "V5.8",
+      "relue": null,
+      "raison": "règle d'arrêt déclenchée ; Q ne contient pas la positivité de Weil (document 13)"
+    },
+    {
+      "titre": "Cible (★) : K(L) = O(1) sans RH",
+      "rejet": "V5.3",
+      "relue": null,
+      "raison": "(★) équivaut à Q ≪ L³, donc à RH (doc 09, E18) ; cas particulier de « Attaque directe sur Q »",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "Hilbert–Pólya dissipatif (contractivité)",
+      "rejet": "V5.3",
+      "relue": "V6.9–V6.10",
+      "raison": "contractivité automatique ; les étapes « chaque zéro produit un mode » supposent le résultat (doc 09, E17) ; le cœur est le coup metrique_objet",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "E⊥ encadré par les premiers",
+      "rejet": "V5.3",
+      "relue": null,
+      "raison": "obstruction ρ̄ / 1 − ρ : la formule explicite linéaire ne produit pas la conjugaison ; la version quadratique est Weil (doc 09 §2)",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "Projection de Nyman–Beurling à deux directions",
+      "rejet": "V5.6",
+      "relue": null,
+      "raison": "ramène exactement à Q (doc 12) ; palier 4/3 κ/log N au-dessus de l'optimum",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "Déterminant de Gram de Nyman–Beurling",
+      "rejet": "V5.6",
+      "relue": null,
+      "raison": "H_N² ne retire que 0,6 % de NQ(N) : pas d'annulation cachée (doc 12)",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "Polyspectres et cross-bispectres de C_F",
+      "rejet": "V6.3d",
+      "relue": null,
+      "raison": "C_F est une somme de tons aux ordonnées des zéros : toute statistique d'ordre supérieur de C_F teste des relations entre zéros (doc 24) ; doc 17 §5 déconseillait déjà TOMO-4/5",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "Census de Möbius (covariances de blocs)",
+      "rejet": "V6.18 (proposé)",
+      "relue": null,
+      "raison": "la covariance à deux points de μ est couverte par Tao (2015) et Matomäki–Radziwiłł ; pas de témoin adversarial naturel (DH n'a pas de « Möbius » multiplicatif) ; la règle d'arrêt du doc 14 prévoit déjà un résultat descriptif. À relire si un témoin à coefficients multiplicatifs sans équation fonctionnelle (Steinhaus) donne une prédiction distincte",
+      "origine": "OpenAI"
+    },
+    {
+      "titre": "La fonction auxiliaire pour les premiers (J3, forme de Stepanov)",
+      "rejet": "V6.26",
+      "relue": "V6.34",
+      "raison": "Échec de la transplantation directe de Stepanov dans le modèle d’échelle étudié. Aucune dérivation et aucun espace de fonctions adéquats ne sont construits ; l’inversibilité de l’action sur les points ne tranche pas les structures du carré. Réouverture si ces objets sont définis (docs 51 et 58).",
+      "origine": "Plan V6.22, axe J3"
+    }
+  ],
+  "atlas_bellman": "62_ATLAS_DES_DECISIONS_BELLMAN.html",
+  "bilan_v641": {
+    "document": "65_FIBRES_PLIS_ET_POSITIVITE.pdf",
+    "graphe": "65_GRAPHE_DES_PASSAGES.html",
+    "portes_globales": [
+      "Forme de Weil positive sur tous les tests admissibles",
+      "Borne Q(X)=X^{o(1)} depuis les premiers"
+    ],
+    "pont_arithmetique": "ouvert"
+  },
+  "bilan_v642": {
+    "document": "66_UN_PLI_CERTIFIE_ET_SA_PAIRE.pdf",
+    "graphe": "66_GRAPHE_DES_CERTIFICATS.html",
+    "resultat": "Un pli V13 choisi certifié dans sa boîte ; contour continu de deux zéros pour tout le petit intervalle radial ; quatre boîtes uniformes, deux critiques avant et une paire hors droite après. Inégalité de Weil explicitée ; signe global ouvert.",
+    "pont_global": "ouvert"
+  },
+  "bilan_v643": {
+    "document": "67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
+    "graphe": "67_GRAPHE_DES_PONTS.html",
+    "resultat": "Transport Beurling–translations, continuité de Weil dans H¹, cœur admissible, régularisation décalée et Schur démontrés. Bellman de contrats et de formes distingués ; estimation arithmétique de toute la famille encore ouverte.",
+    "pont_global": "estimation de famille ouverte"
+  },
+  "bilan_v644": {
+    "document": "68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.pdf",
+    "dictionnaire": "69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.pdf",
+    "graphe": "69_LANGUE_DES_PASSAGES.html",
+    "resultat": "P et métrique exacte, famille dense, no-go de marge H¹, représentation I−compact, queue effective et arithmétique graduée des jets démontrés. 16 compressions arithmétiques positives numériquement ; signe du Schur pour tous supports ouvert."
+  },
+  "bilan_v645": {
+    "document": "70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.pdf",
+    "graphe": "70_PONT_ARITHMETIQUE.html",
+    "dictionnaire": "69_LANGUE_DES_PASSAGES.html",
+    "resultat": "Annulation polaire et identité de fluctuation de Chebyshev démontrées ; modèle continu négatif pour tout S≥16 ; moments finis insuffisants pour réduire la norme première L² ; queue resserrée et dette de Schur bornée par résidus de sources. Sources/tête certifiées et signe pour tous supports restent ouverts."
+  },
+  "bilan_v646": {
+    "document": "71_LEGO_REUTILISABLE_ET_PREMIER_CERTIFICAT_COMPLET.pdf",
+    "graphe": "71_LEGO_REUTILISABLE.html",
+    "resultat": "Certificat complet sur tout X_S pour 0<S≤347/1000, premier2 présent : Q_W≥masse/25 et R/200. Projection commune aux sources/fréquences, couches par parité et coût de bord assemblés. Supports plus grands, sources des têtes et transport non borné restent ouverts."
+  },
+  "bilan_v647": {
+    "document": "72_CONCENTRATION_PROJETEE_ET_OPERATEUR_COMMUN.pdf",
+    "graphe": "72_CONCENTRATION_PROJETEE.html",
+    "resultat": "Tous tests complexes, 0<S≤3/8 : Q_W≥masse/12 et R/100, premier2 présent. Concentration Schatten2 encadrée sur des sous-niveaux projetés. Opérateur commun démontré ; diagnostic positif à S=1/2 encore non certifié. Sources générales et couverture non bornée ouvertes."
+  },
+  "bilan_v648": {
+    "document": "73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
+    "graphe": "73_OPERATEUR_COMMUN.html",
+    "resultat": "Tous tests complexes, 0<S≤1/2 : Q_W≥masse/250 et R/2000. Norme de l’opérateur commun certifiée, cadre de Gauss80 et deux blocs40. La même erreur certifie tête, sources croisées, queue et Schur du minorant borné. Multi-premiers, sources fortes de Q et couverture non bornée ouverts."
+  },
+  "bilan_v649": {
+    "document": "74_COMPENSATION_MULTI_PREMIERS.pdf",
+    "graphe": "74_COMPENSATION_MULTI_PREMIERS.html",
+    "resultat": "Coût multi-premiers exact ; paiement joint D/V certifié avec multiplicité. À S=1 : alpha<0,796 contre somme séparée>1,24. Positivité complète inchangée jusqu’à1/2 ; extension à0,55 exploratoire seulement. Transport des supports et sources fortes de Q ouverts."
+  },
+  "bilan_v650": {
+    "document": "75_RECUPERATION_TRANSPORT_ET_RH.pdf",
+    "graphe": "75_RECUPERATION_TRANSPORT_ET_RH.html",
+    "resultat": "Transport exact et cœur dense ; certificat local complet jusqu’à S=11/20 dans le modèle arithmétique déclaré. Positivité pour tous les supports ouverte.",
+    "cible": "∀r>0, ∀f∈X_(1/2), Q_W(T_rf)≥0",
+    "current_state": "v650_etat_recherche.json"
+  },
+  "bilan_v651": {
+    "document": "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+    "resultat": "Retour à la compensation signée ; couvertures auxiliaires dans leurs topologies. Loi universelle de signe ouverte."
+  },
+  "bilan_v652": {
+    "document": "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.md",
+    "resultat": "Transport positif : bilans et brique initiale ; existence de toutes les lignes et signe du résidu ouverts."
+  },
+  "bilan_v653": {
+    "document": "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.md",
+    "resultat": "Garde de toutes les coupures ; crédit de courbure fini ; obstruction des blocs agrégés à rapport fixe. Certificat fini jusqu’à 1000 ; signe global ouvert."
+  },
+  "bilan_parcours": {
+    "date": "2026-10-14",
+    "registry": "3_Preuves_et_calculs/data/parcours_et_proprietes.json",
+    "document": "PARCOURS_ET_PROPRIETES.html",
+    "resultat": "V6.54 : identité arithmétique, corrélations ancrées et critère énergétique classique intégrés avec preuves, programmes, contre-modèles et audits. Borne globale et signe de Weil ouverts.",
+    "version": "V6.54"
+  },
+  "bilan_v654": {
+    "document": "CORRELATIONS_IDENTITE_ET_ENERGIE.html",
+    "resultat": "V6.54 : identité arithmétique, corrélations ancrées et critère énergétique classique intégrés avec preuves, programmes, contre-modèles et audits. Borne globale et signe de Weil ouverts.",
+    "obligation": "J(X)=O(X^2) for the true coefficients, or a global Weil sign law"
+  },
+  "bilan_v655": {
+    "version": "V6.55",
+    "document": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+    "resultat": "Restitution exacte de la somme de Möbius et petits conducteurs contrôlés à toutes les échelles. Dette signée des grands conducteurs ouverte ; conséquence vers Re(s) > 3/4 conditionnelle. Aucun gain global sur l’énergie totale ni preuve de RH.",
+    "next_action": {
+      "titre": "Contrôler la dette signée à grand conducteur",
+      "question": "À H=X, établir R_(q>X)<=C X^3(1+log X)^k avec C,k fixes, en conservant μ(q) ; la Fourier quadratique et le crible générique ne suffisent pas.",
+      "document": "ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.html",
+      "statut": "route à construire",
+      "probabilite_estimee": null
+    },
+    "probability_estimate": null
+  }
+}
