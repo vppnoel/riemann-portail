@@ -4,6 +4,8 @@
 
 *English: [README_EN.md](README_EN.md).*
 
+> **Première visite ? Commencez par [INTRODUCTION.md](INTRODUCTION.md)** (en anglais) : ce qu’est ce projet, comment il a été mené avec des IA, le degré de solidité de chaque résultat, et comment contribuer.
+
 ## À lire d’abord
 
 **RH reste ouverte. Le corpus ne contient pas de preuve de RH. Il contient des énoncés démontrés dans des cadres délimités, des certificats sur des fenêtres bornées, des mesures avec prévisions écrites avant, et la liste précise de ce qui manque.**

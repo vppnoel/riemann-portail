@@ -2,6 +2,8 @@
 
 *17 October 2026. A personal research programme on the Riemann Hypothesis (RH), kept as a versioned corpus of documents, proofs, code, data and tests. Author: Vincent P. P. NOËL (Strasbourg). The work was carried out with the help of ChatGPT (OpenAI) and Claude (Anthropic); the author takes final responsibility for the content. Most research documents are in French ([README.md](README.md)); this entry layer, the three papers, the specialist review file and documents 80–82 are in English.*
 
+> **New here? Start with [INTRODUCTION.md](INTRODUCTION.md)**: what this project is, how it was made with AI, how solid each result is, and how you can help.
+
 ## Read first
 
 **RH remains open. The corpus contains no proof of RH. It contains statements proved in delimited settings, certificates on bounded windows, measurements with predictions written in advance, and a precise list of what is missing.**
