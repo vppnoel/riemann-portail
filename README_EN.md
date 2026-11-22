@@ -6,6 +6,8 @@
 
 ## Read first
 
+> **22 November 2026.** A proof of the (Generalized) Riemann Hypothesis was announced on 20 November 2026 by L. Alpöge with Claude, as a Lean formalisation independently checked since. The paragraph below describes the state on 17 October 2026. See [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md) for what this changes (Theorem B becomes unconditional; simplicity of zeros stays open).
+
 **RH remains open. The corpus contains no proof of RH. It contains statements proved in delimited settings, certificates on bounded windows, measurements with predictions written in advance, and a precise list of what is missing.**
 
 **1. The analytic core: Theorems A and B, three papers ready for specialist review** — *Proved, internally reviewed · not yet refereed*

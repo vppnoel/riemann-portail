@@ -1,6 +1,8 @@
 # About this repository
 
-*Vincent P. P. NOËL — October 2026*
+*Vincent P. P. NOËL — October 2026, updated 22 November 2026*
+
+> **Update, 22 November 2026.** On 20 November 2026, Levent Alpöge announced a proof of the Generalized Riemann Hypothesis obtained with Claude, released as a Lean formalisation that has since been independently built and checked. No human-readable proof or peer review exists yet. What this changes for the corpus, and my attempt to explain *why* the proof works, are in [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md).
 
 ## What this is
 
@@ -16,7 +18,7 @@ The second is about method. As a neuroscientist, I am interested in how people c
 
 ## What it does not contain
 
-There is no proof of the Riemann Hypothesis here, and none is attempted. The working question is a different one: what structure makes RH necessary, and what exactly is missing for zeta compared with settings where the analogue is proved (curves over finite fields).
+There is no proof of the Riemann Hypothesis here, and none was attempted. The working question was a different one: what structure makes RH necessary, and what exactly is missing for zeta compared with settings where the analogue is proved (curves over finite fields). Since the announcement of November 2026, that question has become sharper rather than obsolete: a machine-checked proof shows that RH is true, not yet why.
 
 ## What is here, and how solid it is
 
@@ -26,7 +28,7 @@ Every result is labelled with one of three levels:
 - **Measured**: computed in high precision, with the prediction written down before the computation. Not a proof.
 - **Supposed**: a working hypothesis.
 
-The piece most worth a specialist's time is **Paper 1** ([PDF](1_Presentation/articles/article1_mean_square_double_poles.pdf)). It studies the mean square of a summatory function whose Dirichlet series has a double pole at each zero of zeta, and states a double-pole analogue of Cramér's 1922 mean-square theorem. Under RH, the leading constant equals 4κ/3 if and only if all zeros are simple. I do not know whether this is already in the literature. A question about it on MathOverflow was closed as off-topic; the comments were about the style of the question (which read as AI-written) rather than the mathematics, which is a fair lesson and part of the record.
+The piece most worth a specialist's time is **Paper 1** ([PDF](1_Presentation/articles/article1_mean_square_double_poles.pdf)). It studies the mean square of a summatory function whose Dirichlet series has a double pole at each zero of zeta, and states a double-pole analogue of Cramér's 1922 mean-square theorem. Under RH, the leading constant equals 4κ/3 if and only if all zeros are simple. If the announced proof of RH stands, this becomes unconditional: a criterion for the simplicity of the zeros, which remains open. I do not know whether this is already in the literature. A question about it on MathOverflow was closed as off-topic; the comments were about the style of the question (which read as AI-written) rather than the mathematics, which is a fair lesson and part of the record.
 
 The other entry points are listed in [README_EN.md](README_EN.md) (English) and [README.md](README.md) (French). Most research documents are in French; the three papers and the entry layer are in English.
 
