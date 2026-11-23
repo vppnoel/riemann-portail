@@ -25,7 +25,11 @@ mp.mp.dps = 60
 # ---------------------------------------------------------------- quadrature de Gauss–Legendre en précision multiple
 _GL = {}
 def gauss(n):
-    if n in _GL: return _GL[n]
+    """Nœuds et poids de Gauss–Legendre à n points, à la précision courante.
+    Le cache est indexé par (n, précision) : avant le 18 octobre 2026, il l'était par n seul, si bien qu'un calcul
+    à 80 chiffres pouvait réutiliser des nœuds calculés à 60 chiffres (relevé par la vérification de TAC-007)."""
+    key = (n, mp.mp.dps)
+    if key in _GL: return _GL[key]
     x0, _ = np.polynomial.legendre.leggauss(n); xs, ws = [], []
     for x in x0:
         x = mp.mpf(x)
@@ -39,7 +43,7 @@ def gauss(n):
         for k in range(2, n + 1): p0, p1 = p1, ((2 * k - 1) * x * p1 - (k - 1) * p0) / k
         dp = n * (x * p1 - p0) / (x * x - 1)
         xs.append(x); ws.append(2 / ((1 - x * x) * dp * dp))
-    _GL[n] = (xs, ws); return xs, ws
+    _GL[key] = (xs, ws); return xs, ws
 
 
 def nodes(a, b, n):

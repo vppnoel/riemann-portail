@@ -1,0 +1,38 @@
+{
+ "N=40 K=48 dps=60 pair": {
+  "marge": "5.39923299611e-12",
+  "secondes": 28
+ },
+ "N=48 K=48 dps=60 pair": {
+  "marge": "5.37876479342e-12",
+  "secondes": 45
+ },
+ "N=56 K=48 dps=60 pair": {
+  "marge": "5.35725706389e-12",
+  "secondes": 114
+ },
+ "N=64 K=48 dps=60 pair": {
+  "marge": "5.34694614142e-12",
+  "secondes": 214
+ },
+ "N=48 K=96 dps=60 pair": {
+  "marge": "5.38524293886e-12",
+  "secondes": 298
+ },
+ "N=64 K=96 dps=60 pair": {
+  "marge": "5.35029972448e-12",
+  "secondes": 482
+ },
+ "N=56 K=48 dps=80 pair": {
+  "marge": "5.35725706389e-12",
+  "secondes": 557
+ },
+ "N=64 K=96 dps=80 pair": {
+  "marge": "5.35029972448e-12",
+  "secondes": 760
+ },
+ "N=48 K=48 dps=60 impair": {
+  "marge": "9.85526381624e-10",
+  "secondes": 806
+ }
+}

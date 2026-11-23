@@ -1,0 +1,1524 @@
+{
+  "acteur": "ia:chatgpt-sol-6.1-max",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "controles": [
+    {
+      "controle": "integrite/4_Archives/recus/2026-10-17/critique_tomographie_de_phase_MPT.txt",
+      "ok": true
+    },
+    {
+      "controle": "integrite/1_Presentation/18_PRIME_LOCK_premier_verrou_local.md",
+      "ok": true
+    },
+    {
+      "controle": "integrite/1_Presentation/15_TOMO_DH_formalisation.md",
+      "ok": true
+    },
+    {
+      "controle": "integrite/1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-008/RAPPORT.md",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-008/decomposition_K.py",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-008/resultats.json",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-008/temoin_negatif.json",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-008/temoin_negatif.py",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/NMAX",
+      "ok": true,
+      "original": 20000,
+      "rejeu": 20000
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/h",
+      "ok": true,
+      "original": 0.5,
+      "rejeu": 0.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u:liste",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/0",
+      "ok": true,
+      "original": 2.0,
+      "rejeu": 2.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/1",
+      "ok": true,
+      "original": 2.25,
+      "rejeu": 2.25
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/2",
+      "ok": true,
+      "original": 2.5,
+      "rejeu": 2.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/3",
+      "ok": true,
+      "original": 2.75,
+      "rejeu": 2.75
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/4",
+      "ok": true,
+      "original": 3.0,
+      "rejeu": 3.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/5",
+      "ok": true,
+      "original": 3.25,
+      "rejeu": 3.25
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/6",
+      "ok": true,
+      "original": 3.5,
+      "rejeu": 3.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/7",
+      "ok": true,
+      "original": 3.75,
+      "rejeu": 3.75
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/8",
+      "ok": true,
+      "original": 4.0,
+      "rejeu": 4.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/9",
+      "ok": true,
+      "original": 4.25,
+      "rejeu": 4.25
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/10",
+      "ok": true,
+      "original": 4.5,
+      "rejeu": 4.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/11",
+      "ok": true,
+      "original": 4.75,
+      "rejeu": 4.75
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/12",
+      "ok": true,
+      "original": 5.0,
+      "rejeu": 5.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/13",
+      "ok": true,
+      "original": 5.25,
+      "rejeu": 5.25
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/14",
+      "ok": true,
+      "original": 5.5,
+      "rejeu": 5.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/15",
+      "ok": true,
+      "original": 5.75,
+      "rejeu": 5.75
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/16",
+      "ok": true,
+      "original": 6.0,
+      "rejeu": 6.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/17",
+      "ok": true,
+      "original": 6.25,
+      "rejeu": 6.25
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/18",
+      "ok": true,
+      "original": 6.5,
+      "rejeu": 6.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/19",
+      "ok": true,
+      "original": 6.75,
+      "rejeu": 6.75
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/20",
+      "ok": true,
+      "original": 7.0,
+      "rejeu": 7.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/21",
+      "ok": true,
+      "original": 7.25,
+      "rejeu": 7.25
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/22",
+      "ok": true,
+      "original": 7.5,
+      "rejeu": 7.5
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/23",
+      "ok": true,
+      "original": 7.75,
+      "rejeu": 7.75
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/u/24",
+      "ok": true,
+      "original": 8.0,
+      "rejeu": 8.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/T:liste",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/T/0",
+      "ok": true,
+      "original": 10.0,
+      "rejeu": 10.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/T/1",
+      "ok": true,
+      "original": 1.0,
+      "rejeu": 1.0
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/tirages",
+      "ok": true,
+      "original": 20,
+      "rejeu": 20
+    },
+    {
+      "controle": "rejeu/resultats.json/reglages/graine",
+      "ok": true,
+      "original": 20261018,
+      "rejeu": 20261018
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/zeta:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/zeta/part_diag",
+      "ok": true,
+      "original": 0.02334446556166193,
+      "rejeu": 0.02334446556166193
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/zeta/part_chaine",
+      "ok": true,
+      "original": 6.968783743117502e-15,
+      "rejeu": 6.968783743117502e-15
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/zeta/part_croise",
+      "ok": true,
+      "original": 0.9766555344383311,
+      "rejeu": 0.9766555344383311
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/zeta/chaine_sur_trace",
+      "ok": true,
+      "original": 4.672546716556645e-15,
+      "rejeu": 4.672546716556645e-15
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/zeta/croise_sur_trace",
+      "ok": true,
+      "original": 0.6548443428386861,
+      "rejeu": 0.6548443428386861
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/L_chi5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/L_chi5/part_diag",
+      "ok": true,
+      "original": 0.5777763180521319,
+      "rejeu": 0.5777763180521319
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/L_chi5/part_chaine",
+      "ok": true,
+      "original": 9.865376313128482e-14,
+      "rejeu": 9.865376313128482e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/L_chi5/part_croise",
+      "ok": true,
+      "original": 0.4222236819477695,
+      "rejeu": 0.4222236819477695
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/L_chi5/chaine_sur_trace",
+      "ok": true,
+      "original": 2.431741912963616e-13,
+      "rejeu": 2.431741912963616e-13
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/L_chi5/croise_sur_trace",
+      "ok": true,
+      "original": 1.040749984034429,
+      "rejeu": 1.040749984034429
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/DH/part_diag",
+      "ok": true,
+      "original": 0.5251576145281888,
+      "rejeu": 0.5251576145281888
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/DH/part_chaine",
+      "ok": true,
+      "original": 1.647928087609901e-15,
+      "rejeu": 1.647928087609901e-15
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/DH/part_croise",
+      "ok": true,
+      "original": 0.4748423854718096,
+      "rejeu": 0.4748423854718096
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/DH/chaine_sur_trace",
+      "ok": true,
+      "original": 1.0772275115038194e-14,
+      "rejeu": 1.0772275115038194e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/DH/croise_sur_trace",
+      "ok": true,
+      "original": 3.1039781717672907,
+      "rejeu": 3.1039781717672907
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_moyenne_part_diag",
+      "ok": true,
+      "original": 0.7516612314087983,
+      "rejeu": 0.7516612314087983
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_ecart_type_part_diag",
+      "ok": true,
+      "original": 0.06114989962078613,
+      "rejeu": 0.06114989962078613
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_moyenne_part_chaine",
+      "ok": true,
+      "original": 1.8406577699014986e-13,
+      "rejeu": 1.8406577699014986e-13
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_ecart_type_part_chaine",
+      "ok": true,
+      "original": 3.058575037549952e-14,
+      "rejeu": 3.058575037549952e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_moyenne_part_croise",
+      "ok": true,
+      "original": 0.24833876859101767,
+      "rejeu": 0.24833876859101767
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_ecart_type_part_croise",
+      "ok": true,
+      "original": 0.0611498996207963,
+      "rejeu": 0.0611498996207963
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_moyenne_chaine_sur_trace",
+      "ok": true,
+      "original": 1.158305720954613e-13,
+      "rejeu": 1.158305720954613e-13
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_ecart_type_chaine_sur_trace",
+      "ok": true,
+      "original": 2.3116142286029937e-14,
+      "rejeu": 2.3116142286029937e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_moyenne_croise_sur_trace",
+      "ok": true,
+      "original": 0.15805006224922352,
+      "rejeu": 0.15805006224922352
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W1_ecart_type_croise_sur_trace",
+      "ok": true,
+      "original": 0.048931500964222704,
+      "rejeu": 0.048931500964222704
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_moyenne_part_diag",
+      "ok": true,
+      "original": 0.7793041057995541,
+      "rejeu": 0.7793041057995541
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_ecart_type_part_diag",
+      "ok": true,
+      "original": 0.058167424659590516,
+      "rejeu": 0.058167424659590516
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_moyenne_part_chaine",
+      "ok": true,
+      "original": 1.4495528012664972e-13,
+      "rejeu": 1.4495528012664972e-13
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_ecart_type_part_chaine",
+      "ok": true,
+      "original": 3.8794082845162667e-14,
+      "rejeu": 3.8794082845162667e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_moyenne_part_croise",
+      "ok": true,
+      "original": 0.22069589420030086,
+      "rejeu": 0.22069589420030086
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_ecart_type_part_croise",
+      "ok": true,
+      "original": 0.058167424659602285,
+      "rejeu": 0.058167424659602285
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_moyenne_chaine_sur_trace",
+      "ok": true,
+      "original": 8.291488913740278e-14,
+      "rejeu": 8.291488913740278e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_ecart_type_chaine_sur_trace",
+      "ok": true,
+      "original": 2.2987745894434107e-14,
+      "rejeu": 2.2987745894434107e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_moyenne_croise_sur_trace",
+      "ok": true,
+      "original": 0.12807938290403242,
+      "rejeu": 0.12807938290403242
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/W2_ecart_type_croise_sur_trace",
+      "ok": true,
+      "original": 0.04296447828437406,
+      "rejeu": 0.04296447828437406
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-DH/R",
+      "ok": true,
+      "original": 1.1291638990904447,
+      "rejeu": 1.1291638990904447
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-DH/diag",
+      "ok": true,
+      "original": 3.4177846299164183,
+      "rejeu": 3.4177846299164183
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-DH/chaine",
+      "ok": true,
+      "original": 1.0399972693081504e-14,
+      "rejeu": 1.0399972693081504e-14
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-DH/croise",
+      "ok": true,
+      "original": 3.7183364832143098,
+      "rejeu": 3.7183364832143098
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-L_chi5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-L_chi5/R",
+      "ok": true,
+      "original": 0.7190599393654064,
+      "rejeu": 0.7190599393654064
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-L_chi5/diag",
+      "ok": true,
+      "original": 1.408524205752283,
+      "rejeu": 1.408524205752283
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-L_chi5/chaine",
+      "ok": true,
+      "original": 2.432190782102792e-13,
+      "rejeu": 2.432190782102792e-13
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/zeta-L_chi5/croise",
+      "ok": true,
+      "original": 1.6208632726308279,
+      "rejeu": 1.6208632726308279
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/L_chi5-DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/L_chi5-DH/R",
+      "ok": true,
+      "original": 1.4271825011894372,
+      "rejeu": 1.4271825011894372
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/L_chi5-DH/diag",
+      "ok": true,
+      "original": 2.0899699568216503,
+      "rejeu": 2.0899699568216503
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/L_chi5-DH/chaine",
+      "ok": true,
+      "original": 2.4341267268528475e-13,
+      "rejeu": 2.4341267268528475e-13
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/L_chi5-DH/croise",
+      "ok": true,
+      "original": 2.1066097400744264,
+      "rejeu": 2.1066097400744264
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/z_chaine_zeta_contre_W2",
+      "ok": true,
+      "original": -3.4036543983109935,
+      "rejeu": -3.4036543983109935
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/z_chaine_W1_contre_W2",
+      "ok": true,
+      "original": 4.515372969577399,
+      "rejeu": 4.515372969577399
+    },
+    {
+      "controle": "rejeu/resultats.json/T=10/separations/z_chaine_W1_contre_W2_tirage_unique",
+      "ok": true,
+      "original": 1.0096680903740152,
+      "rejeu": 1.0096680903740152
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/zeta:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/zeta/part_diag",
+      "ok": true,
+      "original": 0.0034274044291571605,
+      "rejeu": 0.0034274044291571605
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/zeta/part_chaine",
+      "ok": true,
+      "original": 6.213989840617642e-05,
+      "rejeu": 6.213989840617642e-05
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/zeta/part_croise",
+      "ok": true,
+      "original": 0.9965104556724368,
+      "rejeu": 0.9965104556724368
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/zeta/chaine_sur_trace",
+      "ok": true,
+      "original": 4.876388916256412e-05,
+      "rejeu": 4.876388916256412e-05
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/zeta/croise_sur_trace",
+      "ok": true,
+      "original": 0.7820052278186053,
+      "rejeu": 0.7820052278186053
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/L_chi5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/L_chi5/part_diag",
+      "ok": true,
+      "original": 0.5007365323641999,
+      "rejeu": 0.5007365323641999
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/L_chi5/part_chaine",
+      "ok": true,
+      "original": 0.001240435985922546,
+      "rejeu": 0.001240435985922546
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/L_chi5/part_croise",
+      "ok": true,
+      "original": 0.4980230316498775,
+      "rejeu": 0.4980230316498775
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/L_chi5/chaine_sur_trace",
+      "ok": true,
+      "original": 0.06396943219216415,
+      "rejeu": 0.06396943219216415
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/L_chi5/croise_sur_trace",
+      "ok": true,
+      "original": 25.683107322599167,
+      "rejeu": 25.683107322599167
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/DH/part_diag",
+      "ok": true,
+      "original": 0.4996760776722578,
+      "rejeu": 0.4996760776722578
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/DH/part_chaine",
+      "ok": true,
+      "original": 0.001019173752545389,
+      "rejeu": 0.001019173752545389
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/DH/part_croise",
+      "ok": true,
+      "original": 0.4993047485751967,
+      "rejeu": 0.4993047485751967
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/DH/chaine_sur_trace",
+      "ok": true,
+      "original": 0.27895832502312773,
+      "rejeu": 0.27895832502312773
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/DH/croise_sur_trace",
+      "ok": true,
+      "original": 136.66483854275643,
+      "rejeu": 136.66483854275643
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_moyenne_part_diag",
+      "ok": true,
+      "original": 0.4971469107912803,
+      "rejeu": 0.4971469107912803
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_ecart_type_part_diag",
+      "ok": true,
+      "original": 0.09009548271254086,
+      "rejeu": 0.09009548271254086
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_moyenne_part_chaine",
+      "ok": true,
+      "original": 0.003599370523109795,
+      "rejeu": 0.003599370523109795
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_ecart_type_part_chaine",
+      "ok": true,
+      "original": 0.0013501118398101825,
+      "rejeu": 0.0013501118398101825
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_moyenne_part_croise",
+      "ok": true,
+      "original": 0.49925371868560997,
+      "rejeu": 0.49925371868560997
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_ecart_type_part_croise",
+      "ok": true,
+      "original": 0.0902108195490363,
+      "rejeu": 0.0902108195490363
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_moyenne_chaine_sur_trace",
+      "ok": true,
+      "original": 0.003453687922903599,
+      "rejeu": 0.003453687922903599
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_ecart_type_chaine_sur_trace",
+      "ok": true,
+      "original": 0.0016555788669139703,
+      "rejeu": 0.0016555788669139703
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_moyenne_croise_sur_trace",
+      "ok": true,
+      "original": 0.46277419929543395,
+      "rejeu": 0.46277419929543395
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W1_ecart_type_croise_sur_trace",
+      "ok": true,
+      "original": 0.10225936889440075,
+      "rejeu": 0.10225936889440075
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_moyenne_part_diag",
+      "ok": true,
+      "original": 0.5155485696271883,
+      "rejeu": 0.5155485696271883
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_ecart_type_part_diag",
+      "ok": true,
+      "original": 0.07144722336758128,
+      "rejeu": 0.07144722336758128
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_moyenne_part_chaine",
+      "ok": true,
+      "original": 0.003518152359995086,
+      "rejeu": 0.003518152359995086
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_ecart_type_part_chaine",
+      "ok": true,
+      "original": 0.0011254837109922699,
+      "rejeu": 0.0011254837109922699
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_moyenne_part_croise",
+      "ok": true,
+      "original": 0.4809332780128166,
+      "rejeu": 0.4809332780128166
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_ecart_type_part_croise",
+      "ok": true,
+      "original": 0.07195708740847355,
+      "rejeu": 0.07195708740847355
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_moyenne_chaine_sur_trace",
+      "ok": true,
+      "original": 0.0038529966661616337,
+      "rejeu": 0.0038529966661616337
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_ecart_type_chaine_sur_trace",
+      "ok": true,
+      "original": 0.0017754699355522598,
+      "rejeu": 0.0017754699355522598
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_moyenne_croise_sur_trace",
+      "ok": true,
+      "original": 0.5001383046243084,
+      "rejeu": 0.5001383046243084
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/W2_ecart_type_croise_sur_trace",
+      "ok": true,
+      "original": 0.10284596656563601,
+      "rejeu": 0.10284596656563601
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-DH/R",
+      "ok": true,
+      "original": 16.592777562858892,
+      "rejeu": 16.592777562858892
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-DH/diag",
+      "ok": true,
+      "original": 136.76388048158668,
+      "rejeu": 136.76388048158668
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-DH/chaine",
+      "ok": true,
+      "original": 0.2789997101310711,
+      "rejeu": 0.2789997101310711
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-DH/croise",
+      "ok": true,
+      "original": 137.36369654644855,
+      "rejeu": 137.36369654644855
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-L_chi5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-L_chi5/R",
+      "ok": true,
+      "original": 18.387258129438262,
+      "rejeu": 18.387258129438262
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-L_chi5/diag",
+      "ok": true,
+      "original": 25.820353402802535,
+      "rejeu": 25.820353402802535
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-L_chi5/chaine",
+      "ok": true,
+      "original": 0.064005794404596,
+      "rejeu": 0.064005794404596
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/zeta-L_chi5/croise",
+      "ok": true,
+      "original": 26.290440710590506,
+      "rejeu": 26.290440710590506
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/L_chi5-DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/L_chi5-DH/R",
+      "ok": true,
+      "original": 10.497496481431265,
+      "rejeu": 10.497496481431265
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/L_chi5-DH/diag",
+      "ok": true,
+      "original": 112.02254551908369,
+      "rejeu": 112.02254551908369
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/L_chi5-DH/chaine",
+      "ok": true,
+      "original": 0.2398322340734155,
+      "rejeu": 0.2398322340734155
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/L_chi5-DH/croise",
+      "ok": true,
+      "original": 112.05560577368728,
+      "rejeu": 112.05560577368728
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/z_chaine_zeta_contre_W2",
+      "ok": true,
+      "original": -2.142662458441327,
+      "rejeu": -2.142662458441327
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/z_chaine_W1_contre_W2",
+      "ok": true,
+      "original": -0.7356088444419547,
+      "rejeu": -0.7356088444419547
+    },
+    {
+      "controle": "rejeu/resultats.json/T=1/separations/z_chaine_W1_contre_W2_tirage_unique",
+      "ok": true,
+      "original": -0.16448713810222793,
+      "rejeu": -0.16448713810222793
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/reglages:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/reglages/NMAX",
+      "ok": true,
+      "original": 20000,
+      "rejeu": 20000
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/reglages/h",
+      "ok": true,
+      "original": 0.5,
+      "rejeu": 0.5
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/reglages/T:liste",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/reglages/T/0",
+      "ok": true,
+      "original": 10.0,
+      "rejeu": 10.0
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/reglages/T/1",
+      "ok": true,
+      "original": 1.0,
+      "rejeu": 1.0
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/d_diag",
+      "ok": true,
+      "original": 0.0004959607731302895,
+      "rejeu": 0.0004959607731302895
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/d_chaine",
+      "ok": true,
+      "original": 5.815769609003062e-15,
+      "rejeu": 5.815769609003062e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/d_croise",
+      "ok": true,
+      "original": 0.010492654664593867,
+      "rejeu": 0.010492654664593867
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/chaine_sur_max_autres",
+      "ok": true,
+      "original": 5.542705630661457e-13,
+      "rejeu": 5.542705630661457e-13
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/part_chaine_zeta",
+      "ok": true,
+      "original": 6.968783743117502e-15,
+      "rejeu": 6.968783743117502e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/part_chaine_defaut",
+      "ok": true,
+      "original": 1.5407425380843337e-14,
+      "rejeu": 1.5407425380843337e-14
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta0.5/variation_relative_part",
+      "ok": true,
+      "original": 1.2109202909417287,
+      "rejeu": 1.2109202909417287
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/d_diag",
+      "ok": true,
+      "original": 0.001190305855512695,
+      "rejeu": 0.001190305855512695
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/d_chaine",
+      "ok": true,
+      "original": 1.3951257883323857e-14,
+      "rejeu": 1.3951257883323857e-14
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/d_croise",
+      "ok": true,
+      "original": 0.021062996329070275,
+      "rejeu": 0.021062996329070275
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/chaine_sur_max_autres",
+      "ok": true,
+      "original": 6.623586533160483e-13,
+      "rejeu": 6.623586533160483e-13
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/part_chaine_zeta",
+      "ok": true,
+      "original": 6.968783743117502e-15,
+      "rejeu": 6.968783743117502e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/part_chaine_defaut",
+      "ok": true,
+      "original": 2.6944710559482366e-14,
+      "rejeu": 2.6944710559482366e-14
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta1/variation_relative_part",
+      "ok": true,
+      "original": 2.866486829368676,
+      "rejeu": 2.866486829368676
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/d_diag",
+      "ok": true,
+      "original": 0.003174148948033854,
+      "rejeu": 0.003174148948033854
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/d_chaine",
+      "ok": true,
+      "original": 3.7181431519545944e-14,
+      "rejeu": 3.7181431519545944e-14
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/d_croise",
+      "ok": true,
+      "original": 0.04243891240377437,
+      "rejeu": 0.04243891240377437
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/chaine_sur_max_autres",
+      "ok": true,
+      "original": 8.761165028404252e-13,
+      "rejeu": 8.761165028404252e-13
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/part_chaine_zeta",
+      "ok": true,
+      "original": 6.968783743117502e-15,
+      "rejeu": 6.968783743117502e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/part_chaine_defaut",
+      "ok": true,
+      "original": 5.871637640486505e-14,
+      "rejeu": 5.871637640486505e-14
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 eta2/variation_relative_part",
+      "ok": true,
+      "original": 7.425627565621391,
+      "rejeu": 7.425627565621391
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/d_diag",
+      "ok": true,
+      "original": 0.0,
+      "rejeu": 0.0
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/d_chaine",
+      "ok": true,
+      "original": 3.2947143455239076e-15,
+      "rejeu": 3.2947143455239076e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/d_croise",
+      "ok": true,
+      "original": 0.028640815362621946,
+      "rejeu": 0.028640815362621946
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/chaine_sur_max_autres",
+      "ok": true,
+      "original": 1.15035633720949e-13,
+      "rejeu": 1.15035633720949e-13
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/part_chaine_zeta",
+      "ok": true,
+      "original": 6.968783743117502e-15,
+      "rejeu": 6.968783743117502e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/part_chaine_defaut",
+      "ok": true,
+      "original": 5.1923649865272116e-15,
+      "rejeu": 5.1923649865272116e-15
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=10.0 phase/variation_relative_part",
+      "ok": true,
+      "original": -0.254910874274828,
+      "rejeu": -0.254910874274828
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/d_diag",
+      "ok": true,
+      "original": 8.522360048893288e-05,
+      "rejeu": 8.522360048893288e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/d_chaine",
+      "ok": true,
+      "original": 4.9969274839400135e-05,
+      "rejeu": 4.9969274839400135e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/d_croise",
+      "ok": true,
+      "original": 0.013315872206705534,
+      "rejeu": 0.013315872206705534
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/chaine_sur_max_autres",
+      "ok": true,
+      "original": 0.003752609972798994,
+      "rejeu": 0.003752609972798994
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/part_chaine_zeta",
+      "ok": true,
+      "original": 6.213989840617642e-05,
+      "rejeu": 6.213989840617642e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/part_chaine_defaut",
+      "ok": true,
+      "original": 0.00012366860166849943,
+      "rejeu": 0.00012366860166849943
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta0.5/variation_relative_part",
+      "ok": true,
+      "original": 0.9901642075457165,
+      "rejeu": 0.9901642075457165
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/d_diag",
+      "ok": true,
+      "original": 0.00020453664117343903,
+      "rejeu": 0.00020453664117343903
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/d_chaine",
+      "ok": true,
+      "original": 0.00011710032325916575,
+      "rejeu": 0.00011710032325916575
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/d_croise",
+      "ok": true,
+      "original": 0.026776260873037378,
+      "rejeu": 0.026776260873037378
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/chaine_sur_max_autres",
+      "ok": true,
+      "original": 0.0043732888551695085,
+      "rejeu": 0.0043732888551695085
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/part_chaine_zeta",
+      "ok": true,
+      "original": 6.213989840617642e-05,
+      "rejeu": 6.213989840617642e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/part_chaine_defaut",
+      "ok": true,
+      "original": 0.00020447855202032733,
+      "rejeu": 0.00020447855202032733
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta1/variation_relative_part",
+      "ok": true,
+      "original": 2.2906161301352097,
+      "rejeu": 2.2906161301352097
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/d_diag",
+      "ok": true,
+      "original": 0.0005454310431291705,
+      "rejeu": 0.0005454310431291705
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/d_chaine",
+      "ok": true,
+      "original": 0.00030294744942861815,
+      "rejeu": 0.00030294744942861815
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/d_croise",
+      "ok": true,
+      "original": 0.05413318363701398,
+      "rejeu": 0.05413318363701398
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/chaine_sur_max_autres",
+      "ok": true,
+      "original": 0.005596335354299678,
+      "rejeu": 0.005596335354299678
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/part_chaine_zeta",
+      "ok": true,
+      "original": 6.213989840617642e-05,
+      "rejeu": 6.213989840617642e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/part_chaine_defaut",
+      "ok": true,
+      "original": 0.00042029573859521103,
+      "rejeu": 0.00042029573859521103
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 eta2/variation_relative_part",
+      "ok": true,
+      "original": 5.763701733915863,
+      "rejeu": 5.763701733915863
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/d_diag",
+      "ok": true,
+      "original": 0.0,
+      "rejeu": 0.0
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/d_chaine",
+      "ok": true,
+      "original": 6.28893860286715e-05,
+      "rejeu": 6.28893860286715e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/d_croise",
+      "ok": true,
+      "original": 0.0358251005509138,
+      "rejeu": 0.0358251005509138
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/chaine_sur_max_autres",
+      "ok": true,
+      "original": 0.001755455952992918,
+      "rejeu": 0.001755455952992918
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/part_chaine_zeta",
+      "ok": true,
+      "original": 6.213989840617642e-05,
+      "rejeu": 6.213989840617642e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/part_chaine_defaut",
+      "ok": true,
+      "original": 2.6098665775277004e-05,
+      "rejeu": 2.6098665775277004e-05
+    },
+    {
+      "controle": "rejeu/temoin_negatif.json/defauts/T=1.0 phase/variation_relative_part",
+      "ok": true,
+      "original": -0.5800014733741032,
+      "rejeu": -0.5800014733741032
+    },
+    {
+      "controle": "coefficients_zeta_Lambda",
+      "ok": true,
+      "erreur": 8.881784197001252e-15
+    },
+    {
+      "controle": "coefficients_chi5",
+      "ok": true,
+      "erreur": 7.105427357601002e-15
+    },
+    {
+      "controle": "decomposition_double_diag",
+      "ok": true
+    },
+    {
+      "controle": "decomposition_double_chaine",
+      "ok": true
+    },
+    {
+      "controle": "decomposition_double_croise",
+      "ok": true
+    },
+    {
+      "controle": "gaussienne_formule_vs_integrale_t",
+      "ok": true,
+      "erreur": 4.1671145510662387e-16,
+      "estimation_quad": 6.668986218943972e-13
+    },
+    {
+      "controle": "K_hermitienne",
+      "ok": true
+    },
+    {
+      "controle": "K_positive_micro_cas",
+      "ok": true
+    },
+    {
+      "controle": "contre_exemple_phase_visible_ordre_deux",
+      "ok": true,
+      "distance_chaine": 0.02360828863492648
+    },
+    {
+      "controle": "ecart_reduit_fini_zeta",
+      "ok": true
+    },
+    {
+      "controle": "ecart_reduit_fini_L_chi5",
+      "ok": true
+    },
+    {
+      "controle": "ecart_reduit_fini_DH",
+      "ok": true
+    },
+    {
+      "controle": "phase_diag_invariante_T=10.0 phase",
+      "ok": true
+    },
+    {
+      "controle": "temoin_localise_croise_T=1.0 eta0.5",
+      "ok": true
+    },
+    {
+      "controle": "temoin_localise_croise_T=1.0 eta1",
+      "ok": true
+    },
+    {
+      "controle": "temoin_localise_croise_T=1.0 eta2",
+      "ok": true
+    },
+    {
+      "controle": "temoin_localise_croise_T=1.0 phase",
+      "ok": true
+    },
+    {
+      "controle": "phase_diag_invariante_T=1.0 phase",
+      "ok": true
+    },
+    {
+      "controle": "CF_comptes_independants",
+      "ok": true
+    },
+    {
+      "controle": "CF:points_fermes_entiers_deg1",
+      "ok": true
+    },
+    {
+      "controle": "CF:points_fermes_entiers_deg2",
+      "ok": true
+    },
+    {
+      "controle": "CF:points_fermes_entiers_deg3",
+      "ok": true
+    },
+    {
+      "controle": "CF:points_fermes_entiers_deg4",
+      "ok": true
+    },
+    {
+      "controle": "CF:points_fermes_entiers_deg5",
+      "ok": true
+    },
+    {
+      "controle": "CF:points_fermes_entiers_deg6",
+      "ok": true
+    }
+  ],
+  "bilan": {
+    "reussis": 257,
+    "total": 257
+  },
+  "empreintes": {
+    "decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+    "resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3",
+    "temoin_negatif.json": "33c342253d6f2e7e8767f903a53b30b5bf36b8557b9c6ac4c6edce7100343404",
+    "RAPPORT.md": "34deeb0d2747f4fed5a88734d0f92c7374e03f04b4de2783161e750081e7bb86",
+    "temoin_negatif.py": "fec1bb9028ee21cdeaa9860571158927b32ccbecb470a7b4a68308ff487eabd5"
+  },
+  "ecarts_reduits_chaine_sur_trace_contre_W2": {
+    "zeta": -2.142662458441327,
+    "L_chi5": 33.859450009387686,
+    "DH": 154.9478945535592
+  },
+  "separation_DH_L_chi5_en_ecarts_types_W2": 121.08844454417151,
+  "W1_W2_T10": {
+    "ecart_reduit_moyennes": 4.515372969577399,
+    "ecart_reduit_tirages": 1.0096680903740152
+  },
+  "fractions_croisees_somme_des_normes_des_differences": {
+    "T=10.0 eta0.5": 0.9548659450367879,
+    "T=10.0 eta1": 0.9465110460617149,
+    "T=10.0 eta2": 0.9304114029184184,
+    "T=10.0 phase": 0.9999999999998849,
+    "T=1.0 eta0.5": 0.9899492810046019,
+    "T=1.0 eta1": 0.9881305566076843,
+    "T=1.0 eta2": 0.9845697637590132,
+    "T=1.0 phase": 0.9982476202724317
+  },
+  "analogue_corps_fonctions": {
+    "q": 5,
+    "degre_max": 6,
+    "nombres_points": {
+      "1": 9,
+      "2": 27,
+      "3": 108,
+      "4": 675,
+      "5": 3069,
+      "6": 15552
+    },
+    "points_fermes": {
+      "1": 9,
+      "2": 9,
+      "3": 33,
+      "4": 162,
+      "5": 612,
+      "6": 2571
+    },
+    "1.0": {
+      "parts_normes": [
+        0.002900671489151886,
+        7.858806791036246e-05,
+        0.9970207404429378
+      ],
+      "defauts": {
+        "eta1": {
+          "distances": [
+            0.00041473308595746773,
+            9.009494337505266e-05,
+            0.027700811708956708
+          ],
+          "part_croisee": 0.982101876290818
+        },
+        "phase": {
+          "distances": [
+            0.0,
+            0.00011937157512575261,
+            0.03270472629645969
+          ],
+          "part_croisee": 0.9963632945650858
+        }
+      }
+    },
+    "10.0": {
+      "parts_normes": [
+        0.0031070385303092916,
+        1.7355427676877642e-60,
+        0.9968929614696906
+      ],
+      "defauts": {
+        "eta1": {
+          "distances": [
+            0.00042723225384661185,
+            1.9128362681159903e-60,
+            0.02513221094366013
+          ],
+          "part_croisee": 0.9832847589618741
+        },
+        "phase": {
+          "distances": [
+            0.0,
+            2.538275602884151e-60,
+            0.030415577903848603
+          ],
+          "part_croisee": 1.0
+        }
+      }
+    }
+  },
+  "limite": "Contrôles numériques finis, sans reste certifié ni test universel de multiplicativité."
+}

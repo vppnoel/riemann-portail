@@ -1,0 +1,174 @@
+{
+ "C0": {
+  "N": 12,
+  "ecart_max": "9.1e-35"
+ },
+ "C1_validation_chi5": {
+  "L=0.8": {
+   "Q_formule_x": "0.196556416291",
+   "somme_zeros": "0.196556416291",
+   "ecart_relatif": "7.27e-16",
+   "zeros": 988,
+   "poids": {
+    "4": "-0.69314718"
+   },
+   "contre_epreuve_facteur_zeta_ecart": "4.49"
+  },
+  "L=1.5": {
+   "Q_formule_x": "0.039244126151",
+   "somme_zeros": "0.039244126151",
+   "ecart_relatif": "3.13e-15",
+   "zeros": 988,
+   "poids": {
+    "4": "-0.69314718",
+    "9": "-0.73240819",
+    "11": "1.4459853",
+    "16": "0.34657359",
+    "19": "-1.3510013"
+   },
+   "contre_epreuve_facteur_zeta_ecart": "49.1"
+  }
+ },
+ "C1_DH": {
+  "N=32": {
+   "lambda_min_secteur_pair": "0.00659557490136",
+   "lambda_min_noyau": "1.62217879147"
+  },
+  "N=48": {
+   "lambda_min_secteur_pair": "0.00659256787208",
+   "lambda_min_noyau": "1.62217358554"
+  },
+  "poids_2Re_b_sur_racine_n": {
+   "2": "0.2784708",
+   "3": "-0.36037364",
+   "4": "-1.442232"
+  }
+ },
+ "C3": {
+  "N": 48,
+  "lambda0": "5.37876479342e-12",
+  "a_quatuor_fictif": {
+   "hauteur": "14.13472514",
+   "lambda_min": {
+    "0": "5.37876479356e-12",
+    "0.1": "-0.00423605709923",
+    "0.01": "-2.66922298229e-5",
+    "0.001": "-2.33184310435e-8"
+   },
+   "seuil_delta": "2.11215e-5"
+  },
+  "b_Lambda2": {
+   "derivee_premier_ordre": "-0.0360310118955",
+   "epsilon_predit": "1.4928154e-10",
+   "epsilon_observe": "1.490231e-10",
+   "ecart_relatif": "0.00173",
+   "lambda_a_moins_eps_observe": "1.07389056183e-11"
+  }
+ },
+ "C2": {
+  "courbe": {
+   "equation": "y² = x³ + x + 1 sur F₅",
+   "N_m": {
+    "1": 9,
+    "2": 27,
+    "3": 108,
+    "4": 675,
+    "5": 3069,
+    "6": 15552
+   },
+   "a": -3,
+   "borne_de_Hasse": "|a| = 3 ≤ 2√5 ≈ 4,47",
+   "ecart_rationalite": "0.0"
+  },
+  "vraie_courbe": {
+   "M=1 pair": {
+    "ecart_arith_spectral": "1.42e-50",
+    "lambda_min_noyau": "3.52173913043"
+   },
+   "M=1 impair": {
+    "ecart_arith_spectral": "4.01e-51",
+    "lambda_min_noyau": "dimension 0"
+   },
+   "M=2 pair": {
+    "ecart_arith_spectral": "1.11e-49",
+    "lambda_min_noyau": "1.33638235505e-51"
+   },
+   "M=2 impair": {
+    "ecart_arith_spectral": "1.15e-49",
+    "lambda_min_noyau": "4.34634146341"
+   },
+   "M=3 pair": {
+    "ecart_arith_spectral": "6.99e-49",
+    "lambda_min_noyau": "-1.49761706123e-50"
+   },
+   "M=3 impair": {
+    "ecart_arith_spectral": "7.01e-49",
+    "lambda_min_noyau": "2.13821176807e-50"
+   }
+  },
+  "faux_genre1_a5": {
+   "alpha": [
+    "3.618034",
+    "1.381966"
+   ],
+   "M=1 pair": {
+    "ecart_arith_spectral": "1.95e-50",
+    "lambda_min_noyau": "0.0434782608696"
+   },
+   "M=1 impair": {
+    "ecart_arith_spectral": "1.87e-50",
+    "lambda_min_noyau": "dimension 0"
+   },
+   "M=2 pair": {
+    "ecart_arith_spectral": "1.18e-49",
+    "lambda_min_noyau": "1.67047794381e-51"
+   },
+   "M=2 impair": {
+    "ecart_arith_spectral": "1.11e-49",
+    "lambda_min_noyau": "-0.0243902439024"
+   },
+   "M=3 pair": {
+    "ecart_arith_spectral": "7.31e-49",
+    "lambda_min_noyau": "-2.67276471009e-50"
+   },
+   "M=3 impair": {
+    "ecart_arith_spectral": "7.21e-49",
+    "lambda_min_noyau": "-0.318181818182"
+   }
+  },
+  "faux_genre2": {
+   "P_T": "1 − 0T + 11T² − 0T³ + 25T⁴",
+   "modules_alpha": [
+    "2.7912878",
+    "2.7912878",
+    "1.7912878",
+    "1.7912878"
+   ],
+   "M=1 pair": {
+    "ecart_arith_spectral": "5.35e-51",
+    "lambda_min_noyau": "3.04347826087"
+   },
+   "M=1 impair": {
+    "ecart_arith_spectral": "1.6e-50",
+    "lambda_min_noyau": "dimension 0"
+   },
+   "M=2 pair": {
+    "ecart_arith_spectral": "1.33e-49",
+    "lambda_min_noyau": "-0.277292941168"
+   },
+   "M=2 impair": {
+    "ecart_arith_spectral": "1.24e-49",
+    "lambda_min_noyau": "7.17073170732"
+   },
+   "M=3 pair": {
+    "ecart_arith_spectral": "8.07e-49",
+    "lambda_min_noyau": "-1.55511122449"
+   },
+   "M=3 impair": {
+    "ecart_arith_spectral": "8.04e-49",
+    "lambda_min_noyau": "-1.28529436403"
+   }
+  }
+ },
+ "duree_secondes": 396
+}

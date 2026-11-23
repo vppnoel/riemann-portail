@@ -1,0 +1,12 @@
+
+== C(2n, n)  poids {1: 1, 2: -2}  c = 2  A = 0.69315  constante psi(x) <= 1.3863 x  limite W/x = 0.1931
+   x =   10000  W/x = 0.1911  écart à la limite = 0.0020  W/sqrt(x) =     19.1  borne ok
+   x =  100000  W/x = 0.1924  écart à la limite = 0.0007  W/sqrt(x) =     60.9  borne ok
+   x = 1000000  W/x = 0.1937  écart à la limite = 0.0005  W/sqrt(x) =    193.7  borne ok
+
+== Tchebychev 1852  poids {1: 1, 2: -1, 3: -1, 5: -1, 30: 1}  c = 6  A = 0.92129  constante psi(x) <= 1.1056 x  limite W/x = 0.0880
+   x =   10000  W/x = 0.0866  écart à la limite = 0.0013  W/sqrt(x) =      8.7  borne ok
+   x =  100000  W/x = 0.0875  écart à la limite = 0.0004  W/sqrt(x) =     27.7  borne ok
+   x = 1000000  W/x = 0.0882  écart à la limite = 0.0003  W/sqrt(x) =     88.2  borne ok
+
+== P3 : 0 fonctions F valides parmi 3^11 = 177147 essais

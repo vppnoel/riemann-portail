@@ -31,6 +31,7 @@ Trois principes en découlent :
 | 4. Prévoir | producteur | `taches.py prevoir TAC-001 --par ia:nom --texte "…"` | Prévision horodatée **avant** le travail : ce qui est attendu, ce qui donnerait tort. |
 | 5. Produire | producteur | — | Travail dans `2_Methode/Depot/TAC-001/` uniquement ; `RAPPORT.md` obligatoire. |
 | 6. Déposer | producteur | `taches.py deposer TAC-001 --par ia:nom --statut-propose STATUT` | Le dépôt est figé par empreintes. |
+| 6 bis. Retirer | producteur | `taches.py retirer TAC-001 --par ia:nom --motif "…"` | Seulement avant toute vérification : la fiche repasse « à reprendre » pour compléter le dépôt. Le motif cite le fil de discussion ; le dépôt retiré reste au journal. |
 | 7. Vérifier | auditeur, autre que le producteur | `taches.py verifier TAC-001 --par agent:x --verdict conforme --note "…"` | Liste de contrôle dans `TAC-001/verification/VERIFICATION.md`. |
 | 8. Décider | auteur | `taches.py decider TAC-001 --par auteur:vincent-noel --decision acceptee` | Acceptée, rejetée ou à reprendre. |
 | 9. Intégrer | tout acteur désigné | `taches.py integrer TAC-001 --par … --pieces …` | Le résultat entre au corpus selon le protocole du pilotage ; les pièces sont enregistrées. |
@@ -41,6 +42,8 @@ Toutes les commandes s'exécutent depuis la racine du corpus, avec `python -B 2_
 Pour confier une fiche à une IA ou à un agent, il suffit de lui remettre deux choses : l'archive du corpus et la consigne produite par `taches.py fiche TAC-001`. Pour la vérification, la consigne est `taches.py fiche TAC-001 --verification`. Elle ne nomme pas le producteur (relecture à l'aveugle).
 
 `taches.py etat` donne l'état vivant. `taches.py controler` vérifie la cohérence du registre, du journal et des dépôts.
+
+**Boîtes aux lettres.** `2_Methode/Echanges/<acteur>/` contient, pour chaque IA ou agent, un fichier `A_FAIRE.md` et une consigne par fiche, à produire ou à vérifier. Elles sont régénérées par `taches.py boites`, et automatiquement sur GitHub après chaque changement du registre. Un acteur qui lit le dépôt n'a besoin que de sa boîte.
 
 ## 3. La fiche de tâche
 
@@ -167,13 +170,28 @@ Les dépendances lues sont déclarées dans `ciblage_contrats.json`. Leurs empre
 | Fiche | Genre | Rôle | Tâche | Statut | Acteur |
 |---|---|---|---|---|---|
 | TAC-001 | lier_instance | coordinateur | Auditer noyaux et couplages du candidat | assignee | ia:claude |
-| TAC-002 | investigation | explorateur | Paquets signés : garder premiers, coupures et dette | assignee | ia:chatgpt-sol-6.1-max |
-| TAC-003 | investigation | explorateur | Dette de Schur dans la norme duale | assignee | ia:chatgpt-sol-6.1-max |
-| TAC-004 | investigation | explorateur | Deux filtres : approximants et norme de forme | ouverte | — |
-| TAC-005 | investigation | explorateur | Carte d’identité de μ et corrélations pondérées | ouverte | — |
-| TAC-006 | investigation | explorateur | Pli sur une fibre à coefficient A fixé | ouverte | — |
-| TAC-007 | investigation | explorateur | Certificat du noyau des moments à S = 0,8 | assignee | ia:claude |
-| TAC-008 | investigation | numerique | Décomposer la cohérence K : diagonale, même premier, premiers distincts | assignee | ia:claude |
-| TAC-009 | investigation | explorateur | Gram de Nyman–Beurling sur des différences d'échelle | assignee | ia:chatgpt-sol-6.1-max |
+| TAC-002 | investigation | explorateur | Paquets signés : garder premiers, coupures et dette | a_reprendre | ia:chatgpt-sol-6.1-max |
+| TAC-003 | investigation | explorateur | Dette de Schur dans la norme duale | a_reprendre | ia:chatgpt-sol-6.1-max |
+| TAC-004 | investigation | explorateur | Deux filtres : approximants et norme de forme | deposee | ia:claude |
+| TAC-005 | investigation | explorateur | Carte d’identité de μ et corrélations pondérées | assignee | ia:claude |
+| TAC-006 | investigation | explorateur | Pli sur une fibre à coefficient A fixé | deposee | ia:claude |
+| TAC-007 | investigation | explorateur | Certificat du noyau des moments à S = 0,8 | deposee | ia:claude |
+| TAC-008 | investigation | numerique | Décomposer la cohérence K : diagonale, même premier, premiers distincts | deposee | ia:claude |
+| TAC-009 | investigation | explorateur | Gram de Nyman–Beurling sur des différences d'échelle | a_reprendre | ia:chatgpt-sol-6.1-max |
+| TAC-010 | verification_temoin | auditeur | Lecture adverse de la note sur la preuve annoncée de RH (Alpöge, 2026) | deposee | ia:chatgpt-sol-6.1-max |
+| TAC-011 | redaction | rapporteur | Article 1 après l'annonce : théorèmes A et B sans hypothèse | assignee | ia:chatgpt-sol-6.1-max |
+| TAC-012 | investigation | explorateur | Document 80 face à la preuve annoncée : un carré, ou de la multiplicité ? | assignee | ia:chatgpt-sol-6.1-max |
+| TAC-013 | investigation | explorateur | Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité | perimee | ia:claude |
+| TAC-014 | verification_temoin | auditeur | Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ? | assignee | ia:claude |
+| TAC-015 | investigation | explorateur | Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité | verifiee | ia:claude |
+| TAC-016 | verification_temoin | auditeur | Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ? | acceptee | ia:claude |
+| TAC-017 | redaction | rapporteur | Échelle, niveau 3 : une preuve humaine du Landau localisé pour ζ, confrontée au Lean | acceptee | ia:claude |
+| TAC-018 | investigation | explorateur | Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles) | a_reprendre | ia:claude |
+| TAC-019 | redaction | rapporteur | Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN) | a_reprendre | ia:claude |
+| TAC-020 | redaction | rapporteur | Piste 1, module 2 : de l'inégalité de pente à (⋆), la moyenne sur les caractères (§5 du guide), confrontée au Lean (EN) | ouverte | — |
+| TAC-021 | redaction | rapporteur | Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN) | a_reprendre | ia:claude |
+| TAC-022 | investigation | explorateur | Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles) | a_reprendre | ia:claude |
+| TAC-023 | redaction | rapporteur | Piste 1, module 1 (v3) : de (⋆) au théorème, note anglaise complétée selon la vérification de TAC-021 | deposee | ia:claude |
+| TAC-024 | investigation | explorateur | Théorème A par fenêtres (v3) : pôles doubles, réciproque refaite selon la vérification de TAC-022 | deposee | ia:claude |
 
 Colonne « Statut » : état à la génération. La répartition se fait avec `taches.py assigner` ; l’état vivant est donné par `taches.py etat`.

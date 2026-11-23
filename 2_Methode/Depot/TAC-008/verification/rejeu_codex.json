@@ -1,0 +1,273 @@
+{
+  "acteur": "ia:chatgpt-sol-6.1-max",
+  "revision_source": "5fae60de138d63a4e75649b8dcc2b33cdfe14ea9",
+  "python": "3.12.14",
+  "environnement": "NumPy 2.3.5; SciPy 1.17.0; OPENBLAS_NUM_THREADS=1; OMP_NUM_THREADS=1",
+  "executions": [
+    {
+      "commande": "python -B 2_Methode/Depot/TAC-008/decomposition_K.py",
+      "code_sortie": 0,
+      "resultat": {
+        "reglages": {
+          "NMAX": 20000,
+          "h": 0.5,
+          "u": [
+            2.0,
+            2.25,
+            2.5,
+            2.75,
+            3.0,
+            3.25,
+            3.5,
+            3.75,
+            4.0,
+            4.25,
+            4.5,
+            4.75,
+            5.0,
+            5.25,
+            5.5,
+            5.75,
+            6.0,
+            6.25,
+            6.5,
+            6.75,
+            7.0,
+            7.25,
+            7.5,
+            7.75,
+            8.0
+          ],
+          "T": [
+            10.0,
+            1.0
+          ],
+          "tirages": 20,
+          "graine": 20261018
+        },
+        "T=10": {
+          "zeta": {
+            "part_diag": 0.02334446556166193,
+            "part_chaine": 6.968783743117502e-15,
+            "part_croise": 0.9766555344383311,
+            "chaine_sur_trace": 4.672546716556645e-15,
+            "croise_sur_trace": 0.6548443428386861
+          },
+          "L_chi5": {
+            "part_diag": 0.5777763180521319,
+            "part_chaine": 9.865376313128482e-14,
+            "part_croise": 0.4222236819477695,
+            "chaine_sur_trace": 2.431741912963616e-13,
+            "croise_sur_trace": 1.040749984034429
+          },
+          "DH": {
+            "part_diag": 0.5251576145281888,
+            "part_chaine": 1.647928087609901e-15,
+            "part_croise": 0.4748423854718096,
+            "chaine_sur_trace": 1.0772275115038194e-14,
+            "croise_sur_trace": 3.1039781717672907
+          },
+          "W1_moyenne_part_diag": 0.7516612314087983,
+          "W1_ecart_type_part_diag": 0.06114989962078613,
+          "W1_moyenne_part_chaine": 1.8406577699014986e-13,
+          "W1_ecart_type_part_chaine": 3.058575037549952e-14,
+          "W1_moyenne_part_croise": 0.24833876859101767,
+          "W1_ecart_type_part_croise": 0.0611498996207963,
+          "W1_moyenne_chaine_sur_trace": 1.158305720954613e-13,
+          "W1_ecart_type_chaine_sur_trace": 2.3116142286029937e-14,
+          "W1_moyenne_croise_sur_trace": 0.15805006224922352,
+          "W1_ecart_type_croise_sur_trace": 0.048931500964222704,
+          "W2_moyenne_part_diag": 0.7793041057995541,
+          "W2_ecart_type_part_diag": 0.058167424659590516,
+          "W2_moyenne_part_chaine": 1.4495528012664972e-13,
+          "W2_ecart_type_part_chaine": 3.8794082845162667e-14,
+          "W2_moyenne_part_croise": 0.22069589420030086,
+          "W2_ecart_type_part_croise": 0.058167424659602285,
+          "W2_moyenne_chaine_sur_trace": 8.291488913740278e-14,
+          "W2_ecart_type_chaine_sur_trace": 2.2987745894434107e-14,
+          "W2_moyenne_croise_sur_trace": 0.12807938290403242,
+          "W2_ecart_type_croise_sur_trace": 0.04296447828437406,
+          "separations": {
+            "zeta-DH": {
+              "R": 1.1291638990904447,
+              "diag": 3.4177846299164183,
+              "chaine": 1.0399972693081504e-14,
+              "croise": 3.7183364832143098
+            },
+            "zeta-L_chi5": {
+              "R": 0.7190599393654064,
+              "diag": 1.408524205752283,
+              "chaine": 2.432190782102792e-13,
+              "croise": 1.6208632726308279
+            },
+            "L_chi5-DH": {
+              "R": 1.4271825011894372,
+              "diag": 2.0899699568216503,
+              "chaine": 2.4341267268528475e-13,
+              "croise": 2.1066097400744264
+            },
+            "z_chaine_zeta_contre_W2": -3.4036543983109935,
+            "z_chaine_W1_contre_W2": 4.515372969577399,
+            "z_chaine_W1_contre_W2_tirage_unique": 1.0096680903740152
+          }
+        },
+        "T=1": {
+          "zeta": {
+            "part_diag": 0.0034274044291571605,
+            "part_chaine": 6.213989840617642e-05,
+            "part_croise": 0.9965104556724368,
+            "chaine_sur_trace": 4.876388916256412e-05,
+            "croise_sur_trace": 0.7820052278186053
+          },
+          "L_chi5": {
+            "part_diag": 0.5007365323641999,
+            "part_chaine": 0.001240435985922546,
+            "part_croise": 0.4980230316498775,
+            "chaine_sur_trace": 0.06396943219216415,
+            "croise_sur_trace": 25.683107322599167
+          },
+          "DH": {
+            "part_diag": 0.4996760776722578,
+            "part_chaine": 0.001019173752545389,
+            "part_croise": 0.4993047485751967,
+            "chaine_sur_trace": 0.27895832502312773,
+            "croise_sur_trace": 136.66483854275643
+          },
+          "W1_moyenne_part_diag": 0.4971469107912803,
+          "W1_ecart_type_part_diag": 0.09009548271254086,
+          "W1_moyenne_part_chaine": 0.003599370523109795,
+          "W1_ecart_type_part_chaine": 0.0013501118398101825,
+          "W1_moyenne_part_croise": 0.49925371868560997,
+          "W1_ecart_type_part_croise": 0.0902108195490363,
+          "W1_moyenne_chaine_sur_trace": 0.003453687922903599,
+          "W1_ecart_type_chaine_sur_trace": 0.0016555788669139703,
+          "W1_moyenne_croise_sur_trace": 0.46277419929543395,
+          "W1_ecart_type_croise_sur_trace": 0.10225936889440075,
+          "W2_moyenne_part_diag": 0.5155485696271883,
+          "W2_ecart_type_part_diag": 0.07144722336758128,
+          "W2_moyenne_part_chaine": 0.003518152359995086,
+          "W2_ecart_type_part_chaine": 0.0011254837109922699,
+          "W2_moyenne_part_croise": 0.4809332780128166,
+          "W2_ecart_type_part_croise": 0.07195708740847355,
+          "W2_moyenne_chaine_sur_trace": 0.0038529966661616337,
+          "W2_ecart_type_chaine_sur_trace": 0.0017754699355522598,
+          "W2_moyenne_croise_sur_trace": 0.5001383046243084,
+          "W2_ecart_type_croise_sur_trace": 0.10284596656563601,
+          "separations": {
+            "zeta-DH": {
+              "R": 16.592777562858892,
+              "diag": 136.76388048158668,
+              "chaine": 0.2789997101310711,
+              "croise": 137.36369654644855
+            },
+            "zeta-L_chi5": {
+              "R": 18.387258129438262,
+              "diag": 25.820353402802535,
+              "chaine": 0.064005794404596,
+              "croise": 26.290440710590506
+            },
+            "L_chi5-DH": {
+              "R": 10.497496481431265,
+              "diag": 112.02254551908369,
+              "chaine": 0.2398322340734155,
+              "croise": 112.05560577368728
+            },
+            "z_chaine_zeta_contre_W2": -2.142662458441327,
+            "z_chaine_W1_contre_W2": -0.7356088444419547,
+            "z_chaine_W1_contre_W2_tirage_unique": -0.16448713810222793
+          }
+        }
+      },
+      "sha256_sortie": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3"
+    },
+    {
+      "commande": "python -B 2_Methode/Depot/TAC-008/temoin_negatif.py",
+      "code_sortie": 0,
+      "resultat": {
+        "reglages": {
+          "NMAX": 20000,
+          "h": 0.5,
+          "T": [
+            10.0,
+            1.0
+          ]
+        },
+        "defauts": {
+          "T=10.0 eta0.5": {
+            "d_diag": 0.0004959607731302895,
+            "d_chaine": 5.815769609003062e-15,
+            "d_croise": 0.010492654664593867,
+            "chaine_sur_max_autres": 5.542705630661457e-13,
+            "part_chaine_zeta": 6.968783743117502e-15,
+            "part_chaine_defaut": 1.5407425380843337e-14,
+            "variation_relative_part": 1.2109202909417287
+          },
+          "T=10.0 eta1": {
+            "d_diag": 0.001190305855512695,
+            "d_chaine": 1.3951257883323857e-14,
+            "d_croise": 0.021062996329070275,
+            "chaine_sur_max_autres": 6.623586533160483e-13,
+            "part_chaine_zeta": 6.968783743117502e-15,
+            "part_chaine_defaut": 2.6944710559482366e-14,
+            "variation_relative_part": 2.866486829368676
+          },
+          "T=10.0 eta2": {
+            "d_diag": 0.003174148948033854,
+            "d_chaine": 3.7181431519545944e-14,
+            "d_croise": 0.04243891240377437,
+            "chaine_sur_max_autres": 8.761165028404252e-13,
+            "part_chaine_zeta": 6.968783743117502e-15,
+            "part_chaine_defaut": 5.871637640486505e-14,
+            "variation_relative_part": 7.425627565621391
+          },
+          "T=10.0 phase": {
+            "d_diag": 0.0,
+            "d_chaine": 3.2947143455239076e-15,
+            "d_croise": 0.028640815362621946,
+            "chaine_sur_max_autres": 1.15035633720949e-13,
+            "part_chaine_zeta": 6.968783743117502e-15,
+            "part_chaine_defaut": 5.1923649865272116e-15,
+            "variation_relative_part": -0.254910874274828
+          },
+          "T=1.0 eta0.5": {
+            "d_diag": 8.522360048893288e-05,
+            "d_chaine": 4.9969274839400135e-05,
+            "d_croise": 0.013315872206705534,
+            "chaine_sur_max_autres": 0.003752609972798994,
+            "part_chaine_zeta": 6.213989840617642e-05,
+            "part_chaine_defaut": 0.00012366860166849943,
+            "variation_relative_part": 0.9901642075457165
+          },
+          "T=1.0 eta1": {
+            "d_diag": 0.00020453664117343903,
+            "d_chaine": 0.00011710032325916575,
+            "d_croise": 0.026776260873037378,
+            "chaine_sur_max_autres": 0.0043732888551695085,
+            "part_chaine_zeta": 6.213989840617642e-05,
+            "part_chaine_defaut": 0.00020447855202032733,
+            "variation_relative_part": 2.2906161301352097
+          },
+          "T=1.0 eta2": {
+            "d_diag": 0.0005454310431291705,
+            "d_chaine": 0.00030294744942861815,
+            "d_croise": 0.05413318363701398,
+            "chaine_sur_max_autres": 0.005596335354299678,
+            "part_chaine_zeta": 6.213989840617642e-05,
+            "part_chaine_defaut": 0.00042029573859521103,
+            "variation_relative_part": 5.763701733915863
+          },
+          "T=1.0 phase": {
+            "d_diag": 0.0,
+            "d_chaine": 6.28893860286715e-05,
+            "d_croise": 0.0358251005509138,
+            "chaine_sur_max_autres": 0.001755455952992918,
+            "part_chaine_zeta": 6.213989840617642e-05,
+            "part_chaine_defaut": 2.6098665775277004e-05,
+            "variation_relative_part": -0.5800014733741032
+          }
+        }
+      },
+      "sha256_sortie": "33c342253d6f2e7e8767f903a53b30b5bf36b8557b9c6ac4c6edce7100343404"
+    }
+  ]
+}

@@ -113,7 +113,9 @@ def load_state():
     # Ciblage en lecture seule (V6.59) : recommandations et fiches proposées, sans effet sur faits, niveaux ou coûts.
     state['targeting']=load_component('ciblage').analyse(ROOT,state)
     # Instantané du registre des fiches : travail en cours, hors empreinte de l'état publié.
-    tp=ROOT/'2_Methode/Pilotage/taches.json'
+    # Les vues lisent un instantané figé à la reconstruction (build_all), jamais le registre vivant :
+    # une opération sur une fiche ne doit pas désynchroniser les pages publiées.
+    tp=ROOT/'2_Methode/Pilotage/taches_instantane.json'
     state['taches']=json.loads(tp.read_text(encoding='utf-8-sig'))['taches'] if tp.exists() else []
     state['catalogue']=catalogue.collect(state)
     state['catalogue_kinds']=catalogue.KINDS
@@ -357,7 +359,14 @@ def render(s,key):
     dialog='<dialog id="node-dialog"><div class="dialoghead"><span id="node-status" class="badge"></span><button id="close-dialog" aria-label="Fermer la fiche">Fermer ×</button></div><h2 id="node-title"></h2><div id="node-body"></div></dialog>'
     return '<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(page['label'])+' — Programme Riemann '+esc(s['version'])+'</title><meta name="research-snapshot" content="'+s['fingerprint']+'"><style>'+css+'</style></head><body data-tool="'+key+'"><div class="wrap">'+nav_html(s,key,prefix)+f'<header class="head"><div class="eyebrow">Programme Riemann · {esc(s["version"])} · continuité des outils</div><h1>{esc(title)}</h1><p class="lede">{intro}</p><p class="scope">RH : ouverte · Signe global : ouvert · Couverture avec signe : ouverte</p></header>'+body+f'<footer><p>{esc(s["review_scope"])}</p><p class="links"><a href="{prefix}README.md">README : à lire d’abord</a> · <a href="{prefix}PLAN_DU_CORPUS.md">Plan du corpus</a> · <a href="{prefix}HISTORIQUE_DES_LIVRAISONS.md">Historique des livraisons</a></p><p>État partagé : <code>{s["fingerprint"][:16]}</code> · Vincent P. P. NOËL</p></footer></div>'+dialog+'<script type="application/json" id="steering-data">'+payload+'</script><script>'+js+'</script></body></html>\n'
 
+def instantane_taches():
+    src=ROOT/'2_Methode/Pilotage/taches.json'
+    if src.exists():
+        reg=json.loads(src.read_text(encoding='utf-8-sig'))
+        dump(ROOT/'2_Methode/Pilotage/taches_instantane.json',dict(schema='taches_instantane_v1',source='taches.json',taches=reg['taches']))
+
 def build_all():
+    instantane_taches()
     load_component('reconstruction_integree').build()
     s=load_state()
     advanced.export_svgs(s)

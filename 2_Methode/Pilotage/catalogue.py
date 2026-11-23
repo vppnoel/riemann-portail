@@ -51,7 +51,7 @@ def local_links(rel,text,paths):
 def collect(state):
     paths={str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and not any(x.startswith('.') for x in p.relative_to(ROOT).parts)}
     # Travail en cours (V6.59) : dépôts et registre des fiches évoluent entre deux constructions ; ils ne font pas partie de l'état publié.
-    paths-={x for x in paths if x.startswith('2_Methode/Depot/') or x in ('2_Methode/Pilotage/taches.json','2_Methode/Pilotage/journal_taches.json')}
+    paths-={x for x in paths if x.startswith(('2_Methode/Depot/', '2_Methode/Echanges/', '2_Methode/Dialogue_Lean/', '2_Methode/Horodatage/CHECKSUMS_', '2_Methode/Horodatage/registre_horodatages')) or x.endswith('.ots') or x in ('2_Methode/Pilotage/taches.json','2_Methode/Pilotage/journal_taches.json')}
     paths.add(INDEX)
     sources=json.loads((ROOT/'2_Methode/Sources/sources.json').read_text(encoding='utf-8-sig'))
     aliases=json.loads((ROOT/'2_Methode/Sources/references_articles.json').read_text())['aliases']

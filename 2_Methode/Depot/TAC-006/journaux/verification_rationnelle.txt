@@ -1,0 +1,42 @@
+OK    P1_pli_50 : K_lam strictement dans la boîte
+OK    P1_pli_50 : K_t strictement dans la boîte
+OK    P1_pli_50 : contraction < 1
+OK    P1_pli_50 : H_lam séparé de 0 (transversalité sur la fibre)
+OK    P1_pli_50 : H_tt séparé de 0 (zéro exactement double)
+OK    P1_pli_50 : projection d'ancre séparée de 0 (lemme I2)
+OK    P1_pli_50 : |lam*| < 1e-6 (P1)
+OK    P1_pli_50 : |t* - 5| < 1e-6 (P1)
+OK    P1_pli_80 : K_lam strictement dans la boîte
+OK    P1_pli_80 : K_t strictement dans la boîte
+OK    P1_pli_80 : contraction < 1
+OK    P1_pli_80 : H_lam séparé de 0 (transversalité sur la fibre)
+OK    P1_pli_80 : H_tt séparé de 0 (zéro exactement double)
+OK    P1_pli_80 : projection d'ancre séparée de 0 (lemme I2)
+OK    P1_pli_80 : |lam*| < 1e-6 (P1)
+OK    P1_pli_80 : |t* - 5| < 1e-6 (P1)
+OK    P2 : Rouché accepté, défaut max < comparaison (fractions exactes)
+OK    P2 : la comparaison est un minorant de |alpha| R² (carrés rationnels)
+OK    P2 : décimales exportées extérieures
+OK    P2 : λ couvert ⊇ [boîte du pli ± 10⁻⁴] et centres ⊇ boîte de t*
+OK    P3_moins : K strictement dans la boîte
+OK    P3_moins : contraction < 1
+OK    P3_moins : boîte exclut la droite critique
+OK    P3_moins : boîte dans le disque de Rouché, pour tout centre couvert
+OK    P3_moins : K strictement dans la boîte
+OK    P3_moins : contraction < 1
+OK    P3_moins : boîte exclut la droite critique
+OK    P3_moins : boîte dans le disque de Rouché, pour tout centre couvert
+OK    P3_plus : K strictement dans la boîte
+OK    P3_plus : contraction < 1
+OK    P3_plus : boîte invariante par s -> 1 - conj(s) (centre Re = 1/2)
+OK    P3_plus : boîte dans le disque de Rouché, pour tout centre couvert
+OK    P3_plus : K strictement dans la boîte
+OK    P3_plus : contraction < 1
+OK    P3_plus : boîte invariante par s -> 1 - conj(s) (centre Re = 1/2)
+OK    P3_plus : boîte dans le disque de Rouché, pour tout centre couvert
+OK    P3_moins : deux boîtes disjointes
+OK    P3_plus : deux boîtes disjointes
+OK    P3 : un côté hors droite, l'autre critique
+OK    P3 : côté critique = signe de kappa (lam > lam* et kappa > 0)
+OK    P4 : témoin refusé (pas de pli certifié le long de n)
+41/41 contrôles réussis

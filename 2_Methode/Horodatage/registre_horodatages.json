@@ -1,0 +1,15 @@
+{
+  "schema": "horodatages_v1",
+  "_lisez_moi": "Une entrée par version livrée. La copie figée de CHECKSUMS.sha256 couvre tous les fichiers de la version ; son fichier .ots (OpenTimestamps) prouve qu'elle existait à la date d'ancrage. Vérifier : ots verify CHECKSUMS_<version>.sha256.ots, puis sha256sum -c CHECKSUMS_<version>.sha256 sur une archive de la version.",
+  "versions": [
+    {
+      "version": "V6.59",
+      "fichier": "CHECKSUMS_V6.59.sha256",
+      "sha256": "ff9e8b35ff65380304ed5d82e8a67a91850b613ef29c5545df9dcf4d34dc9b06",
+      "fichiers_couverts": 1888,
+      "fige_le": "2026-10-17T20:02:53+00:00",
+      "preuve": "CHECKSUMS_V6.59.sha256.ots"
+    }
+  ],
+  "esoleau": []
+}

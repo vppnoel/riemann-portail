@@ -1,0 +1,36 @@
+{
+ "source": "resultats_certificat_integral.json (V6.50, S = 11/20)",
+ "marge_certifiee_11_20": 0.0003004510350528708,
+ "cellules_frequence": 700000,
+ "marge_visee": 5e-12,
+ "budgets": {
+  "table (poids digamma, table linéaire par morceaux)": {
+   "valeur": 0.00010938268326799701,
+   "facteur_de_reduction": 21876536.653599404,
+   "loi": "∝ rayon de table + 35·H²/8 : pas H divisé par √facteur"
+  },
+  "quadrature en fréquence (trapèzes)": {
+   "valeur": 0.00015216406675922078,
+   "facteur_de_reduction": 30432813.351844158,
+   "loi": "∝ T·h² : pas h divisé par √facteur, donc cellules ×√facteur"
+  },
+  "assemblage binary64 (modèle γ_n)": {
+   "valeur": 1.1083479345842718e-05,
+   "facteur_de_reduction": 2216695.8691685437,
+   "loi": "∝ nf·2⁻⁵³ : inatteignable en binary64 dès que nf croît"
+  },
+  "poids intégrés": {
+   "valeur": 4.8572257327350605e-11,
+   "facteur_de_reduction": 9.714451465470122,
+   "loi": "∝ nf·erreur locale de poids"
+  },
+  "spatial (troncature N)": {
+   "valeur": 3.713853486168887e-53,
+   "facteur_de_reduction": 7.427706972337774e-42,
+   "loi": "négligeable"
+  }
+ },
+ "cellules_necessaires_quadrature_seule": 3861616053.209283,
+ "budget_assemblage_binary64_avec_ces_cellules": 0.061143059667599656,
+ "conclusion": "Même en ignorant les autres budgets, la quadrature en trapèzes exige environ 3.86e+09 cellules ; le budget d'assemblage binary64 monte alors à 6.1e-02, très au-dessus de la marge. L'architecture du document 75 (fréquence, trapèzes, table linéaire, binary64) ne peut pas certifier une marge de l'ordre de 10⁻¹²."
+}

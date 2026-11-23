@@ -94,7 +94,7 @@ Then rebuild twice, verify, and regenerate the checksums.
    - record the prediction before working (`taches.py prevoir`);
    - do the computation or proof in `2_Methode/Depot/TAC-xxx/`, then deposit;
    - another actor verifies; the author decides;
-   - only after acceptance: write the numbered document, integrate it into the steering data, run the checks and the test suite, write the delivery note, deliver the full archive and two partial archives.
+   - only after acceptance: write the numbered document, integrate it into the steering data, run the checks and the test suite, write the delivery note, timestamp the version (`2_Methode/Horodatage/horodater_version.py`), deliver the full archive and two partial archives.
 
 ## What you return
 - A short report: what was done, its exact status, and which predictions were true or false.
@@ -161,14 +161,29 @@ The navigator holds 103 actions: 57 “fait”, 31 “ouvert”, 1 “humain”,
 | Card | Kind | Status | Assigned to | Task (FR) |
 |---|---|---|---|---|
 | TAC-001 | lier_instance | assignee | ia:claude | Auditer noyaux et couplages du candidat |
-| TAC-002 | investigation | assignee | ia:chatgpt-sol-6.1-max | Paquets signés : garder premiers, coupures et dette |
-| TAC-003 | investigation | assignee | ia:chatgpt-sol-6.1-max | Dette de Schur dans la norme duale |
-| TAC-004 | investigation | ouverte | — | Deux filtres : approximants et norme de forme |
-| TAC-005 | investigation | ouverte | — | Carte d’identité de μ et corrélations pondérées |
-| TAC-006 | investigation | ouverte | — | Pli sur une fibre à coefficient A fixé |
-| TAC-007 | investigation | assignee | ia:claude | Certificat du noyau des moments à S = 0,8 |
-| TAC-008 | investigation | assignee | ia:claude | Décomposer la cohérence K : diagonale, même premier, premiers distincts |
-| TAC-009 | investigation | assignee | ia:chatgpt-sol-6.1-max | Gram de Nyman–Beurling sur des différences d'échelle |
+| TAC-002 | investigation | a_reprendre | ia:chatgpt-sol-6.1-max | Paquets signés : garder premiers, coupures et dette |
+| TAC-003 | investigation | a_reprendre | ia:chatgpt-sol-6.1-max | Dette de Schur dans la norme duale |
+| TAC-004 | investigation | deposee | ia:claude | Deux filtres : approximants et norme de forme |
+| TAC-005 | investigation | assignee | ia:claude | Carte d’identité de μ et corrélations pondérées |
+| TAC-006 | investigation | deposee | ia:claude | Pli sur une fibre à coefficient A fixé |
+| TAC-007 | investigation | deposee | ia:claude | Certificat du noyau des moments à S = 0,8 |
+| TAC-008 | investigation | deposee | ia:claude | Décomposer la cohérence K : diagonale, même premier, premiers distincts |
+| TAC-009 | investigation | a_reprendre | ia:chatgpt-sol-6.1-max | Gram de Nyman–Beurling sur des différences d'échelle |
+| TAC-010 | verification_temoin | deposee | ia:chatgpt-sol-6.1-max | Lecture adverse de la note sur la preuve annoncée de RH (Alpöge, 2026) |
+| TAC-011 | redaction | assignee | ia:chatgpt-sol-6.1-max | Article 1 après l'annonce : théorèmes A et B sans hypothèse |
+| TAC-012 | investigation | assignee | ia:chatgpt-sol-6.1-max | Document 80 face à la preuve annoncée : un carré, ou de la multiplicité ? |
+| TAC-013 | investigation | perimee | ia:claude | Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité |
+| TAC-014 | verification_temoin | assignee | ia:claude | Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ? |
+| TAC-015 | investigation | verifiee | ia:claude | Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité |
+| TAC-016 | verification_temoin | acceptee | ia:claude | Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ? |
+| TAC-017 | redaction | acceptee | ia:claude | Échelle, niveau 3 : une preuve humaine du Landau localisé pour ζ, confrontée au Lean |
+| TAC-018 | investigation | abandonnee | ia:claude | Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles) |
+| TAC-019 | redaction | abandonnee | ia:claude | Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN) |
+| TAC-020 | redaction | ouverte | — | Piste 1, module 2 : de l'inégalité de pente à (⋆), la moyenne sur les caractères (§5 du guide), confrontée au Lean (EN) |
+| TAC-021 | redaction | abandonnee | ia:claude | Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN) |
+| TAC-022 | investigation | abandonnee | ia:claude | Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles) |
+| TAC-023 | redaction | acceptee | ia:claude | Piste 1, module 1 (v3) : de (⋆) au théorème, note anglaise complétée selon la vérification de TAC-021 |
+| TAC-024 | investigation | acceptee | ia:claude | Théorème A par fenêtres (v3) : pôles doubles, réciproque refaite selon la vérification de TAC-022 |
 
 Live state: `python -B 2_Methode/Pilotage/taches.py etat`; brief for a card: `taches.py fiche TAC-xxx`.
 

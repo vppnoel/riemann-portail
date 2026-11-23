@@ -24,6 +24,7 @@ Work in short iterations, **independently of the AI in use**, and **divide the w
 | 4. Predict | producer | `taches.py prevoir TAC-001 --par ia:name --texte "…"` | Time-stamped prediction **before** the work: what is expected, what would prove it wrong. |
 | 5. Produce | producer | — | Work only in `2_Methode/Depot/TAC-001/`; `RAPPORT.md` required. |
 | 6. Deposit | producer | `taches.py deposer TAC-001 --par ia:name --statut-propose STATUS` | The deposit is frozen by hashes. |
+| 6a. Withdraw | producer | `taches.py retirer TAC-001 --par ia:name --motif "…"` | Only before any verification: the card goes back to "to be redone" so the deposit can be completed. The reason cites the discussion thread; the withdrawn deposit stays in the log. |
 | 7. Verify | auditor, not the producer | `taches.py verifier TAC-001 --par agent:x --verdict conforme --note "…"` | Checklist in `TAC-001/verification/VERIFICATION.md`. |
 | 8. Decide | author | `taches.py decider TAC-001 --par auteur:vincent-noel --decision acceptee` | Accepted, rejected or to be redone. |
 | 9. Integrate | designated actor | `taches.py integrer TAC-001 --par … --pieces …` | The result enters the corpus under the steering protocol; the pieces are recorded. |
@@ -78,13 +79,28 @@ These rules organise the work; they **do not check a proof** and are not access 
 | Card | Kind | Role | Task (FR) | Status | Actor |
 |---|---|---|---|---|---|
 | TAC-001 | lier_instance | coordinateur | Auditer noyaux et couplages du candidat | assignee | ia:claude |
-| TAC-002 | investigation | explorateur | Paquets signés : garder premiers, coupures et dette | assignee | ia:chatgpt-sol-6.1-max |
-| TAC-003 | investigation | explorateur | Dette de Schur dans la norme duale | assignee | ia:chatgpt-sol-6.1-max |
-| TAC-004 | investigation | explorateur | Deux filtres : approximants et norme de forme | ouverte | — |
-| TAC-005 | investigation | explorateur | Carte d’identité de μ et corrélations pondérées | ouverte | — |
-| TAC-006 | investigation | explorateur | Pli sur une fibre à coefficient A fixé | ouverte | — |
-| TAC-007 | investigation | explorateur | Certificat du noyau des moments à S = 0,8 | assignee | ia:claude |
-| TAC-008 | investigation | numerique | Décomposer la cohérence K : diagonale, même premier, premiers distincts | assignee | ia:claude |
-| TAC-009 | investigation | explorateur | Gram de Nyman–Beurling sur des différences d'échelle | assignee | ia:chatgpt-sol-6.1-max |
+| TAC-002 | investigation | explorateur | Paquets signés : garder premiers, coupures et dette | a_reprendre | ia:chatgpt-sol-6.1-max |
+| TAC-003 | investigation | explorateur | Dette de Schur dans la norme duale | a_reprendre | ia:chatgpt-sol-6.1-max |
+| TAC-004 | investigation | explorateur | Deux filtres : approximants et norme de forme | deposee | ia:claude |
+| TAC-005 | investigation | explorateur | Carte d’identité de μ et corrélations pondérées | assignee | ia:claude |
+| TAC-006 | investigation | explorateur | Pli sur une fibre à coefficient A fixé | deposee | ia:claude |
+| TAC-007 | investigation | explorateur | Certificat du noyau des moments à S = 0,8 | deposee | ia:claude |
+| TAC-008 | investigation | numerique | Décomposer la cohérence K : diagonale, même premier, premiers distincts | deposee | ia:claude |
+| TAC-009 | investigation | explorateur | Gram de Nyman–Beurling sur des différences d'échelle | a_reprendre | ia:chatgpt-sol-6.1-max |
+| TAC-010 | verification_temoin | auditeur | Lecture adverse de la note sur la preuve annoncée de RH (Alpöge, 2026) | deposee | ia:chatgpt-sol-6.1-max |
+| TAC-011 | redaction | rapporteur | Article 1 après l'annonce : théorèmes A et B sans hypothèse | assignee | ia:chatgpt-sol-6.1-max |
+| TAC-012 | investigation | explorateur | Document 80 face à la preuve annoncée : un carré, ou de la multiplicité ? | assignee | ia:chatgpt-sol-6.1-max |
+| TAC-013 | investigation | explorateur | Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité | perimee | ia:claude |
+| TAC-014 | verification_temoin | auditeur | Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ? | assignee | ia:claude |
+| TAC-015 | investigation | explorateur | Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité | verifiee | ia:claude |
+| TAC-016 | verification_temoin | auditeur | Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ? | acceptee | ia:claude |
+| TAC-017 | redaction | rapporteur | Échelle, niveau 3 : une preuve humaine du Landau localisé pour ζ, confrontée au Lean | acceptee | ia:claude |
+| TAC-018 | investigation | explorateur | Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles) | a_reprendre | ia:claude |
+| TAC-019 | redaction | rapporteur | Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN) | a_reprendre | ia:claude |
+| TAC-020 | redaction | rapporteur | Piste 1, module 2 : de l'inégalité de pente à (⋆), la moyenne sur les caractères (§5 du guide), confrontée au Lean (EN) | ouverte | — |
+| TAC-021 | redaction | rapporteur | Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN) | a_reprendre | ia:claude |
+| TAC-022 | investigation | explorateur | Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles) | a_reprendre | ia:claude |
+| TAC-023 | redaction | rapporteur | Piste 1, module 1 (v3) : de (⋆) au théorème, note anglaise complétée selon la vérification de TAC-021 | deposee | ia:claude |
+| TAC-024 | investigation | explorateur | Théorème A par fenêtres (v3) : pôles doubles, réciproque refaite selon la vérification de TAC-022 | deposee | ia:claude |
 
 Status at generation time. Cards are assigned with `taches.py assigner`; `taches.py etat` gives the live state.

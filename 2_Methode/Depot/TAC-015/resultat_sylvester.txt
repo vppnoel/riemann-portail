@@ -1,0 +1,8 @@
+Σ ν(k)/k = 0
+période 30030 ; valeurs de F sur une période : min -1, max 4 ; F < 0 sur 70 des 30030 pas
+F = 1 sur [1, 15), F(15) = 0
+A = 0.988599 ; constante naïve A·c/(c−1) = 1.05921 (sans sens si F change de signe) ; limite W/x = A − 1 + 1/c = 0.055266
+∫_c^∞ F/y² (30 périodes + queue) = 0.055266
+x =   10000 : log N_F(x)/x = 0.98818 ; W/x = 0.05414 ; écart à la limite 0.00113 ; W/√x = 5.4
+x =  100000 : log N_F(x)/x = 0.98859 ; W/x = 0.05466 ; écart à la limite 0.00061 ; W/√x = 17.3
+x = 1000000 : log N_F(x)/x = 0.98857 ; W/x = 0.05560 ; écart à la limite 0.00033 ; W/√x = 55.6

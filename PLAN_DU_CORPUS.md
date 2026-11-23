@@ -140,6 +140,7 @@ Registre des métaphores et des sources, indicateur, navigateur et Bellman, matr
 
 ## Hors numérotation
 
+- Après l’annonce de novembre 2026 : [Note sur la preuve annoncée](NOTE_ALPOGE_2026.md) · [Recoller les morceaux, document de travail V6.60](1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md)
 - [Articles au format standard (PDF et LaTeX)](1_Presentation/articles/) · [Dossier pour un spécialiste](1_Presentation/relecture/00_READ_ME_FIRST_EN.md)
 - [Reconstruction V6.51 intégrée](1_Presentation/RECONSTRUCTION_V651_INTEGREE.html) · [Récupération historique](RECUPERATION.html)
 - [Liste des figures](1_Presentation/LISTE_DES_FIGURES.md) · [Preuves et calculs : mode d’emploi](3_Preuves_et_calculs/README.md)

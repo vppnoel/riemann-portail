@@ -17,6 +17,7 @@ aucun nom de modèle n'est supposé. Un acteur s'écrit « type:nom », avec typ
   python -B 2_Methode/Pilotage/taches.py integrer TAC-001 --par ACTEUR --pieces chemin1 chemin2 …
   python -B 2_Methode/Pilotage/taches.py abandonner TAC-001 --par auteur:NOM --note "…"
   python -B 2_Methode/Pilotage/taches.py controler
+  python -B 2_Methode/Pilotage/taches.py boites                                # 2_Methode/Echanges/<acteur>/ : à produire, à vérifier
 
 Règles appliquées par le programme (et non seulement décrites) :
   1. une fiche a, dès sa création, sa sortie attendue et son critère de rejet ;
@@ -39,6 +40,7 @@ ROOT = HERE.parents[1]
 REGISTRE = '2_Methode/Pilotage/taches.json'
 JOURNAL = '2_Methode/Pilotage/journal_taches.json'
 DEPOT = '2_Methode/Depot'
+ECHANGES = '2_Methode/Echanges'
 ACTEUR = re.compile(r'^(auteur|ia|agent):[a-z0-9][a-z0-9._-]{0,63}$')
 FINAUX = {'integree', 'rejetee', 'abandonnee', 'perimee'}
 GENRES = {'calcul', 'investigation', 'lier_instance', 'verification_temoin', 'bibliographie', 'formalisation', 'redaction'}
@@ -188,6 +190,16 @@ class Registre:
         t['statut'] = 'deposee'
         self.evenement(par, ident, 'deposee', fichiers=fichiers, statut_propose=statut_propose, equivalent_rh=bool(equivalent_rh)); self.sauver()
 
+    def retirer(self, ident, par, motif):
+        """Le producteur retire son dépôt tant qu'aucun vérificateur ne l'a jugé : déposée → à reprendre.
+        Le motif cite le fil de discussion. Le dépôt retiré reste au journal ; le suivant sera de nouveau figé."""
+        acteur(par); t = self.tache(ident)
+        if t['statut'] != 'deposee': raise Refus(f"{ident} est « {t['statut']} » : retrait seulement d'un dépôt non encore vérifié.")
+        if par != t['depots'][-1]['par']: raise Refus('Seul le producteur du dépôt le retire.')
+        if not motif or len(motif.strip()) < 20: raise Refus('Motif trop court : dire ce qui manque et citer le fil de discussion.')
+        t['statut'] = 'a_reprendre'
+        self.evenement(par, ident, 'retiree', motif=motif.strip()); self.sauver()
+
     def verifier(self, ident, par, verdict, note):
         acteur(par); t = self.tache(ident)
         if t['statut'] != 'deposee': raise Refus(f"{ident} est « {t['statut']} » : rien à vérifier.")
@@ -230,6 +242,42 @@ class Registre:
         if t['statut'] in FINAUX: raise Refus(f"{ident} est déjà « {t['statut']} ».")
         t['statut'] = 'abandonnee'; t['decision'] = dict(le=maintenant(), par=par, decision='abandonnee', note=note or '')
         self.evenement(par, ident, 'abandonnee', note=note or ''); self.sauver()
+
+    # ---------------------------------------------------------------- boîtes aux lettres
+    def boites(self):
+        """Écrit 2_Methode/Echanges/<acteur>/ : A_FAIRE.md et une consigne par fiche (produire ou vérifier).
+        Régénéré entièrement à chaque appel ; ne modifie pas le registre."""
+        import shutil
+        racine = self.root / ECHANGES
+        acteurs = sorted({t['assigne_a'] for t in self.data['taches'] if t['assigne_a']} | {d['par'] for t in self.data['taches'] for d in t['depots']})
+        acteurs = [a for a in acteurs if not a.startswith('auteur:')]
+        for d in racine.glob('*'):
+            if d.is_dir(): shutil.rmtree(d)
+        racine.mkdir(parents=True, exist_ok=True)
+        resume = {}
+        for a in acteurs:
+            d = racine / a.replace(':', '_'); d.mkdir()
+            produire = [t for t in self.data['taches'] if t['assigne_a'] == a and t['statut'] in ('assignee', 'a_reprendre')]
+            verifier = [t for t in self.data['taches'] if t['statut'] == 'deposee' and a not in {x['par'] for x in t['depots']}]
+            L = ['\ufeff# Boîte de ' + a, '', f"*Générée par `taches.py boites` le {maintenant()}. Ne pas modifier : la source est le registre des fiches.*", '']
+            L += ['## À produire', ''] + ([f"- **{t['id']}** — {t['titre']} ({'prévision déjà enregistrée' if t['previsions'] else 'commencer par la prévision'}) → `{t['id']}_produire.md`" for t in produire] or ['- rien'])
+            L += ['', '## À vérifier (dépôts d\'un autre acteur)', ''] + ([f"- **{t['id']}** — {t['titre']} → `{t['id']}_verifier.md` ; pièces dans `2_Methode/Depot/{t['id']}/`" for t in verifier] or ['- rien'])
+            fils = [t['id'] for t in produire + verifier]
+            L += ['', '## Fils de discussion', '', 'Lire le fil d\'une fiche en entier avant de la reprendre, et y répondre à chaque point soulevé.', '']
+            L += [f"- {i} : https://github.com/Vppnoel/riemann/issues?q={i}" for i in fils] or ['- aucun']
+            L += ['', '## Règles (GITHUB.md, § 4)', '',
+                  '- Commandes `taches.py` : directement sur `main`, un commit par commande.',
+                  '- Tout le reste passe par une branche et une pull request : `tac-xxx` pour produire, `tac-xxx-verif` pour vérifier.',
+                  '- Un changement de méthode (tests, tolérances, contrôles, règles, scripts de vérification, registres, indicateur) est fusionné par l\'auteur seul, après son accord écrit dans la pull request.',
+                  '- Signer sous son propre nom ; si l\'outil écrit sous le compte de l\'auteur, commencer le message du commit par son identifiant d\'acteur. Jamais `--par auteur:…`.',
+                  '- Une discussion ne décide rien : ce qui est convenu est inscrit par une commande de fiche.',
+                  '', 'Rendre le travail selon `2_Methode/Pilotage/CIBLAGE.md` (ou `TARGETING_EN.md`). Un acteur sans droit d\'écriture rend ses fichiers à l\'auteur, qui les dépose.', '']
+            (d / 'A_FAIRE.md').write_text('\n'.join(L), encoding='utf-8')
+            for t in produire: (d / f"{t['id']}_produire.md").write_text('\ufeff' + self.fiche(t['id']).replace('VOTRE_ID', a), encoding='utf-8')
+            for t in verifier: (d / f"{t['id']}_verifier.md").write_text('\ufeff' + self.fiche(t['id'], verification=True).replace('VOTRE_ID', a), encoding='utf-8')
+            resume[a] = dict(produire=[t['id'] for t in produire], verifier=[t['id'] for t in verifier])
+        (racine / 'README.md').write_text('\ufeff# Échanges entre acteurs\n\nUne boîte par acteur (IA ou agent) : `A_FAIRE.md` liste ce qu\'il doit produire et vérifier, avec une consigne autonome par fiche. Régénéré par `python -B 2_Methode/Pilotage/taches.py boites` après chaque opération sur les fiches. Procédure : `2_Methode/Pilotage/CIBLAGE.md`.\n', encoding='utf-8')
+        return resume
 
     # ---------------------------------------------------------------- lecture
     def controler(self):
@@ -302,13 +350,14 @@ def main(argv=None):
     p = argparse.ArgumentParser(description='Fiches de tâche du Programme Riemann (voir CIBLAGE.md).')
     p.add_argument('--racine', default=str(ROOT), help=argparse.SUPPRESS)
     sub = p.add_subparsers(dest='cmd', required=True)
-    sub.add_parser('etat'); sub.add_parser('controler')
+    sub.add_parser('etat'); sub.add_parser('controler'); sub.add_parser('boites')
     s = sub.add_parser('ouvrir'); s.add_argument('--par', required=True)
     s = sub.add_parser('creer'); s.add_argument('--par', required=True); s.add_argument('--depuis', required=True)
     s = sub.add_parser('fiche'); s.add_argument('id'); s.add_argument('--verification', action='store_true')
     s = sub.add_parser('assigner'); s.add_argument('id'); s.add_argument('acteur'); s.add_argument('--par', required=True)
     s = sub.add_parser('prevoir'); s.add_argument('id'); s.add_argument('--par', required=True); s.add_argument('--texte', required=True)
     s = sub.add_parser('deposer'); s.add_argument('id'); s.add_argument('--par', required=True); s.add_argument('--statut-propose', required=True); s.add_argument('--equivalent-rh', action='store_true')
+    s = sub.add_parser('retirer'); s.add_argument('id'); s.add_argument('--par', required=True); s.add_argument('--motif', required=True)
     s = sub.add_parser('verifier'); s.add_argument('id'); s.add_argument('--par', required=True); s.add_argument('--verdict', required=True); s.add_argument('--note', required=True)
     s = sub.add_parser('decider'); s.add_argument('id'); s.add_argument('--par', required=True); s.add_argument('--decision', required=True); s.add_argument('--note', default='')
     s = sub.add_parser('integrer'); s.add_argument('id'); s.add_argument('--par', required=True); s.add_argument('--pieces', nargs='+', required=True)
@@ -324,6 +373,7 @@ def main(argv=None):
         elif a.cmd == 'controler':
             err = r.controler(); print(json.dumps(dict(fiches=len(r.data['taches']), evenements=len(r.journal['evenements']), erreurs=err), ensure_ascii=False, indent=2))
             return 1 if err else 0
+        elif a.cmd == 'boites': print(json.dumps(r.boites(), ensure_ascii=False, indent=1))
         elif a.cmd == 'ouvrir': print(json.dumps(dict(creees=r.ouvrir(a.par)), ensure_ascii=False))
         elif a.cmd == 'creer':
             t = r.creer(json.loads(Path(a.depuis).read_text(encoding='utf-8-sig')), a.par); r.sauver()
@@ -332,6 +382,7 @@ def main(argv=None):
         elif a.cmd == 'assigner': r.assigner(a.id, a.acteur, a.par)
         elif a.cmd == 'prevoir': r.prevoir(a.id, a.par, a.texte)
         elif a.cmd == 'deposer': r.deposer(a.id, a.par, a.statut_propose, a.equivalent_rh)
+        elif a.cmd == 'retirer': r.retirer(a.id, a.par, a.motif)
         elif a.cmd == 'verifier': r.verifier(a.id, a.par, a.verdict, a.note)
         elif a.cmd == 'decider': r.decider(a.id, a.par, a.decision, a.note)
         elif a.cmd == 'integrer': r.integrer(a.id, a.par, a.pieces)

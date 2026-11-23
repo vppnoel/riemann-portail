@@ -1,0 +1,1432 @@
+{
+  "acteur": "ia:chatgpt-sol-6.1-max",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "mpmath": "1.3.0",
+  "controles": [
+    {
+      "controle": "integrite/1_Presentation/81_ZHU_REPRODUIT.md",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/RAPPORT.md",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/p1_mesure_noyau_08.py",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/p1_resultats.json",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/p2_budgets_architecture_doc75.py",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/p2_resultats.json",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/p3_controles_adverses.py",
+      "ok": true
+    },
+    {
+      "controle": "integrite/2_Methode/Depot/TAC-007/p3_resultats.json",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=40 K=48 dps=60 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=40 K=48 dps=60 pair/marge",
+      "ok": true,
+      "original": "5.39923299611e-12",
+      "rejeu": "5.39923299611e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=48 K=48 dps=60 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=48 K=48 dps=60 pair/marge",
+      "ok": true,
+      "original": "5.37876479342e-12",
+      "rejeu": "5.37876479342e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=56 K=48 dps=60 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=56 K=48 dps=60 pair/marge",
+      "ok": true,
+      "original": "5.35725706389e-12",
+      "rejeu": "5.35725706389e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=64 K=48 dps=60 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=64 K=48 dps=60 pair/marge",
+      "ok": true,
+      "original": "5.34694614142e-12",
+      "rejeu": "5.34694614142e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=48 K=96 dps=60 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=48 K=96 dps=60 pair/marge",
+      "ok": true,
+      "original": "5.38524293886e-12",
+      "rejeu": "5.38524293886e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=64 K=96 dps=60 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=64 K=96 dps=60 pair/marge",
+      "ok": true,
+      "original": "5.35029972448e-12",
+      "rejeu": "5.35029972448e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=56 K=48 dps=80 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=56 K=48 dps=80 pair/marge",
+      "ok": true,
+      "original": "5.35725706389e-12",
+      "rejeu": "5.35725706389e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=64 K=96 dps=80 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=64 K=96 dps=80 pair/marge",
+      "ok": true,
+      "original": "5.35029972448e-12",
+      "rejeu": "5.35029972448e-12"
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=48 K=48 dps=60 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p1_resultats.json/N=48 K=48 dps=60 impair/marge",
+      "ok": true,
+      "original": "9.85526381624e-10",
+      "rejeu": "9.85526381624e-10"
+    },
+    {
+      "controle": "rejeu/p2_resultats.json:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/source",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/marge_certifiee_11_20",
+      "ok": true,
+      "original": 0.0003004510350528708,
+      "rejeu": 0.0003004510350528708
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/cellules_frequence",
+      "ok": true,
+      "original": 700000,
+      "rejeu": 700000
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/marge_visee",
+      "ok": true,
+      "original": 5e-12,
+      "rejeu": 5e-12
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/table (poids digamma, table linéaire par morceaux):cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/table (poids digamma, table linéaire par morceaux)/valeur",
+      "ok": true,
+      "original": 0.00010938268326799701,
+      "rejeu": 0.00010938268326799701
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/table (poids digamma, table linéaire par morceaux)/facteur_de_reduction",
+      "ok": true,
+      "original": 21876536.653599404,
+      "rejeu": 21876536.653599404
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/table (poids digamma, table linéaire par morceaux)/loi",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/quadrature en fréquence (trapèzes):cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/quadrature en fréquence (trapèzes)/valeur",
+      "ok": true,
+      "original": 0.00015216406675922078,
+      "rejeu": 0.00015216406675922078
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/quadrature en fréquence (trapèzes)/facteur_de_reduction",
+      "ok": true,
+      "original": 30432813.351844158,
+      "rejeu": 30432813.351844158
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/quadrature en fréquence (trapèzes)/loi",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/assemblage binary64 (modèle γ_n):cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/assemblage binary64 (modèle γ_n)/valeur",
+      "ok": true,
+      "original": 1.1083479345842718e-05,
+      "rejeu": 1.1083479345842718e-05
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/assemblage binary64 (modèle γ_n)/facteur_de_reduction",
+      "ok": true,
+      "original": 2216695.8691685437,
+      "rejeu": 2216695.8691685437
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/assemblage binary64 (modèle γ_n)/loi",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/poids intégrés:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/poids intégrés/valeur",
+      "ok": true,
+      "original": 4.8572257327350605e-11,
+      "rejeu": 4.8572257327350605e-11
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/poids intégrés/facteur_de_reduction",
+      "ok": true,
+      "original": 9.714451465470122,
+      "rejeu": 9.714451465470122
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/poids intégrés/loi",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/spatial (troncature N):cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/spatial (troncature N)/valeur",
+      "ok": true,
+      "original": 3.713853486168887e-53,
+      "rejeu": 3.713853486168887e-53
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/spatial (troncature N)/facteur_de_reduction",
+      "ok": true,
+      "original": 7.427706972337774e-42,
+      "rejeu": 7.427706972337774e-42
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budgets/spatial (troncature N)/loi",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/cellules_necessaires_quadrature_seule",
+      "ok": true,
+      "original": 3861616053.209283,
+      "rejeu": 3861616053.209283
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/budget_assemblage_binary64_avec_ces_cellules",
+      "ok": true,
+      "original": 0.061143059667599656,
+      "rejeu": 0.061143059667599656
+    },
+    {
+      "controle": "rejeu/p2_resultats.json/conclusion",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C0:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C0/N",
+      "ok": true,
+      "original": 12,
+      "rejeu": 12
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C0/ecart_max",
+      "ok": true,
+      "original": "9.1e-35",
+      "rejeu": "9.1e-35"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/Q_formule_x",
+      "ok": true,
+      "original": "0.196556416291",
+      "rejeu": "0.196556416291"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/somme_zeros",
+      "ok": true,
+      "original": "0.196556416291",
+      "rejeu": "0.196556416291"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/ecart_relatif",
+      "ok": true,
+      "original": "7.27e-16",
+      "rejeu": "7.27e-16"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/zeros",
+      "ok": true,
+      "original": 988,
+      "rejeu": 988
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/poids:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/poids/4",
+      "ok": true,
+      "original": "-0.69314718",
+      "rejeu": "-0.69314718"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=0.8/contre_epreuve_facteur_zeta_ecart",
+      "ok": true,
+      "original": "4.49",
+      "rejeu": "4.49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/Q_formule_x",
+      "ok": true,
+      "original": "0.039244126151",
+      "rejeu": "0.039244126151"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/somme_zeros",
+      "ok": true,
+      "original": "0.039244126151",
+      "rejeu": "0.039244126151"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/ecart_relatif",
+      "ok": true,
+      "original": "3.13e-15",
+      "rejeu": "3.13e-15"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/zeros",
+      "ok": true,
+      "original": 988,
+      "rejeu": 988
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/poids:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/poids/4",
+      "ok": true,
+      "original": "-0.69314718",
+      "rejeu": "-0.69314718"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/poids/9",
+      "ok": true,
+      "original": "-0.73240819",
+      "rejeu": "-0.73240819"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/poids/11",
+      "ok": true,
+      "original": "1.4459853",
+      "rejeu": "1.4459853"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/poids/16",
+      "ok": true,
+      "original": "0.34657359",
+      "rejeu": "0.34657359"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/poids/19",
+      "ok": true,
+      "original": "-1.3510013",
+      "rejeu": "-1.3510013"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_validation_chi5/L=1.5/contre_epreuve_facteur_zeta_ecart",
+      "ok": true,
+      "original": "49.1",
+      "rejeu": "49.1"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/N=32:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/N=32/lambda_min_secteur_pair",
+      "ok": true,
+      "original": "0.00659557490136",
+      "rejeu": "0.00659557490136"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/N=32/lambda_min_noyau",
+      "ok": true,
+      "original": "1.62217879147",
+      "rejeu": "1.62217879147"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/N=48:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/N=48/lambda_min_secteur_pair",
+      "ok": true,
+      "original": "0.00659256787208",
+      "rejeu": "0.00659256787208"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/N=48/lambda_min_noyau",
+      "ok": true,
+      "original": "1.62217358554",
+      "rejeu": "1.62217358554"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/poids_2Re_b_sur_racine_n:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/poids_2Re_b_sur_racine_n/2",
+      "ok": true,
+      "original": "0.2784708",
+      "rejeu": "0.2784708"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/poids_2Re_b_sur_racine_n/3",
+      "ok": true,
+      "original": "-0.36037364",
+      "rejeu": "-0.36037364"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C1_DH/poids_2Re_b_sur_racine_n/4",
+      "ok": true,
+      "original": "-1.442232",
+      "rejeu": "-1.442232"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/N",
+      "ok": true,
+      "original": 48,
+      "rejeu": 48
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/lambda0",
+      "ok": true,
+      "original": "5.37876479342e-12",
+      "rejeu": "5.37876479342e-12"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/hauteur",
+      "ok": true,
+      "original": "14.13472514",
+      "rejeu": "14.13472514"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/lambda_min:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/lambda_min/0",
+      "ok": true,
+      "original": "5.37876479356e-12",
+      "rejeu": "5.37876479356e-12"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/lambda_min/0.1",
+      "ok": true,
+      "original": "-0.00423605709923",
+      "rejeu": "-0.00423605709923"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/lambda_min/0.01",
+      "ok": true,
+      "original": "-2.66922298229e-5",
+      "rejeu": "-2.66922298229e-5"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/lambda_min/0.001",
+      "ok": true,
+      "original": "-2.33184310435e-8",
+      "rejeu": "-2.33184310435e-8"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/a_quatuor_fictif/seuil_delta",
+      "ok": true,
+      "original": "2.11215e-5",
+      "rejeu": "2.11215e-5"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/b_Lambda2:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/b_Lambda2/derivee_premier_ordre",
+      "ok": true,
+      "original": "-0.0360310118955",
+      "rejeu": "-0.0360310118955"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/b_Lambda2/epsilon_predit",
+      "ok": true,
+      "original": "1.4928154e-10",
+      "rejeu": "1.4928154e-10"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/b_Lambda2/epsilon_observe",
+      "ok": true,
+      "original": "1.490231e-10",
+      "rejeu": "1.490231e-10"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/b_Lambda2/ecart_relatif",
+      "ok": true,
+      "original": "0.00173",
+      "rejeu": "0.00173"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C3/b_Lambda2/lambda_a_moins_eps_observe",
+      "ok": true,
+      "original": "1.07389056183e-11",
+      "rejeu": "1.07389056183e-11"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/equation",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m/1",
+      "ok": true,
+      "original": 9,
+      "rejeu": 9
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m/2",
+      "ok": true,
+      "original": 27,
+      "rejeu": 27
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m/3",
+      "ok": true,
+      "original": 108,
+      "rejeu": 108
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m/4",
+      "ok": true,
+      "original": 675,
+      "rejeu": 675
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m/5",
+      "ok": true,
+      "original": 3069,
+      "rejeu": 3069
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/N_m/6",
+      "ok": true,
+      "original": 15552,
+      "rejeu": 15552
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/a",
+      "ok": true,
+      "original": -3,
+      "rejeu": -3
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/borne_de_Hasse",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/courbe/ecart_rationalite",
+      "ok": true,
+      "original": "0.0",
+      "rejeu": "0.0"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=1 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=1 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.42e-50",
+      "rejeu": "1.42e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=1 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "3.52173913043",
+      "rejeu": "3.52173913043"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=1 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=1 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "4.01e-51",
+      "rejeu": "4.01e-51"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=1 impair/lambda_min_noyau",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=2 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=2 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.11e-49",
+      "rejeu": "1.11e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=2 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "1.33638235505e-51",
+      "rejeu": "1.33638235505e-51"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=2 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=2 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.15e-49",
+      "rejeu": "1.15e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=2 impair/lambda_min_noyau",
+      "ok": true,
+      "original": "4.34634146341",
+      "rejeu": "4.34634146341"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=3 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=3 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "6.99e-49",
+      "rejeu": "6.99e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=3 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "-1.49761706123e-50",
+      "rejeu": "-1.49761706123e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=3 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=3 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "7.01e-49",
+      "rejeu": "7.01e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/vraie_courbe/M=3 impair/lambda_min_noyau",
+      "ok": true,
+      "original": "2.13821176807e-50",
+      "rejeu": "2.13821176807e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/alpha:taille",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/alpha/0",
+      "ok": true,
+      "original": "3.618034",
+      "rejeu": "3.618034"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/alpha/1",
+      "ok": true,
+      "original": "1.381966",
+      "rejeu": "1.381966"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=1 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=1 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.95e-50",
+      "rejeu": "1.95e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=1 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "0.0434782608696",
+      "rejeu": "0.0434782608696"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=1 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=1 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.87e-50",
+      "rejeu": "1.87e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=1 impair/lambda_min_noyau",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=2 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=2 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.18e-49",
+      "rejeu": "1.18e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=2 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "1.67047794381e-51",
+      "rejeu": "1.67047794381e-51"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=2 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=2 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.11e-49",
+      "rejeu": "1.11e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=2 impair/lambda_min_noyau",
+      "ok": true,
+      "original": "-0.0243902439024",
+      "rejeu": "-0.0243902439024"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=3 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=3 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "7.31e-49",
+      "rejeu": "7.31e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=3 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "-2.67276471009e-50",
+      "rejeu": "-2.67276471009e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=3 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=3 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "7.21e-49",
+      "rejeu": "7.21e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre1_a5/M=3 impair/lambda_min_noyau",
+      "ok": true,
+      "original": "-0.318181818182",
+      "rejeu": "-0.318181818182"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/P_T",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/modules_alpha:taille",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/modules_alpha/0",
+      "ok": true,
+      "original": "2.7912878",
+      "rejeu": "2.7912878"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/modules_alpha/1",
+      "ok": true,
+      "original": "2.7912878",
+      "rejeu": "2.7912878"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/modules_alpha/2",
+      "ok": true,
+      "original": "1.7912878",
+      "rejeu": "1.7912878"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/modules_alpha/3",
+      "ok": true,
+      "original": "1.7912878",
+      "rejeu": "1.7912878"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=1 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=1 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "5.35e-51",
+      "rejeu": "5.35e-51"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=1 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "3.04347826087",
+      "rejeu": "3.04347826087"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=1 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=1 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.6e-50",
+      "rejeu": "1.6e-50"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=1 impair/lambda_min_noyau",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=2 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=2 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.33e-49",
+      "rejeu": "1.33e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=2 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "-0.277292941168",
+      "rejeu": "-0.277292941168"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=2 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=2 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "1.24e-49",
+      "rejeu": "1.24e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=2 impair/lambda_min_noyau",
+      "ok": true,
+      "original": "7.17073170732",
+      "rejeu": "7.17073170732"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=3 pair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=3 pair/ecart_arith_spectral",
+      "ok": true,
+      "original": "8.07e-49",
+      "rejeu": "8.07e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=3 pair/lambda_min_noyau",
+      "ok": true,
+      "original": "-1.55511122449",
+      "rejeu": "-1.55511122449"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=3 impair:cles",
+      "ok": true
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=3 impair/ecart_arith_spectral",
+      "ok": true,
+      "original": "8.04e-49",
+      "rejeu": "8.04e-49"
+    },
+    {
+      "controle": "rejeu/p3_resultats.json/C2/faux_genre2/M=3 impair/lambda_min_noyau",
+      "ok": true,
+      "original": "-1.28529436403",
+      "rejeu": "-1.28529436403"
+    },
+    {
+      "controle": "P1_fourchette",
+      "ok": true
+    },
+    {
+      "controle": "P1_decroissance_mesuree",
+      "ok": true
+    },
+    {
+      "controle": "P1_variation_56_64",
+      "ok": true
+    },
+    {
+      "controle": "P2_echelle_cellules",
+      "ok": true
+    },
+    {
+      "controle": "projection_elimination_vs_Householder",
+      "ok": true,
+      "ecart": "7.9991451e-72"
+    },
+    {
+      "controle": "moment_annule",
+      "ok": true
+    },
+    {
+      "controle": "residu_spectral_70_chiffres",
+      "ok": true,
+      "valeur": "3.4306022e-71"
+    },
+    {
+      "controle": "cache_gauss_reutilise_noeuds_60",
+      "ok": true
+    },
+    {
+      "controle": "cache_ecart_loin_sous_marge",
+      "ok": true,
+      "ecart": "4.7669172e-62"
+    },
+    {
+      "controle": "CF_N1_compte_direct",
+      "ok": true
+    },
+    {
+      "controle": "CF_comptes_vs_recurrence",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_vraie_M=1 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_vraie_M=1 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_vraie_M=2 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_vraie_M=2 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_vraie_M=3 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_vraie_M=3 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre1_M=1 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre1_M=1 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre1_M=2 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre1_M=2 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre1_M=3 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre1_M=3 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre2_M=1 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre2_M=1 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre2_M=2 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre2_M=2 impair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre2_M=3 pair",
+      "ok": true
+    },
+    {
+      "controle": "CF_signe_exact_faux_genre2_M=3 impair",
+      "ok": true
+    },
+    {
+      "controle": "C1_validation_chi5",
+      "ok": true
+    },
+    {
+      "controle": "C1_DH_matrices_finies_positives",
+      "ok": true
+    },
+    {
+      "controle": "C3_seuil_Lambda2_prevu",
+      "ok": true
+    }
+  ],
+  "bilan": {
+    "reussis": 220,
+    "total": 220
+  },
+  "empreintes": {
+    "p3_resultats.json": "7af0b2783281c2f15e03f7f118cc327f2b51699e3368a94db16122973f434328",
+    "p2_resultats.json": "ad95651ab465f5a45fa5f125af580930deccc45043ce5cee9a11a2ede8ba1e99",
+    "p3_controles_adverses.py": "ea5a26a49cd43ab1414ecc7c77fb4077fe266cc4da5ba6cab56582b199533aa9",
+    "RAPPORT.md": "a3a149069816386397f462c756167ae21bb66415ca910920945283a7ae35f1a2",
+    "p1_mesure_noyau_08.py": "df8a0ac1ad4f4612e61a89fc8ddf9c2edc4994d00104bec3cf1f6df1a3c1e87f",
+    "p1_resultats.json": "274489dabe8d3ab8ab9d83ca6e59c56041e6afb676130693ee0f2677533f13ec",
+    "p2_budgets_architecture_doc75.py": "e85c4df5fcb8b49ad1247ccd02db65bb8e2e6f394be856658346c798b07a5124"
+  },
+  "projection_independante": {
+    "N": 12,
+    "L": "0.8",
+    "marge": "7.8598198285757213419e-10",
+    "residu": "3.4306022e-71"
+  },
+  "cache_gauss": {
+    "ecart_noeuds_60_contre_80_frais": "4.7669172e-62",
+    "indexe_par_precision": false
+  },
+  "corps_fonctions_signes_rationnels": {
+    "vraie": {
+      "M=1 pair": {
+        "dimension": 1,
+        "psd": true,
+        "mineurs": [
+          "162"
+        ],
+        "matrice": [
+          [
+            "162"
+          ]
+        ]
+      },
+      "M=1 impair": {
+        "dimension": 0,
+        "psd": true,
+        "mineurs": []
+      },
+      "M=2 pair": {
+        "dimension": 2,
+        "psd": true,
+        "mineurs": [
+          "162",
+          "1458",
+          "0"
+        ],
+        "matrice": [
+          [
+            "162",
+            "486"
+          ],
+          [
+            "486",
+            "1458"
+          ]
+        ]
+      },
+      "M=2 impair": {
+        "dimension": 1,
+        "psd": true,
+        "mineurs": [
+          "1782"
+        ],
+        "matrice": [
+          [
+            "1782"
+          ]
+        ]
+      },
+      "M=3 pair": {
+        "dimension": 3,
+        "psd": true,
+        "mineurs": [
+          "162",
+          "1458",
+          "23328",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "matrice": [
+          [
+            "162",
+            "486",
+            "1944"
+          ],
+          [
+            "486",
+            "1458",
+            "5832"
+          ],
+          [
+            "1944",
+            "5832",
+            "23328"
+          ]
+        ]
+      },
+      "M=3 impair": {
+        "dimension": 2,
+        "psd": true,
+        "mineurs": [
+          "1782",
+          "16038",
+          "0"
+        ],
+        "matrice": [
+          [
+            "1782",
+            "5346"
+          ],
+          [
+            "5346",
+            "16038"
+          ]
+        ]
+      }
+    },
+    "faux_genre1": {
+      "M=1 pair": {
+        "dimension": 1,
+        "psd": true,
+        "mineurs": [
+          "2"
+        ],
+        "matrice": [
+          [
+            "2"
+          ]
+        ]
+      },
+      "M=1 impair": {
+        "dimension": 0,
+        "psd": true,
+        "mineurs": []
+      },
+      "M=2 pair": {
+        "dimension": 2,
+        "psd": true,
+        "mineurs": [
+          "2",
+          "242",
+          "0"
+        ],
+        "matrice": [
+          [
+            "2",
+            "22"
+          ],
+          [
+            "22",
+            "242"
+          ]
+        ]
+      },
+      "M=2 impair": {
+        "dimension": 1,
+        "psd": false,
+        "mineurs": [
+          "-10"
+        ],
+        "matrice": [
+          [
+            "-10"
+          ]
+        ]
+      },
+      "M=3 pair": {
+        "dimension": 3,
+        "psd": true,
+        "mineurs": [
+          "2",
+          "242",
+          "11552",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "matrice": [
+          [
+            "2",
+            "22",
+            "152"
+          ],
+          [
+            "22",
+            "242",
+            "1672"
+          ],
+          [
+            "152",
+            "1672",
+            "11552"
+          ]
+        ]
+      },
+      "M=3 impair": {
+        "dimension": 2,
+        "psd": false,
+        "mineurs": [
+          "-10",
+          "-1210",
+          "0"
+        ],
+        "matrice": [
+          [
+            "-10",
+            "-110"
+          ],
+          [
+            "-110",
+            "-1210"
+          ]
+        ]
+      }
+    },
+    "faux_genre2": {
+      "M=1 pair": {
+        "dimension": 1,
+        "psd": true,
+        "mineurs": [
+          "140"
+        ],
+        "matrice": [
+          [
+            "140"
+          ]
+        ]
+      },
+      "M=1 impair": {
+        "dimension": 0,
+        "psd": true,
+        "mineurs": []
+      },
+      "M=2 pair": {
+        "dimension": 2,
+        "psd": false,
+        "mineurs": [
+          "140",
+          "5476",
+          "-21904"
+        ],
+        "matrice": [
+          [
+            "140",
+            "888"
+          ],
+          [
+            "888",
+            "5476"
+          ]
+        ]
+      },
+      "M=2 impair": {
+        "dimension": 1,
+        "psd": true,
+        "mineurs": [
+          "2940"
+        ],
+        "matrice": [
+          [
+            "2940"
+          ]
+        ]
+      },
+      "M=3 pair": {
+        "dimension": 3,
+        "psd": false,
+        "mineurs": [
+          "140",
+          "5476",
+          "62480",
+          "-21904",
+          "-788544",
+          "-5607424",
+          "0"
+        ],
+        "matrice": [
+          [
+            "140",
+            "888",
+            "3088"
+          ],
+          [
+            "888",
+            "5476",
+            "18648"
+          ],
+          [
+            "3088",
+            "18648",
+            "62480"
+          ]
+        ]
+      },
+      "M=3 impair": {
+        "dimension": 2,
+        "psd": false,
+        "mineurs": [
+          "2940",
+          "114996",
+          "-9659664"
+        ],
+        "matrice": [
+          [
+            "2940",
+            "18648"
+          ],
+          [
+            "18648",
+            "114996"
+          ]
+        ]
+      }
+    }
+  },
+  "limite": "P1 et DH : matrices finies et quadratures non certifiées. P2 : modèle de budgets fixé. Aucun minorant sur tout espace."
+}

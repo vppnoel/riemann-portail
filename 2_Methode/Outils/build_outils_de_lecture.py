@@ -259,7 +259,7 @@ Pour intégrer un résultat accepté par l'auteur, suivre le script d'intégrati
    - enregistrer la prévision avant le travail (`taches.py prevoir`) ;
    - faire le calcul ou la preuve dans `2_Methode/Depot/TAC-xxx/`, puis déposer ;
    - un autre acteur vérifie ; l'auteur décide ;
-   - après acceptation seulement : écrire le document numéroté, intégrer au pilotage, lancer les vérifications et la suite de tests, rédiger la note de livraison, livrer l'archive complète et deux archives partielles.
+   - après acceptation seulement : écrire le document numéroté, intégrer au pilotage, lancer les vérifications et la suite de tests, rédiger la note de livraison, horodater la version (`2_Methode/Horodatage/horodater_version.py`), livrer l'archive complète et deux archives partielles.
 
 ## Ce que tu rends
 - Un bilan court : ce qui a été fait, statut exact, prévisions justes ou fausses.
@@ -276,7 +276,7 @@ Pour intégrer un résultat accepté par l'auteur, suivre le script d'intégrati
 
 
 def fiches():
-    p = ROOT / '2_Methode/Pilotage/taches.json'
+    p = ROOT / '2_Methode/Pilotage/taches_instantane.json'          # instantané figé à la reconstruction des vues
     return json.loads(p.read_text(encoding='utf-8-sig'))['taches'] if p.exists() else []
 
 
@@ -536,7 +536,7 @@ Then rebuild twice, verify, and regenerate the checksums.
    - record the prediction before working (`taches.py prevoir`);
    - do the computation or proof in `2_Methode/Depot/TAC-xxx/`, then deposit;
    - another actor verifies; the author decides;
-   - only after acceptance: write the numbered document, integrate it into the steering data, run the checks and the test suite, write the delivery note, deliver the full archive and two partial archives.
+   - only after acceptance: write the numbered document, integrate it into the steering data, run the checks and the test suite, write the delivery note, timestamp the version (`2_Methode/Horodatage/horodater_version.py`), deliver the full archive and two partial archives.
 
 ## What you return
 - A short report: what was done, its exact status, and which predictions were true or false.

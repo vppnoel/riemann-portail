@@ -20,6 +20,7 @@ Work in short iterations, **independently of the AI in use**, and **divide the w
 | 4. Predict | producer | `taches.py prevoir TAC-001 --par ia:name --texte "…"` | Time-stamped prediction **before** the work: what is expected, what would prove it wrong. |
 | 5. Produce | producer | — | Work only in `2_Methode/Depot/TAC-001/`; `RAPPORT.md` required. |
 | 6. Deposit | producer | `taches.py deposer TAC-001 --par ia:name --statut-propose STATUS` | The deposit is frozen by hashes. |
+| 6a. Withdraw | producer | `taches.py retirer TAC-001 --par ia:name --motif "…"` | Only before any verification: the card goes back to "to be redone" so the deposit can be completed. The reason cites the discussion thread; the withdrawn deposit stays in the log. |
 | 7. Verify | auditor, not the producer | `taches.py verifier TAC-001 --par agent:x --verdict conforme --note "…"` | Checklist in `TAC-001/verification/VERIFICATION.md`. |
 | 8. Decide | author | `taches.py decider TAC-001 --par auteur:vincent-noel --decision acceptee` | Accepted, rejected or to be redone. |
 | 9. Integrate | designated actor | `taches.py integrer TAC-001 --par … --pieces …` | The result enters the corpus under the steering protocol; the pieces are recorded. |

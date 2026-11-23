@@ -1,8 +1,8 @@
 {
   "version": "V6.55",
-  "file_count": 1890,
+  "file_count": 1903,
   "idea_count": 69,
-  "reference_count": 177,
+  "reference_count": 179,
   "association_rule": "Renvois locaux explicites, formats de même nom, identifiants documentaires conservés. Ces liens ne constituent pas une validation scientifique.",
   "entries": [
     {
@@ -149,6 +149,7 @@
         "Has36",
         "Hay68",
         "Hec37",
+        "KP86",
         "Kal60",
         "Kar31",
         "Kor04",
@@ -171,6 +172,7 @@
         "PT21",
         "Pol82",
         "RT20",
+        "Ram13",
         "Ram16",
         "SW09",
         "Sel56",
@@ -211,6 +213,8 @@
         "1_Presentation/articles/art1_fig2.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/english/07_READING_GUIDE_EN.md",
         "1_Presentation/english/07_READING_GUIDE_EN.pdf",
         "1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md",
@@ -680,6 +684,7 @@
         "1_Presentation/03_Dossier_de_relecture_EN.docx",
         "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.md",
         "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/relecture/00_READ_ME_FIRST_EN.md",
         "1_Presentation/relecture/RELECTURE_ARCHIPEL_EN.md",
         "1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md",
@@ -1216,6 +1221,7 @@
         "Ing40",
         "KK07",
         "KP11",
+        "KP86",
         "KP99",
         "KS20",
         "KS99",
@@ -1269,6 +1275,7 @@
         "Pol82",
         "RS96",
         "RT20",
+        "Ram13",
         "Ram16",
         "Ran39",
         "Rig15",
@@ -1417,6 +1424,7 @@
         "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
         "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
         "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf",
         "2_Methode/Navigateur/carte_navigation.json",
@@ -2153,6 +2161,7 @@
         "Ing40",
         "KK07",
         "KP11",
+        "KP86",
         "KP99",
         "KS20",
         "KS99",
@@ -2206,6 +2215,7 @@
         "Pol82",
         "RS96",
         "RT20",
+        "Ram13",
         "Ram16",
         "Ran39",
         "Rig15",
@@ -2252,6 +2262,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/42_REGISTRE_DES_SOURCES.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
         "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf"
       ],
@@ -2290,7 +2301,6 @@
         "Mpm13",
         "NIS26",
         "Pol82",
-        "Ran39",
         "SW09",
         "Se49",
         "SuzH23",
@@ -2316,7 +2326,6 @@
         "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
         "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
         "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
-        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
         "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
         "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
         "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
@@ -2506,7 +2515,6 @@
         "NIS26",
         "Nym50",
         "Pol82",
-        "Ran39",
         "SW09",
         "Se49",
         "SuzH23",
@@ -2534,7 +2542,6 @@
         "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
         "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
         "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
-        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
         "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
         "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
         "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
@@ -2867,7 +2874,6 @@
         "Nym50",
         "Pol82",
         "Ram16",
-        "Ran39",
         "SW09",
         "Se49",
         "SuzH23",
@@ -2903,7 +2909,6 @@
         "1_Presentation/38_Le_temps_de_Heisenberg.png",
         "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
         "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
-        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
         "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
         "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.md",
         "1_Presentation/67_CONSTRUIRE_DES_PONTS_AVEC_BELLMAN.pdf",
@@ -4652,6 +4657,7 @@
         "1_Presentation/49_ANALYSE_DE_RISQUES_J3_ET_LES_DEUX_TIERS.md",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/english/07_READING_GUIDE_EN.md",
         "3_Preuves_et_calculs/data/v638_decisions.json",
         "3_Preuves_et_calculs/data/v640_decisions.json",
@@ -4712,6 +4718,7 @@
       "related": [
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -4785,6 +4792,7 @@
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/english/07_READING_GUIDE_EN.md",
         "1_Presentation/english/07_READING_GUIDE_EN.pdf",
         "REFERENCES_HIERARCHISEES.md",
@@ -4991,6 +4999,7 @@
         "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "2_Methode/Matrice/matrice_theories.json",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
@@ -5089,6 +5098,7 @@
         "1_Presentation/69_DICTIONNAIRE_PROGRESSIF_DES_DOMAINES.tex",
         "1_Presentation/69_LANGUE_DES_PASSAGES.html",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/english/01_SYNTHESIS_EN.md",
         "1_Presentation/english/01_SYNTHESIS_EN.pdf",
         "1_Presentation/english/07_READING_GUIDE_EN.md",
@@ -5474,6 +5484,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -5530,6 +5541,7 @@
         "1_Presentation/03_Dossier_de_relecture_EN.docx",
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -5966,6 +5978,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/english/01_SYNTHESIS_EN.md",
         "GUIDE_FOR_AN_AI.md",
         "GUIDE_POUR_UNE_IA.md",
@@ -6023,6 +6036,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -6255,6 +6269,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/articles/article2_prime_side_weil_forms.tex",
         "1_Presentation/english/01_SYNTHESIS_EN.md",
         "1_Presentation/english/01_SYNTHESIS_EN.pdf",
@@ -6365,6 +6380,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/articles/article2_prime_side_weil_forms.tex",
         "1_Presentation/english/01_SYNTHESIS_EN.md",
         "1_Presentation/english/01_SYNTHESIS_EN.pdf",
@@ -6640,6 +6656,7 @@
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -7284,6 +7301,7 @@
         "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf",
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -7462,6 +7480,7 @@
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -8216,6 +8235,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/45_LE_PALIER_RECALCULE_ET_LES_REDECOUVERTES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -8336,6 +8356,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/english/01_SYNTHESIS_EN.md",
         "1_Presentation/english/01_SYNTHESIS_EN.pdf",
         "1_Presentation/english/07_READING_GUIDE_EN.md",
@@ -8582,10 +8603,7 @@
         "IDE-030",
         "IDE-031",
         "IDE-032",
-        "IDE-033",
-        "IDE-034",
-        "IDE-035",
-        "IDE-039"
+        "IDE-034"
       ],
       "documents": [],
       "references": [
@@ -9146,6 +9164,7 @@
         "1_Presentation/47_LE_RIEMANN_ROCH_VIRTUEL.md",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -9595,6 +9614,7 @@
         "1_Presentation/37_PRE_RELECTURE_A_B_ARCHIPEL.pdf",
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
       ],
@@ -9860,6 +9880,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/44_MATRICE_DES_THEORIES.html",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/articles/article2_prime_side_weil_forms.tex",
         "REFERENCES_HIERARCHISEES.md",
         "REFERENCES_RANKED.md"
@@ -11055,6 +11076,54 @@
         "TABLE_LOGIQUE.md"
       ],
       "search_extra": "Tata Institute of Fundamental Research Studies in Mathematics 5, Oxford University Press (1970) Doc. 80 : positivité de l'involution de Rosati (niveau 3, « le carré ») pour une variété abélienne polarisée ; source classique du signe dans le Modèle réduit. partiellement vérifié"
+    },
+    {
+      "id": "REF-KP86",
+      "kind": "references",
+      "title": "KP86 · J. Kaczorowski, J. Pintz · Oscillatory properties of arithmetical functions. I",
+      "href": "1_Presentation/42_REGISTRE_DES_SOURCES.html#ref-KP86",
+      "path": "",
+      "archived": false,
+      "ideas": [
+        "IDE-002",
+        "IDE-018",
+        "IDE-032"
+      ],
+      "documents": [],
+      "references": [
+        "KP86"
+      ],
+      "related": [
+        "1_Presentation/42_REGISTRE_DES_SOURCES.md",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
+        "REFERENCES_HIERARCHISEES.md",
+        "REFERENCES_RANKED.md"
+      ],
+      "search_extra": "Acta Mathematica Hungarica 48 (1986), 173–185 Article 1 révisé, §3.1. Oscillations des deux signes dans chaque fenêtre de puissances et implication unilatérale pour la rampe centrée. vérifié en ligne"
+    },
+    {
+      "id": "REF-Ram13",
+      "kind": "references",
+      "title": "Ram13 · O. Ramaré · From explicit estimates for primes to explicit estimates for the Möbius function",
+      "href": "1_Presentation/42_REGISTRE_DES_SOURCES.html#ref-Ram13",
+      "path": "",
+      "archived": false,
+      "ideas": [
+        "IDE-002",
+        "IDE-018",
+        "IDE-032"
+      ],
+      "documents": [],
+      "references": [
+        "Ram13"
+      ],
+      "related": [
+        "1_Presentation/42_REGISTRE_DES_SOURCES.md",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
+        "REFERENCES_HIERARCHISEES.md",
+        "REFERENCES_RANKED.md"
+      ],
+      "search_extra": "Acta Arithmetica 157 (2013), 365–379 Article 1 révisé, introduction. Antécédent pour la somme de Λ∗Λ − Λ log et comparaison des termes de centrage. vérifié en ligne"
     },
     {
       "id": "00_Carte_des_idees.html",
@@ -13010,7 +13079,6 @@
         "1_Presentation/38_LA_LOI_DE_SEUIL_LE_TEMPS_DE_HEISENBERG.pdf",
         "1_Presentation/39_LE_DEGRE_2_ET_LE_RECENSEMENT.pdf",
         "1_Presentation/40_LA_RENCONTRE_A_TROIS.pdf",
-        "1_Presentation/41_LA_RENCONTRE_EN_DEGRE_2.pdf",
         "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
         "1_Presentation/68_ARITHMETIQUE_DES_PASSAGES_ET_QUEUE_EFFECTIVE.md",
         "1_Presentation/70_PONT_ARITHMETIQUE_ET_DETTE_DE_COUPLAGE.md",
@@ -13552,10 +13620,7 @@
         "IDE-018",
         "IDE-030",
         "IDE-031",
-        "IDE-033",
-        "IDE-034",
-        "IDE-035",
-        "IDE-039"
+        "IDE-034"
       ],
       "documents": [
         "DOC-041"
@@ -13653,7 +13718,6 @@
         "1_Presentation/53_LA_RENCONTRE_EN_HAUTEUR.pdf",
         "1_Presentation/54_LE_TROU_A_TROIS_LU.pdf",
         "1_Presentation/55_ARTICLES_PRESENTABLES.pdf",
-        "1_Presentation/56_LE_RELIEF_DE_L_ARCHIPEL.pdf",
         "1_Presentation/58_VALIDATION_DIRECTE_DU_RELIEF_ET_LEMME_DES_JETS.pdf",
         "1_Presentation/59_DE_LA_TOUR_FINIE_A_LA_BORNE_SPECTRALE.pdf",
         "1_Presentation/60_ARTICLES_ET_CERTIFICAT_DE_NEGATIVITE.pdf",
@@ -13669,20 +13733,15 @@
         "1_Presentation/73_OPERATEUR_COMMUN_TETE_SOURCES_ET_QUEUE.pdf",
         "1_Presentation/74_COMPENSATION_MULTI_PREMIERS.pdf",
         "1_Presentation/75_RECUPERATION_TRANSPORT_ET_RH.pdf",
-        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.html",
-        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.pdf",
-        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.tex",
         "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.pdf",
-        "1_Presentation/77_MECANISMES_POUR_LE_SIGNE_UNIVERSEL.html",
-        "1_Presentation/78_TRANSPORT_POSITIF_RESERVE_ET_BRIQUE_INITIALE.pdf",
         "1_Presentation/79_COMPENSATION_PROFILS_ET_OBSTRUCTIONS.pdf",
-        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.html",
-        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.pdf",
         "1_Presentation/80_D_OU_VIENT_LE_SIGNE.pdf",
         "1_Presentation/81_ZHU_REPRODUIT.pdf",
         "1_Presentation/82_CIBLAGE_ET_REPARTITION.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
         "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
         "1_Presentation/articles/article2_prime_side_weil_forms.tex",
         "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf",
@@ -13791,6 +13850,7 @@
         "Ing40",
         "KK07",
         "KP11",
+        "KP86",
         "KP99",
         "KS20",
         "KS99",
@@ -13844,6 +13904,7 @@
         "Pol82",
         "RS96",
         "RT20",
+        "Ram13",
         "Ram16",
         "Ran39",
         "Rig15",
@@ -13887,6 +13948,7 @@
         "1_Presentation/42_REGISTRE_DES_SOURCES.html",
         "1_Presentation/42_REGISTRE_DES_SOURCES.pdf",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
         "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf"
       ],
@@ -19015,6 +19077,19 @@
       "search_extra": "PARCOURS_ET_PROPRIETES.md"
     },
     {
+      "id": "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md",
+      "kind": "md",
+      "title": "V6.60 — Recoller les morceaux : une échelle vers la preuve, par nos propres moyens",
+      "href": "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md",
+      "path": "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "RECOLLER_LES_MORCEAUX_V6_60.md"
+    },
+    {
       "id": "1_Presentation/RECONSTRUCTION_V651_INTEGREE.html",
       "kind": "html",
       "title": "Reconstruction V6.51 intégrée — V6.58",
@@ -19065,6 +19140,28 @@
       "references": [],
       "related": [],
       "search_extra": "LISEZMOI_ARTICLES.md"
+    },
+    {
+      "id": "1_Presentation/articles/README.md",
+      "kind": "md",
+      "title": "Articles de recherche · Research papers",
+      "href": "1_Presentation/articles/README.md",
+      "path": "1_Presentation/articles/README.md",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [
+        "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
+        "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
+        "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf",
+        "1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md",
+        "1_Presentation/relecture/RELECTURE_THEOREME_A_RESUME_FR.md"
+      ],
+      "search_extra": "README.md"
     },
     {
       "id": "1_Presentation/articles/art1_fig1.pdf",
@@ -19197,6 +19294,65 @@
         "1_Presentation/articles/article1_mean_square_double_poles.pdf"
       ],
       "search_extra": "article1_mean_square_double_poles.tex"
+    },
+    {
+      "id": "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+      "kind": "pdf",
+      "title": "article1 mean square double poles 20261123",
+      "href": "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+      "path": "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+      "archived": false,
+      "ideas": [
+        "IDE-002",
+        "IDE-009",
+        "IDE-018",
+        "IDE-032"
+      ],
+      "documents": [],
+      "references": [],
+      "related": [
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex"
+      ],
+      "search_extra": "article1_mean_square_double_poles_20261123.pdf"
+    },
+    {
+      "id": "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
+      "kind": "tex",
+      "title": "article1 mean square double poles 20261123",
+      "href": "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
+      "path": "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex",
+      "archived": false,
+      "ideas": [
+        "IDE-002"
+      ],
+      "documents": [],
+      "references": [
+        "AF26",
+        "ANS14",
+        "BCF13",
+        "BPT22",
+        "BS22",
+        "Bae03",
+        "Beu55",
+        "Cra22",
+        "DH36a",
+        "DH36b",
+        "Dav00",
+        "GGL20",
+        "KP86",
+        "Kor04",
+        "Lam26",
+        "MV07",
+        "Nym50",
+        "PT21",
+        "Ram13",
+        "Tit86",
+        "Wid41"
+      ],
+      "related": [
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf"
+      ],
+      "search_extra": "article1_mean_square_double_poles_20261123.tex"
     },
     {
       "id": "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
@@ -21731,6 +21887,7 @@
       "documents": [],
       "references": [],
       "related": [
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/relecture/RELECTURE_ARCHIPEL_EN.md",
         "1_Presentation/relecture/RELECTURE_THEOREME_A_EN.md",
         "1_Presentation/relecture/RELECTURE_THEOREME_B_EN.md"
@@ -21779,7 +21936,10 @@
       ],
       "documents": [],
       "references": [],
-      "related": [],
+      "related": [
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex"
+      ],
       "search_extra": "RELECTURE_THEOREME_A_EN.md"
     },
     {
@@ -21792,7 +21952,10 @@
       "ideas": [],
       "documents": [],
       "references": [],
-      "related": [],
+      "related": [
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.tex"
+      ],
       "search_extra": "RELECTURE_THEOREME_A_RESUME_FR.md"
     },
     {
@@ -22097,6 +22260,34 @@
       "search_extra": "registre_figures.json"
     },
     {
+      "id": "2_Methode/Horodatage/README.md",
+      "kind": "md",
+      "title": "Horodatage des versions",
+      "href": "2_Methode/Horodatage/README.md",
+      "path": "2_Methode/Horodatage/README.md",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "README.md"
+    },
+    {
+      "id": "2_Methode/Horodatage/horodater_version.py",
+      "kind": "programmes",
+      "title": "Horodatage d'une version livrée : preuve d'antériorité sans rien publier.",
+      "href": "2_Methode/Horodatage/horodater_version.py",
+      "path": "2_Methode/Horodatage/horodater_version.py",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [
+        "VERSION_LIVRAISON.json"
+      ],
+      "search_extra": "horodater_version.py"
+    },
+    {
       "id": "2_Methode/Indicateur/build_indicateur.py",
       "kind": "programmes",
       "title": "Construit l'indicateur d'avancement du Programme Riemann à partir de indicateur_avancement.json.",
@@ -22290,6 +22481,7 @@
         "2_Methode/Pilotage/pilotage_recherche.json",
         "2_Methode/Pilotage/points_d_attention.json",
         "2_Methode/Pilotage/table_logique.json",
+        "2_Methode/Pilotage/taches_instantane.json",
         "2_Methode/Sources/build_sources.py",
         "2_Methode/Sources/sources.json",
         "GUIDE_FOR_AN_AI.md",
@@ -23153,6 +23345,7 @@
         "2_Methode/Pilotage/pilotage_recherche.json",
         "2_Methode/Pilotage/points_d_attention.json",
         "2_Methode/Pilotage/registre_identifiants.json",
+        "2_Methode/Pilotage/taches_instantane.json",
         "GITHUB.md",
         "GUIDE_POUR_UNE_IA.md",
         "HISTORIQUE_DES_LIVRAISONS.md",
@@ -23550,6 +23743,7 @@
         "2_Methode/Pilotage/registre_identifiants.json",
         "2_Methode/Pilotage/relier_graphes.py",
         "2_Methode/Pilotage/taches.py",
+        "2_Methode/Pilotage/taches_instantane.json",
         "2_Methode/Pilotage/visualisations_claude.py",
         "2_Methode/Sources/references_articles.json",
         "2_Methode/Sources/sources.json",
@@ -23648,6 +23842,22 @@
         "2_Methode/Pilotage/bellman_contrats_v643.json"
       ],
       "search_extra": "engine.py"
+    },
+    {
+      "id": "2_Methode/Pilotage/etat.py",
+      "kind": "programmes",
+      "title": "Page d'état du travail, lisible sur téléphone : 2_Methode/Echanges/ETAT.md.",
+      "href": "2_Methode/Pilotage/etat.py",
+      "path": "2_Methode/Pilotage/etat.py",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [
+        "2_Methode/Pilotage/CIBLAGE.md",
+        "GITHUB.md"
+      ],
+      "search_extra": "etat.py"
     },
     {
       "id": "2_Methode/Pilotage/graphe_avance.py",
@@ -24339,9 +24549,44 @@
       "documents": [],
       "references": [],
       "related": [
+        "2_Methode/Pilotage/README.md",
         "2_Methode/Pilotage/ciblage.py"
       ],
       "search_extra": "taches.py"
+    },
+    {
+      "id": "2_Methode/Pilotage/taches_instantane.json",
+      "kind": "donnees",
+      "title": "taches instantane",
+      "href": "2_Methode/Pilotage/taches_instantane.json",
+      "path": "2_Methode/Pilotage/taches_instantane.json",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [
+        "1_Presentation/12_Annulation_du_pole.pdf",
+        "1_Presentation/15_TOMO_DH_formalisation.md",
+        "1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md",
+        "1_Presentation/18_PRIME_LOCK_premier_verrou_local.md",
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md",
+        "1_Presentation/30_ARCHIPEL_D_EULER.md",
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md",
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md",
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md",
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md",
+        "1_Presentation/81_ZHU_REPRODUIT.md",
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md",
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md",
+        "1_Presentation/articles/LISEZMOI_ARTICLES.md",
+        "1_Presentation/articles/article1_mean_square_double_poles.tex",
+        "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.md",
+        "2_Methode/Pilotage/bellman_contrats_v643.json",
+        "3_Preuves_et_calculs/run_v660_niveau0.py",
+        "NOTE_ALPOGE_2026.md",
+        "README_EN.md"
+      ],
+      "search_extra": "taches_instantane.json"
     },
     {
       "id": "2_Methode/Pilotage/ui.js",
@@ -24647,6 +24892,19 @@
         "README.md"
       ],
       "search_extra": "sources.json"
+    },
+    {
+      "id": "2_Methode/Sources/verifier_ajout_sources.py",
+      "kind": "programmes",
+      "title": "Contrôle d'un ajout au registre des sources hors PR de méthode (GITHUB.md § 4.7).",
+      "href": "2_Methode/Sources/verifier_ajout_sources.py",
+      "path": "2_Methode/Sources/verifier_ajout_sources.py",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "verifier_ajout_sources.py"
     },
     {
       "id": "3_Preuves_et_calculs/README.md",
@@ -27995,6 +28253,19 @@
       "search_extra": "prevision_v658_zhu.md"
     },
     {
+      "id": "3_Preuves_et_calculs/data/prevision_v660_echelle.md",
+      "kind": "md",
+      "title": "Prévision V6.60 (document 83) — écrite avant le calcul (19:59 UTC, 22 novembre 2026)",
+      "href": "3_Preuves_et_calculs/data/prevision_v660_echelle.md",
+      "path": "3_Preuves_et_calculs/data/prevision_v660_echelle.md",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "prevision_v660_echelle.md"
+    },
+    {
       "id": "3_Preuves_et_calculs/data/prime_lock_DH_scaling.png",
       "kind": "figures",
       "title": "CAL-017 · prime lock DH scaling",
@@ -28530,6 +28801,19 @@
       "references": [],
       "related": [],
       "search_extra": "reread_threshold.csv"
+    },
+    {
+      "id": "3_Preuves_et_calculs/data/resultat_v660_niveau0.txt",
+      "kind": "autres",
+      "title": "resultat v660 niveau0",
+      "href": "3_Preuves_et_calculs/data/resultat_v660_niveau0.txt",
+      "path": "3_Preuves_et_calculs/data/resultat_v660_niveau0.txt",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "resultat_v660_niveau0.txt"
     },
     {
       "id": "3_Preuves_et_calculs/data/rh_heuristic_flatness.csv",
@@ -38199,6 +38483,19 @@
       "search_extra": "requirements.txt"
     },
     {
+      "id": "3_Preuves_et_calculs/run_v660_niveau0.py",
+      "kind": "programmes",
+      "title": "V6.60, document de travail RECOLLER_LES_MORCEAUX_V6_60.md : niveau 0 de l'échelle (Tchebychev, C(2n, n)).",
+      "href": "3_Preuves_et_calculs/run_v660_niveau0.py",
+      "path": "3_Preuves_et_calculs/run_v660_niveau0.py",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "run_v660_niveau0.py"
+    },
+    {
       "id": "3_Preuves_et_calculs/scripts/audit_dh_zero_count.py",
       "kind": "programmes",
       "title": "V6.3d — Comptage indépendant des zéros de Davenport–Heilbronn par le principe de l'argument.",
@@ -41729,8 +42026,10 @@
         "2_Methode/Pilotage/pilotage_recherche.json",
         "2_Methode/Pilotage/registre_identifiants.json",
         "2_Methode/Pilotage/taches.py",
+        "2_Methode/Pilotage/taches_instantane.json",
         "2_Methode/Pilotage/verify_ciblage.py",
-        "3_Preuves_et_calculs/data/ciblage_courant.json"
+        "3_Preuves_et_calculs/data/ciblage_courant.json",
+        "VERSION_LIVRAISON.json"
       ],
       "search_extra": "test_v659_ciblage.py"
     },
@@ -53737,6 +54036,19 @@
       "search_extra": "LOGICAL_TABLE.pdf"
     },
     {
+      "id": "NOTE_ALPOGE_2026.md",
+      "kind": "md",
+      "title": "Note: the announced proof of the Riemann Hypothesis (November 2026)",
+      "href": "NOTE_ALPOGE_2026.md",
+      "path": "NOTE_ALPOGE_2026.md",
+      "archived": false,
+      "ideas": [],
+      "documents": [],
+      "references": [],
+      "related": [],
+      "search_extra": "NOTE_ALPOGE_2026.md"
+    },
+    {
       "id": "PLAN_DU_CORPUS.md",
       "kind": "md",
       "title": "Plan du corpus — Programme Riemann V6.59",
@@ -53925,6 +54237,7 @@
         "1_Presentation/LISTE_DES_FIGURES.md",
         "1_Presentation/PARCOURS_ET_PROPRIETES.html",
         "1_Presentation/PARCOURS_ET_PROPRIETES.md",
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md",
         "1_Presentation/RECONSTRUCTION_V651_INTEGREE.html",
         "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.pdf",
         "1_Presentation/english/81_ZHU_REPRODUCED.pdf",
@@ -53936,6 +54249,7 @@
         "GUIDE_POUR_UNE_IA.md",
         "HISTORIQUE_DES_LIVRAISONS.md",
         "LOGICAL_TABLE.md",
+        "NOTE_ALPOGE_2026.md",
         "README.md",
         "README_EN.md",
         "RECUPERATION.html",
@@ -53990,6 +54304,7 @@
         "GITHUB.md",
         "GUIDE_POUR_UNE_IA.md",
         "HISTORIQUE_DES_LIVRAISONS.md",
+        "NOTE_ALPOGE_2026.md",
         "PLAN_DU_CORPUS.md",
         "README_EN.md",
         "REFERENCES_HIERARCHISEES.md",
@@ -54034,6 +54349,7 @@
         "GITHUB.md",
         "GUIDE_FOR_AN_AI.md",
         "LOGICAL_TABLE.md",
+        "NOTE_ALPOGE_2026.md",
         "PLAN_DU_CORPUS.md",
         "README.md",
         "REFERENCES_RANKED.md"
@@ -54990,6 +55306,7 @@
         "Ing40",
         "KK07",
         "KP11",
+        "KP86",
         "KP99",
         "KS20",
         "KS99",
@@ -55043,6 +55360,7 @@
         "Pol82",
         "RS96",
         "RT20",
+        "Ram13",
         "Ram16",
         "Ran39",
         "Rig15",
@@ -55085,6 +55403,7 @@
       "related": [
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
         "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf",
         "REFERENCES_HIERARCHISEES.pdf"
@@ -55202,6 +55521,7 @@
         "Ing40",
         "KK07",
         "KP11",
+        "KP86",
         "KP99",
         "KS20",
         "KS99",
@@ -55255,6 +55575,7 @@
         "Pol82",
         "RS96",
         "RT20",
+        "Ram13",
         "Ram16",
         "Ran39",
         "Rig15",
@@ -55297,6 +55618,7 @@
       "related": [
         "1_Presentation/42_REGISTRE_DES_SOURCES.md",
         "1_Presentation/articles/article1_mean_square_double_poles.pdf",
+        "1_Presentation/articles/article1_mean_square_double_poles_20261123.pdf",
         "1_Presentation/articles/article2_prime_side_weil_forms.pdf",
         "1_Presentation/articles/article3_hasse_jets_and_spectral_bound.pdf",
         "REFERENCES_HIERARCHISEES.md",

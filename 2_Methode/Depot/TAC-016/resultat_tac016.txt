@@ -1,0 +1,20 @@
+κ = 0.284079043840412 ; valeur du polynôme minimal en κ : 9.37e-17
+racines rationnelles possibles ±1 : [-4, -4] ; κ − 1/κ = -3.2360679775 = −1 − √5 = -3.2360679775 → irréductible sur Q (voir RAPPORT)
+
+P1 : n ≤ 30 avec b(n) < 0 : [3, 4, 9, 12, 13, 14, 19, 23, 27, 29]
+P1 : n ≤ 30 non puissances de premiers avec b(n) ≠ 0 : [6, 12, 14, 18, 21, 24, 26, 28] ; premier : 6
+     b(2) = (0, 1, 0, 0) · log 2  (coefficients en base 1, κ, κ², κ³)
+P3 : sur 2619 coefficients β(n, p) non nuls, n ≤ 3000 : 2406 ne sont pas rationnels
+P3 : exposant α_p(x) du « sac » de Tchebychev pour DH, 12 cas (x ∈ {60, 300, 1000, 3000}, p ∈ {2, 3, 7}) : 12 irrationnels
+témoin ζ : β(n, p) = [n puissance de p] (Λ = log p) : α_p entier, le sac existe ; vérifié par construction
+
+P2 : Σ_(n≥2) |a(n)| n^(−2) ≈ 0.26666  (< 1 ⇒ F ≠ 0 et 1/F absolument convergente pour Re s ≥ 2)
+P2 : Σ_(n≥2) |a(n)| n^(−σ) = 1 pour σ* ≈ 1.396 : 1/F et −F′/F convergent absolument pour Re s > 1.396
+
+contrôle : b(n) flottant = b(n) exact pour n ∈ {2, 3, 6, 10, 30, 1000}
+F(1) ≈ 0.92280187 ; F′(1) ≈ 0.14200995 ; F′/F(1) ≈ 0.15388997
+P4 : max |G_DH(y)|/√y sur [2, 100000] = 0.354 (en y = 4) ; ζ : 0,0227
+     y =   1000 : |G_DH|/√y = 0.031 ; max jusque-là 0.354
+     y =  10000 : |G_DH|/√y = 0.039 ; max jusque-là 0.354
+     y = 100000 : |G_DH|/√y = 0.064 ; max jusque-là 0.354
+P2 : max |G_DH(y)|/y² sur [2, 100000] = 7.694e-02 (croissance PoleData : |G| ≤ C y²)

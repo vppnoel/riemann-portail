@@ -1,0 +1,6 @@
+P1 exceptions: 0 ; max (log C)/(2n log2) = 0.9999759235769904
+P2 max theta(x)/x for x in [100, 400000]: 0.9993 ; bound 2log2 = 1.3863
+P3 n=10000: gaspillage/n = 0.3948 ; gaspillage/sqrt(n) = 39.5
+P3 n=50000: gaspillage/n = 0.3871 ; gaspillage/sqrt(n) = 86.6
+P3 n=100000: gaspillage/n = 0.3879 ; gaspillage/sqrt(n) = 122.7
+P3 n=200000: gaspillage/n = 0.3869 ; gaspillage/sqrt(n) = 173.0

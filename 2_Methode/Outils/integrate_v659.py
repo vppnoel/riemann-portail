@@ -40,7 +40,8 @@ def corps(rel):
 
 def etat_courant(en=False):
     c = charger('ciblage_v659', '2_Methode/Pilotage/ciblage.py'); r = c.analyse(ROOT)
-    taches = rd('2_Methode/Pilotage/taches.json')['taches']
+    snap = ROOT / '2_Methode/Pilotage/taches_instantane.json'
+    taches = rd('2_Methode/Pilotage/taches_instantane.json' if snap.exists() else '2_Methode/Pilotage/taches.json')['taches']
     ok = all(a['unchanged'] for a in r['dependency_audits'].values())
     if not en:
         L = ['## 10. État au ' + DATE_FR, '',

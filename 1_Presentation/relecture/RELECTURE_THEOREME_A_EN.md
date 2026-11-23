@@ -261,6 +261,14 @@ Verdicts: **C** = correct, **G** = gap that can be filled (with the fix stated),
 - *Search result.* Web searches found no source that states Theorem A verbatim. This does not establish novelty: no MathSciNet or zbMATH search was possible.
 - *Recommendation.* Present A as a "proposition (standard method)", and ask the reviewer for a reference that can be cited.
 
+### Addendum of 23 November 2026 · The centred ramp in Article 1, §3.1
+
+[Revised paper (PDF)](../articles/article1_mean_square_double_poles_20261123.pdf) · [LaTeX source](../articles/article1_mean_square_double_poles_20261123.tex)
+
+For $H(y)=\sum_{n\le y}c(n)(y/n-1)-G(1)y$, the two one-sided window implications follow from Kaczorowski and Pintz, Theorem 1, (2.2)–(2.3), and Corollary 1. The transform is regular at the real point $\Theta$ and has a genuine double pole at every non-trivial zero. A zero to the right of $\theta$ forces excursions of each sign exceeding any fixed multiple of $x^\theta$ in every sufficiently late $[Y,Y^{1+\delta}]$, for any fixed $\delta>0$. [Kaczorowski and Pintz (1986)](https://doi.org/10.1007/BF01949062)
+
+Ramaré’s equation (6.1) gives $C(x)=R_2^*(x)+2\gamma_E(\psi(x)-\lfloor x\rfloor)$, which identifies the shared kernel and the different centring. Article 1 proves the converse $H(y)=O_\theta(y^\theta\log y)$ for $1/2\le\theta<1$ and $\Theta\le\theta$ by shifting the uncentred ramp integral. [Ramaré (2013), §6](https://doi.org/10.4064/aa157-4-4) · [Accepted proof and independent check](../../2_Methode/Depot/TAC-024/verification/VERIFICATION.md)
+
 ## 9. Changes from the v4.5 dossier
 
 - **Proof.** Unchanged in substance. Both directions were re-derived independently.

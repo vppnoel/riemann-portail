@@ -8,6 +8,8 @@
 
 ## À lire d’abord
 
+> **24 novembre 2026.** Copie publique remise à jour sur l'état du dépôt de travail : portail et outils de lecture, registre des sources, guides, [article 1 révisé du 23 novembre](1_Presentation/articles/README.md), document de travail [Recoller les morceaux (V6.60)](1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md), et, pour la première fois, la trace du travail entre IA : [fiches déposées et vérifiées](2_Methode/Depot/) (y compris celles abandonnées ou en attente), [état des échanges](2_Methode/Echanges/ETAT.md), [dialogue Lean](2_Methode/Dialogue_Lean/README.md) et [horodatage](2_Methode/Horodatage/README.md). Les liens vers `github.com/vppnoel/Riemann` (fiches, PR, issues) visent le dépôt de travail, qui est privé ; les fichiers cités se trouvent ici au même chemin.
+>
 > **23 novembre 2026.** Trois notes lisibles par un humain sur la preuve Lean annoncée, vérifiées par une seconde IA et acceptées par l'auteur : de la borne (⋆) à GRH (en anglais), le Landau par fenêtres pour ζ, et son analogue pour les pôles doubles de l'article 1. Voir [lean_reading/](lean_reading/README.md). La note sur la preuve annoncée est corrigée sur deux points (voir sa fin).
 >
 > **22 novembre 2026.** Une preuve de l’hypothèse de Riemann (généralisée) a été annoncée le 20 novembre 2026 par L. Alpöge avec Claude, sous forme d’une formalisation Lean vérifiée depuis de manière indépendante. Le paragraphe ci-dessous décrit l’état au 17 octobre 2026. Ce que cela change (le théorème B devient inconditionnel ; la simplicité des zéros reste ouverte) : [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md) (en anglais).

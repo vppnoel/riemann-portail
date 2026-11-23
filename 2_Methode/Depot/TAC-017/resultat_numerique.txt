@@ -1,0 +1,10 @@
+Y = 10000000, kappa = 0.046191, log 2π = 1.837877 ; points critiques intérieurs trouvés : 10352
+max |G − log 2π|/√y sur [10, 10000000] = 0.022681, atteint en y ≈ 319439.0000 (G − log 2π = -12.8192)
+  décade [10^1, 10^2) : max = 0.017538 en y ≈ 17.00
+  décade [10^2, 10^3) : max = 0.019347 en y ≈ 103.00
+  décade [10^3, 10^4) : max = 0.018675 en y ≈ 3099.71
+  décade [10^4, 10^5) : max = 0.017433 en y ≈ 56519.00
+  décade [10^5, 10^6) : max = 0.022681 en y ≈ 319439.00
+  décade [10^6, 10^7) : max = 0.018369 en y ≈ 5604380.30
+  décade [10^7, 10^8) : max = 0.008230 en y ≈ 10000000.00
+comparaison : seuil du guide 0,023 ; κ = 0.0462

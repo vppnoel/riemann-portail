@@ -1,0 +1,34 @@
+{
+ "R1": {
+  "cas": 2000,
+  "ecart_polarisation_max": 2.5579538487363607e-13,
+  "minoration_violee": 0
+ },
+ "R2": {
+  "0.5": {
+   "bilans_individuels": [
+    1,
+    1
+   ],
+   "bilan_somme": 1.0,
+   "lambda_min": 0.5
+  },
+  "1.0": {
+   "bilans_individuels": [
+    1,
+    1
+   ],
+   "bilan_somme": 0.0,
+   "lambda_min": 0.0
+  },
+  "1.5": {
+   "bilans_individuels": [
+    1,
+    1
+   ],
+   "bilan_somme": -1.0,
+   "lambda_min": -0.4999999999999999
+  }
+ },
+ "R3": "Matrice de Gram de deux paquets traduits : T = [[k(0), k(d)], [k(d), k(0)]]. Le contre-modèle est T avec k(0) = 1, k(d) = −a : négatif si et seulement si |k(d)| > k(0), le témoin négatif à deux paquets déjà décrit au document 76."
+}

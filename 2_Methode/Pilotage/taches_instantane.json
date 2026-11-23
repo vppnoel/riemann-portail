@@ -1,0 +1,1342 @@
+{
+  "schema": "taches_instantane_v1",
+  "source": "taches.json",
+  "taches": [
+    {
+      "id": "TAC-001",
+      "cle": "bellman:noyaux",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "lier_instance",
+      "role": "coordinateur",
+      "titre": "Auditer noyaux et couplages du candidat",
+      "question": "Lier une instance exécutable à l'étude Bellman « Auditer noyaux et couplages du candidat » : objet, domaine, entrées avec empreintes, commande bornée, issues possibles et vérificateur.",
+      "objet": "contrat d’étude",
+      "domaine": "Proposed bounded study; an assessed candidate is not a uniform sign theorem",
+      "entrees": {
+        "2_Methode/Pilotage/bellman_contrats_v643.json": "5ab0ffb2575117c36a0c9e83cb52531b4ed6ba610abb0641c1712d30c9395baa"
+      },
+      "commande": null,
+      "sortie_attendue": "Contrat d’exécution complet, soumis à l’auteur ; aucun lancement.",
+      "critere_rejet": "Aucune instance réalisable dans la durée déclarée ([1, 2] lots H) : l'étude reste hors exécution.",
+      "temoin": null,
+      "budget": [
+        1,
+        2
+      ],
+      "noeuds": [
+        "schur",
+        "compact"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "assignee",
+      "assigne_a": "ia:claude",
+      "previsions": [],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-002",
+      "cle": "investigation:signe_paquets",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Paquets signés : garder premiers, coupures et dette",
+      "question": "Quelle inégalité locale des vrais paquets pourrait se sommer sans perdre les couplages ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": {
+        "1_Presentation/76_RECONSTRUIRE_LA_PISTE_GLOBALE_DE_WEIL.md": "8f4585117c1ab7f888f9b263bf0ca952ca855cc1b80144807b1c024da3091633"
+      },
+      "commande": null,
+      "sortie_attendue": "Énoncé vérifiable avec bords, norme, dette et critère de rejet ; contre-exemple recevable. Aucun signe universel promis.",
+      "critere_rejet": "Un paquet admissible réfute la proposition, ou la somme des dettes n’est pas contrôlée.",
+      "temoin": "Modèle continu négatif et blocs à rapport fixe déjà réfutés ; ne pas les reconstruire sans nouvelle hypothèse.",
+      "budget": null,
+      "noeuds": [
+        "fluctuation",
+        "global_sign",
+        "transport",
+        "coverage"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "a_reprendre",
+      "assigne_a": "ia:chatgpt-sol-6.1-max",
+      "previsions": [
+        {
+          "le": "2026-10-17T22:58:42+00:00",
+          "texte": "Je prévois qu’aucune inégalité locale uniforme sur des paquets arbitraires ne se sommera sans un terme de dette explicite de bord ou de couplage. Une formulation exploitable séparera contribution arithmétique interne, dette aux coupures et norme contrôlant la somme des dettes. Elle sera rejetée si un paquet admissible conserve une dette non dominée, ou si le mécanisme ne distingue pas le contenu arithmétique pertinent."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-17T23:01:41+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "fichiers": {
+            "2_Methode/Depot/TAC-002/RAPPORT.md": "22f6edfe20a758f83df4b8ab32859b4808bd4f5ca0f7999c919b547d399d18c6"
+          },
+          "statut_propose": "diagnostic",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-10-18T00:12:58+00:00",
+          "par": "ia:claude",
+          "verdict": "non_conforme",
+          "note": "Algèbre rejouée (2 000 formes aléatoires, contre-modèle) : juste. Sortie attendue sur de vrais paquets non fournie ; contenu repris du document 76 (§ 2.3, témoin à deux paquets) sans citation ; corps de fonctions non traité ; témoin négatif abstrait ; formules altérées. Statut juste : ouvert. Voir verification/VERIFICATION.md et fil #7.",
+          "fichier": "d63ee64563b7fe1f624d9c0845ab43e76a5605ed0aee16804c2aec2c6954e81f"
+        }
+      ],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-003",
+      "cle": "investigation:duale_schur",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Dette de Schur dans la norme duale",
+      "question": "Peut-on payer la dette par une norme duale spécifique, sans exiger toutes les sources fortes de Q ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": {
+        "1_Presentation/79_SIGNAL_COUPLAGES_ET_RESOLUTION.md": "52d09737701c7a55860e71296f5207a7420e24e2b3e669d71a724e19dada1302"
+      },
+      "commande": null,
+      "sortie_attendue": "Borne candidate ou obstruction avec domaine et constantes ; bilan de portée local/global. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "critere_rejet": "Une hypothèse de domaine manque ou l’inégalité duale ne domine pas le vrai couplage.",
+      "temoin": "Matrices positives en tête avec complément ou résidu non contrôlé.",
+      "budget": null,
+      "noeuds": [
+        "schur",
+        "global_sign",
+        "compact"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "a_reprendre",
+      "assigne_a": "ia:chatgpt-sol-6.1-max",
+      "previsions": [
+        {
+          "le": "2026-10-17T22:58:42+00:00",
+          "texte": "Je prévois qu’une norme duale peut contrôler une part définie du couplage de Schur, mais qu’elle ne dominera le vrai résidu que sous une hypothèse explicite d’image, de support ou de régularité. Le résultat le plus probable est un diagnostic conditionnel, non une minoration arithmétique universelle. Elle sera rejetée si une matrice à tête positive possède un complément ou un résidu non contrôlé par la norme candidate."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-17T23:01:41+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "fichiers": {
+            "2_Methode/Depot/TAC-003/RAPPORT.md": "6080ee68b616c0e3ecde08b16f6d61fdaf888e57e07a63e4ce599247bc5b0562"
+          },
+          "statut_propose": "diagnostic",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-10-18T00:12:58+00:00",
+          "par": "ia:claude",
+          "verdict": "non_conforme",
+          "note": "Lemme dual rejoué (2 000 formes aléatoires, optimalité 1D, garde de restriction) : juste. Déjà énoncé et démontré au document 76 (§ 2.2, lemme C) ; donnée du document 79 (rho ≈ 0,999999832) non exploitée ; aucune constante ; DH, corps de fonctions et témoin négatif absents ; formules altérées. Statut juste : ouvert. Voir verification/VERIFICATION.md et fil #8.",
+          "fichier": "833e85972d2a38118f3ba16d4bc30601b95bbc90aea3d5300e4b3182f3950c19"
+        }
+      ],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-004",
+      "cle": "investigation:couverture_constructive",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Deux filtres : approximants et norme de forme",
+      "question": "Comment construire effectivement les approximants de la grammaire déjà démontrée, avec leur erreur de forme ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": {
+        "1_Presentation/76_COMPLEMENT_COUP_DOUBLE.md": "33b0c9d1fcf3d160d7b4946d43e73d9952c7b0dbf2a344998d268920acfe8bb9"
+      },
+      "commande": null,
+      "sortie_attendue": "Algorithme d’approximation et contrat d’erreur, ou obstruction précise. Cette tâche ne prouve pas le signe. Complément 76 : continuité du candidat, défaut mixte, garde d’image de Schur ; six contrôles abstraits exacts, aucun calcul de Suzuki ni signe global obtenu. Seconde passe : raccord exact et couverture par translation établis ; prolongement pair suspendu ; 12 contrôles abstraits exacts. Pas de minoration arithmétique universelle. V6.57 : diagnostic de phases sur les matrices arithmétiques V644 ; certificat adaptatif 44 cellules sur une fenêtre déjà traitée. Ni certificat infini supplémentaire ni loi universelle.",
+      "critere_rejet": "La suite ne converge pas dans la topologie exigée ; le transfert de signe est alors refusé.",
+      "temoin": "Convergence L² seule, moments perdus, ou contrôle qui dépend du support sans borne.",
+      "budget": null,
+      "noeuds": [
+        "coverage",
+        "domaines",
+        "weil_all"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "deposee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-10-18T00:18:21+00:00",
+          "texte": "Prévision (avant tout calcul). Domaine : tests C_c^infty à moments polaires nuls, alphabet des deux filtres B_2, B_3 du lemme F (doc. 76), norme nu (H^1 à poids e^{2|x|}) qui rend Q_W continue uniformément en support. Attendu : la couverture qualitative du lemme F devient une décomposition EXACTE f = B_2 g_2 + B_3 g_3, g_p = phi_p * P^{-1}f, avec une paire universelle de distributions à support compact (Bézout dans l'algèbre de Paley-Wiener-Schwartz), budget de support fixé ch supp f + [-log 3, log 3], sans passage à la limite. Ingrédient arithmétique attendu : minoration polynomiale de ||k log3/log2|| (mesure d'irrationalité finie, Baker) ; les quasi-collisions de zéros des deux symboles suivent les commas 3^12~2^19, 3^53~2^84 et fixent l'ordre des distributions. Algorithme : moindres carrés en norme nu sur splines à support fixé ; contrat |Q_W(f)-Q_W(f_h)| <= C_W nu(f-f_h)(nu(f)+nu(f_h)), C_W explicite, résidu nu calculable a posteriori. Ce qui me donnerait tort : (i) pas de minoration polynomiale de |b_2|+|b_3| hors de ±1/2 (support de Bézout non borné) ; (ii) approximants convergents en L^2 seulement ou à support croissant ; (iii) témoins non détectés : paire commensurable (2,4), filtre seul, cible à moments non nuls doivent faire stagner le résidu nu ; le schéma de Neumann à un filtre doit converger en L^2 et diverger en nu. Aucun signe de Q_W n'est attendu ni revendiqué ; l'énoncé, purement de translation, vaudra aussi pour Davenport-Heilbronn et ne peut donc servir seul pour RH."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-18T18:01:43+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-004/RAPPORT.md": "1f5ec7a3f25bd1a9a263e98d68fe0b5bd6fa16b2a120f266d18074dac9114222",
+            "2_Methode/Depot/TAC-004/p1_bezout_diophantien.py": "187bf29d7074f32a2a4524b2a6f13122d987ad15232a0ec14d93858a7664d306",
+            "2_Methode/Depot/TAC-004/p1_resultats.json": "5f27e4534cd0f2839275147f9a3dae6b11e285b3c5fd8f834811325783fec455",
+            "2_Methode/Depot/TAC-004/p2_approximants_nu.py": "97630b64de62422b889235555e3d8ab687867dd98f8c02023f854fa0ee58152e",
+            "2_Methode/Depot/TAC-004/p2_resultats.json": "a0ce82bc48659d9ac88e6262ac1db0e780b4627933f991ac994d1f5fbe8eb93a",
+            "2_Methode/Depot/TAC-004/p2_resultats_passe1.json": "444ffd734d65440eb3be1017b7d47eb333fb2ff4ce101343f034cab9af12f7a6"
+          },
+          "statut_propose": "partiel",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-005",
+      "cle": "investigation:mu_correlations",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Carte d’identité de μ et corrélations pondérées",
+      "question": "Quelle identité spécifique distingue les vrais poids des suites qui imitent leurs statistiques partielles ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": {
+        "1_Presentation/ESSAI_AMPLIFICATION_ARITHMETIQUE_V6_55.md": "54c30871252c0ce2f4e6cbb457afe244991bf661aa927ba151f474cd4a59e7a1"
+      },
+      "commande": null,
+      "sortie_attendue": "Identité ou invariant candidat, avec témoin et dépendance aux coupures. Le vieux rejet du census à deux points est respecté.",
+      "critere_rejet": "La propriété candidate est aussi satisfaite par un contre-modèle qui viole la borne visée.",
+      "temoin": "Masque sur les premiers et copies carrées ; une covariance moyenne de μ ne règle pas ces poids.",
+      "budget": null,
+      "noeuds": [
+        "identity",
+        "anchoring",
+        "large_q"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "assignee",
+      "assigne_a": "ia:claude",
+      "previsions": [],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-006",
+      "cle": "investigation:v13_fibre",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Pli sur une fibre à coefficient A fixé",
+      "question": "Une direction candidate porte-t-elle un vrai pli transversal sur la fibre qui conserve A ?",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": {
+        "1_Presentation/66_UN_PLI_CERTIFIE_ET_SA_PAIRE.md": "c11bef23320d92f9ce61f1284cbacf87946007d463ae4463bbfadaff45e5f5ec"
+      },
+      "commande": null,
+      "sortie_attendue": "Certificat local ou obstacle documenté. Cette branche ne garantit pas la loi globale de Weil.",
+      "critere_rejet": "Un jet nul non certifié ne donne pas un zéro double ; préserver les pertes et les indéterminations.",
+      "temoin": "Fibre vide, rang perdu, ou dérivée paramétrique nulle.",
+      "budget": null,
+      "noeuds": [
+        "v13",
+        "archipel"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "deposee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-10-18T00:11:24+00:00",
+          "texte": "Prévision écrite le 18 octobre 2026 avant toute évaluation de fonction L pour cette fiche. Auteur des droits : Vincent NOËL.\nOBJET FIXÉ : V13 impaire mod 13, ancre k=1, rayon r=π/6, cible A=cos(π/6)·z_1 (centre de l'ellipse, η=0), premier des quatre candidats de jets V6.41 (hauteur 5, premier vecteur archivé dans v641_geometrie.json) ; règle de sélection : plus petite hauteur, premier membre, comme au document 66. Recours fixés d'avance, dans l'ordre : second membre à la hauteur 5, puis les deux candidats ancre k=3, hauteur 15.\nCHEMIN SUR LA FIBRE EXACTE : c(λ)=cos r·e_1+sin r·(cos λ·p+sin λ·q), avec p,q orthonormés de ker M_1 définis exactement (Gram–Schmidt de combinaisons rationnelles fixées de vecteurs exacts du noyau), p proche de u* du candidat, q dans la direction de plus forte pente de Z(5) projetée sur ker M_1 ∩ p^⊥. Ancre, rayon, norme et A sont conservés exactement pour tout λ. Système G(λ,t)=(H,H_t), H=Re[ωF], lemme I2 du document 66 avec projection sur une composante séparée de zéro.\nPRÉVISIONS : (P1) un zéro double unique (λ*,t*) est certifié par inclusion et contraction (théorème I3) aux plans 50 et 80 décimales, avec |λ*|<10⁻⁶ et |t*−5|<10⁻⁶, et Z_λ, Z_tt séparés de zéro (pli transversal sur la fibre). (P2) Le contour |w−w*|=1/5 passe le test de Rouché uniforme pour λ∈[λ*−10⁻⁴, λ*+10⁻⁴] (recours fixé : rayon 1/10). (P3) Aux paramètres λ_c±10⁻⁴ : d'un côté deux zéros critiques certifiés par symétrie et unicité, de l'autre une paire hors droite, le côté étant celui donné par le signe de κ=−2Z_λ/Z_tt. (P4) Témoin négatif : le long de la direction tangente orthogonale à q (où Z_λ s'annule au premier ordre), le même certificat avec les mêmes largeurs de boîtes est refusé (contraction ≥1 ou jacobien non séparé).\nCE QUI ME DONNERAIT TORT : Z_tt ou Z_λ non séparés de zéro aux deux précisions, inclusion refusée, Rouché refusé aux deux rayons, ou témoin P4 accepté (le test ne discriminerait pas). Dans ces cas : obstacle documenté, sans élargir après coup les boîtes ni changer de candidat hors de l'ordre de recours.\nPORTÉE ANNONCÉE D'AVANCE : un pli local d'une famille V13 sur une fibre à A constant. L'argument n'utilise que l'équation fonctionnelle commune et des bornes explicites ; il s'appliquerait mot pour mot à une combinaison de type Davenport–Heilbronn, il ne dit donc rien de RH ni de la loi globale de Weil. Statut visé en cas de succès : demontre (assisté par ordinateur, backend iv de mpmath 1.3.0 déclaré expérimental)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-18T15:06:03+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-006/RAPPORT.md": "f8d3541e53ab2104bf754c97f077c6ae988baa61f55fcaa4e120182f62371392",
+            "2_Methode/Depot/TAC-006/journaux/essai1_arret_newton80.txt": "6bd77a25551d7e39f6ceaceb1150fa35c46527d9f67b6479cd3b55bf0b168ff9",
+            "2_Methode/Depot/TAC-006/journaux/essai2.txt": "2342ff36b49e37b5a99273f9dbdd109e9918b8f8f0650028484e10af3c0f83cd",
+            "2_Methode/Depot/TAC-006/journaux/essai3.txt": "c9befb7e02e84eef3ac7f862985f57660934449a0b6d2a03ed1780b9b784f14f",
+            "2_Methode/Depot/TAC-006/journaux/essai4_revision.txt": "f468defdb19b18ab940dac69eb47e9a07f12ae324de8575a5801ee0273d4fd29",
+            "2_Methode/Depot/TAC-006/journaux/verification_rationnelle.txt": "8e5cabe7820e108b1bb1b48ea7a88f39d3c2b6dc7070a9179ed7f8d848e0bffc",
+            "2_Methode/Depot/TAC-006/resultats_tac006.json": "e57eeff75891a7226eb0d9e4849827233e20f65e5c52dfedf67e3b8f99e6dfeb",
+            "2_Methode/Depot/TAC-006/run_tac006.py": "9f9d71b952b248a16d5ef138a3dd3769f7cedd3a0e058f97bc313fb328a137de",
+            "2_Methode/Depot/TAC-006/tac006_pli_fibre.py": "cfd42d377d1e7df2ac02813b810c3e822dad26af5475ba97f40d6e51487cd4c6",
+            "2_Methode/Depot/TAC-006/verifier_tac006.py": "c2f04a0dd0776be35f7cf71cb4c5a6d78da993c91dcdb36c8bc7b80d486d40ac"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-007",
+      "cle": "investigation:noyau_S08",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Certificat du noyau des moments à S = 0,8",
+      "question": "Certifier un minorant de Q_W sur les tests à moments nuls de support [−0,8 ; 0,8], où agissent 2, 3 et 4.",
+      "objet": null,
+      "domaine": "celui de la question ; à préciser dans la prévision",
+      "entrees": {
+        "1_Presentation/81_ZHU_REPRODUIT.md": "319a04eef847f0dc667502bf5eb13ade86c0d065aa76382b1c7e6d047c443d62"
+      },
+      "commande": null,
+      "sortie_attendue": "Certificat local ou obstacle documenté. Renforce une marge déjà positive (Zhu) ; aucune fenêtre nouvelle ni conséquence globale : la positivité sur toutes les fenêtres est RH.",
+      "critere_rejet": "Marge mesurée sous 10⁻¹³ avec plus de modes, ou tête irréalisable en intervalles : la voie par fenêtres s’arrête à 11/20.",
+      "temoin": "Marge mesurée ≈ 5·10⁻¹² (doc. 81), non certifiée ; certificat existant jusqu’à 11/20 (doc. 75).",
+      "budget": null,
+      "noeuds": [
+        "local",
+        "pos"
+      ],
+      "creee_le": "2026-10-17T15:03:21+00:00",
+      "creee_par": "ia:claude",
+      "statut": "deposee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-10-17T21:14:29+00:00",
+          "texte": "P1 (reprend la prévision pré-enregistrée en V6.58) : la marge mesurée du noyau des moments à L = 0,8, secteur pair, se stabilise entre 3·10⁻¹² et 6·10⁻¹² quand le nombre de modes passe à 40, 48, 56 et 64, et varie de moins de 10 % entre 56 et 64 modes. P2 : un certificat dans l'architecture binary64 du document 75 est impossible à cette marge ; son seul budget d'assemblage (modèle γ_n des produits scalaires) dépasse 10⁻⁸. Il faut une arithmétique d'intervalles en précision multiple, et je prévois une tête d'au moins 100 modes pour un minorant certifié ≥ 10⁻¹². Critères de rejet : marge mesurée sous 10⁻¹³ quand N augmente (la voie par fenêtres s'arrête à 11/20) ; ou budget binary64 inférieur à la marge (P2 fausse)."
+        },
+        {
+          "le": "2026-10-17T23:50:28+00:00",
+          "texte": "Reprise (fil #3, accord de l'auteur du 18 octobre). Contrôles demandés par la vérification, écrits avant calcul. C1 Davenport–Heilbronn à S = 0,8 : forme de Weil générale (conducteur q, facteur Γ((s+1)/2), sans pôle, coefficients de −F'/F pour n ≤ 4), validée d'abord sur L(s,χ₅) contre ses zéros (écart relatif < 1e-6). Prévision : la forme de DH reste positive à 0,8, sur tout le secteur pair et sur le noyau des moments ; la fenêtre 0,8 ne distingue pas DH de ζ. C2 Corps de fonctions : même chaîne (côté arithmétique : nombres de points N_m comptés, contrainte du pôle, projection, plus petite valeur) pour la courbe y² = x³ + x + 1 sur F₅, fenêtres M ≤ 3 ; prévision : accord avec le côté spectral à 1e-20, λ_min ≥ 0 dans les deux secteurs ; fausse courbe de genre 1 avec a = 5 > 2√5 : invisible dans le secteur pair (λ_min ≥ 0), détectée dans le secteur impair (λ_min < 0) ; faux genre 2 avec un quatuor hors du cercle : détecté dans le secteur pair pour un M ≤ 3. C3 Témoins négatifs pour ζ à 0,8, N = 48 : (a) quatuor fictif de zéros hors droite à la hauteur 14,1347 : δ = 0 (paire sur la droite) ne fait pas baisser λ_min ; δ = 0,1 rend λ_min < 0 sur le noyau ; seuil δ* mesuré, prédit < 0,1. (b) Λ(2) multiplié par 1 + ε : seuil ε* observé à moins de 5 % de la prédiction au premier ordre par le vecteur propre. Réfutation : un défaut non détecté, δ = 0 qui rend λ_min négatif, un écart de validation au-delà des seuils, ou λ_min(DH) < 0 à 0,8."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-17T21:50:18+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-007/RAPPORT.md": "ab9d772adf57921046d6816ec769c53d385408ddc288c91f09902558c0968b01",
+            "2_Methode/Depot/TAC-007/p1_mesure_noyau_08.py": "df8a0ac1ad4f4612e61a89fc8ddf9c2edc4994d00104bec3cf1f6df1a3c1e87f",
+            "2_Methode/Depot/TAC-007/p1_resultats.json": "274489dabe8d3ab8ab9d83ca6e59c56041e6afb676130693ee0f2677533f13ec",
+            "2_Methode/Depot/TAC-007/p2_budgets_architecture_doc75.py": "e85c4df5fcb8b49ad1247ccd02db65bb8e2e6f394be856658346c798b07a5124",
+            "2_Methode/Depot/TAC-007/p2_resultats.json": "ad95651ab465f5a45fa5f125af580930deccc45043ce5cee9a11a2ede8ba1e99"
+          },
+          "statut_propose": "partiel",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-10-18T00:12:58+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-007/RAPPORT.md": "a3a149069816386397f462c756167ae21bb66415ca910920945283a7ae35f1a2",
+            "2_Methode/Depot/TAC-007/p1_mesure_noyau_08.py": "df8a0ac1ad4f4612e61a89fc8ddf9c2edc4994d00104bec3cf1f6df1a3c1e87f",
+            "2_Methode/Depot/TAC-007/p1_resultats.json": "274489dabe8d3ab8ab9d83ca6e59c56041e6afb676130693ee0f2677533f13ec",
+            "2_Methode/Depot/TAC-007/p2_budgets_architecture_doc75.py": "e85c4df5fcb8b49ad1247ccd02db65bb8e2e6f394be856658346c798b07a5124",
+            "2_Methode/Depot/TAC-007/p2_resultats.json": "ad95651ab465f5a45fa5f125af580930deccc45043ce5cee9a11a2ede8ba1e99",
+            "2_Methode/Depot/TAC-007/p3_controles_adverses.py": "ea5a26a49cd43ab1414ecc7c77fb4077fe266cc4da5ba6cab56582b199533aa9",
+            "2_Methode/Depot/TAC-007/p3_resultats.json": "7af0b2783281c2f15e03f7f118cc327f2b51699e3368a94db16122973f434328"
+          },
+          "statut_propose": "partiel",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-10-17T22:37:21+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Contrôles de cohérence P1/P2 effectués ; témoins adverses requis absents ; aucune réfutation numérique.",
+          "fichier": "f2d0afa11fcf26998f8c7e92e336cfc5197ba422719bb28e7861698e31542690"
+        }
+      ],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-008",
+      "cle": "manuel:mpt-decomposition-K",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "numerique",
+      "titre": "Décomposer la cohérence K : diagonale, même premier, premiers distincts",
+      "question": "Pour la matrice de cohérence inter-échelles du canal de la dérivée logarithmique (critique « tomographie de phase », § 8–9 : K^A_ij = ∫ C_F(u_i,t) conj(C_F(u_j,t)) ψ(t/T) dt, normalisée R^A), écrire K = K_diag + K_chaîne (n = p^k, m = p^l, même p) + K_croisé (premiers distincts ou n, m hors puissances de premiers) et mesurer la part de chaque terme pour ζ, L(s, χ₅), Davenport–Heilbronn et les témoins standard (phases randomisées sur les premiers, suites multiplicatives aléatoires). Où apparaît le surplus de cohérence du produit d'Euler ?",
+      "objet": "matrice de cohérence K^A et ses trois composantes",
+      "domaine": "grille d'échelles u_1..u_m et fenêtre ψ(t/T) déclarées dans la prévision ; mêmes témoins que les docs 15 à 18",
+      "entrees": {
+        "4_Archives/recus/2026-10-17/critique_tomographie_de_phase_MPT.txt": "de0b10d829fad9c639033f15b1abe26082594ab827c2da74e04fd780ec55ce62",
+        "1_Presentation/18_PRIME_LOCK_premier_verrou_local.md": "66a3d0a5af526ce1ed45ad9621a6715c1b468c1632a4d2d26352d824ded0f111",
+        "1_Presentation/15_TOMO_DH_formalisation.md": "f6de7d28ef6663dfd1c0ffe1eef6f8f46cb4e7c8f6ef0b3283784c54230b2721",
+        "1_Presentation/17_DARK_ZETA_premier_detecteur_resultats.md": "2c42baf423bb412ab2f8bb6c4eac49c9c2a0762c16bdac9ad7797fcb4c21efbf"
+      },
+      "commande": null,
+      "sortie_attendue": "Formule exacte de la décomposition ; tableau des parts de K_diag, K_chaîne et K_croisé pour ζ, L(χ₅), DH et témoins, avec incertitude sur les tirages aléatoires ; verdict : la séparation est-elle portée par K_chaîne (structure eulérienne, comme PRIME-LOCK) ou par K_diag (énergie) ?",
+      "critere_rejet": "Si K_chaîne ne sépare pas {ζ, L(χ₅)} de DH plus que les témoins à phases randomisées (au-delà de deux écarts-types des tirages), ou si toute la séparation vient de K_diag, la décomposition n'apporte rien au-delà de PRIME-LOCK (doc. 18) : statut « obstacle » ou « diagnostic ». Aucune conclusion sur le signe de Weil ni sur RH dans tous les cas (docs 21 à 24 : verrou local et signe global indépendants).",
+      "temoin": "PRIME-LOCK (doc. 18) détecte déjà Λ_F(p^k) = α_p^k log p ; DH, sans produit d'Euler, doit échouer au test de la chaîne.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-10-17T17:44:32+00:00",
+      "creee_par": "ia:claude",
+      "statut": "deposee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-10-17T22:10:43+00:00",
+          "texte": "Réglages fixés avant calcul : b_F = coefficients de −F'/F (src/rejection.py), n ≤ 20 000 ; fenêtre gaussienne w de largeur h = 0,5 en log n ; échelles u = 2 à 8 par pas de 0,25 ; ψ gaussienne, résolutions T = 10 et T = 1 ; R normalisée. Témoins : W1 multiplicatif aléatoire b(p^k) = α_p^k log p (|α_p| = 1, 20 tirages) ; W2 phases brouillées b(p^k) = Λ(p^k)·e^{iθ_{p,k}} indépendantes (20 tirages). P1 : à T = 10, la part de K_chaîne dans ‖K‖_F reste sous 1 % pour toutes les fonctions ; la séparation de DH d'avec ζ vient de K_diag et K_croisé (support hors puissances de premiers), donc le critère de rejet est atteint à cette résolution. P2 : à T = 1, K_chaîne pèse entre 1 % et 20 % pour ζ et sépare ζ de W2 au-delà de deux écarts-types, mais ne sépare PAS W1 de W2 (moins de deux écarts-types) : au second ordre, K_chaîne voit la positivité réelle des coefficients, pas la multiplicativité, comme TOMO-2 (doc. 17). P3 : L(χ₅) a une part de K_chaîne inférieure à celle de ζ. Critère de rejet : celui de la fiche ; P2 fausse si K_chaîne sépare W1 de W2 au-delà de deux écarts-types."
+        },
+        {
+          "le": "2026-10-18T00:19:15+00:00",
+          "texte": "Complément (fil #4), écrit avant calcul. Témoin négatif : on injecte dans ζ un défaut eulérien localisé dans la part « même premier » : b(p^k) = Λ(p^k)·(1 + η) pour k ≥ 2, η ∈ {0,5 ; 1 ; 2} (premiers seuls inchangés), et un défaut de phase : b(p²) = −Λ(p²). Mêmes réglages qu'au premier dépôt (n ≤ 20 000, h = 0,5, u de 2 à 8, T = 1 et 10). Prévision : à T = 1, la distance ‖K_chaîne(défaut) − K_chaîne(ζ)‖/trace dépasse d'au moins un facteur 10 celle de K_diag et de K_croisé pour chaque défaut, et croît avec η ; la part relative de K_chaîne de ζ bouge d'au moins 20 % pour η = 1. À T = 10, le défaut reste invisible dans K_chaîne (nul à l'arrondi, résolution plus fine que log 2), seul K_diag le voit. Réfutation : défaut non localisé dans K_chaîne à T = 1, ou visible dans K_chaîne à T = 10."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-17T22:31:54+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-008/RAPPORT.md": "1af20d6a2316a0912f8e95c56dc506d56761f4594888e65dd590ecd31cf1e5e3",
+            "2_Methode/Depot/TAC-008/decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+            "2_Methode/Depot/TAC-008/resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3"
+          },
+          "statut_propose": "obstacle",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-10-18T00:25:10+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-008/RAPPORT.md": "34deeb0d2747f4fed5a88734d0f92c7374e03f04b4de2783161e750081e7bb86",
+            "2_Methode/Depot/TAC-008/decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+            "2_Methode/Depot/TAC-008/resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3",
+            "2_Methode/Depot/TAC-008/temoin_negatif.json": "33c342253d6f2e7e8767f903a53b30b5bf36b8557b9c6ac4c6edce7100343404",
+            "2_Methode/Depot/TAC-008/temoin_negatif.py": "fec1bb9028ee21cdeaa9860571158927b32ccbecb470a7b4a68308ff487eabd5"
+          },
+          "statut_propose": "obstacle",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-10-18T15:33:13+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-008/RAPPORT.md": "99100205c5e2b09d180c27693abe977444328243b75da0695c24824ed0134017",
+            "2_Methode/Depot/TAC-008/decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+            "2_Methode/Depot/TAC-008/resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3",
+            "2_Methode/Depot/TAC-008/temoin_negatif.json": "33c342253d6f2e7e8767f903a53b30b5bf36b8557b9c6ac4c6edce7100343404",
+            "2_Methode/Depot/TAC-008/temoin_negatif.py": "fec1bb9028ee21cdeaa9860571158927b32ccbecb470a7b4a68308ff487eabd5"
+          },
+          "statut_propose": "diagnostic",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-10-18T15:13:39+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Deux programmes rejoues integralement et 257 controles reussis ; critere initial et portee de l'obstacle non etablis (R1-R2). Revue PR #20 ; reponse demandee dans https://github.com/vppnoel/Riemann/issues/4#issuecomment-6251525999. Calculs conserves.",
+          "fichier": "739083fbbbdb97dd3619c8b75140e6cb28082333e6d9f91dda15ecb29f9b9212"
+        }
+      ],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-009",
+      "cle": "manuel:mpt-gram-nyman-beurling-differences",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Gram de Nyman–Beurling sur des différences d'échelle",
+      "question": "Construire K^NB_ij = ⟨C_i, C_j⟩ dans L²(0,1), où C_i est la différence normalisée ρ_{θ_{i+1}} − ρ_{θ_i} sur une grille logarithmique θ_i = e^{−u_i} (critique « tomographie de phase », § 3–4). Son spectre ou son rang effectif voit-il autre chose que la géométrie des dilatations ? Pour un test différentiel, utiliser la version généralisée de Nyman–Beurling aux séries de Dirichlet (à vérifier sur l'original) pour ζ, L(s, χ₅) et un analogue de Davenport–Heilbronn.",
+      "objet": "matrice de Gram K^NB et sa version brute G^NB",
+      "domaine": "grille (u_0, Δu, m) déclarée dans la prévision",
+      "entrees": {
+        "4_Archives/recus/2026-10-17/critique_tomographie_de_phase_MPT.txt": "de0b10d829fad9c639033f15b1abe26082594ab827c2da74e04fd780ec55ce62",
+        "1_Presentation/12_Annulation_du_pole.pdf": "a2a71e16cb13a7a513b19146271cd3c8c96df9ea3bc3dc5ffc90c21b3b3d727a",
+        "1_Presentation/15_TOMO_DH_formalisation.md": "f6de7d28ef6663dfd1c0ffe1eef6f8f46cb4e7c8f6ef0b3283784c54230b2721"
+      },
+      "commande": null,
+      "sortie_attendue": "Calcul de G^NB et K^NB (formule fermée ou quadrature contrôlée) ; spectre et rang effectif ; comparaison avec un témoin purement géométrique (même construction, partie fractionnaire remplacée par une fonction sans arithmétique) et, si la généralisation est vérifiée, avec L(χ₅) et l'analogue DH ; références vérifiées sur l'original (dont la structure « block-Hankel » citée par la critique).",
+      "critere_rejet": "Si le spectre de K^NB coïncide (à la précision du calcul) avec celui du témoin géométrique, ou si ζ et l'analogue DH ne se séparent pas plus que deux tirages du témoin, l'observable ne voit que les dilatations : statut « obstacle ». Le document 12 a déjà montré que la projection de Nyman–Beurling se ramène à l'énergie Q : un résultat qui ne fait que la retrouver est classé « classique », pas nouveau.",
+      "temoin": "Témoin géométrique sans arithmétique ; doc. 12 (projection NB = énergie Q).",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-10-17T17:44:32+00:00",
+      "creee_par": "ia:claude",
+      "statut": "a_reprendre",
+      "assigne_a": "ia:chatgpt-sol-6.1-max",
+      "previsions": [
+        {
+          "le": "2026-10-17T22:58:42+00:00",
+          "texte": "Je prévois que le Gram des différences d’échelle de Nyman–Beurling sera principalement déterminé par la géométrie des dilatations et la grille logarithmique. Son spectre devrait coïncider, à précision contrôlée, avec celui d’un témoin géométrique après normalisation ; il ne séparera pas utilement ζ d’un analogue sans produit d’Euler. Le résultat attendu est un obstacle ou un résultat classique, sauf dépendance arithmétique additionnelle établie sur une référence originale."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-10-17T23:01:41+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "fichiers": {
+            "2_Methode/Depot/TAC-009/RAPPORT.md": "f86dad9e367eeae324cc077d310f628959ab1c2649fd7cdc36fed092b3c2a200"
+          },
+          "statut_propose": "obstacle",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-10-18T16:43:21+00:00",
+          "par": "ia:claude",
+          "verdict": "non_conforme",
+          "note": "Aucun calcul déposé. Prémisse fausse : par Mellin–Plancherel le Gram NB standard contient |zeta(1/2+it)|^2 ; spectre normalisé calculé en x (0,413…1,598) et par Mellin, nettement distinct du témoin géométrique (0,525…1,243). Référence JTNB mal attribuée (Alouges–Darses–Hillion). De Roton : classe de Selberg, DH hors classe, non discuté. Contrôles absents ; formules altérées. Statut juste : ouvert. Voir verification/VERIFICATION.md et fil #9.",
+          "fichier": "71fcad48e3ce411257d0f20a961547b1f2ff94c13171fe144932e6f36b83d65e"
+        }
+      ],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-010",
+      "cle": "manuel:verif-adverse-note-alpoge-2026",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "verification_temoin",
+      "role": "auditeur",
+      "titre": "Lecture adverse de la note sur la preuve annoncée de RH (Alpöge, 2026)",
+      "question": "La note NOTE_ALPOGE_2026.md, rédigée par Claude (modèle d'Anthropic, l'employeur d'Alpöge : conflit d'intérêts à garder en tête), résume l'annonce du 20 novembre 2026, l'état de la vérification et une lecture du « pourquoi » de la preuve. Chaque affirmation factuelle est-elle exacte et sourcée sur une source primaire ou de premier rang (code Lean, en particulier src/Statements.lean et les définitions Mathlib RiemannHypothesis, riemannZeta, DirichletCharacter.LFunction ; guide d'architecture ; notes de Rubinstein et de Zhang ; déclarations des communautés Lean et Mathlib) ? La lecture en quatre étapes (borne unilatérale, intégrité, multiplicité fabriquée, équilibre en √x) est-elle fidèle, ou simplifie-t-elle au point de fausser ?",
+      "objet": "NOTE_ALPOGE_2026.md, affirmation par affirmation",
+      "domaine": "faits au 22 novembre 2026 et après ; lecture de la preuve telle que publiée",
+      "entrees": {
+        "NOTE_ALPOGE_2026.md": "055409aad61bb32a2cc5cfa28c65d62e9ecf65b980919dd4dc47672e1ea5ef6d",
+        "README_EN.md": "89ebe7acd960e22dab9e13956ac8ebb7d6904f66b051942aad3713d6926e672a"
+      },
+      "commande": null,
+      "sortie_attendue": "Tableau : affirmation, source primaire consultée (lien, date de consultation), verdict (exacte, imprécise, fausse, non vérifiable), correction proposée. Liste séparée des points où la lecture du « pourquoi » diverge des expositions publiées. Toute évolution depuis le 22 novembre (réfutation, erreur trouvée, version lisible, relecture humaine) signalée en tête.",
+      "critere_rejet": "Si une affirmation factuelle de la note est fausse ou non sourçable, ou si la lecture en quatre étapes contredit une exposition publiée sur un point essentiel, la note est à corriger : statut « refute » pour le point concerné. Une vérification qui ne cite que des articles de presse, sans source primaire, n'est pas recevable.",
+      "temoin": "Les sources citées par la note elles-mêmes ; un point volontairement vérifiable (taille de la formalisation, axiomes utilisés).",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-22T17:21:26+00:00",
+      "creee_par": "ia:claude",
+      "statut": "deposee",
+      "assigne_a": "ia:chatgpt-sol-6.1-max",
+      "previsions": [
+        {
+          "le": "2026-11-22T19:18:34+00:00",
+          "texte": "Je prévois qu’au moins une affirmation sur la validation indépendante ou sur le mécanisme en quatre étapes demandera une restriction de portée. Des sources primaires datées établissant chaque affirmation avec les mêmes quantificateurs, y compris le périmètre de la compilation et de la relecture, me donneraient tort."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T01:33:35+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "fichiers": {
+            "2_Methode/Depot/TAC-010/RAPPORT.md": "6453f38c098b70c05bd0f8525d06832fa823dd261257c947d025203ae5acebd4"
+          },
+          "statut_propose": "refute",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-011",
+      "cle": "manuel:article1-inconditionnel-apres-grh",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "redaction",
+      "role": "rapporteur",
+      "titre": "Article 1 après l'annonce : théorèmes A et B sans hypothèse",
+      "question": "Si l'hypothèse de Riemann est démontrée, que deviennent les énoncés de l'article 1 ? Vérifier ligne à ligne que la preuve du théorème B n'utilise RH que comme hypothèse (pas d'usage caché d'une autre conjecture, par exemple la simplicité des zéros, une borne sur ζ'(ρ) ou une conjecture de corrélation), puis proposer la reformulation : théorème A (exposant 0), théorème B inconditionnel, critère « limite = 4κ/3 si et seulement si tous les zéros sont simples ». Rechercher si ce critère, ou celui de Cramér (c₁ = κ si et seulement si zéros simples), est déjà dans la littérature (zbMATH, MathSciNet si accessible, Google Scholar).",
+      "objet": "article1_mean_square_double_poles.tex, théorèmes A, B, B′",
+      "domaine": "énoncés et preuves de l'article 1 ; littérature jusqu'à novembre 2026",
+      "entrees": {
+        "1_Presentation/articles/article1_mean_square_double_poles.tex": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1",
+        "1_Presentation/articles/LISEZMOI_ARTICLES.md": "ee70c59d08da57cd278a96b86beed3574398a78c3f5800f76afb89288ae62858",
+        "NOTE_ALPOGE_2026.md": "055409aad61bb32a2cc5cfa28c65d62e9ecf65b980919dd4dc47672e1ea5ef6d"
+      },
+      "commande": null,
+      "sortie_attendue": "Liste des endroits où RH intervient dans la preuve, avec ce qui est utilisé exactement. Proposition de résumé et d'énoncés révisés (diff LaTeX dans le dépôt, sans toucher à l'original). Bilan bibliographique : références trouvées, vérifiées sur l'original, ou mention explicite qu'aucune n'a été trouvée avec les requêtes utilisées.",
+      "critere_rejet": "Si la preuve du théorème B utilise une hypothèse autre que RH, le théorème ne devient pas inconditionnel : statut « conditionnel » avec l'hypothèse nommée. Si le critère de simplicité figure déjà dans la littérature, statut « classique » avec la référence.",
+      "temoin": "Le théorème de Cramér (1922) pour ψ(x) − x, dont l'article 1 est l'analogue à pôles doubles.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-22T17:21:26+00:00",
+      "creee_par": "ia:claude",
+      "statut": "assignee",
+      "assigne_a": "ia:chatgpt-sol-6.1-max",
+      "previsions": [],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-012",
+      "cle": "manuel:doc80-carre-ou-multiplicite",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Document 80 face à la preuve annoncée : un carré, ou de la multiplicité ?",
+      "question": "Le document 80 affirme que, dans le modèle réduit (courbes sur 𝔽_q), seule la positivité d'un carré (Rosati) exclut les 119 faux jumeaux, et que c'est cet objet qui manque à ζ. La preuve annoncée suivrait au contraire la voie de Stepanov–Bombieri (comptage avec multiplicité, fonction auxiliaire s'annulant à un ordre élevé). La méthode de Stepanov–Bombieri exclut-elle les 119 faux jumeaux sans utiliser la positivité de Rosati ? Si oui, quelle information du modèle réduit utilise-t-elle que les faux jumeaux n'ont pas ? Formuler la correction à apporter au document 80.",
+      "objet": "les 119 faux jumeaux du document 28 et l'argument de Stepanov–Bombieri",
+      "domaine": "courbes de petit genre sur 𝔽_q, comme dans le document 28",
+      "entrees": {
+        "1_Presentation/english/80_WHERE_THE_SIGN_COMES_FROM.md": "4b555e3460df1f12b1cb3f4bad467ce03ac9fd0baf368616e0eba9314dd7c8c8",
+        "1_Presentation/28_MODELE_REDUIT_NECESSITE_DEMONTREE.md": "f742030ba42df52de89ace1ea8adb703be5dd98bf7492df57a1d16227745e5b7",
+        "NOTE_ALPOGE_2026.md": "055409aad61bb32a2cc5cfa28c65d62e9ecf65b980919dd4dc47672e1ea5ef6d"
+      },
+      "commande": null,
+      "sortie_attendue": "Exposé de l'argument de Stepanov–Bombieri (référence vérifiée sur l'original, par exemple Bombieri 1973 ou un manuel), application explicite à au moins trois faux jumeaux du document 28 (calcul reproductible dans le dépôt), et énoncé corrigé du document 80 : ce qui manque à ζ était-il un carré, de la multiplicité, ou les deux sous des formes équivalentes ?",
+      "critere_rejet": "Si Stepanov–Bombieri utilise en fait une positivité équivalente à celle de Rosati (même information sous un autre nom), le document 80 reste correct à une reformulation près : statut « classique ». Si l'argument exclut les faux jumeaux par une information que le document 80 n'a pas identifiée, statut « refute » pour l'énoncé du document 80, avec l'information nommée.",
+      "temoin": "Une vraie courbe du document 28 (RH vraie), qui doit passer l'argument ; un faux jumeau, qui doit échouer.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-22T17:21:27+00:00",
+      "creee_par": "ia:claude",
+      "statut": "assignee",
+      "assigne_a": "ia:chatgpt-sol-6.1-max",
+      "previsions": [],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-013",
+      "cle": "manuel:echelle-niveau1-rapports-factorielles",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité",
+      "question": "Le niveau 0 (document de travail RECOLLER_LES_MORCEAUX_V6_60) majore θ(x) par 2 log 2 · x grâce à l'entier C(2n, n), avec un gaspillage d'ordre n. Les rapports de factorielles plus riches (Tchebychev 1852, avec (30n)! n! / ((15n)! (10n)! (6n)!) ; Sylvester) améliorent-ils seulement la constante, ou aussi l'ordre de l'erreur ? Mesurer, pour chaque rapport, la constante obtenue et la croissance du gaspillage, et vérifier sur l'original ce que disent Diamond et Erdős (1980) des limites de ces méthodes.",
+      "objet": "rapports de factorielles à valeurs entières, majorations de ψ et θ qui en découlent",
+      "domaine": "x ≤ 10⁶ pour les mesures ; énoncés généraux pour les limites",
+      "entrees": {
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md": "c8ae736df295c02edddd3285cb283d48892b48c6ddcc90287049cd3aa1b5dd12",
+        "3_Preuves_et_calculs/run_v660_niveau0.py": "e06bb972807680a56bcc488e23d61c9ec63668538694cff5481bac6efdba21e7"
+      },
+      "commande": null,
+      "sortie_attendue": "Pour au moins trois rapports (C(2n,n), celui de Tchebychev, un de Sylvester) : constante de majoration, gaspillage rapporté à n et à √n, script reproductible. Statut vérifié de l'énoncé de Diamond–Erdős (référence lue). Conclusion en une phrase : l'intégrité sans multiplicité peut-elle donner une erreur o(x) ?",
+      "critere_rejet": "Si un rapport de factorielles donnait un gaspillage d'ordre o(n), la lecture du document de travail (« la multiplicité est nécessaire pour descendre à √x ») serait fausse à ce niveau : statut « refute » pour le §5 du document de travail.",
+      "temoin": "C(2n, n), dont les valeurs sont connues du niveau 0 (rapport 0,387).",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-22T20:12:56+00:00",
+      "creee_par": "ia:claude",
+      "statut": "perimee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T00:49:13+00:00",
+          "texte": "Objet : majorations de ψ par des rapports de factorielles à valeurs entières (méthode de Tchebychev), sans multiplicité. Pour des poids a_k avec Σ a_k/k = 0, F(y) = Σ a_k ⌊y/k⌋ est bornée et périodique ; si 0 ≤ F ≤ 1 et F = 1 sur [1, c), l'entier N_F(x) = Π ⌊x/k⌋!^(a_k) donne ψ(x) − ψ(x/c) ≤ log N_F(x). Le gaspillage est W(x) = log N_F(x) − (ψ(x) − ψ(x/c)) = Σ_{n ≤ x/c} Λ(n) F(x/n).\nPrévision (raisonnement analytique fait avant tout calcul, à vérifier) :\nP1. Pour chaque F fixé, W(x) est d'ordre x : W(x)/x tend vers ∫_c^∞ F(y) dy / y², qui est > 0 dès que F ne s'annule pas au-delà de c. Valeurs attendues : C(2n,n) (c = 2) : W/x ≈ 0,193 (soit 0,387 par n, comme au niveau 0) ; Tchebychev (1, 2, 3, 5, 30 ; c = 6) : W/x ≈ 0,088. Mesuré jusqu'à x = 10⁶ : écart à ces limites < 0,01.\nP2. La constante de majoration s'améliore (2 log 2 ≈ 1,386, puis 1,1056 pour Tchebychev), mais W/√x croît sans borne pour chaque F : l'ordre de l'erreur ne change pas.\nP3. Une recherche exhaustive sur les poids a_k ∈ {−1, 0, 1} portés par les diviseurs de 210 (avec a_1 = 1 et a_2 = a_3 = a_5 = a_7 = −1) trouve au moins un F valide avec c > 6 et une constante < 1,1056 ; son gaspillage reste d'ordre x.\nP4. Diamond et Erdős (1980) : constantes arbitrairement proches de 1, mais en utilisant des valeurs de μ jusqu'à un T qui croît, donc sans donner d'erreur o(x) pour un F fixé. À vérifier sur l'original.\nCe qui me donnerait tort : un F valide avec W(x) = o(x) (P1 réfuté, et avec lui le §5 du document de travail) ; ou une source montrant qu'un rapport de factorielles fixé donne une erreur o(x)."
+        }
+      ],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-014",
+      "cle": "manuel:echelle-dh-sans-entiers",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "verification_temoin",
+      "role": "auditeur",
+      "titre": "Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ?",
+      "question": "Le document de travail RECOLLER_LES_MORCEAUX_V6_60 (§6.3) prévoit que Davenport–Heilbronn, qui n'a pas de produit d'Euler, n'a pas d'entiers qui encodent ses « premiers », et que le mécanisme échoue dès l'étage 2. Le vérifier : les coefficients de −F′/F pour DH sont-ils positifs et portés par les puissances de premiers ? Existe-t-il, pour DH, une suite d'entiers analogue à C(2n, n) dont la divisibilité encode sa somme « sur les premiers » ? Si non, à quel endroit précis l'analogie casse-t-elle ?",
+      "objet": "la fonction de Davenport–Heilbronn du corpus et ses coefficients",
+      "domaine": "n ≤ 10⁵",
+      "entrees": {
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md": "c8ae736df295c02edddd3285cb283d48892b48c6ddcc90287049cd3aa1b5dd12",
+        "1_Presentation/30_ARCHIPEL_D_EULER.md": "3604703a05e55f0baa1e98428ca5ff8b57f82fe8c168290a2d14ac0d6deeb7c8"
+      },
+      "commande": null,
+      "sortie_attendue": "Calcul reproductible des coefficients de −F′/F pour DH (signes, support) ; tentative explicite de construction d'un analogue entier ; énoncé de l'endroit où le mécanisme casse, avec ζ et L(s, χ₅) comme témoins qui passent.",
+      "critere_rejet": "Si les coefficients de DH sont positifs et portés par les puissances de premiers, ou si un analogue entier existe, la prévision du §6.3 est fausse : statut « refute » pour ce paragraphe.",
+      "temoin": "ζ et L(s, χ₅), qui doivent passer l'étage 2.",
+      "budget": "0,5 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-22T20:12:56+00:00",
+      "creee_par": "ia:claude",
+      "statut": "assignee",
+      "assigne_a": "ia:claude",
+      "previsions": [],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-015",
+      "cle": "manuel:echelle-niveau1-rapports-factorielles-v2",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Échelle, niveau 1 : jusqu'où va l'intégrité sans multiplicité",
+      "question": "Reprise de la fiche TAC-013, périmée le 23 novembre 2026 parce que son entrée a été modifiée après sa création (annexe A). Même question. Le niveau 0 (document de travail RECOLLER_LES_MORCEAUX_V6_60) majore θ(x) par 2 log 2 · x grâce à l'entier C(2n, n), avec un gaspillage d'ordre n. Les rapports de factorielles plus riches (Tchebychev 1852, avec (30n)! n! / ((15n)! (10n)! (6n)!) ; Sylvester) améliorent-ils seulement la constante, ou aussi l'ordre de l'erreur ? Mesurer, pour chaque rapport, la constante obtenue et la croissance du gaspillage, et vérifier sur l'original ce que disent Diamond et Erdős (1980) des limites de ces méthodes.",
+      "objet": "rapports de factorielles à valeurs entières, majorations de ψ et θ qui en découlent",
+      "domaine": "x ≤ 10⁶ pour les mesures ; énoncés généraux pour les limites",
+      "entrees": {
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md": "0c908b06141f18daec20389f2143518842b506f1ef9caeb214761a5b7e958b4f",
+        "3_Preuves_et_calculs/run_v660_niveau0.py": "e06bb972807680a56bcc488e23d61c9ec63668538694cff5481bac6efdba21e7"
+      },
+      "commande": null,
+      "sortie_attendue": "Pour au moins trois rapports (C(2n,n), celui de Tchebychev, un de Sylvester) : constante de majoration, gaspillage rapporté à n et à √n, script reproductible. Statut vérifié de l'énoncé de Diamond–Erdős (référence lue). Conclusion en une phrase : l'intégrité sans multiplicité peut-elle donner une erreur o(x) ?",
+      "critere_rejet": "Si un rapport de factorielles donnait un gaspillage d'ordre o(n), la lecture du document de travail (« la multiplicité est nécessaire pour descendre à √x ») serait fausse à ce niveau : statut « refute » pour le §5 du document de travail.",
+      "temoin": "C(2n, n), dont les valeurs sont connues du niveau 0 (rapport 0,387).",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T01:00:34+00:00",
+      "creee_par": "ia:claude",
+      "statut": "verifiee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T01:00:44+00:00",
+          "texte": "PRÉVISION RECOPIÉE APRÈS CALCUL, par décision de l'auteur du 23 novembre 2026. Ce texte est celui de la prévision de TAC-013, enregistrée le 2026-11-23T00:49:13+00:00 avant tout calcul (commit 584a519 sur main). TAC-013 est devenue périmée après le calcul, parce que son entrée a été modifiée (annexe A) ; le calcul est déjà fait (PR #36) et ses résultats sont connus. Cette prévision n'est donc pas aveugle pour TAC-015 : sa valeur de prévision vient uniquement de TAC-013.\n\n--- Texte original ---\nObjet : majorations de ψ par des rapports de factorielles à valeurs entières (méthode de Tchebychev), sans multiplicité. Pour des poids a_k avec Σ a_k/k = 0, F(y) = Σ a_k ⌊y/k⌋ est bornée et périodique ; si 0 ≤ F ≤ 1 et F = 1 sur [1, c), l'entier N_F(x) = Π ⌊x/k⌋!^(a_k) donne ψ(x) − ψ(x/c) ≤ log N_F(x). Le gaspillage est W(x) = log N_F(x) − (ψ(x) − ψ(x/c)) = Σ_{n ≤ x/c} Λ(n) F(x/n).\nPrévision (raisonnement analytique fait avant tout calcul, à vérifier) :\nP1. Pour chaque F fixé, W(x) est d'ordre x : W(x)/x tend vers ∫_c^∞ F(y) dy / y², qui est > 0 dès que F ne s'annule pas au-delà de c. Valeurs attendues : C(2n,n) (c = 2) : W/x ≈ 0,193 (soit 0,387 par n, comme au niveau 0) ; Tchebychev (1, 2, 3, 5, 30 ; c = 6) : W/x ≈ 0,088. Mesuré jusqu'à x = 10⁶ : écart à ces limites < 0,01.\nP2. La constante de majoration s'améliore (2 log 2 ≈ 1,386, puis 1,1056 pour Tchebychev), mais W/√x croît sans borne pour chaque F : l'ordre de l'erreur ne change pas.\nP3. Une recherche exhaustive sur les poids a_k ∈ {−1, 0, 1} portés par les diviseurs de 210 (avec a_1 = 1 et a_2 = a_3 = a_5 = a_7 = −1) trouve au moins un F valide avec c > 6 et une constante < 1,1056 ; son gaspillage reste d'ordre x.\nP4. Diamond et Erdős (1980) : constantes arbitrairement proches de 1, mais en utilisant des valeurs de μ jusqu'à un T qui croît, donc sans donner d'erreur o(x) pour un F fixé. À vérifier sur l'original.\nCe qui me donnerait tort : un F valide avec W(x) = o(x) (P1 réfuté, et avec lui le §5 du document de travail) ; ou une source montrant qu'un rapport de factorielles fixé donne une erreur o(x)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T01:05:07+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-015/RAPPORT.md": "bbe0756420a5514d5325f34656b1c3d37cf20aaea1baab36cd97b3dd347a5bf4",
+            "2_Methode/Depot/TAC-015/resultat_exploration_apres_coup.txt": "a73fc0d50cd62732a2970126009eba7318d5cd9486fce392ac63689df8d0e703",
+            "2_Methode/Depot/TAC-015/resultat_tac013.txt": "cd02b665b6b4f17b1558d71041ccebef705c8cfa19a20c4e73f0ce00222e4ccc",
+            "2_Methode/Depot/TAC-015/tac013_exploration_apres_coup.py": "bf161eafc4de4af8f7763ce02c9bb9087b0417032f38ded2f406a17cc052c2a0",
+            "2_Methode/Depot/TAC-015/tac013_niveau1.py": "1360542096a27caf2af7a183be3049f7ccdb7c4924ed14fb3026fd7217902faa"
+          },
+          "statut_propose": "classique",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-11-23T02:17:12+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-015/RAPPORT.md": "102521b8c7886c183780ae3fb65a4dc78fac0fce3604b413ef4f471565bd620a",
+            "2_Methode/Depot/TAC-015/resultat_exploration_apres_coup.txt": "a73fc0d50cd62732a2970126009eba7318d5cd9486fce392ac63689df8d0e703",
+            "2_Methode/Depot/TAC-015/resultat_sylvester.txt": "ed12eb4c1ee6efe05f80c34a06e9d2bf1f43fabb9c2b0b843a21700ac6f8838d",
+            "2_Methode/Depot/TAC-015/resultat_tac013.txt": "cd02b665b6b4f17b1558d71041ccebef705c8cfa19a20c4e73f0ce00222e4ccc",
+            "2_Methode/Depot/TAC-015/tac013_exploration_apres_coup.py": "bf161eafc4de4af8f7763ce02c9bb9087b0417032f38ded2f406a17cc052c2a0",
+            "2_Methode/Depot/TAC-015/tac013_niveau1.py": "1360542096a27caf2af7a183be3049f7ccdb7c4924ed14fb3026fd7217902faa",
+            "2_Methode/Depot/TAC-015/tac015_sylvester.py": "e0b239c206a3d597757a547b4a2713c60b5ca3fe6753b63076ba5d7f7e636ac4"
+          },
+          "statut_propose": "classique",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T01:56:27+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Deux mesures et le lemme reproduits. Le troisième exemple demandé, Sylvester, manque. Rapport de vérification PR #47, fil #38.",
+          "fichier": "89791f735daf3f642d4b446e56da3baac7cbd280177acc604ed5f1133a6866f0"
+        },
+        {
+          "le": "2026-11-23T02:48:50+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "conforme",
+          "note": "Deuxième dépôt : schéma de Sylvester retrouvé dans l’original de 1892. Le calcul direct donne W(10⁶)/10⁶≈0,0555990 ; portée historique précisée. Rapport de vérification PR #62, fil #38.",
+          "fichier": "4c3b3760e750163d9cd54db4c050566e1e71ccd39cc94a7a78c40b5b87aa6e2d"
+        }
+      ],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-016",
+      "cle": "manuel:echelle-dh-sans-entiers-v2",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "verification_temoin",
+      "role": "auditeur",
+      "titre": "Échelle, témoin : Davenport–Heilbronn échoue-t-il dès l'étage des entiers ?",
+      "question": "Reprise de la fiche TAC-014, périmée le 23 novembre 2026 parce que son entrée a été modifiée après sa création (annexe A). Même question. Le document de travail RECOLLER_LES_MORCEAUX_V6_60 (§6.3) prévoit que Davenport–Heilbronn, qui n'a pas de produit d'Euler, n'a pas d'entiers qui encodent ses « premiers », et que le mécanisme échoue dès l'étage 2. Le vérifier : les coefficients de −F′/F pour DH sont-ils positifs et portés par les puissances de premiers ? Existe-t-il, pour DH, une suite d'entiers analogue à C(2n, n) dont la divisibilité encode sa somme « sur les premiers » ? Si non, à quel endroit précis l'analogie casse-t-elle ?",
+      "objet": "la fonction de Davenport–Heilbronn du corpus et ses coefficients",
+      "domaine": "n ≤ 10⁵",
+      "entrees": {
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md": "0c908b06141f18daec20389f2143518842b506f1ef9caeb214761a5b7e958b4f",
+        "1_Presentation/30_ARCHIPEL_D_EULER.md": "3604703a05e55f0baa1e98428ca5ff8b57f82fe8c168290a2d14ac0d6deeb7c8"
+      },
+      "commande": null,
+      "sortie_attendue": "Calcul reproductible des coefficients de −F′/F pour DH (signes, support) ; tentative explicite de construction d'un analogue entier ; énoncé de l'endroit où le mécanisme casse, avec ζ et L(s, χ₅) comme témoins qui passent.",
+      "critere_rejet": "Si les coefficients de DH sont positifs et portés par les puissances de premiers, ou si un analogue entier existe, la prévision du §6.3 est fausse : statut « refute » pour ce paragraphe.",
+      "temoin": "ζ et L(s, χ₅), qui doivent passer l'étage 2.",
+      "budget": "0,5 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T01:00:34+00:00",
+      "creee_par": "ia:claude",
+      "statut": "acceptee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T01:30:29+00:00",
+          "texte": "Écrite le 23 novembre 2026 vers 1 h 35 UTC, avant tout calcul. Connu avant d'écrire : la définition du corpus (src/family_mod5.py, src/rejection.py) — F = ½(1 − iκ)L(s, χ) + ½(1 + iκ)L(s, χ̄), χ mod 5 avec χ(2) = i, κ = (√(10 − 2√5) − 2)/(√5 − 1) ≈ 0,284, donc des coefficients a(n) = 1, κ, −κ, −1, 0 selon n mod 5 ; les zéros hors droite listés dans data/dh_zeros.csv (t ≤ 200, Re ρ ≤ 0,81) ; et le résultat de TAC-017 : l'étape « Landau localisé » n'utilise que la structure abstraite PoleData, sans positivité des coefficients.\nOn note b(n) les coefficients de −F′/F = Σ b(n) n^(−s), et G_DH(y) = Σ_{n≤y} b(n)(y/n − 1)₊ moins sa partie principale.\nP1 (coefficients). b(n) prend des valeurs négatives et des valeurs non nulles hors des puissances de premiers, dès n ≤ 30. Le premier n composé non puissance de premier avec b(n) ≠ 0 est n = 6.\nP2 (étape 1 franchie). F ne s'annule pas pour Re s ≥ 2 (la somme Σ_{n ≥ 2} |a(n)| n^(−2) est < 1) ; la série de −F′/F converge absolument pour Re s > σ₁ avec σ₁ < 2 ; les hypothèses de croissance de PoleData sont vérifiées : |G_DH(y)| ≤ C y² mesuré jusqu'à 10⁵. DH franchit donc l'étape 1, comme le prévoit TAC-017.\nP3 (étape 2 impossible). Aucun b(n) avec n non puissance de premier, ni b(2) = κ log 2, n'est un multiple rationnel d'un logarithme d'entier : exp(Σ b(n) F(x/n)) n'est pas un entier, ni même un rationnel, pour aucun rapport de factorielles F. Le « sac » de Tchebychev n'existe pas pour DH. Raison prévue : κ est irrationnel (algébrique de degré 4).\nP4 (mesure). |G_DH(y)| / √y n'est pas borné par une constante comparable à celle de ζ : il dépasse 1 avant y = 10⁵ (contre 0,023 pour ζ), signe des zéros hors droite.\nTémoins : ζ (b = Λ) et L(s, χ) (b = Λχ) passent les étapes 1 et 2 : b est porté par les puissances de premiers et vaut log p fois une racine de l'unité.\nCe qui me donnerait tort : b(n) ≥ 0 et porté par les puissances de premiers (P1 et P3 réfutés) ; F qui s'annule pour Re s ≥ 2, ou une croissance plus rapide que y² (P2 réfuté) ; |G_DH|/√y < 0,1 jusqu'à 10⁵ (P4 réfuté)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T01:35:42+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-016/RAPPORT.md": "3e85abcd48e48c3745410cacdbe4ce68a1faaeff620d8ffef6d92fdd74dd89c4",
+            "2_Methode/Depot/TAC-016/resultat_tac016.txt": "86d9654f88ff852e2a7060ae5313f157aebdb85e09996f0c73c8af4c77a3c581",
+            "2_Methode/Depot/TAC-016/tac016_sosie.py": "7cb078ec9bda499f043cc4faab1f1030993a886d499d718940038e9ffab33bab"
+          },
+          "statut_propose": "mesure",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-11-23T02:18:57+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-016/RAPPORT.md": "1169be74e4bd8134c2905235f7fd9af88e9619b4fe18dff97870742617df0878",
+            "2_Methode/Depot/TAC-016/resultat_reprise.txt": "6d31207019141c98a9eb1b8a0bd1559fbe854e6d8a9b22d50b6166da005f162f",
+            "2_Methode/Depot/TAC-016/resultat_tac016.txt": "86d9654f88ff852e2a7060ae5313f157aebdb85e09996f0c73c8af4c77a3c581",
+            "2_Methode/Depot/TAC-016/tac016_reprise.py": "c355a549d69a057312515628d0d3fa23c8f7a455ab1aa72dbb25fbc9c4a63b6d",
+            "2_Methode/Depot/TAC-016/tac016_sosie.py": "7cb078ec9bda499f043cc4faab1f1030993a886d499d718940038e9ffab33bab"
+          },
+          "statut_propose": "mesure",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T01:57:11+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Recalcul exact de 2 619 coefficients. Le témoin quartique manque et α₁₁(11)=1 contredit la formulation universelle de P3. Rapport de vérification PR #48, fil #39.",
+          "fichier": "4530e5686c9311f5d5e41eeaa972b87f6a6780bcda446bb9bbf468a927d21a62"
+        },
+        {
+          "le": "2026-11-23T02:49:28+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "conforme",
+          "note": "Deuxième dépôt : témoin quartique rétabli et calcul exact reproduit pour les 2 999 valeurs de x. Verdict limité aux familles et produits explicitement testés. Rapport de vérification PR #63, fil #39.",
+          "fichier": "ab1887ce31120b9e0e97d96f32bfb72036f59668504f279b22395c65f14cb287"
+        }
+      ],
+      "decision": {
+        "le": "2026-11-23T08:30:27+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "acceptee",
+        "note": "acceptee, comme mesure. Pour chacune des 2 999 valeurs entières de � entre 2 et 3 000, chacun des deux produits testés possède au moins un exposant irrationnel. La possibilité d’un autre encodage reste ouverte."
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-017",
+      "cle": "manuel:echelle-niveau3-landau-localise-zeta",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "redaction",
+      "role": "rapporteur",
+      "titre": "Échelle, niveau 3 : une preuve humaine du Landau localisé pour ζ, confrontée au Lean",
+      "question": "Le §3 du guide d'architecture de L. Alpöge (https://nasqret.github.io/riemann-rev/guide/proof-guide.pdf) énonce une Proposition : si L(s, χ), χ dans une famille positive F, a un zéro de partie réelle > θ, alors pour tout C il existe Y₀ tel que toute fenêtre [Y, Y^(1+δ)] avec Y ≥ Y₀ contient un y avec G_F(y) > C·y^θ. Le module Lean correspondant serait zeroFree_of_rpow_window. Écrire une preuve lisible par un humain de cette Proposition dans le cas de ζ seule (famille réduite au caractère trivial, poids 1), avec G(y) = Σ_{n≤y} Λ(n)(y/n − 1) − y(log y − 1 − γ). Confronter chaque étape à l'énoncé Lean (hypothèses, quantificateurs, constantes). Montrer comment le théorème A du corpus (version globale, limsup) s'en déduit ou s'en distingue.",
+      "objet": "la Proposition du §3 du guide, cas de ζ, et son module Lean",
+      "domaine": "analyse classique : transformée de Mellin de la rampe, formule explicite, transformée de Laplace, dérivées d'ordre élevé ; aucune théorie automorphe",
+      "entrees": {
+        "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md": "0c908b06141f18daec20389f2143518842b506f1ef9caeb214761a5b7e958b4f",
+        "NOTE_ALPOGE_2026.md": "055409aad61bb32a2cc5cfa28c65d62e9ecf65b980919dd4dc47672e1ea5ef6d",
+        "1_Presentation/articles/article1_mean_square_double_poles.tex": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1"
+      },
+      "commande": null,
+      "sortie_attendue": "Une preuve rédigée (Markdown ou LaTeX), étape par étape, avec pour chaque étape l'énoncé Lean correspondant (nom, lien vers le fichier source et le commit consulté) et l'écart éventuel. Une vérification numérique simple : sous RH, |G(y) − log 2π| ≤ κ√y + O(y^(−2)) avec κ = 2 + γ − log 4π, mesurée jusqu'à 10⁷ (le guide annonce un rapport < 0,023 √y pour 10 ≤ y ≤ 10⁷). Un paragraphe sur le lien avec le théorème A.",
+      "critere_rejet": "Si la preuve humaine exige une hypothèse absente de l'énoncé Lean, ou si l'énoncé Lean diffère de celui du guide (quantificateurs, fenêtres, constantes), le rapport le dit et le statut est « partiel » avec l'écart nommé. Si la vérification numérique contredit le guide (rapport ≥ 0,023 √y quelque part sur [10, 10⁷]), le signaler en tête. Une preuve qui recopie le guide sans détailler les étapes n'est pas recevable.",
+      "temoin": "Le théorème A du corpus (version globale) ; et le cas d'une série de Dirichlet sans produit d'Euler (Davenport–Heilbronn), pour laquelle Λ ≥ 0 manque et l'argument doit échouer à l'étape « un seul côté suffit ».",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T01:16:27+00:00",
+      "creee_par": "ia:claude",
+      "statut": "acceptee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T01:18:47+00:00",
+          "texte": "Écrite le 23 novembre 2026 vers 1 h 20 UTC, avant d'avoir ouvert le code Lean et avant tout calcul. Je connais seulement le guide d'architecture (§2–3) et mes propres résumés.\nP1 (preuve humaine). Pour ζ seule (famille réduite au caractère trivial), la Proposition du §3 se démontre avec : la transformée de Mellin de la rampe, n^(−s)/(s(s − 1)) ; la formule explicite qui en découle ; une transformée de Laplace en log y et ses dérivées d'ordre k, qui localisent sur la fenêtre ; le théorème de Landau sous forme unilatérale (|g| + g = 2g⁺). Ingrédients supplémentaires attendus : seulement des bornes classiques (nombre de zéros N(T) ≪ T log T, croissance de ζ′/ζ hors des zéros). Aucun outil automorphe. Longueur attendue : 4 à 8 pages.\nP2 (énoncé Lean). L'énoncé Lean de zeroFree_of_rpow_window a la forme du guide (pour tout C, il existe Y₀, pour tout Y ≥ Y₀, il existe y dans [Y, Y^(1+δ)] avec G_F(y) > C y^θ), mais je prévois qu'il est écrit avec des paramètres plus particuliers que le guide (δ = 1/2 fixé, ou des hypothèses explicites sur θ dans ]1/2, 1[) : écart de forme, pas de fond.\nP3 (numérique). max |G(y) − log 2π| / √y sur [10, 10⁷] est < 0,023, comme l'annonce le guide, donc nettement sous κ ≈ 0,0462. Je prévois un maximum entre 0,010 et 0,023, atteint pour y petit (< 10³).\nP4 (théorème A). La Proposition localisée entraîne la moitié « minoration » d'un énoncé global du type du théorème A (s'il y a un zéro à droite de θ, la statistique dépasse y^θ infiniment souvent), mais pas la moitié « majoration ». Le théorème A, qui porte sur Q (pôles doubles), demande une variante avec poids différents ; la Proposition ne le contient pas directement.\nP5 (témoin DH). Pour Davenport–Heilbronn, l'argument échoue à l'étape « un seul côté suffit », parce que les résidus aux zéros n'ont pas de signe : leurs coefficients de −F′/F ne sont pas positifs.\nCe qui me donnerait tort : un ingrédient non classique nécessaire à la preuve humaine pour ζ (P1) ; un énoncé Lean qui diffère du guide sur le fond, par exemple d'autres quantificateurs ou une autre statistique (P2) ; un rapport ≥ 0,023 √y sur [10, 10⁷], ou ≥ κ (P3)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T01:27:10+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-017/PREUVE.md": "5d766e10cb70f65a20ed0a4b1d466a87451d6737a39483ce96eb2a9138ce4efc",
+            "2_Methode/Depot/TAC-017/RAPPORT.md": "31aa6a781d5cff7b01c3e7773520599d19febaced83fd5fc5d56f512334f782b",
+            "2_Methode/Depot/TAC-017/resultat_numerique.txt": "69a1b0f4478f3ff1c3fe8c4d2fb50120e055cd31eacd85201b31261345dfd384",
+            "2_Methode/Depot/TAC-017/tac017_numerique.py": "e45a4626799e8b0a24413e7f82bf0f03a9e207c4a714d6997f100a5cc7822766"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-11-23T02:07:57+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-017/PREUVE.md": "7aa1000a6d46755d06f78fdc53b174d28c99e368878e159a5157b57369164db6",
+            "2_Methode/Depot/TAC-017/RAPPORT.md": "b8711ea8d8a47f6ff3421eef5e0022e093c5aa3bd7f58accd4525b07d732d05f",
+            "2_Methode/Depot/TAC-017/resultat_numerique.txt": "0dd44605cb63caba1d0bcd9f08bc65d377e113a756730735cccbb6460d70b8e4",
+            "2_Methode/Depot/TAC-017/tac017_numerique.py": "c2921394de3fc048ad193b2a2efe9b5211d1e7c35167e4ba90cc6fe13c8ceebb"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T01:57:53+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Le noyau unilatéral est valide. La géométrie des pôles dans la preuve écrite et la recherche des extrema du quotient doivent être corrigées. Rapport de vérification PR #50, fil #40.",
+          "fichier": "a9a790b16adada47b30c7f7f2c07a6fb69a6fb8d167c22509dc3009822e6ba90"
+        },
+        {
+          "le": "2026-11-23T02:48:17+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "conforme",
+          "note": "Deuxième dépôt. Les trois corrections sont vérifiées. Deux programmes retrouvent 0,02268124049590 à y=319 439 aux précisions affichées. Implication établie sous l’hypothèse de fenêtres. Rapport de vérification PR #59, fil #40.",
+          "fichier": "ec37b74520b2c673a430a6b7796138463e26320ca3f6c127a0a44131e021e749"
+        }
+      ],
+      "decision": {
+        "le": "2026-11-23T08:31:08+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "acceptee",
+        "note": "acceptee, comme implication démontrée. Si la majoration de � vaut sur des fenêtres arbitrairement tardives, alors � n’a aucun zéro de partie réelle supérieure à �. L’existence de ces fenêtres reste une hypothèse. "
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-018",
+      "cle": "manuel:theoreme-a-par-fenetres-loupe-double",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles)",
+      "question": "TAC-017 a rendu lisible le Landau localisé d'Alpöge pour la statistique G (pôles simples). L'article 1 travaille avec c(n) = (Λ∗Λ)(n) − Λ(n) log n + 2γΛ(n), dont la série G_c = q² + q′ + 2γq (q = −ζ′/ζ) a des pôles DOUBLES aux zéros, de coefficient m(m + 1). Adapter la preuve de TAC-017 à la statistique en rampe H(y) = Σ_{n≤y} c(n)(y/n − 1) − G_c(1)·y : une borne d'un seul côté sur des fenêtres tardives suffit-elle à exclure les zéros à droite de θ ? Quel côté (plafond ou plancher) ? En déduire une caractérisation de Θ par fenêtres, analogue du théorème A, et dire ce qu'elle apporte par rapport au théorème A.",
+      "objet": "la statistique H de l'article 1 et l'argument de TAC-017 étendu aux pôles doubles",
+      "domaine": "analyse classique ; ζ seule ; aucune théorie automorphe",
+      "entrees": {
+        "1_Presentation/articles/article1_mean_square_double_poles.tex": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1",
+        "2_Methode/Depot/TAC-017/PREUVE.md": "5d766e10cb70f65a20ed0a4b1d466a87451d6737a39483ce96eb2a9138ce4efc"
+      },
+      "commande": null,
+      "sortie_attendue": "Un énoncé et sa preuve complète (Markdown), étape par étape, en signalant chaque différence avec TAC-017. La réciproque (si Θ ≤ θ, alors |H(y)| ≪ y^θ log y), avec les hypothèses de convergence. Une vérification numérique jusqu'à 10⁶ : |H(y)|/(√y log y) reste borné, de l'ordre de 2κ, et la constante G_c(1) = 2γ² + 6γ₁ centre bien H. Un paragraphe honnête sur l'apport : ce qui est nouveau, ce qui ne l'est pas.",
+      "critere_rejet": "Si l'argument ne s'étend pas aux pôles doubles (par exemple parce que le coefficient dominant n'a pas de signe fixe), statut « obstacle » avec l'endroit précis. Si la constante G_c(1) ne centre pas H (dérive linéaire visible jusqu'à 10⁶), la prévision P4 est fausse. Si l'énoncé obtenu est déjà dans la littérature sous cette forme, statut « classique » avec la référence.",
+      "temoin": "Le cas des pôles simples (TAC-017), qui doit être retrouvé ; un zéro réel fictif, qui doit être exclu par le bon côté et pas par l'autre.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T01:39:14+00:00",
+      "creee_par": "ia:claude",
+      "statut": "abandonnee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T01:39:14+00:00",
+          "texte": "Écrite le 23 novembre 2026 vers 1 h 45 UTC, avant toute rédaction et tout calcul. Avant d'écrire, j'ai seulement réfléchi de tête au signe du coefficient dominant ; je le dis pour que la prévision P1 ne passe pas pour aveugle.\nP1 (signe et côté). En un zéro ρ de multiplicité m, Φ_c(s) = (G_c(s) − s G_c(1))/(s(s − 1)) a un pôle double de coefficient dominant m(m + 1)/(ρ(ρ − 1)). Pour ρ réel dans ]0, 1[, ce coefficient est NÉGATIF (contrairement au résidu positif des pôles simples). Donc, pour la Loupe double, c'est un PLANCHER (H ≥ −C y^θ sur des fenêtres tardives) qui suffit à exclure tous les zéros à droite de θ ; un PLAFOND n'exclut que les zéros non réels. Pour ζ, qui n'a pas de zéro réel dans ]0, 1[, les deux côtés suffisent.\nP2 (preuve). La preuve de TAC-017 s'étend avec deux changements seulement : l'identité |g| = 2g⁻ + g au lieu de 2g⁺ − g, et le développement près d'un pôle double, a_k ≈ (k + 1) c₂ / (z − ρ)^(k+2), dont le facteur k + 1 ne gêne pas la contradiction.\nP3 (réciproque). Si Θ ≤ θ, alors |H(y)| ≪ y^θ log y, par la formule explicite (convergence absolue de Σ m²/|ρ|²). D'où : Θ = inf{θ : H(y) ≥ −y^θ sur des fenêtres arbitrairement tardives}.\nP4 (numérique). G_c(1) = 2γ² + 6γ₁ ≈ 0,2295 (γ₁ constante de Stieltjes). Avec ce centrage, max |H(y)|/(√y log y) sur [10, 10⁶] est entre 0,03 et 0,15, de l'ordre de 2κ ≈ 0,092, sans dérive linéaire.\nP5 (apport). Le résultat est une adaptation modeste d'une technique connue (Landau, Pringsheim, et la localisation d'Alpöge) ; la seule remarque peut-être nouvelle est le changement de côté pour les pôles doubles. Je prévois qu'une recherche ne trouvera pas cet énoncé tel quel, sans pouvoir l'exclure.\nCe qui me donnerait tort : un coefficient dominant de signe non fixe, ou positif pour ρ réel (P1) ; un obstacle dans le cas 2 dû au terme en 1/(z − ρ)^(k+1) (P2) ; une dérive linéaire de H (P4)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T01:45:29+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-018/PREUVE.md": "47d1cbe09df719800e0c51da79d47ef093e9e44a158bd7ede2e834cec40afa31",
+            "2_Methode/Depot/TAC-018/RAPPORT.md": "68d7779aabd9d4e341e760296a7b34215dc419b949bf2f1cbdf0cd15d027abe1",
+            "2_Methode/Depot/TAC-018/resultat_numerique.txt": "576edbfe46eee8b06a01f746db1def52d1733ba222828f1166bf4189c7eed891",
+            "2_Methode/Depot/TAC-018/tac018_numerique.py": "f659ec2dc494afc288d66402a39425a3c127959ec9c61ec9b341bf0df6bb3707"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [],
+      "decision": {
+        "le": "2026-11-23T10:46:55+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "abandonnee",
+        "note": "Remplacée par TAC-024"
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-019",
+      "cle": "manuel:piste1-module-star-vers-theoreme",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "redaction",
+      "role": "rapporteur",
+      "titre": "Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN)",
+      "question": "Rédiger en anglais, pour la communauté, une preuve lisible par un humain de la partie analytique de la preuve annoncée : (⋆) pour tout caractère primitif ψ entraîne GRH pour les fonctions L de Dirichlet, donc RH. Couvrir : §1 du guide (réduction aux caractères primitifs, équation fonctionnelle) ; §3 pour les familles positives P(ψ) (extension de TAC-017) ; l'ordre des choix (θ après le zéro, ε après θ). Confronter chaque étape aux déclarations Lean (ZeroFreeAllOfTopG, TopWin, Window, Main, réflexion), au commit consulté.",
+      "objet": "la déduction (⋆) ⇒ théorème, et ses modules Lean",
+      "domaine": "analyse classique et caractères de Dirichlet ; aucune théorie automorphe ; la borne (⋆) elle-même est admise",
+      "entrees": {
+        "2_Methode/Depot/TAC-017/PREUVE.md": "5d766e10cb70f65a20ed0a4b1d466a87451d6737a39483ce96eb2a9138ce4efc",
+        "NOTE_ALPOGE_2026.md": "055409aad61bb32a2cc5cfa28c65d62e9ecf65b980919dd4dc47672e1ea5ef6d"
+      },
+      "commande": null,
+      "sortie_attendue": "Une note en anglais (Markdown), autonome, avec énoncés, preuves et, pour chaque étape, la déclaration Lean (chemin, ligne, commit). Un tableau des écarts entre guide, Lean et note. Un rapport en français.",
+      "critere_rejet": "Si la déduction utilise un ingrédient analytique absent de TAC-017 et du §1 (par exemple une densité de zéros ou un traitement spécial des zéros de Siegel), le rapport le nomme. Si l'énoncé Lean de (⋆) diffère du guide sur le fond, statut « partiel » avec l'écart. Une note qui paraphrase le guide sans preuves n'est pas recevable.",
+      "temoin": "Le cas ψ = 1 (TAC-017), qui doit être retrouvé comme cas particulier.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T01:50:38+00:00",
+      "creee_par": "ia:claude",
+      "statut": "abandonnee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T01:50:39+00:00",
+          "texte": "Écrite le 23 novembre 2026 vers 1 h 52 UTC, avant d'avoir ouvert TopWin.lean, Window.lean, ZeroFreeAllOfTopG.lean, Main.lean et les fichiers de réflexion. Je connais le guide (§1, §3, ordre des choix) et les fichiers lus pour TAC-017 (LandauTheorems, CharFamily, LandauZeroFreeCriterion).\nP1. La déduction (⋆) ⇒ théorème n'utilise aucun ingrédient analytique au-delà de TAC-017 et du §1 : réflexion (facteurs d'Euler aux p | N, équation fonctionnelle), famille positive P(ψ), Landau localisé pour une famille (les résidus s'ajoutent avec des poids positifs), ordre des choix. Longueur lisible : 4 à 6 pages.\nP2. Aucun traitement spécial des zéros de Siegel dans le Lean : un zéro réel est un pôle de résidu positif, et le cas 1 de TAC-017 s'en charge.\nP3. Les poids précis 1 et 1/(3o + 1) ne jouent aucun rôle dans la déduction : toute famille à poids positifs contenant ψ convient. Leur valeur vient du §5.\nP4. L'énoncé Lean de (⋆) a la forme du guide : il existe ε₁ > 0 tel que, pour tout 0 < ε < ε₁, il y a des Y arbitrairement grands avec G_ψ(x) ≤ x^(1/2 + 9ε) sur [Y, Y^(3/2)]. Je prévois au plus un écart de forme (constante multiplicative, ou fenêtre écrite autrement).\nP5. La réduction aux primitifs se fait en Lean avant d'appliquer Landau (la famille CharFamily exclut les caractères principaux de module > 1), et l'équation fonctionnelle n'intervient qu'à la toute fin, pour passer de « pas de zéro pour Re s > ½ » à « zéros sur Re s = ½ ».\nCe qui me donnerait tort : un ingrédient supplémentaire (densité de zéros, argument propre aux zéros de Siegel, borne sur L′/L) dans la déduction (P1, P2) ; des poids qui comptent (P3) ; un (⋆) différent sur le fond (P4)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T01:56:51+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-019/NOTE_EN.md": "2d974ad22c8cac7c117b65947e6c3c5b57ab5fea45b7cbbd43fa4423e4a1ea54",
+            "2_Methode/Depot/TAC-019/RAPPORT.md": "b252d7ff7c6ec20e2c09a73127c713b268eb0b80681979433ca641d255600975"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [],
+      "decision": {
+        "le": "2026-11-23T10:43:21+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "abandonnee",
+        "note": "Remplacées par TAC-023"
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-020",
+      "cle": "manuel:piste1-module2-moyenne-caracteres",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "redaction",
+      "role": "rapporteur",
+      "titre": "Piste 1, module 2 : de l'inégalité de pente à (⋆), la moyenne sur les caractères (§5 du guide), confrontée au Lean (EN)",
+      "question": "Rédiger en anglais une preuve lisible du §5 du guide d'architecture d'Alpöge : comment l'inégalité de pente du §4 (admise) donne (⋆) pour un caractère primitif ψ. Couvrir l'identité de Fourier (ch_balance), la positivité par construction des poids (Frame.Shares, 1 et 1/(3o + 1)), l'élimination des caractères tordus (BoundedCharsPointwise), le choix des premiers auxiliaires (QH.pairEx, moyenne quadratique), l'ensemble épais de Behrend (hostThickExists) et le bilan des pertes qui donne le « 9 ». Question centrale : l'élimination des caractères tordus utilise une borne |g_χ(x)| ≤ x^(1/2+ε) ; d'où vient-elle, et pourquoi n'est-elle pas circulaire ?",
+      "objet": "le §5 du guide et ses modules Lean",
+      "domaine": "caractères de Dirichlet, moyennes, combinatoire additive (Behrend) ; l'inégalité de pente du §4 et tout le §6–7 sont admis",
+      "entrees": {
+        "2_Methode/Depot/TAC-010/RAPPORT.md": "6453f38c098b70c05bd0f8525d06832fa823dd261257c947d025203ae5acebd4"
+      },
+      "commande": null,
+      "sortie_attendue": "Une note en anglais, autonome, avec énoncés, preuves et déclarations Lean (chemin, ligne, commit consulté) ; un tableau guide/Lean/note ; une réponse explicite à la question de la non-circularité ; un rapport en français. Ne pas reprendre la transition géométrique de TAC-017 sans sa correction.",
+      "critere_rejet": "Si l'élimination des caractères tordus repose sur une hypothèse équivalente à GRH pour ces caractères sans justification non circulaire, le rapport le dit en tête et le statut est « obstacle » avec l'endroit précis. Si le bilan des pertes ne redonne pas le 9 du guide, le rapport nomme l'écart. Une note qui paraphrase le guide sans preuves n'est pas recevable.",
+      "temoin": "Le cas ψ d'ordre 2 (caractère quadratique), où o = 2 et la famille P(ψ) est petite, à traiter explicitement.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T02:00:28+00:00",
+      "creee_par": "ia:claude",
+      "statut": "ouverte",
+      "assigne_a": null,
+      "previsions": [],
+      "depots": [],
+      "verifications": [],
+      "decision": null,
+      "integration": null
+    },
+    {
+      "id": "TAC-021",
+      "cle": "manuel:piste1-module-star-vers-theoreme-v2",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "redaction",
+      "role": "rapporteur",
+      "titre": "Piste 1, module 1 : de (⋆) au théorème, une preuve lisible confrontée au Lean (EN)",
+      "question": "Reprise de TAC-019, que la reprise de TAC-017 (PR #52) a rendue périmée en modifiant son entrée 2_Methode/Depot/TAC-017/PREUVE.md. Corriger d'abord le défaut hérité de TAC-017 (vérification #40 : transition géométrique de l'étape 5, et comparaison guide/Lean sur θ). Même question : Rédiger en anglais, pour la communauté, une preuve lisible par un humain de la partie analytique de la preuve annoncée : (⋆) pour tout caractère primitif ψ entraîne GRH pour les fonctions L de Dirichlet, donc RH. Couvrir : §1 du guide (réduction aux caractères primitifs, équation fonctionnelle) ; §3 pour les familles positives P(ψ) (extension de TAC-017) ; l'ordre des choix (θ après le zéro, ε après θ). Confronter chaque étape aux déclarations Lean (ZeroFreeAllOfTopG, TopWin, Window, Main, réflexion), au commit consulté.",
+      "objet": "la déduction (⋆) ⇒ théorème, et ses modules Lean",
+      "domaine": "analyse classique et caractères de Dirichlet ; aucune théorie automorphe ; la borne (⋆) elle-même est admise",
+      "entrees": {
+        "2_Methode/Depot/TAC-017/verification/VERIFICATION.md": "a9a790b16adada47b30c7f7f2c07a6fb69a6fb8d167c22509dc3009822e6ba90",
+        "2_Methode/Depot/TAC-010/RAPPORT.md": "6453f38c098b70c05bd0f8525d06832fa823dd261257c947d025203ae5acebd4"
+      },
+      "commande": null,
+      "sortie_attendue": "Une note en anglais (Markdown), autonome, avec énoncés, preuves et, pour chaque étape, la déclaration Lean (chemin, ligne, commit). Un tableau des écarts entre guide, Lean et note. Un rapport en français.",
+      "critere_rejet": "Si la déduction utilise un ingrédient analytique absent de TAC-017 et du §1 (par exemple une densité de zéros ou un traitement spécial des zéros de Siegel), le rapport le nomme. Si l'énoncé Lean de (⋆) diffère du guide sur le fond, statut « partiel » avec l'écart. Une note qui paraphrase le guide sans preuves n'est pas recevable.",
+      "temoin": "Le cas ψ = 1 (TAC-017), qui doit être retrouvé comme cas particulier.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T02:08:35+00:00",
+      "creee_par": "ia:claude",
+      "statut": "abandonnee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T02:08:35+00:00",
+          "texte": "PRÉVISION RECOPIÉE APRÈS COUP, selon la règle appliquée par l'auteur le 23 novembre 2026 pour TAC-013 → TAC-015. Texte de la prévision de TAC-019, enregistrée le 2026-11-23T01:50:39+00:00 avant tout travail. TAC-019 a été déposée, retirée avant vérification (défaut hérité de TAC-017), puis rendue périmée par la reprise de TAC-017. Le travail existe déjà et ses résultats sont connus : cette prévision n'est pas aveugle pour la nouvelle fiche ; sa valeur de prévision vient uniquement de l'enregistrement d'origine.\n\n--- Texte original ---\nÉcrite le 23 novembre 2026 vers 1 h 52 UTC, avant d'avoir ouvert TopWin.lean, Window.lean, ZeroFreeAllOfTopG.lean, Main.lean et les fichiers de réflexion. Je connais le guide (§1, §3, ordre des choix) et les fichiers lus pour TAC-017 (LandauTheorems, CharFamily, LandauZeroFreeCriterion).\nP1. La déduction (⋆) ⇒ théorème n'utilise aucun ingrédient analytique au-delà de TAC-017 et du §1 : réflexion (facteurs d'Euler aux p | N, équation fonctionnelle), famille positive P(ψ), Landau localisé pour une famille (les résidus s'ajoutent avec des poids positifs), ordre des choix. Longueur lisible : 4 à 6 pages.\nP2. Aucun traitement spécial des zéros de Siegel dans le Lean : un zéro réel est un pôle de résidu positif, et le cas 1 de TAC-017 s'en charge.\nP3. Les poids précis 1 et 1/(3o + 1) ne jouent aucun rôle dans la déduction : toute famille à poids positifs contenant ψ convient. Leur valeur vient du §5.\nP4. L'énoncé Lean de (⋆) a la forme du guide : il existe ε₁ > 0 tel que, pour tout 0 < ε < ε₁, il y a des Y arbitrairement grands avec G_ψ(x) ≤ x^(1/2 + 9ε) sur [Y, Y^(3/2)]. Je prévois au plus un écart de forme (constante multiplicative, ou fenêtre écrite autrement).\nP5. La réduction aux primitifs se fait en Lean avant d'appliquer Landau (la famille CharFamily exclut les caractères principaux de module > 1), et l'équation fonctionnelle n'intervient qu'à la toute fin, pour passer de « pas de zéro pour Re s > ½ » à « zéros sur Re s = ½ ».\nCe qui me donnerait tort : un ingrédient supplémentaire (densité de zéros, argument propre aux zéros de Siegel, borne sur L′/L) dans la déduction (P1, P2) ; des poids qui comptent (P3) ; un (⋆) différent sur le fond (P4)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T02:13:43+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-021/NOTE_EN.md": "52fa6cb2e87ce24310e9453f8a7226176269ff067b982c968fbb0357e357dd07",
+            "2_Methode/Depot/TAC-021/RAPPORT.md": "9dadbebc1bc26f2909ed09180e363a707647c1fa5fa272b8d5955d0543630df6"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T02:47:25+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "L’implication conditionnelle suit. Il manque à la note anglaise l’inégalité des moments et une attribution exacte des hypothèses TopG et HostExW. Rapport de vérification PR #60, fil #53.",
+          "fichier": "a60d5b27c04c30c044df1573cbccb630f7637f45e1e3c2c200858bd6b1ff9290"
+        }
+      ],
+      "decision": {
+        "le": "2026-11-23T10:43:49+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "abandonnee",
+        "note": "Remplacées par TAC-023"
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-022",
+      "cle": "manuel:theoreme-a-par-fenetres-loupe-double-v2",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Théorème A par fenêtres : le Landau localisé pour la Loupe double (pôles doubles)",
+      "question": "Reprise de TAC-018, que la reprise de TAC-017 (PR #52) a rendue périmée en modifiant son entrée 2_Methode/Depot/TAC-017/PREUVE.md. Corriger d'abord le défaut hérité de TAC-017 (vérification #40 : transition géométrique de l'étape 5, et comparaison guide/Lean sur θ). Même question : TAC-017 a rendu lisible le Landau localisé d'Alpöge pour la statistique G (pôles simples). L'article 1 travaille avec c(n) = (Λ∗Λ)(n) − Λ(n) log n + 2γΛ(n), dont la série G_c = q² + q′ + 2γq (q = −ζ′/ζ) a des pôles DOUBLES aux zéros, de coefficient m(m + 1). Adapter la preuve de TAC-017 à la statistique en rampe H(y) = Σ_{n≤y} c(n)(y/n − 1) − G_c(1)·y : une borne d'un seul côté sur des fenêtres tardives suffit-elle à exclure les zéros à droite de θ ? Quel côté (plafond ou plancher) ? En déduire une caractérisation de Θ par fenêtres, analogue du théorème A, et dire ce qu'elle apporte par rapport au théorème A.",
+      "objet": "la statistique H de l'article 1 et l'argument de TAC-017 étendu aux pôles doubles",
+      "domaine": "analyse classique ; ζ seule ; aucune théorie automorphe",
+      "entrees": {
+        "2_Methode/Depot/TAC-017/verification/VERIFICATION.md": "a9a790b16adada47b30c7f7f2c07a6fb69a6fb8d167c22509dc3009822e6ba90",
+        "1_Presentation/articles/article1_mean_square_double_poles.tex": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1"
+      },
+      "commande": null,
+      "sortie_attendue": "Un énoncé et sa preuve complète (Markdown), étape par étape, en signalant chaque différence avec TAC-017. La réciproque (si Θ ≤ θ, alors |H(y)| ≪ y^θ log y), avec les hypothèses de convergence. Une vérification numérique jusqu'à 10⁶ : |H(y)|/(√y log y) reste borné, de l'ordre de 2κ, et la constante G_c(1) = 2γ² + 6γ₁ centre bien H. Un paragraphe honnête sur l'apport : ce qui est nouveau, ce qui ne l'est pas.",
+      "critere_rejet": "Si l'argument ne s'étend pas aux pôles doubles (par exemple parce que le coefficient dominant n'a pas de signe fixe), statut « obstacle » avec l'endroit précis. Si la constante G_c(1) ne centre pas H (dérive linéaire visible jusqu'à 10⁶), la prévision P4 est fausse. Si l'énoncé obtenu est déjà dans la littérature sous cette forme, statut « classique » avec la référence.",
+      "temoin": "Le cas des pôles simples (TAC-017), qui doit être retrouvé ; un zéro réel fictif, qui doit être exclu par le bon côté et pas par l'autre.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T02:08:35+00:00",
+      "creee_par": "ia:claude",
+      "statut": "abandonnee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T02:08:35+00:00",
+          "texte": "PRÉVISION RECOPIÉE APRÈS COUP, selon la règle appliquée par l'auteur le 23 novembre 2026 pour TAC-013 → TAC-015. Texte de la prévision de TAC-018, enregistrée le 2026-11-23T01:39:14+00:00 avant tout travail. TAC-018 a été déposée, retirée avant vérification (défaut hérité de TAC-017), puis rendue périmée par la reprise de TAC-017. Le travail existe déjà et ses résultats sont connus : cette prévision n'est pas aveugle pour la nouvelle fiche ; sa valeur de prévision vient uniquement de l'enregistrement d'origine.\n\n--- Texte original ---\nÉcrite le 23 novembre 2026 vers 1 h 45 UTC, avant toute rédaction et tout calcul. Avant d'écrire, j'ai seulement réfléchi de tête au signe du coefficient dominant ; je le dis pour que la prévision P1 ne passe pas pour aveugle.\nP1 (signe et côté). En un zéro ρ de multiplicité m, Φ_c(s) = (G_c(s) − s G_c(1))/(s(s − 1)) a un pôle double de coefficient dominant m(m + 1)/(ρ(ρ − 1)). Pour ρ réel dans ]0, 1[, ce coefficient est NÉGATIF (contrairement au résidu positif des pôles simples). Donc, pour la Loupe double, c'est un PLANCHER (H ≥ −C y^θ sur des fenêtres tardives) qui suffit à exclure tous les zéros à droite de θ ; un PLAFOND n'exclut que les zéros non réels. Pour ζ, qui n'a pas de zéro réel dans ]0, 1[, les deux côtés suffisent.\nP2 (preuve). La preuve de TAC-017 s'étend avec deux changements seulement : l'identité |g| = 2g⁻ + g au lieu de 2g⁺ − g, et le développement près d'un pôle double, a_k ≈ (k + 1) c₂ / (z − ρ)^(k+2), dont le facteur k + 1 ne gêne pas la contradiction.\nP3 (réciproque). Si Θ ≤ θ, alors |H(y)| ≪ y^θ log y, par la formule explicite (convergence absolue de Σ m²/|ρ|²). D'où : Θ = inf{θ : H(y) ≥ −y^θ sur des fenêtres arbitrairement tardives}.\nP4 (numérique). G_c(1) = 2γ² + 6γ₁ ≈ 0,2295 (γ₁ constante de Stieltjes). Avec ce centrage, max |H(y)|/(√y log y) sur [10, 10⁶] est entre 0,03 et 0,15, de l'ordre de 2κ ≈ 0,092, sans dérive linéaire.\nP5 (apport). Le résultat est une adaptation modeste d'une technique connue (Landau, Pringsheim, et la localisation d'Alpöge) ; la seule remarque peut-être nouvelle est le changement de côté pour les pôles doubles. Je prévois qu'une recherche ne trouvera pas cet énoncé tel quel, sans pouvoir l'exclure.\nCe qui me donnerait tort : un coefficient dominant de signe non fixe, ou positif pour ρ réel (P1) ; un obstacle dans le cas 2 dû au terme en 1/(z − ρ)^(k+1) (P2) ; une dérive linéaire de H (P4)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T02:14:26+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-022/PREUVE.md": "e463033864a5d9df80480abac31ef472c123539f8053f4fce11aa8f7d3ce8262",
+            "2_Methode/Depot/TAC-022/RAPPORT.md": "67e7f9a8b392a5f8571aca11566d5bbd28ef857a583f79a5dafaae95946264d2",
+            "2_Methode/Depot/TAC-022/resultat_numerique.txt": "576edbfe46eee8b06a01f746db1def52d1733ba222828f1166bf4189c7eed891",
+            "2_Methode/Depot/TAC-022/tac018_numerique.py": "f659ec2dc494afc288d66402a39425a3c127959ec9c61ec9b341bf0df6bb3707"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T02:47:48+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Sens direct et calcul reproduits. La transformée centrée a une queue en 1/t. Corriger la réciproque, dont le seuil demandé reste à établir dans le dépôt. Rapport de vérification PR #61, fil #54.",
+          "fichier": "341dba960359e4bfde376699038fcabc5b57fc5fe1f2901fcb0a2c82ff669171"
+        }
+      ],
+      "decision": {
+        "le": "2026-11-23T10:42:37+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "abandonnee",
+        "note": "Remplacées par TAC-024"
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-023",
+      "cle": "manuel:piste1-module-star-vers-theoreme-v3",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "redaction",
+      "role": "rapporteur",
+      "titre": "Piste 1, module 1 (v3) : de (⋆) au théorème, note anglaise complétée selon la vérification de TAC-021",
+      "question": "Reprise de TAC-021, périmée parce que son entrée (TAC-017/verification/VERIFICATION.md) a été réécrite lors de la revérification de TAC-017. Compléter la note anglaise selon la vérification de TAC-021 (#53) : (1) rendre le §2 autonome (moments A_k, U = log Y, inégalité |A_k(σ+iγ)| + Re A_k(σ) ≤ C e^(ηU)/(σ−θ)^k, identité |g| + g = 2g⁺, découpage, queues, choix de η) ; (2) au §5, distinguer (⋆) admise de ses entrées formelles (paramètre λ, TopG, existence des hôtes HostExW, lemmes level_gm_le_on_family_scales et formB), avec leurs définitions, et corriger toute affirmation « pour tout λ » ; (3) au §6(c), traiter s = 0 par ζ(0) = −1/2, et préciser qu'appliquer le moteur de Landau à DH ne lui fournit pas (⋆). Donner les définitions de HostExW et de every_character_of_literature_of_vWin.",
+      "objet": "la déduction (⋆) ⇒ théorème, et ses modules Lean",
+      "domaine": "analyse classique et caractères de Dirichlet ; aucune théorie automorphe ; la borne (⋆) elle-même est admise",
+      "entrees": {
+        "2_Methode/Depot/TAC-021/NOTE_EN.md": "52fa6cb2e87ce24310e9453f8a7226176269ff067b982c968fbb0357e357dd07",
+        "2_Methode/Depot/TAC-017/PREUVE.md": "7aa1000a6d46755d06f78fdc53b174d28c99e368878e159a5157b57369164db6"
+      },
+      "commande": null,
+      "sortie_attendue": "Une note en anglais (Markdown), autonome, avec énoncés, preuves et, pour chaque étape, la déclaration Lean (chemin, ligne, commit). Un tableau des écarts entre guide, Lean et note. Un rapport en français.",
+      "critere_rejet": "Si la déduction utilise un ingrédient analytique absent de TAC-017 et du §1 (par exemple une densité de zéros ou un traitement spécial des zéros de Siegel), le rapport le nomme. Si l'énoncé Lean de (⋆) diffère du guide sur le fond, statut « partiel » avec l'écart. Une note qui paraphrase le guide sans preuves n'est pas recevable.",
+      "temoin": "Le cas ψ = 1 (TAC-017), qui doit être retrouvé comme cas particulier.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T02:52:39+00:00",
+      "creee_par": "ia:claude",
+      "statut": "acceptee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T02:52:39+00:00",
+          "texte": "Prévision NOUVELLE (non recopiée), écrite le 23 novembre 2026 vers 2 h 55 UTC, après lecture de la vérification de TAC-021 mais avant d'ouvrir LevelGmLeOnFamilyScales.lean, la définition de HostExW et le fichier où se trouve every_character_of_literature_of_vWin.\nP1. Les compléments (1) et (3) n'exigent aucun ingrédient nouveau : (1) est la reformulation en anglais des étapes 2 à 4 de TAC-017, désormais vérifiée ; (3) se règle avec ζ(0) = −1/2 et le facteur gamma, comme dans Claim.zeta.\nP2. level_gm_le_on_family_scales est un lemme de comparaison : il transforme l'inégalité « liée » produite par l'arithmétique (ChebyshevInequalityOnFamilyWindows) en la borne Λ.Gm(x) ≤ x^(½ + (e_D + e_L + 7)ε) sur les fenêtres ; il ne fait que de l'analyse élémentaire (sommes et inégalités), sans rien d'automorphe.\nP3. HostExW λ (G.req) affirme l'existence, sur des fenêtres de paramètre λ, de « corps hôtes » au sens du §4 du guide (corps CM construits à partir de ψ et de premiers auxiliaires q, d) ; c'est une hypothèse arithmétique, du côté de (⋆), et non une partie de la déduction analytique.\nP4. every_character_of_literature_of_vWin prend en entrée des énoncés de la littérature (représentations galoisiennes, Langlands local) et la fenêtre cohomologique, et appelle zeroFreeAll_of_topG puis imprimitive ; je prévois de pouvoir tracer ce chemin, mais pas d'en lire tous les arguments.\nP5. Une fois ces compléments faits, aucune affirmation de la note ne dépendra d'une lecture non faite, sauf la construction de TopG et des hôtes, qui restent admis et seront marqués comme tels.\nCe qui me donnerait tort : un ingrédient analytique non élémentaire dans level_gm_le_on_family_scales (P2) ; HostExW qui contiendrait une partie de l'argument analytique (P3) ; un chemin vers everyCharacter qui ne passe pas par zeroFreeAll_of_topG (P4)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T03:10:42+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-023/NOTE_EN.md": "5b3f35c95e38dd738f943c7ada0b8f0bde1b3030ffeffd8c3baa6eccdcbe3f2d",
+            "2_Methode/Depot/TAC-023/RAPPORT.md": "bfbe98848ccd9ca13d5c63dfeee72e28b49a7a66675e9a5c867179e1c79c8b7e"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        },
+        {
+          "le": "2026-11-23T10:33:46+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-023/NOTE_EN.md": "e4bf6f2cc16a21ebd3d9dc178cc847aedf5490935a72e3f5a3f8486109e66e0a",
+            "2_Methode/Depot/TAC-023/RAPPORT.md": "f8c34ef63e7ed19a7a01b23c9ac9a18f4bb20fc0121017d631bb982c05eac81d"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T10:21:51+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "non_conforme",
+          "note": "Note anglaise relue : implication conditionnelle confirmée ; au §5, HostExW omet s.J = S.J. Correction et ancres à reprendre, rapport #70.",
+          "fichier": "92f3077cc33a7a003d8b2988f82b88ae88fcdf389fe9f506f4aede9957f63e1d"
+        },
+        {
+          "le": "2026-11-23T10:51:42+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "conforme",
+          "note": "Second dépôt, note anglaise v4 : les quatre écarts de #70 sont corrigés ; HostExW quantifie sur les échelles de J fixé, deux ancres vérifiées, borne abstraite et cas de Siegel rectifiés. Conforme pour (⋆) ⇒ GRH ⇒ RH, estimation (⋆) admise. Rapport #74.",
+          "fichier": "5fa52fa68ddb7052df4bff660e1ba9d48f67e4d065e5538643f65ac04802a195"
+        }
+      ],
+      "decision": {
+        "le": "2026-11-23T10:53:34+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "acceptee",
+        "note": ""
+      },
+      "integration": null
+    },
+    {
+      "id": "TAC-024",
+      "cle": "manuel:theoreme-a-par-fenetres-loupe-double-v3",
+      "cycle": 1,
+      "version": "V6.59",
+      "genre": "investigation",
+      "role": "explorateur",
+      "titre": "Théorème A par fenêtres (v3) : pôles doubles, réciproque refaite selon la vérification de TAC-022",
+      "question": "Reprise de TAC-022, périmée parce que son entrée (TAC-017/verification/VERIFICATION.md) a été réécrite, et jugée non conforme (#54). Le sens direct (un plancher sur H(y) = Σ_{n≤y} c(n)(y/n − 1) − G_c(1)·y sur des fenêtres tardives exclut les zéros à droite de θ, le coefficient m(m + 1)/(ρ(ρ − 1)) étant négatif aux pôles réels) est jugé correct et doit être conservé, en s'appuyant sur la preuve vérifiée de TAC-017. Refaire la réciproque. Défaut relevé : sur Re s = 2, Φ_c(s) = G_c(s)/(s(s − 1)) − G_c(1)/(s − 1) n'est pas absolument intégrable, le second terme étant de module ~ |G_c(1)|/|t|. Piste du vérificateur : déplacer le contour de la rampe NON centrée G_c(s)/(s(s − 1)), récupérer le résidu G_c(1)·y en s = 1 puis le soustraire ; obtenir d'abord O_{θ,ε}(y^(θ+ε)) ; pour viser O_θ(y^θ log y), travailler sur σ = θ + a, par blocs j ≤ t ≤ j + 1, avec la formule locale de ζ′/ζ, ∫ dt/|σ + it − ρ|² ≤ π/a, Cauchy–Schwarz (∫_bloc |q|² + |q′| ≪ log²(j + 2)/a), segments horizontaux et basses hauteurs traités à part, puis a = 1/log y. Préciser la convention de l'infimum si Θ = 1. Dire si la caractérisation complète de Θ par fenêtres est établie, et seulement sous quelle forme (exposant θ + ε ou θ avec log y).",
+      "objet": "la statistique H de l'article 1, le sens direct de TAC-022 et une réciproque correcte",
+      "domaine": "analyse classique ; ζ seule ; aucune théorie automorphe",
+      "entrees": {
+        "2_Methode/Depot/TAC-022/PREUVE.md": "e463033864a5d9df80480abac31ef472c123539f8053f4fce11aa8f7d3ce8262",
+        "2_Methode/Depot/TAC-017/PREUVE.md": "7aa1000a6d46755d06f78fdc53b174d28c99e368878e159a5157b57369164db6",
+        "1_Presentation/articles/article1_mean_square_double_poles.tex": "6302ee087ed13a7904d347f14e9046f24b00b95424665be80adf18f018799cc1"
+      },
+      "commande": null,
+      "sortie_attendue": "Une preuve complète (Markdown) : sens direct repris et rattaché à TAC-017, réciproque refaite avec contour, segments horizontaux, résidu en 1 et estimations uniformes. Un énoncé final qui dit exactement ce qui est démontré (θ + ε ou θ avec log y). Le contrôle numérique de TAC-022 rejoué tel quel. Un rapport en français avec un paragraphe honnête sur l'apport.",
+      "critere_rejet": "Si la réciproque au seuil (O_θ(y^θ log y)) ne peut être justifiée uniformément, statut « partiel » avec la forme affaiblie démontrée et l'endroit précis du blocage. Si un ingrédient non classique (densité de zéros, hypothèse sur les zéros proches) est nécessaire, le rapport le nomme. Si l'énoncé est déjà dans la littérature sous cette forme, statut « classique » avec la référence.",
+      "temoin": "Le cas des pôles simples (TAC-017) ; un zéro réel fictif, exclu par le plancher et pas par le plafond ; le centrage G_c(1) = 2γ² + 6γ₁ ≈ 0,229461.",
+      "budget": "1 lot H",
+      "noeuds": [],
+      "creee_le": "2026-11-23T03:15:31+00:00",
+      "creee_par": "ia:claude",
+      "statut": "acceptee",
+      "assigne_a": "ia:claude",
+      "previsions": [
+        {
+          "le": "2026-11-23T03:16:03+00:00",
+          "texte": "Prévision écrite le 23 novembre 2026 vers 3 h 20 UTC, après lecture de la vérification de TAC-022 (#54), avant toute nouvelle rédaction ou tout calcul. Je suis l'auteur de TAC-022 : cette prévision n'est donc pas aveugle sur le sens direct.\nP1. Le sens direct de TAC-022 passe sans changement de fond ; seule la rédaction est rattachée aux étapes vérifiées de TAC-017 (dichotomie, centre déplacé), avec le facteur k + 1 du pôle double.\nP2. La forme affaiblie de la réciproque, |H(y)| = O_{θ,ε}(y^(θ+ε)) si aucun zéro n'a Re ρ > θ, se démontre avec des ingrédients classiques seulement : contour de la rampe non centrée sur Re s = θ + ε, résidu G_c(1)·y en 1 puis soustrait, borne ζ′/ζ(σ + it) ≪ log²|t| à distance ε du bord, segments horizontaux à des hauteurs choisies loin des zéros.\nP3. La forme au seuil, O_θ(y^θ log y), s'obtient par la méthode des blocs du vérificateur : avec a = 1/log y, la somme des blocs donne ≪ 1/a = log y. Le seul comptage nécessaire est N(T + 1) − N(T) ≪ log T (Riemann–von Mangoldt), qui est classique et ne constitue pas une « densité de zéros » au sens du critère.\nP4. Le point le plus fragile sera l'uniformité en j de la formule locale de ζ′/ζ quand σ = θ + a tend vers θ, et non le terme q². Probabilité que j'arrive à une réciproque au seuil complète et justifiée : environ 60 % ; sinon statut « partiel » avec la forme θ + ε.\nP5. Pour Θ = 1 (aucune information), l'énoncé reste vrai avec la convention inf = 1, et la réciproque devient la borne triviale.\nCe qui me donnerait tort : un sens direct qui exige une hypothèse de plus que dans TAC-022 (P1) ; une borne θ + ε qui demande plus que les bornes classiques de ζ′/ζ (P2) ; une perte d'un facteur log y supplémentaire au seuil, c'est-à-dire O(y^θ log² y) au mieux (P3)."
+        }
+      ],
+      "depots": [
+        {
+          "le": "2026-11-23T03:23:57+00:00",
+          "par": "ia:claude",
+          "fichiers": {
+            "2_Methode/Depot/TAC-024/PREUVE.md": "5c3900016c9afc79588617172419af73ef4cae685e8f70a07189571d0c4dfca4",
+            "2_Methode/Depot/TAC-024/RAPPORT.md": "d8b016a491d5bcf69d649bb4c8c0f8d3ddb01388dc8e11569a7143fee7622e24",
+            "2_Methode/Depot/TAC-024/resultat_numerique.txt": "576edbfe46eee8b06a01f746db1def52d1733ba222828f1166bf4189c7eed891",
+            "2_Methode/Depot/TAC-024/tac018_numerique.py": "f659ec2dc494afc288d66402a39425a3c127959ec9c61ec9b341bf0df6bb3707"
+          },
+          "statut_propose": "demontre",
+          "equivalent_rh": false
+        }
+      ],
+      "verifications": [
+        {
+          "le": "2026-11-23T10:21:12+00:00",
+          "par": "ia:chatgpt-sol-6.1-max",
+          "verdict": "conforme",
+          "note": "Sens direct et réciproque au seuil relus. Résidu en 1 et estimation uniforme par blocs justifiés, sortie à 10^6 identique. Corollaire équivalent à RH, nouveauté ouverte, rapport #69.",
+          "fichier": "eab22313795fddf9c8d90dbb103f3729e27b3009aa6d46d6eead74d69b224264"
+        }
+      ],
+      "decision": {
+        "le": "2026-11-23T10:44:21+00:00",
+        "par": "auteur:vincent-noel",
+        "decision": "acceptee",
+        "note": ""
+      },
+      "integration": null
+    }
+  ]
+}

@@ -174,6 +174,1352 @@
         "a": "ia:chatgpt-sol-6.1-max"
       },
       "empreinte_precedente": "bf916bfe528a6d958c8f6d83cacb9ce2ce8438f355035b909dc1edbc0eb876fb"
+    },
+    {
+      "n": 16,
+      "le": "2026-10-17T21:14:29+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-007",
+      "evenement": "prevision",
+      "details": {
+        "texte": "P1 (reprend la prévision pré-enregistrée en V6.58) : la marge mesurée du noyau des moments à L = 0,8, secteur pair, se stabilise entre 3·10⁻¹² et 6·10⁻¹² quand le nombre de modes passe à 40, 48, 56 et 64, et varie de moins de 10 % entre 56 et 64 modes. P2 : un certificat dans l'architecture binary64 du document 75 est impossible à cette marge ; son seul budget d'assemblage (modèle γ_n des produits scalaires) dépasse 10⁻⁸. Il faut une arithmétique d'intervalles en précision multiple, et je prévois une tête d'au moins 100 modes pour un minorant certifié ≥ 10⁻¹². Critères de rejet : marge mesurée sous 10⁻¹³ quand N augmente (la voie par fenêtres s'arrête à 11/20) ; ou budget binary64 inférieur à la marge (P2 fausse)."
+      },
+      "empreinte_precedente": "135fc07e65995eace2a2f90fb0e3cd1a7886e1551ec7c13dcd55cd8d28fbba49"
+    },
+    {
+      "n": 17,
+      "le": "2026-10-17T21:50:18+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-007",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-007/RAPPORT.md": "ab9d772adf57921046d6816ec769c53d385408ddc288c91f09902558c0968b01",
+          "2_Methode/Depot/TAC-007/p1_mesure_noyau_08.py": "df8a0ac1ad4f4612e61a89fc8ddf9c2edc4994d00104bec3cf1f6df1a3c1e87f",
+          "2_Methode/Depot/TAC-007/p1_resultats.json": "274489dabe8d3ab8ab9d83ca6e59c56041e6afb676130693ee0f2677533f13ec",
+          "2_Methode/Depot/TAC-007/p2_budgets_architecture_doc75.py": "e85c4df5fcb8b49ad1247ccd02db65bb8e2e6f394be856658346c798b07a5124",
+          "2_Methode/Depot/TAC-007/p2_resultats.json": "ad95651ab465f5a45fa5f125af580930deccc45043ce5cee9a11a2ede8ba1e99"
+        },
+        "statut_propose": "partiel",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "9db41a28ea42b556d639da0be2414ce7f70aa47739ef91ba44dd21f8a418ed9c"
+    },
+    {
+      "n": 18,
+      "le": "2026-10-17T22:10:43+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Réglages fixés avant calcul : b_F = coefficients de −F'/F (src/rejection.py), n ≤ 20 000 ; fenêtre gaussienne w de largeur h = 0,5 en log n ; échelles u = 2 à 8 par pas de 0,25 ; ψ gaussienne, résolutions T = 10 et T = 1 ; R normalisée. Témoins : W1 multiplicatif aléatoire b(p^k) = α_p^k log p (|α_p| = 1, 20 tirages) ; W2 phases brouillées b(p^k) = Λ(p^k)·e^{iθ_{p,k}} indépendantes (20 tirages). P1 : à T = 10, la part de K_chaîne dans ‖K‖_F reste sous 1 % pour toutes les fonctions ; la séparation de DH d'avec ζ vient de K_diag et K_croisé (support hors puissances de premiers), donc le critère de rejet est atteint à cette résolution. P2 : à T = 1, K_chaîne pèse entre 1 % et 20 % pour ζ et sépare ζ de W2 au-delà de deux écarts-types, mais ne sépare PAS W1 de W2 (moins de deux écarts-types) : au second ordre, K_chaîne voit la positivité réelle des coefficients, pas la multiplicativité, comme TOMO-2 (doc. 17). P3 : L(χ₅) a une part de K_chaîne inférieure à celle de ζ. Critère de rejet : celui de la fiche ; P2 fausse si K_chaîne sépare W1 de W2 au-delà de deux écarts-types."
+      },
+      "empreinte_precedente": "330c0fce64ed451d4d124d8bad4e3962cc070db08b6c4deb19520bce5538687a"
+    },
+    {
+      "n": 19,
+      "le": "2026-10-17T22:31:54+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-008/RAPPORT.md": "1af20d6a2316a0912f8e95c56dc506d56761f4594888e65dd590ecd31cf1e5e3",
+          "2_Methode/Depot/TAC-008/decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+          "2_Methode/Depot/TAC-008/resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3"
+        },
+        "statut_propose": "obstacle",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "96cb2a6244110698641807837f6bea1e15a6059eb73a500ea3cb3114631e24c8"
+    },
+    {
+      "n": 20,
+      "le": "2026-10-17T22:37:21+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-007",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Contrôles de cohérence P1/P2 effectués ; témoins adverses requis absents ; aucune réfutation numérique."
+      },
+      "empreinte_precedente": "0c4723b5b2593d0a3fcccb232d5482c021d4d6fccd5cf62e5a8b82c293f050e5"
+    },
+    {
+      "n": 21,
+      "le": "2026-10-17T22:58:42+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-002",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Je prévois qu’aucune inégalité locale uniforme sur des paquets arbitraires ne se sommera sans un terme de dette explicite de bord ou de couplage. Une formulation exploitable séparera contribution arithmétique interne, dette aux coupures et norme contrôlant la somme des dettes. Elle sera rejetée si un paquet admissible conserve une dette non dominée, ou si le mécanisme ne distingue pas le contenu arithmétique pertinent."
+      },
+      "empreinte_precedente": "1542ba3079d124b5c51cfc6c2a7f639dc937088f80abd4be79159e5440e4afb3"
+    },
+    {
+      "n": 22,
+      "le": "2026-10-17T22:58:42+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-003",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Je prévois qu’une norme duale peut contrôler une part définie du couplage de Schur, mais qu’elle ne dominera le vrai résidu que sous une hypothèse explicite d’image, de support ou de régularité. Le résultat le plus probable est un diagnostic conditionnel, non une minoration arithmétique universelle. Elle sera rejetée si une matrice à tête positive possède un complément ou un résidu non contrôlé par la norme candidate."
+      },
+      "empreinte_precedente": "015862b9a711b8e8eaecfb2e270d890de33027e12cd8bb029850825834bd32bf"
+    },
+    {
+      "n": 23,
+      "le": "2026-10-17T22:58:42+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-009",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Je prévois que le Gram des différences d’échelle de Nyman–Beurling sera principalement déterminé par la géométrie des dilatations et la grille logarithmique. Son spectre devrait coïncider, à précision contrôlée, avec celui d’un témoin géométrique après normalisation ; il ne séparera pas utilement ζ d’un analogue sans produit d’Euler. Le résultat attendu est un obstacle ou un résultat classique, sauf dépendance arithmétique additionnelle établie sur une référence originale."
+      },
+      "empreinte_precedente": "d3e019a5b60b209ade1e9ba5c081af4d83f9766b4ae6e1be25115787802026a1"
+    },
+    {
+      "n": 24,
+      "le": "2026-10-17T23:01:41+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-002",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-002/RAPPORT.md": "22f6edfe20a758f83df4b8ab32859b4808bd4f5ca0f7999c919b547d399d18c6"
+        },
+        "statut_propose": "diagnostic",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "80dcf1cae8d1e681a9d94067a420722b64d29b4010d73feaabef8082bf458535"
+    },
+    {
+      "n": 25,
+      "le": "2026-10-17T23:01:41+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-003",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-003/RAPPORT.md": "6080ee68b616c0e3ecde08b16f6d61fdaf888e57e07a63e4ce599247bc5b0562"
+        },
+        "statut_propose": "diagnostic",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "e627e76a93c89f3e3960e5a86f734959a4e3266b3bdb31b85923e41c033925b7"
+    },
+    {
+      "n": 26,
+      "le": "2026-10-17T23:01:41+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-009",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-009/RAPPORT.md": "f86dad9e367eeae324cc077d310f628959ab1c2649fd7cdc36fed092b3c2a200"
+        },
+        "statut_propose": "obstacle",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "181f053757051b5dc348fecffeb88ddae199e710f5345a23b5053ccec83eb172"
+    },
+    {
+      "n": 27,
+      "le": "2026-10-17T23:50:28+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-007",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Reprise (fil #3, accord de l'auteur du 18 octobre). Contrôles demandés par la vérification, écrits avant calcul. C1 Davenport–Heilbronn à S = 0,8 : forme de Weil générale (conducteur q, facteur Γ((s+1)/2), sans pôle, coefficients de −F'/F pour n ≤ 4), validée d'abord sur L(s,χ₅) contre ses zéros (écart relatif < 1e-6). Prévision : la forme de DH reste positive à 0,8, sur tout le secteur pair et sur le noyau des moments ; la fenêtre 0,8 ne distingue pas DH de ζ. C2 Corps de fonctions : même chaîne (côté arithmétique : nombres de points N_m comptés, contrainte du pôle, projection, plus petite valeur) pour la courbe y² = x³ + x + 1 sur F₅, fenêtres M ≤ 3 ; prévision : accord avec le côté spectral à 1e-20, λ_min ≥ 0 dans les deux secteurs ; fausse courbe de genre 1 avec a = 5 > 2√5 : invisible dans le secteur pair (λ_min ≥ 0), détectée dans le secteur impair (λ_min < 0) ; faux genre 2 avec un quatuor hors du cercle : détecté dans le secteur pair pour un M ≤ 3. C3 Témoins négatifs pour ζ à 0,8, N = 48 : (a) quatuor fictif de zéros hors droite à la hauteur 14,1347 : δ = 0 (paire sur la droite) ne fait pas baisser λ_min ; δ = 0,1 rend λ_min < 0 sur le noyau ; seuil δ* mesuré, prédit < 0,1. (b) Λ(2) multiplié par 1 + ε : seuil ε* observé à moins de 5 % de la prédiction au premier ordre par le vecteur propre. Réfutation : un défaut non détecté, δ = 0 qui rend λ_min négatif, un écart de validation au-delà des seuils, ou λ_min(DH) < 0 à 0,8."
+      },
+      "empreinte_precedente": "c8fd9280745525837825b26b67b320664fe57f112c1d613d2987cf642ab7e530"
+    },
+    {
+      "n": 28,
+      "le": "2026-10-18T00:04:58+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-004",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "16e980b52071ffd9719b9743237ce5180e656a9de0db14bce58da27578f5e760"
+    },
+    {
+      "n": 29,
+      "le": "2026-10-18T00:04:58+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-005",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "1986351eadfd0e267d7f633192d4442290268216fff1c562562a797e10e735ee"
+    },
+    {
+      "n": 30,
+      "le": "2026-10-18T00:04:58+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-006",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "ce8822ae0e0886e96f96e9a9fb3137b446bde858a62ffde0fb459e3a8d54e6e4"
+    },
+    {
+      "n": 31,
+      "le": "2026-10-18T00:11:24+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-006",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Prévision écrite le 18 octobre 2026 avant toute évaluation de fonction L pour cette fiche. Auteur des droits : Vincent NOËL.\nOBJET FIXÉ : V13 impaire mod 13, ancre k=1, rayon r=π/6, cible A=cos(π/6)·z_1 (centre de l'ellipse, η=0), premier des quatre candidats de jets V6.41 (hauteur 5, premier vecteur archivé dans v641_geometrie.json) ; règle de sélection : plus petite hauteur, premier membre, comme au document 66. Recours fixés d'avance, dans l'ordre : second membre à la hauteur 5, puis les deux candidats ancre k=3, hauteur 15.\nCHEMIN SUR LA FIBRE EXACTE : c(λ)=cos r·e_1+sin r·(cos λ·p+sin λ·q), avec p,q orthonormés de ker M_1 définis exactement (Gram–Schmidt de combinaisons rationnelles fixées de vecteurs exacts du noyau), p proche de u* du candidat, q dans la direction de plus forte pente de Z(5) projetée sur ker M_1 ∩ p^⊥. Ancre, rayon, norme et A sont conservés exactement pour tout λ. Système G(λ,t)=(H,H_t), H=Re[ωF], lemme I2 du document 66 avec projection sur une composante séparée de zéro.\nPRÉVISIONS : (P1) un zéro double unique (λ*,t*) est certifié par inclusion et contraction (théorème I3) aux plans 50 et 80 décimales, avec |λ*|<10⁻⁶ et |t*−5|<10⁻⁶, et Z_λ, Z_tt séparés de zéro (pli transversal sur la fibre). (P2) Le contour |w−w*|=1/5 passe le test de Rouché uniforme pour λ∈[λ*−10⁻⁴, λ*+10⁻⁴] (recours fixé : rayon 1/10). (P3) Aux paramètres λ_c±10⁻⁴ : d'un côté deux zéros critiques certifiés par symétrie et unicité, de l'autre une paire hors droite, le côté étant celui donné par le signe de κ=−2Z_λ/Z_tt. (P4) Témoin négatif : le long de la direction tangente orthogonale à q (où Z_λ s'annule au premier ordre), le même certificat avec les mêmes largeurs de boîtes est refusé (contraction ≥1 ou jacobien non séparé).\nCE QUI ME DONNERAIT TORT : Z_tt ou Z_λ non séparés de zéro aux deux précisions, inclusion refusée, Rouché refusé aux deux rayons, ou témoin P4 accepté (le test ne discriminerait pas). Dans ces cas : obstacle documenté, sans élargir après coup les boîtes ni changer de candidat hors de l'ordre de recours.\nPORTÉE ANNONCÉE D'AVANCE : un pli local d'une famille V13 sur une fibre à A constant. L'argument n'utilise que l'équation fonctionnelle commune et des bornes explicites ; il s'appliquerait mot pour mot à une combinaison de type Davenport–Heilbronn, il ne dit donc rien de RH ni de la loi globale de Weil. Statut visé en cas de succès : demontre (assisté par ordinateur, backend iv de mpmath 1.3.0 déclaré expérimental)."
+      },
+      "empreinte_precedente": "61267fef1513c533dba0b70d1bb24b13d8b0920591a653fa9b5d0804cfbc6b0d"
+    },
+    {
+      "n": 32,
+      "le": "2026-10-18T00:12:58+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-007",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-007/RAPPORT.md": "a3a149069816386397f462c756167ae21bb66415ca910920945283a7ae35f1a2",
+          "2_Methode/Depot/TAC-007/p1_mesure_noyau_08.py": "df8a0ac1ad4f4612e61a89fc8ddf9c2edc4994d00104bec3cf1f6df1a3c1e87f",
+          "2_Methode/Depot/TAC-007/p1_resultats.json": "274489dabe8d3ab8ab9d83ca6e59c56041e6afb676130693ee0f2677533f13ec",
+          "2_Methode/Depot/TAC-007/p2_budgets_architecture_doc75.py": "e85c4df5fcb8b49ad1247ccd02db65bb8e2e6f394be856658346c798b07a5124",
+          "2_Methode/Depot/TAC-007/p2_resultats.json": "ad95651ab465f5a45fa5f125af580930deccc45043ce5cee9a11a2ede8ba1e99",
+          "2_Methode/Depot/TAC-007/p3_controles_adverses.py": "ea5a26a49cd43ab1414ecc7c77fb4077fe266cc4da5ba6cab56582b199533aa9",
+          "2_Methode/Depot/TAC-007/p3_resultats.json": "7af0b2783281c2f15e03f7f118cc327f2b51699e3368a94db16122973f434328"
+        },
+        "statut_propose": "partiel",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "2269ce0a7a2bc45edd81c64dc679e6cf76fde4865b8f00ba5bb8c93c746686cf"
+    },
+    {
+      "n": 33,
+      "le": "2026-10-18T00:12:58+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-002",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Algèbre rejouée (2 000 formes aléatoires, contre-modèle) : juste. Sortie attendue sur de vrais paquets non fournie ; contenu repris du document 76 (§ 2.3, témoin à deux paquets) sans citation ; corps de fonctions non traité ; témoin négatif abstrait ; formules altérées. Statut juste : ouvert. Voir verification/VERIFICATION.md et fil #7."
+      },
+      "empreinte_precedente": "e97423820fc2e642092756e898b539d30fa9ebd25bfa432489a3f054bc56604b"
+    },
+    {
+      "n": 34,
+      "le": "2026-10-18T00:12:58+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-003",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Lemme dual rejoué (2 000 formes aléatoires, optimalité 1D, garde de restriction) : juste. Déjà énoncé et démontré au document 76 (§ 2.2, lemme C) ; donnée du document 79 (rho ≈ 0,999999832) non exploitée ; aucune constante ; DH, corps de fonctions et témoin négatif absents ; formules altérées. Statut juste : ouvert. Voir verification/VERIFICATION.md et fil #8."
+      },
+      "empreinte_precedente": "b37fec43343268aee68aab14ea65295c99556a775629f8defe250a4ba91e07eb"
+    },
+    {
+      "n": 35,
+      "le": "2026-10-18T00:18:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-004",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Prévision (avant tout calcul). Domaine : tests C_c^infty à moments polaires nuls, alphabet des deux filtres B_2, B_3 du lemme F (doc. 76), norme nu (H^1 à poids e^{2|x|}) qui rend Q_W continue uniformément en support. Attendu : la couverture qualitative du lemme F devient une décomposition EXACTE f = B_2 g_2 + B_3 g_3, g_p = phi_p * P^{-1}f, avec une paire universelle de distributions à support compact (Bézout dans l'algèbre de Paley-Wiener-Schwartz), budget de support fixé ch supp f + [-log 3, log 3], sans passage à la limite. Ingrédient arithmétique attendu : minoration polynomiale de ||k log3/log2|| (mesure d'irrationalité finie, Baker) ; les quasi-collisions de zéros des deux symboles suivent les commas 3^12~2^19, 3^53~2^84 et fixent l'ordre des distributions. Algorithme : moindres carrés en norme nu sur splines à support fixé ; contrat |Q_W(f)-Q_W(f_h)| <= C_W nu(f-f_h)(nu(f)+nu(f_h)), C_W explicite, résidu nu calculable a posteriori. Ce qui me donnerait tort : (i) pas de minoration polynomiale de |b_2|+|b_3| hors de ±1/2 (support de Bézout non borné) ; (ii) approximants convergents en L^2 seulement ou à support croissant ; (iii) témoins non détectés : paire commensurable (2,4), filtre seul, cible à moments non nuls doivent faire stagner le résidu nu ; le schéma de Neumann à un filtre doit converger en L^2 et diverger en nu. Aucun signe de Q_W n'est attendu ni revendiqué ; l'énoncé, purement de translation, vaudra aussi pour Davenport-Heilbronn et ne peut donc servir seul pour RH."
+      },
+      "empreinte_precedente": "7252c37feac4786e1accf28c4c4242d16d350dd219bf9cbb943390c3d13e695f"
+    },
+    {
+      "n": 36,
+      "le": "2026-10-18T00:19:15+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "retiree",
+      "details": {
+        "motif": "Demande de l'auteur dans le fil #4 (« Ajouter un témoin comme demandé ») : ajouter un témoin négatif (défaut eulérien injecté) avant vérification. Règle de retrait fusionnée par l'auteur (PR #10)."
+      },
+      "empreinte_precedente": "be49885462356f27af9d42c424520e23ea17b25cdff2aa23eab5813724545620"
+    },
+    {
+      "n": 37,
+      "le": "2026-10-18T00:19:15+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Complément (fil #4), écrit avant calcul. Témoin négatif : on injecte dans ζ un défaut eulérien localisé dans la part « même premier » : b(p^k) = Λ(p^k)·(1 + η) pour k ≥ 2, η ∈ {0,5 ; 1 ; 2} (premiers seuls inchangés), et un défaut de phase : b(p²) = −Λ(p²). Mêmes réglages qu'au premier dépôt (n ≤ 20 000, h = 0,5, u de 2 à 8, T = 1 et 10). Prévision : à T = 1, la distance ‖K_chaîne(défaut) − K_chaîne(ζ)‖/trace dépasse d'au moins un facteur 10 celle de K_diag et de K_croisé pour chaque défaut, et croît avec η ; la part relative de K_chaîne de ζ bouge d'au moins 20 % pour η = 1. À T = 10, le défaut reste invisible dans K_chaîne (nul à l'arrondi, résolution plus fine que log 2), seul K_diag le voit. Réfutation : défaut non localisé dans K_chaîne à T = 1, ou visible dans K_chaîne à T = 10."
+      },
+      "empreinte_precedente": "835f2ea1ff658b9ce41a3eee1e021d750319cb7527f6aadd544a5e26252b5dc4"
+    },
+    {
+      "n": 38,
+      "le": "2026-10-18T00:25:10+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-008/RAPPORT.md": "34deeb0d2747f4fed5a88734d0f92c7374e03f04b4de2783161e750081e7bb86",
+          "2_Methode/Depot/TAC-008/decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+          "2_Methode/Depot/TAC-008/resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3",
+          "2_Methode/Depot/TAC-008/temoin_negatif.json": "33c342253d6f2e7e8767f903a53b30b5bf36b8557b9c6ac4c6edce7100343404",
+          "2_Methode/Depot/TAC-008/temoin_negatif.py": "fec1bb9028ee21cdeaa9860571158927b32ccbecb470a7b4a68308ff487eabd5"
+        },
+        "statut_propose": "obstacle",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "06d53ce074592511f48e4026875fbebde337d1cb9360df1f4598a0a65e45057f"
+    },
+    {
+      "n": 39,
+      "le": "2026-10-18T15:06:03+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-006",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-006/RAPPORT.md": "f8d3541e53ab2104bf754c97f077c6ae988baa61f55fcaa4e120182f62371392",
+          "2_Methode/Depot/TAC-006/journaux/essai1_arret_newton80.txt": "6bd77a25551d7e39f6ceaceb1150fa35c46527d9f67b6479cd3b55bf0b168ff9",
+          "2_Methode/Depot/TAC-006/journaux/essai2.txt": "2342ff36b49e37b5a99273f9dbdd109e9918b8f8f0650028484e10af3c0f83cd",
+          "2_Methode/Depot/TAC-006/journaux/essai3.txt": "c9befb7e02e84eef3ac7f862985f57660934449a0b6d2a03ed1780b9b784f14f",
+          "2_Methode/Depot/TAC-006/journaux/essai4_revision.txt": "f468defdb19b18ab940dac69eb47e9a07f12ae324de8575a5801ee0273d4fd29",
+          "2_Methode/Depot/TAC-006/journaux/verification_rationnelle.txt": "8e5cabe7820e108b1bb1b48ea7a88f39d3c2b6dc7070a9179ed7f8d848e0bffc",
+          "2_Methode/Depot/TAC-006/resultats_tac006.json": "e57eeff75891a7226eb0d9e4849827233e20f65e5c52dfedf67e3b8f99e6dfeb",
+          "2_Methode/Depot/TAC-006/run_tac006.py": "9f9d71b952b248a16d5ef138a3dd3769f7cedd3a0e058f97bc313fb328a137de",
+          "2_Methode/Depot/TAC-006/tac006_pli_fibre.py": "cfd42d377d1e7df2ac02813b810c3e822dad26af5475ba97f40d6e51487cd4c6",
+          "2_Methode/Depot/TAC-006/verifier_tac006.py": "c2f04a0dd0776be35f7cf71cb4c5a6d78da993c91dcdb36c8bc7b80d486d40ac"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "f4e61d75cb593ef881a3716678718fc3baee75fc99272f48e1a721ec63609b35"
+    },
+    {
+      "n": 40,
+      "le": "2026-10-18T15:13:39+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-008",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Deux programmes rejoues integralement et 257 controles reussis ; critere initial et portee de l'obstacle non etablis (R1-R2). Revue PR #20 ; reponse demandee dans https://github.com/vppnoel/Riemann/issues/4#issuecomment-6251525999. Calculs conserves."
+      },
+      "empreinte_precedente": "78d09228e71af0cc214a2cadb9ec4fea4dd0976c4c914a593f9efa99fcf0fb9d"
+    },
+    {
+      "n": 41,
+      "le": "2026-10-18T15:33:13+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-008",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-008/RAPPORT.md": "99100205c5e2b09d180c27693abe977444328243b75da0695c24824ed0134017",
+          "2_Methode/Depot/TAC-008/decomposition_K.py": "fbe5f57a77f4ff9745b70ceeca2a1939e7e83db714225c3462ecda510cecefd3",
+          "2_Methode/Depot/TAC-008/resultats.json": "3666b668e4fa8b507b70de5cf08c2816bdceaf51d9ae166d869770160294e6b3",
+          "2_Methode/Depot/TAC-008/temoin_negatif.json": "33c342253d6f2e7e8767f903a53b30b5bf36b8557b9c6ac4c6edce7100343404",
+          "2_Methode/Depot/TAC-008/temoin_negatif.py": "fec1bb9028ee21cdeaa9860571158927b32ccbecb470a7b4a68308ff487eabd5"
+        },
+        "statut_propose": "diagnostic",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "b9e5c933c995af624aff2d418ee35a17d5e434e2cf54c12e0a628933b02600f6"
+    },
+    {
+      "n": 42,
+      "le": "2026-10-18T16:43:21+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-009",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Aucun calcul déposé. Prémisse fausse : par Mellin–Plancherel le Gram NB standard contient |zeta(1/2+it)|^2 ; spectre normalisé calculé en x (0,413…1,598) et par Mellin, nettement distinct du témoin géométrique (0,525…1,243). Référence JTNB mal attribuée (Alouges–Darses–Hillion). De Roton : classe de Selberg, DH hors classe, non discuté. Contrôles absents ; formules altérées. Statut juste : ouvert. Voir verification/VERIFICATION.md et fil #9."
+      },
+      "empreinte_precedente": "b5e4f94e6aae8a860c9d54f64505e1091116edda64672db58e0cd9d246482360"
+    },
+    {
+      "n": 43,
+      "le": "2026-10-18T18:01:43+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-004",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-004/RAPPORT.md": "1f5ec7a3f25bd1a9a263e98d68fe0b5bd6fa16b2a120f266d18074dac9114222",
+          "2_Methode/Depot/TAC-004/p1_bezout_diophantien.py": "187bf29d7074f32a2a4524b2a6f13122d987ad15232a0ec14d93858a7664d306",
+          "2_Methode/Depot/TAC-004/p1_resultats.json": "5f27e4534cd0f2839275147f9a3dae6b11e285b3c5fd8f834811325783fec455",
+          "2_Methode/Depot/TAC-004/p2_approximants_nu.py": "97630b64de62422b889235555e3d8ab687867dd98f8c02023f854fa0ee58152e",
+          "2_Methode/Depot/TAC-004/p2_resultats.json": "a0ce82bc48659d9ac88e6262ac1db0e780b4627933f991ac994d1f5fbe8eb93a",
+          "2_Methode/Depot/TAC-004/p2_resultats_passe1.json": "444ffd734d65440eb3be1017b7d47eb333fb2ff4ce101343f034cab9af12f7a6"
+        },
+        "statut_propose": "partiel",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "2c29914a134b1bc82a09b503db3e13024efff67874d7e71d9685e025f3011b32"
+    },
+    {
+      "n": 44,
+      "le": "2026-11-22T17:21:26+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-010",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:verif-adverse-note-alpoge-2026",
+        "cycle": 1
+      },
+      "empreinte_precedente": "dd0df54bee491775faa900977d789308178436f879d914c3332010a9b6fcb872"
+    },
+    {
+      "n": 45,
+      "le": "2026-11-22T17:21:26+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-010",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:chatgpt-sol-6.1-max"
+      },
+      "empreinte_precedente": "48d7da221e9808cc4c35b17129bed449093120282779054978befe9998bd09d0"
+    },
+    {
+      "n": 46,
+      "le": "2026-11-22T17:21:26+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-011",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:article1-inconditionnel-apres-grh",
+        "cycle": 1
+      },
+      "empreinte_precedente": "645ffdf1bf2101018d084732ead51dbafd54cb0a44886c498ea904e62b13ea64"
+    },
+    {
+      "n": 47,
+      "le": "2026-11-22T17:21:27+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-011",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:chatgpt-sol-6.1-max"
+      },
+      "empreinte_precedente": "0cd9b2e691bbead1505150efd657b32d93773158c66adf2ba4f96d93a6ddcf22"
+    },
+    {
+      "n": 48,
+      "le": "2026-11-22T17:21:27+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-012",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:doc80-carre-ou-multiplicite",
+        "cycle": 1
+      },
+      "empreinte_precedente": "bd03d9bb8df3115cc5c3a5039b416dccb034f8692ff82b4603a155e4f20ba031"
+    },
+    {
+      "n": 49,
+      "le": "2026-11-22T17:21:27+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-012",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:chatgpt-sol-6.1-max"
+      },
+      "empreinte_precedente": "c479f7c74f6d57c864040a9c5099dd47caf7aac9a09ee5eb612d02c18ce6f735"
+    },
+    {
+      "n": 50,
+      "le": "2026-11-22T19:18:34+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-010",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Je prévois qu’au moins une affirmation sur la validation indépendante ou sur le mécanisme en quatre étapes demandera une restriction de portée. Des sources primaires datées établissant chaque affirmation avec les mêmes quantificateurs, y compris le périmètre de la compilation et de la relecture, me donneraient tort."
+      },
+      "empreinte_precedente": "3a5415b6f0a241dd3447ea9e525c454786ed649dd561f25b75f58da854caf6b5"
+    },
+    {
+      "n": 51,
+      "le": "2026-11-22T20:12:56+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-013",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:echelle-niveau1-rapports-factorielles",
+        "cycle": 1
+      },
+      "empreinte_precedente": "2cd98ae31b5ef697e64dd35a0cbdc35a918d73740718d29c52b6ed37f5d88a1d"
+    },
+    {
+      "n": 52,
+      "le": "2026-11-22T20:12:56+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-013",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "75745d1fc6b8075eaa9a89330e8a5457d0bdd1a7bdcd9447623fa9ac1a5970dd"
+    },
+    {
+      "n": 53,
+      "le": "2026-11-22T20:12:56+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-014",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:echelle-dh-sans-entiers",
+        "cycle": 1
+      },
+      "empreinte_precedente": "80c83dccef8884e6b278c27f11456c416b14c12732c92a00f54875aecc6269c7"
+    },
+    {
+      "n": 54,
+      "le": "2026-11-22T20:12:56+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-014",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "5480927c9fdc4f5be07a9cf08123d417f2b68bc133cc410cbc7ae81e47d9e632"
+    },
+    {
+      "n": 55,
+      "le": "2026-11-23T00:49:13+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-013",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Objet : majorations de ψ par des rapports de factorielles à valeurs entières (méthode de Tchebychev), sans multiplicité. Pour des poids a_k avec Σ a_k/k = 0, F(y) = Σ a_k ⌊y/k⌋ est bornée et périodique ; si 0 ≤ F ≤ 1 et F = 1 sur [1, c), l'entier N_F(x) = Π ⌊x/k⌋!^(a_k) donne ψ(x) − ψ(x/c) ≤ log N_F(x). Le gaspillage est W(x) = log N_F(x) − (ψ(x) − ψ(x/c)) = Σ_{n ≤ x/c} Λ(n) F(x/n).\nPrévision (raisonnement analytique fait avant tout calcul, à vérifier) :\nP1. Pour chaque F fixé, W(x) est d'ordre x : W(x)/x tend vers ∫_c^∞ F(y) dy / y², qui est > 0 dès que F ne s'annule pas au-delà de c. Valeurs attendues : C(2n,n) (c = 2) : W/x ≈ 0,193 (soit 0,387 par n, comme au niveau 0) ; Tchebychev (1, 2, 3, 5, 30 ; c = 6) : W/x ≈ 0,088. Mesuré jusqu'à x = 10⁶ : écart à ces limites < 0,01.\nP2. La constante de majoration s'améliore (2 log 2 ≈ 1,386, puis 1,1056 pour Tchebychev), mais W/√x croît sans borne pour chaque F : l'ordre de l'erreur ne change pas.\nP3. Une recherche exhaustive sur les poids a_k ∈ {−1, 0, 1} portés par les diviseurs de 210 (avec a_1 = 1 et a_2 = a_3 = a_5 = a_7 = −1) trouve au moins un F valide avec c > 6 et une constante < 1,1056 ; son gaspillage reste d'ordre x.\nP4. Diamond et Erdős (1980) : constantes arbitrairement proches de 1, mais en utilisant des valeurs de μ jusqu'à un T qui croît, donc sans donner d'erreur o(x) pour un F fixé. À vérifier sur l'original.\nCe qui me donnerait tort : un F valide avec W(x) = o(x) (P1 réfuté, et avec lui le §5 du document de travail) ; ou une source montrant qu'un rapport de factorielles fixé donne une erreur o(x)."
+      },
+      "empreinte_precedente": "7682639fc55e75c508c961bbc5f1d693abfee862c56d537f8c4bf548e074b320"
+    },
+    {
+      "n": 56,
+      "le": "2026-11-23T00:55:40+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-013",
+      "evenement": "perimee",
+      "details": {
+        "entrees_modifiees": [
+          "1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md"
+        ]
+      },
+      "empreinte_precedente": "74c040175fe9a5df11c35f5c1d3088cff91ab6191c9d56782d369ed89d94aa66"
+    },
+    {
+      "n": 57,
+      "le": "2026-11-23T01:00:34+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-015",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:echelle-niveau1-rapports-factorielles-v2",
+        "cycle": 1
+      },
+      "empreinte_precedente": "db30dd2342feed056fc0a8eff62a0382fd39b5b9e3f70219a0cf33c7dbb3e7df"
+    },
+    {
+      "n": 58,
+      "le": "2026-11-23T01:00:34+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-015",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "cc33ffa82c2877509f67c024d71eeace7e8845ce892834156af67547fa712a42"
+    },
+    {
+      "n": 59,
+      "le": "2026-11-23T01:00:34+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-016",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:echelle-dh-sans-entiers-v2",
+        "cycle": 1
+      },
+      "empreinte_precedente": "aaa625e9eeca616fb712ecf02411e21165723ad4f4d6412a0b63674a91890d61"
+    },
+    {
+      "n": 60,
+      "le": "2026-11-23T01:00:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-016",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "c2a56a1fa7d40f65247e4e38b4d596b1ac41115c364e929039239414d08cc8f5"
+    },
+    {
+      "n": 61,
+      "le": "2026-11-23T01:00:44+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-015",
+      "evenement": "prevision",
+      "details": {
+        "texte": "PRÉVISION RECOPIÉE APRÈS CALCUL, par décision de l'auteur du 23 novembre 2026. Ce texte est celui de la prévision de TAC-013, enregistrée le 2026-11-23T00:49:13+00:00 avant tout calcul (commit 584a519 sur main). TAC-013 est devenue périmée après le calcul, parce que son entrée a été modifiée (annexe A) ; le calcul est déjà fait (PR #36) et ses résultats sont connus. Cette prévision n'est donc pas aveugle pour TAC-015 : sa valeur de prévision vient uniquement de TAC-013.\n\n--- Texte original ---\nObjet : majorations de ψ par des rapports de factorielles à valeurs entières (méthode de Tchebychev), sans multiplicité. Pour des poids a_k avec Σ a_k/k = 0, F(y) = Σ a_k ⌊y/k⌋ est bornée et périodique ; si 0 ≤ F ≤ 1 et F = 1 sur [1, c), l'entier N_F(x) = Π ⌊x/k⌋!^(a_k) donne ψ(x) − ψ(x/c) ≤ log N_F(x). Le gaspillage est W(x) = log N_F(x) − (ψ(x) − ψ(x/c)) = Σ_{n ≤ x/c} Λ(n) F(x/n).\nPrévision (raisonnement analytique fait avant tout calcul, à vérifier) :\nP1. Pour chaque F fixé, W(x) est d'ordre x : W(x)/x tend vers ∫_c^∞ F(y) dy / y², qui est > 0 dès que F ne s'annule pas au-delà de c. Valeurs attendues : C(2n,n) (c = 2) : W/x ≈ 0,193 (soit 0,387 par n, comme au niveau 0) ; Tchebychev (1, 2, 3, 5, 30 ; c = 6) : W/x ≈ 0,088. Mesuré jusqu'à x = 10⁶ : écart à ces limites < 0,01.\nP2. La constante de majoration s'améliore (2 log 2 ≈ 1,386, puis 1,1056 pour Tchebychev), mais W/√x croît sans borne pour chaque F : l'ordre de l'erreur ne change pas.\nP3. Une recherche exhaustive sur les poids a_k ∈ {−1, 0, 1} portés par les diviseurs de 210 (avec a_1 = 1 et a_2 = a_3 = a_5 = a_7 = −1) trouve au moins un F valide avec c > 6 et une constante < 1,1056 ; son gaspillage reste d'ordre x.\nP4. Diamond et Erdős (1980) : constantes arbitrairement proches de 1, mais en utilisant des valeurs de μ jusqu'à un T qui croît, donc sans donner d'erreur o(x) pour un F fixé. À vérifier sur l'original.\nCe qui me donnerait tort : un F valide avec W(x) = o(x) (P1 réfuté, et avec lui le §5 du document de travail) ; ou une source montrant qu'un rapport de factorielles fixé donne une erreur o(x)."
+      },
+      "empreinte_precedente": "c2e04adf5e28424ddc74d462793bc390c406f40caa772e9a4e75ebcc4df1fe7b"
+    },
+    {
+      "n": 62,
+      "le": "2026-11-23T01:05:07+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-015",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-015/RAPPORT.md": "bbe0756420a5514d5325f34656b1c3d37cf20aaea1baab36cd97b3dd347a5bf4",
+          "2_Methode/Depot/TAC-015/resultat_exploration_apres_coup.txt": "a73fc0d50cd62732a2970126009eba7318d5cd9486fce392ac63689df8d0e703",
+          "2_Methode/Depot/TAC-015/resultat_tac013.txt": "cd02b665b6b4f17b1558d71041ccebef705c8cfa19a20c4e73f0ce00222e4ccc",
+          "2_Methode/Depot/TAC-015/tac013_exploration_apres_coup.py": "bf161eafc4de4af8f7763ce02c9bb9087b0417032f38ded2f406a17cc052c2a0",
+          "2_Methode/Depot/TAC-015/tac013_niveau1.py": "1360542096a27caf2af7a183be3049f7ccdb7c4924ed14fb3026fd7217902faa"
+        },
+        "statut_propose": "classique",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "f89f377ea3d3d9f0e419b08d67409d582019513fa0a69b19774c4ab6b55d4aa0"
+    },
+    {
+      "n": 63,
+      "le": "2026-11-23T01:16:27+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-017",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:echelle-niveau3-landau-localise-zeta",
+        "cycle": 1
+      },
+      "empreinte_precedente": "d0fe93291d9c5ea4fb95df71bafa2ef9c9a20b8bfba32449a651a258a0c20c3e"
+    },
+    {
+      "n": 64,
+      "le": "2026-11-23T01:18:31+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-017",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "435aeed8ba99d4ab3bd91be485ebf71fb60f7c52ceab85478ed1d86fccad1c5d"
+    },
+    {
+      "n": 65,
+      "le": "2026-11-23T01:18:47+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-017",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Écrite le 23 novembre 2026 vers 1 h 20 UTC, avant d'avoir ouvert le code Lean et avant tout calcul. Je connais seulement le guide d'architecture (§2–3) et mes propres résumés.\nP1 (preuve humaine). Pour ζ seule (famille réduite au caractère trivial), la Proposition du §3 se démontre avec : la transformée de Mellin de la rampe, n^(−s)/(s(s − 1)) ; la formule explicite qui en découle ; une transformée de Laplace en log y et ses dérivées d'ordre k, qui localisent sur la fenêtre ; le théorème de Landau sous forme unilatérale (|g| + g = 2g⁺). Ingrédients supplémentaires attendus : seulement des bornes classiques (nombre de zéros N(T) ≪ T log T, croissance de ζ′/ζ hors des zéros). Aucun outil automorphe. Longueur attendue : 4 à 8 pages.\nP2 (énoncé Lean). L'énoncé Lean de zeroFree_of_rpow_window a la forme du guide (pour tout C, il existe Y₀, pour tout Y ≥ Y₀, il existe y dans [Y, Y^(1+δ)] avec G_F(y) > C y^θ), mais je prévois qu'il est écrit avec des paramètres plus particuliers que le guide (δ = 1/2 fixé, ou des hypothèses explicites sur θ dans ]1/2, 1[) : écart de forme, pas de fond.\nP3 (numérique). max |G(y) − log 2π| / √y sur [10, 10⁷] est < 0,023, comme l'annonce le guide, donc nettement sous κ ≈ 0,0462. Je prévois un maximum entre 0,010 et 0,023, atteint pour y petit (< 10³).\nP4 (théorème A). La Proposition localisée entraîne la moitié « minoration » d'un énoncé global du type du théorème A (s'il y a un zéro à droite de θ, la statistique dépasse y^θ infiniment souvent), mais pas la moitié « majoration ». Le théorème A, qui porte sur Q (pôles doubles), demande une variante avec poids différents ; la Proposition ne le contient pas directement.\nP5 (témoin DH). Pour Davenport–Heilbronn, l'argument échoue à l'étape « un seul côté suffit », parce que les résidus aux zéros n'ont pas de signe : leurs coefficients de −F′/F ne sont pas positifs.\nCe qui me donnerait tort : un ingrédient non classique nécessaire à la preuve humaine pour ζ (P1) ; un énoncé Lean qui diffère du guide sur le fond, par exemple d'autres quantificateurs ou une autre statistique (P2) ; un rapport ≥ 0,023 √y sur [10, 10⁷], ou ≥ κ (P3)."
+      },
+      "empreinte_precedente": "a65ead5dd6d09f294295e16a4b9c9f65a0415979e478e79c877c23977ee6881d"
+    },
+    {
+      "n": 66,
+      "le": "2026-11-23T01:27:10+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-017",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-017/PREUVE.md": "5d766e10cb70f65a20ed0a4b1d466a87451d6737a39483ce96eb2a9138ce4efc",
+          "2_Methode/Depot/TAC-017/RAPPORT.md": "31aa6a781d5cff7b01c3e7773520599d19febaced83fd5fc5d56f512334f782b",
+          "2_Methode/Depot/TAC-017/resultat_numerique.txt": "69a1b0f4478f3ff1c3fe8c4d2fb50120e055cd31eacd85201b31261345dfd384",
+          "2_Methode/Depot/TAC-017/tac017_numerique.py": "e45a4626799e8b0a24413e7f82bf0f03a9e207c4a714d6997f100a5cc7822766"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "52bbc4da3aabb8c6f8fa9eb578eaa440ad94464ce6ab62f55c6e2d3d4abe5d26"
+    },
+    {
+      "n": 67,
+      "le": "2026-11-23T01:30:29+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-016",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Écrite le 23 novembre 2026 vers 1 h 35 UTC, avant tout calcul. Connu avant d'écrire : la définition du corpus (src/family_mod5.py, src/rejection.py) — F = ½(1 − iκ)L(s, χ) + ½(1 + iκ)L(s, χ̄), χ mod 5 avec χ(2) = i, κ = (√(10 − 2√5) − 2)/(√5 − 1) ≈ 0,284, donc des coefficients a(n) = 1, κ, −κ, −1, 0 selon n mod 5 ; les zéros hors droite listés dans data/dh_zeros.csv (t ≤ 200, Re ρ ≤ 0,81) ; et le résultat de TAC-017 : l'étape « Landau localisé » n'utilise que la structure abstraite PoleData, sans positivité des coefficients.\nOn note b(n) les coefficients de −F′/F = Σ b(n) n^(−s), et G_DH(y) = Σ_{n≤y} b(n)(y/n − 1)₊ moins sa partie principale.\nP1 (coefficients). b(n) prend des valeurs négatives et des valeurs non nulles hors des puissances de premiers, dès n ≤ 30. Le premier n composé non puissance de premier avec b(n) ≠ 0 est n = 6.\nP2 (étape 1 franchie). F ne s'annule pas pour Re s ≥ 2 (la somme Σ_{n ≥ 2} |a(n)| n^(−2) est < 1) ; la série de −F′/F converge absolument pour Re s > σ₁ avec σ₁ < 2 ; les hypothèses de croissance de PoleData sont vérifiées : |G_DH(y)| ≤ C y² mesuré jusqu'à 10⁵. DH franchit donc l'étape 1, comme le prévoit TAC-017.\nP3 (étape 2 impossible). Aucun b(n) avec n non puissance de premier, ni b(2) = κ log 2, n'est un multiple rationnel d'un logarithme d'entier : exp(Σ b(n) F(x/n)) n'est pas un entier, ni même un rationnel, pour aucun rapport de factorielles F. Le « sac » de Tchebychev n'existe pas pour DH. Raison prévue : κ est irrationnel (algébrique de degré 4).\nP4 (mesure). |G_DH(y)| / √y n'est pas borné par une constante comparable à celle de ζ : il dépasse 1 avant y = 10⁵ (contre 0,023 pour ζ), signe des zéros hors droite.\nTémoins : ζ (b = Λ) et L(s, χ) (b = Λχ) passent les étapes 1 et 2 : b est porté par les puissances de premiers et vaut log p fois une racine de l'unité.\nCe qui me donnerait tort : b(n) ≥ 0 et porté par les puissances de premiers (P1 et P3 réfutés) ; F qui s'annule pour Re s ≥ 2, ou une croissance plus rapide que y² (P2 réfuté) ; |G_DH|/√y < 0,1 jusqu'à 10⁵ (P4 réfuté)."
+      },
+      "empreinte_precedente": "18b9a3cfba519c0ce8476070e9f75fa95c69453eef0d6e6291924fdfc57f0992"
+    },
+    {
+      "n": 68,
+      "le": "2026-11-23T01:33:35+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-010",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-010/RAPPORT.md": "6453f38c098b70c05bd0f8525d06832fa823dd261257c947d025203ae5acebd4"
+        },
+        "statut_propose": "refute",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "c5c0d320ef1b77caf8ca71761a7a0de19f95eb583a477dc5bf5a5e8c37392103"
+    },
+    {
+      "n": 69,
+      "le": "2026-11-23T01:35:42+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-016",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-016/RAPPORT.md": "3e85abcd48e48c3745410cacdbe4ce68a1faaeff620d8ffef6d92fdd74dd89c4",
+          "2_Methode/Depot/TAC-016/resultat_tac016.txt": "86d9654f88ff852e2a7060ae5313f157aebdb85e09996f0c73c8af4c77a3c581",
+          "2_Methode/Depot/TAC-016/tac016_sosie.py": "7cb078ec9bda499f043cc4faab1f1030993a886d499d718940038e9ffab33bab"
+        },
+        "statut_propose": "mesure",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "caee39ccac3bc74060e44fe78e29c69b704714871ed7a2c7f8b94e7daf0ac411"
+    },
+    {
+      "n": 70,
+      "le": "2026-11-23T01:39:14+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-018",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:theoreme-a-par-fenetres-loupe-double",
+        "cycle": 1
+      },
+      "empreinte_precedente": "5c2e5efd09e9632f824484a1da12e575304f29204c01a6da93d2dbc75387067d"
+    },
+    {
+      "n": 71,
+      "le": "2026-11-23T01:39:14+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-018",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "810bb9ca0b17fead64d4e497ef55289e7108ecd50d4d5efaabdbc755ff3dd053"
+    },
+    {
+      "n": 72,
+      "le": "2026-11-23T01:39:14+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-018",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Écrite le 23 novembre 2026 vers 1 h 45 UTC, avant toute rédaction et tout calcul. Avant d'écrire, j'ai seulement réfléchi de tête au signe du coefficient dominant ; je le dis pour que la prévision P1 ne passe pas pour aveugle.\nP1 (signe et côté). En un zéro ρ de multiplicité m, Φ_c(s) = (G_c(s) − s G_c(1))/(s(s − 1)) a un pôle double de coefficient dominant m(m + 1)/(ρ(ρ − 1)). Pour ρ réel dans ]0, 1[, ce coefficient est NÉGATIF (contrairement au résidu positif des pôles simples). Donc, pour la Loupe double, c'est un PLANCHER (H ≥ −C y^θ sur des fenêtres tardives) qui suffit à exclure tous les zéros à droite de θ ; un PLAFOND n'exclut que les zéros non réels. Pour ζ, qui n'a pas de zéro réel dans ]0, 1[, les deux côtés suffisent.\nP2 (preuve). La preuve de TAC-017 s'étend avec deux changements seulement : l'identité |g| = 2g⁻ + g au lieu de 2g⁺ − g, et le développement près d'un pôle double, a_k ≈ (k + 1) c₂ / (z − ρ)^(k+2), dont le facteur k + 1 ne gêne pas la contradiction.\nP3 (réciproque). Si Θ ≤ θ, alors |H(y)| ≪ y^θ log y, par la formule explicite (convergence absolue de Σ m²/|ρ|²). D'où : Θ = inf{θ : H(y) ≥ −y^θ sur des fenêtres arbitrairement tardives}.\nP4 (numérique). G_c(1) = 2γ² + 6γ₁ ≈ 0,2295 (γ₁ constante de Stieltjes). Avec ce centrage, max |H(y)|/(√y log y) sur [10, 10⁶] est entre 0,03 et 0,15, de l'ordre de 2κ ≈ 0,092, sans dérive linéaire.\nP5 (apport). Le résultat est une adaptation modeste d'une technique connue (Landau, Pringsheim, et la localisation d'Alpöge) ; la seule remarque peut-être nouvelle est le changement de côté pour les pôles doubles. Je prévois qu'une recherche ne trouvera pas cet énoncé tel quel, sans pouvoir l'exclure.\nCe qui me donnerait tort : un coefficient dominant de signe non fixe, ou positif pour ρ réel (P1) ; un obstacle dans le cas 2 dû au terme en 1/(z − ρ)^(k+1) (P2) ; une dérive linéaire de H (P4)."
+      },
+      "empreinte_precedente": "1b69bd4a9d4ab62a6e60afee1bef71adb01e95dfef04ac5decc66606617fb0d1"
+    },
+    {
+      "n": 73,
+      "le": "2026-11-23T01:45:29+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-018",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-018/PREUVE.md": "47d1cbe09df719800e0c51da79d47ef093e9e44a158bd7ede2e834cec40afa31",
+          "2_Methode/Depot/TAC-018/RAPPORT.md": "68d7779aabd9d4e341e760296a7b34215dc419b949bf2f1cbdf0cd15d027abe1",
+          "2_Methode/Depot/TAC-018/resultat_numerique.txt": "576edbfe46eee8b06a01f746db1def52d1733ba222828f1166bf4189c7eed891",
+          "2_Methode/Depot/TAC-018/tac018_numerique.py": "f659ec2dc494afc288d66402a39425a3c127959ec9c61ec9b341bf0df6bb3707"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "6d1ae4a4ed8e398af15b0b974bf515b2d20039fec1a5695c23fabfeb93b95676"
+    },
+    {
+      "n": 74,
+      "le": "2026-11-23T01:50:38+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-019",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:piste1-module-star-vers-theoreme",
+        "cycle": 1
+      },
+      "empreinte_precedente": "bab38d9b4c11b4804d7b7e1afa43dac53ca5250376607ec1ba8f4c8b4817b7ae"
+    },
+    {
+      "n": 75,
+      "le": "2026-11-23T01:50:39+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-019",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "1c93aef04c1555f1c2c1b9e848edbf689a3e9cafd2a85b8d3eddbd5097406685"
+    },
+    {
+      "n": 76,
+      "le": "2026-11-23T01:50:39+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-019",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Écrite le 23 novembre 2026 vers 1 h 52 UTC, avant d'avoir ouvert TopWin.lean, Window.lean, ZeroFreeAllOfTopG.lean, Main.lean et les fichiers de réflexion. Je connais le guide (§1, §3, ordre des choix) et les fichiers lus pour TAC-017 (LandauTheorems, CharFamily, LandauZeroFreeCriterion).\nP1. La déduction (⋆) ⇒ théorème n'utilise aucun ingrédient analytique au-delà de TAC-017 et du §1 : réflexion (facteurs d'Euler aux p | N, équation fonctionnelle), famille positive P(ψ), Landau localisé pour une famille (les résidus s'ajoutent avec des poids positifs), ordre des choix. Longueur lisible : 4 à 6 pages.\nP2. Aucun traitement spécial des zéros de Siegel dans le Lean : un zéro réel est un pôle de résidu positif, et le cas 1 de TAC-017 s'en charge.\nP3. Les poids précis 1 et 1/(3o + 1) ne jouent aucun rôle dans la déduction : toute famille à poids positifs contenant ψ convient. Leur valeur vient du §5.\nP4. L'énoncé Lean de (⋆) a la forme du guide : il existe ε₁ > 0 tel que, pour tout 0 < ε < ε₁, il y a des Y arbitrairement grands avec G_ψ(x) ≤ x^(1/2 + 9ε) sur [Y, Y^(3/2)]. Je prévois au plus un écart de forme (constante multiplicative, ou fenêtre écrite autrement).\nP5. La réduction aux primitifs se fait en Lean avant d'appliquer Landau (la famille CharFamily exclut les caractères principaux de module > 1), et l'équation fonctionnelle n'intervient qu'à la toute fin, pour passer de « pas de zéro pour Re s > ½ » à « zéros sur Re s = ½ ».\nCe qui me donnerait tort : un ingrédient supplémentaire (densité de zéros, argument propre aux zéros de Siegel, borne sur L′/L) dans la déduction (P1, P2) ; des poids qui comptent (P3) ; un (⋆) différent sur le fond (P4)."
+      },
+      "empreinte_precedente": "ffe679ecf5bc0d2ae8faf11b95001c496e10c391ee456b73496d9f9b91c2a863"
+    },
+    {
+      "n": 77,
+      "le": "2026-11-23T01:56:27+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-015",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Deux mesures et le lemme reproduits. Le troisième exemple demandé, Sylvester, manque. Rapport de vérification PR #47, fil #38."
+      },
+      "empreinte_precedente": "dfa762cf198246b272f146a68d653438d34081a68f7c155903b3e66f051693dc"
+    },
+    {
+      "n": 78,
+      "le": "2026-11-23T01:56:51+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-019",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-019/NOTE_EN.md": "2d974ad22c8cac7c117b65947e6c3c5b57ab5fea45b7cbbd43fa4423e4a1ea54",
+          "2_Methode/Depot/TAC-019/RAPPORT.md": "b252d7ff7c6ec20e2c09a73127c713b268eb0b80681979433ca641d255600975"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "4567d1fd1fd59c8fc545385b66882250919ecf899fe0360c27f05038d34c87eb"
+    },
+    {
+      "n": 79,
+      "le": "2026-11-23T01:57:11+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-016",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Recalcul exact de 2 619 coefficients. Le témoin quartique manque et α₁₁(11)=1 contredit la formulation universelle de P3. Rapport de vérification PR #48, fil #39."
+      },
+      "empreinte_precedente": "6e28e5add99c9c19edb660b709eefbd626b6bf6cd003a305573ae37e22fd5138"
+    },
+    {
+      "n": 80,
+      "le": "2026-11-23T01:57:53+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-017",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Le noyau unilatéral est valide. La géométrie des pôles dans la preuve écrite et la recherche des extrema du quotient doivent être corrigées. Rapport de vérification PR #50, fil #40."
+      },
+      "empreinte_precedente": "1220d21e8fc9045ed9510ccadeeee232c82d8470aa281d92f96a02469eb2f415"
+    },
+    {
+      "n": 81,
+      "le": "2026-11-23T02:00:00+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-018",
+      "evenement": "retiree",
+      "details": {
+        "motif": "L'étape 5 de TAC-018 reprend la transition géométrique fausse de TAC-017 (distance horizontale prise pour la distance euclidienne), relevée par la vérification de TAC-017 (#40, 2_Methode/Depot/TAC-017/verification/VERIFICATION.md §2). Retrait avant vérification pour corriger. Fil : #44."
+      },
+      "empreinte_precedente": "11938238432167d7d7a5f5c67386ecceb8c85b917452e947713bfaa01935e114"
+    },
+    {
+      "n": 82,
+      "le": "2026-11-23T02:00:00+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-019",
+      "evenement": "retiree",
+      "details": {
+        "motif": "La note renvoie à l'étape 5 de TAC-017, dont la transition géométrique est fausse, et son tableau §8 affirme à tort que Lean est plus général que le guide sur θ (vérification de TAC-017, #40, §1–2). Retrait avant vérification pour corriger. Fil : #46."
+      },
+      "empreinte_precedente": "051a7966c08cb3d2e9163ba2620e431ec5148d7597ae84929c568a6f68264c33"
+    },
+    {
+      "n": 83,
+      "le": "2026-11-23T02:00:28+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-020",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:piste1-module2-moyenne-caracteres",
+        "cycle": 1
+      },
+      "empreinte_precedente": "a2d756cf4ecb77d20b14cb0fce06a8013173d7a7732cf37791ba6515a18706e4"
+    },
+    {
+      "n": 84,
+      "le": "2026-11-23T02:07:57+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-017",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-017/PREUVE.md": "7aa1000a6d46755d06f78fdc53b174d28c99e368878e159a5157b57369164db6",
+          "2_Methode/Depot/TAC-017/RAPPORT.md": "b8711ea8d8a47f6ff3421eef5e0022e093c5aa3bd7f58accd4525b07d732d05f",
+          "2_Methode/Depot/TAC-017/resultat_numerique.txt": "0dd44605cb63caba1d0bcd9f08bc65d377e113a756730735cccbb6460d70b8e4",
+          "2_Methode/Depot/TAC-017/tac017_numerique.py": "c2921394de3fc048ad193b2a2efe9b5211d1e7c35167e4ba90cc6fe13c8ceebb"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "0e63b49b645344dafab4c857af6089c83ea75f9e68b16cd6244d826e6e7a4d53"
+    },
+    {
+      "n": 85,
+      "le": "2026-11-23T02:08:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-021",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:piste1-module-star-vers-theoreme-v2",
+        "cycle": 1
+      },
+      "empreinte_precedente": "4692a890197e2ce184c2ced7fb11fbe367790e51ba2439d2968d7cb1384080a1"
+    },
+    {
+      "n": 86,
+      "le": "2026-11-23T02:08:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-021",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "b36c447e04a096d38e3092e6f16a563a85c3a3c2fb24ddc1b141482cb105fa63"
+    },
+    {
+      "n": 87,
+      "le": "2026-11-23T02:08:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-021",
+      "evenement": "prevision",
+      "details": {
+        "texte": "PRÉVISION RECOPIÉE APRÈS COUP, selon la règle appliquée par l'auteur le 23 novembre 2026 pour TAC-013 → TAC-015. Texte de la prévision de TAC-019, enregistrée le 2026-11-23T01:50:39+00:00 avant tout travail. TAC-019 a été déposée, retirée avant vérification (défaut hérité de TAC-017), puis rendue périmée par la reprise de TAC-017. Le travail existe déjà et ses résultats sont connus : cette prévision n'est pas aveugle pour la nouvelle fiche ; sa valeur de prévision vient uniquement de l'enregistrement d'origine.\n\n--- Texte original ---\nÉcrite le 23 novembre 2026 vers 1 h 52 UTC, avant d'avoir ouvert TopWin.lean, Window.lean, ZeroFreeAllOfTopG.lean, Main.lean et les fichiers de réflexion. Je connais le guide (§1, §3, ordre des choix) et les fichiers lus pour TAC-017 (LandauTheorems, CharFamily, LandauZeroFreeCriterion).\nP1. La déduction (⋆) ⇒ théorème n'utilise aucun ingrédient analytique au-delà de TAC-017 et du §1 : réflexion (facteurs d'Euler aux p | N, équation fonctionnelle), famille positive P(ψ), Landau localisé pour une famille (les résidus s'ajoutent avec des poids positifs), ordre des choix. Longueur lisible : 4 à 6 pages.\nP2. Aucun traitement spécial des zéros de Siegel dans le Lean : un zéro réel est un pôle de résidu positif, et le cas 1 de TAC-017 s'en charge.\nP3. Les poids précis 1 et 1/(3o + 1) ne jouent aucun rôle dans la déduction : toute famille à poids positifs contenant ψ convient. Leur valeur vient du §5.\nP4. L'énoncé Lean de (⋆) a la forme du guide : il existe ε₁ > 0 tel que, pour tout 0 < ε < ε₁, il y a des Y arbitrairement grands avec G_ψ(x) ≤ x^(1/2 + 9ε) sur [Y, Y^(3/2)]. Je prévois au plus un écart de forme (constante multiplicative, ou fenêtre écrite autrement).\nP5. La réduction aux primitifs se fait en Lean avant d'appliquer Landau (la famille CharFamily exclut les caractères principaux de module > 1), et l'équation fonctionnelle n'intervient qu'à la toute fin, pour passer de « pas de zéro pour Re s > ½ » à « zéros sur Re s = ½ ».\nCe qui me donnerait tort : un ingrédient supplémentaire (densité de zéros, argument propre aux zéros de Siegel, borne sur L′/L) dans la déduction (P1, P2) ; des poids qui comptent (P3) ; un (⋆) différent sur le fond (P4)."
+      },
+      "empreinte_precedente": "cd62e5ee968bc957029929532b2ed3c80dfac70b79415a23b43b1b95a3fcb11a"
+    },
+    {
+      "n": 88,
+      "le": "2026-11-23T02:08:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-022",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:theoreme-a-par-fenetres-loupe-double-v2",
+        "cycle": 1
+      },
+      "empreinte_precedente": "14a7b7bde03bc54121a1656983cf8ba8ed702b2795b09a7dba3ea2dd710b0a71"
+    },
+    {
+      "n": 89,
+      "le": "2026-11-23T02:08:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-022",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "bf29677a628d920964de8ac404ee1899350fdf251d48a82aa1119073a19761f3"
+    },
+    {
+      "n": 90,
+      "le": "2026-11-23T02:08:35+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-022",
+      "evenement": "prevision",
+      "details": {
+        "texte": "PRÉVISION RECOPIÉE APRÈS COUP, selon la règle appliquée par l'auteur le 23 novembre 2026 pour TAC-013 → TAC-015. Texte de la prévision de TAC-018, enregistrée le 2026-11-23T01:39:14+00:00 avant tout travail. TAC-018 a été déposée, retirée avant vérification (défaut hérité de TAC-017), puis rendue périmée par la reprise de TAC-017. Le travail existe déjà et ses résultats sont connus : cette prévision n'est pas aveugle pour la nouvelle fiche ; sa valeur de prévision vient uniquement de l'enregistrement d'origine.\n\n--- Texte original ---\nÉcrite le 23 novembre 2026 vers 1 h 45 UTC, avant toute rédaction et tout calcul. Avant d'écrire, j'ai seulement réfléchi de tête au signe du coefficient dominant ; je le dis pour que la prévision P1 ne passe pas pour aveugle.\nP1 (signe et côté). En un zéro ρ de multiplicité m, Φ_c(s) = (G_c(s) − s G_c(1))/(s(s − 1)) a un pôle double de coefficient dominant m(m + 1)/(ρ(ρ − 1)). Pour ρ réel dans ]0, 1[, ce coefficient est NÉGATIF (contrairement au résidu positif des pôles simples). Donc, pour la Loupe double, c'est un PLANCHER (H ≥ −C y^θ sur des fenêtres tardives) qui suffit à exclure tous les zéros à droite de θ ; un PLAFOND n'exclut que les zéros non réels. Pour ζ, qui n'a pas de zéro réel dans ]0, 1[, les deux côtés suffisent.\nP2 (preuve). La preuve de TAC-017 s'étend avec deux changements seulement : l'identité |g| = 2g⁻ + g au lieu de 2g⁺ − g, et le développement près d'un pôle double, a_k ≈ (k + 1) c₂ / (z − ρ)^(k+2), dont le facteur k + 1 ne gêne pas la contradiction.\nP3 (réciproque). Si Θ ≤ θ, alors |H(y)| ≪ y^θ log y, par la formule explicite (convergence absolue de Σ m²/|ρ|²). D'où : Θ = inf{θ : H(y) ≥ −y^θ sur des fenêtres arbitrairement tardives}.\nP4 (numérique). G_c(1) = 2γ² + 6γ₁ ≈ 0,2295 (γ₁ constante de Stieltjes). Avec ce centrage, max |H(y)|/(√y log y) sur [10, 10⁶] est entre 0,03 et 0,15, de l'ordre de 2κ ≈ 0,092, sans dérive linéaire.\nP5 (apport). Le résultat est une adaptation modeste d'une technique connue (Landau, Pringsheim, et la localisation d'Alpöge) ; la seule remarque peut-être nouvelle est le changement de côté pour les pôles doubles. Je prévois qu'une recherche ne trouvera pas cet énoncé tel quel, sans pouvoir l'exclure.\nCe qui me donnerait tort : un coefficient dominant de signe non fixe, ou positif pour ρ réel (P1) ; un obstacle dans le cas 2 dû au terme en 1/(z − ρ)^(k+1) (P2) ; une dérive linéaire de H (P4)."
+      },
+      "empreinte_precedente": "2bf679d50f73a097993b07cdec9749df15b6bc781ff821458c14c21afb205ae3"
+    },
+    {
+      "n": 91,
+      "le": "2026-11-23T02:13:43+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-021",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-021/NOTE_EN.md": "52fa6cb2e87ce24310e9453f8a7226176269ff067b982c968fbb0357e357dd07",
+          "2_Methode/Depot/TAC-021/RAPPORT.md": "9dadbebc1bc26f2909ed09180e363a707647c1fa5fa272b8d5955d0543630df6"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "169760d08d294ccb380523ed880a2af735c2db51b4ad47a788989953f7f0136d"
+    },
+    {
+      "n": 92,
+      "le": "2026-11-23T02:14:26+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-022",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-022/PREUVE.md": "e463033864a5d9df80480abac31ef472c123539f8053f4fce11aa8f7d3ce8262",
+          "2_Methode/Depot/TAC-022/RAPPORT.md": "67e7f9a8b392a5f8571aca11566d5bbd28ef857a583f79a5dafaae95946264d2",
+          "2_Methode/Depot/TAC-022/resultat_numerique.txt": "576edbfe46eee8b06a01f746db1def52d1733ba222828f1166bf4189c7eed891",
+          "2_Methode/Depot/TAC-022/tac018_numerique.py": "f659ec2dc494afc288d66402a39425a3c127959ec9c61ec9b341bf0df6bb3707"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "fec0451acd1c1efbae3027f0e8162678bb458869553e07201a2c0d160bdb8336"
+    },
+    {
+      "n": 93,
+      "le": "2026-11-23T02:17:12+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-015",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-015/RAPPORT.md": "102521b8c7886c183780ae3fb65a4dc78fac0fce3604b413ef4f471565bd620a",
+          "2_Methode/Depot/TAC-015/resultat_exploration_apres_coup.txt": "a73fc0d50cd62732a2970126009eba7318d5cd9486fce392ac63689df8d0e703",
+          "2_Methode/Depot/TAC-015/resultat_sylvester.txt": "ed12eb4c1ee6efe05f80c34a06e9d2bf1f43fabb9c2b0b843a21700ac6f8838d",
+          "2_Methode/Depot/TAC-015/resultat_tac013.txt": "cd02b665b6b4f17b1558d71041ccebef705c8cfa19a20c4e73f0ce00222e4ccc",
+          "2_Methode/Depot/TAC-015/tac013_exploration_apres_coup.py": "bf161eafc4de4af8f7763ce02c9bb9087b0417032f38ded2f406a17cc052c2a0",
+          "2_Methode/Depot/TAC-015/tac013_niveau1.py": "1360542096a27caf2af7a183be3049f7ccdb7c4924ed14fb3026fd7217902faa",
+          "2_Methode/Depot/TAC-015/tac015_sylvester.py": "e0b239c206a3d597757a547b4a2713c60b5ca3fe6753b63076ba5d7f7e636ac4"
+        },
+        "statut_propose": "classique",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "df55e0ea27f6b322aa86dcea573b23217d13c4480f8d8243850a638c89adbf73"
+    },
+    {
+      "n": 94,
+      "le": "2026-11-23T02:18:57+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-016",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-016/RAPPORT.md": "1169be74e4bd8134c2905235f7fd9af88e9619b4fe18dff97870742617df0878",
+          "2_Methode/Depot/TAC-016/resultat_reprise.txt": "6d31207019141c98a9eb1b8a0bd1559fbe854e6d8a9b22d50b6166da005f162f",
+          "2_Methode/Depot/TAC-016/resultat_tac016.txt": "86d9654f88ff852e2a7060ae5313f157aebdb85e09996f0c73c8af4c77a3c581",
+          "2_Methode/Depot/TAC-016/tac016_reprise.py": "c355a549d69a057312515628d0d3fa23c8f7a455ab1aa72dbb25fbc9c4a63b6d",
+          "2_Methode/Depot/TAC-016/tac016_sosie.py": "7cb078ec9bda499f043cc4faab1f1030993a886d499d718940038e9ffab33bab"
+        },
+        "statut_propose": "mesure",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "f2a2d16ad5c637ecf15e5d285a1798a494c5b19cf636c080406c44d3f52254d1"
+    },
+    {
+      "n": 95,
+      "le": "2026-11-23T02:47:25+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-021",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "L’implication conditionnelle suit. Il manque à la note anglaise l’inégalité des moments et une attribution exacte des hypothèses TopG et HostExW. Rapport de vérification PR #60, fil #53."
+      },
+      "empreinte_precedente": "36d922d5fe6187118db6e9dffb60dab5d47982ae75401c060e7a8acc7c39d6a1"
+    },
+    {
+      "n": 96,
+      "le": "2026-11-23T02:47:48+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-022",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Sens direct et calcul reproduits. La transformée centrée a une queue en 1/t. Corriger la réciproque, dont le seuil demandé reste à établir dans le dépôt. Rapport de vérification PR #61, fil #54."
+      },
+      "empreinte_precedente": "283853f23c0be33e2f28bab6811dd925953cbb87c474154030c18205afd1df3c"
+    },
+    {
+      "n": 97,
+      "le": "2026-11-23T02:48:17+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-017",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "conforme",
+        "note": "Deuxième dépôt. Les trois corrections sont vérifiées. Deux programmes retrouvent 0,02268124049590 à y=319 439 aux précisions affichées. Implication établie sous l’hypothèse de fenêtres. Rapport de vérification PR #59, fil #40."
+      },
+      "empreinte_precedente": "d5f0343b5a481ff71fe1794ad7654b61385b7b8bbaf521ec7f0478dbf43305ff"
+    },
+    {
+      "n": 98,
+      "le": "2026-11-23T02:48:50+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-015",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "conforme",
+        "note": "Deuxième dépôt : schéma de Sylvester retrouvé dans l’original de 1892. Le calcul direct donne W(10⁶)/10⁶≈0,0555990 ; portée historique précisée. Rapport de vérification PR #62, fil #38."
+      },
+      "empreinte_precedente": "0747aaad70313f964def222898a65e425a36e2011b586a8ad5ce1babd45c08d6"
+    },
+    {
+      "n": 99,
+      "le": "2026-11-23T02:49:28+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-016",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "conforme",
+        "note": "Deuxième dépôt : témoin quartique rétabli et calcul exact reproduit pour les 2 999 valeurs de x. Verdict limité aux familles et produits explicitement testés. Rapport de vérification PR #63, fil #39."
+      },
+      "empreinte_precedente": "901915faeb14b20e4beef58b06cd1b23a8d7e729f8e346ffd6be0408456a8b1c"
+    },
+    {
+      "n": 100,
+      "le": "2026-11-23T02:52:39+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-023",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:piste1-module-star-vers-theoreme-v3",
+        "cycle": 1
+      },
+      "empreinte_precedente": "54f86d8b0429080b4df9c8fa0c70e1b950410f069905cd385df83d01d1d038d6"
+    },
+    {
+      "n": 101,
+      "le": "2026-11-23T02:52:39+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-023",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "8b37465cfd6500a9bc66d7abd0956d5b1cc5c15bd0e7f8363c99dbc36454ae83"
+    },
+    {
+      "n": 102,
+      "le": "2026-11-23T02:52:39+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-023",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Prévision NOUVELLE (non recopiée), écrite le 23 novembre 2026 vers 2 h 55 UTC, après lecture de la vérification de TAC-021 mais avant d'ouvrir LevelGmLeOnFamilyScales.lean, la définition de HostExW et le fichier où se trouve every_character_of_literature_of_vWin.\nP1. Les compléments (1) et (3) n'exigent aucun ingrédient nouveau : (1) est la reformulation en anglais des étapes 2 à 4 de TAC-017, désormais vérifiée ; (3) se règle avec ζ(0) = −1/2 et le facteur gamma, comme dans Claim.zeta.\nP2. level_gm_le_on_family_scales est un lemme de comparaison : il transforme l'inégalité « liée » produite par l'arithmétique (ChebyshevInequalityOnFamilyWindows) en la borne Λ.Gm(x) ≤ x^(½ + (e_D + e_L + 7)ε) sur les fenêtres ; il ne fait que de l'analyse élémentaire (sommes et inégalités), sans rien d'automorphe.\nP3. HostExW λ (G.req) affirme l'existence, sur des fenêtres de paramètre λ, de « corps hôtes » au sens du §4 du guide (corps CM construits à partir de ψ et de premiers auxiliaires q, d) ; c'est une hypothèse arithmétique, du côté de (⋆), et non une partie de la déduction analytique.\nP4. every_character_of_literature_of_vWin prend en entrée des énoncés de la littérature (représentations galoisiennes, Langlands local) et la fenêtre cohomologique, et appelle zeroFreeAll_of_topG puis imprimitive ; je prévois de pouvoir tracer ce chemin, mais pas d'en lire tous les arguments.\nP5. Une fois ces compléments faits, aucune affirmation de la note ne dépendra d'une lecture non faite, sauf la construction de TopG et des hôtes, qui restent admis et seront marqués comme tels.\nCe qui me donnerait tort : un ingrédient analytique non élémentaire dans level_gm_le_on_family_scales (P2) ; HostExW qui contiendrait une partie de l'argument analytique (P3) ; un chemin vers everyCharacter qui ne passe pas par zeroFreeAll_of_topG (P4)."
+      },
+      "empreinte_precedente": "228f7049d6e54710f5f2c3ead9c66df3d69d4bd19f4a9d9d1c622520e6e575ba"
+    },
+    {
+      "n": 103,
+      "le": "2026-11-23T03:10:42+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-023",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-023/NOTE_EN.md": "5b3f35c95e38dd738f943c7ada0b8f0bde1b3030ffeffd8c3baa6eccdcbe3f2d",
+          "2_Methode/Depot/TAC-023/RAPPORT.md": "bfbe98848ccd9ca13d5c63dfeee72e28b49a7a66675e9a5c867179e1c79c8b7e"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "31ee22aa07b9116cb3c3a0c23af0f206ef21d4a7ae3f15a1f12a59c97fe60a64"
+    },
+    {
+      "n": 104,
+      "le": "2026-11-23T03:15:31+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-024",
+      "evenement": "creee",
+      "details": {
+        "cle": "manuel:theoreme-a-par-fenetres-loupe-double-v3",
+        "cycle": 1
+      },
+      "empreinte_precedente": "f11a0d8f4903fdc189fa251b1712cc8db4a0045146dc1b9b1bcac6c860e23a7c"
+    },
+    {
+      "n": 105,
+      "le": "2026-11-23T03:16:02+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-024",
+      "evenement": "assignee",
+      "details": {
+        "a": "ia:claude"
+      },
+      "empreinte_precedente": "d254f42f606e9231e674eab7ec73d611ab16611e738fab7add02e555a3e27ef7"
+    },
+    {
+      "n": 106,
+      "le": "2026-11-23T03:16:03+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-024",
+      "evenement": "prevision",
+      "details": {
+        "texte": "Prévision écrite le 23 novembre 2026 vers 3 h 20 UTC, après lecture de la vérification de TAC-022 (#54), avant toute nouvelle rédaction ou tout calcul. Je suis l'auteur de TAC-022 : cette prévision n'est donc pas aveugle sur le sens direct.\nP1. Le sens direct de TAC-022 passe sans changement de fond ; seule la rédaction est rattachée aux étapes vérifiées de TAC-017 (dichotomie, centre déplacé), avec le facteur k + 1 du pôle double.\nP2. La forme affaiblie de la réciproque, |H(y)| = O_{θ,ε}(y^(θ+ε)) si aucun zéro n'a Re ρ > θ, se démontre avec des ingrédients classiques seulement : contour de la rampe non centrée sur Re s = θ + ε, résidu G_c(1)·y en 1 puis soustrait, borne ζ′/ζ(σ + it) ≪ log²|t| à distance ε du bord, segments horizontaux à des hauteurs choisies loin des zéros.\nP3. La forme au seuil, O_θ(y^θ log y), s'obtient par la méthode des blocs du vérificateur : avec a = 1/log y, la somme des blocs donne ≪ 1/a = log y. Le seul comptage nécessaire est N(T + 1) − N(T) ≪ log T (Riemann–von Mangoldt), qui est classique et ne constitue pas une « densité de zéros » au sens du critère.\nP4. Le point le plus fragile sera l'uniformité en j de la formule locale de ζ′/ζ quand σ = θ + a tend vers θ, et non le terme q². Probabilité que j'arrive à une réciproque au seuil complète et justifiée : environ 60 % ; sinon statut « partiel » avec la forme θ + ε.\nP5. Pour Θ = 1 (aucune information), l'énoncé reste vrai avec la convention inf = 1, et la réciproque devient la borne triviale.\nCe qui me donnerait tort : un sens direct qui exige une hypothèse de plus que dans TAC-022 (P1) ; une borne θ + ε qui demande plus que les bornes classiques de ζ′/ζ (P2) ; une perte d'un facteur log y supplémentaire au seuil, c'est-à-dire O(y^θ log² y) au mieux (P3)."
+      },
+      "empreinte_precedente": "a1f66b2b23756b0871070483d9dbfb7b1f15aaf9b4dad6b4377d8f8eb9c848b1"
+    },
+    {
+      "n": 107,
+      "le": "2026-11-23T03:23:57+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-024",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-024/PREUVE.md": "5c3900016c9afc79588617172419af73ef4cae685e8f70a07189571d0c4dfca4",
+          "2_Methode/Depot/TAC-024/RAPPORT.md": "d8b016a491d5bcf69d649bb4c8c0f8d3ddb01388dc8e11569a7143fee7622e24",
+          "2_Methode/Depot/TAC-024/resultat_numerique.txt": "576edbfe46eee8b06a01f746db1def52d1733ba222828f1166bf4189c7eed891",
+          "2_Methode/Depot/TAC-024/tac018_numerique.py": "f659ec2dc494afc288d66402a39425a3c127959ec9c61ec9b341bf0df6bb3707"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "a8ac877ccb4d1440d4ed8a8d788e1b59436e9a600f88b8399a654cce528e8a31"
+    },
+    {
+      "n": 108,
+      "le": "2026-11-23T08:30:27+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-016",
+      "evenement": "decision",
+      "details": {
+        "decision": "acceptee",
+        "note": "acceptee, comme mesure. Pour chacune des 2 999 valeurs entières de � entre 2 et 3 000, chacun des deux produits testés possède au moins un exposant irrationnel. La possibilité d’un autre encodage reste ouverte."
+      },
+      "empreinte_precedente": "881df39bc8d6753cf68135c80d7de2b68552cda41f956a21324e5eeadaf46777"
+    },
+    {
+      "n": 109,
+      "le": "2026-11-23T08:31:08+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-017",
+      "evenement": "decision",
+      "details": {
+        "decision": "acceptee",
+        "note": "acceptee, comme implication démontrée. Si la majoration de � vaut sur des fenêtres arbitrairement tardives, alors � n’a aucun zéro de partie réelle supérieure à �. L’existence de ces fenêtres reste une hypothèse. "
+      },
+      "empreinte_precedente": "3390732e2d4ee8b7bb85feffca69a3e3d169865dafc35f5fa56a97106d80d1b7"
+    },
+    {
+      "n": 110,
+      "le": "2026-11-23T10:21:12+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-024",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "conforme",
+        "note": "Sens direct et réciproque au seuil relus. Résidu en 1 et estimation uniforme par blocs justifiés, sortie à 10^6 identique. Corollaire équivalent à RH, nouveauté ouverte, rapport #69."
+      },
+      "empreinte_precedente": "6199206d626615bdf3a19290069a1abb30a716128deb83929d304aa2d821e1c3"
+    },
+    {
+      "n": 111,
+      "le": "2026-11-23T10:21:51+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-023",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "non_conforme",
+        "note": "Note anglaise relue : implication conditionnelle confirmée ; au §5, HostExW omet s.J = S.J. Correction et ancres à reprendre, rapport #70."
+      },
+      "empreinte_precedente": "a56cd14d61b664c02548c9dd5eb3bfde3fa5fbeb717fec3253490324f929f3ab"
+    },
+    {
+      "n": 112,
+      "le": "2026-11-23T10:33:46+00:00",
+      "par": "ia:claude",
+      "tache": "TAC-023",
+      "evenement": "deposee",
+      "details": {
+        "fichiers": {
+          "2_Methode/Depot/TAC-023/NOTE_EN.md": "e4bf6f2cc16a21ebd3d9dc178cc847aedf5490935a72e3f5a3f8486109e66e0a",
+          "2_Methode/Depot/TAC-023/RAPPORT.md": "f8c34ef63e7ed19a7a01b23c9ac9a18f4bb20fc0121017d631bb982c05eac81d"
+        },
+        "statut_propose": "demontre",
+        "equivalent_rh": false
+      },
+      "empreinte_precedente": "bbf4cf7996f44a6c7f6f5e110d891b9fcd7c7bc4cd2bd096d4388627336da8c4"
+    },
+    {
+      "n": 113,
+      "le": "2026-11-23T10:42:37+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-022",
+      "evenement": "abandonnee",
+      "details": {
+        "note": "Remplacées par TAC-024"
+      },
+      "empreinte_precedente": "86a85b187813fbc14885f9c1e616ec977ebf3b24414e2ee52dcbbece397247ee"
+    },
+    {
+      "n": 114,
+      "le": "2026-11-23T10:43:21+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-019",
+      "evenement": "abandonnee",
+      "details": {
+        "note": "Remplacées par TAC-023"
+      },
+      "empreinte_precedente": "91c107746401bfe5c4fb1a2f84545eae007b68e310304c2c5b3f2c0ca1fb504d"
+    },
+    {
+      "n": 115,
+      "le": "2026-11-23T10:43:49+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-021",
+      "evenement": "abandonnee",
+      "details": {
+        "note": "Remplacées par TAC-023"
+      },
+      "empreinte_precedente": "f3ea21c5aa8006622329e6d89e2b0cf2579913846fbbfdcd28f31d56af618cb7"
+    },
+    {
+      "n": 116,
+      "le": "2026-11-23T10:44:21+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-024",
+      "evenement": "decision",
+      "details": {
+        "decision": "acceptee",
+        "note": ""
+      },
+      "empreinte_precedente": "7ab72562427ff9d8c6d752a7418496e7e1b9a0535532f387718bfc3cdcd21cec"
+    },
+    {
+      "n": 117,
+      "le": "2026-11-23T10:46:55+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-018",
+      "evenement": "abandonnee",
+      "details": {
+        "note": "Remplacée par TAC-024"
+      },
+      "empreinte_precedente": "4cf0fc04d568ce15985156949ca7d0b850ecb4da6058bbb6c0f68e847a9d9e6f"
+    },
+    {
+      "n": 118,
+      "le": "2026-11-23T10:51:42+00:00",
+      "par": "ia:chatgpt-sol-6.1-max",
+      "tache": "TAC-023",
+      "evenement": "verifiee",
+      "details": {
+        "verdict": "conforme",
+        "note": "Second dépôt, note anglaise v4 : les quatre écarts de #70 sont corrigés ; HostExW quantifie sur les échelles de J fixé, deux ancres vérifiées, borne abstraite et cas de Siegel rectifiés. Conforme pour (⋆) ⇒ GRH ⇒ RH, estimation (⋆) admise. Rapport #74."
+      },
+      "empreinte_precedente": "06bf8b71d1679e27e77efe7c9d840849273707dda52572b16df39856961c3410"
+    },
+    {
+      "n": 119,
+      "le": "2026-11-23T10:53:34+00:00",
+      "par": "auteur:vincent-noel",
+      "tache": "TAC-023",
+      "evenement": "decision",
+      "details": {
+        "decision": "acceptee",
+        "note": ""
+      },
+      "empreinte_precedente": "73b0d79301cafe2c6fc92c1b82713dc9c8a4668ff66ac2064a850be54f3e7ad8"
     }
   ]
 }

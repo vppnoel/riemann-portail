@@ -1,0 +1,8 @@
+traces numériques de κ^j : [4.0, -2.0, 16.0, -38.0] attendu (4, -2, 16, -38)
+racines : [-3.520147, -0.557537, 0.284079, 1.793604] ; κ = 0.284079
+(1) Tchebychev : x ∈ [2, 3000] sans aucun exposant irrationnel : 0 [] ; exposants rationnels non nuls : 303595 sur 663208
+(1) binomial : x ∈ [2, 3000] sans aucun exposant irrationnel : 0 [] ; exposants rationnels non nuls : 226148 sur 585761
+(2) L(s, χ₅) seul, x = 2 : exposant brut de 2 = χ₅(2)·F(1) = i (non entier) → échec du test naïf
+(2) famille des 4 puissances de χ₅ : exposants Σ_j χ^j(p^r) ∈ {0, 4} (p ∤ 5) ou {1} (p = 5, caractère trivial seul) ; cas non entiers ou négatifs : 0 → (S) satisfait
+(3) DH, famille des 4 conjugués : Tr β(n, p) entiers ; négatifs pour 692 valeurs de n ≤ 3000 (premiers : [2, 4, 7, 8, 9, 14, 16, 17]) ; non nuls hors des puissances de premiers pour 906 valeurs (premiers : [6, 12, 14, 18, 21, 24, 26, 28])
+    exemples : Tr β(2, 2) = -2 ; Tr β(6, 2) = 20 ; Tr β(6, 3) = 20 → (S) non satisfait pour cette famille

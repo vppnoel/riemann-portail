@@ -1,5 +1,7 @@
 ﻿# Review package: Theorems A and B, and the Euler Archipelago note
 
+**23 November 2026.** The [revised first paper](../articles/article1_mean_square_double_poles_20261123.pdf) adds a criterion for the centred ramp on power intervals in §3.1. The two antecedents and the proof of the converse are identified in the [Theorem A dossier](RELECTURE_THEOREME_A_EN.md).
+
 **Author:** Vincent Noël (research programme on the Riemann Hypothesis, corpus version 6.13, October 2026).
 **No proof of the Riemann Hypothesis is claimed.** Theorem B is conditional on RH.
 

@@ -5809,5 +5809,57 @@
     "dimensions": [
       "comprendre"
     ]
+  },
+  {
+    "cle": "KP86",
+    "auteurs": "J. Kaczorowski, J. Pintz",
+    "annee": 1986,
+    "titre": "Oscillatory properties of arithmetical functions. I",
+    "publication": "Acta Mathematica Hungarica 48 (1986), 173–185",
+    "type": "article",
+    "lien": "https://doi.org/10.1007/BF01949062",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-11-23",
+    "ce_qui_a_ete_verifie": "Texte original, théorème 1, (2.2)–(2.3), et corollaire 1, pp. 175–176. Hypothèses de méromorphie et quantificateurs vérifiés pour la transformée de H.",
+    "extrait": "",
+    "usage_corpus": "Article 1 révisé, §3.1. Oscillations des deux signes dans chaque fenêtre de puissances et implication unilatérale pour la rampe centrée.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "appui",
+    "cite_aussi": []
+  },
+  {
+    "cle": "Ram13",
+    "auteurs": "O. Ramaré",
+    "annee": 2013,
+    "titre": "From explicit estimates for primes to explicit estimates for the Möbius function",
+    "publication": "Acta Arithmetica 157 (2013), 365–379",
+    "type": "article",
+    "lien": "https://doi.org/10.4064/aa157-4-4",
+    "statut": "vérifié en ligne",
+    "verifie_le": "2026-11-23",
+    "ce_qui_a_ete_verifie": "Texte original, §6, (6.1), p. 373. La normalisation publiée donne C(x) = R₂*(x) + 2γ(ψ(x) − ⌊x⌋).",
+    "extrait": "",
+    "usage_corpus": "Article 1 révisé, introduction. Antécédent pour la somme de Λ∗Λ − Λ log et comparaison des termes de centrage.",
+    "verdict": "exact",
+    "correction": "",
+    "docs": [],
+    "motifs": [],
+    "conjectures": [
+      "RH"
+    ],
+    "dimensions": [
+      "situer"
+    ],
+    "interet": "contexte",
+    "cite_aussi": []
   }
 ]

@@ -46,7 +46,7 @@ def test_document_82_et_etat_courant():
     ref = (ROOT / "2_Methode/Pilotage/CIBLAGE.md").read_text(encoding="utf-8-sig")
     corps = ref[ref.index("## 1."):].rstrip()
     assert corps in texte                                                # le document 82 reprend la référence telle quelle
-    for t in rd("2_Methode/Pilotage/taches.json")["taches"]:
+    for t in rd("2_Methode/Pilotage/taches_instantane.json")["taches"]:   # instantané figé à la reconstruction
         assert t["id"] in texte                                          # et liste les fiches du registre
 
 
@@ -64,3 +64,13 @@ def test_navigateur_affiche_le_ciblage():
     assert 'id="ciblage"' in html and 'id="ciblage-bellman-live"' in html
     assert "chatgpt.com" not in html and "chatgpt.com" not in (ROOT / "00_PORTAIL.html").read_text(encoding="utf-8")
     assert rd("3_Preuves_et_calculs/data/ciblage_courant.json")["mode"] == "recommandations_en_lecture_seule"
+
+
+def test_horodatage_des_versions():
+    import hashlib
+    reg = rd("2_Methode/Horodatage/registre_horodatages.json")
+    v = rd("VERSION_LIVRAISON.json")["version"]
+    assert any(e["version"] == v for e in reg["versions"])                  # la version livrée est figée et inscrite
+    for e in reg["versions"]:
+        f = ROOT / "2_Methode/Horodatage" / e["fichier"]
+        assert hashlib.sha256(f.read_bytes()).hexdigest() == e["sha256"]     # copie figée inchangée

@@ -6,6 +6,8 @@
 
 ## Read first
 
+> **24 November 2026.** Public copy brought up to date with the working repository: portal and reading tools, source registry, guides, [revised article 1 of 23 November](1_Presentation/articles/README.md), the working document [Recoller les morceaux (V6.60)](1_Presentation/RECOLLER_LES_MORCEAUX_V6_60.md), and, for the first time, the record of the work between AI systems: [deposited and verified task sheets](2_Methode/Depot/) (including abandoned or pending ones), [exchange status](2_Methode/Echanges/ETAT.md), [Lean dialogue](2_Methode/Dialogue_Lean/README.md) and [timestamping](2_Methode/Horodatage/README.md). Links to `github.com/vppnoel/Riemann` (task sheets, PRs, issues) point to the working repository, which is private; the files they cite are here at the same path.
+>
 > **23 November 2026.** Three human-readable notes on the announced Lean proof, checked by a second AI system and accepted by the author: from the bound (⋆) to GRH (in English), windowed Landau for ζ, and its analogue for the double poles of article 1. See [lean_reading/](lean_reading/README.md). The note on the announced proof is corrected on two points (see its end).
 >
 > **22 November 2026.** A proof of the (Generalized) Riemann Hypothesis was announced on 20 November 2026 by L. Alpöge with Claude, as a Lean formalisation independently checked since. The paragraph below describes the state on 17 October 2026. See [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md) for what this changes (Theorem B becomes unconditional; simplicity of zeros stays open).

@@ -2,7 +2,7 @@
   "version": "V6.59",
   "revision": "v659-ciblage-repartition-20261017",
   "date": "2026-10-17",
-  "fingerprint": "2227adb5f158ae890d8c1775671ca91033c1c622f6991be69aa59416ef9914e3",
+  "fingerprint": "b89fec881d7784e7985b043aaaf434a850a456a6631725f37b9d7e86bd1ff58f",
   "dimensions": {
     "voir": {
       "reason": "Le niveau 4 reste justifié par les témoins ζ/L/DH et les contrôles reproduits. Les calculs nouveaux sont finis ; ils ne deviennent pas un mécanisme démontré d’interdiction des zéros. V6.58 : fenêtres de Zhu reproduites par une méthode indépendante, contrôlée par les zéros (doc. 81, non certifié). Niveau inchangé.",

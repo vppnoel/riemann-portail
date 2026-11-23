@@ -1,0 +1,25 @@
+{
+ "R1": {
+  "cas": 2000,
+  "borne_violee": 0,
+  "plus_petite_valeur_de_Geff_moins_borne": -2.2737367544323206e-12
+ },
+ "R2": {
+  "H": 2.0,
+  "a": 1.3,
+  "mu": 0.7,
+  "infimum_numerique": -0.4142857130000004,
+  "H_moins_a2_sur_mu": -0.4142857142857146
+ },
+ "R3": {
+  "norme_ambiante": 5.0990195135927845,
+  "norme_restreinte_a_Y": 1.0,
+  "rapport_des_dettes": 26.0,
+  "lecture": "La borne ambiante surestime ici la dette d'un facteur 26 : la garde de restriction du rapport est juste, et déjà énoncée au document 76 (§ 2.2, Lemme C)."
+ },
+ "R4": {
+  "rho_document_79": 0.999999832,
+  "marge_relative": 1.6800000002259452e-07,
+  "lecture": "Une borne duale remplace B C⁻¹ B* par μ⁻¹ B R⁻¹ B* ⪰ B C⁻¹ B*. À cette partition, elle ne garde le signe que si elle majore la dette exacte de moins de (1 − ρ)/ρ ≈ 1,7·10⁻⁷ en relatif. Le rapport n'examine pas cette contrainte quantitative, qui est la donnée principale du document d'entrée."
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "reglages": {
+  "NMAX": 20000,
+  "h": 0.5,
+  "T": [
+   10.0,
+   1.0
+  ]
+ },
+ "defauts": {
+  "T=10.0 eta0.5": {
+   "d_diag": 0.0004959607731302895,
+   "d_chaine": 5.815769609003062e-15,
+   "d_croise": 0.010492654664593867,
+   "chaine_sur_max_autres": 5.542705630661457e-13,
+   "part_chaine_zeta": 6.968783743117502e-15,
+   "part_chaine_defaut": 1.5407425380843337e-14,
+   "variation_relative_part": 1.2109202909417287
+  },
+  "T=10.0 eta1": {
+   "d_diag": 0.001190305855512695,
+   "d_chaine": 1.3951257883323857e-14,
+   "d_croise": 0.021062996329070275,
+   "chaine_sur_max_autres": 6.623586533160483e-13,
+   "part_chaine_zeta": 6.968783743117502e-15,
+   "part_chaine_defaut": 2.6944710559482366e-14,
+   "variation_relative_part": 2.866486829368676
+  },
+  "T=10.0 eta2": {
+   "d_diag": 0.003174148948033854,
+   "d_chaine": 3.7181431519545944e-14,
+   "d_croise": 0.04243891240377437,
+   "chaine_sur_max_autres": 8.761165028404252e-13,
+   "part_chaine_zeta": 6.968783743117502e-15,
+   "part_chaine_defaut": 5.871637640486505e-14,
+   "variation_relative_part": 7.425627565621391
+  },
+  "T=10.0 phase": {
+   "d_diag": 0.0,
+   "d_chaine": 3.2947143455239076e-15,
+   "d_croise": 0.028640815362621946,
+   "chaine_sur_max_autres": 1.15035633720949e-13,
+   "part_chaine_zeta": 6.968783743117502e-15,
+   "part_chaine_defaut": 5.1923649865272116e-15,
+   "variation_relative_part": -0.254910874274828
+  },
+  "T=1.0 eta0.5": {
+   "d_diag": 8.522360048893288e-05,
+   "d_chaine": 4.9969274839400135e-05,
+   "d_croise": 0.013315872206705534,
+   "chaine_sur_max_autres": 0.003752609972798994,
+   "part_chaine_zeta": 6.213989840617642e-05,
+   "part_chaine_defaut": 0.00012366860166849943,
+   "variation_relative_part": 0.9901642075457165
+  },
+  "T=1.0 eta1": {
+   "d_diag": 0.00020453664117343903,
+   "d_chaine": 0.00011710032325916575,
+   "d_croise": 0.026776260873037378,
+   "chaine_sur_max_autres": 0.0043732888551695085,
+   "part_chaine_zeta": 6.213989840617642e-05,
+   "part_chaine_defaut": 0.00020447855202032733,
+   "variation_relative_part": 2.2906161301352097
+  },
+  "T=1.0 eta2": {
+   "d_diag": 0.0005454310431291705,
+   "d_chaine": 0.00030294744942861815,
+   "d_croise": 0.05413318363701398,
+   "chaine_sur_max_autres": 0.005596335354299678,
+   "part_chaine_zeta": 6.213989840617642e-05,
+   "part_chaine_defaut": 0.00042029573859521103,
+   "variation_relative_part": 5.763701733915863
+  },
+  "T=1.0 phase": {
+   "d_diag": 0.0,
+   "d_chaine": 6.28893860286715e-05,
+   "d_croise": 0.0358251005509138,
+   "chaine_sur_max_autres": 0.001755455952992918,
+   "part_chaine_zeta": 6.213989840617642e-05,
+   "part_chaine_defaut": 2.6098665775277004e-05,
+   "variation_relative_part": -0.5800014733741032
+  }
+ }
+}

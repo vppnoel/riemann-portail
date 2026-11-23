@@ -27,6 +27,7 @@ Trois principes en découlent :
 | 4. Prévoir | producteur | `taches.py prevoir TAC-001 --par ia:nom --texte "…"` | Prévision horodatée **avant** le travail : ce qui est attendu, ce qui donnerait tort. |
 | 5. Produire | producteur | — | Travail dans `2_Methode/Depot/TAC-001/` uniquement ; `RAPPORT.md` obligatoire. |
 | 6. Déposer | producteur | `taches.py deposer TAC-001 --par ia:nom --statut-propose STATUT` | Le dépôt est figé par empreintes. |
+| 6 bis. Retirer | producteur | `taches.py retirer TAC-001 --par ia:nom --motif "…"` | Seulement avant toute vérification : la fiche repasse « à reprendre » pour compléter le dépôt. Le motif cite le fil de discussion ; le dépôt retiré reste au journal. |
 | 7. Vérifier | auditeur, autre que le producteur | `taches.py verifier TAC-001 --par agent:x --verdict conforme --note "…"` | Liste de contrôle dans `TAC-001/verification/VERIFICATION.md`. |
 | 8. Décider | auteur | `taches.py decider TAC-001 --par auteur:vincent-noel --decision acceptee` | Acceptée, rejetée ou à reprendre. |
 | 9. Intégrer | tout acteur désigné | `taches.py integrer TAC-001 --par … --pieces …` | Le résultat entre au corpus selon le protocole du pilotage ; les pièces sont enregistrées. |
@@ -37,6 +38,8 @@ Toutes les commandes s'exécutent depuis la racine du corpus, avec `python -B 2_
 Pour confier une fiche à une IA ou à un agent, il suffit de lui remettre deux choses : l'archive du corpus et la consigne produite par `taches.py fiche TAC-001`. Pour la vérification, la consigne est `taches.py fiche TAC-001 --verification`. Elle ne nomme pas le producteur (relecture à l'aveugle).
 
 `taches.py etat` donne l'état vivant. `taches.py controler` vérifie la cohérence du registre, du journal et des dépôts.
+
+**Boîtes aux lettres.** `2_Methode/Echanges/<acteur>/` contient, pour chaque IA ou agent, un fichier `A_FAIRE.md` et une consigne par fiche, à produire ou à vérifier. Elles sont régénérées par `taches.py boites`, et automatiquement sur GitHub après chaque changement du registre. Un acteur qui lit le dépôt n'a besoin que de sa boîte.
 
 ## 3. La fiche de tâche
 

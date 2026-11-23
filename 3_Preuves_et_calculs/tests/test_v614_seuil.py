@@ -17,7 +17,14 @@ def test_innovation_sign_is_fragile_eigenvalue_criterion_is_not():
     from zero_reconstruction import nontrivial_zeros
     z = -1j * (nontrivial_zeros("DH") - 0.5); on = z[np.abs(z.imag) < 1e-6].real       # fond de DH sur la droite : G >= 0 exactement
     t = _traces(on, g_hat(on, 0.04), 400, 0.01); K, E = levinson(t, 400)
-    assert E[295] / E[0] < -1e-3 and lmin_ratio(t, 296) > -1e-14       # innovation « négative » de 2e-3 ; aucune valeur propre négative
+    ratio, lr = E[295] / E[0], lmin_ratio(t, 296)
+    # Innovation de Levinson à la taille 296 : son SIGNE n'est pas reproductible (−1,95·10⁻³ en local, +2,74·10⁻³ sur
+    # GitHub, même code) — c'est l'objet du test : le critère par l'innovation est fragile. On vérifie seulement qu'elle
+    # est au niveau du bruit (|ratio| < 10⁻²), tandis que le critère par la valeur propre reste net (ligne suivante).
+    assert abs(ratio) < 1e-2, ratio
+    # Aucune valeur propre négative au-delà de l'arrondi : G est exactement positive (mesure positive), et le
+    # bruit relatif de eigvalsh est de l'ordre de n·ε (V6.59 : -1e-14 était sous ce seuil et dépendait du processeur).
+    assert lr > -296 * np.finfo(float).eps, lr
     assert first_negative_size(t, 1e-10, 401) is None
 
 def test_prime_thresholds_and_heisenberg_law_live():

@@ -153,6 +153,155 @@
       ]
     },
     {
+      "id": "ARTICLE-1",
+      "title": "article1_mean_square_double_poles_20261123",
+      "tex": "articles/article1_mean_square_double_poles_20261123.tex",
+      "pdf": "articles/article1_mean_square_double_poles_20261123.pdf",
+      "references": [
+        {
+          "article_key": "AF26",
+          "registry_keys": [
+            "AF26"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "ANS14",
+          "registry_keys": [
+            "ANS14"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "BCF13",
+          "registry_keys": [
+            "BCF13"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "BPT22",
+          "registry_keys": [
+            "BPT22"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "BS22",
+          "registry_keys": [
+            "BS22"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Bae03",
+          "registry_keys": [
+            "Bae03"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Beu55",
+          "registry_keys": [
+            "Beu55"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Cra22",
+          "registry_keys": [
+            "Cra22"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "DH36",
+          "registry_keys": [
+            "DH36a",
+            "DH36b"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Dav00",
+          "registry_keys": [
+            "Dav00"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "GGL20",
+          "registry_keys": [
+            "GGL20"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "KP86",
+          "registry_keys": [
+            "KP86"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Kor04",
+          "registry_keys": [
+            "Kor04"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Lam26",
+          "registry_keys": [
+            "Lam26"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "MV07",
+          "registry_keys": [
+            "MV07"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Nym50",
+          "registry_keys": [
+            "Nym50"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "PT21",
+          "registry_keys": [
+            "PT21"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Ram13",
+          "registry_keys": [
+            "Ram13"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Tit86",
+          "registry_keys": [
+            "Tit86"
+          ],
+          "cited": true
+        },
+        {
+          "article_key": "Wid41",
+          "registry_keys": [
+            "Wid41"
+          ],
+          "cited": true
+        }
+      ]
+    },
+    {
       "id": "ARTICLE-2",
       "title": "article2_prime_side_weil_forms",
       "tex": "articles/article2_prime_side_weil_forms.tex",
