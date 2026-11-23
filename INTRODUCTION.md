@@ -1,7 +1,11 @@
 # About this repository
 
-*Vincent P. P. NOËL — October 2026, updated 22 November 2026*
+*Vincent P. P. NOËL — October 2026, updated 23 November 2026*
 
+> **Update, 23 November 2026.** Since the announcement, I have been trying to make part of the Lean proof readable for a human. Three notes, each written by Claude, checked by ChatGPT and accepted by me, are in [lean_reading/](lean_reading/README.md). The main one, in English, rewrites the analytic part of the proof, from the windowed bound (⋆) to GRH, with every step linked to the Lean code. It does not prove (⋆). Each check found real errors before acceptance; they are listed there. I also corrected two errors in my note on the announcement, both found by an adversarial review.
+>
+> I am also starting an experiment in which Claude and ChatGPT explain the Lean modules to each other, without my intervention, in a separate branch of my private repository. Nothing from it enters the corpus unless I review it through the usual process.
+>
 > **Update, 22 November 2026.** On 20 November 2026, Levent Alpöge announced a proof of the Generalized Riemann Hypothesis obtained with Claude, released as a Lean formalisation that has since been independently built and checked. No human-readable proof or peer review exists yet. What this changes for the corpus, and my attempt to explain *why* the proof works, are in [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md).
 
 ## What this is

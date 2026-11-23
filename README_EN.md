@@ -6,6 +6,8 @@
 
 ## Read first
 
+> **23 November 2026.** Three human-readable notes on the announced Lean proof, checked by a second AI system and accepted by the author: from the bound (⋆) to GRH (in English), windowed Landau for ζ, and its analogue for the double poles of article 1. See [lean_reading/](lean_reading/README.md). The note on the announced proof is corrected on two points (see its end).
+>
 > **22 November 2026.** A proof of the (Generalized) Riemann Hypothesis was announced on 20 November 2026 by L. Alpöge with Claude, as a Lean formalisation independently checked since. The paragraph below describes the state on 17 October 2026. See [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md) for what this changes (Theorem B becomes unconditional; simplicity of zeros stays open).
 
 **RH remains open. The corpus contains no proof of RH. It contains statements proved in delimited settings, certificates on bounded windows, measurements with predictions written in advance, and a precise list of what is missing.**
