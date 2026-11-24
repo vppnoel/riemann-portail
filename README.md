@@ -14,7 +14,7 @@
 >
 > **22 novembre 2026.** Une preuve de l’hypothèse de Riemann (généralisée) a été annoncée le 20 novembre 2026 par L. Alpöge avec Claude, sous forme d’une formalisation Lean vérifiée depuis de manière indépendante. Le paragraphe ci-dessous décrit l’état au 17 octobre 2026. Ce que cela change (le théorème B devient inconditionnel ; la simplicité des zéros reste ouverte) : [NOTE_ALPOGE_2026.md](NOTE_ALPOGE_2026.md) (en anglais).
 
-**RH reste ouverte. Le corpus ne contient pas de preuve de RH. Il contient des énoncés démontrés dans des cadres délimités, des certificats sur des fenêtres bornées, des mesures avec prévisions écrites avant, et la liste précise de ce qui manque.**
+**Le corpus contient des énoncés démontrés dans des cadres délimités, des certificats sur des fenêtres bornées, des mesures avec prévisions écrites avant, et la liste précise de ce qui manque.**
 
 **1. Le noyau analytique : Théorèmes A et B, trois articles à faire relire** — *Démontré, relu en interne · non relu par un spécialiste*
 

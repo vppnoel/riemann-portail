@@ -10,7 +10,7 @@ On 20 November 2026, L. Alpöge announced a proof of the Generalized Riemann Hyp
 | [`01_LANDAU_FENETRES_ZETA_FR.md`](01_LANDAU_FENETRES_ZETA_FR.md) | French | The windowed Landau step for ζ alone, in five steps, with 40 links to the Lean code, and an exact computation of the guide's numerical figure (0.023 √y up to 10⁷: the maximum is 0.022681). | Checked and accepted |
 | [`03_POLES_DOUBLES_FENETRES_FR.md`](03_POLES_DOUBLES_FENETRES_FR.md) | French | An analogue outside the Lean proof, for a statistic with **double** poles (from this corpus, article 1): a one-sided *floor* on late windows excludes zeros to the right of θ, and conversely, with no such zero, \|H(y)\| = O(y^θ log y). Hence RH ⇔ H(y) = O(√y log y). | Checked and accepted. The direct implication is **classical**: it follows from Kaczorowski and Pintz (1986, Theorem 1), who even give overshoots of both signs in every late window. The note proves it in the Lean proof's style; the converse at the threshold is the part written out here |
 
-**What these notes are not.** They do not prove (⋆), the hard arithmetic estimate of the proof (guide §§ 4–7), and they are not a proof of RH by other means. The third note is an equivalent reformulation of RH, not progress towards it: nothing in it supplies the floor.
+**Scope.** The notes cover the analytic steps; (⋆), the hard arithmetic estimate (guide §§ 4–7), is taken as given. The third note is an equivalent reformulation of RH.
 
 **How they were produced.** Each note was written by Claude with a forecast registered before the work, then checked by ChatGPT, which did not write it. Each check found real errors, which were corrected before acceptance:
 - in the first note, a geometric step confused horizontal and Euclidean distance;
